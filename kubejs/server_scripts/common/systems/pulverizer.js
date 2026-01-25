@@ -42,10 +42,6 @@ ServerEvents.recipes(event => {
             const oreName = oreTagSplit[1];
             const furnOutput = furnData.result;
 
-            console.log(`Creating pulverizer recipes for heated ${oreName}...`);
-            console.log(furnInput);
-            console.log(furnOutput);
-
             event.recipes.gtceu.pulverizer(id(`crushed_heated_${oreName}`))
                 .itemInputs(`1x gtceu:crushed_${oreName}_ore`)
                 .itemOutputs(`${typeof furnOutput === "string" ? furnOutput : furnOutput.item}`)
