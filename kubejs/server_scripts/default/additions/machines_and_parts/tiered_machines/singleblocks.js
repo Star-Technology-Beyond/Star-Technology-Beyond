@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
                 C: `gtceu:${cable}_single_cable`,
                 H: `gtceu:${tier}_machine_hull`,
                 Q: `gtceu:${wire}_quadruple_wire`,
-                D: `gtceu:${tierMaterial}_double_plate`
+                D: `gtceu:double_${tierMaterial}_plate`
             }).id(`start:shaped/${tier}_electric_blast_furnace`);
 
             event.shaped(Item.of(`gtceu:${tier}_electric_smoker`), [
