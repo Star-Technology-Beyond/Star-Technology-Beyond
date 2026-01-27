@@ -1044,6 +1044,7 @@
 				Count: 1
 				id: "gtceu:diamond_axe"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: {
 						DisableShields: 1b
@@ -1052,7 +1053,6 @@
 					GT.Tool: {
 						AttackDamage: 12.0f
 						AttackSpeed: -3.1000001f
-						Damage: 0
 						HarvestLevel: 3
 						MaxDamage: 767
 						ToolSpeed: 8.0f
@@ -1068,12 +1068,12 @@
 						Count: 1
 						id: "gtceu:diamond_pickaxe"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
 								AttackDamage: 8.0f
 								AttackSpeed: -2.7f
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 10.0f
@@ -1089,6 +1089,7 @@
 						Count: 1
 						id: "gtceu:diamond_axe"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								DisableShields: 1b
@@ -1097,7 +1098,6 @@
 							GT.Tool: {
 								AttackDamage: 12.0f
 								AttackSpeed: -3.1000001f
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 8.0f
@@ -1165,10 +1165,10 @@
 				Count: 1
 				id: "gtceu:diamond_hammer"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: { }
 					GT.Tool: {
-						Damage: 0
 						HarvestLevel: 3
 						MaxDamage: 767
 						ToolSpeed: 10.0f
@@ -1184,10 +1184,10 @@
 						Count: 1
 						id: "gtceu:diamond_hammer"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 10.0f
@@ -1203,10 +1203,10 @@
 						Count: 1
 						id: "gtceu:diamond_file"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 767
 							}
 							HideFlags: 2
@@ -1220,10 +1220,10 @@
 						Count: 1
 						id: "gtceu:diamond_wire_cutter"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 10.0f
@@ -1239,6 +1239,7 @@
 						Count: 1
 						id: "gtceu:diamond_saw"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								HarvestIce: 1b
@@ -1246,7 +1247,6 @@
 							GT.Tool: {
 								AttackDamage: 6.0f
 								AttackSpeed: -2.5f
-								Damage: 0
 								MaxDamage: 767
 							}
 							HideFlags: 2
@@ -1260,10 +1260,10 @@
 						Count: 1
 						id: "gtceu:diamond_screwdriver"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 767
 							}
 							HideFlags: 2
@@ -1277,12 +1277,12 @@
 						Count: 1
 						id: "gtceu:diamond_wrench"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								Mode: 2b
 							}
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 10.0f
@@ -1298,10 +1298,10 @@
 						Count: 1
 						id: "gtceu:diamond_crowbar"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 10.0f
@@ -1317,10 +1317,10 @@
 						Count: 1
 						id: "gtceu:damascus_steel_mortar"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 1023
 							}
 							HideFlags: 2
