@@ -326,6 +326,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     matmod('ruridit', [small_gear, rotor]);
     matmod('iron', foil);
     matmod('wrought_iron', frame);
+    matmod('red_alloy', spring);
 
     // Blast Properties of periodic table metals
     const blast = global.blastProperty;
