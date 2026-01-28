@@ -1182,6 +1182,8 @@
     "block.gtceu.perfect_oc_subtick.tooltip.1": "Has §6Perfect Overclock§r and §cSubtick Parallels",
     "block.gtceu.subtick.tooltip.1": "Has §cSubtick Parallels",
     "block.gtceu.subtick_coil_parallel.tooltip.1": "Has §cSubtick Parallels§r and §bCoil Parallels§r",
+    "block.gtceu.coil_boosting_subtick.tooltip.1": "Has §cSubtick Parallels§r and §bCoil Boosting§r",
+    "block.gtceu.coil_boosting_parallel_subtick.tooltip.1": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r and §bCoil Boosting§r",
 
     "block.gtceu.macerators.tooltip.1": "§7Macerators only produce byproducts shown in JEI at HV or higher",
 

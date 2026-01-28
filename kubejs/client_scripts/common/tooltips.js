@@ -1,7 +1,11 @@
 ItemEvents.tooltip(event => {
 
     event.addAdvanced('gtceu:large_chemical_reactor', (item, advanced, text) => {
-        text.add(2, Text.translate('block.gtceu.perfect_oc_subtick.tooltip.1'));
+        text.add(2, Text.translate('block.gtceu.coil_boosting_subtick.tooltip.1'));
+    });
+
+    event.addAdvanced('gtceu:extreme_chemical_reactor', (item, advanced, text) => {
+        text.add(2, Text.translate('block.gtceu.coil_boosting_parallel_subtick.tooltip.1'));
     });
 
     event.addAdvanced('gtceu:implosion_compressor', (item, advanced, text) => {
