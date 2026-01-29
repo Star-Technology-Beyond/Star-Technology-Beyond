@@ -36,7 +36,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("H", Predicates.blocks("kubejs:enriched_naquadah_engine_intake_casing"))
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/abydos_multis/noble_mixing_casing',
-            'gtceu:block/machines/mixer', false);
+        .workableCasingModel('kubejs:block/casings/abydos_multis/noble_mixing_casing',
+            'gtceu:block/machines/mixer');
 
 });

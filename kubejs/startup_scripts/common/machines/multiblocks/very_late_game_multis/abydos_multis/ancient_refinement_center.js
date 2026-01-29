@@ -58,7 +58,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('J', Predicates.blocks('kubejs:zalloy_coil_block'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/naquadah/casing',
-            'gtceu:block/multiblock/large_miner', false);
+        .workableCasingModel('kubejs:block/casings/naquadah/casing',
+            'gtceu:block/multiblock/large_miner');
 
 });

@@ -292,7 +292,7 @@ ServerEvents.recipes(event => {
         mtscfComponents('field_generator', [
                 `${1 * scalerMCSF * 0.75}x gtceu:${primMaterial}_frame`, 
                 `${2 * scalerMCSF * 0.75}x kubejs:${tier}_high_strength_panel`, 
-                `${1 * scalerMCSF * 0.75}xkubejs:${tier}_catalyst_core`, 
+                `${1 * scalerMCSF * 0.75}x kubejs:${tier}_catalyst_core`, 
                 `${2 * scalerMCSF * 0.75}x gtceu:${tier}_emitter`, 
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_computational_matrix`, 
                 `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`, 

@@ -84,6 +84,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.blocks('gtceu:uhv_stabilization_module').setExactLimit(1)))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/nyanium/casing',
-            'gtceu:block/machines/assembler', false);
+        .workableCasingModel('kubejs:block/casings/nyanium/casing',
+            'gtceu:block/machines/assembler');
 });

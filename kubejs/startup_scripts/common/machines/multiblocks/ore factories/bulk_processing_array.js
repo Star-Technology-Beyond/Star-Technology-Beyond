@@ -40,7 +40,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('M', Predicates.abilities(PartAbility.MUFFLER))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))   
             .build())
-        .workableCasingRenderer('kubejs:block/casings/naquadah/casing',
-        'kubejs:block/multiblock/primitive_blast_furnace', false);
+        .workableCasingModel('kubejs:block/casings/naquadah/casing',
+        'kubejs:block/multiblock/primitive_blast_furnace');
        
 });

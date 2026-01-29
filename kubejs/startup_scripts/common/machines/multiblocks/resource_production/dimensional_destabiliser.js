@@ -43,6 +43,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where('G', Predicates.blocks('thermal_extra:shellite_glass'))	
 			.where('@', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingRenderer('gtceu:block/casings/gcym/stress_proof_casing',
-			'gtceu:block/multiblock/fusion_reactor', false);
+		.workableCasingModel('gtceu:block/casings/gcym/stress_proof_casing',
+			'gtceu:block/multiblock/fusion_reactor');
 });

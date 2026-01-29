@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $CoiledMulti(holder))
         .recipeType('electric_blast_furnace')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING])
         .appearanceBlock(() => Block.getBlock('kubejs:extreme_temperature_smelting_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('     BBBBBBBBBBB     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ') 
@@ -49,7 +49,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('K', Predicates.blocks('kubejs:nyanium_machine_casing'))
 			.where('@', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingRenderer('kubejs:block/casings/nether_multis/extreme_temperature_smelting_casing',
-            'gtceu:block/multiblock/gcym/mega_blast_furnace', false);
+		.workableCasingModel('kubejs:block/casings/nether_multis/extreme_temperature_smelting_casing',
+            'gtceu:block/multiblock/gcym/mega_blast_furnace');
 
 });

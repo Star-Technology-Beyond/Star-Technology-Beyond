@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('P', Predicates.blocks('gtceu:tungstensteel_pipe_casing'))
             .where(' ', Predicates.air())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-        'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
+        'gtceu:block/multiblock/implosion_compressor');
         
 });

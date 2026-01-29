@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .definition((tier, builder) => {
             return builder
                 .recipeType('greenhouse_growing')
-                .workableTieredHullRenderer("gtceu:block/machines/extruder")
+                .workableTieredHullModel("gtceu:block/machines/extruder")
         }
     );
 
@@ -31,7 +31,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .definition((tier, builder) => {
             return builder
                 .recipeType('essence_burning')
-                .workableTieredHullRenderer("gtceu:block/machines/cutter")
+                .workableTieredHullModel("gtceu:block/machines/cutter")
         }
     );
 });

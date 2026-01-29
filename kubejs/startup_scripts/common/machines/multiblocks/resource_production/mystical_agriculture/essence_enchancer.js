@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('P', Predicates.blocks(GTBlocks.CASING_TITANIUM_PIPE.get()))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
-        'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
+        'gtceu:block/multiblock/implosion_compressor');
         
 });

@@ -59,10 +59,10 @@ GTCEuServerEvents.oreVeins(event => {
         vein.heightRangeUniform(10, 70)
         vein.layeredVeinGenerator(generator => generator
             .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(2).mat(GTMaterials.get('strontianite')).size(4, 2))
+                .layer(l => l.weight(2).mat(GTMaterials.get('strontianite')).size(2, 4))
                 .layer(l => l.weight(2).mat(GTMaterials.get('celestine')).size(2, 4))
                 .layer(l => l.weight(1).mat(GTMaterials.get('gypsum')).size(1, 2))
-                .layer(l => l.weight(1).mat(GTMaterials.get('calcite')).size(2, 1))
+                .layer(l => l.weight(1).mat(GTMaterials.get('calcite')).size(1, 2))
             )
         )
         vein.surfaceIndicatorGenerator(indicator => indicator

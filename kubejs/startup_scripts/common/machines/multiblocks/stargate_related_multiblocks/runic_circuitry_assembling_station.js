@@ -48,7 +48,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('N', Predicates.blocks('kubejs:laser_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/superconductors/casing_lumium',
-            'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('kubejs:block/casings/superconductors/casing_lumium',
+            'gtceu:block/multiblock/implosion_compressor');
             
 });

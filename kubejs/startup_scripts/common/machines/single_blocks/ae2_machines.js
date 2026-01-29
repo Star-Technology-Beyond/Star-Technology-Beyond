@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .definition((tier, builder) => {
             builder
                 .recipeType('me_assembler')
-                .workableTieredHullRenderer('gtceu:block/machines/assembler')
+                .workableTieredHullModel('gtceu:block/machines/assembler')
         }
     );
 

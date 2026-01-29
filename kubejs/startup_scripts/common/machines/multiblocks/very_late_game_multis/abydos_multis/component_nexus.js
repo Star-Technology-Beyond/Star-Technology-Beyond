@@ -47,7 +47,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('J', Predicates.blocks('gtceu:superconducting_coil'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/abydos_multis/superdense_machine_casing',
-        'gtceu:block/machines/assembler', false);
+        .workableCasingModel('kubejs:block/casings/abydos_multis/superdense_machine_casing',
+        'gtceu:block/machines/assembler');
 
 });

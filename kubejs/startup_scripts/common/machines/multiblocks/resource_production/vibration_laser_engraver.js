@@ -56,7 +56,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('K', Predicates.blocks('gtceu:prismalium_frame'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/gcym/vibration_safe_casing',
-            'gtceu:block/multiblock/fusion_reactor', false);
+        .workableCasingModel('gtceu:block/casings/gcym/vibration_safe_casing',
+            'gtceu:block/multiblock/fusion_reactor');
             
 });

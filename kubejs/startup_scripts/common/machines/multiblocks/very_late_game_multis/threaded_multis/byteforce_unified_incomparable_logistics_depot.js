@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('K', Predicates.blocks('kubejs:superdense_assembly_control_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/threading/advanced_assembly_casing',
-            'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('kubejs:block/casings/threading/advanced_assembly_casing',
+            'gtceu:block/multiblock/implosion_compressor');
 
 });

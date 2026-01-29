@@ -17,6 +17,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     .definition((tier, builder) =>{
     builder
         .recipeType('auto_scavenger')
-        .workableCasingRenderer('create:block/brass_casing', 'gtceu:block/machines/rock_crusher', false)
+        .workableCasingModel('create:block/brass_casing', 'gtceu:block/machines/rock_crusher')
     });
 });

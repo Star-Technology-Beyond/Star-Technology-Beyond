@@ -24,6 +24,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where("F", Predicates.blocks("gtceu:computer_heat_vent"))
 			.where(" ", Predicates.any())
 			.build())
-			.workableCasingRenderer('kubejs:block/casings/basic/fluix_casing',
-			'gtceu:block/machines/circuit_assembler', false);
+			.workableCasingModel('kubejs:block/casings/basic/fluix_casing',
+			'gtceu:block/machines/circuit_assembler');
 });

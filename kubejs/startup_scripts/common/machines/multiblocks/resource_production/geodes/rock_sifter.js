@@ -31,7 +31,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('K', Predicates.abilities(PartAbility.IMPORT_ITEMS))	
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/gcym/watertight_casing',
-        'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('gtceu:block/casings/gcym/watertight_casing',
+        'gtceu:block/multiblock/implosion_compressor');
 
 });

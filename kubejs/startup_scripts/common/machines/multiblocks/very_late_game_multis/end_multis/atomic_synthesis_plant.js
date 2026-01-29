@@ -58,7 +58,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('L', Predicates.blocks('gtceu:uev_rotor_holder'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/end_multis/cattomolymer_casing',
-        'gtceu:block/multiblock/large_chemical_reactor', false);
+        .workableCasingModel('kubejs:block/casings/end_multis/cattomolymer_casing',
+        'gtceu:block/multiblock/large_chemical_reactor');
         
 });

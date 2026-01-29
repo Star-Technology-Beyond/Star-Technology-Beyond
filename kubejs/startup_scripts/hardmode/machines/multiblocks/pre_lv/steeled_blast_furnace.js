@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('gtceu:cast_iron_frame'))
 			.where('@', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingRenderer('gtceu:block/casings/solid/machine_primitive_bricks', 'kubejs:block/multiblock/primitive_blast_furnace', false)
+		.workableCasingModel('gtceu:block/casings/solid/machine_primitive_bricks', 'kubejs:block/multiblock/primitive_blast_furnace')
 		.editableUI(
 			global.ui_builder({
 				group: 'primitive',

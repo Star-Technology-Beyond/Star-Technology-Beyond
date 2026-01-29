@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('gtceu:fusion_coil'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('kubejs:block/casings/naquadah/casing',
-        'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('kubejs:block/casings/naquadah/casing',
+        'gtceu:block/multiblock/implosion_compressor');
 
 });

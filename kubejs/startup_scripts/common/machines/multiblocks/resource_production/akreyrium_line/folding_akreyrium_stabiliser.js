@@ -45,7 +45,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('gtceu:advanced_computer_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
-            'gtceu:block/multiblock/hpca', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+            'gtceu:block/multiblock/hpca');
 
 });

@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .definition((tier, builder) => {
             return builder
                 .recipeType('composting')
-                .workableCasingRenderer('minecraft:block/stripped_dark_oak_log', 'gtceu:block/machines/advanced_composter', false);
+                .workableCasingModel('minecraft:block/stripped_dark_oak_log', 'gtceu:block/machines/advanced_composter');
         }
     );
 });

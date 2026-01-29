@@ -27,6 +27,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('O', Predicates.abilities(PartAbility.EXPORT_FLUIDS))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel',
-        'gtceu:block/multiblock/primitive_pump', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_solid_steel',
+        'gtceu:block/multiblock/primitive_pump');
 });

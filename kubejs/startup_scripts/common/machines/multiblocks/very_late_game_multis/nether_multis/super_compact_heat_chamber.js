@@ -25,6 +25,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('kubejs:enriched_naquadah_firebox_casing'))
             .where('O', Predicates.abilities(PartAbility.MUFFLER))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-            'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
+            'gtceu:block/multiblock/implosion_compressor');
 });

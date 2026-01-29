@@ -21,7 +21,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where('#', Predicates.blocks('minecraft:air'))
 			.where('B', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingRenderer('kubejs:block/hm/reinforced_stone_bricks', 'gtceu:block/machines/electric_furnace', false)
+		.workableCasingModel('kubejs:block/hm/reinforced_stone_bricks', 'gtceu:block/machines/electric_furnace')
 		.editableUI(
 			global.ui_builder({
 				group: 'primitive',

@@ -25,8 +25,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('dustrial_decor:cinder_bricks'))
             .where(' ', Predicates.blocks('minecraft:air'))
             .build())
-        .workableCasingRenderer('dustrial_decor:block/cinder_block_side',
-        'gtceu:block/multiblock/primitive_blast_furnace', false)
+        .workableCasingModel('dustrial_decor:block/cinder_block_side',
+        'gtceu:block/multiblock/primitive_blast_furnace')
         .editableUI(
 			global.ui_builder({
 				group: 'primitive',

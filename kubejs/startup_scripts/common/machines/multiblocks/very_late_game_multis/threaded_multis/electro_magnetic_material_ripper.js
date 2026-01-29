@@ -35,7 +35,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('J', Predicates.blocks('kubejs:nyanium_pipe_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/threading/aurouric_resilient_casing',
-            'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('kubejs:block/casings/threading/aurouric_resilient_casing',
+            'gtceu:block/multiblock/implosion_compressor');
 
 });

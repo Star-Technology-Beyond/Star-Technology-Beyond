@@ -1182,6 +1182,8 @@
     "block.gtceu.perfect_oc_subtick.tooltip.1": "Has §6Perfect Overclock§r and §cSubtick Parallels",
     "block.gtceu.subtick.tooltip.1": "Has §cSubtick Parallels",
     "block.gtceu.subtick_coil_parallel.tooltip.1": "Has §cSubtick Parallels§r and §bCoil Parallels§r",
+    "block.gtceu.coil_boosting_subtick.tooltip.1": "Has §cSubtick Parallels§r and §bCoil Boosting§r",
+    "block.gtceu.coil_boosting_parallel_subtick.tooltip.1": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r and §bCoil Boosting§r",
 
     "block.gtceu.macerators.tooltip.1": "§7Macerators only produce byproducts shown in JEI at HV or higher",
 
@@ -1378,5 +1380,18 @@
     "block.gtceu.t_large_pulverizer": "Large Pulverizer",
     "block.gtceu.t_large_pulverizer.tooltip.0": "§7A larger variant of the pulverizier that can process materials with more energy efficiency.",
     "block.gtceu.t_large_pulverizer.tooltip.1": "Has §6Perfect Overclock",
-    "block.gtceu.t_large_pulverizer.tooltip.2": "Can only have §bone§r Energy Hatch"
+    "block.gtceu.t_large_pulverizer.tooltip.2": "Can only have §bone§r Energy Hatch",
+
+    "material.gtceu.acidic_bromine_solution": "Acidic Bromine Solution",
+    "material.gtceu.concentrated_bromine_solution": "Concentrated Bromine Solution",
+    "material.gtceu.hydrogen_iodid": "Hydrogen Iodide",
+    "material.gtceu.hot_brine": "Hot Brine",
+    "material.gtceu.hot_chlorinated_brominated_brine": "Hot Chlorinated Brominated Brine",
+    "material.gtceu.hot_debrominated_brine": "Hot Debrominated Brine",
+    "material.gtceu.hot_alkaline_debrominated_brine": "Hot Alkaline Debrominated Brine",
+    "material.gtceu.raw_brine": "Raw Brine",
+    "material.gtceu.debrominated_brine": "Debrominated Brine",
+    "material.gtceu.brominated_chlorine_vapor": "Brominated Chlorine Vapor",
+    "material.gtceu.acidic_bromine_exhaust": "Acidic Bromine Exhaust"
+
 }

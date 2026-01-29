@@ -26,7 +26,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('M', Predicates.abilities(PartAbility.MUFFLER))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
-        'kubejs:block/multiblock/primitive_blast_furnace', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
+        'kubejs:block/multiblock/primitive_blast_furnace');
 
 });

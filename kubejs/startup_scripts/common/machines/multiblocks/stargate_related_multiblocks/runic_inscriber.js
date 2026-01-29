@@ -46,7 +46,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('P', Predicates.blocks('gtceu:ulv_output_bus'))	
             .where('Q', Predicates.controller(Predicates.blocks(definition.get())))	
             .build())
-        .workableCasingRenderer('gtceu:block/casings/gcym/atomic_casing',
-            'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('gtceu:block/casings/gcym/atomic_casing',
+            'gtceu:block/multiblock/implosion_compressor');
             
 });

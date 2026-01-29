@@ -24,18 +24,18 @@ ServerEvents.recipes(event => {
 
             const {
                 tiers: { tier, tier0, tier1 },
-                materials: { 
-                    tierMaterial, 
-                    wire, 
-                    elctrlyzWire, 
-                    tierFluid, 
-                    plastic, 
+                materials: {
+                    tierMaterial,
+                    wire,
+                    elctrlyzWire,
+                    tierFluid,
+                    plastic,
                     cable,
-                    cable1, 
-                    primMagnet, 
-                    pipeMaterial, 
-                    glass, 
-                    buzz, 
+                    cable1,
+                    primMagnet,
+                    pipeMaterial,
+                    glass,
+                    buzz,
                     chip
                 },
                 scaling: {
@@ -90,6 +90,32 @@ ServerEvents.recipes(event => {
                 C: `gtceu:${cable}_single_cable`,
                 H: `gtceu:${tier}_machine_hull`
             }).id(`start:shaped/${tier}_electric_furnace`);
+
+            event.shaped(Item.of(`gtceu:${tier}_electric_blast_furnace`), [
+                'IDI',
+                'WHW',
+                'CQC'
+            ], {
+                I: `#gtceu:circuits/${tier}`,
+                W: `gtceu:${wire}_double_wire`,
+                C: `gtceu:${cable}_single_cable`,
+                H: `gtceu:${tier}_machine_hull`,
+                Q: `gtceu:${wire}_quadruple_wire`,
+                D: `gtceu:double_${tierMaterial}_plate`
+            }).id(`start:shaped/${tier}_electric_blast_furnace`);
+
+            event.shaped(Item.of(`gtceu:${tier}_electric_smoker`), [
+                'ISI',
+                'WHW',
+                'CQC'
+            ], {
+                I: `#gtceu:circuits/${tier}`,
+                W: `gtceu:${wire}_double_wire`,
+                C: `gtceu:${cable}_single_cable`,
+                H: `gtceu:${tier}_machine_hull`,
+                Q: `gtceu:${wire}_quadruple_wire`,
+                S: `gtceu:${wire}_spring`
+            }).id(`start:shaped/${tier}_electric_smoker`);
 
             event.shaped(Item.of(`gtceu:${tier}_alloy_smelter`), [
                 'IWI',
@@ -654,9 +680,9 @@ ServerEvents.recipes(event => {
 
             const {
                 tiers: { tier },
-                materials: { 
-                    tierMaterial, 
-                    plastic, 
+                materials: {
+                    tierMaterial,
+                    plastic,
                     cable
                 }
             } = tierData;

@@ -19,7 +19,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where('C', Predicates.blocks('minecraft:campfire'))
 			.where('D', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingRenderer('minecraft:block/mud_bricks', 'gtceu:block/multiblock/primitive_blast_furnace', false)
+		.workableCasingModel('minecraft:block/mud_bricks', 'gtceu:block/multiblock/primitive_blast_furnace')
 		.editableUI(
 			global.ui_builder({
 				group: 'primitive',

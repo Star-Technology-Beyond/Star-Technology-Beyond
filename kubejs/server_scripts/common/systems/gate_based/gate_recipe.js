@@ -398,7 +398,7 @@ ServerEvents.recipes(event => {
 
         //Ancient Encoded Computational Unit
         event.recipes.gtceu.assembly_line(id('ancient_stargate_computer_core'))
-            .itemInputs('gtceu:ancient_runicalium_frame','6x kubejs:computational_super_matrix','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire',
+            .itemInputs('gtceu:ancient_runicalium_frame','6x kubejs:computational_super_matrix', //'16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire','16x gtceu:iron_selenide_over_strontium_titanium_oxide_octal_wire' */,
                 '64x kubejs:uepic_chip','64x kubejs:uepic_chip','24x #gtceu:circuits/uev','kubejs:draconic_coordinate_core')
             .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 128000', 'gtceu:sterilized_growth_medium 54000')
             .itemOutputs('kubejs:ancient_stargate_computer_core')

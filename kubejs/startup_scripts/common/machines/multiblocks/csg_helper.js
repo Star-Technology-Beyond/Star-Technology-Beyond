@@ -14,5 +14,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('sgjourney:classic_dhd'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))	
 			.build())
-        .workableCasingRenderer('minecraft:block/smooth_stone', 'gtceu:block/machines/object_holder', false);
+        .workableCasingModel('minecraft:block/smooth_stone', 'gtceu:block/machines/object_holder');
 });

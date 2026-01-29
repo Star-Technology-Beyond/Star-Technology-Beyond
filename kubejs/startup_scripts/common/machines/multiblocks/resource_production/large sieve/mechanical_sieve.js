@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('M', Predicates.blocks('kubejs:meshblock'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('kubejs:block/casings/basic/casing_wood',
-        'gtceu:block/machines/macerator', false);
+        .workableCasingModel('kubejs:block/casings/basic/casing_wood',
+        'gtceu:block/machines/macerator');
         
 });

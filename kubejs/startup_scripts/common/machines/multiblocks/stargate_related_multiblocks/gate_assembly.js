@@ -72,7 +72,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('T', Predicates.blocks('start_core:auxiliary_boosted_fusion_casing_mk1'))
             .where('R', Predicates.blocks('start_core:auxiliary_fusion_coil_mk1'))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/naquadah/casing',
-        'gtceu:block/machines/assembler', false);
+        .workableCasingModel('kubejs:block/casings/naquadah/casing',
+        'gtceu:block/machines/assembler');
 
 });

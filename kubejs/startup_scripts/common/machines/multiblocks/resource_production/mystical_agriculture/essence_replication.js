@@ -36,7 +36,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('thermal:obsidian_glass'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_heatproof',
-        'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_heatproof',
+        'gtceu:block/multiblock/implosion_compressor');
         
 });

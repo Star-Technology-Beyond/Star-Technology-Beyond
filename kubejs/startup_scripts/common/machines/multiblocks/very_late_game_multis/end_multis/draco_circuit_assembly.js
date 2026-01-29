@@ -39,7 +39,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('R', Predicates.blocks('kubejs:draco_assembly_grating'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('kubejs:block/casings/naquadah/casing',
-            'gtceu:block/multiblock/assembly_line', false);
+        .workableCasingModel('kubejs:block/casings/naquadah/casing',
+            'gtceu:block/multiblock/assembly_line');
 
 });

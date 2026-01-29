@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .definition((tier, builder) => {
             builder
             .recipeType('fermenting')
-            .workableCasingRenderer('gtceu:block/treated_wood_planks', 'gtceu:block/machines/casket', false);
+            .workableCasingModel('gtceu:block/treated_wood_planks', 'gtceu:block/machines/casket');
         }
     );
     

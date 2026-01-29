@@ -37,7 +37,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('H', Predicates.blocks('gtceu:steel_pipe_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel',
-        'gtceu:block/machines/compressor', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_solid_steel',
+        'gtceu:block/machines/compressor');
 
 });

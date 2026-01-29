@@ -28,6 +28,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where('#', Predicates.any())
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingRenderer('kubejs:block/hm/high_steam_machine_casing', 'gtceu:block/machines/blasting', false)
+		.workableCasingModel('kubejs:block/hm/high_steam_machine_casing', 'gtceu:block/machines/blasting')
 		
 });

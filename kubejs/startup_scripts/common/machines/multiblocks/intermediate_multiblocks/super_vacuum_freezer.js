@@ -23,7 +23,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .where('D', Predicates.blocks('gtceu:tempered_glass'))
             .build())
-        .workableCasingRenderer(`gtceu:block/casings/solid/machine_casing_frost_proof`,
-        `gtceu:block/multiblock/vacuum_freezer`, false);
+        .workableCasingModel(`gtceu:block/casings/solid/machine_casing_frost_proof`,
+        `gtceu:block/multiblock/vacuum_freezer`);
 
 });

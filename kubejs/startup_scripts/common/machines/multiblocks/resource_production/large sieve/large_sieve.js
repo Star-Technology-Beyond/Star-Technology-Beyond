@@ -34,7 +34,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('O', Predicates.abilities(PartAbility.EXPORT_ITEMS))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
-        'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+        'gtceu:block/multiblock/implosion_compressor');
         
 });

@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('gtceu:tempered_glass'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer(`kubejs:block/casings/large_cubes/beryllium_bronze_casing`,
-        `gtceu:block/machines/cutter`, false);
+        .workableCasingModel(`kubejs:block/casings/large_cubes/beryllium_bronze_casing`,
+        `gtceu:block/machines/cutter`);
 
 });

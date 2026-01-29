@@ -27,7 +27,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('H', Predicates.blocks('gtceu:stress_proof_casing'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
-        'gtceu:block/multiblock/large_miner', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+        'gtceu:block/multiblock/large_miner');
         
 });

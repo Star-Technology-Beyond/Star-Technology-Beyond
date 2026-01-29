@@ -1,3 +1,5 @@
+const blacklist = ["aluminum"];
+
 ServerEvents.recipes(event => {
     const id = global.id;
 
@@ -15,7 +17,7 @@ ServerEvents.recipes(event => {
 
             const oreTagSplit = itemInput.ingredient.tag.split('/');
 
-            if (oreTagSplit[0] === 'forge:raw_materials') {
+            if (oreTagSplit[0] === 'forge:raw_materials' && !blacklist.includes(oreTagSplit[1])) {
                 const itemOutput = macData.outputs.item[0].content;
 
                 event.recipes.gtceu.pulverizer(id(`crushed_${oreTagSplit[1]}`))
@@ -36,20 +38,20 @@ ServerEvents.recipes(event => {
 
         const oreTagSplit = furnInput.tag.split('/');
 
-        if (oreTagSplit[0] === 'forge:raw_materials') {
+        if (oreTagSplit[0] === 'forge:raw_materials' && !blacklist.includes(oreTagSplit[1])) {
             const oreName = oreTagSplit[1];
             const furnOutput = furnData.result;
 
             event.recipes.gtceu.pulverizer(id(`crushed_heated_${oreName}`))
                 .itemInputs(`1x gtceu:crushed_${oreName}_ore`)
-                .itemOutputs(`1x ${furnOutput.item}`)
+                .itemOutputs(`${typeof furnOutput === "string" ? furnOutput : furnOutput.item}`)
                 .circuit(1)
                 .duration(300)
                 .EUt(GTValues.VA[GTValues.LV])
 
             event.recipes.gtceu.pulverizer(id(`raw_heated_${oreName}`))
                 .itemInputs(`1x #${furnInput.tag}`)
-                .itemOutputs(`${furnOutput.count || 1}x ${furnOutput.item}`)
+                .itemOutputs(`${furnOutput.count || 1}x ${typeof furnOutput === "string" ? furnOutput : furnOutput.item}`)
                 .circuit(1)
                 .duration(300)
                 .EUt(GTValues.VA[GTValues.LV])

@@ -52,7 +52,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('B', Predicates.blocks('gtceu:superconducting_coil'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-            'gtceu:block/machines/scanner', false);
+        .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
+            'gtceu:block/machines/scanner');
             
 });

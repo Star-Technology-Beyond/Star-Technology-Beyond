@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("I", Predicates.blocks("kubejs:enriched_naquadah_gearbox"))
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/abydos_multis/quake_proof_casing',
-            'gtceu:block/machines/centrifuge', false);
+        .workableCasingModel('kubejs:block/casings/abydos_multis/quake_proof_casing',
+            'gtceu:block/machines/centrifuge');
 
 });

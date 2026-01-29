@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('gtceu:steel_gearbox'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel',
-        'gtceu:block/multiblock/large_miner', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_solid_steel',
+        'gtceu:block/multiblock/large_miner');
 
 });

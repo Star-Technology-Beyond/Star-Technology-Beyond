@@ -324,6 +324,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     matmod('trinium', fine_wire);
     matmod('naquadah_alloy', round);
     matmod('ruridit', [small_gear, rotor]);
+    matmod('iron', foil);
+    matmod('wrought_iron', frame);
+    matmod('red_alloy', spring);
 
     // Blast Properties of periodic table metals
     const blast = global.blastProperty;
@@ -1718,5 +1721,62 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('seaweed_oil', ['1x carbon'], 0x3FBF3F, [no_decomp]);
     compLiquid('liquefied_nutrient_paste', [], 0x8A8E96, [no_decomp]);
     compLiquid('biostimulating_mixture', ['2x silicic_acid', '4x seaweed_oil', '5x liquefied_nutrient_paste', '1x mutagen', '3x glycerol'], 0x72A677, [no_decomp]);
+
+    event.create('acidic_bromine_solution')
+        .liquid()
+        .color(0xc49b52)
+        .components('1x chlorine', '1x bromine')
+        .flags(no_decomp);
+
+    event.create('concentrated_bromine_solution')
+        .liquid()
+        .color(0x91481e)
+        .components('2x bromine', '1x chlorine')
+        .flags(no_decomp);
+
+    event.create('hydrogen_iodide')
+        .gas()
+        .color(0x8187a6)
+        .components('1x hydrogen', '1x iodine')
+        .flags(no_decomp);
+    
+    event.create('hot_brine')
+        .liquid(320)
+        .color(0xbe6026);
+
+    event.create('hot_chlorinated_brominated_brine')
+        .liquid(320)
+        .color(0xab765d)
+        .components('1x hot_brine', '1x chlorine')
+        .flags(no_decomp);
+
+    event.create('hot_debrominated_brine')
+        .liquid(320)
+        .color(0xab896d);
+
+    event.create('hot_alkaline_debrominated_brine')
+        .liquid(320)
+        .color(0xbe8938)
+        .components('2x hot_debrominated_brine', '1x chlorine')
+        .flags(no_decomp);
+
+    event.create('raw_brine')
+        .liquid()
+        .color(0x9f6b26);
+    
+    event.create('debrominated_brine')
+        .liquid()
+        .color(0xab8c6d);
+    
+    event.create('brominated_chlorine_vapor')
+        .gas()
+        .color(0xbb9b72)
+        .components('1x chlorine', '1x bromine', '1x steam')
+        .flags(no_decomp);
+    
+    event.create('acidic_bromine_exhaust')
+        .gas()
+        .color(0x8f681e)
+        .components('3x steam', '1x chlorine');
 
 });

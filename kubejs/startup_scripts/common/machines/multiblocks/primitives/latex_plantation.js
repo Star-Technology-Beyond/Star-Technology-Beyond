@@ -27,7 +27,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('minecraft:dirt'))
             .where('#', Predicates.any())
             .build())
-        .workableCasingRenderer("minecraft:block/bricks","gtceu:block/machines/extractor", false)
+        .workableCasingModel("minecraft:block/bricks","gtceu:block/machines/extractor")
         .editableUI(
 			global.ui_builder({
 				group: 'primitive',

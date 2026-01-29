@@ -33,8 +33,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                     .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1)))
                 .where(' ', Predicates.air())
                 .build())
-            .workableCasingRenderer(`kubejs:block/casings/large_cubes/${casing}_casing`,
-                `gtceu:block/machines/${type}`, false);
+            .workableCasingModel(`kubejs:block/casings/large_cubes/${casing}_casing`,
+                `gtceu:block/machines/${type}`);
 
     }
 
@@ -74,6 +74,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1)))
             .where(' ', Predicates.air())
             .build())
-        .workableCasingRenderer('kubejs:block/casings/large_cubes/red_steel_casing',
-            'gtceu:block/machines/rock_crusher', false);
+        .workableCasingModel('kubejs:block/casings/large_cubes/red_steel_casing',
+            'gtceu:block/machines/rock_crusher');
 });

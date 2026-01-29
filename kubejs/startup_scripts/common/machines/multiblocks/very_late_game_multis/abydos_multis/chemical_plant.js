@@ -43,7 +43,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('T', Predicates.blocks('gtceu:tungsten_frame'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('kubejs:block/casings/basic/machine_casing_peek',
-        'gtceu:block/multiblock/large_chemical_reactor', false);
+        .workableCasingModel('kubejs:block/casings/basic/machine_casing_peek',
+        'gtceu:block/multiblock/large_chemical_reactor');
         
 });

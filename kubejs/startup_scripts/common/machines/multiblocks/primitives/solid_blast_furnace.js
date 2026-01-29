@@ -30,8 +30,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('gtceu:steel_firebox_casing'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('kubejs:block/casings/basic/high_steam_machine_casing',
-        'kubejs:block/multiblock/primitive_blast_furnace', false)
+        .workableCasingModel('kubejs:block/casings/basic/high_steam_machine_casing',
+        'kubejs:block/multiblock/primitive_blast_furnace')
         .editableUI(
 			global.ui_builder({
 				group: 'primitive',

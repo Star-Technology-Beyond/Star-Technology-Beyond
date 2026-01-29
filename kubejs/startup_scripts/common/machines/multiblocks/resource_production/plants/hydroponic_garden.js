@@ -48,7 +48,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('I', Predicates.blocks('gtceu:laminated_glass'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/gcym/watertight_casing',
-        'gtceu:block/machines/extruder', false);
+        .workableCasingModel('gtceu:block/casings/gcym/watertight_casing',
+        'gtceu:block/machines/extruder');
         
 });

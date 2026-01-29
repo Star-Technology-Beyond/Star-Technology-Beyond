@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("G", Predicates.blocks("gtceu:assembly_line_grating"))
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/abydos_multis/quake_proof_casing',
-            'gtceu:block/machines/sifter', false);
+        .workableCasingModel('kubejs:block/casings/abydos_multis/quake_proof_casing',
+            'gtceu:block/machines/sifter');
 
 });

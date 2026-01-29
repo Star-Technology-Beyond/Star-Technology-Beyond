@@ -59,7 +59,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('W', Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get()))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/gcym/stress_proof_casing',
-            'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('gtceu:block/casings/gcym/stress_proof_casing',
+            'gtceu:block/multiblock/implosion_compressor');
             
 });

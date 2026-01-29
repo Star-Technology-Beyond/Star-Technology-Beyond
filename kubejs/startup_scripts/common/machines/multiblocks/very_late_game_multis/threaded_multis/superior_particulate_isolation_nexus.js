@@ -40,7 +40,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('K', Predicates.blocks('start_core:advanced_fusion_coil'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/threading/tectonic_defiance_casing',
-            'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('kubejs:block/casings/threading/tectonic_defiance_casing',
+            'gtceu:block/multiblock/implosion_compressor');
 
 });

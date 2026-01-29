@@ -46,7 +46,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('J', Predicates.blocks('kubejs:enriched_naquadah_firebox_casing'))
             .where('L', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
-        'gtceu:block/machines/gas_collector', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
+        'gtceu:block/machines/gas_collector');
         
 });

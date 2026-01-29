@@ -25,6 +25,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where('C', Predicates.blocks('farmersdelight:stove'))
 			.where('D', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingRenderer('gtceu:block/casings/solid/machine_casing_bronze_plated_bricks',
-             'gtceu:block/multiblock/primitive_blast_furnace', false);
+		.workableCasingModel('gtceu:block/casings/solid/machine_casing_bronze_plated_bricks',
+             'gtceu:block/multiblock/primitive_blast_furnace');
 });

@@ -28,8 +28,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('W', Predicates.fluids('minecraft:water'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/treated_wood_planks',
-        'gtceu:block/machines/cutter', false)
+        .workableCasingModel('gtceu:block/treated_wood_planks', 'gtceu:block/machines/cutter')
         .editableUI(
 			global.ui_builder({
 				group: 'primitive',

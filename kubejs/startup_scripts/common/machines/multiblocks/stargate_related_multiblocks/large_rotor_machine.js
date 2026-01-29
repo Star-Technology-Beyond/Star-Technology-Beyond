@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks(GTBlocks.FILTER_CASING_STERILE.get()))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
-            'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+            'gtceu:block/multiblock/implosion_compressor');
             
 });

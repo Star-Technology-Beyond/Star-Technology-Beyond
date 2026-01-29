@@ -24,7 +24,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('T', Predicates.blocks('gtceu:assembly_line_grating'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('kubejs:block/casings/abydos_multis/superdense_machine_casing',
-            'gtceu:block/multiblock/assembly_line', false);
+        .workableCasingModel('kubejs:block/casings/abydos_multis/superdense_machine_casing',
+            'gtceu:block/multiblock/assembly_line');
 
 });

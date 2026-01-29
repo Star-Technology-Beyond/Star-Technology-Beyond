@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('M', Predicates.blocks('kubejs:mesh_block'))
             .where('I', Predicates.abilities(PartAbility.IMPORT_ITEMS))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel',
-        'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_solid_steel',
+        'gtceu:block/multiblock/implosion_compressor');
 
 });

@@ -27,8 +27,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('minecraft:stone_bricks'))
             .where(' ', Predicates.air())
             .build())
-        .workableCasingRenderer('minecraft:block/stone',
-        'kubejs:block/multiblock/primitive_blast_furnace', false)
+        .workableCasingModel('minecraft:block/stone', 'kubejs:block/multiblock/primitive_blast_furnace')
         .editableUI(
 			global.ui_builder({
 				group: 'primitive',

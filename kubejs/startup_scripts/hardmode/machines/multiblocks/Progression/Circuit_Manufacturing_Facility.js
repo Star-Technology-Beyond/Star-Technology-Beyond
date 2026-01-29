@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.blocks('minecraft:air'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_solid_steel',
-        'gtceu:block/machines/circuit_assembler', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_solid_steel',
+        'gtceu:block/machines/circuit_assembler');
 
 });

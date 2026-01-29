@@ -63,7 +63,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('6', Predicates.blocks('gtceu:ulv_input_bus'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('kubejs:block/casings/naquadah/casing', 
-            'kubejs:block/multiblock/draco_infusion', false);
+        .workableCasingModel('kubejs:block/casings/naquadah/casing', 
+            'kubejs:block/multiblock/draco_infusion');
         
 });

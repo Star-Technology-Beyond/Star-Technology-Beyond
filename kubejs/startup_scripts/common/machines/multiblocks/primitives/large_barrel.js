@@ -27,8 +27,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks(GTBlocks.CASING_PUMP_DECK.get()))
             .where(' ', Predicates.air())
             .build())
-        .workableCasingRenderer('gtceu:block/treated_wood_planks',
-        'gtceu:block/machines/brewery', false)
+        .workableCasingModel('gtceu:block/treated_wood_planks', 'gtceu:block/machines/brewery')
         .editableUI(
 			global.ui_builder({
 				group: 'primitive',

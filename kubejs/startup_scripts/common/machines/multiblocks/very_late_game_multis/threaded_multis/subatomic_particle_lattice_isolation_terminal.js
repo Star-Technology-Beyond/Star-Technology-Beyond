@@ -35,7 +35,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('H', Predicates.blocks('kubejs:nuclei_seperators'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/threading/inoculated_nuclei_seperation_casing',
-            'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('kubejs:block/casings/threading/inoculated_nuclei_seperation_casing',
+            'gtceu:block/multiblock/implosion_compressor');
 
 });

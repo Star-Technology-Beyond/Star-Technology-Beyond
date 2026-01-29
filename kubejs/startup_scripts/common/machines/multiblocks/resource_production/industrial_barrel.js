@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('gtceu:laminated_glass'))
             .where(' ', Predicates.air())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
-            'gtceu:block/machines/distillery', false);
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
+            'gtceu:block/machines/distillery');
         
 });

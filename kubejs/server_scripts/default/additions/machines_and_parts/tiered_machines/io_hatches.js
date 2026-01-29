@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
                 materials: { 
                     tierMaterial, 
                     plastic, 
-                    pipe,
+                    pipeMaterial,
                     fluidStorage,
                     itemStorage
                 },
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
                 event.recipes.gtceu.assembler(id(`${tier}_dual_${ioData.typeIO}_hatch`))
                     .itemInputs(
                         `gtceu:${tier}_${ioData.typeIO}_bus`, `gtceu:${tier}_${ioData.typeIO}_hatch`, 
-                        `gtceu:${pipe}_nonuple_fluid_pipe`, `3x gtceu:${tierMaterial}_frame`
+                        `gtceu:${pipeMaterial}_nonuple_fluid_pipe`, `3x gtceu:${tierMaterial}_frame`
                     )
                     .inputFluids(`gtceu:${plastic} ${864 + (scaler * 144)}`)
                     .itemOutputs(`gtceu:${tier}_dual_${ioData.typeIO}_hatch`)

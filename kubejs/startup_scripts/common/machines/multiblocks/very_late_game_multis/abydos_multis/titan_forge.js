@@ -42,7 +42,7 @@
 //             .where('G', Predicates.abilities(PartAbility.MUFFLER))
 //             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
 //             .build())
-//         .workableCasingRenderer('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-//             'gtceu:block/machines/bender', false);
+//         .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
+//             'gtceu:block/machines/bender');
 
 // });

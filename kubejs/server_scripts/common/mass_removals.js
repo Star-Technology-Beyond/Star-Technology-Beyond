@@ -1,3 +1,4 @@
+// priority 10000
 ServerEvents.recipes(event => {
     const id = global.id;
     const toRemoveOutput = ['thermal:machine_furnace', 'thermal:machine_sawmill',
@@ -38,8 +39,8 @@ ServerEvents.recipes(event => {
         'gtceu:shaped/resistor_wire_charcoal', 'create:crushing/diorite_recycling', 'create:milling/charcoal', 'gtceu:macerator/macerate_sculk', 'thermal:gunpowder_4',
         'gtceu:shaped/block_compress_marble', 'gtceu:shapeless/block_decompress_marble', 'createdieselgenerators:basin_fermenting/golden_apple', 'gtceu:arc_furnace/arc_mega_vacuum_freezer',
         'gtceu:macerator/macerate_mega_vacuum_freezer', 'gtceu:arc_furnace/arc_mega_blast_furnace', 'gtceu:macerator/macerate_mega_blast_furnace', 'gtceu:coke_oven/coal_to_coke', 
-        'gtceu:coke_oven/coal_to_coke_block', `gtceu:autoclave/raw_crystal_chip_from_part_bacterial_sludge`, `gtceu:autoclave/raw_crystal_chip_from_part_mutagen`, 
-        `gtceu:autoclave/raw_crystal_chip_olivine`
+        'gtceu:coke_oven/coal_to_coke_block', 'gtceu:large_chemical_reactor/iodine', 'gtceu:chemical_reactor/iodine', 'gtceu:autoclave/raw_crystal_chip_from_part_bacterial_sludge', 
+        'gtceu:autoclave/raw_crystal_chip_from_part_mutagen', 'gtceu:autoclave/raw_crystal_chip_olivine'
     ];
 
     const toRemoveType = ['thermal:sawmill', 'thermal:pulverizer', 'thermal:insolator', 'thermal:centrifuge', 'thermal:crucible', 'thermal:chiller', 'thermal:refinery',

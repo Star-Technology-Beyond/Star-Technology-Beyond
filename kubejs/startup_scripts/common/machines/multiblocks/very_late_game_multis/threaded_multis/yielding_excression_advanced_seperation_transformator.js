@@ -36,7 +36,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .where('I', Predicates.blocks('start_core:threading_controller'))
             .build())
-        .workableCasingRenderer('kubejs:block/casings/threading/quantumly_resistant_casing',
-            'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('kubejs:block/casings/threading/quantumly_resistant_casing',
+            'gtceu:block/multiblock/implosion_compressor');
 
 });

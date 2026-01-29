@@ -45,6 +45,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('M', Predicates.abilities(PartAbility.MUFFLER))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingRenderer('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-            'gtceu:block/multiblock/implosion_compressor', false);
+        .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
+            'gtceu:block/multiblock/implosion_compressor');
 });
