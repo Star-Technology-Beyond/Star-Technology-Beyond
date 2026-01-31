@@ -1790,13 +1790,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     */
     compDust(`sodium_diphenoxide`, [`2x sodium`, `2x oxygen`, `15x carbon`, `16x hydrogen`], 0xFEFEFE, [no_decomp]);
     compLiquid(`phosgene`, [`carbon`, `oxygen`, `2x chlorine`], 0xFDFEFC, [no_decomp]);
-
-    event.create(`polycarbonate`)
-        .polymer()
-        .fluid()
-        .color(0x141414)
-        .components(`3x oxygen`, `16x carbon`, `16x hydrogen`)
-        .flags(no_decomp, foil, plates)
-        .fluidPipeProperties(388, 300, true, true, false, false);
+    polymerFluidPipe(`polycarbonate`, [`3x oxygen`, `16x carbon`, `16x hydrogen`], 0x141414, [388, 300, true, true, false, false], [no_decomp, foil, plates]);
 
 });
