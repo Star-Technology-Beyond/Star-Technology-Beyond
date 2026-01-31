@@ -624,5 +624,30 @@
 
     "block.kubejs.kanthal_casing": "Kanthal Casing",
     "block.kubejs.manganin_casing": "Manganin Casing",
-    "block.kubejs.galvanized_steel_casing": "Galvanized Steel Casing"
+    "block.kubejs.galvanized_steel_casing": "Galvanized Steel Casing",
+
+    "item.kubejs.neutron_reflector_tier.tooltip" : "Level of Refectivity:",
+    "item.kubejs.basic_neutron_reflector" : "Basic Neutron Reflector",
+    "item.kubejs.basic_neutron_reflector.tooltip" : "§7Used for \"Simple\" Fusion Reactions",
+    "item.kubejs.advanced_neutron_reflector" : "Advanced Neutron Reflector",
+    "item.kubejs.advanced_neutron_reflector.tooltip" : "§7Stronger and more powerful, it uses heavier elements to enable it.",
+    "item.kubejs.complex_neutron_reflector" : "Complex Neutron Reflector",
+    "item.kubejs.complex_neutron_reflector.tooltip" : "§7Capable of enabling Abydos Technologies.",
+    "item.kubejs.reinforced_neutron_reflector" : "Reinforced Neutron Reflector",
+    "item.kubejs.reinforced_neutron_reflector.tooltip" : "§7What is needed for pure neutronic substance.",
+    "item.kubejs.borealic_neutron_reflector" : "Borealic Neutron Reflector",
+    "item.kubejs.borealic_neutron_reflector.tooltip" : "§7The beginnings of stellar substances.",
+    "item.kubejs.dragonic_neutron_reflector" : "Dragonic Neutron Reflector",
+    "item.kubejs.dragonic_neutron_reflector.tooltip" : "§7Ultized for the most intense of plasmas.",
+    "item.kubejs.prismalic_neutron_reflector" : "Prismalic Neutron Reflector",
+    "item.kubejs.prismalic_neutron_reflector.tooltip" : "§7Prismalic Assencion: Initiated",
+
+    "block.kubejs.basic_reflector_casing": "Basic Neutron Reflector Casing",
+    "block.kubejs.advanced_reflector_casing": "Advanced Neutron Reflector Casing",
+    "block.kubejs.complex_reflector_casing": "Complex Neutron Reflector Casing",
+    "block.kubejs.reinforced_reflector_casing": "Reinforced Neutron Reflector Casing",
+    "block.kubejs.borealic_reflector_casing": "Borealic Neutron Reflector Casing",
+    "block.kubejs.dragonic_reflector_casing": "Dragonic Neutron Reflector Casing",
+    "block.kubejs.prismalic_reflector_casing": "Prismalic Neutron Reflector Casing"
+
 }
