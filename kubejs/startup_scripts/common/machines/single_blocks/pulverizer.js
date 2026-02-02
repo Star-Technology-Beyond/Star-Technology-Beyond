@@ -4,7 +4,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         .setMaxIOSize(2, 2, 0, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.COMPUTATION);
+        .setSound(GTSoundEntries.MACERATOR)
+        .setIconSupplier(() => Item.of('gtceu:lv_pulverizer'));
+});
+
+GTCEuStartupEvents.registry('gtceu:recipe_category', event => {
+    event.create('pulverizer_heated')
+        .recipeType('pulverizer');
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {

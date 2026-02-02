@@ -47,6 +47,7 @@ ServerEvents.recipes(event => {
                 .itemOutputs(`${typeof furnOutput === "string" ? furnOutput : furnOutput.item}`)
                 .circuit(1)
                 .duration(300)
+                .category('pulverizer_heated')
                 .EUt(GTValues.VA[GTValues.LV])
 
             event.recipes.gtceu.pulverizer(id(`raw_heated_${oreName}`))
@@ -54,6 +55,7 @@ ServerEvents.recipes(event => {
                 .itemOutputs(`${furnOutput.count || 1}x ${typeof furnOutput === "string" ? furnOutput : furnOutput.item}`)
                 .circuit(1)
                 .duration(300)
+                .category('pulverizer_heated')
                 .EUt(GTValues.VA[GTValues.LV])
         }
     });
