@@ -94,5 +94,8 @@ global.getComponentTotal = (components) => {
       block.tertBlock = true;
   }
   
-  return [totalCounts, block];
+  return {
+    endCount: totalCounts,
+    blockBool: block
+  };
 }
