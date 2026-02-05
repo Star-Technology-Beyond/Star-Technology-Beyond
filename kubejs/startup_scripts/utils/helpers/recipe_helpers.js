@@ -48,3 +48,51 @@ global.calculateRecyclingVoltageMultiplier = (itemOutputs) => {
   if (highestTemp < 2000) return 4;
   return 16;
 };
+
+// breaks components down into their base materials
+global.getComponentTotal = (components) => {
+  const componentRecycleCount = global.componentRecycleCount;
+  const length = components.length;
+  const totalCounts = {
+      primCount: 0,
+      cableCount: 0,
+      secCount: 0,
+      tertCount: 0
+  }
+  const block = { 
+      primBlock: false,
+      cableBlock: false,
+      secBlock: false,
+      tertBlock: false
+  }
+
+  // adds all sent component ingredients together
+  let component; 
+  for (let x=0; x<=length; x++) {
+      component = componentRecycleCount[components[x]]
+      totalCounts.primCount += component.primCount;
+      totalCounts.cableCount += component.cableCount;
+      totalCounts.secCount += component.secCount;
+      totalCounts.tertCount += component.tertCount;
+  }
+
+  // checks if the value should be sent in block form
+  if (totalCounts.primCount > 64) {
+      totalCounts.primCount = Math.trunc(totalCounts.primCount / 9);
+      block.primBlock = true;
+  }
+  if (totalCounts.cableCount > 64) {
+      totalCounts.cableCount = Math.trunc(totalCounts.cableCount / 9);
+      block.cableBlock = true;
+  }
+  if (totalCounts.secCount > 64) {
+      totalCounts.secCount = Math.trunc(totalCounts.secCount / 9);
+      block.secBlock = true;
+  }
+  if (totalCounts.tertCount > 64) {
+      totalCounts.tertCount = Math.trunc(totalCounts.tertCount / 9);
+      block.tertBlock = true;
+  }
+  
+  return totalCounts, block;
+}
