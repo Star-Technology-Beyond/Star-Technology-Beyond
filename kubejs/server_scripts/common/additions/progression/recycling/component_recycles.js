@@ -1,0 +1,77 @@
+global.componentRecycles = {
+    uhv: {
+        primMaterial: `gtceu:zalloy`,
+        cable: `gtceu:europium`,
+        secMaterial: `gtceu:zircalloy_4_ingot`,
+        tertMaterial: `gtceu:zirconium`
+    },
+    uev: {
+        primMaterial: `gtceu:starium_alloy`,
+        cable: `gtceu:cerium_tritelluride`,
+        secMaterial: `gtceu:magmada_alloy`,
+        tertMaterial: `gtceu:mythrollic_alloy`
+    },
+    uiv: {
+        primMaterial: `gtceu:ohmderblux_alloy`,
+        cable: `gtceu:polonium_bismide`,
+        secMaterial: `gtceu:chaotixic_alloy`,
+        tertMaterial: `gtceu:abyssal_alloy`
+    }
+}
+
+global.componentRecycleCount = {
+    sensor: {
+        primCount: 18,
+        cableCount: 10,
+        secCount: 1,
+        tertiaryCount: 4
+    },
+    emitter:{
+        primCount: 18,
+        cableCount: 10,
+        secCount: 1,
+        tertiaryCount: 4
+    },
+    field_generator: {
+        primCount: 62,
+        cableCount: 30,
+        secCount: 3,
+        tertiaryCount: 4
+    },
+    robot_arm: {
+        primCount: 48,
+        cableCount: 24,
+        secCount: 9,
+        tertiaryCount: 12
+    },
+    electric_piston: {
+        primCount: 27,
+        cableCount: 8,
+        secCount: 5,
+        tertiaryCount: 6
+    },
+    conveyor_module: {
+        primCount: 27,
+        cableCount: 12,
+        secCount: 4,
+        tertiaryCount: 8
+    },
+    fluid_regulator: {
+        primCount: 11,
+        cableCount: 4,
+        secCount: 8,
+        tertiaryCount: 4
+    },
+    electric_pump: {
+        primCount: 11,
+        cableCount: 4,
+        secCount: 8,
+        tertiaryCount: 4
+    },
+    electric_motor: {
+        primCount: 6,
+        cableCount: 4,
+        secCount: 0,
+        tertiaryCount: 4
+    }
+}
