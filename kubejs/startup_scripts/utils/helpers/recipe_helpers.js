@@ -73,7 +73,7 @@ global.getComponentTotal = (components) => {
   return totalCounts;
 }
 
-// checks if input value is too big for one output slot (built for component recycling) 
+// checks if input value is too big for one output slot, then breaks down into block form (built for component recycling) 
 global.checkComponentCount = (values) => {
   const blocksBools = {
     primBlock: false,
@@ -81,10 +81,10 @@ global.checkComponentCount = (values) => {
     secBlock: false,
     tertBlock: false
   }
-  if (values.primCount > 64) {blocksBools.primBlock = true};
-  if (values.cableCount > 64) {blocksBools.cableBlock = true};
-  if (values.secCount > 64) {blocksBools.secBlock = true};
-  if (values.tertCount > 64) {blocksBools.tertBlock = true};
+  if (values.primCount > 64) {blocksBools.primBlock = true; values.primCount = Math.floor(values.primCount/9);};
+  if (values.cableCount > 64) {blocksBools.cableBlock = true; values.cableCount = Math.floor(values.cableCount/9);}; 
+  if (values.secCount > 64) {blocksBools.secBlock = true; values.secCount = Math.floor(values.secCount/9);};
+  if (values.tertCount > 64) {blocksBools.tertBlock = true; values.tertCount = Math.floor(values.tertCount/9);};
 
-  return blocksBools;
+  return {blocksBools, values};
 }
