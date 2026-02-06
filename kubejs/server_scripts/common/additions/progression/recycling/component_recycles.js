@@ -26,7 +26,7 @@ global.componentRecycleCount = {
         secCount: 1,
         tertCount: 4
     },
-    emitter:{
+    emitter: {
         primCount: 18,
         cableCount: 10,
         secCount: 1,

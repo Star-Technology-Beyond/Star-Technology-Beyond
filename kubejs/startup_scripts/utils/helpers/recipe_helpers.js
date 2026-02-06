@@ -61,9 +61,8 @@ global.getComponentTotal = (components) => {
   }
 
   // adds all sent component ingredients together
-  let component; 
   for (let x=0; x<=length; x++) {
-      component = componentRecycleCount[components[x]]
+      var component = componentRecycleCount[components[x]]
       totalCounts.primCount += component.primCount;
       totalCounts.cableCount += component.cableCount;
       totalCounts.secCount += component.secCount;
