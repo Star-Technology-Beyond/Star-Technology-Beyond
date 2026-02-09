@@ -85,5 +85,5 @@ global.checkComponentCount = (values) => {
   if (values.secCount > 64) {blocksBools.secBlock = true; values.secCount = Math.floor(values.secCount/9);};
   if (values.tertCount > 64) {blocksBools.tertBlock = true; values.tertCount = Math.floor(values.tertCount/9);};
 
-  return {blocksBools, values};
+  return (blocksBools, values);
 }

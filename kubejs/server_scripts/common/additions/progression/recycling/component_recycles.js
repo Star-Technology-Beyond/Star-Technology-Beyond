@@ -1,21 +1,21 @@
 global.componentRecycles = {
     uhv: {
-        primMaterial: `gtceu:zalloy`,
-        cable: `gtceu:europium`,
-        secMaterial: `gtceu:zircalloy_4`,
-        tertMaterial: `gtceu:zirconium`
+        primMaterial: "gtceu:zalloy",
+        cable: "gtceu:europium",
+        secMaterial: "gtceu:zircalloy_4",
+        tertMaterial: "gtceu:zirconium"
     },
     uev: {
-        primMaterial: `gtceu:starium_alloy`,
-        cable: `gtceu:cerium_tritelluride`,
-        secMaterial: `gtceu:magmada_alloy`,
-        tertMaterial: `gtceu:mythrollic_alloy`
+        primMaterial: "gtceu:starium_alloy",
+        cable: "gtceu:cerium_tritelluride",
+        secMaterial: "gtceu:magmada_alloy",
+        tertMaterial: "gtceu:mythrollic_alloy"
     },
     uiv: {
-        primMaterial: `gtceu:ohmderblux_alloy`,
-        cable: `gtceu:polonium_bismide`,
-        secMaterial: `gtceu:abyssal_alloy`,
-        tertMaterial: `gtceu:chaotixic_alloy`
+        primMaterial: "gtceu:ohmderblux_alloy",
+        cable: "gtceu:polonium_bismide",
+        secMaterial: "gtceu:abyssal_alloy",
+        tertMaterial: "gtceu:chaotixic_alloy"
     }
 }
 
