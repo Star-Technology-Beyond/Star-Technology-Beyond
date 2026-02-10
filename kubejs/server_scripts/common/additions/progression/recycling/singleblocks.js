@@ -7,7 +7,7 @@ global.not_hardmode(() => {
             "electric_furnace", "electric_blast_furnace", "electric_smoker", "alloy_smelter", "arc_furnace", "electrolyzer", "polarizer", 
             "charger_4x", "assembler", "autoclave", "bender", "brewery", "canner", "centrifuge", "chemical_bath", "chemical_reactor",
             "compressor", "cutter", "distillery", "electromagnetic_separator", "extractor", "extruder", "fermenter", "fluid_heater",
-            "fluid_solidifier", "forge_hammer", "lathe", "scanner", "mixer", "ore_washer", "packer", "laser_engraver", "sifter", 
+            "fluid_solidifier", "forge_hammer", "forming_press", "lathe", "scanner", "mixer", "ore_washer", "packer", "laser_engraver", "sifter", 
             "thermal_centrifuge", "wiremill", "circuit_assembler", "macerator", "gas_collector", "rock_crusher"
         ]
         const SINGLEBLOCKDETAILS = { //if specialSingle = true, the next 3 are blank/unread
@@ -193,6 +193,13 @@ global.not_hardmode(() => {
                 extraCasings: 0, 
                 extraCables: 3
             },
+            forming_press: {
+                name: "forming_press",
+                specialSingle: false,
+                components: ["electric_piston", "electric_piston"],
+                extraCasings: 0,
+                extraCables: 3
+            },
             lathe: {
                 name: "lathe",
                 specialSingle: false,
@@ -358,29 +365,34 @@ global.not_hardmode(() => {
             else {
                 const tempTotals = global.getComponentTotal(components);
                  tempTotals.cableCount += extraCables;
-                console.log(`counts pre block check: prim:${tempTotals.primCount}, cable: ${tempTotals.cableCount}, sec: ${tempTotals.secCount}, tert: ${tempTotals.tertCount}`);
+                console.log(`counts pre block check: prim: ${tempTotals.primCount}, cable: ${tempTotals.cableCount}, sec: ${tempTotals.secCount}, tert: ${tempTotals.tertCount}`);
                 const tempArr = global.checkComponentCount(tempTotals);
                 const {
-                    primBlock,
-                    cableBlock,
-                    secBlock,
-                    tertBlock
-                } = tempArr[0];
-                const blockBools = [primBlock, cableBlock, secBlock, tertBlock]; //converts obj to array
-                const {
-                    primCount,
-                    cableCount,
-                    secCount,
-                    tertCount
-                } = tempArr[1];
+                    blockBools: {
+                        primBlock,
+                        cableBlock,
+                        secBlock,
+                        tertBlock
+                    },
+                    totals: {
+                        primCount,
+                        cableCount,
+                        secCount,
+                        tertCount
+                    }
+                } = tempArr;
                 
+                console.log(`counts post block check: prim: ${primCount}, cable: ${cableCount}, sec: ${secCount}, tert: ${tertCount}`);
                 let position = 0;
-                if (casingCount != 0) {recycleOutputs[position] = `${casingCount}x ${materials.casing}`; position++;}
+                recycleOutputs[position] = `${casingCount}x ${materials.casing}`; position++;
                 if (primCount != 0) {recycleOutputs[position] = `${primCount}x ${materials.compPrim}`; position++;}
                 if (cableCount != 0) {recycleOutputs[position] = `${cableCount}x ${materials.cable}`; position++;}
                 if (secCount != 0) {recycleOutputs[position] = `${secCount}x ${materials.compSec}`; position++;}
                 if (tertCount != 0) {recycleOutputs[position] = `${tertCount}x ${materials.compTert}`; position++;}
-                recycleOutputs.concat(blockBools);
+                recycleOutputs[position] = primBlock; position++;
+                recycleOutputs[position] = cableBlock; position++;
+                recycleOutputs[position] = secBlock; position++;
+                recycleOutputs[position] = tertBlock; position++;
             }
             if (recycleOutputs != undefined) {
                 console.log(`recycleOutputs: ${recycleOutputs}`);
@@ -390,11 +402,12 @@ global.not_hardmode(() => {
 
         function getFinalOutputs(outputs, macBool, specialSingleBool) {
             let finalOutputs = [];
-            let i=1;
-            let len = outputs.length;
+            let len = outputs.length - 1;
             const blockBools = [outputs[len-3], outputs[len-2], outputs[len-1], outputs[len]]; //gets the booleans out of the end of the outputs array
 
+            //macerator
             if (macBool) {
+                //special singles
                 if (specialSingleBool) {
                     for (let x = 0; x < 5; x++) {
                         if (outputs[x] == "gtceu:graphite_dust") {
@@ -405,29 +418,32 @@ global.not_hardmode(() => {
                         }
                     }
                 }
+                //normal singles
                 else {
                     finalOutputs[0] = `${outputs[0]}_dust`;
-                    blockBools.forEach(blockBool => {
-                        if (blockBool) {
-                            if (outputs[i] != " ") {
-                                finalOutputs[i] = `${outputs[i]}_dust_block`;
-                            }
+                    //adds end sig to every output
+                    for (let x = 1; x < len-3; x++) {
+                        //if item is a block
+                        if (blockBools[x-1]) {
+                            finalOutputs[x] = `${outputs[x]}_dust_block`;
                         }
+                        //if not
                         else {
-                            if (outputs[i] != " ") {
-                                finalOutputs[i] = `${outputs[i]}_dust`;
-                            }
+                            finalOutputs[x] = `${outputs[x]}_dust`;
                         }
-                        i++;
-                    });
+                    }
                 }
             }
+            //arc furnace
             else {
                 if (specialSingleBool) {
+                    //adds end sig to every output
                     for (let x = 0; x < 5; x++) {
+                        //if single = arc furnace leave as is
                         if (outputs[x] == "gtceu:graphite_dust") {
                             finalOutputs[x] = outputs[x];
                         }
+                        //if not empty
                         else if (outputs[x] != " ") {
                             finalOutputs[x] = `${outputs[x]}_ingot`;
                         }
@@ -435,19 +451,17 @@ global.not_hardmode(() => {
                 }
                 else {
                     finalOutputs[0] = `${outputs[0]}_ingot`;
-                    blockBools.forEach(blockBool => {
-                        if (blockBool) {
-                            if (outputs[i] != " ") {
-                                finalOutputs[i] = `${outputs[i]}_block`;
-                            }
+                    //adds end sig to every output
+                    for (let x = 1; x < len-3; x++) {
+                        //if item is a block
+                        if (blockBools[x-1]) {
+                            finalOutputs[x] = `${outputs[x]}_block`;
                         }
+                        //if not
                         else {
-                            if (outputs[i] != " ") {
-                                finalOutputs[i] = `${outputs[i]}_ingot`;
-                            }
+                            finalOutputs[x] = `${outputs[x]}_ingot`;
                         }
-                        i++;
-                    });
+                    }
                 }
             }
 

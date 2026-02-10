@@ -144,17 +144,55 @@ global.getComponentTotal = (components) => {
 }
 
 // checks if input value is too big for one output slot, then breaks down into block form (built for component recycling) 
-global.checkComponentCount = (values) => {
-  const blocksBools = {
-    primBlock: false,
-    cableBlock: false,
-    secBlock: false,
-    tertBlock: false
+global.checkComponentCount = (tempTotals) => {
+  const finalOutput = {
+    blockBools: {
+      primBlock: false,
+      cableBlock: false,
+      secBlock: false,
+      tertBlock: false
+    },
+    totals: {
+      primCount: 0,
+      cableCount: 0,
+      secCount: 0,
+      tertCount: 0
+    }
   }
-  if (values.primCount > 64) {blocksBools.primBlock = true; values.primCount = Math.floor(values.primCount/9);};
-  if (values.cableCount > 64) {blocksBools.cableBlock = true; values.cableCount = Math.floor(values.cableCount/9);}; 
-  if (values.secCount > 64) {blocksBools.secBlock = true; values.secCount = Math.floor(values.secCount/9);};
-  if (values.tertCount > 64) {blocksBools.tertBlock = true; values.tertCount = Math.floor(values.tertCount/9);};
 
-  return [blocksBools, values];
+  
+
+  if (tempTotals.primCount > 64) {
+    finalOutput.blockBools.primBlock = true; 
+    finalOutput.totals.primCount = Math.floor(tempTotals.primCount / 9);
+  }
+  else {
+    finalOutput.totals.primCount = tempTotals.primCount;
+  }
+
+  if (tempTotals.cableCount > 64) {
+    finalOutput.blockBools.cableBlock = true; 
+    finalOutput.totals.cableCount = Math.floor(tempTotals.cableCount / 9);
+  }
+  else {
+    finalOutput.totals.cableCount = tempTotals.cableCount;
+  }
+
+  if (tempTotals.secCount > 64) {
+    finalOutput.blockBools.secBlock = true; 
+    finalOutput.totals.secCount = Math.floor(tempTotals.secCount / 9);
+  }
+  else {
+    finalOutput.totals.secCount = tempTotals.secCount;
+  }
+
+  if (tempTotals.tertCount > 64) {
+    finalOutput.blockBools.tertBlock = true; 
+    finalOutput.totals.tertCount = Math.floor(tempTotals.tertCount / 9);
+  }
+  else {
+    finalOutput.totals.tertCount = tempTotals.tertCount;
+  }
+
+  return finalOutput;
 }
