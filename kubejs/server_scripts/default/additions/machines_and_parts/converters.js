@@ -1,14 +1,8 @@
 global.not_hardmode(() => {
 
     ServerEvents.recipes(event => {
-        const id = global.id;
-        const calculateDuration = global.calculateRecyclingDuration;
-        const calculateVoltageMultiplier = global.calculateRecyclingVoltageMultiplier;
 
         event.remove({ output: /gtceu:.*_energy_converter/ });
-        // remove recyling recipes
-        event.remove({ input: /gtceu:.*_energy_converter/, type: 'gtceu:macerator' });
-        event.remove({ input: /gtceu:.*_energy_converter/, type: 'gtceu:arc_furnace' });
 
         const converterMaterials = {
             lv: {
@@ -100,38 +94,6 @@ global.not_hardmode(() => {
                 .itemOutputs(Item.of(`start_core:${tier}_64a_energy_converter`))
                 .duration(600)
                 .EUt(1625)
-        }
-
-        for (let amps of [1, 4, 8, 16, 64]) {
-            for (let [tier, info] of Object.entries(converterMaterials)) {
-                if (amps === 64 && !info.has64aConverter) continue;
-
-                let converterPrefix = amps === 64 ? "start_core" : "gtceu";
-
-                let cableArc = info.cable === 'gtceu:copper' ? 'gtceu:annealed_copper' : info.cable;
-                let outputsArc = [`8x ${info.casing}_ingot`, `${cableArc}_ingot`, `2x gtceu:tiny_ash_dust`];
-                let appendArc = amps === 64 ? [`64x ${info.superconductor}_ingot`, `64x ${info.superconductor}_ingot`] : [`${amps * 2}x ${info.superconductor}_ingot`];
-                outputsArc.splice.apply(outputsArc, [amps < 8 ? 1 : 0, 0].concat(appendArc));
-
-                let cableMacerator = info.cable === 'minecraft:gold' ? 'gtceu:gold' : info.cable;
-                let outputsMacerator = [`8x ${info.casing}_dust`, `2x gtceu:rubber_dust`, `${cableMacerator}_dust`];
-                let appendMacerator = amps === 64 ? [`64x ${info.superconductor}_dust`, `64x ${info.superconductor}_dust`] : [`${amps * 2}x ${info.superconductor}_dust`];
-                outputsMacerator.splice.apply(outputsMacerator, [amps < 8 ? 1 : 0, 0].concat(appendMacerator));
-
-                event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${amps}a_energy_converter`))
-                    .itemInputs(`${converterPrefix}:${tier}_${amps}a_energy_converter`)
-                    .itemOutputs(outputsArc)
-                    .duration(calculateDuration(outputsArc))
-                    .EUt(GTValues.VA[GTValues.LV])
-                    .category(GTRecipeCategories.ARC_FURNACE_RECYCLING);
-
-                event.recipes.gtceu.macerator(id(`macerate_${tier}_${amps}a_energy_converter`))
-                    .itemInputs(`${converterPrefix}:${tier}_${amps}a_energy_converter`)
-                    .itemOutputs(outputsMacerator)
-                    .duration(calculateDuration(outputsMacerator))
-                    .EUt(2 * calculateVoltageMultiplier(outputsMacerator))
-                    .category(GTRecipeCategories.MACERATOR_RECYCLING);
-            }
         }
     });
 });
