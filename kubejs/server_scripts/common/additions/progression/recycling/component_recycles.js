@@ -9,7 +9,7 @@ global.componentRecycles = {
         primMaterial: "gtceu:starium_alloy",
         cable: "gtceu:cerium_tritelluride",
         secMaterial: "gtceu:magmada_alloy",
-        tertMaterial: "gtceu:mythrollic_alloy"
+        tertMaterial: "gtceu:mythrolic_alloy"
     },
     uiv: {
         primMaterial: "gtceu:ohmderblux_alloy",

@@ -357,7 +357,8 @@ global.not_hardmode(() => {
             }
             else {
                 const tempTotals = global.getComponentTotal(components);
-                tempTotals.cableCount += extraCables;
+                 tempTotals.cableCount += extraCables;
+                console.log(`counts pre block check: prim:${tempTotals.primCount}, cable: ${tempTotals.cableCount}, sec: ${tempTotals.secCount}, tert: ${tempTotals.tertCount}`);
                 const tempArr = global.checkComponentCount(tempTotals);
                 const {
                     primBlock,
@@ -373,13 +374,13 @@ global.not_hardmode(() => {
                     tertCount
                 } = tempArr[1];
                 
-                recycleOutputs[0] = `${casingCount}x ${materials.casing}`;
-                recycleOutputs[1] = `${primCount}x ${materials.compPrim}`;
-                recycleOutputs[2] = `${cableCount}x ${materials.cable}`;
-                recycleOutputs[3] = `${secCount}x ${materials.compSec}`;
-                recycleOutputs[4] = `${tertCount}x ${materials.compTert}`;
-                recycleOutputs[5] = blockBools;
-                
+                let position = 0;
+                if (casingCount != 0) {recycleOutputs[position] = `${casingCount}x ${materials.casing}`; position++;}
+                if (primCount != 0) {recycleOutputs[position] = `${primCount}x ${materials.compPrim}`; position++;}
+                if (cableCount != 0) {recycleOutputs[position] = `${cableCount}x ${materials.cable}`; position++;}
+                if (secCount != 0) {recycleOutputs[position] = `${secCount}x ${materials.compSec}`; position++;}
+                if (tertCount != 0) {recycleOutputs[position] = `${tertCount}x ${materials.compTert}`; position++;}
+                recycleOutputs.concat(blockBools);
             }
             if (recycleOutputs != undefined) {
                 console.log(`recycleOutputs: ${recycleOutputs}`);
@@ -390,7 +391,8 @@ global.not_hardmode(() => {
         function getFinalOutputs(outputs, macBool, specialSingleBool) {
             let finalOutputs = [];
             let i=1;
-            const blockBools = outputs[5];
+            let len = outputs.length;
+            const blockBools = [outputs[len-3], outputs[len-2], outputs[len-1], outputs[len]]; //gets the booleans out of the end of the outputs array
 
             if (macBool) {
                 if (specialSingleBool) {
@@ -414,9 +416,6 @@ global.not_hardmode(() => {
                         else {
                             if (outputs[i] != " ") {
                                 finalOutputs[i] = `${outputs[i]}_dust`;
-                            }
-                            else if (outputs[x] == /0x .*/) {
-                                finalOutputs[i] = "";
                             }
                         }
                         i++;
@@ -445,9 +444,6 @@ global.not_hardmode(() => {
                         else {
                             if (outputs[i] != " ") {
                                 finalOutputs[i] = `${outputs[i]}_ingot`;
-                            }
-                            else if (outputs[x] == /0x .*/) {
-                                finalOutputs[i] = "";
                             }
                         }
                         i++;
@@ -506,8 +502,8 @@ global.not_hardmode(() => {
             
             console.log(`arcRecipe: name:${name}, specBool:${specialSingle}, tiers:${TIERS}, comps:${components}, casings: ${extraCasings}, cables: ${extraCables}`);
             arcRecipe(name, specialSingle, TIERS, components, extraCasings, extraCables);
-            console.log(`macRecipe: name:${name}, specBool:${specialSingle}, tiers:${TIERS}, comps:${components}, casings: ${extraCasings}, cables: ${extraCables}`);
-            macRecipe(name, specialSingle, TIERS, components, extraCasings, extraCables);
+            // console.log(`macRecipe: name:${name}, specBool:${specialSingle}, tiers:${TIERS}, comps:${components}, casings: ${extraCasings}, cables: ${extraCables}`);
+            // macRecipe(name, specialSingle, TIERS, components, extraCasings, extraCables);
         } 
         
         SINGLEBLOCKS.forEach(singleblock => {
