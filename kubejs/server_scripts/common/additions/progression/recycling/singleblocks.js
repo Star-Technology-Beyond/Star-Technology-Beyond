@@ -7,8 +7,8 @@ global.not_hardmode(() => {
             "electric_furnace", "electric_blast_furnace", "electric_smoker", "alloy_smelter", "arc_furnace", "electrolyzer", "polarizer", 
             "charger_4x", "assembler", "autoclave", "bender", "brewery", "canner", "centrifuge", "chemical_bath", "chemical_reactor",
             "compressor", "cutter", "distillery", "electromagnetic_separator", "extractor", "extruder", "fermenter", "fluid_heater",
-            "fluid_solidifier", "forge_hammer", "forming_press", "lathe", "scanner", "mixer", "ore_washer", "packer", "laser_engraver", "sifter", 
-            "thermal_centrifuge", "wiremill", "circuit_assembler", "macerator", "gas_collector", "rock_crusher"
+            "fluid_solidifier", "forge_hammer", "forming_press", "lathe", "scanner", "mixer", "ore_washer", "packer", "laser_engraver", 
+            "sifter", "thermal_centrifuge", "wiremill", "circuit_assembler", "macerator", "gas_collector", "rock_crusher"
         ]
         const SINGLEBLOCKDETAILS = { //if specialSingle = true, the next 3 are blank/unread
             electric_furnace: {
