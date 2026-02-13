@@ -43,6 +43,9 @@ global.not_hardmode(() => {
             }
         }
 
+        event.remove({ input: /gtceu:.*fusion_casing.*/, type: "gtceu:macerator" });
+        event.remove({ input: /gtceu:.*fusion_casing.*/, type: "gtceu:arc_furnace" });
+
         function getFusionCasingRecycleOutputs(field_generator_tier, casing_tier) {
             let finalOutputs = [];
             const componentRecycles = global.componentRecycles;
@@ -150,7 +153,6 @@ global.not_hardmode(() => {
                 }
             }
 
-            console.log(`final outputs: ${finalOutputs}`);
             return finalOutputs;
         }
 
