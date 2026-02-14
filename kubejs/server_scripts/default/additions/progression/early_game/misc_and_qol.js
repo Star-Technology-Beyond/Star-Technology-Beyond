@@ -126,5 +126,16 @@ global.not_hardmode(() => {
             B: `kubejs:moss_ball`
         }).id(`minecraft:moss_block`);
         
+        //pebble compressor recipes
+        [
+            "diorite", "blackstone", "basalt", "tuff", "deepslate", "dripstone", "granite", "calcite", "andesite", "stone"
+        ].forEach(stone => {
+            let output = (stone == "dripstone") ? "dripstone_block" : (stone == "stone") ? "cobblestone" : stone;
+            event.recipes.gtceu.compressor(id(`compress_${stone}_pebble`))
+                .itemInputs(`4x exnihilosequentia:${stone}_pebble`)
+                .itemOutputs(`minecraft:${output}`)
+                .duration(50)
+                .EUt(2)
+        })
     });
 });
