@@ -5,6 +5,7 @@ global.not_hardmode(() => {
         const calculateDuration = global.calculateRecyclingDuration;
         const calculateVoltageMultiplier = global.calculateRecyclingVoltageMultiplier;
 
+        //old recipe removals
         event.remove({ input: /gtceu:.*_energy_converter/, type: 'gtceu:macerator' });
         event.remove({ input: /gtceu:.*_energy_converter/, type: 'gtceu:arc_furnace' });
 

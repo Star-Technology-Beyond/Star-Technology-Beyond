@@ -306,15 +306,8 @@ global.not_hardmode(() => {
                 wire: "",
                 elctrlyzWire: ""
             }
-            let graphite;
+            const graphite = arcBool ? "7x gtceu:tiny_ash_dust" : "gtceu:graphite_dust";
             
-            if (arcBool) {
-                graphite = "7x gtceu:tiny_ash_dust";
-            }
-            else {
-                graphite = "gtceu:graphite_dust"; 
-            }
-
             switch(tier) {
                 case "uhv": {
                     const CRuhv = componentRecycles.uhv;

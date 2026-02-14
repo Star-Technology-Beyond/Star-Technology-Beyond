@@ -43,6 +43,7 @@ global.not_hardmode(() => {
             }
         }
 
+        //old recipe removals
         event.remove({ input: /gtceu:.*fusion_casing.*/, type: "gtceu:macerator" });
         event.remove({ input: /gtceu:.*fusion_casing.*/, type: "gtceu:arc_furnace" });
 
