@@ -190,7 +190,7 @@ global.not_hardmode(() => {
             let outputs;
 
             if (UHVPlus) {
-                let absoluteOutputs = getFinalOutputs(getParallelRecycleOutputs(tier, true, LUVToUV, UHVPlus), tier, false, false);
+                const absoluteOutputs = getFinalOutputs(getParallelRecycleOutputs(tier, true, LUVToUV, UHVPlus), tier, false, false);
                 event.recipes.gtceu.arc_furnace(id(`arc_${tier}_absolute_parallel_hatch`))
                     .itemInputs(`start_core:${tier}_absolute_parallel_hatch`)
                     .itemOutputs(absoluteOutputs)
@@ -225,7 +225,7 @@ global.not_hardmode(() => {
             let outputs;
 
             if (UHVPlus) {
-                let absoluteOutputs = getFinalOutputs(getParallelRecycleOutputs(tier, true, LUVToUV, UHVPlus), tier, true, false);
+                const absoluteOutputs = getFinalOutputs(getParallelRecycleOutputs(tier, true, LUVToUV, UHVPlus), tier, true, false);
                 event.recipes.gtceu.macerator(id(`macerate_${tier}_absolute_parallel_hatch`))
                     .itemInputs(`start_core:${tier}_absolute_parallel_hatch`)
                     .itemOutputs(absoluteOutputs)

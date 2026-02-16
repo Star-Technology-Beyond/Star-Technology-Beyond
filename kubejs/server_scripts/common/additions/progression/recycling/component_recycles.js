@@ -41,8 +41,8 @@ global.LUVToUVComponentRecycleCounts = {
     dreamlink_cover: {
         primCount: 13,
         cableCount: 4,
-        secCount: 1,
-        tertCount: 4
+        wireCount: 1,
+        foilCount: 4
     },
     sensor: {
         primCount: 13,
@@ -71,7 +71,7 @@ global.LUVToUVComponentRecycleCounts = {
 }
 
 global.UHVPlusComponentRecycleCounts = {
-    dreamlink_cover: { // NOTE: THIS DOES NOT INCLUDE THE 2 CASING FOIL IN RECIPE
+    dreamlink_cover: {
         primCount: 18,
         cableCount: 11,
         secCount: 1,
