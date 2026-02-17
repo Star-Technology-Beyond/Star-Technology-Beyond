@@ -463,7 +463,7 @@ global.not_hardmode(() => {
             let outputs;
 
             tiers.forEach(tier => {
-                outputs = getFinalOutputs(getSingleblockRecycleOutputs(true, singleblock, specialSingleBool, tier, components, extraCasings, extraCables), true, specialSingleBool);
+                outputs = getFinalOutputs(getSingleblockRecycleOutputs(false, singleblock, specialSingleBool, tier, components, extraCasings, extraCables), tier, true, specialSingleBool);
                 event.recipes.gtceu.macerator(id(`macerate_${tier}_${singleblock}`))
                     .itemInputs(`gtceu:${tier}_${singleblock}`)
                     .itemOutputs(outputs)
