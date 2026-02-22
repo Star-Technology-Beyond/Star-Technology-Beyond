@@ -130,23 +130,32 @@ ServerEvents.recipes(event => {
     ReflectorPanel(T6Panel,'rhenate_w','mythrotight_carbide_steel',T5Panel,'naquadated_soldering_alloy 1152',GTValues.VHA[GTValues.UHV],CleanroomType.STERILE_CLEANROOM);
     ReflectorPanel(T7Panel,'draco_abyssal','hvga_steel',T6Panel,'naquadated_soldering_alloy 2304',GTValues.VHA[GTValues.UEV],$StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
 
-    let ReflectorBlock = (output,core,tierFG,cable,plate,fluid,eut,clean) => {
-        event.recipes.gtceu.assembler(id(output.split(':')[1]))
-            .itemInputs(core,`gtceu:${tierFG}_field_generator`,'6x ' + plate,`4x gtceu:${cable}_single_cable`,'12x gtceu:trinium_foil')
+    let ReflectorBlock = (output,core,tierFG,cable,plate,fluid,tier,clean) => {
+        let fusionReflectorRecipe = event.recipes.gtceu.assembler(id(output.split(':')[1]))
+            .itemInputs('2x '+core,`gtceu:${tierFG}_field_generator`,'6x ' + plate,`4x gtceu:${cable}_single_cable`)
             .inputFluids('gtceu:'+fluid)
             .itemOutputs('2x ' + output)
             .duration(400)
-            .EUt(eut)
+            .EUt(GTValues.VA[GTValues.EV] * (4 ** tier))
             .cleanroom(clean);
+        if (tier == 1) {
+            fusionReflectorRecipe.itemInputs(`6x gtceu:trinium_foil`)
+        } else if (2 <= tier && tier <= 5) {
+            fusionReflectorRecipe.itemInputs(`${12 * (tier - 1)}x gtceu:trinium_foil`)
+        } else if (tier == 6) {
+            fusionReflectorRecipe.itemInputs(`64x gtceu:trinium_foil`)
+        } else if (tier == 7) {
+            fusionReflectorRecipe.itemInputs(`64x gtceu:trinium_foil`,`32x gtceu:trinium_foil`)
+        }
     }
 
-    ReflectorBlock(T1Reflector,'gtceu:enriched_naquadah_frame','iv','niobium_nitride',T1Panel,'polybenzimidazole 288',GTValues.VA[GTValues.IV],CleanroomType.CLEANROOM);
-    ReflectorBlock(T2Reflector,T1Reflector,'luv','vanadium_gallium',T2Panel,'polybenzimidazole 576',GTValues.VA[GTValues.LuV],CleanroomType.CLEANROOM);
-    ReflectorBlock(T3Reflector,T2Reflector,'zpm','yttrium_barium_cuprate',T3Panel,'polyether_ether_ketone 288',GTValues.VA[GTValues.ZPM],CleanroomType.CLEANROOM);
-    ReflectorBlock(T4Reflector,T3Reflector,'uv','europium',T4Panel,'polyether_ether_ketone 576',GTValues.VA[GTValues.UV],CleanroomType.STERILE_CLEANROOM);
-    ReflectorBlock(T5Reflector,T4Reflector,'uhv','cerium_tritelluride',T5Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 288',GTValues.VA[GTValues.UHV],CleanroomType.STERILE_CLEANROOM);
-    ReflectorBlock(T6Reflector,T5Reflector,'uev','polonium_bismide',T6Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 576',GTValues.VA[GTValues.UEV],CleanroomType.STERILE_CLEANROOM);
-    ReflectorBlock(T7Reflector,T6Reflector,'uiv','lepton_resonant_thallium_antimonide',T7Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 1152',GTValues.VA[GTValues.UIV],$StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
+    ReflectorBlock(T1Reflector,'gtceu:enriched_naquadah_frame','iv','niobium_nitride',T1Panel,'polybenzimidazole 288',1,CleanroomType.CLEANROOM);
+    ReflectorBlock(T2Reflector,T1Reflector,'luv','vanadium_gallium',T2Panel,'polybenzimidazole 576',2,CleanroomType.CLEANROOM);
+    ReflectorBlock(T3Reflector,T2Reflector,'zpm','yttrium_barium_cuprate',T3Panel,'polyether_ether_ketone 288',3,CleanroomType.CLEANROOM);
+    ReflectorBlock(T4Reflector,T3Reflector,'uv','europium',T4Panel,'polyether_ether_ketone 576',4,CleanroomType.STERILE_CLEANROOM);
+    ReflectorBlock(T5Reflector,T4Reflector,'uhv','cerium_tritelluride',T5Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 288',5,CleanroomType.STERILE_CLEANROOM);
+    ReflectorBlock(T6Reflector,T5Reflector,'uev','polonium_bismide',T6Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 576',6,CleanroomType.STERILE_CLEANROOM);
+    ReflectorBlock(T7Reflector,T6Reflector,'uiv','lepton_resonant_thallium_antimonide',T7Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 1152',7,$StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
 
     // === Coils ===    
     event.remove({output: 'gtceu:superconducting_coil'});

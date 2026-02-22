@@ -18,8 +18,8 @@ ServerEvents.recipes(event => {
             .inputFluids(inputs)
             .itemInputs(`${IngQuant}x kubejs:${catalyst}_catalyst`)
             .blastFurnaceTemp(HeatMK)
-            .duration(SecDurPerIng * 20 * IngQuant * .9)
-            .outputFluids(`gtceu:${type}_plasma ${IngQuant * 144 * 1.125}`)
+            .duration(SecDurPerIng * 20 * IngQuant * .85)
+            .outputFluids(`gtceu:${type}_plasma ${IngQuant * 144 * 1.25}`)
             .itemOutputs(`${IngQuant}x gtceu:tiny_hellfire_ash_dust`)
             .EUt(eut)
             .circuit(inputs.length + 10);
@@ -50,18 +50,18 @@ ServerEvents.recipes(event => {
     HellForgeMat('abyssal_alloy', 14, ['gtceu:xeproda 720', 'gtceu:blue_alloy 432', 'gtceu:void 576', 'gtceu:flerovium 144', 'gtceu:zapolgium 144'], 'voidic', 'abyssal', 1586, GTValues.VHA[GTValues.UIV], 38.5);
     HellForgeMat('chaotixic_alloy', 24, ['gtceu:rhexis 864', 'gtceu:stellite_100 288', 'gtceu:hafnium 144', 'gtceu:electrum 1728', 'gtceu:vanadium_steel 432'], 'paradox', 'abyssal', 1472, GTValues.VHA[GTValues.UIV], 43.7);
     HellForgeMat('ohmderblux_alloy', 23, ['gtceu:chalyblux 720', 'gtceu:maraging_steel_300 288', 'gtceu:zirconium 576', 'gtceu:glowstone 1296', 'gtceu:ultimet 432'], 'paradox', 'abyssal', 1351, GTValues.VHA[GTValues.UIV], 46.9);
-    HellForgeMat('draconyallium', 258, ['gtceu:duranium 9792', 'gtceu:silver 2880', 'gtceu:oxygen_plasma 94000', 'gtceu:nitrogen_plasma 76000', 'gtceu:dragon_breath 25800'], 'voidic', 'abyssal', 1444, GTValues.VHA[GTValues.UXV], 13.3);
-    HellForgeMat('draco_abyssal', 9, ['gtceu:draconyallium 144', 'gtceu:abyssal_alloy 432', 'gtceu:void 288', 'gtceu:ancient_runicalium 432'], 'preon', 'abyssal', 1758, GTValues.VA[GTValues.UXV], 39.4);
-    HellForgeMat('expetidalloy_d_17', 17, ['gtceu:hafnide_ceramic_base 288', 'gtceu:hastelloy_c_276 1584', 'gtceu:dragonsteel 432', 'gtceu:rhodium_plated_palladium 144'], 'americium', 'ascendant', 863, GTValues.VA[GTValues.UIV], 32.7);
+    HellForgeMat('draconyallium', 258, ['gtceu:duranium 9792', 'gtceu:silver 2880', 'gtceu:oxygen_plasma 94000', 'gtceu:nitrogen_plasma 76000', 'gtceu:dragon_breath 25800'], 'voidic', 'abyssal', 1444, GTValues.VA[GTValues.UIV], 16.0);
+    HellForgeMat('draco_abyssal', 9, ['gtceu:draconyallium 144', 'gtceu:abyssal_alloy 432', 'gtceu:void 288', 'gtceu:ancient_runicalium 432'], 'preon', 'abyssal', 1658, GTValues.VHA[GTValues.UXV], 39.4);
+    HellForgeMat('expetidalloy_d_17', 17, ['gtceu:hafnide_ceramic_base 288', 'gtceu:hastelloy_c_276 1584', 'gtceu:dragonsteel 432', 'gtceu:rhodium_plated_palladium 144'], 'americium', 'infernal', 863, GTValues.VA[GTValues.UIV], 32.7);
     HellForgeMat('rhenate_w', 33, ['gtceu:rhenium 288', 'gtceu:tungsten 720', 'gtceu:neutronium 144', 'gtceu:rose_gold 2592', 'gtceu:neodymium 1008'], 'tin', 'ascendant', 946, GTValues.VA[GTValues.UIV], 34.3);
     HellForgeMat('borealic_steel', 20, ['gtceu:prismalium 288', 'gtceu:rose_gold 576', 'gtceu:aurourium 1152', 'gtceu:titan_steel 288', 'gtceu:ancient_netherite 144', 'gtceu:borealic_concentrate 432'], 'argon', 'ascendant', 974, GTValues.VA[GTValues.UIV], 31.5)
     HellForgeMat('ultispestalloy_cmsh', 27, ['gtceu:magmada_alloy 288', 'gtceu:shellite 432', 'gtceu:ultimet 2160', 'gtceu:hastelloy_c_276 864', 'gtceu:hafnium 144'], 'iron', 'ascendant', 916, GTValues.VA[GTValues.UIV], 29.4);
-    HellForgeMat('trikoductive_neutro_steel', 17, ['gtceu:isovol 864', 'gtceu:titan_steel 720', 'gtceu:estalt 144', 'gtceu:ruthenium_trinium_americium_neutronate 432', 'gtceu:twinite 288'], 'helium', 'ascendant', 981, GTValues.VA[GTValues.UIV], 35.1);
+    HellForgeMat('trikoductive_neutro_steel', 17, ['gtceu:isovol 864', 'gtceu:titan_steel 720', 'gtceu:estalt 144', 'gtceu:ruthenium_trinium_americium_neutronate 432', 'gtceu:twinite 288'], 'helium', 'infernal', 981, GTValues.VA[GTValues.UIV], 35.1);
     HellForgeMat('melastrium_mox', 13, ['gtceu:osmiridium 288', 'gtceu:astrenalloy_nx 1008', 'gtceu:melodium 432', 'gtceu:potin 144'], 'nickel', 'ascendant', 955, GTValues.VA[GTValues.UIV], 31.4);
-    HellForgeMat('hvga_steel', 16, ['gtceu:signalum 144', 'gtceu:hssg 432', 'gtceu:draco_abyssal 144', 'gtceu:hsla_steel 1152', 'gtceu:titan_steel 432'], 'magmatic', 'ascendant', 1013, GTValues.VA[GTValues.UIV], 32.6);
+    HellForgeMat('hvga_steel', 16, ['gtceu:signalum 144', 'gtceu:hssg 432', 'gtceu:draco_abyssal 144', 'gtceu:hsla_steel 1152', 'gtceu:titan_steel 432'], 'magmatic', 'abyssal', 1343, GTValues.VA[GTValues.UXV], 21.6);
     HellForgeMat('mythrotight_carbide_steel', 19, ['gtceu:watertight_steel 1152', 'gtceu:mythril 288', 'gtceu:samarium_iron_arsenic_oxide 720', 'gtceu:tungsten_carbide 432', 'gtceu:kanthal 144'], 'iron', 'ascendant', 966, GTValues.VA[GTValues.UIV], 36.7);
-    HellForgeMat('aerorelient_steel', 17, ['gtceu:cobalt_brass 432', 'gtceu:red_steel 864', 'gtceu:watertight_steel 288', 'gtceu:hsse 720', 'gtceu:indium 144'], 'helium', 'ascendant', 927, GTValues.VA[GTValues.UIV], 26.5);
-    HellForgeMat('zeroidic_trinate_steel', 17, ['gtceu:enriched_naquadah_trinium_europium_duranide 432', 'gtceu:zeron_100 1008', 'gtceu:xeproda 144', 'gtceu:titan_steel 288', 'gtceu:calamatium 576'], 'magmatic', 'ascendant', 1021, GTValues.VA[GTValues.UIV], 41.1);
+    HellForgeMat('aerorelient_steel', 17, ['gtceu:cobalt_brass 432', 'gtceu:red_steel 864', 'gtceu:watertight_steel 288', 'gtceu:hsse 720', 'gtceu:indium 144'], 'helium', 'infernal', 927, GTValues.VA[GTValues.UIV], 26.5);
+    HellForgeMat('zeroidic_trinate_steel', 17, ['gtceu:enriched_naquadah_trinium_europium_duranide 432', 'gtceu:zeron_100 1008', 'gtceu:xeproda 144', 'gtceu:titan_steel 288', 'gtceu:calamatium 576'], 'magmatic', 'abyssal', 1021, GTValues.VA[GTValues.UIV], 41.1);
     HellForgeMat('vastaqalloy_cr_4200x', 15, ['gtceu:thacoloy_nq_42x 720', 'gtceu:stellite_100 576', 'gtceu:vanadium_gallium 288', 'gtceu:tungsten_steel 432', 'gtceu:chromium 144'], 'americium', 'ascendant', 951, GTValues.VA[GTValues.UIV], 27.3);
     HellForgeMat('soul_ascendant_cuperite', 27, ['gtceu:soul_infused 1728', 'gtceu:nickel_zinc_ferrite 432', 'gtceu:magnalium 864', 'gtceu:niobium_nitride 720', 'gtceu:mercury_barium_calcium_cuprate 144'], 'nitrogen', 'ascendant', 1158, GTValues.VA[GTValues.UIV], 13.8);
 
