@@ -108,10 +108,13 @@ global.getUHVPlusComponentTotal = (components) => {
   return totalCounts;
 }
 
+function compareNumbers(a,b) {
+  return b - a;
+}
 // checks if input value is too big for one output slot, then breaks down into block form 
 global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
   if (UHVPLUS) {
-    const finalOutput = {
+    let finalOutput = {
       blockBools: {
         primBlock: false,
         cableBlock: false,
@@ -131,32 +134,35 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
     // orders outputs by size
     if (casingBool) {
       let knownPositions = [];
-      let toBeSorted = [tempTotals.casingCount, tempTotals.primCount, tempTotals.cableCount, tempTotals.secCount, tempTotals.tertCount];
-      const sorted = toBeSorted.sort();
+      let toBeSorted = [`${tempTotals.casingCount}`, `${tempTotals.primCount}`, `${tempTotals.cableCount}`, `${tempTotals.secCount}`, `${tempTotals.tertCount}`];
+      let sorted = Array.from(toBeSorted);
+      sorted.sort(compareNumbers);
+      console.log(`toBeSorted: ${toBeSorted} sorted: ${sorted}`);
       let material;
       let found;
       let n;
 
+      finalOutput.totals.casingCount = tempTotals.casingCount;
       for(let i = 0; i < 5; i++) {
         // gets what material is in said position
         switch (i) {
-          case "0": {
+          case 0: {
             material = "casing";
             break;
           }
-          case "1": {
+          case 1: {
             material = "prim";
             break;
           }
-          case "2": {
+          case 2: {
             material = "cable";
             break;
           }
-          case "3": {
+          case 3: {
             material = "sec";
             break;
           }
-          case "4": {
+          case 4: {
             material = "tert";
             break;
           }
@@ -167,11 +173,12 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
         n = 0;
         while (!found) {
           if (toBeSorted[i] == sorted[n]) {
-            if (knownPositions.includes(i)) { // counters duplicate output nums
+            if (knownPositions.includes(n)) { // counters duplicate output nums
               n++;
             }
             else {
               knownPositions.push(n);
+              finalOutput.outputOrder[n] = material;
               found = true;
             }
           }
@@ -179,14 +186,14 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
             n++;
           }
         }
-        // tells the final output which material is where
-        finalOutput.outputOrder[n] = material;
       }
+      console.log(`output order: ${finalOutput.outputOrder}`);
     }
     else {
       let knownPositions = [];
-      let toBeSorted = [tempTotals.primCount, tempTotals.cableCount, tempTotals.secCount, tempTotals.tertCount];
-      const sorted = toBeSorted.sort();
+      let toBeSorted = [`${tempTotals.primCount}`, `${tempTotals.cableCount}`, `${tempTotals.secCount}`, `${tempTotals.tertCount}`];
+      let sorted = Array.from(toBeSorted);
+      sorted.sort(compareNumbers);
       let material;
       let found;
       let n;
@@ -194,19 +201,19 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
       for(let i = 0; i < 4; i++) {
         // gets what material is in said position
         switch (i) {
-          case "0": {
+          case 0: {
             material = "prim";
             break;
           }
-          case "1": {
+          case 1: {
             material = "cable";
             break;
           }
-          case "2": {
+          case 2: {
             material = "sec";
             break;
           }
-          case "3": {
+          case 3: {
             material = "tert";
             break;
           }
@@ -216,22 +223,28 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
         found = false;
         n = 0;
         while (!found) {
+          console.log(`toBeSorted[i]: ${toBeSorted[i]} sorted[n]: ${sorted[n]} knownPositions: ${knownPositions}`);
           if (toBeSorted[i] == sorted[n]) {
-            if (knownPositions.includes(i)) { // counters duplicate output nums
+            if (knownPositions.includes(n)) { // counters duplicate output nums
+              console.log(`num ${n} in known pos`);
               n++;
             }
             else {
               knownPositions.push(n);
+              finalOutput.outputOrder[n] = material;
               found = true;
             }
           }
           else {
             n++;
           }
+          if (n == 6) {
+            console.log(`loop broke`)
+            found = true;
+          }
         }
-        // tells the final output which material is where
-        finalOutput.outputOrder[n] = material;
       }
+      console.log(`output order: ${finalOutput.outputOrder}`);
     }
 
     // reduces fusion coil outputs to the actual value
@@ -278,7 +291,7 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
     return finalOutput;
   }
   else {
-    const finalOutput = {
+    let finalOutput = {
       blockBools: {
         primBlock: false,
         cableBlock: false,
@@ -297,12 +310,15 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
     // orders outputs by size
     if (casingBool) {
       let knownPositions = [];
-      let toBeSorted = [tempTotals.casingCount, tempTotals.primCount, tempTotals.cableCount, tempTotals.secCount, tempTotals.tertCount];
-      const sorted = toBeSorted.sort();
+      let toBeSorted = [`${tempTotals.casingCount}`, `${tempTotals.primCount}`, `${tempTotals.cableCount}`, `${tempTotals.wireCount}`, `${tempTotals.foilCount}`];
+      let sorted = Array.from(toBeSorted);
+      sorted.sort(compareNumbers);
+      console.log(`toBeSorted: ${toBeSorted} sorted: ${sorted}`);
       let material;
       let found;
       let n;
 
+      finalOutput.totals.casingCount = tempTotals.casingCount;
       for(let i = 0; i < 5; i++) {
         // gets what material is in said position
         switch (i) {
@@ -338,6 +354,7 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
             }
             else {
               knownPositions.push(n);
+              finalOutput.outputOrder[n] = material;
               found = true;
             }
           }
@@ -345,14 +362,13 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
             n++;
           }
         }
-        // tells the final output which material is where
-        finalOutput.outputOrder[n] = material;
       }
     }
     else {
       let knownPositions = [];
-      let toBeSorted = [tempTotals.primCount, tempTotals.cableCount, tempTotals.secCount, tempTotals.tertCount];
-      const sorted = toBeSorted.sort();
+      let toBeSorted = [`${tempTotals.primCount}`, `${tempTotals.cableCount}`, `${tempTotals.wireCount}`, `${tempTotals.foilCount}`];
+      let sorted = Array.from(toBeSorted);
+      sorted.sort(compareNumbers);
       let material;
       let found;
       let n;
@@ -383,11 +399,12 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
         n = 0;
         while (!found) {
           if (toBeSorted[i] == sorted[n]) {
-            if (knownPositions.includes(i)) { // counters duplicate output nums
+            if (knownPositions.includes(n)) { // counters duplicate output nums
               n++;
             }
             else {
               knownPositions.push(n);
+              finalOutput.outputOrder[n] = material;
               found = true;
             }
           }
@@ -395,8 +412,6 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
             n++;
           }
         }
-        // tells the final output which material is where
-        finalOutput.outputOrder[n] = material;
       }
     }
 
@@ -462,30 +477,15 @@ global.getFinalRecycleOutputs = (outputs, tier, macBool, specialBool) => {
           }
       }
       else {
-          if (tier == "uhv") {   
-              finalOutputs[0] = `${outputs[0]}_dust`;
-              //adds end sig to every output
-              for (let x = 1; x < len-3; x++) {
-                  //if item is a block
-                  if (blockBools[x-1]) {
-                      finalOutputs[x] = `${outputs[x]}_dust_block`;
-                  }
-                  //if not
-                  else {
-                      finalOutputs[x] = `${outputs[x]}_dust`;
-                  }
+        //adds end sig to every output
+          for (let x = 0; x < len-3; x++) {
+              //if item is a block
+              if (blockBools[x]) {
+                  finalOutputs[x] = `${outputs[x]}_dust_block`;
               }
-          }
-          else {
-              for (let x = 0; x < len-3; x++) {
-                  //if item is a block
-                  if (blockBools[x]) {
-                      finalOutputs[x] = `${outputs[x]}_dust_block`;
-                  }
-                  //if not
-                  else {
-                      finalOutputs[x] = `${outputs[x]}_dust`;
-                  }
+              //if not
+              else {
+                  finalOutputs[x] = `${outputs[x]}_dust`;
               }
           }
       }
@@ -506,31 +506,15 @@ global.getFinalRecycleOutputs = (outputs, tier, macBool, specialBool) => {
           }
       }
       else {
-          if (tier == "uhv") {
-              finalOutputs[0] = `${outputs[0]}_ingot`;
-              //adds end sig to every output
-              for (let x = 1; x < len-3; x++) {
-                  //if item is a block
-                  if (blockBools[x-1]) {
-                      finalOutputs[x] = `${outputs[x]}_block`;
-                  }
-                  //if not
-                  else {
-                      finalOutputs[x] = `${outputs[x]}_ingot`;
-                  }
+          //adds end sig to every output
+          for (let x = 0; x < len-3; x++) {
+              //if item is a block
+              if (blockBools[x]) {
+                  finalOutputs[x] = `${outputs[x]}_block`;
               }
-          }
-          else {
-              //adds end sig to every output
-              for (let x = 0; x < len-3; x++) {
-                  //if item is a block
-                  if (blockBools[x]) {
-                      finalOutputs[x] = `${outputs[x]}_block`;
-                  }
-                  //if not
-                  else {
-                      finalOutputs[x] = `${outputs[x]}_ingot`;
-                  }
+              //if not
+              else {
+                  finalOutputs[x] = `${outputs[x]}_ingot`;
               }
           }
       }

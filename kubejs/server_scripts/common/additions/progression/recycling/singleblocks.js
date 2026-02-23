@@ -298,11 +298,11 @@ global.not_hardmode(() => {
             const singleComponents = global.componentMaterials;
             const componentRecycles = global.componentRecycleMaterials;
             const materials = {
-                casing: "",
-                compPrim: "",
-                cable: "",
-                compSec: "",
-                compTert: "",
+                casingMaterial: "",
+                primMaterial: "",
+                cableMaterial: "",
+                secMaterial: "",
+                tertMaterial: "",
                 wire: "",
                 elctrlyzWire: ""
             }
@@ -310,31 +310,31 @@ global.not_hardmode(() => {
             
             switch(tier) {
                 case "uhv": {
-                    materials.casing = "gtceu:neutronium",
-                    materials.compPrim = componentRecycles.uhv.primMaterial,
-                    materials.cable = componentRecycles.uhv.cableMaterial,
-                    materials.compSec = componentRecycles.uhv.secMaterial,
-                    materials.compTert = componentRecycles.uhv.tertMaterial,
+                    materials.casingMaterial = "gtceu:neutronium",
+                    materials.primMaterial = componentRecycles.uhv.primMaterial,
+                    materials.cableMaterial = componentRecycles.uhv.cableMaterial,
+                    materials.secMaterial = componentRecycles.uhv.secMaterial,
+                    materials.tertMaterial = componentRecycles.uhv.tertMaterial,
                     materials.wire = `gtceu:${singleComponents.uhv.materials.wire}`,
                     materials.elctrlyzWire = `gtceu:${singleComponents.uhv.materials.elctrlyzWire}`
                     break;
                 }
                 case "uev": {
-                    materials.casing = "gtceu:mythrolic_alloy",
-                    materials.compPrim = componentRecycles.uev.primMaterial,
-                    materials.cable = componentRecycles.uev.cableMaterial,
-                    materials.compSec = componentRecycles.uev.secMaterial,
-                    materials.compTert = componentRecycles.uev.tertMaterial
+                    materials.casingMaterial = "gtceu:mythrolic_alloy",
+                    materials.primMaterial = componentRecycles.uev.primMaterial,
+                    materials.cableMaterial = componentRecycles.uev.cableMaterial,
+                    materials.secMaterial = componentRecycles.uev.secMaterial,
+                    materials.tertMaterial = componentRecycles.uev.tertMaterial
                     materials.wire = `gtceu:${singleComponents.uev.materials.wire}`,
                     materials.elctrlyzWire = `gtceu:${singleComponents.uev.materials.elctrlyzWire}`
                     break;
                 }
                 case "uiv": {
-                    materials.casing = "gtceu:chaotixic_alloy",
-                    materials.compPrim = componentRecycles.uiv.primMaterial,
-                    materials.cable = componentRecycles.uiv.cableMaterial,
-                    materials.compSec = componentRecycles.uiv.secMaterial,
-                    materials.compTert = componentRecycles.uiv.tertMaterial
+                    materials.casingMaterial = "gtceu:chaotixic_alloy",
+                    materials.primMaterial = componentRecycles.uiv.primMaterial,
+                    materials.cableMaterial = componentRecycles.uiv.cableMaterial,
+                    materials.secMaterial = componentRecycles.uiv.secMaterial,
+                    materials.tertMaterial = componentRecycles.uiv.tertMaterial
                     materials.wire = `gtceu:${singleComponents.uiv.materials.wire}`,
                     materials.elctrlyzWire = `gtceu:${singleComponents.uiv.materials.elctrlyzWire}`
                     break;
@@ -342,14 +342,14 @@ global.not_hardmode(() => {
             }
 
             const specialSingleOutputs = {
-                electric_furnace: [`8x ${materials.casing}`, `2x ${materials.cable}`, `4x ${materials.wire}`, " ", " ", " "],
-                electric_blast_furnace: [`10x ${materials.casing}`, `2x ${materials.cable}`, `4x ${materials.wire}`, " ", " ", " "],
-                electric_smoker: [`8x ${materials.casing}`, `2x ${materials.cable}`, `6x ${materials.wire}`, " ", " ", " "],
-                alloy_smelter: [`8x ${materials.casing}`, `2x ${materials.cable}`, `6x ${materials.wire}`, " ", " ", " "],
-                arc_furnace: [`11x ${materials.casing}`, `5x ${materials.cable}`, `${graphite}`, " ", " ", " "],
-                electrolyzer: [`8x ${materials.casing}`, `1x ${materials.cable}`, `2x ${materials.elctrlyzWire}`, " ", " ", " "],
-                polarizer: [`8x ${materials.casing}`, `18x ${materials.cable}`, " ", " ", " ", " "],
-                charger_4x: [`8x ${materials.casing}`, `2x ${materials.cable}`, `8x ${materials.wire}`, " ", " ", " "]
+                electric_furnace: [`8x ${materials.casingMaterial}`, `2x ${materials.cableMaterial}`, `4x ${materials.wire}`, " ", " ", " "],
+                electric_blast_furnace: [`10x ${materials.casingMaterial}`, `2x ${materials.cableMaterial}`, `4x ${materials.wire}`, " ", " ", " "],
+                electric_smoker: [`8x ${materials.casingMaterial}`, `2x ${materials.cableMaterial}`, `6x ${materials.wire}`, " ", " ", " "],
+                alloy_smelter: [`8x ${materials.casingMaterial}`, `2x ${materials.cableMaterial}`, `6x ${materials.wire}`, " ", " ", " "],
+                arc_furnace: [`11x ${materials.casingMaterial}`, `5x ${materials.cableMaterial}`, `${graphite}`, " ", " ", " "],
+                electrolyzer: [`8x ${materials.casingMaterial}`, `1x ${materials.cableMaterial}`, `2x ${materials.elctrlyzWire}`, " ", " ", " "],
+                polarizer: [`8x ${materials.casingMaterial}`, `18x ${materials.cableMaterial}`, " ", " ", " ", " "],
+                charger_4x: [`8x ${materials.casingMaterial}`, `2x ${materials.cableMaterial}`, `8x ${materials.wire}`, " ", " ", " "]
             }
             let casingCount = 8 + extraCasings;
             let recycleOutputs = [" ", " ", " ", " ", " ", " "];
@@ -374,29 +374,39 @@ global.not_hardmode(() => {
                     tempTotals.tertCount += casingCount;
                     tempObj = global.checkRecyclingCount(tempTotals, true, false, false);
                 }
-                else { 
+                else {
+                    tempTotals.casingCount = casingCount; 
                     tempObj = global.checkRecyclingCount(tempTotals, true, false, true);
-                    tempObj.totals.casingCount = casingCount;
                 }
                 
                 let checkCount = 0;
                 let position = 0;
-                while (checkCount != (tier == "uev" || tier == "uiv") ? 4 : 5) {
+                let flag = false;
+                let flag2;
+                while (!flag) {
+                    flag2 = (tier == "uev" || tier == "uiv") ? 3 : 4;
+                    if (checkCount == flag2) {
+                        flag = true;
+                    }
+                    console.log(`tempObj.totals[${tempObj.outputOrder[position] + "Count"}] = ${tempObj.totals[tempObj.outputOrder[position] + "Count"]}`);
                     if (tempObj.totals[tempObj.outputOrder[position] + "Count"] != 0) {
-                        recycleOutputs[position] = `${tempObj.totals[tempObj.outputOrder[position] + "Count"]}x 
-                            ${materials[tempObj.outputOrder[position] + "Material"]}`;
+                        console.log(`position: ${position} input: ${tempObj.totals[tempObj.outputOrder[position] + "Count"]}x ${materials[tempObj.outputOrder[position] + "Material"]}`);
+                        recycleOutputs[position] = `${tempObj.totals[tempObj.outputOrder[position] + "Count"]}x ${materials[tempObj.outputOrder[position] + "Material"]}`;
                         position++;
                     }
+                    
                     checkCount++;
                 }
-                
-                tempObj.blockBools.forEach(blockBool => {
-                    recycleOutputs[position] = blockBool;
-                    position++;
-                });
+                recycleOutputs[position] = tempObj.blockBools.primBlock; position++;
+                recycleOutputs[position] = tempObj.blockBools.cableBlock; position++;
+                recycleOutputs[position] = (tier == "uhv" || tier == "uev" || tier == "uiv") ? tempObj.blockBools.secBlock : tempObj.blockBools.wireBlock; 
+                position++;
+                recycleOutputs[position] = (tier == "uhv" || tier == "uev" || tier == "uiv") ? tempObj.blockBools.tertBlock : tempObj.blockBools.foilBlock; 
+                position++;
             }
 
             if (recycleOutputs != undefined) {
+                console.log(`recycleOutputs: ${recycleOutputs}`);
                 return recycleOutputs;
             }
         }
@@ -408,9 +418,10 @@ global.not_hardmode(() => {
             const calculateDuration = global.calculateRecyclingDuration;
             const getFinalOutputs = global.getFinalRecycleOutputs;
             let outputs;
-
+            
             tiers.forEach(tier => {
                 outputs = getFinalOutputs(getSingleblockRecycleOutputs(true, singleblock, specialSingleBool, tier, components, extraCasings, extraCables), tier, false, specialSingleBool);
+                console.log(`id: arc_${tier}_${singleblock} outputs: ${outputs}`);
                 event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${singleblock}`))
                     .itemInputs(`gtceu:${tier}_${singleblock}`)
                     .itemOutputs(outputs)
@@ -429,6 +440,7 @@ global.not_hardmode(() => {
 
             tiers.forEach(tier => {
                 outputs = getFinalOutputs(getSingleblockRecycleOutputs(false, singleblock, specialSingleBool, tier, components, extraCasings, extraCables), tier, true, specialSingleBool);
+                console.log(`id: macerate_${tier}_${singleblock} outputs: ${outputs}`);
                 event.recipes.gtceu.macerator(id(`macerate_${tier}_${singleblock}`))
                     .itemInputs(`gtceu:${tier}_${singleblock}`)
                     .itemOutputs(outputs)
