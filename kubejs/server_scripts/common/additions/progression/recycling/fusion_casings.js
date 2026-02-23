@@ -161,7 +161,7 @@
 //             const id = global.id;
 //             const calculateDuration = global.calculateRecyclingDuration;
 //             const getFinalOutputs = global.getFinalRecycleOutputs;
-//             const outputs = getFinalOutputs(getFusionCasingRecycleOutputs(field_generator_tier, casing_tier), "fusion_casing", false, false);
+//             const outputs = getFinalOutputs(getFusionCasingRecycleOutputs(field_generator_tier, casing_tier), false, false);
 
 //             event.recipes.gtceu.arc_furnace(id(`arc_${name}`))
 //                 .itemInputs(`${prefix}${name}`)
@@ -176,7 +176,7 @@
 //             const calculateDuration = global.calculateRecyclingDuration;
 //             const calculateVoltageMultiplier = global.calculateRecyclingVoltageMultiplier;
 //             const getFinalOutputs = global.getFinalRecycleOutputs;
-//             const outputs = getFinalOutputs(getFusionCasingRecycleOutputs(field_generator_tier, casing_tier), "fusion_casing", true, false);
+//             const outputs = getFinalOutputs(getFusionCasingRecycleOutputs(field_generator_tier, casing_tier), true, false);
 
 //             event.recipes.gtceu.macerator(id(`macerate_${name}`))
 //                 .itemInputs(`${prefix}${name}`)

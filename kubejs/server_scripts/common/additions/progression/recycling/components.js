@@ -69,7 +69,7 @@
 //             //old recipe removals
 //             event.remove({ input: `gtceu:${tier}_${component}`, type: `gtceu:arc_furnace` });
 
-//             const outputs = getFinalOutputs(getComponentOutputs(tier, component), "components", false, false);
+//             const outputs = getFinalOutputs(getComponentOutputs(tier, component), false, false);
             
 //             event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${component}`))
 //                 .itemInputs(`gtceu:${tier}_${component}`)
@@ -88,7 +88,7 @@
 //             //old recipe removals
 //             event.remove({ input: `gtceu:${tier}_${component}`, type: `gtceu:macerator` });
 
-//             const outputs = getFinalOutputs(getComponentOutputs(tier, component), "components", true, false);
+//             const outputs = getFinalOutputs(getComponentOutputs(tier, component), true, false);
 
 //             event.recipes.gtceu.macerator(id(`macerate_${tier}_${component}`))
 //                 .itemInputs(`gtceu:${tier}_${component}`)

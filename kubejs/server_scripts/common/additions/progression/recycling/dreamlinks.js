@@ -84,8 +84,7 @@
 //             const secCount = (tier == "uv") ? coverCounts.wireCount : coverCounts.secCount;
 //             const tertCount = (tier == "uv") ? coverCounts.foilCount : coverCounts.tertCount;
 //             const coverOutputs = getFinalOutputs([`${coverCounts.primCount}x ${materials.compPrim}`, `${coverCounts.cableCount}x ${materials.cable}`, 
-//                 `${secCount}x ${materials.compSec}`, `${tertCount}x ${materials.compTert}`, false, false, false, false],
-//                 "dream_cover", false, false);
+//                 `${secCount}x ${materials.compSec}`, `${tertCount}x ${materials.compTert}`, false, false, false, false], false, false);             
             
 //             event.recipes.gtceu.arc_furnace(id(`arc_${tier}_2a_dream_link_cover_item`))
 //                 .itemInputs(`start_core:${tier}_2a_dream_link_cover_item`)
@@ -151,8 +150,7 @@
 //             const secCount = (tier == "uv") ? coverCounts.wireCount : coverCounts.secCount;
 //             const tertCount = (tier == "uv") ? coverCounts.foilCount : coverCounts.tertCount;
 //             const coverOutputs = getFinalOutputs([`${coverCounts.primCount}x ${materials.compPrim}`, `${coverCounts.cableCount}x ${materials.cable}`, 
-//                 `${secCount}x ${materials.compSec}`, `${tertCount}x ${materials.compTert}`, false, false, false, false],
-//                 "dream_cover", true, false);
+//                 `${secCount}x ${materials.compSec}`, `${tertCount}x ${materials.compTert}`, false, false, false, false], true, false);
             
 //             event.recipes.gtceu.macerator(id(`macerate_${tier}_2a_dream_link_cover_item`))
 //                 .itemInputs(`start_core:${tier}_2a_dream_link_cover_item`)

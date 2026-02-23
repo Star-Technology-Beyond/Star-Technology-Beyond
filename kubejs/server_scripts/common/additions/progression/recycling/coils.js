@@ -124,7 +124,7 @@
 //             const tempOutputs = [`${frameCount}x ${frameMaterial}`, `${wireCount}x ${wireMaterial}`, `${foilCount}x ${foilMaterial}`, 
 //                 false, false, false, false];
 
-//             const outputs = getFinalOutputs(tempOutputs, "coils", false, false);
+//             const outputs = getFinalOutputs(tempOutputs, false, false);
             
 //             event.recipes.gtceu.arc_furnace(id(`arc_${coil}`))
 //                 .itemInputs(`${prefix+coil}`)
@@ -160,7 +160,7 @@
 //             const tempOutputs = [`${frameCount}x ${frameMaterial}`, `${wireCount}x ${wireMaterial}`, `${foilCount}x ${foilMaterial}`, 
 //                 false, false, false, false];
 
-//             const outputs = getFinalOutputs(tempOutputs, "coils", true, false);
+//             const outputs = getFinalOutputs(tempOutputs, true, false);
 
 //             event.recipes.gtceu.macerator(id(`mac_${coil}`))
 //                 .itemInputs(`${prefix+coil}`)
