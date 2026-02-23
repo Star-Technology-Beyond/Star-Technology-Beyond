@@ -105,12 +105,12 @@ function compareNumbers(a,b) {
   return b - a;
 }
 // checks if input value is too big for one output slot, then breaks down into block form 
-global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
+global.checkRecyclingCount = (tempTotals, blockType, auxCoilBool, casingBool) => {
   let finalOutput;
   let finalOutputTypes;
   let toBeSorted;
 
-  if (UHVPLUS) {
+  if (blockType == "singleblock_UHVPLUS") {
     finalOutput = {
       blockBools: {
         primBlock: false,
@@ -128,10 +128,10 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
       outputOrder: (casingBool) ? ["", "", "", "", ""] : ["", "", "", ""]
     }
     finalOutputTypes = (casingBool) ? ["casing", "prim", "cable", "sec", "tert"] : ["prim", "cable", "sec", "tert"];
-    toBeSorted = (casingBool) ? [`${tempTotals.casingCount}`, `${tempTotals.primCount}`, `${tempTotals.cableCount}`, `${tempTotals.secCount}`, `${tempTotals.tertCount}`] :
-      [`${tempTotals.primCount}`, `${tempTotals.cableCount}`, `${tempTotals.secCount}`, `${tempTotals.tertCount}`];
+    toBeSorted = (casingBool) ? [tempTotals.casingCount, tempTotals.primCount, tempTotals.cableCount, tempTotals.secCount, `${tempTotals.tertCount}`] :
+      [tempTotals.primCount, tempTotals.cableCount, tempTotals.secCount, tempTotals.tertCount];
   }
-  else {
+  else if (blockType == "singleblock_LUVToUV"){
     finalOutput = {
       blockBools: {
         primBlock: false,
@@ -148,8 +148,25 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
       outputOrder: (casingBool) ? ["", "", "", "", ""] : ["", "", "", ""]
     }
     finalOutputTypes = (casingBool) ? ["casing", "prim", "cable", "wire", "foil"] : ["prim", "cable", "wire", "foil"];
-    toBeSorted = (casingBool) ? [`${tempTotals.casingCount}`, `${tempTotals.primCount}`, `${tempTotals.cableCount}`, `${tempTotals.wireCount}`, `${tempTotals.foilCount}`] : 
-      [`${tempTotals.primCount}`, `${tempTotals.cableCount}`, `${tempTotals.wireCount}`, `${tempTotals.foilCount}`];
+    toBeSorted = (casingBool) ? [tempTotals.casingCount, tempTotals.primCount, tempTotals.cableCount, tempTotals.wireCount, tempTotals.foilCount] : 
+      [tempTotals.primCount, tempTotals.cableCount, tempTotals.wireCount, tempTotals.foilCount];
+  }
+  else if (blockType == "coil") {
+    finalOutput = {
+      blockBools: {
+        frameBlock: false,
+        wireBlock: false,
+        foilBlock: false 
+      },
+      totals: {
+        frameCount: 0,
+        wireCount: 0,
+        foilCount: 0
+      },
+      outputOrder: ["", "", ""] 
+    }
+    finalOutputTypes = ["frame", "wire", "foil"];
+    toBeSorted = [tempTotals.frameCount, tempTotals.wireCount, tempTotals.foilCount];
   }
 
   // orders outputs by size
@@ -213,10 +230,22 @@ global.checkRecyclingCount = (tempTotals, UHVPLUS, auxCoilBool, casingBool) => {
 
 
 //gives ending parameters to the outputs dependent on whether the output is a block or not
-global.getFinalRecycleOutputs = (outputs, macBool, specialBool) => {
+global.getFinalRecycleOutputs = (outputs, blockType, macBool, specialBool) => {
   let finalOutputs = [];
+  let blockBools;
+  let blockBoolStartPos;
   let len = outputs.length - 1;
-  const blockBools = [outputs[len-3], outputs[len-2], outputs[len-1], outputs[len]]; //gets the booleans out of the end of the outputs array
+
+  //gets the booleans out of the end of the outputs array
+  if (blockType == "singleblock") {
+    blockBoolStartPos = len - 3;
+    blockBools = [outputs[len - 3], outputs[len - 2], outputs[len - 1], outputs[len]]; 
+  }
+  else if (blockType == "coil") {
+    blockBoolStartPos = len - 2;
+    blockBools = [outputs[len - 2], outputs[len - 1], outputs[len]];
+  }
+  
   
   //macerator
   if (macBool) {
@@ -232,7 +261,7 @@ global.getFinalRecycleOutputs = (outputs, macBool, specialBool) => {
       }
       else {
         //adds end sig to every output
-          for (let x = 0; x < len-3; x++) {
+          for (let x = 0; x < blockBoolStartPos; x++) {
               //if item is a block
               if (blockBools[x]) {
                   finalOutputs[x] = `${outputs[x]}_dust_block`;
@@ -261,7 +290,7 @@ global.getFinalRecycleOutputs = (outputs, macBool, specialBool) => {
       }
       else {
           //adds end sig to every output
-          for (let x = 0; x < len-3; x++) {
+          for (let x = 0; x < blockBoolStartPos; x++) {
               //if item is a block
               if (blockBools[x]) {
                   finalOutputs[x] = `${outputs[x]}_block`;

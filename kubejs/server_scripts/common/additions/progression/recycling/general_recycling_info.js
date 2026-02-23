@@ -493,6 +493,100 @@ global.singleblockRecyclingDetails = { //if specialSingle = true, the next 3 are
     }
 }
 
+global.coilRecycleDetails = {
+    naquadah_coil_block: {
+        materials: {
+            frameMaterial: "gtceu:hssg",
+            wireMaterial: "gtceu:naquadah",
+            foilMaterial: "gtceu:osmium"
+        },
+        counts: {
+            frameCount: 4,
+            wireCount: 8,
+            foilCount: 2
+        },
+        prefix: "gtceu:"
+    },
+    trinium_coil_block: {
+        materials: {
+            frameMaterial: "gtceu:hsse",
+            wireMaterial: "gtceu:trinium",
+            foilMaterial: "gtceu:enriched_naquadah"
+        },
+        counts: {
+            frameCount: 4,
+            wireCount: 8,
+            foilCount: 2
+        },
+        prefix: "gtceu:"
+    },
+    tritanium_coil_block: {
+        materials: { 
+            frameMaterial: "gtceu:trinaquadalloy",
+            wireMaterial: "gtceu:tritanium",
+            foilMaterial: "gtceu:naquadria"
+        },
+        counts: {
+            frameCount: 4,
+            wireCount: 8,
+            foilCount: 2
+        },
+        prefix: "gtceu:"
+    },
+    zalloy_coil_block: {
+        materials: {
+            frameMaterial: "gtceu:neutronium",
+            wireMaterial: "gtceu:zalloy",
+            foilMaterial: "gtceu:zirconium"
+        },
+        counts: {
+            frameCount: 4,
+            wireCount: 8,
+            foilCount: 2
+        },
+        prefix: "kubejs:"
+    },
+    magmada_alloy_coil_block: {
+        materials: {
+            frameMaterial: "gtceu:ancient_netherite",
+            wireMaterial: "gtceu:magmada_alloy",
+            foilMaterial: "gtceu:pure_netherite"
+        },
+        counts: {
+            frameCount: 4,
+            wireCount: 8,
+            foilCount: 2
+        },
+        prefix: "kubejs:"
+    },
+    abyssal_alloy_coil_block: {
+        materials: {
+            frameMaterial: "gtceu:draconyallium",
+            wireMaterial: "gtceu:abyssal_alloy",
+            foilMaterial: "gtceu:nyanium"
+        },
+        counts: {
+            frameCount: 4,
+            wireCount: 8,
+            foilCount: 2
+        },
+        prefix: "kubejs:"
+    },
+    rhenotax_coil: {
+        materials: {
+            frameMaterial: "gtceu:astrenalloy_nx",
+            wireMaterial: "gtceu:rhenate_w",
+            foilMaterial: "gtceu:tantalum_carbide"
+        },
+        counts: {
+            frameCount: 4,
+            wireCount: 8,
+            foilCount: 4
+        },
+        prefix: "kubejs:"
+    }
+}
+
 // global.energyHatchRecycleCounts = {
 //     lvtohv: {
 //         a2: {

@@ -86,22 +86,25 @@ global.not_hardmode(() => {
                 else if (singleblock == "charger_4x") { recycleOutputs = specialSingleOutputs.charger_4x; }
             }
             else {
+                // gets and checks the final outputs
                 tempTotals = global.getUHVPlusComponentTotal(components);
                 tempTotals.cableCount += extraCables;
 
                 if (tier == "uev" || tier == "uiv") { // if tertiary material is the same as casing material
                     tempTotals.tertCount += casingCount;
-                    tempObj = global.checkRecyclingCount(tempTotals, true, false, false);
+                    tempObj = global.checkRecyclingCount(tempTotals, "singleblock_UHVPLUS", false, false);
                 }
-                else {
+                else if (tier == "uhv") {
                     tempTotals.casingCount = casingCount; 
-                    tempObj = global.checkRecyclingCount(tempTotals, true, false, true);
+                    tempObj = global.checkRecyclingCount(tempTotals, "singleblock_UHVPLUS", false, true);
                 }
                 
+                // sorts the final outputs
                 let checkCount = 0;
                 let position = 0;
                 let flag = false;
                 let flag2;
+
                 while (!flag) {
                     flag2 = (tier == "uev" || tier == "uiv") ? 3 : 4;
                     if (checkCount == flag2) {
@@ -114,6 +117,7 @@ global.not_hardmode(() => {
                     
                     checkCount++;
                 }
+
                 recycleOutputs[position] = tempObj.blockBools.primBlock; position++;
                 recycleOutputs[position] = tempObj.blockBools.cableBlock; position++;
                 recycleOutputs[position] = (tier == "uhv" || tier == "uev" || tier == "uiv") ? tempObj.blockBools.secBlock : tempObj.blockBools.wireBlock; 
@@ -136,7 +140,7 @@ global.not_hardmode(() => {
             let outputs;
             
             tiers.forEach(tier => {
-                outputs = getFinalOutputs(getSingleblockRecycleOutputs(true, singleblock, specialSingleBool, tier, components, extraCasings, extraCables), false, specialSingleBool);
+                outputs = getFinalOutputs(getSingleblockRecycleOutputs(true, singleblock, specialSingleBool, tier, components, extraCasings, extraCables), "singleblock", false, specialSingleBool);
                 event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${singleblock}`))
                     .itemInputs(`gtceu:${tier}_${singleblock}`)
                     .itemOutputs(outputs)
@@ -154,7 +158,7 @@ global.not_hardmode(() => {
             let outputs;
 
             tiers.forEach(tier => {
-                outputs = getFinalOutputs(getSingleblockRecycleOutputs(false, singleblock, specialSingleBool, tier, components, extraCasings, extraCables), true, specialSingleBool);
+                outputs = getFinalOutputs(getSingleblockRecycleOutputs(false, singleblock, specialSingleBool, tier, components, extraCasings, extraCables), "singleblock", true, specialSingleBool);
                 event.recipes.gtceu.macerator(id(`macerate_${tier}_${singleblock}`))
                     .itemInputs(`gtceu:${tier}_${singleblock}`)
                     .itemOutputs(outputs)
