@@ -111,7 +111,7 @@ global.checkRecyclingCount = (tempTotals, blockType, auxCoilBool, casingBool, fu
   let toBeSorted;
 
   // TODO: simplify (check line 46 in fusion coils for reference)
-  if (blockType == "singleblock_UHVPLUS") { 
+  if (blockType == "singleblock_UHVPLUS" || blockType == "parallel_hatch_UHVPLUS") { 
     finalOutput = {
       blockBools: {
         primBlock: false,
@@ -132,7 +132,7 @@ global.checkRecyclingCount = (tempTotals, blockType, auxCoilBool, casingBool, fu
     toBeSorted = (casingBool) ? [tempTotals.casingCount, tempTotals.primCount, tempTotals.cableCount, tempTotals.secCount, `${tempTotals.tertCount}`] :
       [tempTotals.primCount, tempTotals.cableCount, tempTotals.secCount, tempTotals.tertCount];
   }
-  else if (blockType == "singleblock_LUVToUV") {
+  else if (blockType == "singleblock_LUVToUV" || blockType == "parallel_hatch_LUVToUV") {
     finalOutput = {
       blockBools: {
         primBlock: false,
@@ -320,7 +320,7 @@ global.getFinalRecycleOutputs = (outputs, blockType, macBool, specialBool) => {
   let len = outputs.length - 1;
 
   //gets the booleans out of the end of the outputs array
-  if (blockType == "singleblock" || blockType == "fusion_casing" || blockType == "fusion_coil") {
+  if (blockType == "singleblock" || blockType == "fusion_casing" || blockType == "fusion_coil" || blockType == "parallel_hatch") {
     blockBoolStartPos = len - 3;
     blockBools = [outputs[len - 3], outputs[len - 2], outputs[len - 1], outputs[len]]; 
   }

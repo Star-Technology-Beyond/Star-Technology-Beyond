@@ -30,13 +30,13 @@ global.componentRecycleMaterials = {
         primMaterial: `gtceu:${componentMaterials.uev.materials.primMaterial}`,
         cableMaterial: `gtceu:${componentMaterials.uev.materials.cable}`,
         secMaterial: `gtceu:${componentMaterials.uev.materials.supMaterial}`,
-        tertMaterial: `gtceu:${componentMaterials.uev.materials}`
+        tertMaterial: `gtceu:${componentMaterials.uev.materials.tierMaterial}`
     },
     uiv: {
         primMaterial: `gtceu:${componentMaterials.uiv.materials.primMaterial}`,
         cableMaterial: `gtceu:${componentMaterials.uiv.materials.cable}`,
         secMaterial: `gtceu:${componentMaterials.uiv.materials.supMaterial}`,
-        tertMaterial: `gtceu:${componentMaterials.uiv.materials}`
+        tertMaterial: `gtceu:${componentMaterials.uiv.materials.tierMaterial}`
     }
 }
 

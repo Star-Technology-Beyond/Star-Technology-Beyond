@@ -67,10 +67,8 @@ global.not_hardmode(() => {
                 if (checkCount == 4) {
                     flag = true;
                 }
-                console.log(`tempObj.totals[${tempObj.outputOrder[position] + "Count"}]: ${tempObj.totals[tempObj.outputOrder[position] + "Count"]}`);
                 if (tempObj.totals[tempObj.outputOrder[position] + "Count"] != 0) {
                     recycleOutputs[position] = `${tempObj.totals[tempObj.outputOrder[position] + "Count"]}x ${materials[tempObj.outputOrder[position] + "Material"]}`;
-                    console.log(`recycleOutputs[${position}]: ${recycleOutputs[position]}`);
                     position++;
                 }
                 
@@ -80,7 +78,6 @@ global.not_hardmode(() => {
                 recycleOutputs[n+5] = tempObj.blockBools[tempObj.outputOrder[n] + "Block"];
             }
 
-            console.log(`recycleOutputs: ${recycleOutputs}`);
             return recycleOutputs;
         }
 
@@ -91,7 +88,6 @@ global.not_hardmode(() => {
             const getFinalOutputs = global.getFinalRecycleOutputs;
             const prefix = FUSIONCOILDETAILS[coil].prefix;
             const outputs = getFinalOutputs(getFusionCoilRecycleOutputs(coil), "fusion_coil", false, false);
-            console.log(`final outputs arc_${coil}: ${outputs}`);
 
             event.recipes.gtceu.arc_furnace(id(`arc_${coil}`))
                 .itemInputs(`${ prefix + coil }`)
@@ -108,7 +104,6 @@ global.not_hardmode(() => {
             const getFinalOutputs = global.getFinalRecycleOutputs;
             const prefix = FUSIONCOILDETAILS[coil].prefix;
             const outputs = getFinalOutputs(getFusionCoilRecycleOutputs(coil), "fusion_coil", true, false);
-            console.log(`final outputs macerate_${coil}: ${outputs}`);
 
             event.recipes.gtceu.macerator(id(`macerate_${coil}`))
                 .itemInputs(`${prefix+coil}`)
