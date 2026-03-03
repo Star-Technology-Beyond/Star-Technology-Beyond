@@ -22,6 +22,10 @@
             // sets multiblock to use steam
         //.recipeModifier($StarTRecipeModifiers.START_STEAM_PARALLEL)
             //Adds StartSteamMulti as a recipe modifier
+
+    // const $StarTHellForgeMulti = Java.loadClass('com.startechnology.start_core.machine.hellforge.StarTHellForgeMachine');
+        //.machine((holder) => new $StarTHellForgeMulti(holder))
+            // sets multiblock to have hell forge heating
     
     const $StarTThreadingStatBlocks = Java.loadClass('com.startechnology.start_core.machine.threading.StarTThreadingStatsPredicate');
         // $StarTThreadingStatBlocks.threadingStatBlocks()
@@ -32,6 +36,8 @@
             // sets as threading multi
         // .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE])
             // gives threading abilities, goes after OC determinate
+
+    const $StarTDraconicInfusionMachine = Java.loadClass('com.startechnology.start_core.machine.draconic_infusion.StarTDraconicInfusionMachine')
 
 //GTCEU Loader
 
