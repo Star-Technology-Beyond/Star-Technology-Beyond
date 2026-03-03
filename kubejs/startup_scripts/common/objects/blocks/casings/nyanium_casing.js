@@ -46,6 +46,6 @@ StartupEvents.registry('block', event => {
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .requiresTool(false)
-        .bloom('kubejs:block/casings/nyanium/heat_escape_casing');
+        .bloom('kubejs:block/casings/nyanium/firebox_casing');
 
 });
