@@ -42,6 +42,7 @@
   "gravestone:grave": null,
   "gregiceng:crafting_io_buffer": null,
   "gtceu:auto_output_info": null,
+  "gtceu:battery_info": null,
   "gtceu:cable_info": null,
   "gtceu:controllable_provider": null,
   "gtceu:custom_fluid_storage": null,
@@ -126,5 +127,6 @@
   "start_core:hellforge_heat_info": null,
   "start_core:threading_recipes": null,
   "start_core:threading_stat_blocks": null,
+  "start_core:vacuum_chemical_reaction_chamber_info": null,
   "start_core:variadic_redstone_info": null
 }
