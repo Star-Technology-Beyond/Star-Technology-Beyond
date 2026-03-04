@@ -25,7 +25,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('ancient_refinement_center', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['industrial_barrel_aqueous', 'bulk_rock_filtrator', 'large_sieve', 'bulk_void_excavation', 'aqueous_void_excavation'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' BB     BB ', ' BB     BB ', ' BB     BB ', '           ', '           ', '           ', ' BB     BB ', ' BB     BB ', ' BB     BB ', '           ', '           ', '           ', '           ', '           ', '           ') 

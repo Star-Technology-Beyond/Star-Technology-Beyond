@@ -21,7 +21,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('industrial_barrel', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['industrial_barrel_aqueous', 'industrial_barrel_magmatic'])
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('FCCCF','FCCCF','FCCCF','FCCCF')

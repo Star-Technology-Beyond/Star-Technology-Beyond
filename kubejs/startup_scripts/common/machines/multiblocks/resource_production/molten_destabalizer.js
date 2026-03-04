@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('molten_destabilizer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('molten_destabilizing')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
 		.pattern(definition => FactoryBlockPattern.start()
 			.aisle('   FFF   ','         ','         ','         ','         ','   BBB   ','         ','         ','         ','         ')

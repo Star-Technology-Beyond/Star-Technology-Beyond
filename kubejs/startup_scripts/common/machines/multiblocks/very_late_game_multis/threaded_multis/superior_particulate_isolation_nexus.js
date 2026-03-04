@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .recipeTypes(['sifter', 'centrifuge', 'thermal_centrifuge'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:tectonic_defiance_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' BBB BBB BBB ', '             ', '             ', '             ', '             ', '             ', '             ', '     BBB     ', '  CBBBDBBBC  ', '  CBEEEEEBC  ', '  CBFFFFFBC  ', '  CBFFFFFBC  ', '  CBEEEEEBC  ', '  CBBBBBBBC  ', '             ', '             ', '             ') 
