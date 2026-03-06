@@ -3795,6 +3795,226 @@
 			x: 27.0d
 			y: -3.0d
 		}
+		{
+			icon: "gtceu:benzene_bucket"
+			id: "369889B9DEEBC7FB"
+			tasks: [
+				{
+					id: "6C49465E7F7DFD34"
+					item: "gtceu:benzene_bucket"
+					type: "item"
+				}
+				{
+					id: "63BE6117AD263DF4"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: -4.75d
+		}
+		{
+			dependencies: [
+				"369889B9DEEBC7FB"
+				"5BF4D99601D5A22E"
+			]
+			icon: "gtceu:divinylbenzene_bucket"
+			id: "77183C16B81172AE"
+			tasks: [
+				{
+					id: "19BCC532D8C4EE1A"
+					item: "gtceu:divinylbenzene_bucket"
+					type: "item"
+				}
+				{
+					id: "068AB8150F557F72"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			icon: "gtceu:ethylene_bucket"
+			id: "5BF4D99601D5A22E"
+			tasks: [
+				{
+					id: "71424D69527F1435"
+					item: "gtceu:ethylene_bucket"
+					type: "item"
+				}
+				{
+					id: "4523BB456B402B4C"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: -3.25d
+		}
+		{
+			icon: "gtceu:styrene_bucket"
+			id: "42F226BB73C1A1F4"
+			tasks: [
+				{
+					id: "551FDBE51929B593"
+					item: "gtceu:styrene_bucket"
+					type: "item"
+				}
+				{
+					id: "38502F45A0CCC530"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			icon: "gtceu:oxygen_bucket"
+			id: "145393F03845BB83"
+			tasks: [
+				{
+					id: "77D7390B716DB754"
+					item: "gtceu:oxygen_bucket"
+					type: "item"
+				}
+				{
+					id: "55A0ACAB38B58779"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"145393F03845BB83"
+				"42F226BB73C1A1F4"
+				"77183C16B81172AE"
+			]
+			id: "02CA9B3C11EFE267"
+			tasks: [{
+				id: "2223336CEBB73305"
+				item: "kubejs:dry_ion_exchange_resin_beads"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			icon: "gtceu:distilled_water_bucket"
+			id: "5820F5579594EB8E"
+			tasks: [
+				{
+					id: "36F32EB56FF7B893"
+					item: "gtceu:distilled_water_bucket"
+					type: "item"
+				}
+				{
+					id: "22E3DE601278A950"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5820F5579594EB8E"
+				"02CA9B3C11EFE267"
+			]
+			id: "06964A34504EB4F4"
+			tasks: [{
+				id: "79CCC9194CA49709"
+				item: "kubejs:ion_exchange_resin_beads"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			icon: "gtceu:purified_water_bucket"
+			id: "61A61C7128E432C7"
+			tasks: [
+				{
+					id: "3C3B6B8F03F1E0AD"
+					item: "gtceu:purified_water_bucket"
+					type: "item"
+				}
+				{
+					id: "278055E4303FBF5D"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"61A61C7128E432C7"
+				"06964A34504EB4F4"
+			]
+			icon: "gtceu:acidic_water_bucket"
+			id: "57AF923E265053D7"
+			tasks: [
+				{
+					id: "4E85BCCD6D61C1F7"
+					item: "gtceu:acidic_water_bucket"
+					type: "item"
+				}
+				{
+					id: "3CCA08CEBCA45BD5"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["57AF923E265053D7"]
+			id: "5C966A2957EF74F3"
+			tasks: [{
+				id: "69EE465702B06B15"
+				item: "kubejs:dirty_ion_exchange_resin_beads"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["77183C16B81172AE"]
+			icon: "gtceu:hydrogen_bucket"
+			id: "00EF6D13E95FF942"
+			tasks: [
+				{
+					id: "38E18CA78500AD43"
+					item: "gtceu:hydrogen_bucket"
+					type: "item"
+				}
+				{
+					id: "1E977F8D53A277A6"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["57AF923E265053D7"]
+			icon: "gtceu:deionized_water_bucket"
+			id: "7BC3F1B582E273E3"
+			tasks: [
+				{
+					id: "2A06AA5A4CEDC0CD"
+					item: "gtceu:deionized_water_bucket"
+					type: "item"
+				}
+				{
+					id: "63BAFE6C6892D225"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: -4.0d
+		}
 	]
 	title: "{ftbquests.processing_lines_chap_456.title}"
 }

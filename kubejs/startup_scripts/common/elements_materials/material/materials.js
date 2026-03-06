@@ -244,6 +244,7 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('lepton_dense_akreyrium').setFormula('Ak(ℓ)?');
     GTMaterials.get('echo_shard').setFormula('Ec');
     GTMaterials.get('zavaritskite').setFormula('(BiO)F');
+    GTMaterials.get(`acidic_water`).setFormula(`H2O*`);
 
 });
 
@@ -1786,4 +1787,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid(`phosgene`, [`carbon`, `oxygen`, `2x chlorine`], 0xFDFEFC, [no_decomp]);
     polymerFluidPipe(`polycarbonate`, [`3x oxygen`, `16x carbon`, `16x hydrogen`], 0x202020, [388, 300, true, true, false, false], [no_decomp, foil, plates]);
 
+    //De-Ionized Water Line
+    compLiquid(`purified_water`, [`2x hydrogen`, `oxygen`], 0x4A94FF, [no_decomp]);
+    compLiquid(`acidic_water`, [`2x hydrogen`, `oxygen`], 0x2E85FF, [no_decomp]);
+    compLiquid(`divinylbenzene`, [`10x carbon`, `10x hydrogen`], 0x9fb1b8, [no_decomp]);
+    compLiquid(`deionized_water`, [`2x hydrogen`, `oxygen`], 0x006AFF, [no_decomp]);
 });

@@ -566,7 +566,7 @@
 					id: "kubejs:lv_arc_kit"
 					tag: {
 						AugmentData: {
-							DynamoEnergy: 0.9f
+							DynamoEnergy: 0.95f
 							DynamoPower: 0.5f
 							Type: "Dynamo"
 						}
@@ -591,7 +591,7 @@
 					id: "kubejs:mv_arc_kit"
 					tag: {
 						AugmentData: {
-							DynamoEnergy: 0.8f
+							DynamoEnergy: 0.9f
 							DynamoPower: 1.0f
 							Type: "Dynamo"
 						}
@@ -616,7 +616,7 @@
 					id: "kubejs:hv_arc_kit"
 					tag: {
 						AugmentData: {
-							DynamoEnergy: 0.7f
+							DynamoEnergy: 0.85f
 							DynamoPower: 2.0f
 							Type: "Dynamo"
 						}
@@ -641,7 +641,7 @@
 					id: "kubejs:ev_arc_kit"
 					tag: {
 						AugmentData: {
-							DynamoEnergy: 0.6f
+							DynamoEnergy: 0.8f
 							DynamoPower: 3.0f
 							Type: "Dynamo"
 						}

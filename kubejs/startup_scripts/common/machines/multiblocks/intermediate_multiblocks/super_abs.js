@@ -33,6 +33,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-            'gtceu:block/multiblock/gcym/blast_alloy_smelter');
+            'gtceu:block/multiblock/gcym/blast_alloy_smelter')
+        .additionalDisplay(global.coilMachineTempDisplay);
 
 });

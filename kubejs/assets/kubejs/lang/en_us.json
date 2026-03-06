@@ -410,6 +410,10 @@
     "item.kubejs.compass_of_the_flame": "§6Compass of the Flame",
     "item.kubejs.compass_of_the_flame.tooltip": "§7Right click to locate nearest nether shrine",
 
+    "item.kubejs.ion_exchange_resin_beads": "Ion Exchange Resin Beads",
+    "item.kubejs.dry_ion_exchange_resin_beads": "Dry Ion Exchange Resin Beads",
+    "item.kubejs.dirty_ion_exchange_resin_beads": "Dirty Ion Exchange Resin Beads",
+
     "item.kubejs.uhv_voltage_coil": "Ultra High Voltage Coil",
     "item.kubejs.uhv_voltage_coil.tooltip": "§l§4P§fe§4p§fp§4e§fr§4m§fi§4n§ft§r Coil",
     "item.kubejs.uev_voltage_coil": "Ultra Excessive Voltage Coil",
