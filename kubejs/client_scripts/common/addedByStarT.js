@@ -16,15 +16,16 @@ global.addedByStarT = {
         "ascendant_engraving_matrix", "byteforce_unified_incomparable_logistics_depot", "electro_magnetic_material_ripper", "fermenting_arboreal_rejuvination_monstronsity", 
         "gravitational_compression_chamber", "material_annihilation_array", "molecular_inducing_xanadu", "multithreaded_component_synthesis_forge",
         "subatomic_particle_lattice_isolation_terminal", "superior_particulate_isolation_nexus", "yielding_excression_advanced_seperation_transformator", 
-        "luv_fusion_reactor", "zpm_fusion_reactor", "uv_fusion_reactor", "uhv_fusion_reactor", "uev_fusion_reactor", "uiv_fusion_reactor", 
-        "supreme_plasma_turbine", "vacuum_chemical_reaction_chamber", "nyinsane_plasma_turbine", "ulv_barrel", "ulv_stone_barrel", "ulv_advanced_composter"
+        "luv_fusion_reactor", "zpm_fusion_reactor", "uv_fusion_reactor", "uhv_fusion_reactor", "uev_fusion_reactor", "uiv_fusion_reactor", "exotic_gas_siphon",
+        "ultimate_ebf", "compact_assembly_line", "supreme_plasma_turbine", "vacuum_chemical_reaction_chamber", "nyinsane_plasma_turbine", "ulv_barrel", 
+        "ulv_stone_barrel", "ulv_advanced_composter"        
     ],
     isCore: [
         "hellforge", "abyssal_harvester", "abyssal_containment_room", "luv_fusion_reactor", "zpm_fusion_reactor", "uv_fusion_reactor", "uhv_fusion_reactor", "uev_fusion_reactor", "uiv_fusion_reactor"
     ],
     modifiers: [
         "batch", "paraBatch", "subBatch", "pocBatch", "throughBatch", "coilBatch", "paraSubBatch", "paraPocBatch", "subThroughBatch", "threadSubBatch", "paraSubBulkBatch", "paraSubAssBatch",
-        "paraSubThroughBatch", "paraThreadBulkBatch", "paraSubBulkThroughBatch", "paraPocSubBulkThroughBatch", "paraThreadSubBulkBatch"
+        "paraSubThroughBatch", "paraThreadBulkBatch", "subAssThroughBatch", "paraSubBulkThroughBatch", "paraPocSubBulkThroughBatch", "paraThreadSubBulkBatch"
     ],
     batch: [
         "greenhouse", "draco_infusion", "luv_fusion_reactor", "zpm_fusion_reactor", "uv_fusion_reactor", "uhv_fusion_reactor", "uev_fusion_reactor", "uiv_fusion_reactor"
@@ -32,7 +33,7 @@ global.addedByStarT = {
     paraBatch: [
         "ore_processing_plant", "large_sieve", "large_me_assembler", "dimensional_destabiliser", "rock_sifter", "void_excavator", 
         "folding_akreyrium_stabiliser", "molten_destabiliser", "cyclonic_sifter", "injection_mixer", "manifold_centrifuge",
-        "large_quantum_compressor", "runic_circuitry_assembling_station"
+        "large_quantum_compressor", "runic_circuitry_assembling_station", "exotic_gas_siphon"
     ],
     subBatch: [
         "industrial_barrel"
@@ -66,10 +67,13 @@ global.addedByStarT = {
         "draco_circuit_assembler"
     ],
     paraSubThroughBatch: [
-        "omega_pressure_heat_chamber", "super_compact_heat_chamber"
+        "omega_pressure_heat_chamber", "super_compact_heat_chamber", "ultimate_ebf"
     ],
     paraThreadBulkBatch: [
         "aqueous_transformation_processing_center"
+    ],
+    subAssThroughBatch: [
+        "compact_assembly_line"
     ],
     paraSubBulkThroughBatch: [
         "bulk_ore_processing_array", "cryostate_quantum_chiller"
@@ -83,3 +87,24 @@ global.addedByStarT = {
         "superior_particulate_isolation_nexus", "yielding_excression_advanced_seperation_transformator"
     ]
 };
+
+/*
+    "block.kubejs.added_by_StarT.tooltip": "§8§oAdded by Star Technology",
+    "block.kubejs.batch.tooltip": "Has §eBatching",
+    "block.kubejs.paraBatch.tooltip": "Can use §3Parallel§r hatches and has §eBatching",
+    "block.kubejs.subBatch.tooltip": "Has §cSubtick Parallels§r and §eBatching",
+    "block.kubejs.pocBatch.tooltip": "Has §6Perfect Overclock§r and §eBatching",
+    "block.kubejs.coilBatch.tooltip": "Has §bCoil Parallels§r and §eBatching",
+    "block.kubejs.paraSubBatch.tooltip": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r and §eBatching",
+    "block.kubejs.paraPocBatch.tooltip": "Can use §3Parallel§r hatches and has §6Perfect Overclock§r and §eBatching",
+    "block.kubejs.subThroughBatch.tooltip": "Has §cSubtick Parallels§r, §bThroughput Boosting§r and §eBatching",
+    "block.kubejs.threadSubBatch.tooltip": "Has §5Threading§r, §cSubtick Parallels§r and §eBatching",
+    "block.kubejs.paraSubBulkBatch.tooltip": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r, §2Bulking§r, and §8Batching",
+    "block.kubejs.paraSubAssBatch.tooltip": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r, §9Assembly Line Logic§r and §eBatching",
+    "block.kubejs.paraSubThroughBatch.tooltip": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r, §bThroughput Boosting§r and §eBatching",
+    "block.kubejs.paraThreadBulkBatch.tooltip": "Can use §3Parallel§r hatches and has §5Threading§r, §2Bulking§r, and §eBatching",
+    "block.kubejs.subAssThroughBatch.tooltip": "Has §cSubtick Parallels§r, §9Assembly Line Logic§r, §bThroughput Boosting§r and §eBatching"
+    "block.kubejs.paraSubBulkThroughBatch.tooltip": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r, §2Bulking§r, §bThroughput Boosting§r and §eBatching",
+    "block.kubejs.paraPocSubBulkThroughBatch.tooltip": "Can use §3Parallel§r hatches and has §6Perfect Overclock§r, §cSubtick Parallels§r, §2Bulking§r, §bThroughput Boosting§r and §eBatching",
+    "block.kubejs.paraThreadSubBulkBatch.tooltip": "Can use §3Parallel§r hatches and has §5Threading§r, §cSubtick Parallels§r, §2Bulking§r and §eBatching",
+*/

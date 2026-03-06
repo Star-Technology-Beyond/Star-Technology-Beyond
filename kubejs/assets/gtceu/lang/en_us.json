@@ -49,7 +49,6 @@
     "block.gtceu.exotic_gas_siphon.tooltip.6": "§6Gas Collector:",
     "block.gtceu.exotic_gas_siphon.tooltip.7": "§7This machine can collect the ambient air in the surrounding atmosphere, providing the same functionality as a basic §fGas Collector§7.",
     "block.gtceu.exotic_gas_siphon.tooltip.8": "§8-----------------------------------",
-    "block.gtceu.exotic_gas_siphon.tooltip.9": "Can use §3Parallel§r hatches",
 
     "block.gtceu.heat_chamber.tooltip.0": "§7This large multiblock can reach extreme heats in a controlled environment, and can use that heat to purify materials and catalyse reactions.",
 
@@ -88,9 +87,6 @@
     "block.gtceu.rock_filtrator.tooltip.2": "§7You are gonna need multiple Output Buses",
 
     "block.gtceu.rock_sifter.tooltip.0": "§7A more powerful version of the Rock Filtrator, that can sieve materials at an astonishing speed.",
-
-    "block.gtceu.cobbleworks.tooltip.0": "§7A large cube that can generate and process cobblestone into its most useful crushed forms, ready for sieving.",
-    "block.gtceu.cobbleworks.tooltip.1": "Has §6Perfect Overclock",
 
     "block.gtceu.large_sieve.tooltip.0": "§7The evolved version of the Mechanical Sieve, fully applying the technologies at your disposal to create a machine that can sieve much faster and in larger quantities.",
 
@@ -897,7 +893,6 @@
     "block.gtceu.ultimate_ebf.tooltip.5": "§7For every §f1800K§7 above the recipe temperature, one overclock becomes §f100%% efficient§7 (perfect overclock).",
     "block.gtceu.ultimate_ebf.tooltip.6": "§7For every voltage tier above §bMV§7, temperature is increased by §f100K§7.",
     "block.gtceu.ultimate_ebf.tooltip.7": "§8-----------------------------------",
-    "block.gtceu.ultimate_ebf.tooltip.8": "Can use §3Parallel§r hatches, has §bThroughput Boosting§r, and §cSubtick Parallels",
 
     "block.gtceu.supreme_plasma_turbine": "Supreme Plasma Turbine",
     "block.gtceu.supreme_plasma_turbine.tooltip.0": "§3§lBoosted Large Plasma Turbine",
@@ -1192,7 +1187,6 @@
     "block.gtceu.compact_assembly_line.tooltip.1": "§7Advanced technology has enabled the ability for Assembly Lines to run multiple recipes at once without being constrained by input sizes.",
     "block.gtceu.compact_assembly_line.tooltip.2": "§8-----------------------------------",
     "block.gtceu.compact_assembly_line.tooltip.3": "Can only have §bone§r Energy Hatch",
-    "block.gtceu.compact_assembly_line.tooltip.4": "Has §9Assembly Line Logic§r, §cSubtick Parallels§f, and §bThroughput Boosting",
 
     "block.gtceu.component_part_hub": "Component Part Hub",
     "block.gtceu.component_part_hub.tooltip.0": "§6§lBoosted Component Part Assembler",
