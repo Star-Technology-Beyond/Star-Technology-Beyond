@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
                 .next()
                 .fluidInputs('gtceu:hydrogen 10000')
         )
-        .itemOutputs('4x gtceu:flerovium_tetrafluoride_dust', '3x gtceu:rich_rare_earth_dust')
+        .itemOutputs('4x gtceu:flerovium_tetrafluoride_dust', 'gtceu:rich_rare_earth_dust', '2x gtceu:rare_earth_dust')
         .fluidOutputs('gtceu:enriched_uranium_hexafluoride 2000')
         .duration(440)
         .EUt(GTValues.VA[GTValues.UEV]);
@@ -262,7 +262,7 @@ ServerEvents.recipes(event => {
             .itemInputs('2x gtceu:sodium_bicarbonate_dust')
             .fluidInputs('gtceu:nitrogen 3250')
     )
-    .itemOutputs('2x gtceu:sodium_astatide_dust', '2x gtceu:hafnium_hexachloride_dust')
+    .itemOutputs('2x gtceu:sodium_astatide_dust', '2x gtceu:hafnium_hexachloride_dust', '1x gtceu:barium_hydroxide_dust') // correct me if the barium hydroxide is unnecessary now
     .duration(420)
     .EUt(GTValues.VA[GTValues.UEV]);
         
