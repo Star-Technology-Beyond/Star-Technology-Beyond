@@ -5,7 +5,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in') 
         .setMaxTooltips(4)
         .setMaxIOSize(6, 6, 6, 6)
-        .setHasResearchSlot(true)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL);
     
@@ -37,8 +36,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('kubejs:peek_casing').setMinGlobalLimited(40)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(PartAbility.OPTICAL_DATA_RECEPTION).setExactLimit(1))) 
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))) 
             .where('E', Predicates.blocks('kubejs:enriched_naquadah_engine_intake_casing'))
             .where('H', Predicates.blocks(GCYMBlocks.HEAT_VENT.get()))     
             .where('M', Predicates.heatingCoils())

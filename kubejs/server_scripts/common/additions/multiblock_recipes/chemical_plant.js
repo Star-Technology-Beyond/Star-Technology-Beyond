@@ -81,28 +81,32 @@ ServerEvents.recipes(event => {
         }
 
         chemRecipe
-            .stationResearch(
-                researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of(researched))
-                    .EUt(GTValues.VHA[GTValues[voltage]] / 2)
-                    .CWUt(cwuT)
-            )    
             .duration(duration)
             .circuit(circuit)
             .EUt(GTValues.VHA[GTValues[voltage]]);
+            
+        // Research pushed to theta 2 (it's not liking multiple outputs)
+        //     .stationResearch(
+        //         researchRecipeBuilder => researchRecipeBuilder
+        //             .researchStack(Item.of(researched))
+        //             .EUt(GTValues.VHA[GTValues[voltage]] / 2)
+        //             .CWUt(cwuT)
+        //     )  
 
-        event.recipes.gtceu.research_station(`1_x_${researched.replace(':','_')}`)
-            .itemInputs(dataItem)
-            .itemInputs(researched)
-            .itemOutputs(
-                Item.of(
-                    `${dataItem}`,
-                    `{assembly_line_research:{research_id:"1x_${researched.replace(':','_')}", research_type:"gtceu:chemical_skip"}}`
-                )
-            )
-            .CWUt(cwuT)
-            .totalCWU(cwuT * 1200)
-            .EUt(GTValues.VHA[GTValues[voltage]] / 2);
+        // if (recId == 'scheelite_line') return;
+
+        // event.recipes.gtceu.research_station(`1_x_${researched.replace(':','_')}`)
+        //     .itemInputs(dataItem)
+        //     .itemInputs(researched)
+        //     .itemOutputs(
+        //         Item.of(
+        //             `${dataItem}`,
+        //             `{assembly_line_research:{research_id:"1x_${researched.replace(':','_')}",research_type:"gtceu:chemical_skip"}}`
+        //         )
+        //     )
+        //     .CWUt(cwuT)
+        //     .totalCWU(cwuT * 1200)
+        //     .EUt(GTValues.VHA[GTValues[voltage]] / 2);
     }
 
     chemicalSkip('fluoroantimonic_acid_skip', '', [
@@ -237,7 +241,7 @@ ServerEvents.recipes(event => {
         '1x gtceu:tungsten_trioxide_dust','1x gtceu:lithium_dust'
     ], [
         'gtceu:chlorine 2000','gtceu:hydrogen 2000'
-    ], 0, 175, 72, 'ZPM', 'gtceu:tungsten_disulfide_dust');
+    ], 0, 175, 72, 'ZPM', 'gtceu:tungsten_trioxide_dust');
 
     chemicalSkip('scheelite_line', '', [
         '1x gtceu:scheelite_dust'
