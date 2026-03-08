@@ -17,6 +17,23 @@ ServerEvents.recipes(event => {
         .duration(140)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
+    event.recipes.gtceu.ordered_chemistry(id('mythrillic_hydroxide'))
+        .layeredRecipe((layers) => layers
+            .itemInputs('gtceu:mythrillic_dust')
+            .inputFluids('gtceu:hydrogen 5000')
+            .next()
+            .itemInputs('3x gtceu:carbon_dust')
+            .inputFluids('gtceu:hydrogen 2500')
+            .next()
+            .itemInputs('3x gtceu:sodium_hydroxide_dust')
+            .inputFluids('gtceu:hydrochloric_acid 2500')
+        )
+            .inputFluids('gtceu:oxygen 2500')
+        .duration(120)
+        .itemOutputs('6x gtceu:mythrillic_hydride_dust')
+        .EUt(GTValues.VA[GTValues.UEV]);
+    
+
     // event.recipes.gtceu.heat_chamber(id('mythrillic_carbinide'))
     //     .itemInputs('gtceu:mythrillic_dust')
     //     .itemOutputs('gtceu:mythrillic_carbinide_dust')

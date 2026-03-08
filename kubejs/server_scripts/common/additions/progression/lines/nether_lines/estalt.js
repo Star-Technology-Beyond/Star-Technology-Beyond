@@ -17,6 +17,23 @@ ServerEvents.recipes(event => {
         .duration(140)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
+    event.recipes.gtceu.ordered_chemistry(id('estaltadyne_hydride'))
+        .layeredRecipe((layers) => layers
+            .itemInputs('1x gtceu:estaltadyne_dust', '6x gtceu:carbon_dust')
+            .inputFluids('gtceu:carbon_dioxide 2000')
+            .next()
+            .itemInputs('4x gtceu:sodium_dust')
+            .next()
+            .inputFluids('gtceu:hydrofluoric_acid 3500', 'gtceu:hydrogen 1500')
+            .next()
+            .itemInputs('3x gtceu:magnesium_dust', '2x gtceu:sodium_hydroxide_dust')
+            .inputFluids('gtceu:nitric_acid 2000')
+        )
+        .itemOutputs('gtceu:estaltadyne_hydride_dust')
+        .EUt(GTValues.VA[GTValues.UEV])
+        .duration(180);
+
+
     // event.recipes.gtceu.heat_chamber(id('metmalic_estaltadyne_dust'))
     //     .itemInputs('1x gtceu:estaltadyne_dust')
     //     .itemInputs('2x gtceu:carbon_dust')
