@@ -1371,7 +1371,6 @@
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.10": "§7--------------------------------------------------",
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.11": "§7For machines that contain multipule pump blocks, they must all be the same tier or the machine will not form.§7",
     
-  
     "block.gtceu.auroric_vacuum_isolation_reactor": "Auroric Vacuum Isolation Reactor",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.0": "§c§lHyper-Advanced Pressurized Chemical Reactor",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.1": "§7A chemical reactor that can operate under pressurized environments, increasing reaction rates and enabling certain pressure-dependent reactions.",
