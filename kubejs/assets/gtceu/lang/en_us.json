@@ -1411,9 +1411,9 @@
     "material.gtceu.einsteinium_253": "Einsteinium 253",
     "material.gtceu.fermium": "Fermium 257",
 
-    "material.gtceu.hafnastide_rich_sludge": "Hafnastide-Rich Sludge Dust",
-    "material.gtceu.flerovium_rich_re_sludge": "Flerovium-Rich Re Sludge Dust",
-    "material.gtceu.pologium_rich_sludge": "Pologium-Rich Sludge Dust",
+    "material.gtceu.hafnastide_rich_sludge": "Hafnastide-Rich Sludge",
+    "material.gtceu.flerovium_rich_re_sludge": "Flerovium-Rich Re Sludge",
+    "material.gtceu.pologium_rich_sludge": "Pologium-Rich Sludge",
 
     "block.gtceu.advanced_synthesis_plant": "Advanced Synthesis Plant",
     "gtceu.recipe.category.ordered_chemistry_synthetic": "Ordered Chemistry Sythesis"
