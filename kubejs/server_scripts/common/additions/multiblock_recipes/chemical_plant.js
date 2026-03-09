@@ -552,7 +552,7 @@ ServerEvents.recipes(event => {
         .duration(53)
         .EUt(GTValues.VHA[GTValues.UIV]);
 
-    event.recipes.gtceu.ordered_chemistry(id('better_draco_stem_cells'))
+    event.recipes.gtceu.ordered_chemistry(id('better_draco_brain_matter_cells'))
         .layeredRecipe((layers) => layers
             .itemInputs('8x gtceu:tiny_prismalium_dust')
             .inputFluids('gtceu:draconic_enrichment_serum 750')

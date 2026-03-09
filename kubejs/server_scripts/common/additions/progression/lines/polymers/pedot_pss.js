@@ -101,23 +101,51 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.EV]);
     });
 
-    event.recipes.gtceu.advanced_chemistry(id('edot_synthesis'))
-        .itemInputs('9x gtceu:thiophene_dust', '6x gtceu:potassium_carbonate_dust', '6x gtceu:sodium_hydroxide_dust')
-        .inputFluids('gtceu:12_dibromoethane 1000', 'gtceu:dimethylformamide 2000', 'gtceu:sulfuric_acid 1000', 'gtceu:carbon_monoxide 1000')
+    event.recipes.gtceu.ordered_chemistry(id('edot_synthesis'))
+        .layeredRecipe((layers) => layers
+            .itemInputs('9x gtceu:thiophene_dust')
+            .inputFluids('gtceu:12_dibromoethane 1000', 'gtceu:dimethylformamide 2000')
+            .next()
+            .itemInputs('6x gtceu:potassium_carbonate_dust', '6x gtceu:sodium_hydroxide_dust')
+            .inputFluids('gtceu:sulfuric_acid 1000', 'gtceu:carbon_monoxide 1000')
+        )
         .itemOutputs('4x gtceu:potassium_bromide_dust', '8x gtceu:sodium_nitrite_dust')
         .outputFluids('gtceu:34_ethylenedioxythiophene 2000', 'gtceu:ethane 1000', 'minecraft:water 4000')
-        .duration(484)
+        .duration(242)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
-    event.recipes.gtceu.advanced_chemistry(id('pss_synthesis'))
-        .itemInputs('14x gtceu:benzoyl_peroxide_dust', '7x gtceu:sodium_bisulfate_dust')
-        .inputFluids('gtceu:styrene 875', 'gtceu:chlorosulfonic_acid 500', 'minecraft:water 500')
+    event.recipes.gtceu.ordered_chemistry(id('pss_synthesis'))
+        .layeredRecipe((layers) => layers
+            .itemInputs('14x gtceu:benzoyl_peroxide_dust')
+            .inputFluids('gtceu:chlorosulfonic_acid 500')
+            .next()
+            .itemInputs('7x gtceu:sodium_bisulfate_dust')
+            .inputFluids('gtceu:styrene 875', 'minecraft:water 500')
+        )
         .itemOutputs('6x gtceu:sodium_bicarbonate_dust')
         .outputFluids('gtceu:polystyrene_sulfate 1500', 'gtceu:hydrogen_chloride 500', 'gtceu:ethenone 500')
-        .duration(278)
+        .duration(139)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VHA[GTValues.ZPM]);
+
+    // event.recipes.gtceu.advanced_chemistry(id('edot_synthesis'))
+    //     .itemInputs('9x gtceu:thiophene_dust', '6x gtceu:potassium_carbonate_dust', '6x gtceu:sodium_hydroxide_dust')
+    //     .inputFluids('gtceu:12_dibromoethane 1000', 'gtceu:dimethylformamide 2000', 'gtceu:sulfuric_acid 1000', 'gtceu:carbon_monoxide 1000')
+    //     .itemOutputs('4x gtceu:potassium_bromide_dust', '8x gtceu:sodium_nitrite_dust')
+    //     .outputFluids('gtceu:34_ethylenedioxythiophene 2000', 'gtceu:ethane 1000', 'minecraft:water 4000')
+    //     .duration(484)
+    //     .cleanroom(CleanroomType.CLEANROOM)
+    //     .EUt(GTValues.VHA[GTValues.ZPM]);
+
+    // event.recipes.gtceu.advanced_chemistry(id('pss_synthesis'))
+    //     .itemInputs('14x gtceu:benzoyl_peroxide_dust', '7x gtceu:sodium_bisulfate_dust')
+    //     .inputFluids('gtceu:styrene 875', 'gtceu:chlorosulfonic_acid 500', 'minecraft:water 500')
+    //     .itemOutputs('6x gtceu:sodium_bicarbonate_dust')
+    //     .outputFluids('gtceu:polystyrene_sulfate 1500', 'gtceu:hydrogen_chloride 500', 'gtceu:ethenone 500')
+    //     .duration(278)
+    //     .cleanroom(CleanroomType.CLEANROOM)
+    //     .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.recipes.gtceu.large_chemical_reactor(id('pedot_synthesis'))
         .inputFluids('gtceu:34_ethylenedioxythiophene 500', 'gtceu:ethanol 1000', 'gtceu:sulfur_trioxide 1500')
