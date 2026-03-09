@@ -36,6 +36,6 @@ ServerEvents.recipes(event => {
     Fusion(6,'voidic_plasma',144,'echo_r',432,'void',144,344064,19.2,1040);
     Fusion(6,'preon_plasma',144,'utopian_akreyrium',500,'dragon_breath',50,688128,9.6,1160);
     Fusion(5,'borealic_concentrate',144,'stellarium',135,'aurourium',9,1023948,3.6,1200);
-    Fusion(5,'oganesson_plasma',1500,'fermium',144,'selenium',360,235815,7.2,1050);
+    Fusion(5,'oganesson_plasma',1500,'fermium',144,'selenium',360,61440,7.2,800);
 
 });
