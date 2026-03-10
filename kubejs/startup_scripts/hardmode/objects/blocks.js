@@ -26,7 +26,7 @@ StartupEvents.registry('block', event => {
 		.soundType('sand')
 		.requiresTool(false)
 		.tagBlock("mineable/shovel")
-		.textureAll('kubejs:block/hm/refined_sand');
+		.textureAll('kubejs:block/hardmode/refined_sand');
 
 	event.create('refined_dust', 'falling')
 		.hardness(1)
@@ -34,7 +34,7 @@ StartupEvents.registry('block', event => {
 		.soundType('sand')
 		.requiresTool(false)
 		.tagBlock("mineable/shovel")
-		.textureAll('kubejs:block/hm/refined_dust');
+		.textureAll('kubejs:block/hardmode/refined_dust');
 
 	// === Casings ===
 	event.create('reinforced_stone_bricks')
@@ -44,5 +44,5 @@ StartupEvents.registry('block', event => {
 		.requiresTool(true)
 		.tagBlock("mineable/pickaxe")
 		.tagBlock('minecraft:needs_stone_tool')
-		.textureAll('kubejs:block/hm/reinforced_stone_bricks');	
+		.textureAll('kubejs:block/hardmode/reinforced_stone_bricks');	
 });
