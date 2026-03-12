@@ -259,15 +259,6 @@
     "item.kubejs.realgar_geode": "§c鶏冠石§rのジオード",
     "item.kubejs.realgar_geode.tooltip": "§7普通に見える岩の中に§c鶏冠石§7が秘められている",
 
-    "item.kubejs.thorium_fuel_rod": "トリウム核燃料棒",
-    "item.kubejs.highly_enriched_uranium_fuel_rod": "高濃縮ウラン(HEU)核燃料棒",
-    "item.kubejs.highly_enriched_uranium_fuel_rod.tooltip": "§2200億カロリー",
-    "item.kubejs.low_enriched_uranium_fuel_rod": "低濃縮ウラン(LEU)核燃料棒",
-    "item.kubejs.depleted_thorium_fuel_rod": "劣化トリウム核燃料棒",
-    "item.kubejs.depleted_highly_enriched_uranium_fuel_rod": "劣化高濃縮ウラン(HEU)核燃料棒",
-    "item.kubejs.depleted_highly_enriched_uranium_fuel_rod.tooltip": "§7200億カロリーはもう要らない",
-    "item.kubejs.depleted_low_enriched_uranium_fuel_rod": "劣化低濃縮ウラン(LEU)核燃料棒",
-
     "item.kubejs.compressed_mycelium": "圧縮した菌糸",
     "item.kubejs.smoked_mycelium": "燻製した菌糸",
     "item.kubejs.mycelium_growth": "菌糸培養地",

@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('implosion_compressor')
         .machine((holder) => new $CoiledMulti(holder))
-        .recipeModifier(GTRecipeModifiers.MULTI_SMELTER_PARALLEL)
+        .recipeModifiers([GTRecipeModifiers.MULTI_SMELTER_PARALLEL, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('gtceu:stress_proof_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('AABAA', 'CBBBC', 'CBDBC', 'CBBBC', 'AABAA') 

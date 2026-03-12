@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $AssemblyLineMulti(holder))
         .recipeType('component_part_assembly')
-        .recipeModifier(GTRecipeModifiers.OC_NON_PERFECT_SUBTICK)
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start($RelativeDirection.BACK, $RelativeDirection.UP, $RelativeDirection.RIGHT)
             .aisle('SSISS', '@SSSS', ' SSS ')

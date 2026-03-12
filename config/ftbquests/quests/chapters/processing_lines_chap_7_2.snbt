@@ -191,12 +191,9 @@
 		{
 			dependencies: [
 				"14B54D8FCC66C23D"
-				"79461F8EDAE4C34E"
-				"192A52EDB919A08A"
 				"204AEF528F25D77B"
 				"67F589B7EEA10C2B"
-				"6130E48A306EF009"
-				"59EED7BC21CE9002"
+				"40333EB481D427B5"
 			]
 			icon: "gtceu:34_ethylenedioxythiophene_bucket"
 			id: "0D3A7FC3C497A5DD"
@@ -284,28 +281,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0D3A7FC3C497A5DD"]
-			id: "38671362B53222F2"
-			tasks: [{
-				id: "368094F34548AEC2"
-				item: "gtceu:potassium_bromide_dust"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0D3A7FC3C497A5DD"]
-			id: "4C28268E94061C09"
-			tasks: [{
-				id: "180FCE5675361EBE"
-				item: "gtceu:sodium_nitrite_dust"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 0.0d
-		}
-		{
 			dependencies: [
 				"70CC0AACE1B75966"
 				"0D3918A88A1291AF"
@@ -316,30 +291,8 @@
 				item: "gtceu:thiophene_dust"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["1820787D031EAB15"]
-			id: "192A52EDB919A08A"
-			tasks: [{
-				id: "5BF6872B5BB7C8BE"
-				item: "gtceu:potassium_carbonate_dust"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["3A15777DD813EE71"]
-			id: "6130E48A306EF009"
-			tasks: [{
-				id: "6E13C9FCBDB93512"
-				item: "gtceu:sodium_hydroxide_dust"
-				type: "item"
-			}]
-			x: -8.0d
-			y: 1.0d
+			x: -8.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -361,7 +314,7 @@
 				}
 			]
 			x: -8.5d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -382,46 +335,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -9.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["1AAB9C20E833029A"]
-			icon: "gtceu:carbon_monoxide_bucket"
-			id: "79461F8EDAE4C34E"
-			tasks: [
-				{
-					id: "3E66241EF6455895"
-					item: "gtceu:carbon_monoxide_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "22D3A0A71FF23522"
-					type: "checkmark"
-				}
-			]
 			x: -7.0d
 			y: 0.5d
-		}
-		{
-			dependencies: ["14B54D8FCC66C23D"]
-			icon: "gtceu:sulfuric_acid_bucket"
-			id: "59EED7BC21CE9002"
-			tasks: [
-				{
-					id: "76E60058FEF8CA63"
-					item: "gtceu:sulfuric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6D28A970BE04654B"
-					type: "checkmark"
-				}
-			]
-			x: -8.0d
-			y: -3.0d
 		}
 		{
 			dependencies: ["14B54D8FCC66C23D"]
@@ -439,8 +354,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -11.0d
-			y: -3.0d
+			x: -10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -458,8 +373,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -9.5d
-			y: -4.5d
+			x: -8.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["441B116F6D8FDC08"]
@@ -477,8 +392,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -10.5d
-			y: -4.0d
+			x: -9.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1207F7CCCB8335A5"]
@@ -497,7 +412,7 @@
 				}
 			]
 			x: -9.5d
-			y: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3CB84935C465C540"]
@@ -516,7 +431,7 @@
 				}
 			]
 			x: -9.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -534,8 +449,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -10.5d
-			y: 0.5d
+			x: -7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
@@ -553,7 +468,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -10.5d
+			x: -6.5d
 			y: 1.5d
 		}
 		{
@@ -848,10 +763,9 @@
 		}
 		{
 			dependencies: [
-				"2D8603D1EB3099A5"
 				"4A9008E979F4FD5B"
-				"7E35AD240B83B0FA"
 				"6821C560DCA10BFC"
+				"426B2F275979A8EC"
 			]
 			icon: "gtceu:polystyrene_sulfate_bucket"
 			id: "46FA26DD7A09CDCE"
@@ -890,36 +804,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["46FA26DD7A09CDCE"]
-			icon: "gtceu:ethenone_bucket"
-			id: "5ED3A51935EA0464"
-			tasks: [
-				{
-					id: "1FC86A640082F330"
-					item: "gtceu:ethenone_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4B4BFFB5EC49F771"
-					type: "checkmark"
-				}
-			]
-			x: 2.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["46FA26DD7A09CDCE"]
-			id: "197AE5D40F869509"
-			tasks: [{
-				id: "165E239EEE70BAA6"
-				item: "gtceu:sodium_bicarbonate_dust"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -2.5d
-		}
-		{
 			dependencies: [
 				"42A52C68EF9C8F05"
 				"0743ACC2DC774C7E"
@@ -932,36 +816,6 @@
 			}]
 			x: 3.0d
 			y: -1.0d
-		}
-		{
-			dependencies: ["1AAB9C20E833029A"]
-			id: "7E35AD240B83B0FA"
-			tasks: [{
-				id: "12397E8A049D1B4D"
-				item: "gtceu:sodium_bisulfate_dust"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1AAB9C20E833029A"]
-			icon: "gtceu:styrene_bucket"
-			id: "2D8603D1EB3099A5"
-			tasks: [
-				{
-					id: "2EBE30F2F256C4C0"
-					item: "gtceu:styrene_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5A67B1C70BD3D3CC"
-					type: "checkmark"
-				}
-			]
-			x: 0.5d
-			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -2412,6 +2266,73 @@
 			}]
 			x: 12.5d
 			y: -3.0d
+		}
+		{
+			id: "40333EB481D427B5"
+			tasks: [
+				{
+					id: "0A31575D9C75BAC8"
+					item: "gtceu:potassium_carbonate_dust"
+					type: "item"
+				}
+				{
+					id: "27CFFBCCC5B20CDA"
+					item: "gtceu:potassium_bromide_dust"
+					type: "item"
+				}
+				{
+					id: "53771A9D62DBB0CF"
+					item: "gtceu:sodium_nitrite_dust"
+					type: "item"
+				}
+				{
+					id: "7112E90C0EBEC023"
+					item: "gtceu:sulfuric_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "604687EA66A79563"
+					item: "gtceu:carbon_monoxide_bucket"
+					type: "item"
+				}
+				{
+					id: "071090CAC5158E5B"
+					type: "checkmark"
+				}
+			]
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			id: "426B2F275979A8EC"
+			tasks: [
+				{
+					id: "3C57D9F6CE2A7889"
+					item: "gtceu:sodium_bisulfate_dust"
+					type: "item"
+				}
+				{
+					id: "4290CB59DCBF911B"
+					item: "gtceu:sodium_bicarbonate_dust"
+					type: "item"
+				}
+				{
+					id: "0622FB51F982B309"
+					item: "gtceu:styrene_bucket"
+					type: "item"
+				}
+				{
+					id: "094EBB18BC5623D7"
+					item: "gtceu:ethenone_bucket"
+					type: "item"
+				}
+				{
+					id: "48157D3CFBFE6D5C"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: -2.5d
 		}
 	]
 	title: "{ftbquests.processing_lines_chap_7-2.title}"

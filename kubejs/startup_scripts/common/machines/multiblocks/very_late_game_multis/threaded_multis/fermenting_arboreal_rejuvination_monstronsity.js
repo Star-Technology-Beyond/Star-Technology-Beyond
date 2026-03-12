@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .recipeTypes(['hydroponic_garden', 'industrial_fishery', 'tree_greenhouse', 'composting_factory'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:true_revitilization_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('             BCCCCCB ', '             BC C CB ', '             BCCDCCB ', '             BC C CB ', '             BCCCCCB ', '              BBBBB  ', '                     ') 

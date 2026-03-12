@@ -225,10 +225,7 @@ ServerEvents.recipes(event => {
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_super_magnetic_core`,
                 `${2 * scalerMCSF * 0.75}x gtceu:long_${primMaterial}_rod`, 
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_transmission_assembly`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireMechanical}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireMechanical}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireMechanical}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireMechanical}_wire`, 
+                `${1 * scalerMCSF * 0.75}x gtceu:${wireMechanical}_wire_spool`,
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_micropower_router`
             ], [
                 `gtceu:${solder} ${scalerMCSF * 0.75 * b2exponentialMultiplier(72)}`, 
@@ -295,10 +292,7 @@ ServerEvents.recipes(event => {
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_catalyst_core`, 
                 `${2 * scalerMCSF * 0.75}x gtceu:${tier}_emitter`, 
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_computational_matrix`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`, 
+                `${1 * scalerMCSF * 0.75}x gtceu:${superconductor}_wire_spool`, 
                 `${2 * scalerMCSF * 0.75}x kubejs:${tier}_micropower_router`
             ], [
                 `gtceu:${solder} ${scalerMCSF * 0.75 * b2exponentialMultiplier(288)}`, 
@@ -311,10 +305,7 @@ ServerEvents.recipes(event => {
                 `${4 * scalerMCSF * 0.75}x gtceu:long_${primMaterial}_rod`, 
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_catalyst_core`, 
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_computational_matrix`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`, 
+                `${1 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil_ream`, 
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_micropower_router`
             ], [
                 `gtceu:${solder} ${scalerMCSF * 0.75 * b2exponentialMultiplier(144)}`, 
@@ -328,10 +319,7 @@ ServerEvents.recipes(event => {
                 `${4 * scalerMCSF * 0.75}x gtceu:${primMaterial}_plate`, 
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_catalyst_core`, 
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_computational_matrix`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`, 
+                `${1 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil_ream`, 
                 `${1 * scalerMCSF * 0.75}x kubejs:${tier}_micropower_router`
             ], [
                 `gtceu:${solder} ${scalerMCSF * 0.75 * b2exponentialMultiplier(144)}`, 

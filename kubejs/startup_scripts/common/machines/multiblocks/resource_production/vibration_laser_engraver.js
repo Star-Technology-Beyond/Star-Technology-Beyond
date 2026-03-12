@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)    
         .recipeTypes(['vibration_laser_engraver','laser_engraver'])
         .appearanceBlock(GCYMBlocks.CASING_VIBRATION_SAFE)
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('      BCCCB      ', '     DBCCCBD     ', '    DDBCCCBDD    ', '   DDBBCCCBBDD   ', '  DDBBBCCCBBBDD  ', ' DDBBEBBBBBEBBDD ', 'BBBBBBBDDDBBBBBBB', 'CCCCCBDDADDBCCCCC', 'CCCCCBDAAADBCCCCC', 'CCCCCBDDADDBCCCCC', 'BBBBBBBDDDBBBBBBB', ' DDBBEBBBBBEBBDD ', '  DDBBBCCCBBBDD  ', '   DDBBCCCBBDD   ', '    DDBCCCBDD    ', '     DBCCCBD     ', '      BCCCB      ') 
             .aisle('     DBCCCBD     ', '   BB   F   BB   ', '  BB    F    BB  ', ' BB     F     BB ', ' B             B ', 'D      GGG      D', 'B     GDDDG     B', 'C    GDDDDDG    C', 'CFFF GDDDDDG FFFC', 'C    GDDDDDG    C', 'B     GDDDG     B', 'D      GGG      D', ' B             B ', ' BB     F     BB ', '  BB    F    BB  ', '   BB   F   BB   ', '     DBCCCBD     ') 

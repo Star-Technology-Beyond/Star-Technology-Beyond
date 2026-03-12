@@ -1,7 +1,7 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('bacteria_synthesizer')
         .category('resource_production')
-        .setMaxIOSize(1, 0, 5, 1)
+        .setMaxIOSize(2, 0, 6, 1)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_ASSEMBLER , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL);
 });
@@ -10,7 +10,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('bacteria_synthesizer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('bacteria_synthesizer')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:peek_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' ABBBA ', ' A   A ', ' A   A ', ' A   A ', ' A   A ', ' A   A ', '       ', '       ', '       ', '       ', '       ', '       ') 

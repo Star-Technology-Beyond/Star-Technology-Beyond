@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('heat_chamber', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('heat_chamber')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
        .pattern(definition => FactoryBlockPattern.start()
             .aisle('    BCDCB    ', '     CCC     ', '      C      ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '    BBBBB    ') 

@@ -267,10 +267,7 @@ ServerEvents.recipes(event => {
                 `${4 * scalerMCSF * 0.75}x gtceu:long_${primMaterial}_rod`,
                 `${4 * scalerMCSF * 0.75}x gtceu:${primMaterial}_ring`,
                 `${8 * scalerMCSF * 0.75}x gtceu:${primMaterial}_round`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireMechanical}_wire`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireMechanical}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireMechanical}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireMechanical}_wire`, // 4 sets of fine wire get unified to ${scalerMCSF * 0.75}x fineWireRoll
+                `${1 * scalerMCSF * 0.75}x gtceu:${wireMechanical}_wire_spool`, 
                 `${2 * scalerMCSF * 0.75}x gtceu:${cable}_single_cable`
             ], [
                 `gtceu:${solder} ${scalerMCSF * 0.75 * b2exponentialMultiplier(72)}`,
@@ -338,15 +335,7 @@ ServerEvents.recipes(event => {
                 `${scalerMCSF * 0.75 * catalyst[0]}x ${catalyst.split(" ")[1]}`, 
                 `${2 * scalerMCSF * 0.75}x gtceu:${tier}_emitter`,
                 `${2 * scalerMCSF * 0.75}x #gtceu:circuits/${tier}`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`, 
-                // 8 sets of fine wire get unified to ${2 * scalerMCSF * 0.75}x fineWireRoll (1x fineWireRoll = 64x Fine Wire)
+                `${2 * scalerMCSF * 0.75}x gtceu:${superconductor}_wire_spool`,
                 `${4 * scalerMCSF * 0.75}x gtceu:${cable}_single_cable`
             ], [
                 `gtceu:${solder} ${scalerMCSF * 0.75 * b2exponentialMultiplier(288)}`
@@ -358,13 +347,7 @@ ServerEvents.recipes(event => {
                 `${4 * scalerMCSF * 0.75}x gtceu:long_${primMaterial}_rod`,
                 `${scalerMCSF * 0.75 * catalyst[0]}x ${catalyst.split(" ")[1]}`, 
                 `${2 * scalerMCSF * 0.75}x #gtceu:circuits/${tier}`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`, 
-                // 6 sets of foil get unified to ${3 * scalerMCSF * 0.75}x boundFoil (1x boundFoil = 32x Foil)
+                `${1.5 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil_ream`,
                 `${4 * scalerMCSF * 0.75}x gtceu:${cable}_single_cable`
             ], [
                 `gtceu:${solder} ${scalerMCSF * 0.75 * b2exponentialMultiplier(144)}`
@@ -376,13 +359,7 @@ ServerEvents.recipes(event => {
                 `${4 * scalerMCSF * 0.75}x gtceu:${primMaterial}_plate`,
                 `${scalerMCSF * 0.75 * catalyst[0]}x ${catalyst.split(" ")[1]}`, 
                 `${2 * scalerMCSF * 0.75}x #gtceu:circuits/${tier}`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`,
-                `${16 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil`, 
-                // 6 sets of foil get unified to ${3 * scalerMCSF * 0.75}x boundFoil (1x boundFoil = 32x Foil)
+                `${1.5 * scalerMCSF * 0.75}x gtceu:${miscMaterial}_foil_ream`,
                 `${4 * scalerMCSF * 0.75}x gtceu:${cable}_single_cable`
             ], [
                 `gtceu:${solder} ${scalerMCSF * 0.75 * b2exponentialMultiplier(144)}`

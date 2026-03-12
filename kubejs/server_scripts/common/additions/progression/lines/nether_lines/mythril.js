@@ -17,36 +17,21 @@ ServerEvents.recipes(event => {
         .duration(140)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-    // event.recipes.gtceu.heat_chamber(id('mythrillic_carbinide'))
-    //     .itemInputs('gtceu:mythrillic_dust')
-    //     .itemOutputs('gtceu:mythrillic_carbinide_dust')
-    //     .outputFluids('gtceu:hydrogen 14000')
-    //     .duration(180)
-    //     .EUt(GTValues.VHA[GTValues.UEV]);
-
-    // event.recipes.gtceu.electric_blast_furnace(id('mythrillic_metlide'))
-    //     .itemInputs('gtceu:mythrillic_carbinide_dust')
-    //     .inputFluids('gtceu:oxygen 12000')
-    //     .itemOutputs('gtceu:mythrillic_metlide_dust')
-    //     .outputFluids('gtceu:carbon_dioxide 6000')
-    //     .duration(240)
-    //     .blastFurnaceTemp(7250)
-    //     .EUt(GTValues.VHA[GTValues.UHV]);
-
-    // event.recipes.gtceu.electromagnetic_separator(id('mythrillic_metnide'))
-    //     .itemInputs('gtceu:mythrillic_metlide_dust')
-    //     .itemOutputs('gtceu:mythrillic_metnide_dust')
-    //     .itemOutputs('2x gtceu:vanadium_dust')
-    //     .duration(600)
-    //     .EUt(GTValues.VHA[GTValues.UV]);
-
-    // event.recipes.gtceu.large_chemical_reactor(id('mythrillic_hydride'))
-    //     .itemInputs('gtceu:mythrillic_metnide_dust')
-    //     .inputFluids('gtceu:hydrochloric_acid 12000')
-    //     .itemOutputs('6x gtceu:mythrillic_hydride_dust')
-    //     .itemOutputs('3x gtceu:zirconium_tetrachloride_dust')
-    //     .duration(520)
-    //     .EUt(GTValues.VHA[GTValues.UHV]);
+    event.recipes.gtceu.ordered_chemistry(id('mythrillic_hydroxide'))
+        .layeredRecipe((layers) => layers
+            .itemInputs('gtceu:mythrillic_dust')
+            .inputFluids('gtceu:hydrogen 5000')
+            .next()
+            .itemInputs('3x gtceu:carbon_dust')
+            .inputFluids('gtceu:hydrogen 2500')
+            .next()
+            .itemInputs('3x gtceu:sodium_hydroxide_dust')
+            .inputFluids('gtceu:hydrochloric_acid 2500')
+        )
+            .inputFluids('gtceu:oxygen 2500')
+        .duration(120)
+        .itemOutputs('6x gtceu:mythrillic_hydride_dust')
+        .EUt(GTValues.VA[GTValues.UEV]);
 
     event.recipes.gtceu.electric_blast_furnace(id('mythril'))
         .itemInputs('gtceu:mythrillic_hydride_dust')

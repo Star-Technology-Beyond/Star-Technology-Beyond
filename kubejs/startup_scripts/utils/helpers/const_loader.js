@@ -90,7 +90,6 @@
     const $LayeredWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.LayeredWorkableElectricMultiblockMachine",);    
         //.machine((holder) => new $LayeredWorkableElectricMultiblockMachine(holder))
             //Layered Input Supported Machine
-
-
+    
     // Formatting Util
     const $FormattingUtil = Java.loadClass('com.gregtechceu.gtceu.utils.FormattingUtil');

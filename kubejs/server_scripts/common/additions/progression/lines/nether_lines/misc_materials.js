@@ -92,4 +92,11 @@ ServerEvents.recipes(event => {
         .circuit(2)
         .EUt((GTValues.VHA[GTValues.UEV]));
 
+    event.recipes.gtceu.vacuum_chemical_reaction_chamber(id(`oganesson`))
+        .inputFluids(`gtceu:oganesson_plasma 500`)
+        .outputFluids(`gtceu:oganesson 500`)
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.UEV])
+        .vacuumLevel(90);
+
 });

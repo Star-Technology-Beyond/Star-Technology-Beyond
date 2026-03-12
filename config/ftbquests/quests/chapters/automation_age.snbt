@@ -1759,7 +1759,7 @@
 				item: "gtceu:shellite_single_wire"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -4.5d
 			y: 2.0d
 		}
 		{
@@ -1778,7 +1778,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1974,10 +1974,10 @@
 		{
 			dependencies: [
 				"3B2D79D40B9617D5"
-				"020048FAC9576691"
+				"2DB216B224F2E8EF"
+				"46ED792D357D166C"
 			]
 			description: ["{ftbquests.automation_age.nuclear_reactor.description}"]
-			hide_dependency_lines: true
 			id: "68865F1DDBFFFACE"
 			optional: true
 			rewards: [{
@@ -1987,21 +1987,19 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.25d
 			subtitle: "{ftbquests.automation_age.nuclear_reactor.subtitle}"
 			tasks: [{
 				id: "388DD36D47A45596"
 				item: "gtceu:nuclear_reactor"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 2.0d
+			x: -2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
 				"39FF89B370D09B88"
-				"68865F1DDBFFFACE"
-				"6A57B03345FC6D99"
 				"3C099AFD41C38BC3"
 			]
 			dependency_requirement: "one_completed"

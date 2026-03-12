@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $CoiledMulti(holder))
         .recipeType('electric_blast_furnace')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:extreme_temperature_smelting_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('     BBBBBBBBBBB     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ') 

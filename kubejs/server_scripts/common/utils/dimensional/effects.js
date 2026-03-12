@@ -77,4 +77,24 @@ PlayerEvents.tick(event => {
         }
     }
 
+    // Uranium Fever
+    if (player.hasEffect('kubejs:uranium_fever')) {
+        let effects = ['minecraft:speed','minecraft:haste'];
+
+        if (player.age % 50 === 0) {
+            effects.forEach(effect => {
+                player.potionEffects.add(effect, 200, 19, false, false)
+            });
+
+            if (Math.random() > 0.90) {
+                event.server.runCommandSilent(`execute at ${event.player.username} run summon thermal:fire_tnt ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}`);
+                event.server.runCommandSilent(`execute as ${event.player.username} run damage ${event.player.username} 500 kubejs:radiation`);
+            }
+        }
+
+        if (player.age % 200 === 0) {
+            player.tell(Text.translate('effects.uranium_fever.message'));
+        }
+
+    }  
 });

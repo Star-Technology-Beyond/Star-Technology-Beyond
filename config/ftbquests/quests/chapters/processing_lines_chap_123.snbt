@@ -2310,7 +2310,7 @@
 		{
 			dependencies: [
 				"3E3103622B9679C6"
-				"14BCBC516D35FEC1"
+				"7375D44BBE2E3BF1"
 			]
 			dependency_requirement: "one_completed"
 			id: "5E894DC47896785B"
@@ -2329,6 +2329,7 @@
 		}
 		{
 			dependencies: ["3FCD76E28A1A3245"]
+			dependency_requirement: "one_completed"
 			id: "206859C2B2272102"
 			rewards: [{
 				count: 3
@@ -2351,10 +2352,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"206859C2B2272102"
-				"2750AC5453EB3184"
-			]
+			dependencies: ["23FB0A6CF882E59C"]
 			dependency_requirement: "one_completed"
 			hide_dependent_lines: true
 			id: "6A57B03345FC6D99"
@@ -2374,14 +2372,13 @@
 				}
 				type: "item"
 			}]
-			x: 30.0d
+			x: 31.5d
 			y: 10.0d
 		}
 		{
 			dependencies: [
 				"5E894DC47896785B"
 				"6A57B03345FC6D99"
-				"733685E002AAE489"
 			]
 			dependency_requirement: "one_completed"
 			id: "783BDF78D6C56815"
@@ -2926,50 +2923,15 @@
 			y: 19.5d
 		}
 		{
-			dependencies: [
-				"7F4D5331B59AA5F0"
-				"68865F1DDBFFFACE"
-			]
-			hide_until_deps_complete: true
-			id: "14BCBC516D35FEC1"
+			dependencies: ["206859C2B2272102"]
+			id: "23FB0A6CF882E59C"
 			tasks: [{
-				id: "00BDF7FFA8D22AAD"
-				item: "kubejs:thorium_fuel_rod"
+				id: "2C3F1DCD26641E14"
+				item: "gtceu:tiny_plutonium_dust"
 				type: "item"
 			}]
-			x: 26.5d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"5E894DC47896785B"
-				"68865F1DDBFFFACE"
-			]
-			description: ["{ftbquests.processing_lines_chap.highly_enriched_uranium_fuel_rod.description}"]
-			hide_until_deps_complete: true
-			id: "733685E002AAE489"
-			tasks: [{
-				id: "14F02F7624B5ABFB"
-				item: "kubejs:highly_enriched_uranium_fuel_rod"
-				type: "item"
-			}]
-			x: 28.5d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"206859C2B2272102"
-				"68865F1DDBFFFACE"
-			]
-			hide_until_deps_complete: true
-			id: "2750AC5453EB3184"
-			tasks: [{
-				id: "6DAC8829CD7E3A0D"
-				item: "kubejs:low_enriched_uranium_fuel_rod"
-				type: "item"
-			}]
-			x: 29.0d
-			y: 11.0d
+			x: 30.0d
+			y: 10.0d
 		}
 	]
 	title: "{ftbquests.processing_lines_chap_123.title}"

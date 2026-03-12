@@ -6,7 +6,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('resource_gen')
         .setEUIO('in')
         .setMaxIOSize(2, 6, 0, 0)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL);
 

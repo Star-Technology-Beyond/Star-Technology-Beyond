@@ -17,38 +17,21 @@ ServerEvents.recipes(event => {
         .duration(140)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-    // event.recipes.gtceu.heat_chamber(id('metmalic_estaltadyne_dust'))
-    //     .itemInputs('1x gtceu:estaltadyne_dust')
-    //     .itemInputs('2x gtceu:carbon_dust')
-    //     .itemOutputs('1x gtceu:metmalic_estaltadyne_dust')
-    //     .outputFluids('gtceu:carbon_dioxide 2000')
-    //     .duration(240)
-    //     .EUt(GTValues.VH[GTValues.UEV]);
-
-    // event.recipes.gtceu.electrolyzer(id('magnemalic_estaltadyne_dust'))
-    //     .itemInputs('1x gtceu:metmalic_estaltadyne_dust')
-    //     .itemOutputs('2x gtceu:aluminium_dust')
-    //     .itemOutputs('1x gtceu:magnemalic_estaltadyne_dust')
-    //     .duration(600)
-    //     .EUt(GTValues.VHA[GTValues.UV]);
-
-    // event.recipes.gtceu.advanced_chemistry(id('tytite_estaltadyne_dust'))
-    //     .itemInputs('1x gtceu:magnemalic_estaltadyne_dust')
-    //     .itemInputs('5x gtceu:sodium_hydroxide_dust')
-    //     .inputFluids('gtceu:oxygen 20000')
-    //     .itemOutputs('1x gtceu:tytite_estaltadyne_dust')
-    //     .itemOutputs('35x gtceu:sodium_bisulfate_dust')
-    //     .duration(460)
-    //     .EUt(GTValues.VA[GTValues.UHV]);
-
-    // event.recipes.gtceu.electric_blast_furnace(id('estaltadyne_hydride_dust'))
-    //     .itemInputs('1x gtceu:tytite_estaltadyne_dust')
-    //     .inputFluids('gtceu:hydrofluoric_acid 9000')
-    //     .itemOutputs('1x gtceu:estaltadyne_hydride_dust')
-    //     .itemOutputs('12x gtceu:titanium_trifluoride_dust')
-    //     .blastFurnaceTemp(13400)
-    //     .duration(220)
-    //     .EUt(GTValues.VHA[GTValues.UEV]);
+    event.recipes.gtceu.ordered_chemistry(id('estaltadyne_hydride'))
+        .layeredRecipe((layers) => layers
+            .itemInputs('1x gtceu:estaltadyne_dust', '6x gtceu:carbon_dust')
+            .inputFluids('gtceu:carbon_dioxide 2000')
+            .next()
+            .itemInputs('4x gtceu:sodium_dust')
+            .next()
+            .inputFluids('gtceu:hydrofluoric_acid 3500', 'gtceu:hydrogen 1500')
+            .next()
+            .itemInputs('3x gtceu:magnesium_dust', '2x gtceu:sodium_hydroxide_dust')
+            .inputFluids('gtceu:nitric_acid 2000')
+        )
+        .itemOutputs('gtceu:estaltadyne_hydride_dust')
+        .EUt(GTValues.VA[GTValues.UEV])
+        .duration(180);
 
     event.recipes.gtceu.large_chemical_reactor(id('estalt_dust'))
         .itemInputs('1x gtceu:estaltadyne_hydride_dust')

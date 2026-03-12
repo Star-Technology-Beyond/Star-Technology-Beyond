@@ -3,35 +3,70 @@ global.not_hardmode(() => {
     ServerEvents.recipes(event => {
         const id = global.id;
 
-        [
-            {id: 'thorium_232', rod: 'thorium', input: ['4x gtceu:thorium_dust'], output: ['4x gtceu:uranium_235_dust'], duration: 200, energy: 1024, harvest: -8192},
-            {id: 'uranium_235', rod: 'highly_enriched_uranium', input: ['4x gtceu:uranium_235_dust'], output: ['4x gtceu:plutonium_241_dust'], duration: 300, energy: 1536, harvest: -16384},
-            {id: 'uranium_238', rod: 'low_enriched_uranium', input: ['4x gtceu:uranium_dust'], output: ['4x gtceu:plutonium_dust'], duration: 240, energy: 1280, harvest: -12288}
-        ].forEach(rod=> {
-            //compressing fuels into fuel rods
-            rod.input.push('gtceu:aluminium_fluid_cell');
-            event.recipes.gtceu.canner(id(`${rod.rod}_rod`))
-                .itemInputs(rod.input)
-                .itemOutputs(`kubejs:${rod.rod}_fuel_rod`)
-                .duration(rod.duration)
-                .EUt(rod.energy);  
+            let waste = `gtceu:lead_dust`
+            let Th230 = `gtceu:thorium_dust`
+            let U233 = `gtceu:uranium_233_dust`
+            let U235 = `gtceu:uranium_235_dust`
+            let U238 = `gtceu:uranium_dust`
+            let Np237 = `gtceu:neptunium_dust`
+            let Pu238 = `gtceu:plutonium_238_dust`
+            let Pu239 = `gtceu:plutonium_dust`
+            let Pu241 = `gtceu:plutonium_241_dust`
+            let Pu244 = `gtceu:plutonium_244_dust`
+            let Am241 = `gtceu:americium_241_dust`
+            let Cm244 = `gtceu:curium_244_dust`
+            let Cf252 = `gtceu:californium_252_dust`
+            let Es253 = `gtceu:einsteinium_253_dust`
+            let Fm257 = `gtceu:fermium_dust`
+            let Nq402 = `gtceu:naquadria_dust`
+            let Nq404 = `gtceu:purified_naquadah_dust`
+            let Ec404 = `gtceu:echo_shard_dust`
 
-            //fission reactions (depleting rods)
-            event.recipes.gtceu.nuclear_fission(id(`${rod.id}_rod`))
-                .itemInputs(`kubejs:${rod.rod}_fuel_rod`)
-                .inputFluids('gtceu:distilled_water 1000')
-                .itemOutputs(`kubejs:depleted_${rod.rod}_fuel_rod`)
-                .duration(300)
-                .EUt(rod.harvest);
+        const FLUID_CELL_TYPE = {
+            1: 'gtceu:aluminium_fluid_cell',
+            2: 'gtceu:stainless_steel_fluid_cell',
+            3: 'gtceu:titanium_fluid_cell',
+            4: 'gtceu:titanium_fluid_cell',
+            5: 'start_core:enriched_naquadah_fluid_cell',
+            6: 'start_core:neutronium_fluid_cell'
+        }
 
-            //depleted rod separation
-            rod.output.push('gtceu:aluminium_fluid_cell');
-            event.recipes.gtceu.centrifuge(id(`depleted_${rod.id}_rod`))
-                .itemInputs(`kubejs:depleted_${rod.rod}_fuel_rod`)
-                .itemOutputs(rod.output)
-                .duration(rod.duration)
-                .EUt(rod.energy);
-        });
-        
+        let nuclearRod = (type, tier, composition, decomposition) => {
+
+            let cell = FLUID_CELL_TYPE[tier];
+
+            event.recipes.gtceu.forming_press(id(type + '_fuel_rod'))
+                .itemInputs(cell)
+                .itemInputs(composition)
+                .itemOutputs('kubejs:' + type + '_fuel_rod')
+                .duration(1600 / (2 ** tier))
+                .EUt(GTValues.VHA[GTValues.HV] * (4 ** tier));
+
+            event.recipes.gtceu.centrifuge(id('depleted_' + type + '_fuel_rod_decomposition'))
+                .itemInputs('kubejs:depleted_' + type + '_fuel_rod')
+                .itemOutputs(cell)
+                .itemOutputs(decomposition)
+                .duration(2000 / (2 ** tier))
+                .EUt(GTValues.VHA[GTValues.HV] * (4 ** tier));
+
+        }
+
+        nuclearRod(`thr`,1,`4x ${Th230}`,`4x ${U235}`);
+        nuclearRod(`leu238`,1,`4x ${U238}`,[`2x ${Pu244}`,`2x ${Np237}`]);
+        nuclearRod(`heu`,2,`4x ${U235}`,[`3x ${Pu241}`, `1x ${waste}`]);
+        nuclearRod(`plu`,2,`4x ${Pu244}`,[`2x ${Pu239}`,`1x ${Pu241}`,`1x ${Am241}`]);
+        nuclearRod(`mox239`,2,[`2x ${U238}`,`2x ${Pu239}`],[`2x ${Am241}`,`1x ${Pu241}`, `1x ${waste}`]);
+        nuclearRod(`amr`,3,`4x ${Am241}`,[`2x ${Cm244}`,`1x ${Pu238}`,`1x ${Np237}`]);
+        nuclearRod(`nep`,3,`4x ${Np237}`,[`2x ${Pu238}`,`1x ${Pu239}`, `1x ${waste}`]);
+        nuclearRod(`crm`,4,`4x ${Cm244}`,[`2x ${Cf252}`,`2x ${Pu239}`]);
+        nuclearRod(`mox241`,4,[`2x ${U238}`,`2x ${Pu241}`],[`3x ${Pu239}`,`1x ${Am241}`]);
+        nuclearRod(`tpu`,4,[`2x ${Th230}`,`2x ${Pu239}`],[`3x ${U233}`,`1x ${Am241}`]);
+        nuclearRod(`mox238`,4,[`3x ${Pu238}`,`1x ${Cf252}`],[`3x ${Cm244}`,`1x ${Pu239}`]);
+        nuclearRod(`caf`,5,`4x ${Cf252}`,[`2x ${Fm257}`,`2x ${Pu241}`]);
+        nuclearRod(`etu`,5,[`2x ${Cm244}`,`1x ${Cf252}`,`1x ${Am241}`],[`2x ${Pu238}`,`2x ${Es253}`]);
+        nuclearRod(`leu233`,5,`4x ${U233}`,[`2x ${Pu239}`,`1x ${Cf252}`, `1x ${waste}`]);
+        nuclearRod(`nqe`,6,[`2x ${Nq404}`,`2x ${Es253}`],[`2x ${Ec404}`, `1x ${Nq402}`, `1x ${waste}`]);
+
     });
+
 });
