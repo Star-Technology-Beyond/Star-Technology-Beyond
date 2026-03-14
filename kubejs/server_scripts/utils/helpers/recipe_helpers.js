@@ -70,6 +70,10 @@ global.getComponentTotal = (components, tierBracket) => {
       totalCounts[type] += componentRecycleCounts[component][type];
     });
   });
+
+  totalCountsTypes.forEach(type => {
+    totalCounts[type] = Math.floor(totalCounts[type]);
+  });
   
   return totalCounts;
 }

@@ -24,13 +24,11 @@ global.not_hardmode(() => {
             });
             
             const coverCounts = (tier == "uv") ? global.LUVToUVComponentRecycleCounts.dreamlink_cover : global.UHVPlusComponentRecycleCounts.dreamlink_cover;
-            const secMaterial = (tier == "uv") ? materials.wireMaterial : materials.secMaterial;
-            const secCount = (tier == "uv") ? coverCounts.wireCount : coverCounts.secCount;
             const tertMaterial = (tier == "uv") ? materials.foilMaterial : materials.tertMaterial;
             const tertCount = (tier == "uv") ? coverCounts.foilCount : coverCounts.tertCount;
             
             const coverOutputs = getFinalOutputs([`${coverCounts.primCount}x ${materials.primMaterial}`, `${coverCounts.cableCount}x ${materials.cableMaterial}`, 
-                `${tertCount}x ${tertMaterial}`, `${secCount}x ${secMaterial}`, false, false, false, false], "singleblock", false, false);             
+                `${tertCount}x ${tertMaterial}`, false, false, false, false], "singleblock", false, false);             
             
             event.recipes.gtceu.arc_furnace(id(`arc_${tier}_2a_dream_link_cover_item`))
                 .itemInputs(`start_core:${tier}_2a_dream_link_cover_item`)
@@ -61,13 +59,11 @@ global.not_hardmode(() => {
             });
             
             const coverCounts = (tier == "uv") ? global.LUVToUVComponentRecycleCounts.dreamlink_cover : global.UHVPlusComponentRecycleCounts.dreamlink_cover;
-            const secMaterial = (tier == "uv") ? materials.wireMaterial : materials.secMaterial;
-            const secCount = (tier == "uv") ? coverCounts.wireCount : coverCounts.secCount;
             const tertMaterial = (tier == "uv") ? materials.foilMaterial : materials.tertMaterial;
             const tertCount = (tier == "uv") ? coverCounts.foilCount : coverCounts.tertCount;
             
             const coverOutputs = getFinalOutputs([`${coverCounts.primCount}x ${materials.primMaterial}`, `${coverCounts.cableCount}x ${materials.cableMaterial}`, 
-                `${tertCount}x ${tertMaterial}`, `${secCount}x ${secMaterial}`, false, false, false, false], "singleblock", true, false);
+                `${tertCount}x ${tertMaterial}`, false, false, false, false], "singleblock", true, false);
             
             event.recipes.gtceu.macerator(id(`macerate_${tier}_2a_dream_link_cover_item`))
                 .itemInputs(`start_core:${tier}_2a_dream_link_cover_item`)
