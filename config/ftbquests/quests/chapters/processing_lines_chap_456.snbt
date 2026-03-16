@@ -4216,16 +4216,19 @@
 				{
 					id: "6EF26A509CDAB8AF"
 					item: "gtceu:bismuth_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "26B8A50C4B1F42AD"
 					item: "gtceu:tellurium_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2F272ABF781B3372"
 					item: "gtceu:nitric_acid_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{

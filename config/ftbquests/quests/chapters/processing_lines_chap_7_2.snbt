@@ -2275,26 +2275,31 @@
 				{
 					id: "0A31575D9C75BAC8"
 					item: "gtceu:potassium_carbonate_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "27CFFBCCC5B20CDA"
 					item: "gtceu:potassium_bromide_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "53771A9D62DBB0CF"
 					item: "gtceu:sodium_nitrite_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7112E90C0EBEC023"
 					item: "gtceu:sulfuric_acid_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "604687EA66A79563"
 					item: "gtceu:carbon_monoxide_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2313,21 +2318,25 @@
 				{
 					id: "3C57D9F6CE2A7889"
 					item: "gtceu:sodium_bisulfate_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4290CB59DCBF911B"
 					item: "gtceu:sodium_bicarbonate_dust"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "0622FB51F982B309"
 					item: "gtceu:styrene_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "094EBB18BC5623D7"
 					item: "gtceu:ethenone_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
