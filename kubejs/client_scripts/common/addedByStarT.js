@@ -17,14 +17,14 @@ global.addedByStarT = {
         "gravitational_compression_chamber", "material_annihilation_array", "molecular_inducing_xanadu", "multithreaded_component_synthesis_forge",
         "subatomic_particle_lattice_isolation_terminal", "superior_particulate_isolation_nexus", "yielding_excression_advanced_seperation_transformator", 
         "luv_fusion_reactor", "zpm_fusion_reactor", "uv_fusion_reactor", "uhv_fusion_reactor", "uev_fusion_reactor", "uiv_fusion_reactor", "exotic_gas_siphon",
-        "ultimate_ebf", "compact_assembly_line", "supreme_plasma_turbine", "vacuum_chemical_reaction_chamber", "nyinsane_plasma_turbine", "ulv_barrel", 
+        "ultimate_ebf", "compact_assembly_line", "supreme_plasma_turbine", "vacuum_chemical_reaction_chamber", 'advanced_synthesis_plant', "nyinsane_plasma_turbine", "ulv_barrel", 
         "ulv_stone_barrel", "ulv_advanced_composter"        
     ],
     isCore: [
         "hellforge", "abyssal_harvester", "abyssal_containment_room", "luv_fusion_reactor", "zpm_fusion_reactor", "uv_fusion_reactor", "uhv_fusion_reactor", "uev_fusion_reactor", "uiv_fusion_reactor"
     ],
     modifiers: [
-        "batch", "paraBatch", "subBatch", "pocBatch", "throughBatch", "coilBatch", "paraSubBatch", "paraPocBatch", "subThroughBatch", "threadSubBatch", "paraSubBulkBatch", "paraSubAssBatch",
+        "batch", "paraBatch", "subBatch", "pocBatch", "throughBatch", "coilBatch", "paraLayered", "paraSubBatch", "paraPocBatch", "subThroughBatch", "threadSubBatch", "paraSubBulkBatch", "paraSubAssBatch",
         "paraSubThroughBatch", "paraThreadBulkBatch", "subAssThroughBatch", "paraSubBulkThroughBatch", "paraPocSubBulkThroughBatch", "paraThreadSubBulkBatch"
     ],
     batch: [
@@ -47,6 +47,9 @@ global.addedByStarT = {
     ],
     coilBatch: [
         "super_implosion_compressor"
+    ],
+    paraLayered: [
+        'advanced_synthesis_plant'
     ],
     paraSubBatch: [
         "composting_factory", "hydroponic_garden", "industrial_fishery", "tree_synthesizer", "mega_abs", "super_pressure_heat_chamber", "heat_chamber"

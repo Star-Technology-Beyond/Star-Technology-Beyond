@@ -654,6 +654,7 @@
     "block.kubejs.subBatch.tooltip": "Has §cSubtick Parallels§r and §eBatching",
     "block.kubejs.pocBatch.tooltip": "Has §6Perfect Overclock§r and §eBatching",
     "block.kubejs.coilBatch.tooltip": "Has §bCoil Parallels§r and §eBatching",
+    "block.kubejs.paraLayered.tooltip": "Can use §3Parallel Hatches§r and has §9Layered Inputs§r",
     "block.kubejs.paraSubBatch.tooltip": "Can use §3Parallel Hatches§r and has §cSubtick Parallels§r and §eBatching",
     "block.kubejs.paraPocBatch.tooltip": "Can use §3Parallel Hatches§r and has §6Perfect Overclock§r and §eBatching",
     "block.kubejs.subThroughBatch.tooltip": "Has §cSubtick Parallels§r, §bThroughput Boosting§r and §eBatching",

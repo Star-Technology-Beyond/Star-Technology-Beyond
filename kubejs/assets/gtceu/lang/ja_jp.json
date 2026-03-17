@@ -340,7 +340,6 @@
     "gtceu.cobbleworks": "大型丸石ふるい分け準備処理",
     "block.gtceu.cobbleworks": "大型丸石ふるい分け準備処理モジュール",
     "gtceu.chemical_skip": "短縮型化学処理",
-    "gtceu.advanced_chemistry": "発展型化学反応処理",
     "block.gtceu.chemical_plant": "化学処理プラント",
     "gtceu.component_part_assembly": "中間部品組立装置",
     "block.gtceu.component_part_assembly": "中間部品組立装置",
@@ -1242,9 +1241,6 @@
     "block.gtceu.atomic_synthesis_plant.tooltip.0": "§6§l化学の先生",
     "block.gtceu.atomic_synthesis_plant.tooltip.1": "§7§6化学処理プラント§7のレシピはもちろん、化学合成の常識を凌駕するほどのレシピを実行可能な、非常に発展的な機械。",
     "block.gtceu.atomic_synthesis_plant.tooltip.2": "§8-----------------------------------",
-
-    "gtceu.absolute_reduction": "絶対的短縮型化学処理",
-    "gtceu.enlightened_chemistry": "究極の化学合成",
 
     "block.gtceu.omega_pressure_heat_chamber": "完全加圧加熱室",
     "block.gtceu.omega_pressure_heat_chamber.tooltip.0": "§7加圧するほど、材料の結合が強くなる。",
