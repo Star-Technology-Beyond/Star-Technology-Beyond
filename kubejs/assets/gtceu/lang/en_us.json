@@ -298,7 +298,6 @@
     "gtceu.nuclear_fission": "Nuclear Fission",
     "block.gtceu.nuclear_reactor": "Nuclear Reactor",
     "gtceu.chemical_skip": "Chemical Line Reduction",
-    "gtceu.advanced_chemistry": "Advanced Chemical Synthesis",
     "block.gtceu.chemical_plant": "Chemical Plant",
     "gtceu.component_part_assembly": "Component Part Assembly",
     "block.gtceu.component_part_assembly": "Component Part Assembly",
@@ -1238,9 +1237,6 @@
     "block.gtceu.atomic_synthesis_plant.tooltip.1": "§7Not only is this machine capable of performing the task of a §6Chemical Plant§7 but it also pushes beyond what the known synthesis of chemistry beholds.",
     "block.gtceu.atomic_synthesis_plant.tooltip.2": "§8-----------------------------------",
 
-    "gtceu.absolute_reduction": "Absolute Chemical Line Reduction",
-    "gtceu.enlightened_chemistry": "Enlightened Chemical Synthesis",
-
     "block.gtceu.omega_pressure_heat_chamber": "Omega Pressure Heat Chamber",
     "block.gtceu.omega_pressure_heat_chamber.tooltip.0": "§7It turns out the more pressure you add the stronger the fusing of materials becomes.",
 
@@ -1356,7 +1352,6 @@
     "gtceu.bacteria_synthesizer": "Bacteria Synthesizer",
     
     "block.gtceu.palladium_substation": "Secure Pallaridium Machine Casing",
-
     "block.gtceu.dual_chambered_vacuum_complex": "Dual-Chambered Vacuum Complex",
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.0": "§c§lAdvanced Pressurized Chemical Reactor",
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.1": "§7A chemical reactor that can operate under pressurized environments, increasing reaction rates and enabling certain pressure-dependent reactions.",
@@ -1410,7 +1405,12 @@
     "material.gtceu.curium_244": "Curium 244",
     "material.gtceu.californium_252": "Californium 252",
     "material.gtceu.einsteinium_253": "Einsteinium 253",
-    "material.gtceu.fermium": "Fermium 257"
+    "material.gtceu.fermium": "Fermium 257",
 
+    "material.gtceu.hafnastide_rich_sludge": "Hafnastide-Rich Sludge",
+    "material.gtceu.flerovium_rich_re_sludge": "Flerovium-Rich Re Sludge",
+    "material.gtceu.pologium_rich_sludge": "Pologium-Rich Sludge",
 
+    "block.gtceu.advanced_synthesis_plant": "Advanced Synthesis Plant",
+    "gtceu.ordered_chemistry": "Ordered Chemistry Sythesis"
 }

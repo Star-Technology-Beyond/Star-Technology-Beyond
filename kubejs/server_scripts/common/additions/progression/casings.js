@@ -192,6 +192,12 @@ ServerEvents.recipes(event => {
             L:  `gtceu:${pipe}_normal_fluid_pipe`
         }).id(`${casing_id}:${type}_pipe_casing`);
 
+        event.recipes.gtceu.assembler(id(`${type}_pipe_casing`))
+            .itemInputs(`4x gtceu:${material}_plate`, `1x gtceu:${pipe}_frame`, `4x gtceu:${pipe}_normal_fluid_pipe`)
+            .itemOutputs(`2x ${casing_id}:${type}_pipe_casing`)
+            .duration(50)
+            .EUt(GTValues.VH[GTValues.LV])
+            .circuit(9);
     };
 
     pipe('pallaridium','palladium','iridium','kubejs');
@@ -375,4 +381,38 @@ ServerEvents.recipes(event => {
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches'
         }).id(`start:shaped/palladium_substation`);
+
+    const hermeticCasing = (tier) => {
+        const casingMaterial = global.componentMaterials[tier].materials.tierMaterial;
+        const pipeMaterial = global.componentMaterials[tier].materials.pipeMaterial;
+        const toRemoveList = ['luv', 'zpm', 'uv'];
+        const isGt = ['lv', 'mv', 'hv', 'ev', 'iv', 'luv', 'zpm', 'uv', 'uhv'];
+        const prefix = (isGt.includes(tier)) ? 'gtceu:' : 'kubejs:';
+
+        if (toRemoveList.includes(tier)) {
+            event.remove({ output: `gtceu:${tier}_hermetic_casing` })
+        }
+
+        event.shaped(`${prefix + tier}_hermetic_casing`, [
+            'PPP',
+            'PHP',
+            'PPP'
+        ], {
+            P: `gtceu:${casingMaterial}_plate`,
+            H: `gtceu:${pipeMaterial}_large_fluid_pipe`
+        }).id(id(`${tier}_hermetic_casing`));
+
+        event.recipes.gtceu.assembler(id(`${tier}_hermetic_casing`))
+            .itemInputs(`8x gtceu:${casingMaterial}_plate`, `1x gtceu:${pipeMaterial}_large_fluid_pipe`)
+            .itemOutputs(`${prefix + tier}_hermetic_casing`)
+            .circuit(10)
+            .duration(50)
+            .EUt(GTValues.VH[GTValues.LV]);
+    }
+
+    [
+        'luv', 'zpm', 'uv', 'uhv'
+    ].forEach(tier => {
+        hermeticCasing(tier);
+    })
 });

@@ -776,9 +776,9 @@
 		{
 			dependencies: [
 				"560669210B8CABFC"
-				"0491A3097C6BA6AE"
 				"40A015DBF6603208"
 				"7E33A485E30B47EA"
+				"271587AB365AB803"
 			]
 			description: ["{ftbquests.processing_lines_chap.silicon_carbide_over_bismuth_tritelluride_dust.description}"]
 			id: "22B85F7F13C66730"
@@ -1333,24 +1333,6 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"01D169FDC848B8A1"
-				"41A2F623390AA45B"
-			]
-			id: "0491A3097C6BA6AE"
-			tasks: [{
-				id: "6D5455AD6C0BD3D3"
-				item: {
-					Count: 1
-					id: "gtceu:bismuth_3_nitrate_dust"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 13.5d
-			y: 8.5d
-		}
-		{
 			dependencies: ["54EC42CB74C59F5F"]
 			id: "40A015DBF6603208"
 			tasks: [{
@@ -1379,49 +1361,6 @@
 			}]
 			x: 10.5d
 			y: 11.5d
-		}
-		{
-			dependencies: ["53A038A621F3997C"]
-			id: "01D169FDC848B8A1"
-			tasks: [{
-				id: "23B89A7369F30456"
-				item: {
-					Count: 1
-					id: "gtceu:bismuth_dust"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 13.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["1AAB9C20E833029A"]
-			icon: {
-				Count: 1
-				id: "gtceu:nitric_acid_bucket"
-				tag: { }
-			}
-			id: "41A2F623390AA45B"
-			tasks: [
-				{
-					id: "061C59F35BD58011"
-					item: {
-						Count: 1
-						id: "gtceu:nitric_acid_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "090FBE4BA8A0B512"
-					type: "checkmark"
-				}
-			]
-			title: "{ftbquests.processing_lines_chap.nitric_acid.title}"
-			x: 14.0d
-			y: 7.5d
 		}
 		{
 			dependencies: ["1B97E56660BDCEF6"]
@@ -4315,6 +4254,37 @@
 			]
 			x: 15.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["53B8A2EFCF2D4371"]
+			icon: "gtceu:advanced_synthesis_plant"
+			id: "271587AB365AB803"
+			tasks: [
+				{
+					id: "6EF26A509CDAB8AF"
+					item: "gtceu:bismuth_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "26B8A50C4B1F42AD"
+					item: "gtceu:tellurium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2F272ABF781B3372"
+					item: "gtceu:nitric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3E87EB5E423A0F02"
+					type: "checkmark"
+				}
+			]
+			x: 13.5d
+			y: 8.5d
 		}
 	]
 	title: "{ftbquests.processing_lines_chap_456.title}"

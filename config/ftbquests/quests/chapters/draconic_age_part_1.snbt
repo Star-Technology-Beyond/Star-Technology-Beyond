@@ -213,7 +213,6 @@
 		{
 			dependencies: [
 				"665FC02BC2BC414F"
-				"126DB96C50CC815F"
 				"5FAEC6FD93ACC381"
 			]
 			description: ["{ftbquests.draconic_age.coolants.description}"]
