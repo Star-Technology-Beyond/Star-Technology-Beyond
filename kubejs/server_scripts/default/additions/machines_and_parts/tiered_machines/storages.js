@@ -27,14 +27,7 @@ ServerEvents.recipes(event => {
             M: 'gtceu:uhv_electric_pump'
         }).id(id('uhv_quantum_tank'));
 
-        event.shaped('gtceu:uhv_hermetic_casing', [
-            'PPP',
-            'PHP',
-            'PPP'
-        ], {
-            P: 'gtceu:neutronium_plate',
-            H: 'gtceu:zapolgium_large_fluid_pipe'
-        }).id(id('uhv_hermetic_casing'));
+        
         
     });
 });

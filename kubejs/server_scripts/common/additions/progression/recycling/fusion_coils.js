@@ -15,7 +15,6 @@ global.not_hardmode(() => {
             let tierBracket;
             let materials = {};
             let recycleOutputs = [];
-            let blockType;
             let counts = {};
             let materialTypes;
             if (!FUSIONCOILDETAILS[coil]) return;
