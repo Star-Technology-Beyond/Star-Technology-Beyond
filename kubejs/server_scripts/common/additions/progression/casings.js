@@ -192,6 +192,12 @@ ServerEvents.recipes(event => {
             L:  `gtceu:${pipe}_normal_fluid_pipe`
         }).id(`${casing_id}:${type}_pipe_casing`);
 
+        event.recipes.gtceu.assembler(id(`${type}_pipe_casing`))
+            .itemInputs(`4x gtceu:${material}_plate`, `1x gtceu:${pipe}_frame`, `4x gtceu:${pipe}_normal_fluid_pipe`)
+            .itemOutputs(`2x ${casing_id}:${type}_pipe_casing`)
+            .duration(50)
+            .EUt(GTValues.VH[GTValues.LV])
+            .circuit(9);
     };
 
     pipe('pallaridium','palladium','iridium','kubejs');
