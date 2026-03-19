@@ -3,27 +3,34 @@
 global.componentMaterials = {
     lv: {
         materials: {
-            tierMaterial: `steel`
+            tierMaterial: 'steel',
+            cable: 'tin'
         }
     },
     mv: {
         materials: {
-            tierMaterial: `aluminium`
+            tierMaterial: 'aluminium',
+            cable: 'copper'
         }
     },
     hv: {
         materials: {
-            tierMaterial: `stainless_steel`
+            tierMaterial: 'stainless_steel',
+            cable: 'gold'
         }
     },
     ev: {
         materials: {
-            tierMaterial: `titanium`
+            tierMaterial: 'titanium',
+            cable: 'aluminium',
+            superconductor: 'uranium_triplatinum'
         }
     },
     iv: {
         materials: {
-            tierMaterial: `tungsten_steel`
+            tierMaterial: 'tungsten_steel',
+            cable: 'platinum',
+            superconductor: 'samarium_iron_arsenic_oxide'
         }
     },
     luv: {
