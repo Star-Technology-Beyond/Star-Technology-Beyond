@@ -7,6 +7,7 @@
     "block.gtceu.luv_essence_burner": "§d精鋭型エッセンス燃焼機 II",
     "block.gtceu.zpm_essence_burner": "§c精鋭型エッセンス燃焼機 III",
     "block.gtceu.uv_essence_burner": "§3究極型エッセンス燃焼機",
+
     "block.gtceu.lv_mystical_greenhouse": "基本型神秘型温室",
     "block.gtceu.mv_mystical_greenhouse": "§b発展型神秘型温室",
     "block.gtceu.hv_mystical_greenhouse": "§6発展型神秘型温室 II",
@@ -15,6 +16,7 @@
     "block.gtceu.luv_mystical_greenhouse": "§d精鋭型神秘型温室 II",
     "block.gtceu.zpm_mystical_greenhouse": "§c精鋭型神秘型温室 III",
     "block.gtceu.uv_mystical_greenhouse": "§3究極型神秘型温室",
+
     "block.gtceu.lv_mystical_greenhouse.tooltip": "§7ふるい分けはもう飽きた？ ならば農業だ！",
     "block.gtceu.mv_mystical_greenhouse.tooltip": "§7ふるい分けはもう飽きた？ ならば農業だ！",
     "block.gtceu.hv_mystical_greenhouse.tooltip": "§7ふるい分けはもう飽きた？ ならば農業だ！",
@@ -23,27 +25,38 @@
     "block.gtceu.luv_mystical_greenhouse.tooltip": "§7ふるい分けはもう飽きた？ ならば農業だ！",
     "block.gtceu.zpm_mystical_greenhouse.tooltip": "§7ふるい分けはもう飽きた？ ならば農業だ！",
     "block.gtceu.uv_mystical_greenhouse.tooltip": "§7ふるい分けはもう飽きた？ ならば農業だ！",
+
     "block.gtceu.dimensional_finder.tooltip.0": "§7ディメンションにピンを刺す",
     "block.gtceu.dimensional_finder.tooltip.1": "§7深宇宙にパルスを送信し、その反響を結晶に刻み、そのデータに基づいて地域の位置を三角測量する事が可能な機械。",
+
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.0": "§a§lアクレイリウム処理",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.1": "§7アクレイリウムを再結合するために設計された再統合機械。結晶上の精密な安定化マトリックスを通して、アクレイリウムの変種を折り重ねることで、高精製された純粋なアクレイリウムを作り出す事ができる。",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.2": "§8-----------------------------------",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.3": "§6安定化マトリックスレンズ:",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.4": "§7折畳式安定化装置は、再統合の焦点調整の為にレンズを使用する。アクレイリウムの種類に合わせて適切な色のレンズを選択する必要があり、使用後はレンズを入力に戻す必要がある。",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.5": "§8-----------------------------------",
+
     "block.gtceu.gate_assembly.tooltip.0": "§7スターゲイトの部品を1つに合成することを可能にする、非常に強力な鍛冶場。",
     "block.gtceu.gate_assembly.tooltip.1": "§6完璧なオーバークロック§rが可能",
+
     "block.gtceu.large_rotor_machine.tooltip.0": "§7強大な回転力を用いて棒を折り畳み、何層にも凝縮して驚くほど耐久力のある材料を作り出すことができる機械。",
     "block.gtceu.large_rotor_machine.tooltip.1": "§3並列制御§rユニットを使用可能",
+
     "block.gtceu.large_quantum_compressor.tooltip.0": "§7大量の物質を注入圧縮し、グラビスターをシンギュラリティに崩壊させることができる機械。",
+
     "block.gtceu.runic_circuitry_assembling_station.tooltip.0": "§7技術と魔法の境界を越え、高密度なプレートに純粋なシンギュラリティを吹き込み、神秘の力を秘めたルーン文字を刻み込むことができる機械。",
+
     "block.gtceu.runic_inscribe_manipulate.tooltip.0": "§7ルーン文字を重ねてその力を融合したり、構造化されたブロックの形に組み立て上げて物質世界に力を発揮できたりする、発展的なルーン刻印が可能な機械。",
     "block.gtceu.runic_inscribe_manipulate.tooltip.1": "§6完璧なオーバークロック§rが可能",
+
     "block.gtceu.stargate_component_assembly.tooltip.0": "§7時空の裂け目をすり抜ける力を秘める古代のルーン文字が刻印された、極めて強力なブロックの組み立てを行うために設計された、巨大な機械構造物。",
     "block.gtceu.stargate_component_assembly.tooltip.1": "§6完璧なオーバークロック§rが可能",
+
     "block.gtceu.chemical_plant.tooltip.0": "§7複雑な化学反応処理群を大幅に短縮し、より発展的な化学反応処理を実行可能にする機械。",
+
     "block.gtceu.component_part_assembly.tooltip.0": "§7通常の組立機では組立不可能な、非常に複雑な中間機械部品を精密に組み立てる、発展的な組立機械。",
     "block.gtceu.component_part_assembly.tooltip.1": "§cサブティック並列§rが可能かつ§9アセンブリライン搬入システム§rを持つ",
+
     "block.gtceu.exotic_gas_siphon.tooltip.0": "§f§l巨大なガス収集機",
     "block.gtceu.exotic_gas_siphon.tooltip.1": "§7精密濾過及び分子分離技術を用いて、希ガスなどを含む特殊な化合物を周囲環境から効率的に分離し、あらゆる用途での高純度な気体収集を実現する機械。",
     "block.gtceu.exotic_gas_siphon.tooltip.2": "§8-----------------------------------",
@@ -53,80 +66,125 @@
     "block.gtceu.exotic_gas_siphon.tooltip.6": "§6ガス収集機:",
     "block.gtceu.exotic_gas_siphon.tooltip.7": "§7周囲の大気中からディメンション固有の空気を収集する、従来の§fガス収集機§7レシピをサポート。",
     "block.gtceu.exotic_gas_siphon.tooltip.8": "§8-----------------------------------",
+
     "block.gtceu.heat_chamber.tooltip.0": "§7制御された機械環境内で極度の高温を生み出し、その熱を利用して材料精製や反応を触媒する事が可能な、大型マルチブロック機械。",
+
     "block.gtceu.super_pressure_heat_chamber.tooltip.0": "§7想像を絶する程の高温高圧の環境を作り出し、その環境下で不完全な素材を融合し、この銀河系で最も高耐久な材料を作り出すことが出来る機械。",
+
     "block.gtceu.nuclear_reactor.tooltip.0": "§7比較的単純な核分裂反応を利用し、非常に便利な物質を作り出すことが出来る、中型の原子炉。",
     "block.gtceu.nuclear_reactor.tooltip.1": "§3並列制御§rユニットを使用可能",
+
     "block.gtceu.primitive_ore_factory.tooltip.0": "§7はじめてのオールインワン鉱石処理機械。",
+
     "block.gtceu.steam_ore_factory.tooltip.0": "§7バスやハッチでのアクセスが可能になり、自動化が可能になった、少し発展的な鉱石処理機械。",
+
     "block.gtceu.electric_ore_factory.tooltip.0": "§7電気で動くオールインワン鉱石処理機械。",
+
     "block.gtceu.ore_processing_plant.tooltip.0": "§7以前までのティアの処理能力を大幅に超える、新時代の鉱石処理機械。",
+
+
     "block.gtceu.bulk_ore_processing_array": "一括鉱石処理装置",
     "gtceu.bulk_ore_processing_array": "一括鉱石処理",
     "block.gtceu.bulk_ore_processing_array.tooltip.0": "§7今までの全ての鉱石処理機械を凌駕するほどの処理能力を持つ、§4究極§7の鉱石処理機械。",
+
     "block.gtceu.industrial_barrel": "工業用バレル",
     "gtceu.industrial_barrel_aqueous": "工業用バレル - 水性レシピ",
     "gtceu.industrial_barrel_magmatic": "工業用バレル - 溶岩性レシピ",
     "block.gtceu.industrial_barrel.tooltip.0": "§7大型バレルのレシピをほとんど実行できる巨大なバレル。",
+
     "block.gtceu.large_barrel.tooltip.0": "§7小さなバレルよりも大量のアイテムを高速で処理出来る他、いくつか新しいレシピも実行できる、より大きく、より優秀なバレル。",
+
     "block.gtceu.large_farm.tooltip.0": "§7初期の作物の主な供給源となる、日中に日光を受けて稼働する自動農場。",
+
     "block.gtceu.large_stone_barrel.tooltip.0": "§7あらゆる種類の石や溶岩を作ることができる、より大きな石製バレル。",
+
     "block.gtceu.solid_blast_furnace.tooltip.0": "§7初歩的な溶鉱炉の強化版。",
+
     "block.gtceu.rock_filtrator.tooltip.0": "§7正確に砂利や砂をふるい分け、ジオードなどの宝石を見つけ出すことが出来る装置。",
     "block.gtceu.rock_filtrator.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
     "block.gtceu.rock_filtrator.tooltip.2": "§7複数の搬出バスが必要",
+
     "block.gtceu.rock_sifter.tooltip.0": "§7驚異的な速度で素材をふるい分ける、岩石濾過装置の上位版。",
+
     "block.gtceu.large_sieve.tooltip.0": "§7既存の技術をフル活用して、より高速かつ大量にふるい分け可能な、電動ふるい機の進化版。",
+
     "block.gtceu.mechanical_sieve.tooltip.0": "§7電気の力で自動でふるい分けをし、大量の資源を濾し出す、基本的な機械。",
     "block.gtceu.mechanical_sieve.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.void_excavator.tooltip.0": "§7非常に高速に深淵から資源を採取できる、より強力な奈落鉱物抽出機",
     "block.gtceu.void_extractor.tooltip.0": "§7常に足元にちらつく深淵、そこから資源を無限に採掘する機械。その資源はどこから湧いてくるのか、なんて事を考えてる暇があるならパッシブラインの構築に励むことだ。",
     "block.gtceu.void_extractor.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
     "block.gtceu.void_extractor.tooltip.2": "§7複数の搬出バス/ハッチが必要",
+
     "block.gtceu.essence_enchancer.tooltip.0": "§7神秘のエッセンスに大量の電力を注入し、その組成に変化を起こし、より有用なものに作り変える、複雑な機械。",
     "block.gtceu.essence_enchancer.tooltip.1": "§6完璧なオーバークロック§rが可能",
     "block.gtceu.essence_enchancer.tooltip.2": "§3並列制御§rユニットを使用可能",
+
     "block.gtceu.essence_replicator.tooltip.0": "§7エッセンスを無限に複製できる機械。より上位のランクのものになると、触媒が必要になる。",
     "block.gtceu.essence_replicator.tooltip.1": "§6完璧なオーバークロック§rが可能",
     "block.gtceu.essence_replicator.tooltip.2": "§3並列制御§rユニットを使用可能",
+
     "block.gtceu.dimensional_destabiliser.tooltip.0": "§7宇宙空間の亀裂を刺激して、これまで発見されたことのないような重元素を採取できる謎の機械。",
+
     "block.gtceu.greenhouse.tooltip.0": "§7植物、花、苗木の成長を刺激し、より簡単に栽培できるようにする電気機械。",
+
     "block.gtceu.latex_plantation.tooltip.0": "§7木精抽出機よりも遥かに高速にラテックスを抽出することが出来るマルチブロック機械。",
+
     "block.gtceu.molten_destabilizer.tooltip.0": "§7複雑な溶融化学物質を、小さな塊に分割して処理できる強力な機械。",
+
     "block.gtceu.vibration_laser_engraver.tooltip.0": "§7精密なレーザーと振動を利用して、宝石、シリコンチップ、クリスタルを簡単に成形及び刻印し、必要に応じては変換できるマルチブロック機械。",
     "block.gtceu.vibration_laser_engraver.tooltip.1": "§3並列制御§rユニットを使用可能§rかつ§cサブティック並列§rが可能§rかつ§2一括処理§rが可能かつ§bスループットブースト処理§rが可能",
+
     "block.gtceu.cyclonic_sifter.tooltip.0": "§7基本型の選別機に比べ、精度と強度に優れており、より発展的なレシピを処理可能な、発展型の選別機。",
+
     "block.gtceu.injection_mixer.tooltip.0": "§7基本型のミキサーに比べ、正確な混合物を作成し、より発展的なレシピを処理可能な、発展型のミキサー。",
+
     "block.gtceu.manifold_centrifuge.tooltip.0": "§7基本型の遠心分離機に比べ、より正確に分離が可能で、より発展的なレシピを処理可能な、発展型の遠心分離機。",
+
     "block.gtceu.classic_stargate_display.tooltip.0": "§7構築に必須というわけではないが、§3クラシックスターゲイト§rの構築を手助けするマルチブロック機械。",
+
     "block.gtceu.t_large_bender.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の金属加工機。",
     "block.gtceu.t_large_bender.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_centrifuge.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の遠心分離機。",
     "block.gtceu.t_large_centrifuge.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_electrolyzer.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の電解槽。",
     "block.gtceu.t_large_electrolyzer.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_extruder.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の押出機。",
     "block.gtceu.t_large_extruder.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_forming_press.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の圧縮成形機。",
     "block.gtceu.t_large_forming_press.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_lathe.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の旋盤。",
     "block.gtceu.t_large_lathe.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_macerator.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の粉砕機。",
     "block.gtceu.t_large_macerator.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_mixer.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型のミキサー。",
     "block.gtceu.t_large_mixer.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_ore_washer.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の鉱石洗浄機。",
     "block.gtceu.t_large_ore_washer.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_sifter.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の選別機。",
     "block.gtceu.t_large_sifter.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_thermal_centrifuge.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の熱遠心分離機。",
     "block.gtceu.t_large_thermal_centrifuge.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_wiremill.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型のワイヤー作製機。",
     "block.gtceu.t_large_wiremill.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.t_large_autoclave.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型のオートクレーブ。",
     "block.gtceu.t_large_autoclave.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "block.gtceu.large_rock_crusher.tooltip.0": "§7より高エネルギー効率で材料を処理できる、大型の破砕機。",
     "block.gtceu.large_rock_crusher.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
+
     "material.gtceu.soul_infused": "魂含浸",
     "material.gtceu.signalum": "シグナルム",
     "material.gtceu.lumium": "ルミウム",
@@ -215,6 +273,7 @@
     "gtceu.electric_ore_processing": "鉱石処理",
     "block.gtceu.large_stone_barrel": "大型石製バレル",
     "gtceu.large_stone_barrel": "大型石製バレル",
+
     "material.gtceu.abydos_titanite_rich_magma": "アビドス産高チタン石質マグマ",
     "material.gtceu.abydos_zapolite_rich_magma": "アビドス産高ザポル石質マグマ",
     "material.gtceu.abydos_titanite_poor_magma": "アビドス産低チタン石質マグマ",
@@ -361,8 +420,10 @@
     "block.gtceu.t_large_wiremill": "大型ワイヤー作製機",
     "gtceu.large_rock_crusher": "大型破砕機",
     "block.gtceu.large_rock_crusher": "大型破砕機",
+
     "block.gtceu.solid_blast_furnace": "堅牢な溶鉱炉",
     "gtceu.solid_blast_furnace": "堅牢な溶鉱炉",
+
     "gtceu.jei.ore_vein.abydos_activation_metals_vein": "アビドス産活性金属鉱脈",
     "gtceu.jei.ore_vein.abydos_alkaline_sediment_vein": "アビドス産アルカリ堆積物鉱脈",
     "gtceu.jei.ore_vein.abydos_refractory_metals_vein": "アビドス産耐火性金属鉱脈",
@@ -380,16 +441,19 @@
     "material.gtceu.utopian_akreyrium": "ユートピアンアクレイリウム",
     "material.gtceu.lepton_coalescing_superalloy": "レプトン融合型超合金",
     "material.gtceu.lepton_flavour_foundational_flux": "レプトン種基礎型流束",
+
     "material.gtceu.light_tau_infusion_flux": "軽§bタウ粒子§r注入流束",
     "material.gtceu.heavy_tau_infusion_flux": "重§bタウ粒子§r注入流束",
     "material.gtceu.superlight_tau_infusion_flux": "超軽§bタウ粒子§r注入流束",
     "material.gtceu.ethereal_tau_infusion_flux": "エーテリアル§bタウ粒子§r注入流束",
     "material.gtceu.superheavy_tau_infusion_flux": "超重§bタウ粒子§r注入流束",
+
     "material.gtceu.twinkling_muon_infusion_flux": "きらめく§aミュー粒子§r注入流束",
     "material.gtceu.glowing_muon_infusion_flux": "光る§aミュー粒子§r注入流束",
     "material.gtceu.shining_muon_infusion_flux": "輝く§aミュー粒子§r注入流束",
     "material.gtceu.radiant_muon_infusion_flux": "眩しい§aミュー粒子§r注入流束",
     "material.gtceu.brilliant_muon_infusion_flux": "まばゆい§aミュー粒子§r注入流束",
+
     "material.gtceu.mono_phase_electron_infusion_flux": "一相§d電子§r注入流束",
     "material.gtceu.di_phase_electron_infusion_agent": "ニ相§d電子§r注入剤",
     "material.gtceu.tri_phase_electron_infusion_agent": "三相§d電子§r注入剤",
@@ -399,20 +463,29 @@
     "material.gtceu.beta_phase_electron_infusion_agent": "β相§d電子§r注入剤",
     "material.gtceu.alpha_phase_electron_infusion_agent": "α相§d電子§r注入剤",
     "material.gtceu.alternating_phase_electron_infusion_flux": "交互§d電子§r注入流束",
+
     "block.gtceu.cyclonic_sifter": "サイクロン式選別機",
     "gtceu.cyclonic_sifter": "サイクロン式選別",
+
     "block.gtceu.manifold_centrifuge": "マニホールド型遠心分離機",
     "gtceu.manifold_centrifuge": "マニホールド型遠心分離",
+
     "block.gtceu.injection_mixer": "注入混合機",
     "gtceu.injection_mixer": "注入混合",
+
     "block.gtceu.folding_akreyrium_stabiliser": "折畳式アクレイリウム安定化装置",
     "gtceu.folding_akreyrium_stabiliser": "折畳式アクレイリウム安定化装置",
+
     "gtceu.machine.energy_converter.tooltip_tool_usage": "ソフトマレットで効果を反転。最初はFE -> EU",
+
     "material.gtceu.akreyrium_pcb_graphite_nanoparticle_coolant": "Ak-PCB-グラファイトナノ粒子クーラント",
+
     "gtceu.dimensional_finder": "ディメンション信号送信",
     "block.gtceu.dimensional_finder": "ディメンション探知機",
+
     "gtceu.runic_inscribe_manipulate": "ルーン刻印兼操作機",
     "block.gtceu.runic_inscribe_manipulate": "ルーン刻印兼操作機",
+
     "material.gtceu.magnetic_pure_netherite": "磁化された純粋ネザライト",
     "material.gtceu.ancient_runicalium": "古代ルニカリウム",
     "material.gtceu.sodium_borohydride": "水素化ホウ素ナトリウム",
@@ -423,14 +496,19 @@
     "material.gtceu.silicon_carbide": "炭化ケイ素",
     "material.gtceu.bismuth_tritelluride": "テルル化ビスマス",
     "material.gtceu.silicon_carbide_over_bismuth_tritelluride": "三テルル化ビスマス上炭化ケイ素",
-    "gtceu.kinetic_filtrator": "運動力濾過機",
-    "block.gtceu.kinetic_filtrator": "運動力濾過機",
-    "gtceu.electro_kinetic_filtrator": "電気運動力濾過機",
-    "block.gtceu.electro_kinetic_filtrator": "電気運動力濾過機",
+
+    "gtceu.kinetic_filtrator": "運動力型濾過機",
+    "block.gtceu.kinetic_filtrator": "運動力型濾過機",
+
+    "gtceu.electro_kinetic_filtrator": "電気式運動力型濾過機",
+    "block.gtceu.electro_kinetic_filtrator": "電気式運動力型濾過機",
+
     "gtceu.heated_cracking_unit": "加熱型接触分解ユニット",
     "block.gtceu.heated_cracking_unit": "加熱型接触分解ユニット",
+
     "gtceu.pressure_cracker": "加圧型クラッカー",
     "block.gtceu.pressure_cracker": "加圧型クラッカー",
+
     "gtceu.rock_filtrator": "岩石濾過装置",
     "block.gtceu.rock_filtrator": "岩石濾過装置",
     "gtceu.rock_sifter": "岩石選別装置",
