@@ -262,4 +262,10 @@ global.getFinalRecycleOutputs = (outputs, blockType, macBool, specialBool) => {
   }
 
   return finalOutputs;
-}  
+}
+
+global.getRecipeTier = (tier) => {
+    const recipeTier = (tier == 'luv') ? 'LuV' : (tier == 'opv') ? 'OpV' : tier.toUpperCase();
+
+    return recipeTier;
+}
