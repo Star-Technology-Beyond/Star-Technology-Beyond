@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .recipeTypes(['bender', 'compressor', 'forge_hammer', 'forming_press', 'packer'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:gravitationally_strained_stabilization_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('                     ', '                     ', '                     ', '                     ', ' BBB             BBB ', ' BBBBB         BBBBB ', ' BBBBBCC     CCBBBBB ', ' BBBBB         BBBBB ', ' BBB             BBB ', '                     ', '                     ', '                     ', '                     ') 
