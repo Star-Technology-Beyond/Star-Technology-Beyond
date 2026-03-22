@@ -339,7 +339,7 @@ element {
 
 element {
   interactable = true
-  source = Theta Release
+  source = Theta 1 Release
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -384,9 +384,9 @@ element {
   auto_sizing_base_screen_height = 1058
   sticky_anchor = false
   anchor_point = mid-centered
-  x = 406
+  x = 394
   y = 240
-  width = 77
+  width = 89
   height = 18
   stretch_x = false
   stretch_y = false
