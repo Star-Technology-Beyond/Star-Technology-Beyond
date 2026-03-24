@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
                 .EUt(eut);
         }
 
-        assemblyThreadMachine('multithreaded_component_synthesis_forge','kubejs:core_casing','uxv', 36,['48x gtceu:component_nexus', '48x gtceu:component_part_hub',
+        assemblyThreadMachine('multithreaded_component_synthesis_forge','kubejs:core_casing','uxv', 36,['72x gtceu:component_nexus', '72x gtceu:component_part_hub',
             '40x gtceu:uiv_assembler', '40x gtceu:uiv_scanner'], ['36x gtceu:uiv_field_generator','24x gtceu:uiv_fluid_regulator', 
             '16x gtceu:uiv_sensor', '56x kubejs:uiv_micropower_router', '640x kubejs:uipic_chip', '48x gtceu:draco_abyssal_screw', '48x gtceu:rhenium_super_composite_alloy_screw', 
             '48x gtceu:hvga_steel_screw', '48x gtceu:nyanium_screw'], 'gtceu:component_nexus', ['gtceu:nyanium 2400000','gtceu:pure_dragon_breath 540000',
