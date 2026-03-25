@@ -31,19 +31,19 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.recipes.gtceu.assembly_line(id('super_heat_chamber'))
-            .itemInputs('gtceu:heat_chamber', '4x #gtceu:circuits/uhv', 'gtceu:double_dragonsteel_plate', 
-                    'gtceu:double_titanium_carbide_plate', 'gtceu:uv_field_generator', '64x gtceu:uhpic_chip', 
+            .itemInputs('gtceu:heat_chamber', '4x #gtceu:circuits/uv', 'gtceu:double_dragonsteel_plate', 
+                    'gtceu:double_titanium_carbide_plate', 'gtceu:zpm_field_generator', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', '48x gtceu:prismalium_single_wire')
             .inputFluids('gtceu:hsse 6912', 'gtceu:niobium_titanium 1728')
             .itemOutputs('gtceu:super_pressure_heat_chamber')
             .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('gtceu:heat_chamber'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(64)
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(16)
             )
             .duration(3200)
-            .EUt(GTValues.VHA[GTValues.UV]);
+            .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.recipes.gtceu.assembly_line(id('super_compact_heat_chamber'))
         .itemInputs('gtceu:heat_chamber', '4x #gtceu:circuits/uev', 'gtceu:double_prismalium_plate', 'gtceu:double_ancient_netherite_plate',
