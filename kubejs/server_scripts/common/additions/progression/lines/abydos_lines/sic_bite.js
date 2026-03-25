@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         .duration(1280)
         .EUt(GTValues.VHA[GTValues.IV]);
 
-    event.recipes.gtceu.large_chemical_reactor(id('sicbite_2'))
+    event.recipes.gtceu.large_chemical_reactor(id('bismuth_3_nitrate_dust'))
         .itemInputs('gtceu:bismuth_dust')
         .inputFluids('gtceu:nitric_acid 4000')
         .itemOutputs('13x gtceu:bismuth_3_nitrate_dust')
@@ -25,11 +25,16 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
-    event.recipes.gtceu.advanced_chemistry(id('sicbite_3'))
-        .itemInputs('2x gtceu:silicon_carbide_dust', '26x gtceu:bismuth_3_nitrate_dust', '3x gtceu:tellurium_dust', '36x gtceu:sodium_borohydride_dust')
+    event.recipes.gtceu.ordered_chemistry(id('sicbite_2'))
+        .layeredRecipe((layers) => layers
+            .itemInputs('2x gtceu:bismuth_dust', '2x gtceu:silicon_carbide_dust')
+            .inputFluids('gtceu:nitric_acid 8000')
+            .next()
+            .itemInputs('3x gtceu:tellurium_dust', '36x gtceu:sodium_borohydride_dust')
+        )
         .itemOutputs('7x gtceu:silicon_carbide_over_bismuth_tritelluride_dust', '30x gtceu:sodium_nitrate_dust')
-        .outputFluids('gtceu:diborane 3000', 'gtceu:hydrogen 6000')
-        .duration(400)
+        .outputFluids('minecraft:water 4000', 'gtceu:ammonia 2000', 'gtceu:diborane 3000', 'gtceu:oxygen 2000')
+        .duration(250)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.remove({id:'gtceu:electrolyzer/decomposition_electrolyzing_silicon_carbide_over_bismuth_tritelluride'});

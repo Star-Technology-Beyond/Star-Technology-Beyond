@@ -1,34 +1,21 @@
 
 StartupEvents.registry('block', event => {
 
-    event.create('runic_stabilization_casing')
-        .hardness(10)
-        .resistance(1)
-        .lightLevel(2)
-        .soundType('stone')
-        .requiresTool(true)
-        .tagBlock('mineable/pickaxe')
-        .tagBlock('minecraft:needs_diamond_tool')
-        .textureAll('kubejs:block/casings/runic/runic_stabilization_casing');
+    function runic_casing(id, texture){
+        event.create(id)
+            .hardness(10)
+            .resistance(1)
+            .lightLevel(2)
+            .soundType('stone')
+            .requiresTool(true)
+            .tagBlock('mineable/pickaxe')
+            .tagBlock('minecraft:needs_diamond_tool')
+            .textureAll(`kubejs:block/casings/runic/${texture}`);
+        };
 
-    event.create('runic_transportation_casing')
-        .hardness(10)
-        .resistance(1)
-        .lightLevel(2)
-        .soundType('stone')
-        .requiresTool(true)
-        .tagBlock('mineable/pickaxe')
-        .tagBlock('minecraft:needs_diamond_tool')
-        .textureAll('kubejs:block/casings/runic/runic_transportation_casing');
-
-    event.create('runic_pathway_casing')
-        .hardness(10)
-        .resistance(1)
-        .lightLevel(2)
-        .soundType('stone')
-        .requiresTool(true)
-        .tagBlock('mineable/pickaxe')
-        .tagBlock('minecraft:needs_diamond_tool')
-        .textureAll('kubejs:block/casings/runic/runic_pathway_casing');
+    runic_casing('blank_runic_casing', 'base');
+    runic_casing('runic_stabilization_casing', 'stabilization');
+    runic_casing('runic_transportation_casing', 'transportation');
+    runic_casing('runic_pathway_casing', 'pathway');
 
 });

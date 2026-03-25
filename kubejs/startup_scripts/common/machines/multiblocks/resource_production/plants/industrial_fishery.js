@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('industrial_fishery')
         .appearanceBlock(() => Block.getBlock('gtceu:clean_machine_casing'))
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('A BBB A', 'A BBB A', 'A BBB A', 'A BBB A', 'A BBB A', 'AABBBAA') 
             .aisle(' BBBBB ', ' BCCCB ', ' BCCCB ', ' BCCCB ', ' BCCCB ', 'ABDDDBA') 

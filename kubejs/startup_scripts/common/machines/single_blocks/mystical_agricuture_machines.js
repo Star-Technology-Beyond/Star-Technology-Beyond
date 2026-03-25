@@ -3,7 +3,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('mystical')
         .setEUIO('in')
         .setMaxIOSize(2, 2, 2, 1)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL);
     
@@ -11,7 +10,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('mystical')
         .setEUIO('in')
         .setMaxIOSize(2, 2, 1, 3)
-        .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL);
 });

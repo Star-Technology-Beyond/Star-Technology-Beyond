@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('hydroponic_garden', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('hydroponic_garden')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('gtceu:watertight_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('ABBBBBBBA', 'ABBCBCBBA', 'ABBBBBBBA', 'ADDDDDDDA', ' ADDDDDA ', '  AAAAA  ') 

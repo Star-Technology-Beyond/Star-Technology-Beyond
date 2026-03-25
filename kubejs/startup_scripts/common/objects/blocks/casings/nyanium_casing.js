@@ -1,9 +1,8 @@
 
 StartupEvents.registry('block', event => {
 
-    function nyan_casing(id, name, texture){
+    function nyan_casing(id, texture){
         event.create(id)
-            .displayName(name)
             .hardness(5)
             .resistance(10)
             .lightLevel(0)
@@ -14,12 +13,12 @@ StartupEvents.registry('block', event => {
             .textureAll(`kubejs:block/casings/nyanium/${texture}`);
         };
 
-    nyan_casing('nyanium_machine_casing', 'Nyanium Casing', 'casing');
-    nyan_casing('nyanium_pipe_casing', 'Nyanium Pipe Casing', 'pipe_casing');
-    nyan_casing('nyanium_gearbox', 'Nyanium Gearbox Casing', 'gearbox');
+    nyan_casing('nyanium_machine_casing', 'casing');
+    nyan_casing('nyanium_pipe_casing', 'pipe_casing');
+    nyan_casing('nyanium_gearbox', 'gearbox');
+    nyan_casing('nyanium_turbine_casing', 'turbine_casing');
 
-    event.create('nyanium_machine_firebox_casing', 'gtceu:active')
-        .displayName('Nyanium Firebox Casing')
+    event.create('nyanium_firebox_casing', 'gtceu:active')
         .hardness(5)
         .resistance(10)
         .soundType('metal')
@@ -30,7 +29,7 @@ StartupEvents.registry('block', event => {
                 'kubejs:block/casings/nyanium/firebox_casing',
                 'kubejs:block/casings/nyanium/casing');
 
-    event.create('nyanium_machine_engine_intake_casing', 'gtceu:active')
+    event.create('nyanium_engine_intake_casing', 'gtceu:active')
         .displayName('Nyinsane Engine Intake Casing')
         .hardness(5)
         .resistance(10)
@@ -39,5 +38,14 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_iron_tool')
         .requiresTool(false)
         .simple('kubejs:block/casings/nyanium/engine_intake_casing');
+
+    event.create('nyanium_heat_escape_casing', 'gtceu:active')
+        .hardness(5)
+        .resistance(10)
+        .soundType('metal')
+        .tagBlock('mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .requiresTool(false)
+        .bloom('kubejs:block/casings/nyanium/heat_escape');
 
 });

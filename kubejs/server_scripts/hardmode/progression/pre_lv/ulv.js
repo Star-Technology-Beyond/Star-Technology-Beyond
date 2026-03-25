@@ -162,31 +162,35 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(pist, [pist, 'gtceu:potin_plate'])
     ]).transitionalItem(pist).loops(2).id('start:sequenced_assembly/ulv_electric_piston');
 
+    // remove default ulv component recipes and add new ones that require the new components and machines
+    event.remove({output: /gtceu:ulv_(electric_(motor|piston|pump)|conveyor_module|robot_arm)/});
+    // removing recylcing recipes
+    event.remove({id: /gtceu:(arc_furnace\/arc_|macerator\/macerate_)ulv_(electric_(piston|pump)|conveyor_module|robot_arm)/}); // ulv electric motor does not have recycling recipes
     const UlvComponent = (output,inputs,fluid) => {
       if(output == 'electric_motor')
       event.recipes.gtceu.assembler(id(`ulv_${output}`))
         .itemInputs(inputs[0],inputs[1],inputs[2],inputs[3])
-        .itemOutputs(`kubejs:ulv_${output}`)
+        .itemOutputs(`gtceu:ulv_${output}`)
         .duration(100)
         .EUt(6);
     if(output == 'electric_piston')
       event.recipes.gtceu.assembler(id(`ulv_${output}`))
         .itemInputs(inputs[0],inputs[1],inputs[2],inputs[3],inputs[4])
-        .itemOutputs(`kubejs:ulv_${output}`)
+        .itemOutputs(`gtceu:ulv_${output}`)
         .duration(100)
         .circuit(1)
         .EUt(6);
     if(output == 'robot_arm')
       event.recipes.gtceu.assembler(id(`ulv_${output}`))
         .itemInputs(inputs[0],inputs[1],inputs[2],inputs[3],inputs[4])
-        .itemOutputs(`kubejs:ulv_${output}`)
+        .itemOutputs(`gtceu:ulv_${output}`)
         .duration(100)
         .circuit(1)
         .EUt(6);
     if(output == 'electric_pump')
       event.recipes.gtceu.assembler(id(`ulv_${output}`))
         .itemInputs(inputs[0],inputs[1],inputs[2],inputs[3],inputs[4],inputs[5])
-        .itemOutputs(`kubejs:ulv_${output}`)
+        .itemOutputs(`gtceu:ulv_${output}`)
         .duration(100)
         .EUt(6);
     if(output == 'emitter')
@@ -200,7 +204,7 @@ ServerEvents.recipes(event => {
       event.recipes.gtceu.assembler(id(`${output}_ulv`))
         .itemInputs(inputs[0],inputs[1])
         .inputFluids(fluid)
-        .itemOutputs(`kubejs:ulv_${output}`)
+        .itemOutputs(`gtceu:ulv_${output}`)
         .duration(100)
         .circuit(1)
         .EUt(6);

@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('tree_synthesizer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('tree_greenhouse')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('gtceu:robust_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('AABBBBBAA', 'BBBBBBBBB', 'BCCCDCCCB', 'BCCCDCCCB', 'BCCCCCCCB', 'BCCCCCCCB', 'BCCCCCCCB', 'BCCCCCCCB', 'ECCCCCCCE', 'ECCCCCCCE', 'ECCCCCCCE', '#EECCCEE#', '#########') 

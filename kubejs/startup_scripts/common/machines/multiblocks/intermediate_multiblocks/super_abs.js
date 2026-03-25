@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('alloy_blast_smelter')
         .machine((holder) => new $CoiledMulti(holder))
-        .recipeModifiers([GTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING])
+        .recipeModifiers([GTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('   AAA   ', '   AAA   ', '    B    ', '    B    ', '         ', '         ', '         ', '    B    ', '    B    ', '   AAA   ', '   AAA   ') 
@@ -33,6 +33,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-            'gtceu:block/multiblock/gcym/blast_alloy_smelter');
+            'gtceu:block/multiblock/gcym/blast_alloy_smelter')
+        .additionalDisplay(global.coilMachineTempDisplay);
 
 });

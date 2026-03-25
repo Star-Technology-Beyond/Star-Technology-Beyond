@@ -131,6 +131,9 @@ ServerEvents.recipes(event => {
     Infusion('saturation_core_high','32x kubejs:saturation_core_3','gtceu:dragon_breath 100','gtceu:energy_cluster','gtceu:tungsten_carbide_plate','gtceu:void_rod','gtceu:hsse_gear',
     'gtceu:double_hsse_plate','gtceu:void_ring','gtceu:small_tungsten_carbide_gear',400,GTValues.VA[GTValues.UHV]);
 
+    Infusion('soul_of_the_flame','kubejs:soul_of_the_flame','start_core:corefire_nectar 1000000','kubejs:heart_of_the_flame','2x gtceu:trinaquadalloy_ultradense_plate','2x gtceu:draco_abyssal_ultradense_plate',
+    '8x kubejs:void_core','8x gtceu:uiv_field_generator','2x gtceu:hvga_steel_ultradense_plate','2x gtceu:draconyallium_ultradense_plate',1500,GTValues.VA[GTValues.UXV]);
+
     event.recipes.gtceu.assembler(id('voidic_sponge'))
         .itemInputs('16x minecraft:sponge','24x gtceu:fine_enderium_wire','6x kubejs:voidic_reinforced_mesh')
         .inputFluids('gtceu:polyether_ether_ketone 432')

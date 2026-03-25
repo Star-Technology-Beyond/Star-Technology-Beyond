@@ -24,7 +24,7 @@ StartupEvents.registry('block', event => {
     KubeCasing('zamak');
     KubeCasing('tumbaga');
     KubeCasing('silicone_rubber');
-    KubeCasing('kanthal');
+    KubeCasing('black_steel');
     KubeCasing('manganin');
     KubeCasing('galvanized_steel');
 });

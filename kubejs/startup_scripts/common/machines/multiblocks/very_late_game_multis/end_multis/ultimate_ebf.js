@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $CoiledMulti(holder))
         .recipeType('electric_blast_furnace')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:extreme_temperature_smelting_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('     BBBBBBBBBBB     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ') 
@@ -41,15 +41,16 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where('D', Predicates.blocks('gtceu:heat_vent'))
             .where('E', Predicates.blocks('gtceu:abyssal_alloy_frame'))
-            .where('F', Predicates.blocks('kubejs:nyanium_machine_firebox_casing'))
+            .where('F', Predicates.blocks('kubejs:nyanium_firebox_casing'))
             .where('G', Predicates.blocks('kubejs:nyanium_pipe_casing'))
-            .where('H', Predicates.blocks('kubejs:nyanium_machine_engine_intake_casing'))
+            .where('H', Predicates.blocks('kubejs:nyanium_engine_intake_casing'))
             .where('I', Predicates.blocks('gtceu:uev_rotor_holder'))
             .where('J', Predicates.heatingCoils())
             .where('K', Predicates.blocks('kubejs:nyanium_machine_casing'))
 			.where('@', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
 		.workableCasingModel('kubejs:block/casings/nether_multis/extreme_temperature_smelting_casing',
-            'gtceu:block/multiblock/gcym/mega_blast_furnace');
+            'gtceu:block/multiblock/gcym/mega_blast_furnace')
+        .additionalDisplay(global.coilMachineTempDisplay);
 
 });

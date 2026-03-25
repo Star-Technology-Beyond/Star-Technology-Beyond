@@ -53,127 +53,127 @@ global.componentRecycleMaterials = {
 
 global.LUVToUVComponentRecycleCounts = { 
     dreamlink_cover: {
-        primCount: 13,
-        cableCount: 4,
-        wireCount: 1,
-        foilCount: 4
+        primCount: 6,
+        cableCount: 2,
+        wireCount: 0,
+        foilCount: 2
     },
     sensor: {
-        primCount: 13,
-        cableCount: 3,
-        wireCount: 8,
-        foilCount: 24
+        primCount: 6.5,
+        cableCount: 1.5,
+        wireCount: 4,
+        foilCount: 12
     },
     emitter: {
-        primCount: 13,
-        cableCount: 3,
+        primCount: 6.5,
+        cableCount: 1.5,
+        wireCount: 4,
+        foilCount: 12
+    },
+    field_generator: {
+        primCount: 18,
+        cableCount: 4,
         wireCount: 8,
         foilCount: 24
     },
-    field_generator: {
-        primCount: 36,
-        cableCount: 8,
-        wireCount: 16,
-        foilCount: 48
-    },
     robot_arm: {
-        primCount: 37,
-        cableCount: 6,
-        wireCount: 24,
+        primCount: 18.5,
+        cableCount: 3,
+        wireCount: 12,
         foilCount: 0
     },
     electric_piston: {
-        primCount: 16,
-        cableCount: 2,
-        wireCount: 8,
+        primCount: 8,
+        cableCount: 1,
+        wireCount: 4,
         foilCount: 0
     },
     conveyor_module: {
-        primCount: 15,
-        cableCount: 3,
-        wireCount: 16,
+        primCount: 7.5,
+        cableCount: 1.5,
+        wireCount: 8,
         foilCount: 0
     },
     fluid_regulator: {
-        primCount: 3,
-        cableCount: 3,
+        primCount: 1.5,
+        cableCount: 1.5,
         wireCount: 0,
         foilCount: 0
     },
     electric_pump: {
-        primCount: 3,
-        cableCount: 3,
+        primCount: 1.5,
+        cableCount: 1.5,
         wireCount: 0,
         foilCount: 0
     },
     electric_motor: {
-        primCount: 5,
-        cableCount: 1,
-        wireCount: 8,
+        primCount: 2.5,
+        cableCount: 0.5,
+        wireCount: 4,
         foilCount: 0
     }
 }
 
 global.UHVPlusComponentRecycleCounts = {
     dreamlink_cover: {
-        primCount: 18,
-        cableCount: 11,
-        secCount: 1,
-        tertCount: 4
+        primCount: 9,
+        cableCount: 5,
+        secCount: 0,
+        tertCount: 2
     },
     sensor: {
-        primCount: 18,
-        cableCount: 10,
-        secCount: 1,
-        tertCount: 4
+        primCount: 9,
+        cableCount: 5,
+        secCount: 0.5,
+        tertCount: 2
     },
     emitter: {
-        primCount: 18,
-        cableCount: 10,
-        secCount: 1,
-        tertCount: 4
+        primCount: 9,
+        cableCount: 5,
+        secCount: 0.5,
+        tertCount: 2
     },
     field_generator: {
-        primCount: 62,
-        cableCount: 30,
-        secCount: 3,
-        tertCount: 4
+        primCount: 31,
+        cableCount: 15,
+        secCount: 1.5,
+        tertCount: 2
     },
     robot_arm: {
-        primCount: 48,
-        cableCount: 24,
-        secCount: 9,
-        tertCount: 12
-    },
-    electric_piston: {
-        primCount: 27,
-        cableCount: 8,
-        secCount: 5,
+        primCount: 24,
+        cableCount: 12,
+        secCount: 4.5,
         tertCount: 6
     },
+    electric_piston: {
+        primCount: 13.5,
+        cableCount: 4,
+        secCount: 2.5,
+        tertCount: 3
+    },
     conveyor_module: {
-        primCount: 27,
-        cableCount: 12,
-        secCount: 4,
-        tertCount: 8
+        primCount: 13.5,
+        cableCount: 6,
+        secCount: 2,
+        tertCount: 4
     },
     fluid_regulator: {
-        primCount: 11,
-        cableCount: 4,
-        secCount: 8,
-        tertCount: 4
+        primCount: 5.5,
+        cableCount: 2,
+        secCount: 4,
+        tertCount: 2
     },
     electric_pump: {
-        primCount: 11,
-        cableCount: 4,
-        secCount: 8,
-        tertCount: 4
+        primCount: 5.5,
+        cableCount: 2,
+        secCount: 4,
+        tertCount: 2
     },
     electric_motor: {
-        primCount: 6,
-        cableCount: 4,
+        primCount: 3,
+        cableCount: 2,
         secCount: 0,
-        tertCount: 4
+        tertCount: 2
     }
 }
 

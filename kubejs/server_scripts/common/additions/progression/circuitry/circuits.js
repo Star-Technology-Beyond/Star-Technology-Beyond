@@ -417,7 +417,6 @@ ServerEvents.recipes(event => {
 
     const dracoWaferEngraving = (modID, output, waferTier, lens, lensIsTag) => {
         
-
         let duration = WAFER_DURATION[waferTier];
         let quantity = WAFER_QUANTITY[waferTier];
 

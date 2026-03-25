@@ -497,20 +497,20 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.UEV]);
 
         //KMRU
-        event.recipes.gtceu.component_part_synthesis_forge(id(`despair_and_agony`))
-            .itemInputs('4x gtceu:uiv_circuit_assembler','8x gtceu:dense_nyanium_plate','128x gtceu:red_alloy_single_cable','128x gtceu:lead_single_cable',
-                '999x komarumod:komaru_powder','999x komarumod:komaru_powder','999x komarumod:komaru_powder','999x komarumod:komaru_powder')
-            .inputFluids('gtceu:maxwellium 4444', 'gtceu:pure_dragon_breath 5000')
-            .itemOutputs(`kubejs:worries_about_it`)
-            .duration(222836420)
-            .stationResearch(
-                researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of(`komarumod:komaru_spawn_egg`))
-                    .EUt(GTValues.VHA[GTValues.UXV])
-                    .CWUt(500)
-            )            
-            .EUt(1)
-            .cleanroom(CleanroomType.getByName('stabilized'));
+        // event.recipes.gtceu.component_part_synthesis_forge(id(`despair_and_agony`))
+        //     .itemInputs('4x gtceu:uiv_circuit_assembler','8x gtceu:dense_nyanium_plate','128x gtceu:red_alloy_single_cable','128x gtceu:lead_single_cable',
+        //         '999x komarumod:komaru_powder','999x komarumod:komaru_powder','999x komarumod:komaru_powder','999x komarumod:komaru_powder')
+        //     .inputFluids('gtceu:maxwellium 4444', 'gtceu:pure_dragon_breath 5000')
+        //     .itemOutputs(`kubejs:worries_about_it`)
+        //     .duration(222836420)
+        //     .stationResearch(
+        //         researchRecipeBuilder => researchRecipeBuilder
+        //             .researchStack(Item.of(`komarumod:komaru_spawn_egg`))
+        //             .EUt(GTValues.VHA[GTValues.UXV])
+        //             .CWUt(500)
+        //     )            
+        //     .EUt(1)
+        //     .cleanroom(CleanroomType.getByName('stabilized'));
 
         event.recipes.gtceu.research_station(`1_x_komarumod_komaru_spawn_egg`)
             .itemInputs('start_core:component_data_core')

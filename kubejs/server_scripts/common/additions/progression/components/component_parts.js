@@ -272,8 +272,7 @@ ServerEvents.recipes(event => {
         mtscfComponentPart('voltage_coil', [
                 `${1 * scalerMCSF * 0.75}x gtceu:${pipeMaterial}_tiny_fluid_pipe`, 
                 `${1 * scalerMCSF * 0.75}x gtceu:long_magnetic_${primMagnet}_rod`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireCoil}_wire`,
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireCoil}_wire`
+                `${0.5 * scalerMCSF * 0.75}x gtceu:${wireCoil}_wire_spool`
             ], [
                 `gtceu:${coolant} ${scalerMCSF * 0.75 * scaled(250)}`
             ], 200
@@ -297,7 +296,7 @@ ServerEvents.recipes(event => {
                 `${2 * scalerMCSF * 0.75}x gtceu:${primMaterial}_rod`, 
                 `${2 * scalerMCSF * 0.75}x gtceu:${primMaterial}_ring`, 
                 `${4 * scalerMCSF * 0.75}x gtceu:${primMaterial}_round`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireMechanical}_wire`
+                `${0.25 * scalerMCSF * 0.75}x gtceu:${wireMechanical}_wire_spool`
             ], [
                 `gtceu:${lubricant} ${scalerMCSF * 0.75 * b2exponentialMultiplier(125)}`
             ], 320
@@ -332,7 +331,7 @@ ServerEvents.recipes(event => {
                 `${1 * scalerMCSF * 0.75}x gtceu:long_magnetic_${primMagnet}_rod`, 
                 `${2 * scalerMCSF * 0.75}x gtceu:magnetic_${supMagnet}_rod`, 
                 `${3 * scalerMCSF * 0.75}x gtceu:${primMaterial}_rod`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${wireMechanical}_wire`, 
+                `${0.25 * scalerMCSF * 0.75}x gtceu:${wireMechanical}_wire_spool`, 
                 `${2 * scalerMCSF * 0.75}x gtceu:${pipeMaterial}_tiny_fluid_pipe`
             ], [
                 `gtceu:${coolant} ${scalerMCSF * 0.75 * scaled(500)}`
@@ -343,8 +342,7 @@ ServerEvents.recipes(event => {
                 `${4 * scalerMCSF * 0.75}x gtceu:${primMaterial}_rod`, 
                 glass, 
                 catalyst, 
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`, 
-                `${16 * scalerMCSF * 0.75}x gtceu:fine_${superconductor}_wire`, 
+                `${0.5 * scalerMCSF * 0.75}x gtceu:${superconductor}_wire_spool`, 
                 `${1 * scalerMCSF * 0.75}x gtceu:${tier1}_emitter`, 
                 `${4 * scalerMCSF * 0.75}x gtceu:${supMaterial}_ring`
             ], [

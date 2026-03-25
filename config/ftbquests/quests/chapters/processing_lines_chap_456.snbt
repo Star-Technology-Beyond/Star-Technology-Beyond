@@ -60,15 +60,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "11232B9188CE6D47"
-					title: "{ftbquests.processing_lines_chap.impure_enriched_naquadah_solution.title}"
-					type: "checkmark"
-				}
-				{
 					id: "0A1623A9206F12C0"
 					item: "gtceu:impure_enriched_naquadah_solution_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "26D156F50461B4B6"
+					type: "checkmark"
 				}
 			]
 			x: 2.5d
@@ -81,15 +80,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "117918C7D0538504"
-					title: "{ftbquests.processing_lines_chap.impure_naquadria_solution.title}"
-					type: "checkmark"
-				}
-				{
 					id: "0D9A7B060F19A8A2"
 					item: "gtceu:impure_naquadria_solution_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "3083CA91DDB117CC"
+					type: "checkmark"
 				}
 			]
 			x: 2.5d
@@ -137,15 +135,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "080549D49691AC4F"
-					title: "{ftbquests.processing_lines_chap.enriched_naquadah_solution.title}"
-					type: "checkmark"
-				}
-				{
 					id: "2D17CC02231A112A"
 					item: "gtceu:enriched_naquadah_solution_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "2F711550C72CB8B6"
+					type: "checkmark"
 				}
 			]
 			x: 4.0d
@@ -158,15 +155,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "5C7C7BD5A3888932"
-					title: "{ftbquests.processing_lines_chap.acidic_enriched_naquadah_solution.title}"
-					type: "checkmark"
-				}
-				{
 					id: "59C0CD2D9CBD954F"
 					item: "gtceu:acidic_enriched_naquadah_solution_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "399AFF9B17658071"
+					type: "checkmark"
 				}
 			]
 			x: 5.5d
@@ -191,15 +187,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "5C519C32B01BA776"
-					title: "{ftbquests.processing_lines_chap.hot_enriched_naquadah_ingot.title}"
-					type: "checkmark"
-				}
-				{
 					id: "1EDD1FEBA3440319"
 					item: "gtceu:hot_enriched_naquadah_ingot"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "5AF93359A10895DC"
+					type: "checkmark"
 				}
 			]
 			x: 8.5d
@@ -231,15 +226,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "420B8EB885F5F2E4"
-					title: "{ftbquests.processing_lines_chap.hot_trinium_ingot.title}"
-					type: "checkmark"
-				}
-				{
 					id: "19B465D6354D3AEE"
 					item: "gtceu:hot_trinium_ingot"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "4523360F17C157F9"
+					type: "checkmark"
 				}
 			]
 			x: 5.0d
@@ -271,15 +265,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "6E78318257063B21"
-					title: "{ftbquests.processing_lines_chap.naquadria_solution.title}"
-					type: "checkmark"
-				}
-				{
 					id: "4BE1EABD0EB2C185"
 					item: "gtceu:naquadria_solution_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "1B6925EECDB8866C"
+					type: "checkmark"
 				}
 			]
 			x: 4.0d
@@ -292,15 +285,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "3D44822AA7B4D618"
-					title: "{ftbquests.processing_lines_chap.acidic_naquadria_solution.title}"
-					type: "checkmark"
-				}
-				{
 					id: "4C0087E47BCCE863"
 					item: "gtceu:acidic_naquadria_solution_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "3944F991B2560120"
+					type: "checkmark"
 				}
 			]
 			x: 5.5d
@@ -325,15 +317,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "4D23139AB83241E6"
-					title: "{ftbquests.processing_lines_chap.hot_naquadria_ingot.title}"
-					type: "checkmark"
-				}
-				{
 					id: "6598231411A90CDB"
 					item: "gtceu:hot_naquadria_ingot"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "5D759BF8ED8E2016"
+					type: "checkmark"
 				}
 			]
 			x: 8.5d
@@ -377,15 +368,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "66228796EFF3C400"
-					title: "{ftbquests.processing_lines_chap.polychlorinated_biphenyl.title}"
-					type: "checkmark"
-				}
-				{
 					id: "1DC45B17963409C2"
 					item: "gtceu:polychlorinated_biphenyl_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "42DA801E91CDD1AB"
+					type: "checkmark"
 				}
 			]
 			x: 7.5d
@@ -564,15 +554,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "38060588E29D23DC"
-					title: "{ftbquests.processing_lines_chap.bacteria.title}"
-					type: "checkmark"
-				}
-				{
 					id: "54996E5BFC05B88E"
 					item: "gtceu:bacteria_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "1070346CA4F05B1D"
+					type: "checkmark"
 				}
 			]
 			x: 3.5d
@@ -585,15 +574,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "79FE294740C94AF4"
-					title: "{ftbquests.processing_lines_chap.bacterial_sludge.title}"
-					type: "checkmark"
-				}
-				{
 					id: "680C4C39F695A708"
 					item: "gtceu:bacterial_sludge_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "618A7AA1D9C354D7"
+					type: "checkmark"
 				}
 			]
 			x: 5.0d
@@ -606,15 +594,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "69354C3F77402E73"
-					title: "{ftbquests.processing_lines_chap.enriched_bacterial_sludge.title}"
-					type: "checkmark"
-				}
-				{
 					id: "18DDE15B80B9CB95"
 					item: "gtceu:enriched_bacterial_sludge_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "10056925C975A586"
+					type: "checkmark"
 				}
 			]
 			x: 6.5d
@@ -627,15 +614,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "3A9BAC2494B830B8"
-					title: "{ftbquests.processing_lines_chap.mutagen.title}"
-					type: "checkmark"
-				}
-				{
 					id: "420C09CDB5581FA8"
 					item: "gtceu:mutagen_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "5F2E42F85132C6F1"
+					type: "checkmark"
 				}
 			]
 			x: 8.0d
@@ -652,15 +638,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "2EB6451DFA1D8FF1"
-					title: "{ftbquests.processing_lines_chap.raw_growth_medium.title}"
-					type: "checkmark"
-				}
-				{
 					id: "1004B84F82083844"
 					item: "gtceu:raw_growth_medium_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "20CAD18BE1E92FFF"
+					type: "checkmark"
 				}
 			]
 			x: 9.5d
@@ -697,15 +682,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "4028128489137766"
-					title: "{ftbquests.processing_lines_chap.gelatin_mixture.title}"
-					type: "checkmark"
-				}
-				{
 					id: "6DCC92CA339EA743"
 					item: "gtceu:gelatin_mixture_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "37CCCCE7C28BC000"
+					type: "checkmark"
 				}
 			]
 			x: 8.5d
@@ -792,9 +776,9 @@
 		{
 			dependencies: [
 				"560669210B8CABFC"
-				"0491A3097C6BA6AE"
 				"40A015DBF6603208"
 				"7E33A485E30B47EA"
+				"271587AB365AB803"
 			]
 			description: ["{ftbquests.processing_lines_chap.silicon_carbide_over_bismuth_tritelluride_dust.description}"]
 			id: "22B85F7F13C66730"
@@ -1349,24 +1333,6 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"01D169FDC848B8A1"
-				"41A2F623390AA45B"
-			]
-			id: "0491A3097C6BA6AE"
-			tasks: [{
-				id: "6D5455AD6C0BD3D3"
-				item: {
-					Count: 1
-					id: "gtceu:bismuth_3_nitrate_dust"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 13.5d
-			y: 8.5d
-		}
-		{
 			dependencies: ["54EC42CB74C59F5F"]
 			id: "40A015DBF6603208"
 			tasks: [{
@@ -1395,49 +1361,6 @@
 			}]
 			x: 10.5d
 			y: 11.5d
-		}
-		{
-			dependencies: ["53A038A621F3997C"]
-			id: "01D169FDC848B8A1"
-			tasks: [{
-				id: "23B89A7369F30456"
-				item: {
-					Count: 1
-					id: "gtceu:bismuth_dust"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 13.0d
-			y: 7.5d
-		}
-		{
-			dependencies: ["1AAB9C20E833029A"]
-			icon: {
-				Count: 1
-				id: "gtceu:nitric_acid_bucket"
-				tag: { }
-			}
-			id: "41A2F623390AA45B"
-			tasks: [
-				{
-					id: "061C59F35BD58011"
-					item: {
-						Count: 1
-						id: "gtceu:nitric_acid_bucket"
-						tag: { }
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "090FBE4BA8A0B512"
-					type: "checkmark"
-				}
-			]
-			title: "{ftbquests.processing_lines_chap.nitric_acid.title}"
-			x: 14.0d
-			y: 7.5d
 		}
 		{
 			dependencies: ["1B97E56660BDCEF6"]
@@ -1634,98 +1557,6 @@
 			title: "{ftbquests.processing_lines_chap.hot_pcb_coolant.title}"
 			x: 0.5d
 			y: 1.5d
-		}
-		{
-			dependencies: [
-				"1C9EB97C0D3C475B"
-				"1C81273869C0EC9F"
-				"60ECE277341A9408"
-			]
-			description: ["{ftbquests.processing_lines_chap.echo_shard.description}"]
-			id: "2F87FC1D5BB43220"
-			rewards: [{
-				count: 3
-				id: "142ABBE1525B620F"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "7BE3C5BE8FA92239"
-				item: {
-					Count: 1
-					id: "minecraft:echo_shard"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 15.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3722C0427C9AF100"]
-			id: "1C9EB97C0D3C475B"
-			tasks: [{
-				id: "16A7A91B016563C6"
-				item: {
-					Count: 1
-					id: "gtceu:exquisite_purified_naquadah_gem"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 13.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5728078931762D8E"]
-			id: "3722C0427C9AF100"
-			tasks: [{
-				id: "32D58BAEFF6BE603"
-				item: {
-					Count: 1
-					id: "gtceu:purified_naquadah_dust"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"74476363CA71A782"
-				"60ECE277341A9408"
-			]
-			id: "5728078931762D8E"
-			tasks: [{
-				id: "182F82F91811C0C1"
-				item: {
-					Count: 1
-					id: "gtceu:tiny_purified_naquadah_dust"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 10.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["050206AAE7043982"]
-			hide_dependency_lines: true
-			id: "74476363CA71A782"
-			tasks: [{
-				id: "1F90AAA9B2DF5E5E"
-				item: {
-					Count: 1
-					id: "gtceu:tiny_naquadah_dust"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 9.0d
-			y: 0.0d
 		}
 		{
 			dependencies: ["37C381390F132628"]
@@ -3535,12 +3366,20 @@
 				"47805931CAA35463"
 				"621B3A7D8B60BF23"
 			]
+			icon: "gtceu:rare_earth_sulfate_solution_bucket"
 			id: "6DB9F175F04569EF"
-			tasks: [{
-				id: "37ABC1447FC5FD0D"
-				item: "gtceu:rare_earth_sulfate_solution_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "37ABC1447FC5FD0D"
+					item: "gtceu:rare_earth_sulfate_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5BA658A3C4EEB9E1"
+					type: "checkmark"
+				}
+			]
 			x: 22.5d
 			y: -2.0d
 		}
@@ -3549,23 +3388,39 @@
 				"6DB9F175F04569EF"
 				"116624C13A9CE1CA"
 			]
+			icon: "gtceu:rare_earth_leach_mixture_bucket"
 			id: "15296632D73B60FA"
-			tasks: [{
-				id: "1486C48DE7D73454"
-				item: "gtceu:rare_earth_leach_mixture_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1486C48DE7D73454"
+					item: "gtceu:rare_earth_leach_mixture_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "61425436B8509B77"
+					type: "checkmark"
+				}
+			]
 			x: 24.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["15296632D73B60FA"]
+			icon: "gtceu:rare_earth_concentrate_bucket"
 			id: "33A6C9BC2B9DAD78"
-			tasks: [{
-				id: "022B33503237A6C0"
-				item: "gtceu:rare_earth_concentrate_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "022B33503237A6C0"
+					item: "gtceu:rare_earth_concentrate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F1E9BAD6D63FC43"
+					type: "checkmark"
+				}
+			]
 			x: 25.5d
 			y: -2.0d
 		}
@@ -3728,23 +3583,39 @@
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
+			icon: "gtceu:sulfuric_acid_bucket"
 			id: "621B3A7D8B60BF23"
-			tasks: [{
-				id: "16BDF9DA61F4B6E7"
-				item: "gtceu:sulfuric_acid_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "16BDF9DA61F4B6E7"
+					item: "gtceu:sulfuric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3ED13EB1FFC57380"
+					type: "checkmark"
+				}
+			]
 			x: 22.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["6DB9F175F04569EF"]
+			icon: "gtceu:phosphoric_acid_bucket"
 			id: "708224F54B887FC1"
-			tasks: [{
-				id: "338ABD93E2275408"
-				item: "gtceu:phosphoric_acid_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "338ABD93E2275408"
+					item: "gtceu:phosphoric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5B48B31EC123655B"
+					type: "checkmark"
+				}
+			]
 			x: 23.0d
 			y: -3.0d
 		}
@@ -3794,6 +3665,626 @@
 			}]
 			x: 27.0d
 			y: -3.0d
+		}
+		{
+			icon: "gtceu:benzene_bucket"
+			id: "369889B9DEEBC7FB"
+			tasks: [
+				{
+					id: "6C49465E7F7DFD34"
+					item: "gtceu:benzene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "63BE6117AD263DF4"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: -4.75d
+		}
+		{
+			dependencies: [
+				"369889B9DEEBC7FB"
+				"5BF4D99601D5A22E"
+			]
+			icon: "gtceu:divinylbenzene_bucket"
+			id: "77183C16B81172AE"
+			tasks: [
+				{
+					id: "19BCC532D8C4EE1A"
+					item: "gtceu:divinylbenzene_bucket"
+					type: "item"
+				}
+				{
+					id: "068AB8150F557F72"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			icon: "gtceu:ethylene_bucket"
+			id: "5BF4D99601D5A22E"
+			tasks: [
+				{
+					id: "71424D69527F1435"
+					item: "gtceu:ethylene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4523BB456B402B4C"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: -3.25d
+		}
+		{
+			icon: "gtceu:styrene_bucket"
+			id: "42F226BB73C1A1F4"
+			tasks: [
+				{
+					id: "551FDBE51929B593"
+					item: "gtceu:styrene_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "38502F45A0CCC530"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			icon: "gtceu:oxygen_bucket"
+			id: "145393F03845BB83"
+			tasks: [
+				{
+					id: "77D7390B716DB754"
+					item: "gtceu:oxygen_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "55A0ACAB38B58779"
+					type: "checkmark"
+				}
+			]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"145393F03845BB83"
+				"42F226BB73C1A1F4"
+				"77183C16B81172AE"
+			]
+			id: "02CA9B3C11EFE267"
+			tasks: [{
+				id: "2223336CEBB73305"
+				item: "kubejs:dry_ion_exchange_resin_beads"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			icon: "gtceu:distilled_water_bucket"
+			id: "5820F5579594EB8E"
+			tasks: [
+				{
+					id: "36F32EB56FF7B893"
+					item: "gtceu:distilled_water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "22E3DE601278A950"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5820F5579594EB8E"
+				"02CA9B3C11EFE267"
+			]
+			id: "06964A34504EB4F4"
+			tasks: [{
+				id: "79CCC9194CA49709"
+				item: "kubejs:ion_exchange_resin_beads"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			icon: "gtceu:purified_water_bucket"
+			id: "61A61C7128E432C7"
+			tasks: [
+				{
+					id: "3C3B6B8F03F1E0AD"
+					item: "gtceu:purified_water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "278055E4303FBF5D"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"61A61C7128E432C7"
+				"06964A34504EB4F4"
+			]
+			icon: "gtceu:acidic_water_bucket"
+			id: "57AF923E265053D7"
+			tasks: [
+				{
+					id: "4E85BCCD6D61C1F7"
+					item: "gtceu:acidic_water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3CCA08CEBCA45BD5"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["57AF923E265053D7"]
+			id: "5C966A2957EF74F3"
+			tasks: [{
+				id: "69EE465702B06B15"
+				item: "kubejs:dirty_ion_exchange_resin_beads"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["77183C16B81172AE"]
+			icon: "gtceu:hydrogen_bucket"
+			id: "00EF6D13E95FF942"
+			tasks: [
+				{
+					id: "38E18CA78500AD43"
+					item: "gtceu:hydrogen_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1E977F8D53A277A6"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["57AF923E265053D7"]
+			icon: "gtceu:deionized_water_bucket"
+			id: "7BC3F1B582E273E3"
+			rewards: [{
+				count: 3
+				id: "45723B24334B22B8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2A06AA5A4CEDC0CD"
+				item: "gtceu:deionized_water_bucket"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			icon: "gtceu:seed_oil_bucket"
+			id: "191B7E204DDD439B"
+			tasks: [
+				{
+					id: "611E557E37F23869"
+					item: "gtceu:seed_oil_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5DA561543146BA64"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: -7.25d
+		}
+		{
+			icon: "gtceu:steam_bucket"
+			id: "16E4A6BB603C92AC"
+			tasks: [
+				{
+					id: "69A9224985A40092"
+					item: "gtceu:steam_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "30FF5B3E69106B38"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: -5.75d
+		}
+		{
+			dependencies: [
+				"191B7E204DDD439B"
+				"16E4A6BB603C92AC"
+			]
+			icon: "gtceu:linoleic_acid_bucket"
+			id: "40FCBE98AD90BC38"
+			tasks: [
+				{
+					id: "0026D84D367A5E33"
+					item: "gtceu:linoleic_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "613E6E628433D4E7"
+					type: "checkmark"
+				}
+			]
+			x: 8.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["40FCBE98AD90BC38"]
+			icon: "gtceu:glycerol_bucket"
+			id: "152B649EA2D94533"
+			tasks: [
+				{
+					id: "53DC6CED2B490CE6"
+					item: "gtceu:glycerol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "533CB08A64C83356"
+					type: "checkmark"
+				}
+			]
+			x: 8.5d
+			y: -8.0d
+		}
+		{
+			id: "621863761E960D68"
+			tasks: [{
+				id: "2FA82B2C58395B36"
+				item: "gtceu:sodium_hydroxide_dust"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"621863761E960D68"
+				"40FCBE98AD90BC38"
+			]
+			id: "2F8ABDE295264797"
+			tasks: [{
+				id: "6BFEC784CECC931D"
+				item: "gtceu:sodium_linoleate_dust"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.5d
+		}
+		{
+			icon: "gtceu:ethanol_bucket"
+			id: "4D88C910D02A1C63"
+			tasks: [
+				{
+					id: "2E7E81E4656AD622"
+					item: "gtceu:ethanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "39D70AAF57EA0EEF"
+					type: "checkmark"
+				}
+			]
+			x: 10.5d
+			y: -8.0d
+		}
+		{
+			icon: "minecraft:water_bucket"
+			id: "2776A223A6988D10"
+			tasks: [
+				{
+					id: "69646D0214FB211B"
+					item: "minecraft:water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3BC299962332BDC3"
+					type: "checkmark"
+				}
+			]
+			x: 11.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"4D88C910D02A1C63"
+				"2F8ABDE295264797"
+				"2776A223A6988D10"
+			]
+			icon: "gtceu:aerogel_solvent_mixture_bucket"
+			id: "60E55EDE4B94E462"
+			tasks: [
+				{
+					id: "55660904C29522CC"
+					item: "gtceu:aerogel_solvent_mixture_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3EEEC2BB85B4124C"
+					type: "checkmark"
+				}
+			]
+			x: 11.5d
+			y: -6.5d
+		}
+		{
+			id: "2E5B54A70C3AFD1B"
+			tasks: [{
+				id: "2352E001FEBF6DF0"
+				item: "gtceu:silicon_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.75d
+		}
+		{
+			icon: "gtceu:chlorine_bucket"
+			id: "31DD39F357886221"
+			tasks: [
+				{
+					id: "78FAAEAD2C2E6538"
+					item: "gtceu:chlorine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "49B38EEB1FE1B286"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: -1.75d
+		}
+		{
+			dependencies: [
+				"31DD39F357886221"
+				"2E5B54A70C3AFD1B"
+			]
+			icon: "gtceu:silicon_tetrachloride_bucket"
+			id: "6F743F7896288C22"
+			tasks: [
+				{
+					id: "3BA12A9DC7F76267"
+					item: "gtceu:silicon_tetrachloride_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "769B048B1657275A"
+					type: "checkmark"
+				}
+			]
+			x: 13.0d
+			y: -3.25d
+		}
+		{
+			icon: "gtceu:ethanol_bucket"
+			id: "5399B440912FAE80"
+			tasks: [
+				{
+					id: "52BC81FE09B00AC0"
+					item: "gtceu:ethanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7622673A390A19AD"
+					type: "checkmark"
+				}
+			]
+			x: 11.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6F743F7896288C22"
+				"5399B440912FAE80"
+			]
+			icon: "gtceu:tetraethyl_orthosilicate_bucket"
+			id: "3ACC7E920CA9E62D"
+			tasks: [
+				{
+					id: "77A4EE13F37CF3F8"
+					item: "gtceu:tetraethyl_orthosilicate_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5445A6421A5531C0"
+					type: "checkmark"
+				}
+			]
+			x: 13.0d
+			y: -5.0d
+		}
+		{
+			icon: "gtceu:hydrochloric_acid_bucket"
+			id: "229CAA73A71DED07"
+			tasks: [
+				{
+					id: "1A7B9E97DEDBDB66"
+					item: "gtceu:hydrochloric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "44B7B54E59F5D902"
+					type: "checkmark"
+				}
+			]
+			x: 13.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"229CAA73A71DED07"
+				"3ACC7E920CA9E62D"
+				"60E55EDE4B94E462"
+			]
+			icon: "gtceu:aerogel_precursor_solution_bucket"
+			id: "7DF57FCB2A07B40D"
+			tasks: [
+				{
+					id: "70C58FD8E9474924"
+					item: "gtceu:aerogel_precursor_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1601A7E201BA7678"
+					type: "checkmark"
+				}
+			]
+			x: 13.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7DF57FCB2A07B40D"]
+			id: "3336D618E129F764"
+			tasks: [{
+				id: "010E1D7AE1A91B41"
+				item: "kubejs:wet_aerogel_ingot"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7DF57FCB2A07B40D"]
+			icon: "gtceu:diluted_hydrochloric_acid_bucket"
+			id: "15E7D9BF57264D3F"
+			tasks: [
+				{
+					id: "05DE7758E996ED2B"
+					item: "gtceu:diluted_hydrochloric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6F1275B8504EC6F0"
+					type: "checkmark"
+				}
+			]
+			x: 14.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3336D618E129F764"]
+			id: "12B23627DD0026B5"
+			rewards: [{
+				count: 3
+				id: "1F6FA70139000253"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "3A6F14664BCB4635"
+				item: "gtceu:aerogel_ingot"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["3336D618E129F764"]
+			icon: "gtceu:ethanol_bucket"
+			id: "134271B387D00F14"
+			tasks: [
+				{
+					id: "0911F7EA33629E00"
+					item: "gtceu:ethanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0BEA2DBC6D8808E2"
+					type: "checkmark"
+				}
+			]
+			x: 15.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["53B8A2EFCF2D4371"]
+			icon: "gtceu:advanced_synthesis_plant"
+			id: "271587AB365AB803"
+			tasks: [
+				{
+					id: "6EF26A509CDAB8AF"
+					item: "gtceu:bismuth_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "26B8A50C4B1F42AD"
+					item: "gtceu:tellurium_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2F272ABF781B3372"
+					item: "gtceu:nitric_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3E87EB5E423A0F02"
+					type: "checkmark"
+				}
+			]
+			x: 13.5d
+			y: 8.5d
 		}
 	]
 	title: "{ftbquests.processing_lines_chap_456.title}"

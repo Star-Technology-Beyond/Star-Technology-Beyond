@@ -16,9 +16,9 @@ StartupEvents.registry('block', event => {
     naq_casing('enriched_naquadah_machine_casing', 'casing');
     naq_casing('enriched_naquadah_pipe_casing', 'pipe_casing');
     naq_casing('enriched_naquadah_gearbox', 'gearbox');
+    naq_casing('enriched_naquadah_turbine_casing', 'turbine_casing');
 
     event.create('enriched_naquadah_firebox_casing', 'gtceu:active')
-        .displayName('Enriched Naquadah Firebox Casing')
         .hardness(5)
         .resistance(10)
         .soundType('metal')
@@ -30,7 +30,6 @@ StartupEvents.registry('block', event => {
                 'kubejs:block/casings/naquadah/casing');
 
     event.create('enriched_naquadah_engine_intake_casing', 'gtceu:active')
-        .displayName('Supreme Engine Intake Casing')
         .hardness(5)
         .resistance(10)
         .soundType('metal')
@@ -38,5 +37,14 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_iron_tool')
         .requiresTool(false)
         .simple('kubejs:block/casings/naquadah/engine_intake_casing');
+
+    event.create('enriched_naquadah_heat_escape_casing', 'gtceu:active')
+        .hardness(5)
+        .resistance(10)
+        .soundType('metal')
+        .tagBlock('mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .requiresTool(false)
+        .bloom('kubejs:block/casings/naquadah/heat_escape');
 
 });

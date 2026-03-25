@@ -8,8 +8,8 @@ ServerEvents.recipes(event => {
 
     [
         {powder: 'blizz', item: 'cobalt_dust', fluid: 'fluorine', multiplier: 16, element: 'ice'},
-        {powder: 'blitz', item: 'platinum_dust', fluid: 'deuterium', multiplier: 4, element: 'lightning'},
-        {powder: 'basalz', item: 'small_rhodium_dust', fluid: 'helium', multiplier: 1, element: 'earth'}
+        {powder: 'blitz', item: 'platinum_dust', fluid: 'deuterium', multiplier: 16, element: 'lightning'},
+        {powder: 'basalz', item: 'rhodium_dust', fluid: 'helium', multiplier: 16, element: 'earth'}
     ].forEach(type=>{
         event.recipes.gtceu.chemical_reactor(id(`${type.powder}_dust`))
             .itemInputs(`gtceu:${type.item}`)

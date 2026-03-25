@@ -22,7 +22,7 @@
             // sets multiblock to use steam
         //.recipeModifier($StarTRecipeModifiers.START_STEAM_PARALLEL)
             //Adds StartSteamMulti as a recipe modifier
-    
+   
     const $StarTThreadingStatBlocks = Java.loadClass('com.startechnology.start_core.machine.threading.StarTThreadingStatsPredicate');
         // $StarTThreadingStatBlocks.threadingStatBlocks()
             // Helix block predicate
@@ -32,6 +32,15 @@
             // sets as threading multi
         // .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE])
             // gives threading abilities, goes after OC determinate
+
+    const $StarTDraconicInfusionMachine = Java.loadClass('com.startechnology.start_core.machine.draconic_infusion.StarTDraconicInfusionMachine')
+        //.machine((holder) => new $StarTDraconicInfusionMachine(holder))
+            //Draco Infusion Ordered Inputs
+
+    const $VacuumChemicalReactorMachine = Java.loadClass("com.startechnology.start_core.machine.vcrc.VacuumChemicalReactionChamberMachine");
+        //.machine((holder) => new $VacuumChemicalReactorMachine(holder))
+            //VCR Machine
+    const $StarTVacuumPumpPredicates = Java.loadClass("com.startechnology.start_core.machine.vacuum_pump.StarTVacuumPumpPredicates");
 
 //GTCEU Loader
 
@@ -78,6 +87,9 @@
     const $FluidHatchPartMachine = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.part.FluidHatchPartMachine')
         //Adding new fluid hatch types
 
-    //VCR Machine Loader
-    const $VacuumChemicalReactorMachine = Java.loadClass("com.startechnology.start_core.machine.vcrc.VacuumChemicalReactionChamberMachine");
-    const $StarTVacuumPumpPredicates = Java.loadClass("com.startechnology.start_core.machine.vacuum_pump.StarTVacuumPumpPredicates");
+    const $LayeredWorkableElectricMultiblockMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.LayeredWorkableElectricMultiblockMachine",);    
+        //.machine((holder) => new $LayeredWorkableElectricMultiblockMachine(holder))
+            //Layered Input Supported Machine
+    
+    // Formatting Util
+    const $FormattingUtil = Java.loadClass('com.gregtechceu.gtceu.utils.FormattingUtil');

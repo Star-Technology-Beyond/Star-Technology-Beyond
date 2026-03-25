@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
         .machine((holder) => new $VacuumChemicalReactorMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType("vacuum_chemical_reaction_chamber")
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.VACUUM_CHEMICAL_REACTION_CHAMBER])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.VACUUM_CHEMICAL_REACTION_CHAMBER, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock("kubejs:enriched_naquadah_machine_casing"))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("aacbbbcaaaaa", "aagaaagaaaaa", "aagaaagaaaaa", "aagaaagaaaaa", "aacbbbcaaaaa")

@@ -22,8 +22,8 @@ global.not_hardmode(() => {
             let blockType;
 
             if (field_generator_tier == "iv") { //iv
-                recycleOutputs = ["8x gtceu:rhodium_plated_palladium", "8x gtceu:samarium_iron_arsenic_oxide", "4x gtceu:tungsten_steel", 
-                    "gtceu:niobium_titanium", /*fake blockBools*/ false, false, false, false];
+                recycleOutputs = ["4x gtceu:rhodium_plated_palladium", "4x gtceu:samarium_iron_arsenic_oxide", "2x gtceu:tungsten_steel", 
+                    /*fake blockBools*/ false, false, false, false];
                 return recycleOutputs;
             }
             else if (field_generator_tier == "luv" || field_generator_tier == "zpm" || field_generator_tier == "uv") { //LUVToUV

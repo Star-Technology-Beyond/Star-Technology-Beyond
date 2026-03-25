@@ -3,7 +3,7 @@
 	default_quest_shape: "square"
 	filename: "power"
 	group: "28726466D987C725"
-	icon: "kubejs:mv_upgrade_kit"
+	icon: "kubejs:mv_upgraade_kit"
 	id: "10A89CD14C4DAF63"
 	order_index: 0
 	quest_links: [
@@ -1673,7 +1673,7 @@
 				id: "43336F4858ECFE9C"
 				item: {
 					Count: 1
-					id: "kubejs:mv_upgrade_kit"
+					id: "kubejs:mv_upgraade_kit"
 					tag: {
 						AugmentData: {
 							BaseMod: 12.0f
@@ -1707,7 +1707,7 @@
 				id: "0FFFC4310BE7E52C"
 				item: {
 					Count: 1
-					id: "kubejs:lv_upgrade_kit"
+					id: "kubejs:lv_upgraade_kit"
 					tag: {
 						AugmentData: {
 							BaseMod: 6.0f
@@ -1731,7 +1731,7 @@
 				id: "41E49D5E9F070FF8"
 				item: {
 					Count: 1
-					id: "kubejs:hv_upgrade_kit"
+					id: "kubejs:hv_upgraade_kit"
 					tag: {
 						AugmentData: {
 							BaseMod: 24.0f
@@ -1755,7 +1755,7 @@
 				id: "5E662ABFA472940F"
 				item: {
 					Count: 1
-					id: "kubejs:ev_upgrade_kit"
+					id: "kubejs:ev_upgraade_kit"
 					tag: {
 						AugmentData: {
 							BaseMod: 48.0f

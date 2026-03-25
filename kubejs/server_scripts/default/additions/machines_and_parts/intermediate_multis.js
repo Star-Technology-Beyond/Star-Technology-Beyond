@@ -47,7 +47,7 @@ global.not_hardmode(() => {
             'BTB'
         ], {
             P: 'gtceu:dense_obsidian_plate',
-            R: 'kubejs:highly_enriched_uranium_fuel_rod',
+            R: 'gtceu:industrial_tnt',
             C: '#gtceu:circuits/luv',
             I: 'gtceu:implosion_compressor',
             B: 'gtceu:niobium_titanium_double_cable',

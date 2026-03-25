@@ -17,7 +17,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         event.create(`t_large_${type}`, 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
             .recipeType(type)
-            .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+            .recipeModifiers([GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.BATCH_MODE])
             .appearanceBlock(() => Block.getBlock(`kubejs:${casing}_casing`))
             .pattern(definition => FactoryBlockPattern.start()
                 .aisle('CCC', 'CCC', 'CCC')
@@ -53,7 +53,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     largeCube('wiremill', 'sterling_silver');
     largeCube('autoclave', 'silicone_rubber');
     largeCube('pulverizer', 'galvanized_steel');
-    largeCube('arc_furnace', 'kanthal');
+    largeCube('arc_furnace', 'black_steel');
     largeCube('electromagnetic_separator', 'manganin');
 
 
@@ -61,7 +61,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('large_rock_crusher', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('large_rock_crusher')
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:red_steel_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('CCC', 'CCC', 'CCC')

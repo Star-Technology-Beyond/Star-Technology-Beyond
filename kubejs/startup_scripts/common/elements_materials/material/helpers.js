@@ -168,13 +168,17 @@ global.periodicTableElement = (material, type) => {
     switch(type) {
         case 'ingot': mat.setProperty(PropertyKey.INGOT, new IngotProperty()); break;
         case 'dust': mat.setProperty(PropertyKey.DUST, new DustProperty()); break;
-        case 'fluid': case 'gas': case 'plasma': case 'molten': {
+        case 'fluid': case 'gas': case 'plasma': case 'molten': case 'gas_plasma': {
             let prop = new FluidProperty();
             switch(type) {
                 case 'fluid': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.LIQUID, new GTFluidBuilder()); break;
                 case 'gas': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.GAS, new GTFluidBuilder()); break;
                 case 'plasma': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.PLASMA, new GTFluidBuilder()); break;
                 case 'molten': prop.getStorage().enqueueRegistration(GTFluidStorageKeys.MOLTEN, new GTFluidBuilder()); break;
+                case 'gas_plasma': {
+                        prop.getStorage().enqueueRegistration(GTFluidStorageKeys.GAS, new GTFluidBuilder());
+                        prop.getStorage().enqueueRegistration(GTFluidStorageKeys.PLASMA, new GTFluidBuilder()); break;
+                    }
             }
             mat.setProperty(PropertyKey.FLUID, prop); 
             break;

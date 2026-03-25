@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $CoiledMulti(holder))
         .recipeType('alloy_blast_smelter')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.EBF_OVERCLOCK]) // Will have same issues with coils that the RHF has but that will be fixed later on.
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.EBF_OVERCLOCK, GTRecipeModifiers.BATCH_MODE]) // Will have same issues with coils that the RHF has but that will be fixed later on.
         .appearanceBlock(() => Block.getBlock('kubejs:extreme_temperature_smelting_casing'))
         .pattern(definition => FactoryBlockPattern.start()
 			.aisle('     B   B     ', '     B   B     ', '     B   B     ', '     BBBBB     ', '       C       ', '       C       ', '     CCCCC     ', '       C       ', '       C       ', '       C       ', '       C       ', '       C       ', '     CCCCC     ', '               ', '               ', '               ', '               ', '               ', '               ', '               ', '               ', '               ', '               ', '               ', '               ') 
@@ -38,6 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where('@', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
 		.workableCasingModel('kubejs:block/casings/nether_multis/extreme_temperature_smelting_casing',
-            'gtceu:block/multiblock/gcym/blast_alloy_smelter');
+            'gtceu:block/multiblock/gcym/blast_alloy_smelter')
+		.additionalDisplay(global.coilMachineTempDisplay);
 
 });
