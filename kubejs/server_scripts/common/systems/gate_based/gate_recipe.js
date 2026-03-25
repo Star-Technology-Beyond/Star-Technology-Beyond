@@ -23,12 +23,12 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:heat_chamber')
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:uv_electric_furnace'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(48)
+                .researchStack(Item.of('gtceu:zpm_electric_furnace'))
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(16)
             )
         .duration(2400)
-        .EUt(GTValues.VHA[GTValues.UV]);
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.recipes.gtceu.assembly_line(id('super_heat_chamber'))
             .itemInputs('gtceu:heat_chamber', '4x #gtceu:circuits/uhv', 'gtceu:double_dragonsteel_plate', 
