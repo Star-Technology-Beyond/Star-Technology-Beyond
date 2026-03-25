@@ -21,6 +21,12 @@
 			x: -6.5d
 			y: 3.0d
 		}
+		{
+			id: "23C36BA08644EF38"
+			linked_quest: "33FE3C68B0BD21B1"
+			x: 0.5d
+			y: 4.0d
+		}
 	]
 	quests: [
 		{
@@ -2118,18 +2124,6 @@
 			}]
 			x: -6.5d
 			y: 1.0d
-		}
-		{
-			dependencies: ["07AD6651D0B40E22"]
-			description: ["{ftbquests.abydos.ancient_refinement_center.description}"]
-			id: "413999F83FD85CF2"
-			tasks: [{
-				id: "173058FFEEC146AB"
-				item: "gtceu:ancient_refinement_center"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 4.0d
 		}
 		{
 			dependencies: ["5ED2EA63EE112E24"]
