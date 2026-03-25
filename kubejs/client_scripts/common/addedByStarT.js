@@ -31,7 +31,7 @@ global.addedByStarT = {
         'greenhouse', 'draco_infusion', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 'uiv_fusion_reactor', 'vacuum_chemical_reaction_chamber'
     ],
     paraBatch: [
-        'ore_processing_plant', 'large_sieve', 'large_me_assembler', 'dimensional_destabiliser', 'rock_sifter', 'void_excavator', 
+        'ore_processing_plant', 'large_sieve', 'large_me_assembler', 'rock_sifter', 'void_excavator', 
         'folding_akreyrium_stabiliser', 'molten_destabiliser', 'cyclonic_sifter', 'injection_mixer', 'manifold_centrifuge',
         'large_quantum_compressor', 'runic_circuitry_assembling_station', 'exotic_gas_siphon', 'auroric_vacuum_isolation_reactor'
     ],
@@ -43,7 +43,7 @@ global.addedByStarT = {
         't_large_mixer', 't_large_ore_washer', 't_large_sifter', 't_large_thermal_centrifuge', 't_large_wiremill', 't_large_autoclave', 't_large_rock_crusher'
     ],
     throughBatch: [
-        'super_cutter', 'super_electric_ore_factory', 'dual_chambered_vacuum_complex'
+        'super_cutter', 'super_electric_ore_factory', 'dual_chambered_vacuum_complex', 'dimensional_destabiliser'
     ],
     coilBatch: [
         'super_implosion_compressor'
