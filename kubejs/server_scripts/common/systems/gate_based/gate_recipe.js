@@ -106,20 +106,20 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.UV]);
 
     event.recipes.gtceu.assembly_line(id('quantum_compressor'))
-            .itemInputs('gtceu:melodium_frame', '3x #gtceu:circuits/uv', 'gtceu:double_trinaquadalloy_plate', 
-                    'gtceu:double_trinaquadalloy_plate', '2x gtceu:uv_field_generator', '16x gtceu:uv_electric_piston', '64x gtceu:uhpic_chip', 
-                    '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
-                    '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', '48x gtceu:tritanium_screw')
+            .itemInputs('gtceu:melodium_frame', '3x #gtceu:circuits/uv', '2x gtceu:double_trinaquadalloy_plate',
+                    '2x gtceu:zpm_field_generator', '16x gtceu:zpm_electric_piston', '64x gtceu:uhpic_chip', 
+                    '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip',
+                    '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', '48x gtceu:tritanium_screw')
             .inputFluids('gtceu:hsse 5184', 'gtceu:hssg 5184', 'gtceu:hsss 5184')
             .itemOutputs('gtceu:large_quantum_compressor')
             .stationResearch(
                 researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:uv_compressor'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(128)
+                .researchStack(Item.of('gtceu:zpm_compressor'))
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(16)
             )
             .duration(2400)
-            .EUt(GTValues.VHA[GTValues.UV]);
+            .EUt(GTValues.VHA[GTValues.ZPM]);
     
     event.recipes.gtceu.assembly_line(id('stargate_component_assembly'))
             .itemInputs('gtceu:prismalium_frame', '4x #gtceu:circuits/uhv', '2x gtceu:uv_field_generator', '8x gtceu:gravi_star', 
