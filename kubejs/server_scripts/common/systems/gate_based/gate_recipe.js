@@ -84,11 +84,11 @@ ServerEvents.recipes(event => {
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
             .researchStack(Item.of('gtceu:long_void_rod'))
-            .EUt(GTValues.VHA[GTValues.UV])
+            .EUt(GTValues.VHA[GTValues.ZPM])
             .CWUt(64)
         )
         .duration(3000)
-        .EUt(GTValues.VHA[GTValues.UV]);
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.recipes.gtceu.assembly_line(id('runic_engraver'))
             .itemInputs('gtceu:lumium_frame', '4x #gtceu:circuits/uv', 'gtceu:double_tantalum_carbide_plate', 
