@@ -22,12 +22,6 @@
 			y: 5.5d
 		}
 		{
-			id: "23C36BA08644EF38"
-			linked_quest: "33FE3C68B0BD21B1"
-			x: 5.0d
-			y: 3.5d
-		}
-		{
 			id: "112C653450CC39A2"
 			linked_quest: "2F87FC1D5BB43220"
 			x: 4.0d
@@ -1036,23 +1030,6 @@
 			}]
 			x: 12.0d
 			y: -3.5d
-		}
-		{
-			dependencies: ["7FFCAD92772A175F"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.vibration_laser_engraver.description}"]
-			id: "1C81273869C0EC9F"
-			rewards: [{
-				id: "32925D70150DF477"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "51FFFC651CA18531"
-				item: "gtceu:vibration_laser_engraver"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 1.5d
 		}
 		{
 			dependencies: [
