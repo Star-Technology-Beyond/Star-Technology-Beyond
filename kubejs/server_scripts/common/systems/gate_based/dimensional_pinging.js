@@ -6,35 +6,33 @@ ServerEvents.recipes(event => {
     // Machine recipes
     
     event.recipes.gtceu.assembly_line(id('dimensional_finder'))
-        .itemInputs(
-            'gtceu:uv_scanner','16x gtceu:uv_sensor','16x gtceu:uv_sensor','16x gtceu:uv_sensor','16x gtceu:uv_sensor',
-            '64x gtceu:fine_trinaquadalloy_wire','64x gtceu:fine_trinaquadalloy_wire', '8x #gtceu:circuits/uv'
-        )
+        .itemInputs('gtceu:zpm_scanner', '16x gtceu:zpm_sensor', '16x gtceu:zpm_emitter', '16x gtceu:zpm_field_generator', '16x gtceu:zpm_voltage_coil',
+            '64x gtceu:fine_trinaquadalloy_wire', '64x gtceu:fine_trinaquadalloy_wire', '8x #gtceu:circuits/uv')
         .inputFluids(
             'gtceu:naquadria 34992',
-            'gtceu:neutronium 13248',
-            'gtceu:echo_r 11520'
+            'gtceu:europium 13248',
+            'gtceu:prismalium 11520'
         )
         .itemOutputs('gtceu:dimensional_finder')
         .duration(3600)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('kubejs:coordinate_crystal'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(128)
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(16)
             )
-        .EUt(GTValues.VHA[GTValues.UV]); 
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
     //Coordinate Crystals
     
     if (global.packmode !== 'abydos'){
         (() => { 
         event.recipes.gtceu.dimensional_finder(id('abydos_coordinate_crystal'))
-            .itemInputs('kubejs:coordinate_crystal', 'minecraft:sand', 'gtceu:uv_sensor')
+            .itemInputs('kubejs:coordinate_crystal', 'minecraft:sand', 'gtceu:zpm_sensor')
             .inputFluids('gtceu:naquadria 7200')
             .chancedOutput('kubejs:abydos_coordinate_crystal', 500, 0)
             .duration(150 * 20)
-            .EUt(GTValues.VA[GTValues.UV])
+            .EUt(GTValues.VA[GTValues.ZPM])
             .dimension('minecraft:overworld'); 
         })()
     }   
