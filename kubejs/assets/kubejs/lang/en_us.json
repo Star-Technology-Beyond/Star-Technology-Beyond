@@ -743,10 +743,10 @@
     "item.projectred_integration.xor_gate.tooltip": "Has 2 inputs and 1 output.\nOutput is on if only one of the inputs is on.",
     "item.projectred_integration.xnor_gate.tooltip": "Has 2 inputs and 1 output.\nOutput is on if both or none of the inputs are on.",
 
-    "item.projectred_integration.buffer_gate.tooltip": "Has 1 input and 3 outputs\nDellays the signal by 1 tick.\nActs similar to a diode, where the signal can only pass in one direction.",
+    "item.projectred_integration.buffer_gate.tooltip": "Has 1 input and 3 outputs\nDelays the signal by 1 tick.\nActs similar to a diode, where the signal can only pass in one direction.",
     "item.projectred_integration.multiplexer_gate.tooltip": "Has 3 inputs and 1 output\nActs like an XOR gate, but the back input acts as a selector for the other 2 inputs.\nWhen the back input is off, the right input is selected, and when the back input is on, the left input is selected.",
     "item.projectred_integration.pulse_gate.tooltip": "Has 1 input and 1 output\nWhen the input turns on, a 1 tick pulse is emitted.\nSimilar to observers, but does not emit a pulse when the input turns off.",
-    "item.projectred_integration.repeater_gate.tooltip": "Has 1 input and 1 output\nDellays the signal by a configurable amount of ticks.\nMin: 1 tick Max: 256 ticks.",
+    "item.projectred_integration.repeater_gate.tooltip": "Has 1 input and 1 output\nDelays the signal by a configurable amount of ticks.\nMin: 1 tick Max: 256 ticks.",
     "item.projectred_integration.randomizer_gate.tooltip": "Has 1 input and 3 outputs\nWhen receiving a signal, randomly outputs any combination of the 3 outputs.\nIf the input is always on, it will continue randomizing the outputs every tick. Outputs remain active after pulse ends.",
     "item.projectred_integration.sr_latch_gate.tooltip": "Has 2 inputs and 2 outputs\nRight input is for front output, and left input is for back output.\nWhen the right input receives a signal, the front output turns on and remains on until the left input receives a signal, which turns off the front output and turns on the back output. The back output remains on until the right input receives a signal again. If both inputs receive a signal at the same time, the outputs will be both off.",
     "item.projectred_integration.toggle_latch_gate.tooltip": "Has 2 inputs and 2 outputs, inputs are shared\nWhen either input receives a signal, the outputs will swap states. If both inputs receive a signal at the same time, the outputs will not change.",
