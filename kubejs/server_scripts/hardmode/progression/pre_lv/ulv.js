@@ -283,7 +283,6 @@ ServerEvents.recipes(event => {
         .EUt(-8);
 
     // Old ULV to new ULV component recipes
-
     ['electric_motor', 'electric_pump', 'conveyor_module', 'robot_arm', 'electric_piston'].forEach(component => {
         event.shapeless(
           Item.of(`kubejs:ulv_${component}`),
