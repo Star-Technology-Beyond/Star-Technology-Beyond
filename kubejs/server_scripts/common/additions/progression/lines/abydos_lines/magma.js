@@ -18,6 +18,14 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(GTValues.VHA[GTValues.UV]*.8);
 
+    event.recipes.gtceu.cyclonic_sifter(id('abydos_naquadite_dense_magma'))
+        .chancedInput('1x kubejs:netherite_reinforced_mesh', 300, -20)
+        .inputFluids('gtceu:abydos_naquadite_dense_magma 25000')
+        .outputFluids('gtceu:naquadite_dense_residue 16000')
+        .itemOutputs('1x gtceu:abydos_magma_slag_dust')
+        .duration(240)
+        .EUt(GTValues.VHA[GTValues.UV]*.8);
+
     // === Residue Breakdown ===
     event.recipes.gtceu.molten_destabilizing(id('refractory_dense_residue'))
         .inputFluids('gtceu:refractory_dense_residue 60000')
@@ -30,6 +38,13 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:reactive_dense_residue 60000')
         .outputFluids('gtceu:molten_ore_mixture 50000')
         .itemOutputs('8x gtceu:raw_zapolite','6x gtceu:raw_crookesite','5x gtceu:raw_kitkaite','3x gtceu:raw_lautarite')
+        .duration(840)
+        .EUt(GTValues.VHA[GTValues.UV]);
+
+    event.recipes.gtceu.molten_destabilizing(id('naquadite_dense_residue'))
+        .inputFluids('gtceu:naquadite_dense_residue 60000')
+        .outputFluids('gtceu:molten_ore_mixture 50000')
+        .itemOutputs('8x gtceu:raw_naquadite','6x gtceu:raw_magnesite','5x gtceu:raw_chromite', '3x gtceu:raw_magnetite')
         .duration(840)
         .EUt(GTValues.VHA[GTValues.UV]);
 

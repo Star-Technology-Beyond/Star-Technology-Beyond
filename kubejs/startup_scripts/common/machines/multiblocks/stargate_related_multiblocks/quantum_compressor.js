@@ -55,7 +55,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_GEARBOX.get()))
             .where('F', Predicates.blocks(GTBlocks.FIREBOX_TUNGSTENSTEEL.get()))
             .where('A', Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()))
-            .where('3', Predicates.blocks(GTBlocks.FUSION_CASING_MK3.get()))
+            .where('3', Predicates.blocks(GTBlocks.FUSION_CASING.get()))
             .where('W', Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get()))
             .where(' ', Predicates.any())
             .build())

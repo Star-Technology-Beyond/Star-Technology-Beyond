@@ -70,6 +70,10 @@ global.getComponentTotal = (components, tierBracket) => {
       totalCounts[type] += componentRecycleCounts[component][type];
     });
   });
+
+  totalCountsTypes.forEach(type => {
+    totalCounts[type] = Math.floor(totalCounts[type]);
+  });
   
   return totalCounts;
 }
@@ -258,6 +262,12 @@ global.getFinalRecycleOutputs = (outputs, blockType, macBool, specialBool) => {
   }
 
   return finalOutputs;
+}
+
+global.getRecipeTier = (tier) => {
+    const recipeTier = (tier == 'luv') ? 'LuV' : (tier == 'opv') ? 'OpV' : tier.toUpperCase();
+
+    return recipeTier;
 }
 
 ServerEvents.recipes(event => {

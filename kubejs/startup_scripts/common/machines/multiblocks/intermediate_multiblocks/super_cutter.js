@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('super_cutter', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('cutter')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:beryllium_bronze_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('AAAAA', 'AAAAA', 'AAAAA') 

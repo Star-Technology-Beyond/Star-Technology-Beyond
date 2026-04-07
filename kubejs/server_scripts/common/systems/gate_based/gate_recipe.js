@@ -21,20 +21,20 @@ ServerEvents.recipes(event => {
 
 //     //Multiblock Recipes
     
-//     event.recipes.gtceu.assembly_line(id('heat_chamber'))
-//         .itemInputs('gtceu:iridium_frame', '4x #gtceu:circuits/zpm', 'gtceu:double_rhodium_plated_palladium_plate', 
-//                 'gtceu:double_tritanium_plate', 'gtceu:zpm_field_generator', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
-//                 '32x gtceu:uhpic_chip', '48x gtceu:dragonsteel_single_wire')
-//         .inputFluids('gtceu:hsss 6912', 'gtceu:niobium_nitride 1728')
-//         .itemOutputs('gtceu:heat_chamber')
-//         .stationResearch(
-//             researchRecipeBuilder => researchRecipeBuilder
-//                 .researchStack(Item.of('gtceu:uv_electric_furnace'))
-//                 .EUt(GTValues.VHA[GTValues.UV])
-//                 .CWUt(48)
-//             )
-//         .duration(2400)
-//         .EUt(GTValues.VHA[GTValues.UV]);
+    event.recipes.gtceu.assembly_line(id('heat_chamber'))
+        .itemInputs('gtceu:iridium_frame', '4x #gtceu:circuits/zpm', 'gtceu:double_rhodium_plated_palladium_plate', 
+                'gtceu:double_tritanium_plate', 'gtceu:zpm_field_generator', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
+                '32x gtceu:uhpic_chip', '48x gtceu:dragonsteel_single_wire')
+        .inputFluids('gtceu:hsss 6912', 'gtceu:niobium_nitride 1728')
+        .itemOutputs('gtceu:heat_chamber')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:zpm_electric_furnace'))
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(16)
+            )
+        .duration(2400)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
 //     event.recipes.gtceu.assembly_line(id('super_heat_chamber'))
 //             .itemInputs('gtceu:heat_chamber', '4x #gtceu:circuits/uhv', 'gtceu:double_dragonsteel_plate', 
@@ -81,67 +81,67 @@ ServerEvents.recipes(event => {
 //         .duration(4800)
 //         .EUt(GTValues.VHA[GTValues.UEV]);
 
-//     event.recipes.gtceu.assembly_line(id('large_rotor_machine'))
-//         .itemInputs('gtceu:shellite_frame', '4x #gtceu:circuits/luv', 'gtceu:double_vanadium_gallium_plate', 
-//                 'gtceu:double_red_steel_plate', 'gtceu:luv_field_generator', '2x gtceu:luv_electric_motor', '64x gtceu:uhpic_chip', 
-//                 '32x gtceu:uhpic_chip', '4x gtceu:advanced_power_thruster', '4x gtceu:hssg_spring')
-//         .inputFluids('gtceu:soldering_alloy 3456', 'gtceu:yttrium_barium_cuprate 5184')
-//         .itemOutputs('gtceu:large_rotor_machine')
-//         .stationResearch(
-//             researchRecipeBuilder => researchRecipeBuilder
-//             .researchStack(Item.of('gtceu:long_void_rod'))
-//             .EUt(GTValues.VHA[GTValues.UV])
-//             .CWUt(64)
-//         )
-//         .duration(3000)
-//         .EUt(GTValues.VHA[GTValues.UV]);
+    event.recipes.gtceu.assembly_line(id('large_rotor_machine'))
+        .itemInputs('gtceu:shellite_frame', '4x #gtceu:circuits/luv', 'gtceu:double_vanadium_gallium_plate', 
+                'gtceu:double_red_steel_plate', 'gtceu:luv_field_generator', '2x gtceu:luv_electric_motor', '64x gtceu:uhpic_chip', 
+                '32x gtceu:uhpic_chip', '4x gtceu:advanced_power_thruster', '4x gtceu:hssg_spring')
+        .inputFluids('gtceu:soldering_alloy 3456', 'gtceu:yttrium_barium_cuprate 5184')
+        .itemOutputs('gtceu:large_rotor_machine')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+            .researchStack(Item.of('gtceu:long_void_rod'))
+            .EUt(GTValues.VHA[GTValues.ZPM])
+            .CWUt(24)
+        )
+        .duration(3000)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
-//     event.recipes.gtceu.assembly_line(id('runic_engraver'))
-//             .itemInputs('gtceu:lumium_frame', '4x #gtceu:circuits/uv', 'gtceu:double_tantalum_carbide_plate', 
-//                     'gtceu:double_titanium_carbide_plate', '2x gtceu:uv_field_generator', '4x gtceu:uv_emitter', '64x gtceu:uhpic_chip', 
-//                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '48x gtceu:blue_alloy_screw', 'gtceu:gravi_star')
-//             .inputFluids('gtceu:hsse 5184', 'gtceu:hssg 5184', 'gtceu:hsss 5184')
-//             .itemOutputs('gtceu:runic_circuitry_assembling_station')
-//             .stationResearch(
-//                 researchRecipeBuilder => researchRecipeBuilder
-//                 .researchStack(Item.of('kubejs:runic_wave_generator'))
-//                 .EUt(GTValues.VHA[GTValues.UV])
-//                 .CWUt(128)
-//             )
-//             .duration(6000)
-//             .EUt(GTValues.VHA[GTValues.UV]);
+    event.recipes.gtceu.assembly_line(id('runic_engraver'))
+            .itemInputs('gtceu:lumium_frame', '4x #gtceu:circuits/uv', 'gtceu:double_tantalum_carbide_plate', 
+                    'gtceu:double_titanium_carbide_plate', '2x gtceu:zpm_field_generator', '4x gtceu:zpm_emitter', '64x gtceu:uhpic_chip', 
+                    '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '48x gtceu:blue_alloy_screw', 'gtceu:gravi_star')
+            .inputFluids('gtceu:hsse 5184', 'gtceu:hssg 5184', 'gtceu:hsss 5184')
+            .itemOutputs('gtceu:runic_circuitry_assembling_station')
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('kubejs:runic_wave_generator'))
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(16)
+            )
+            .duration(6000)
+            .EUt(GTValues.VHA[GTValues.ZPM]);
 
-//     event.recipes.gtceu.assembly_line(id('quantum_compressor'))
-//             .itemInputs('gtceu:melodium_frame', '3x #gtceu:circuits/uv', 'gtceu:double_trinaquadalloy_plate', 
-//                     'gtceu:double_trinaquadalloy_plate', '2x gtceu:uv_field_generator', '16x gtceu:uv_electric_piston', '64x gtceu:uhpic_chip', 
-//                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
-//                     '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', '48x gtceu:tritanium_screw')
-//             .inputFluids('gtceu:hsse 5184', 'gtceu:hssg 5184', 'gtceu:hsss 5184')
-//             .itemOutputs('gtceu:large_quantum_compressor')
-//             .stationResearch(
-//                 researchRecipeBuilder => researchRecipeBuilder
-//                 .researchStack(Item.of('gtceu:uv_compressor'))
-//                 .EUt(GTValues.VHA[GTValues.UV])
-//                 .CWUt(128)
-//             )
-//             .duration(2400)
-//             .EUt(GTValues.VHA[GTValues.UV]);
+    event.recipes.gtceu.assembly_line(id('quantum_compressor'))
+            .itemInputs('gtceu:melodium_frame', '3x #gtceu:circuits/uv', '2x gtceu:double_trinaquadalloy_plate',
+                    '2x gtceu:zpm_field_generator', '16x gtceu:zpm_electric_piston', '64x gtceu:uhpic_chip', 
+                    '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip',
+                    '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', '48x gtceu:tritanium_screw')
+            .inputFluids('gtceu:hsse 5184', 'gtceu:hssg 5184', 'gtceu:hsss 5184')
+            .itemOutputs('gtceu:large_quantum_compressor')
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:zpm_compressor'))
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(16)
+            )
+            .duration(2400)
+            .EUt(GTValues.VHA[GTValues.ZPM]);
     
-//     event.recipes.gtceu.assembly_line(id('stargate_component_assembly'))
-//             .itemInputs('gtceu:prismalium_frame', '4x #gtceu:circuits/uhv', '2x gtceu:uv_field_generator', '8x gtceu:gravi_star', 
-//                     '4x gtceu:uv_robot_arm', '4x gtceu:uv_robot_arm', '4x gtceu:uv_robot_arm', '4x gtceu:uv_robot_arm', 
-//                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
-//                     '56x gtceu:stellarium_screw', '32x gtceu:melodium_single_wire')
-//             .inputFluids('gtceu:prismalium 36864', 'gtceu:pcb_coolant 64000', 'gtceu:osmiridium 73728')
-//             .itemOutputs('gtceu:stargate_component_assembly')
-//             .duration(6400)
-//             .stationResearch(
-//         researchRecipeBuilder => researchRecipeBuilder
-//                 .researchStack(Item.of('kubejs:stargate_rod'))
-//                 .EUt(GTValues.VHA[GTValues.UV])
-//                 .CWUt(144)
-//             )
-//             .EUt(GTValues.VHA[GTValues.UHV]);
+    event.recipes.gtceu.assembly_line(id('stargate_component_assembly'))
+            .itemInputs('gtceu:prismalium_frame', '4x #gtceu:circuits/uv', '2x gtceu:zpm_field_generator', '8x gtceu:gravi_star',
+                    '4x gtceu:zpm_robot_arm', '4x gtceu:zpm_electric_motor', '4x gtceu:zpm_conveyor_module', '4x gtceu:zpm_electric_piston',
+                    '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', 
+                    '56x gtceu:stellarium_screw', '32x gtceu:melodium_single_wire')
+            .inputFluids('gtceu:prismalium 36864', 'gtceu:pcb_coolant 64000', 'gtceu:osmiridium 73728')
+            .itemOutputs('gtceu:stargate_component_assembly')
+            .duration(6400)
+            .stationResearch(
+        researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('kubejs:stargate_rod'))
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(24)
+            )
+            .EUt(GTValues.VHA[GTValues.ZPM]);
 
 //     event.recipes.gtceu.assembly_line(id('gate_assembly'))
 //             .itemInputs('gtceu:ancient_runicalium_frame', '32x #gtceu:circuits/uhv', '8x gtceu:uhv_field_generator', '8x kubejs:uhv_catalyst_core', 
@@ -189,13 +189,19 @@ ServerEvents.recipes(event => {
 //         .EUt(GTValues.VA[GTValues.UHV])
 //         .circuit(7);
 
-//     //Void Line
+    event.recipes.gtceu.laser_engraver(id('coordinate_crystal'))
+        .itemInputs('gtceu:exquisite_purified_naquadah_gem')
+        .notConsumable('gtceu:nether_star_lens')
+        .itemOutputs('kubejs:coordinate_crystal')
+        .duration(240)
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
-//     event.recipes.gtceu.extractor(id('echo_fluid'))
-//         .itemInputs('minecraft:echo_shard')
-//         .outputFluids('gtceu:echo_r 144')
-//         .duration(5000)
-//         .EUt(GTValues.VHA[GTValues.LuV]);
+    //Void Line
+    event.recipes.gtceu.extractor(id('echo_fluid'))
+        .itemInputs('minecraft:echo_shard')
+        .outputFluids('gtceu:echo_r 144')
+        .duration(5000)
+        .EUt(GTValues.VHA[GTValues.LuV]);
 
 //     event.recipes.gtceu.fluid_solidifier(id('raw_void_ingot'))
 //         .itemInputs('gtceu:neutronium_ingot')

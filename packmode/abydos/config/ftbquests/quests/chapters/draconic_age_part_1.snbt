@@ -1828,7 +1828,7 @@
 			}]
 			tasks: [{
 				id: "0CFF3A0497A28ED0"
-				item: "gtceu:seaborgium_palladium_enriched_estalt_flerovium_alloy_ingot"
+				item: "gtceu:enriched_pallarovium_alloy_ingot"
 				type: "item"
 			}]
 			x: -2.0d

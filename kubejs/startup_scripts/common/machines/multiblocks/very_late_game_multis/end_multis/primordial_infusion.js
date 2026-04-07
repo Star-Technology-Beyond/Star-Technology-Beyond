@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $StarTDraconicInfusionMachine(holder))
         .recipeType('draco_infusion')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING])
         .appearanceBlock(() => Block.getBlock('kubejs:nyanium_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('               ', '               ', '               ','               ','               ','               ','               ','               ','               ','               ','               ','               ','               ','               ','               ','     TTTTT     ','               ','               ','               ','               ','               ')

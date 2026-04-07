@@ -290,16 +290,15 @@ ServerEvents.recipes(event => {
 	});
 
 	[0,1,2,3,4].forEach(tier => {
-		let PumpMod = (tier == 0) ? 'kubejs' : 'gtceu' ;
 		let PumpTier = (tier == 0) ? 'ulv' : (tier == 1) ? 'lv' : (tier == 2) ? 'mv' : (tier == 3) ? 'hv' : 'ev' ;
 	event.recipes.gtceu.industrial_pump(id(`water_${tier}`))
-		.notConsumable(`${PumpMod}:${PumpTier}_electric_pump`)
+		.notConsumable(`gtceu:${PumpTier}_electric_pump`)
 		.outputFluids(`minecraft:water ${3000 * ( 2 ** tier )}`)
 		.duration(20);
 	});
 
 	event.recipes.gtceu.assembler(id('industrial_pump'))
-		.itemInputs('1x gtceu:primitive_pump','6x gtceu:double_steel_plate','2x kubejs:ulv_electric_pump',
+		.itemInputs('1x gtceu:primitive_pump','6x gtceu:double_steel_plate','2x gtceu:ulv_electric_pump',
 			'2x #gtceu:circuits/ulv','4x gtceu:rubber_ring')
 		.circuit(3)
 		.inputFluids('gtceu:rubber 288')

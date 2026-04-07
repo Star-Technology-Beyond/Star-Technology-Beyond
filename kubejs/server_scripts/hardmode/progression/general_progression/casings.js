@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     const SpecialCasing = (material,tier,f,p,g,e) => {
     let type = (material == 'tungsten_steel') ? 'tungstensteel' : material ;
     if (f == true) {
-        let mod = (type == 'enriched_naquadah') ? 'start_core' : 'gtceu' ;
+        let mod = (type == 'enriched_naquadah') ? 'kubejs' : 'gtceu' ;
     event.recipes.gtceu.assembler(id(`${type}_firebox_casing_hm`))
         .itemInputs(`6x gtceu:${material}_plate`, `6x gtceu:${material}_rod`, `gtceu:${material}_frame`)
         .circuit(2)
@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
     }
     if (e == true) {
         let casingType = (type == 'titanium') ? 'gtceu:stable' : (type == 'tungstensteel') ? 'gtceu:robust' : `kubejs:${type}` ;
-        let engineType = (type == 'titanium') ? 'gtceu:' : `start_core:${type}_` ;
+        let engineType = (type == 'titanium') ? 'gtceu:' : `kubejs:${type}_` ;
     event.recipes.gtceu.assembler(id(`${engineType.split(':')[1]}engine_intake_casing_hm`))
         .itemInputs(`4x gtceu:${material}_rotor`, `6x gtceu:${material}_normal_fluid_pipe`, `${casingType}_machine_casing`)
         .circuit(7)
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
     Hulls('iv','tungsten_steel','platinum','polytetrafluoroethylene',5);
     Hulls('luv','rhodium_plated_palladium','niobium_titanium','polybenzimidazole',6);
     Hulls('zpm','naquadah_alloy','vanadium_gallium','polybenzimidazole',7);
-    Hulls('uv','darmstadium','yttrium_barium_cuprate','polyether_ether_ketone',8);
+    Hulls('uv','darmstadtium','yttrium_barium_cuprate','polyether_ether_ketone',8);
     // Hulls('uhv','neutronium','europium','polyether_ether_ketone',9);
     // Hulls('uev','mythrolic_alloy','cerium_tritelluride','poly_34_ethylenedioxythiophene_polystyrene_sulfate',10);
     // Hulls('uiv','chaotixic_alloy','polonium_bismide','poly_34_ethylenedioxythiophene_polystyrene_sulfate',11);
@@ -171,10 +171,10 @@ ServerEvents.recipes(event => {
     HermeticCasings('hv','stainless_steel','polytetrafluoroethylene',3);
     HermeticCasings('ev','titanium','titanium',4);
     HermeticCasings('iv','tungsten_steel','niobium_titanium',5);
-    HermeticCasings('luv','rhodium_plated_palladium','iridium',6);
-    HermeticCasings('zpm','naquadah_alloy','europium',7);
-    HermeticCasings('uv','darmstadtium','enriched_naquadah',8);
-    HermeticCasings('uhv','neutronium','neutronium',9);
+    // HermeticCasings('luv','rhodium_plated_palladium','iridium',6);
+    // HermeticCasings('zpm','naquadah_alloy','europium',7);
+    // HermeticCasings('uv','darmstadtium','enriched_naquadah',8);
+    // HermeticCasings('uhv','neutronium','neutronium',9);
 
     // Standard Casings
 

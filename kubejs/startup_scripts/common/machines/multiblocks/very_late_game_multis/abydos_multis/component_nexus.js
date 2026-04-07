@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('component_nexus', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('component_nexus')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:superdense_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('ABBBABBBAAABBBA    ', 'ACCCACCCADACCCA    ', '        AAA        ') 

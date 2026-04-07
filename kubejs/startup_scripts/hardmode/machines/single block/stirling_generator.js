@@ -18,6 +18,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     builder
         .recipeType('stirling_generator')
         .regressWhenWaiting(false)
-        .simpleGeneratorMachineRenderer('gtceu:block/generators/steam_turbine')
+        .simpleGeneratorModel('gtceu:block/generators/steam_turbine')
     });
 });

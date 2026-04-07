@@ -801,7 +801,7 @@ ServerEvents.recipes(event => {
 		N: 'create_new_age:overcharged_iron_sheet',
 		R: 'gtceu:cast_iron_rod',
 		S: 'create:shaft',
-		M: 'kubejs:ulv_electric_motor',
+		M: 'gtceu:ulv_electric_motor',
 		P: 'gtceu:cast_iron_plate'
 	}).id('start:mechanical_crafter/basic_motor');
 
@@ -970,9 +970,9 @@ ServerEvents.recipes(event => {
 		], {
 			N: 'gtceu:pig_iron_ring',
 			L: 'create:andesite_funnel',
-			A: 'kubejs:ulv_robot_arm',
+			A: 'gtceu:ulv_robot_arm',
 			F: 'gtceu:pig_iron_frame',
-			C: 'kubejs:ulv_conveyor_module',
+			C: 'gtceu:ulv_conveyor_module',
 			R: 'xycraft_world:xychorium_gem_red',
 			B: 'create:bound_cardboard_block',
 			P: 'minecraft:stone_pressure_plate'
@@ -985,9 +985,9 @@ ServerEvents.recipes(event => {
 		], {
 			N: 'gtceu:pig_iron_ring',
 			L: 'create:andesite_funnel',
-			A: 'kubejs:ulv_robot_arm',
+			A: 'gtceu:ulv_robot_arm',
 			F: 'gtceu:pig_iron_frame',
-			C: 'kubejs:ulv_conveyor_module',
+			C: 'gtceu:ulv_conveyor_module',
 			R: 'xycraft_world:xychorium_gem_red',
 			B: 'create:bound_cardboard_block',
 			P: '#minecraft:wooden_pressure_plates'

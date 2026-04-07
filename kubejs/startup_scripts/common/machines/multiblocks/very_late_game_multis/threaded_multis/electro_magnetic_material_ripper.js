@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .recipeTypes(['polarizer', 'electromagnetic_separator', 'electrolyzer'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:aurouric_resilient_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('               BBBBB', '               BBBBB', ' BBBBBBB       BBBBB', ' BB   BB       BBBBB', ' B     B       BBBBB', ' B     B       BBBBB', ' B     B       BBBBB', ' BB   BB       BBBBB', ' BBBBBBB       BBBBB', '                    ') 

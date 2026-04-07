@@ -1945,6 +1945,16 @@
 			x: 4.0d
 			y: 1.0d
 		}
+		{
+			id: "53B8A2EFCF2D4371"
+			tasks: [{
+				id: "6A01A251A9C02550"
+				item: "gtceu:advanced_synthesis_plant"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.5d
+		}
 	]
 	title: "{ftbquests.futuristic_mechanisms.title}"
 }

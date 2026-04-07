@@ -73,6 +73,29 @@ GTCEuServerEvents.oreVeins(event => {
         )
     });
 
+    event.add('start:naquadite_vein', vein => {
+        vein.weight(68)
+        vein.clusterSize(21)
+        vein.density(0.15)
+        vein.discardChanceOnAirExposure(0)
+        vein.layer('abydos')
+        vein.heightRangeUniform(10, 70)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(3).mat(GTMaterials.get('naquadite')).size(2, 3))
+                .layer(l => l.weight(2).mat(GTMaterials.get('magnesite')).size(2, 4))
+                .layer(l => l.weight(2).mat(GTMaterials.get('chromite')).size(2, 4))
+                .layer(l => l.weight(1).mat(GTMaterials.get('magnetite')).size(1, 2))
+            )
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get('naquadite'))
+            .placement('above')
+            .density(0.4)
+            .radius(5)
+        )
+    });
+
     // === Nether Veins ===
     event.add('start:brimstone_patch', vein => {
         vein.weight(100)

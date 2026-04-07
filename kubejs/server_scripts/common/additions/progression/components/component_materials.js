@@ -3,27 +3,40 @@
 global.componentMaterials = {
     lv: {
         materials: {
-            tierMaterial: `steel`
+            tierMaterial: 'steel',
+            cable: 'tin'
         }
     },
     mv: {
         materials: {
-            tierMaterial: `aluminium`
+            tierMaterial: 'aluminium',
+            cable: 'copper'
         }
     },
     hv: {
         materials: {
-            tierMaterial: `stainless_steel`
+            tierMaterial: 'stainless_steel',
+            cable: 'gold'
         }
     },
     ev: {
         materials: {
-            tierMaterial: `titanium`
+            tierMaterial: 'titanium',
+            cable: 'aluminium',
+            lubricant: 'lubricant',
+            solder: 'soldering_alloy',
+            superconductor: 'uranium_triplatinum',
+            battery: 'lapotron_crystal'
         }
     },
     iv: {
         materials: {
-            tierMaterial: `tungsten_steel`
+            tierMaterial: 'tungsten_steel',
+            cable: 'platinum',
+            lubricant: 'lubricant',
+            solder: 'soldering_alloy',
+            superconductor: 'samarium_iron_arsenic_oxide',
+            battery: 'lapotronic_energy_orb'
         }
     },
     luv: {
@@ -55,7 +68,8 @@ global.componentMaterials = {
             buzz: 'niobium_titanium',
             chip: 'gtceu:hpic',
             fluidStorage: 'gtceu:titanium_drum',
-            itemStorage: 'gtceu:titanium_crate'
+            itemStorage: 'gtceu:titanium_crate',
+            battery: 'lapotronic_energy_orb_cluster'
         },
         scaling: {
             scaler: 1,
@@ -137,7 +151,8 @@ global.componentMaterials = {
             buzz: 'duranium',
             chip: 'gtceu:uhpic',
             fluidStorage: 'start_core:enriched_naquadah_drum',
-            itemStorage: 'start_core:enriched_naquadah_crate' //to be ENaq Crate when added
+            itemStorage: 'start_core:enriched_naquadah_crate',
+            battery: 'energy_cluster'
         },
         scaling: {
             scaler: 3,
@@ -178,7 +193,8 @@ global.componentMaterials = {
             buzz: 'neutronium',
             chip: 'gtceu:uhpic',
             fluidStorage: 'start_core:neutronium_drum',
-            itemStorage: 'start_core:neutronium_crate'
+            itemStorage: 'start_core:neutronium_crate',
+            battery: 'max_battery'
         },
         scaling: {
             scaler: 4,
@@ -215,7 +231,7 @@ global.componentMaterials = {
             pipeMaterial: 'mythrolic_alloy',
             miscMaterial: 'mythrolic_alloy',
             glass: 'kubejs:reinforced_fusion_glass',
-            superconductor: 'seaborgium_palladium_enriched_estalt_flerovium_alloy',
+            superconductor: 'enriched_pallarovium_alloy',
             buzz: 'neutronium',
             chip: 'kubejs:uepic',
             fluidStorage: '', //none exist

@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
     mold('pill',false,25);
     mold('nugget',false,26);
     mold('anvil',false,27);
-    mold('credit',false,28);
+    // mold('credit',false,28);
     mold('name',false,29);
 
     event.recipes.gtceu.mixer(id('cast_iron_dust'))

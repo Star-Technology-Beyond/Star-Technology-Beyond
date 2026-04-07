@@ -213,7 +213,6 @@
 		{
 			dependencies: [
 				"665FC02BC2BC414F"
-				"126DB96C50CC815F"
 				"5FAEC6FD93ACC381"
 			]
 			description: ["{ftbquests.draconic_age.coolants.description}"]
@@ -1691,7 +1690,7 @@
 				"799F6F79B9FF86DF"
 				"4777033988C9F512"
 			]
-			description: ["{ftbquests.draconic_age.seaborgium_palladium_enriched_estalt_flerovium_alloy_ingot.description}"]
+			description: ["{ftbquests.draconic_age.enriched_pallarovium_alloy_ingot.description}"]
 			id: "5224152A7D22A0B5"
 			rewards: [{
 				id: "0A16190629DBA7B9"
@@ -1700,7 +1699,7 @@
 			}]
 			tasks: [{
 				id: "0CFF3A0497A28ED0"
-				item: "gtceu:seaborgium_palladium_enriched_estalt_flerovium_alloy_ingot"
+				item: "gtceu:enriched_pallarovium_alloy_ingot"
 				type: "item"
 			}]
 			x: -2.0d

@@ -25,7 +25,7 @@
 			linked_quest: "2DB216B224F2E8EF"
 			shape: "gear"
 			size: 1.5d
-			x: 20.0d
+			x: 19.5d
 			y: 19.5d
 		}
 		{
@@ -55,14 +55,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "4F001CD88F377225"
-					type: "checkmark"
-				}
-				{
 					id: "7794C8DC74A8CC24"
 					item: "gtceu:sulfur_dioxide_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "602616BFC1827F42"
+					type: "checkmark"
 				}
 			]
 			title: "{ftbquests.processing_lines_chap.sulfur_dioxide.title}"
@@ -76,15 +76,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "3BC73684BC154A06"
-					title: "{ftbquests.processing_lines_chap.sulfur_trioxide.title}"
-					type: "checkmark"
-				}
-				{
 					id: "5A0E3F507C5E6087"
 					item: "gtceu:sulfur_trioxide_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "6FB092144C899DF5"
+					type: "checkmark"
 				}
 			]
 			x: 2.5d
@@ -123,15 +122,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "4D8F720BB22F7474"
-					title: "{ftbquests.processing_lines_chap.hydrochloric_acid.title}"
-					type: "checkmark"
-				}
-				{
 					id: "14EF29A02B12786B"
 					item: "gtceu:hydrochloric_acid_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "196B2F525EE80515"
+					type: "checkmark"
 				}
 			]
 			x: 5.5d
@@ -139,6 +137,7 @@
 		}
 		{
 			dependencies: ["348A5FD9441DCD71"]
+			icon: "gtceu:iron_iii_chloride_bucket"
 			id: "261B946701411D9C"
 			rewards: [{
 				count: 3
@@ -194,15 +193,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "20ADD35560F5A11B"
-					title: "{ftbquests.processing_lines_chap.biomass.title}"
-					type: "checkmark"
-				}
-				{
 					id: "7A575FF769D52652"
 					item: "gtceu:biomass_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "6DAC5A6444B848D0"
+					type: "checkmark"
 				}
 			]
 			x: 1.0d
@@ -219,11 +217,6 @@
 			id: "3CB84935C465C540"
 			size: 1.0d
 			tasks: [
-				{
-					id: "419F116AD4733E56"
-					title: "{ftbquests.processing_lines_chap.ethanol.title}"
-					type: "checkmark"
-				}
 				{
 					id: "566C0C5863929151"
 					item: {
@@ -246,6 +239,10 @@
 					title: "{ftbquests.processing_lines_chap.ethanol.title}"
 					type: "item"
 				}
+				{
+					id: "5BC06002E84D7E0B"
+					type: "checkmark"
+				}
 			]
 			title: "{ftbquests.processing_lines_chap.ethanol.title}"
 			x: 2.5d
@@ -258,15 +255,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "4F81151616E89614"
-					title: "{ftbquests.processing_lines_chap.ethylene.title}"
-					type: "checkmark"
-				}
-				{
 					id: "677BF235C9B7C8AA"
 					item: "gtceu:ethylene_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "598374E8FE313E6E"
+					type: "checkmark"
 				}
 			]
 			x: 4.0d
@@ -298,15 +294,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "4E58A7986F1D5BE6"
-					title: "{ftbquests.processing_lines_chap.vinyl_chloride.title}"
-					type: "checkmark"
-				}
-				{
 					id: "4614D41BF479034E"
 					item: "gtceu:vinyl_chloride_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "23C579BD8EAFABF3"
+					type: "checkmark"
 				}
 			]
 			x: 5.5d
@@ -422,15 +417,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "069673AEFB5037EE"
-					title: "{ftbquests.processing_lines_chap.acidic_osmium_solution.title}"
-					type: "checkmark"
-				}
-				{
 					id: "4151B98CA0851377"
 					item: "gtceu:acidic_osmium_solution_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "360F04CC68B52C9B"
+					type: "checkmark"
 				}
 			]
 			x: 14.0d
@@ -574,15 +568,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "29F52086D31D7845"
-					title: "{ftbquests.processing_lines_chap.rhodium_sulfate.title}"
-					type: "checkmark"
-				}
-				{
 					id: "456483326B0C2F1C"
 					item: "gtceu:rhodium_sulfate_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "2E3788CC7D233C0D"
+					type: "checkmark"
 				}
 			]
 			x: 14.0d
@@ -637,15 +630,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "1AC8263E17A28078"
-					title: "{ftbquests.processing_lines_chap.tetrafluoroethylene.title}"
-					type: "checkmark"
-				}
-				{
 					id: "7C18E9C91E4FF03D"
 					item: "gtceu:tetrafluoroethylene_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "525C3FF57F81B764"
+					type: "checkmark"
 				}
 			]
 			x: 4.0d
@@ -658,15 +650,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "089B70E61E159675"
-					title: "{ftbquests.processing_lines_chap.chloroform.title}"
-					type: "checkmark"
-				}
-				{
 					id: "6EEFFAC2C84B8362"
 					item: "gtceu:chloroform_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "66510DE64E534B85"
+					type: "checkmark"
 				}
 			]
 			x: 2.0d
@@ -679,15 +670,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "3EE73A010E54EFC9"
-					title: "{ftbquests.processing_lines_chap.hydrofluoric_acid.title}"
-					type: "checkmark"
-				}
-				{
 					id: "6CD770E8DE080659"
 					item: "gtceu:hydrofluoric_acid_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "4B9A2F30ED9B45FC"
+					type: "checkmark"
 				}
 			]
 			x: 3.0d
@@ -700,15 +690,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "765A4DC2FB58644A"
-					title: "{ftbquests.processing_lines_chap.methane.title}"
-					type: "checkmark"
-				}
-				{
 					id: "110269CAD9A0C897"
 					item: "gtceu:methane_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "7FC4708FD9E270E1"
+					type: "checkmark"
 				}
 			]
 			x: 0.0d
@@ -721,15 +710,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "5B55244AE6F023BF"
-					title: "{ftbquests.processing_lines_chap.fluorine.title}"
-					type: "checkmark"
-				}
-				{
 					id: "6642F090CFA0DFA5"
 					item: "gtceu:fluorine_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "7D99CFFF8308B2BA"
+					type: "checkmark"
 				}
 			]
 			x: 1.0d
@@ -949,15 +937,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "5138666FCD1BF732"
-					title: "{ftbquests.processing_lines_chap.diaminobenzidine.title}"
-					type: "checkmark"
-				}
-				{
 					id: "2145A021B85CDECB"
 					item: "gtceu:diaminobenzidine_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "3F2301815615D0C3"
+					type: "checkmark"
 				}
 			]
 			x: 14.5d
@@ -973,15 +960,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "716853FA571D1365"
-					title: "{ftbquests.processing_lines_chap.nitrochlorobenzene.title}"
-					type: "checkmark"
-				}
-				{
 					id: "18C82C2FAB885E97"
 					item: "gtceu:nitrochlorobenzene_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "7B011A4069249318"
+					type: "checkmark"
 				}
 			]
 			x: 13.0d
@@ -994,15 +980,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "24A0DDF33003AE6E"
-					title: "{ftbquests.processing_lines_chap.nitration_mixture.title}"
-					type: "checkmark"
-				}
-				{
 					id: "5BE2F60892B49610"
 					item: "gtceu:nitration_mixture_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "54AB7671B9037961"
+					type: "checkmark"
 				}
 			]
 			x: 11.5d
@@ -1015,15 +1000,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "6AF71D0B8CCC68DB"
-					title: "{ftbquests.processing_lines_chap.chlorobenzene.title}"
-					type: "checkmark"
-				}
-				{
 					id: "54241B0ED3EACDFF"
 					item: "gtceu:chlorobenzene_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "1D8AE569541E16C7"
+					type: "checkmark"
 				}
 			]
 			x: 11.5d
@@ -1036,15 +1020,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "0A3BB8126F2E0289"
-					title: "{ftbquests.processing_lines_chap.diphenyl_isophthalate.title}"
-					type: "checkmark"
-				}
-				{
 					id: "140CF8ABC216B98C"
 					item: "gtceu:diphenyl_isophthalate_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "7E05F8544E77CB78"
+					type: "checkmark"
 				}
 			]
 			x: 15.0d
@@ -1061,15 +1044,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "0C74CC27D0A941BF"
-					title: "{ftbquests.processing_lines_chap.phthalic_acid.title}"
-					type: "checkmark"
-				}
-				{
 					id: "1EA32AD5C3115D44"
 					item: "gtceu:phthalic_acid_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "621B582F835CF5C3"
+					type: "checkmark"
 				}
 			]
 			x: 13.5d
@@ -1088,15 +1070,14 @@
 					type: "item"
 				}
 				{
-					id: "12C9B8173AB4C9E9"
-					title: "{ftbquests.processing_lines_chap.potassium_dust_naphthalene.item_title}"
-					type: "checkmark"
-				}
-				{
 					id: "1909480E0DE741BD"
 					item: "gtceu:naphthalene_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "6640B128A1EA2E59"
+					type: "checkmark"
 				}
 			]
 			title: "{ftbquests.processing_lines_chap.potassium_dust_naphthalene.title}"
@@ -1116,15 +1097,14 @@
 					type: "item"
 				}
 				{
-					id: "23DD4F8D3734EE17"
-					title: "{ftbquests.processing_lines_chap.potassium_dichromate_dust_dimethylbenzene.item_title}"
-					type: "checkmark"
-				}
-				{
 					id: "544307D705B42131"
 					item: "gtceu:dimethylbenzene_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "3A071A943B9CA36D"
+					type: "checkmark"
 				}
 			]
 			title: "{ftbquests.processing_lines_chap.potassium_dichromate_dust_dimethylbenzene.title}"
@@ -1155,15 +1135,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "399EE9678941AB20"
-					title: "{ftbquests.processing_lines_chap.titanium_tetrachloride.title}"
-					type: "checkmark"
-				}
-				{
 					id: "3E65462F4B493035"
 					item: "gtceu:titanium_tetrachloride_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "5DE2CFEB5BD21073"
+					type: "checkmark"
 				}
 			]
 			x: 3.5d
@@ -1486,15 +1465,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "632427F657A7003C"
-					title: "{ftbquests.processing_lines_chap.hot_titanium_ingot.title}"
-					type: "checkmark"
-				}
-				{
 					id: "5C12B2E777198BD0"
 					item: "gtceu:hot_titanium_ingot"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "76BBB46F6E07B3A4"
+					type: "checkmark"
 				}
 			]
 			x: 28.0d
@@ -1507,15 +1485,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "2C2C90EDD06D87E6"
-					title: "{ftbquests.processing_lines_chap.sulfur_dichloride.title}"
-					type: "checkmark"
-				}
-				{
 					id: "59386F6B96C9499C"
 					item: "gtceu:sulfur_dichloride_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "74D2A2061FB7C6D6"
+					type: "checkmark"
 				}
 			]
 			x: 25.0d
@@ -1528,15 +1505,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "20F3E88E8DB52339"
-					title: "{ftbquests.processing_lines_chap.chlorine_trifluoride.title}"
-					type: "checkmark"
-				}
-				{
 					id: "2F863BC02E2139A8"
 					item: "gtceu:chlorine_trifluoride_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "4E5ED99530ADC987"
+					type: "checkmark"
 				}
 			]
 			x: 23.0d
@@ -1617,15 +1593,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "4F29D2326E02AFD4"
-					title: "{ftbquests.processing_lines_chap.hot_pure_netherite_ingot.title}"
-					type: "checkmark"
-				}
-				{
 					id: "6C6CD428BFC76129"
 					item: "gtceu:hot_pure_netherite_ingot"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "0BED969446FF7112"
+					type: "checkmark"
 				}
 			]
 			x: 30.0d
@@ -1653,15 +1628,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "615439B1D90A3017"
-					title: "{ftbquests.processing_lines_chap.tetrachloroethylene.title}"
-					type: "checkmark"
-				}
-				{
 					id: "5626AEFE63CC382C"
 					item: "gtceu:tetrachloroethylene_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "4191ED7CABB49CA5"
+					type: "checkmark"
 				}
 			]
 			x: 27.0d
@@ -1674,15 +1648,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "2FC7FD124DE2CC42"
-					title: "{ftbquests.processing_lines_chap.dichloroethane.title}"
-					type: "checkmark"
-				}
-				{
 					id: "4E62433A5DF0708F"
 					item: "gtceu:dichloroethane_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "0A76CDED30CFD27C"
+					type: "checkmark"
 				}
 			]
 			x: 26.0d
@@ -1695,15 +1668,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "7EDA664C4AE2E70C"
-					title: "{ftbquests.processing_lines_chap.wood_vinegar.title}"
-					type: "checkmark"
-				}
-				{
 					id: "49260E0640A95E6D"
 					item: "gtceu:wood_vinegar_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "6E54C0680CC84578"
+					type: "checkmark"
 				}
 			]
 			x: 9.5d
@@ -1716,15 +1688,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "38B4C17E7B182F39"
-					title: "{ftbquests.processing_lines_chap.wood_tar.title}"
-					type: "checkmark"
-				}
-				{
 					id: "207735D2073038D6"
 					item: "gtceu:wood_tar_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "7388739444F53F68"
+					type: "checkmark"
 				}
 			]
 			x: 9.5d
@@ -1737,15 +1708,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "067431C22BEBCE55"
-					title: "{ftbquests.processing_lines_chap.phenol.title}"
-					type: "checkmark"
-				}
-				{
 					id: "069D8BCF3E858BDC"
 					item: "gtceu:phenol_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "01ED84BA34EA71C5"
+					type: "checkmark"
 				}
 			]
 			x: 11.0d
@@ -1758,15 +1728,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "5697A9E7FBD7B9A8"
-					title: "{ftbquests.processing_lines_chap.acetone.title}"
-					type: "checkmark"
-				}
-				{
 					id: "303B1894421E910D"
 					item: "gtceu:acetone_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "2DAC3C64D92E85FF"
+					type: "checkmark"
 				}
 			]
 			x: 11.0d
@@ -1782,15 +1751,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "455E3D3C6EE0445E"
-					title: "{ftbquests.processing_lines_chap.bisphenol_a.title}"
-					type: "checkmark"
-				}
-				{
 					id: "4A58112F879CE78B"
 					item: "gtceu:bisphenol_a_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "6FBD939CC05D7F9D"
+					type: "checkmark"
 				}
 			]
 			x: 12.0d
@@ -1804,15 +1772,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "55746ED641BD5B30"
-					title: "{ftbquests.processing_lines_chap.epichlorohydrin.title}"
-					type: "checkmark"
-				}
-				{
 					id: "02861E666CB99D62"
 					item: "gtceu:epichlorohydrin_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "1A95F9E2FD429079"
+					type: "checkmark"
 				}
 			]
 			x: 16.0d
@@ -1827,11 +1794,6 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "2C5B2A46AA946E7A"
-					title: "{ftbquests.processing_lines_chap.propene_chlorine_water.title}"
-					type: "checkmark"
-				}
-				{
 					id: "1522B74B5AED9E1E"
 					item: "gtceu:propene_bucket"
 					optional_task: true
@@ -1842,6 +1804,10 @@
 					item: "gtceu:chlorine_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "4904576D3611247C"
+					type: "checkmark"
 				}
 			]
 			x: 17.5d
@@ -1876,15 +1842,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "43E9B9E4B544E4E9"
-					title: "{ftbquests.processing_lines_chap.acetic_acid.title}"
-					type: "checkmark"
-				}
-				{
 					id: "19A236C98C1E5CAB"
 					item: "gtceu:acetic_acid_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "3E408C9B9C8CE6C8"
+					type: "checkmark"
 				}
 			]
 			x: 18.5d
@@ -1897,15 +1862,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "5418E2E385B6D16C"
-					title: "{ftbquests.processing_lines_chap.vinyl_acetate.title}"
-					type: "checkmark"
-				}
-				{
 					id: "1B254D9003B30922"
 					item: "gtceu:vinyl_acetate_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "48081660A9FF6A13"
+					type: "checkmark"
 				}
 			]
 			x: 20.0d
@@ -1918,15 +1882,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "0A7287ABB26F2946"
-					title: "{ftbquests.processing_lines_chap.polyvinyl_acetate.title}"
-					type: "checkmark"
-				}
-				{
 					id: "464E7DD53060BE32"
 					item: "gtceu:polyvinyl_acetate_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "744B76813AD1B678"
+					type: "checkmark"
 				}
 			]
 			x: 21.5d
@@ -1963,15 +1926,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "0A18B444703C80DF"
-					title: "{ftbquests.processing_lines_chap.butyraldehyde.title}"
-					type: "checkmark"
-				}
-				{
 					id: "13739B1382DFD9AD"
 					item: "gtceu:butyraldehyde_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "3CF22F8F8F9CB738"
+					type: "checkmark"
 				}
 			]
 			x: 25.5d
@@ -2004,15 +1966,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "556B050A71284138"
-					title: "{ftbquests.processing_lines_chap.indium_concentrate.title}"
-					type: "checkmark"
-				}
-				{
 					id: "0AF996335A4556A9"
 					item: "gtceu:indium_concentrate_bucket"
 					optional_task: true
 					type: "item"
+				}
+				{
+					id: "22EBEB09CC83C12C"
+					type: "checkmark"
 				}
 			]
 			x: 24.0d
@@ -2831,38 +2792,43 @@
 		{
 			dependencies: [
 				"78F4EA1E69DE1AF1"
-				"61F1B4C2D9F9AEE4"
+				"1FC8A365A31198C5"
 			]
+			icon: "gtceu:ender_air_bucket"
 			id: "3C099AFD41C38BC3"
-			tasks: [{
-				id: "6917372B0F4288EC"
-				item: "gtceu:ender_air_bucket"
-				type: "item"
-			}]
-			x: 19.0d
+			tasks: [
+				{
+					id: "6917372B0F4288EC"
+					item: "gtceu:ender_air_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "64C4A9DE1D23EC6C"
+					type: "checkmark"
+				}
+			]
+			x: 18.5d
 			y: 21.0d
 		}
 		{
-			dependencies: ["47F8D1018B9C170E"]
+			dependencies: ["04B702C5B2D3F1E9"]
+			icon: "gtceu:nether_air_bucket"
 			id: "78F4EA1E69DE1AF1"
-			tasks: [{
-				id: "38C87E67CA2D5345"
-				item: "gtceu:nether_air_bucket"
-				type: "item"
-			}]
-			x: 18.0d
-			y: 19.5d
-		}
-		{
-			dependencies: ["1FC8A365A31198C5"]
-			id: "61F1B4C2D9F9AEE4"
-			tasks: [{
-				id: "65CA7B3330028BA3"
-				item: "mysticalagriculture:end_agglomeratio"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "38C87E67CA2D5345"
+					item: "gtceu:nether_air_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2EF918BD4B5DC0DC"
+					type: "checkmark"
+				}
+			]
 			x: 17.5d
-			y: 21.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["74CEC1F2ABC2E6D5"]
@@ -2872,7 +2838,7 @@
 				item: "gtceu:endstone_dust"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 17.0d
 			y: 21.0d
 		}
 		{
@@ -2883,22 +2849,8 @@
 				item: "minecraft:end_stone"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 15.5d
 			y: 21.0d
-		}
-		{
-			dependencies: [
-				"04B702C5B2D3F1E9"
-				"1D3F29ED5112617E"
-			]
-			id: "47F8D1018B9C170E"
-			tasks: [{
-				id: "64ADA302E266C277"
-				item: "mysticalagriculture:nether_agglomeratio"
-				type: "item"
-			}]
-			x: 16.5d
-			y: 19.5d
 		}
 		{
 			dependencies: ["1D3F29ED5112617E"]
@@ -2908,7 +2860,7 @@
 				item: "gtceu:netherrack_dust"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 16.0d
 			y: 19.5d
 		}
 		{
@@ -2919,7 +2871,7 @@
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.5d
 			y: 19.5d
 		}
 		{

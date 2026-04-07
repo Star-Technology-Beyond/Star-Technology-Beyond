@@ -20,7 +20,7 @@ GTCEuServerEvents.fluidVeins(event => {
   event.add('start:abydos_refractory_dense_magma_deposit', vein => {
     vein.dimensions('sgjourney:abydos')
     vein.fluid(() => Fluid.of('gtceu:abydos_refractory_dense_magma').fluid)
-    vein.weight(42)
+    vein.weight(28)
     vein.minimumYield(400)
     vein.maximumYield(540)
     vein.depletionAmount(2)
@@ -31,7 +31,7 @@ GTCEuServerEvents.fluidVeins(event => {
   event.add('start:abydos_reactive_dense_magma_deposit', vein => {
     vein.dimensions('sgjourney:abydos')
     vein.fluid(() => Fluid.of('gtceu:abydos_reactive_dense_magma').fluid)
-    vein.weight(36)
+    vein.weight(25)
     vein.minimumYield(400)
     vein.maximumYield(540)
     vein.depletionAmount(2)
@@ -42,12 +42,23 @@ GTCEuServerEvents.fluidVeins(event => {
   event.add('start:gritty_akreyrium', vein => {
     vein.dimensions('sgjourney:abydos')
     vein.fluid(() => Fluid.of('gtceu:gritty_akreyrium').fluid)
-    vein.weight(22)
+    vein.weight(19)
     vein.minimumYield(360)
     vein.maximumYield(640)
     vein.depletionAmount(2)
     vein.depletionChance(1)
     vein.depletedYield(320)
+  });
+
+  event.add('start:abydos_naquadite_dense_magma', vein => {
+    vein.dimensions('sgjourney:abydos')
+    vein.fluid(() => Fluid.of('gtceu:abydos_naquadite_dense_magma').fluid)
+    vein.weight(28)
+    vein.minimumYield(400)
+    vein.maximumYield(540)
+    vein.depletionAmount(2)
+    vein.depletionChance(1)
+    vein.depletedYield(380)
   });
 
   // === Nether Veins ===
