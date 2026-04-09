@@ -338,6 +338,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     matmod('netherite', no_decomp);
     matmod('uranium_triplatinum', fine_wire);
     matmod('samarium_iron_arsenic_oxide', fine_wire);
+    matmod('aluminium', rotor);
 
     // Blast Properties of periodic table metals
     const blast = global.blastProperty;

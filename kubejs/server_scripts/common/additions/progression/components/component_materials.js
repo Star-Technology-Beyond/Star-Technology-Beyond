@@ -4,39 +4,54 @@ global.componentMaterials = {
     lv: {
         materials: {
             tierMaterial: 'steel',
-            cable: 'tin'
+            wire: 'copper',
+            cable: 'tin',
+            glass: '#forge:glass',
+            grind: 'minecraft:diamond'
         }
     },
     mv: {
         materials: {
             tierMaterial: 'aluminium',
-            cable: 'copper'
+            wire: 'cupronickel',
+            cable: 'copper',
+            glass: '#forge:glass',
+            grind: 'minecraft:diamond'
         }
     },
     hv: {
         materials: {
             tierMaterial: 'stainless_steel',
-            cable: 'gold'
+            wire: 'kanthal',
+            cable: 'gold',
+            glass: 'gtceu:tempered_glass',
+            grind: 'gtceu:diamond_grinding_head'
         }
     },
     ev: {
         materials: {
             tierMaterial: 'titanium',
-            cable: 'aluminium',
-            lubricant: 'lubricant',
+            wire: 'nichrome',
             solder: 'soldering_alloy',
+            lubricant: 'lubricant',
+            cable: 'aluminium',
+            glass: 'gtceu:tempered_glass',
             superconductor: 'uranium_triplatinum',
-            battery: 'lapotron_crystal'
+            battery: 'lapotron_crystal',
+            grind: 'gtceu:diamond_grinding_head'
         }
     },
     iv: {
         materials: {
             tierMaterial: 'tungsten_steel',
-            cable: 'platinum',
-            lubricant: 'lubricant',
+            wire: 'rtm_alloy',
             solder: 'soldering_alloy',
+            lubricant: 'lubricant',
+            cable: 'platinum',
+            glass: 'gtceu:laminated_glass',
             superconductor: 'samarium_iron_arsenic_oxide',
-            battery: 'lapotronic_energy_orb'
+            battery: 'lapotronic_energy_orb',
+            grind: 'gtceu:tungsten_grinding_head'
         }
     },
     luv: {
@@ -69,7 +84,8 @@ global.componentMaterials = {
             chip: 'gtceu:hpic',
             fluidStorage: 'gtceu:titanium_drum',
             itemStorage: 'gtceu:titanium_crate',
-            battery: 'lapotronic_energy_orb_cluster'
+            battery: 'lapotronic_energy_orb_cluster',
+            grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
             scaler: 1,
@@ -110,7 +126,8 @@ global.componentMaterials = {
             buzz: 'naquadah_alloy',
             chip: 'gtceu:uhpic',
             fluidStorage: 'gtceu:tungsten_steel_drum',
-            itemStorage: 'gtceu:tungsten_steel_crate'
+            itemStorage: 'gtceu:tungsten_steel_crate',
+            grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
             scaler: 2,
@@ -152,7 +169,8 @@ global.componentMaterials = {
             chip: 'gtceu:uhpic',
             fluidStorage: 'start_core:enriched_naquadah_drum',
             itemStorage: 'start_core:enriched_naquadah_crate',
-            battery: 'energy_cluster'
+            battery: 'energy_cluster',
+            grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
             scaler: 3,
@@ -194,7 +212,8 @@ global.componentMaterials = {
             chip: 'gtceu:uhpic',
             fluidStorage: 'start_core:neutronium_drum',
             itemStorage: 'start_core:neutronium_crate',
-            battery: 'max_battery'
+            battery: 'max_battery',
+            grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
             scaler: 4,
@@ -235,7 +254,8 @@ global.componentMaterials = {
             buzz: 'neutronium',
             chip: 'kubejs:uepic',
             fluidStorage: '', //none exist
-            itemStorage: '' //none exist
+            itemStorage: '', //none exist
+            grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
             scaler: 5,
@@ -276,7 +296,8 @@ global.componentMaterials = {
             buzz: 'neutronium',
             chip: 'kubejs:uepic',
             fluidStorage: '', //none exist
-            itemStorage: '' //none exist
+            itemStorage: '', //none exist
+            grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
             scaler: 6,
