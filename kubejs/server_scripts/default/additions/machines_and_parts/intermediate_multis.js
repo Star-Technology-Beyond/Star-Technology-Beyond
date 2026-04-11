@@ -137,8 +137,8 @@ global.not_hardmode(() => {
 
         event.recipes.gtceu.assembly_line(id('super_gas_collector'))
             .itemInputs('8x gtceu:iridium_frame', '4x gtceu:double_iridium_plate', '16x gtceu:stainless_steel_plate',
-                '4x gtceu:iridium_huge_fluid_pipe', '6x gtceu:iridium_large_fluid_pipe', '4x gtceu:luv_fluid_regulator', 
-                '4x gtceu:hssg_spring', '4x #gtceu:circuits/luv', '8x gtceu:niobium_titanium_double_cable')
+                '6x gtceu:iridium_large_fluid_pipe', '4x gtceu:iv_fluid_regulator', '4x gtceu:hssg_spring',
+                '4x #gtceu:circuits/luv', '8x gtceu:niobium_titanium_double_cable')
             .inputFluids('gtceu:soldering_alloy 1152')
             .itemOutputs('gtceu:super_gas_collector')
             ["scannerResearch(java.util.function.UnaryOperator)"](
