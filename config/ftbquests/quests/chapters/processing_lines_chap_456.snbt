@@ -547,6 +547,7 @@
 			y: 10.5d
 		}
 		{
+			dependencies: ["47DF7968E9B98C65"]
 			description: ["{ftbquests.processing_lines_chap.bacteria.description}"]
 			icon: "gtceu:bacteria_bucket"
 			id: "24AE98EABF69F2D1"
@@ -4230,7 +4231,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "3A6F14664BCB4635"
 				item: "gtceu:aerogel_ingot"
@@ -4324,30 +4325,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 22.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["067EB2EC812FA4CC"]
-			id: "4D058FC400C0A468"
-			tasks: [
-				{
-					id: "0C551CEB7733A51A"
-					item: "gtceu:raw_magnesite"
-					type: "item"
-				}
-				{
-					id: "3C003B2A440BC92B"
-					item: "gtceu:raw_chromite"
-					type: "item"
-				}
-				{
-					id: "16B81FE06200BDED"
-					item: "gtceu:raw_magnetite"
-					type: "item"
-				}
-			]
-			x: 23.5d
+			x: 21.5d
 			y: -1.0d
 		}
 		{
@@ -4358,7 +4336,7 @@
 				item: "gtceu:raw_naquadite"
 				type: "item"
 			}]
-			x: 24.5d
+			x: 22.5d
 			y: 0.0d
 		}
 		{
@@ -4369,7 +4347,7 @@
 				item: "gtceu:naquadite_dust"
 				type: "item"
 			}]
-			x: 26.5d
+			x: 24.0d
 			y: 0.0d
 		}
 		{
@@ -4389,7 +4367,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 24.5d
+			x: 23.5d
 			y: 1.5d
 		}
 		{
@@ -4408,7 +4386,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 26.5d
+			x: 25.0d
 			y: 1.5d
 		}
 		{
@@ -4422,7 +4400,7 @@
 				item: "gtceu:naquadite_solution_dust"
 				type: "item"
 			}]
-			x: 28.5d
+			x: 25.5d
 			y: 0.0d
 		}
 		{
@@ -4433,7 +4411,7 @@
 				item: "gtceu:magnesia_dust"
 				type: "item"
 			}]
-			x: 29.5d
+			x: 26.5d
 			y: -1.0d
 		}
 		{
@@ -4452,7 +4430,7 @@
 				item: "gtceu:naquadah_dust"
 				type: "item"
 			}]
-			x: 30.5d
+			x: 27.5d
 			y: 0.0d
 		}
 		{
@@ -4463,8 +4441,41 @@
 				item: "gtceu:magnesite_dust"
 				type: "item"
 			}]
-			x: 29.5d
+			x: 26.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["067EB2EC812FA4CC"]
+			id: "0F585D31E2875306"
+			tasks: [{
+				id: "290895E4DF9C2CAB"
+				item: "gtceu:raw_magnesite"
+				type: "item"
+			}]
+			x: 22.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["067EB2EC812FA4CC"]
+			id: "0DCD44269F62EEB4"
+			tasks: [{
+				id: "29A37AE80FB0E014"
+				item: "gtceu:raw_magnetite"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["067EB2EC812FA4CC"]
+			id: "2340115313E9FFFC"
+			tasks: [{
+				id: "5B719ECB7F72DDE4"
+				item: "gtceu:raw_chromite"
+				type: "item"
+			}]
+			x: 23.0d
+			y: -1.0d
 		}
 	]
 	title: "{ftbquests.processing_lines_chap_456.title}"

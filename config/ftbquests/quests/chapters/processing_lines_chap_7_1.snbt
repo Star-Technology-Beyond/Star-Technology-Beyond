@@ -203,7 +203,10 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["273E965C174936E0"]
+			dependencies: [
+				"273E965C174936E0"
+				"1AEBAE3050B72906"
+			]
 			hide_dependent_lines: true
 			id: "07A6B3DF67E267A0"
 			tasks: [{
@@ -1779,6 +1782,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "644135598C74A2B2"
@@ -1806,6 +1810,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "2997E6C1E7BE5A16"

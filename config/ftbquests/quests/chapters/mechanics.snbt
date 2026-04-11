@@ -256,6 +256,7 @@
 			]
 			icon: "start_core:threading_controller"
 			id: "143CFCE710B59455"
+			size: 1.0d
 			tasks: [{
 				id: "2259A7835F1A06B8"
 				title: "{ftbquests.mechanics.threading.title}"

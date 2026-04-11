@@ -690,6 +690,7 @@
 		{
 			dependencies: ["2F8062042B23DA26"]
 			id: "342969434CB3B5DE"
+			size: 1.0d
 			tasks: [{
 				id: "4262F299A4CEC65A"
 				item: "gtceu:neptunium_dust"
