@@ -7,7 +7,7 @@
     "block.gtceu.luv_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
     "block.gtceu.zpm_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
     "block.gtceu.uv_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
-    
+
     "block.gtceu.theta2Removals.tooltip": "§4§lDeprecated. Will be removed in Theta 2",
 
     "block.gtceu.dimensional_finder.tooltip.0": "§7Get Dimensionally Pinged",
@@ -1149,7 +1149,7 @@
     "block.gtceu.subtick.tooltip.1": "Has §cSubtick Parallels",
     "block.gtceu.subtick_coil_parallel.tooltip.1": "Has §cSubtick Parallels§r and §bCoil Parallels§r",
     "block.gtceu.coil_boosting_subtick.tooltip.1": "Has §cSubtick Parallels§r and §bCoil Boosting§r",
-    
+
     "block.gtceu.lcr_coil_mechanic.tooltip.2": "§8-----------------------------------",
     "block.gtceu.lcr_coil_mechanic.tooltip.3": "§6§lCoil Mechanics:",
     "block.gtceu.lcr_coil_mechanic.tooltip.4": "§7Starting at §6Cupronickel, §7every coil after increases speed by §f25%.",
@@ -1250,7 +1250,7 @@
     "block.gtceu.super_cracker.tooltip.6": "Can only have §bone§r Energy Hatch",
 
     "block.gtceu.super_pyrolyse.tooltip.0": "§6§lBoosted Pyrolyse Oven",
-    "block.gtceu.super_pyrolyse.tooltip.1": "§7A high throughput thermochemical processing suite engineered for the controlled breakdown of organic and inorganic matter", 
+    "block.gtceu.super_pyrolyse.tooltip.1": "§7A high throughput thermochemical processing suite engineered for the controlled breakdown of organic and inorganic matter",
     "block.gtceu.super_pyrolyse.tooltip.2": "§8-----------------------------------",
     "block.gtceu.super_pyrolyse.tooltip.3": "§6§lCoil Mechanics:",
     "block.gtceu.super_pyrolyse.tooltip.4": "§6Cupronickel §7coils are §f25% §7slower. Every coil after §bKanthal §7increases speed by §f50%",
@@ -1375,7 +1375,7 @@
     "block.gtceu.bacteria_synthesizer": "Bacteria Synthesizer",
     "block.gtceu.bacteria_synthesizer.tooltip.0": "Can use §3Parallel§r hatches",
     "gtceu.bacteria_synthesizer": "Bacteria Synthesizer",
-    
+
     "block.gtceu.palladium_substation": "Secure Pallaridium Machine Casing",
     "block.gtceu.dual_chambered_vacuum_complex": "Dual-Chambered Vacuum Complex",
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.0": "§c§lAdvanced Pressurized Chemical Reactor",
@@ -1390,7 +1390,7 @@
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.9": "§7Vacuum percentage is cut in half upon a recipe completion, and begins to increase again till its cap while running the next recipe.",
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.10": "§7--------------------------------------------------",
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.11": "§7For machines that contain multipule pump blocks, they must all be the same tier or the machine will not form.§7",
-    
+
     "block.gtceu.auroric_vacuum_isolation_reactor": "Auroric Vacuum Isolation Reactor",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.0": "§c§lHyper-Advanced Pressurized Chemical Reactor",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.1": "§7A chemical reactor that can operate under pressurized environments, increasing reaction rates and enabling certain pressure-dependent reactions.",
@@ -1404,7 +1404,7 @@
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.9": "§7Vacuum percentage is cut in half upon a recipe completion, and begins to increase again till its cap while running the next recipe.",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.10": "§7--------------------------------------------------",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.11": "§7For machines that contain multipule pump blocks, they must all be the same tier or the machine will not form.§7",
-    
+
     "block.gtceu.vacuum_chemical_reaction_chamber": "Vacuum Chemical Reaction Chamber",
     "gtceu.vacuum_chemical_reaction_chamber": "Vacuum Chemical Reaction Chamber",
     "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.0": "§c§lPressurized Chemical Reactor",
@@ -1441,9 +1441,9 @@
 
     "block.gtceu.super_cracker": "Fractional Disruption Furnace",
     "block.gtceu.super_pyrolyse": "Thermal Decomposition Array",
-    "block.gtceu.super_barrel": "Industrial Accumulation Vessel"
+    "block.gtceu.super_barrel": "Industrial Accumulation Vessel",
 
-    
-
-    
+    "block.gtceu.super_gas_collector": "Compression Gas Siphon",
+    "block.gtceu.super_gas_collector.tooltip.0": "§7Collects gas just a bit faster.",
+    "block.gtceu.super_gas_collector.tooltip.1": "Can only have §bone§r Energy Hatch"
 }
