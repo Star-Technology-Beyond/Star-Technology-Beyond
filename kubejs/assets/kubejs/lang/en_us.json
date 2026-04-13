@@ -52,9 +52,9 @@
     "item.kubejs.lv_upgrade_kit.tooltip": "§7Augment for Dynamos, RF Cells, Fluid Cells and other Thermal Series machines",
     "item.kubejs.mv_upgrade_kit": "§bMV§r Upgrade Kit",
     "item.kubejs.mv_upgrade_kit.tooltip": "§7Augment for Dynamos, RF Cells, Fluid Cells and other Thermal Series machines",
-    "item.kubejs.hv_upgrade_kit": "HV Upgrade Kit",
+    "item.kubejs.hv_upgrade_kit": "§6HV§r Upgrade Kit",
     "item.kubejs.hv_upgrade_kit.tooltip": "§7Augment for Dynamos, RF Cells, Fluid Cells and other Thermal Series machines",
-    "item.kubejs.ev_upgrade_kit": "EV Upgrade Kit",
+    "item.kubejs.ev_upgrade_kit": "§5EV§r Upgrade Kit",
     "item.kubejs.ev_upgrade_kit.tooltip": "§7Augment for Dynamos, RF Cells, Fluid Cells and other Thermal Series machines",
 
     "item.kubejs.lv_arc_kit": "§7LV§r Auxiliary Reaction Chamber Kit",
