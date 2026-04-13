@@ -46,8 +46,8 @@ ServerEvents.recipes(event => {
         6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:runic_processor_mainframe');
 
     researchBuilder(cpa, 'asg_dhd', 
-        ['sgjourney:classic_dhd', 'kubejs:asg_stellar_dialer', '18x kubejs:runic_reinforced_plating', 
-            '10x kubejs:runic_stabilization_plating', '18x kubejs:runic_pathway_plating', '18x kubejs:runic_transportation_plating'], 
+        ['sgjourney:classic_dhd', 'kubejs:asg_stellar_dialer', '2x kubejs:runic_reinforced_plating', 
+            '3x kubejs:runic_stabilization_casing', '4x kubejs:runic_pathway_casing', '3x kubejs:runic_transportation_casing'], 
         ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:runic_convergence_infusion 1000'], 
         ['sgjourney:milky_way_dhd'], 
         6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'sgjourney:classic_dhd');
@@ -85,14 +85,14 @@ ServerEvents.recipes(event => {
             '6x gtceu:neutronium_tiny_fluid_pipe', '16x minecraft:echo_shard'], 
         ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:utopian_akreyrium 1000'], 
         ['kubejs:abyss_fragment'], 
-        6000, 192, 192 * 1200, GTValues.VHA[GTValues.UHV], 'minecraft:echo_shard');
+        6000, 192, 192 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:end_coordinate_crystal');
 
     researchBuilder(cpa, 'inferno_fragment', 
         ['gtceu:neutronium_frame', '16x gtceu:gravi_star', '12x gtceu:polyether_ether_ketone_foil', 
             '6x gtceu:neutronium_tiny_fluid_pipe', '16x minecraft:blaze_rod'], 
         ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:utopian_akreyrium 1000'], 
         ['kubejs:inferno_fragment'], 
-        6000, 96, 192 * 1200, GTValues.VHA[GTValues.UHV], 'minecraft:blaze_rod');
+        6000, 192, 192 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:nether_coordinate_crystal');
 
     injectMix(id('voidic_core'))
         .itemInputs('kubejs:quantum_core','8x kubejs:abyss_fragment')
@@ -120,7 +120,8 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:ancient_runicalium 1000', 'gtceu:utopian_akreyrium 1000')
         .itemOutputs('kubejs:asg_enscription_plate')
         .duration(4000)
-        .EUt(GTValues.VHA[GTValues.UHV]);
+        .EUt(GTValues.VHA[GTValues.UHV])
+        .vacuumLevel(90);
 
     cut(id('asg_enscription_chip'))
         .itemInputs('kubejs:asg_enscription_plate')

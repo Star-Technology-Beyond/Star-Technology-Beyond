@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UEV]);
 
     event.recipes.gtceu.assembly_line(id('super_heat_chamber'))
-        .itemInputs('gtceu:heat_chamber', '4x #gtceu:circuits/uhv', 'gtceu:double_dragonsteel_plate', 
+        .itemInputs('gtceu:heat_chamber', '4x #gtceu:circuits/uhv', 'gtceu:double_void_plate', 
                 'gtceu:double_titanium_carbide_plate', 'gtceu:uv_field_generator', '64x gtceu:uhpic_chip', 
                 '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', 
                 '48x gtceu:prismalium_single_wire')

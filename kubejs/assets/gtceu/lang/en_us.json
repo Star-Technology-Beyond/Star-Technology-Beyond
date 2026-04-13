@@ -1441,9 +1441,9 @@
 
     "block.gtceu.super_cracker": "Fractional Disruption Furnace",
     "block.gtceu.super_pyrolyse": "Thermal Decomposition Array",
-    "block.gtceu.super_barrel": "Industrial Accumulation Vessel"
+    "block.gtceu.super_barrel": "Industrial Accumulation Vessel",
 
-    
-
-    
+    "material.gtceu.akreyriadic_runixium": "Akreyriadic-Runixium",
+    "material.gtceu.weapon_grade_stellarized_naquadah": "Weapon Grade §bStellarized§f Naquadah"
+  
 }

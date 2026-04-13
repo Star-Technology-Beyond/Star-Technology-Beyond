@@ -197,7 +197,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [
 				{
 					id: "5A05B918B174851B"
@@ -374,6 +374,7 @@
 			dependencies: [
 				"4D04123F036F181E"
 				"1BE69DB2DFDC35C8"
+				"2C144C6A0C57FED2"
 			]
 			description: ["{ftbquests.abydos.ancient_runicalium_ingot.description}"]
 			id: "30C974448C57F0EC"
@@ -593,11 +594,19 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "1C83A6D338CC1AF6"
-				item: "start_core:hpca_nanofluidic_heat_sink_component"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1C83A6D338CC1AF6"
+					item: "start_core:hpca_nanofluidic_heat_sink_component"
+					type: "item"
+				}
+				{
+					id: "1E10BC324D186DC5"
+					item: "gtceu:akreyrium_pcb_graphite_nanoparticle_coolant_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
 			title: "{ftbquests.abydos.nanofluidic_heat_sink.title}"
 			x: 9.5d
 			y: 2.5d
@@ -875,7 +884,7 @@
 				item: "gtceu:neutronium_silicon_carbide_ingot"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 6.5d
 			y: -2.5d
 		}
 		{

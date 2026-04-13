@@ -1,4 +1,5 @@
 {
+	autofocus_id: "408FF495F331D86B"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "a_portal_of_lost_worlds"
@@ -10,367 +11,32 @@
 		{
 			id: "6AA4625E98ED37B8"
 			linked_quest: "2F87FC1D5BB43220"
-			x: 1.5d
+			shape: "gear"
+			size: 1.25d
+			x: -5.0d
 			y: 7.0d
 		}
 		{
-			id: "112C653450CC39A2"
-			linked_quest: "2F87FC1D5BB43220"
-			x: 1.5d
-			y: 7.0d
+			id: "67EC40EEAAF31A70"
+			linked_quest: "07AD6651D0B40E22"
+			shape: "gear"
+			size: 1.5d
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			id: "3B14D2E8F692B5FF"
+			linked_quest: "4DF07CB3D60C901C"
+			shape: "octagon"
+			x: 0.0d
+			y: -8.5d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["3540AE6C940F985B"]
-			description: ["{ftbquests.abydos.ancient_stargate_computer_core.description}"]
-			id: "34585406B4A18F41"
-			rewards: [{
-				count: 2
-				id: "1C0AFBE97931A87B"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "41227980BC57B999"
-				item: "kubejs:ancient_stargate_computer_core"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"34585406B4A18F41"
-				"5DADD2204991B4D5"
-			]
-			description: ["{ftbquests.abydos.ancient_stargate_base_block.description}"]
-			id: "6F9793149DE81FCC"
-			rewards: [{
-				id: "5A3140CEAF2772E4"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
-			size: 1.25d
-			tasks: [{
-				id: "014F02A3B730402B"
-				item: {
-					Count: 1
-					id: "kubejs:ancient_stargate_base_block"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 4.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"5FCA8ED151CEB5C1"
-				"29A86F882D68239F"
-				"78117340F3D4549A"
-			]
-			description: ["{ftbquests.abydos.ancient_stargate_ring_block.description}"]
-			id: "5DADD2204991B4D5"
-			rewards: [{
-				id: "0C6EE8224B97BBA5"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
-			size: 1.25d
-			tasks: [{
-				id: "73F7F83685FA65E2"
-				item: {
-					Count: 1
-					id: "kubejs:ancient_stargate_ring_block"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 4.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"5DADD2204991B4D5"
-				"425A865B6B617DEC"
-			]
-			description: ["{ftbquests.abydos.ancient_stargate_chevron_block.description}"]
-			id: "63E36421AE07BC42"
-			rewards: [{
-				id: "1E1781F6129AF097"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "octagon"
-			size: 1.25d
-			tasks: [{
-				id: "30E703028C2AFED0"
-				item: {
-					Count: 1
-					id: "kubejs:ancient_stargate_chevron_block"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 4.5d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"442233119AED645F"
-				"04DCB3F7F8B80717"
-			]
-			description: ["{ftbquests.abydos.ancient_chevron_disk.description}"]
-			id: "425A865B6B617DEC"
-			rewards: [{
-				count: 2
-				id: "4A5649EAD0E41902"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "0FE7D755516D8AF8"
-				item: "kubejs:ancient_chevron_disk"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["379D69A44FC5B2F2"]
-			description: ["{ftbquests.abydos.gate_assembly.description}"]
-			hide_dependent_lines: true
-			id: "64F0BB858EEB7913"
-			rewards: [{
-				count: 2
-				id: "0F9D9216884B4932"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "4A4935BD5C2C030A"
-				item: {
-					Count: 1
-					id: "gtceu:gate_assembly"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 2.5d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"21188AF95E6D5030"
-				"5FAD11260BC2F305"
-			]
-			description: ["{ftbquests.abydos.draconic_coordinate_core.description}"]
-			id: "3540AE6C940F985B"
-			rewards: [{
-				id: "4C923D283D3BE0EA"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0E4B5B5BF5EECD4B"
-				item: "kubejs:draconic_coordinate_core"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 1.0d
-		}
-		{
-			description: ["{ftbquests.abydos.nether_coordinate_crystal.description}"]
-			id: "29DAE5F27A1D4115"
-			rewards: [{
-				id: "361187FB10BF0C39"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0206ED855F36FB35"
-				item: "kubejs:nether_coordinate_crystal"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 5.0d
-		}
-		{
-			description: ["{ftbquests.abydos.end_coordinate_crystal.description}"]
-			id: "14479FB9FCF478D6"
-			rewards: [{
-				id: "2EFAEEDC5007A402"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "408286D9422233DD"
-				item: "kubejs:end_coordinate_crystal"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"64F0BB858EEB7913"
-				"6F9793149DE81FCC"
-				"63E36421AE07BC42"
-				"5DADD2204991B4D5"
-				"039D327E919878BF"
-			]
-			description: ["{ftbquests.abydos.milky_way_stargate.description}"]
-			icon: {
-				Count: 1
-				id: "sgjourney:milky_way_stargate"
-				tag: {
-					BlockEntityTag: {
-						AddToNetwork: 0b
-					}
-				}
-			}
-			id: "5E7153B7A10FC241"
-			rewards: [{
-				id: "2D4B9720F64C104A"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 2.0d
-			tasks: [
-				{
-					id: "3585C40F6B4E6F5A"
-					item: {
-						Count: 1
-						id: "sgjourney:milky_way_stargate"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "5F92860D75814B1A"
-					item: {
-						Count: 1
-						id: "sgjourney:milky_way_dhd"
-						tag: {
-							BlockEntityTag: {
-								Energy: 0L
-								Inventory: {
-									Items: [
-										{
-											Count: 1b
-											Slot: 0
-											id: "sgjourney:large_control_crystal"
-										}
-										{
-											Count: 1b
-											Slot: 1
-											id: "sgjourney:energy_crystal"
-											tag: {
-												Energy: 0
-											}
-										}
-										{
-											Count: 1b
-											Slot: 2
-											id: "sgjourney:communication_crystal"
-											tag: {
-												Frequency: 0
-											}
-										}
-										{
-											Count: 1b
-											Slot: 3
-											id: "sgjourney:energy_crystal"
-											tag: {
-												Energy: 0
-											}
-										}
-										{
-											Count: 1b
-											Slot: 5
-											id: "sgjourney:energy_crystal"
-											tag: {
-												Energy: 0
-											}
-										}
-										{
-											Count: 1b
-											Slot: 7
-											id: "sgjourney:transfer_crystal"
-											tag: {
-												TransferLimit: 2500L
-											}
-										}
-									]
-									Size: 9
-								}
-								id: "sgjourney:milky_way_dhd"
-							}
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "{ftbquests.abydos.milky_way_stargate.title}"
-			x: 6.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"63AD0F905F2A262B"
-				"4A0AD203617FEF0E"
-				"7F203254ACDF8C88"
-			]
-			description: ["{ftbquests.abydos.void_core.description}"]
-			id: "5FAD11260BC2F305"
-			rewards: [{
-				id: "0433F422BDFFAF25"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "077F32166B95DD14"
-				item: "kubejs:void_core"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"5BA6FB8F852C2629"
-				"4A0AD203617FEF0E"
-				"7F203254ACDF8C88"
-			]
-			description: ["{ftbquests.abydos.hell_core.description}"]
-			id: "21188AF95E6D5030"
-			rewards: [{
-				id: "4AE809F68AD3D5B3"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "024660B3FC3054CA"
-				item: "kubejs:hell_core"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 2.0d
-		}
-		{
 			dependencies: [
 				"2C354B0735DF8023"
-				"3C3E585C933C9515"
+				"3C09E77C352B2A11"
 			]
 			description: ["{ftbquests.abydos.runic_casings.description}"]
 			id: "379D69A44FC5B2F2"
@@ -379,7 +45,13 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
+				{
+					id: "2C293B87B837D28D"
+					item: "kubejs:blank_runic_casing"
+					type: "item"
+				}
 				{
 					id: "5F62120223B12B16"
 					item: "kubejs:runic_stabilization_casing"
@@ -397,45 +69,17 @@
 				}
 			]
 			title: "{ftbquests.abydos.runic_casings.title}"
-			x: 2.5d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"2C354B0735DF8023"
-				"3C3E585C933C9515"
-			]
-			description: ["{ftbquests.abydos.multi_runic_plating.description}"]
-			id: "5FCA8ED151CEB5C1"
-			rewards: [{
-				id: "7FDA3D0E34F6806E"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "1FC1EE9908D72AED"
-					item: "kubejs:runic_energized_transportation_plating"
-					type: "item"
-				}
-				{
-					id: "4124136926E70BB5"
-					item: {
-						Count: 1
-						id: "kubejs:runic_energized_pathway_plating"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			title: "{ftbquests.abydos.multi_runic_plating.title}"
-			x: 2.5d
-			y: -2.0d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"146F88E5C1119649"
 				"624480A1E62B52EF"
+				"7A5734E3CF682EBA"
+				"43DAD4B63603BFC3"
+				"25583D0BF59E1BC8"
+				"7AC55BA8BDD0F3D2"
 			]
 			description: ["{ftbquests.abydos.runic_inscribe_manipulate.description}"]
 			id: "2C354B0735DF8023"
@@ -446,7 +90,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "2E0F0DBD6D2DEE96"
 				item: {
@@ -456,63 +100,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"6D169C5E35C9EF6C"
-				"4D5EEE7D7EC1FAFA"
-				"6D573ACD05D0EF96"
-			]
-			description: ["{ftbquests.abydos.runic_plating.description}"]
-			id: "3C3E585C933C9515"
-			rewards: [{
-				id: "187EF22FCDECD230"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "587AE8F4904807C2"
-					item: "kubejs:runic_stabilization_plating"
-					type: "item"
-				}
-				{
-					id: "7B46FA4D5DB4B708"
-					item: "kubejs:runic_energized_plating"
-					type: "item"
-				}
-				{
-					id: "13B55066A55B19DB"
-					item: "kubejs:runic_transportation_engraved_plating"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.abydos.runic_plating.title}"
-			x: 4.5d
-			y: -4.0d
-		}
-		{
-			description: ["{ftbquests.abydos.classic_chevron_assembly.description}"]
-			hide_dependency_lines: true
-			id: "442233119AED645F"
-			rewards: [{
-				id: "27614436816AD1DF"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3E57E2BE937E26CD"
-				item: {
-					Count: 1
-					id: "kubejs:classic_chevron_assembly"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 4.5d
-			y: 6.0d
+			x: -1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -527,27 +116,26 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "7BCA58F07C6457AC"
 				item: "kubejs:inscribe_casing"
 				type: "item"
 			}]
-			x: 0.5d
-			y: -4.0d
+			x: -3.0d
+			y: 7.0d
 		}
 		{
-			dependencies: [
-				"2F26A144D29B00A5"
-				"3C3E585C933C9515"
-			]
+			dependencies: ["2F26A144D29B00A5"]
 			description: ["{ftbquests.abydos.nether_armor.description}"]
-			hide_dependent_lines: true
 			id: "59B0F5DB2C1E96DC"
 			rewards: [{
 				id: "25BD037BA00CCCA2"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "octagon"
+			size: 1.1d
 			tasks: [
 				{
 					id: "47AC263851C1195F"
@@ -595,172 +183,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.nether_armor.title}"
-			x: 5.5d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"14479FB9FCF478D6"
-				"43DAD4B63603BFC3"
-			]
-			description: ["{ftbquests.abydos.abyss_fragment.description}"]
-			id: "63AD0F905F2A262B"
-			rewards: [{
-				id: "06E28D11F33EF9D8"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "482E1942CFE534B2"
-				item: "kubejs:abyss_fragment"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"29DAE5F27A1D4115"
-				"43DAD4B63603BFC3"
-			]
-			description: ["{ftbquests.abydos.inferno_fragment.description}"]
-			id: "5BA6FB8F852C2629"
-			rewards: [{
-				id: "389B052A7F666317"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "34D3BE82C8A1E1A8"
-				item: "kubejs:inferno_fragment"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"07AD6651D0B40E22"
-				"43DAD4B63603BFC3"
-			]
-			description: ["{ftbquests.abydos.empty_coordinate_core.description}"]
-			hide_dependency_lines: true
-			id: "4A0AD203617FEF0E"
-			rewards: [{
-				id: "4AE93EB6AC26AB13"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "510926669DC47CEC"
-				item: "kubejs:empty_coordinate_core"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["509F0DE97411C0CD"]
-			description: ["{ftbquests.abydos.abyssal_stargate_rod.description}"]
-			hide_dependent_lines: true
-			id: "29A86F882D68239F"
-			rewards: [{
-				id: "3C6CC15FE24FFFC5"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0B5A515CFE1C6C24"
-				item: "kubejs:abyssal_stargate_rod"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5829828FB6290587"]
-			description: ["{ftbquests.abydos.infernal_stargate_rod.description}"]
-			hide_dependent_lines: true
-			id: "78117340F3D4549A"
-			rewards: [{
-				id: "32A59896F37EC3AF"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "289B786570065AE5"
-				item: "kubejs:infernal_stargate_rod"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["63AD0F905F2A262B"]
-			description: ["{ftbquests.abydos.untreated_abyssal_stargate_rod.description}"]
-			id: "509F0DE97411C0CD"
-			rewards: [{
-				id: "73F3B1BFF6FAF98D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4B87905BEBE00F09"
-				item: "kubejs:untreated_abyssal_stargate_rod"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5BA6FB8F852C2629"]
-			description: ["{ftbquests.abydos.untreated_infernal_stargate_rod.description}"]
-			id: "5829828FB6290587"
-			rewards: [{
-				id: "6CEE5EE948F04928"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4543736298C247BE"
-				item: "kubejs:untreated_infernal_stargate_rod"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 6.0d
-		}
-		{
-			description: ["{ftbquests.abydos.singularities.description}"]
-			id: "4D5EEE7D7EC1FAFA"
-			rewards: [{
-				id: "370282BF6FAD644A"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "581A32B15ECB77AE"
-					item: "kubejs:singularity_hyperion"
-					type: "item"
-				}
-				{
-					id: "6F7BCBBC1EDBD225"
-					item: "kubejs:singularity_spectral"
-					type: "item"
-				}
-				{
-					id: "17C1596CF139EAD6"
-					item: "kubejs:singularity_astral"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.abydos.singularities.title}"
-			x: 4.5d
-			y: -6.0d
+			x: -2.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -772,6 +196,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "1E0E6D339410596C"
@@ -819,25 +244,31 @@
 				}
 			]
 			title: "{ftbquests.abydos.naquadah_armor.title}"
-			x: 5.5d
-			y: -5.0d
+			x: -4.5d
+			y: -6.5d
 		}
 		{
-			dependencies: ["60ECE277341A9408"]
+			dependencies: [
+				"60ECE277341A9408"
+				"7A5734E3CF682EBA"
+			]
 			description: ["{ftbquests.preparing_for_dimensional_travel.super_pressure_heat_chamber.description}"]
+			hide_dependent_lines: true
 			id: "59711F987DE95924"
 			rewards: [{
 				id: "1B33E52F7FEAD5E8"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "gear"
+			size: 1.25d
 			tasks: [{
 				id: "175B360D69C79895"
 				item: "gtceu:super_pressure_heat_chamber"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 6.0d
+			x: -3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["239A0034C8425661"]
@@ -848,19 +279,19 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "4889E04488AC39F2"
 				item: "gtceu:raw_void_ingot"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.0d
+			x: -3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"60ECE277341A9408"
 				"0889A97E22C484CC"
-				"59711F987DE95924"
 			]
 			description: ["{ftbquests.preparing_for_dimensional_travel.void_ingot.description}"]
 			id: "7A5734E3CF682EBA"
@@ -871,14 +302,14 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "1FE87B4D652A171F"
 				item: "gtceu:void_ingot"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: -1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
@@ -894,6 +325,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "7D6A01CC1134C595"
@@ -902,12 +334,13 @@
 				{
 					id: "12B0841890A15CB8"
 					item: "gtceu:echo_r_bucket"
+					optional_task: true
 					type: "item"
 				}
 			]
 			title: "{ftbquests.preparing_for_dimensional_travel.echo_r.title}"
-			x: -0.5d
-			y: 7.0d
+			x: -5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -918,6 +351,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [
 				{
 					id: "4A3AF474374EF0A2"
@@ -951,8 +385,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.runic_tablet_fragments.title}"
-			x: -1.5d
-			y: -4.0d
+			x: 1.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["5744150A5658FE4D"]
@@ -963,13 +397,596 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "70D8D8D888FABD9D"
 				item: "kubejs:runic_tablet_complete"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"40BD5304492E6177"
+				"40D758F7F13C6959"
+				"0A242E67024A0A0B"
+			]
+			id: "1C352799FF32D6FA"
+			tasks: [{
+				id: "20798D7A59C71F69"
+				item: "kubejs:abyssally_reforged_stargate_rod"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"073B57C15F3BFCFD"
+				"40D758F7F13C6959"
+				"0A242E67024A0A0B"
+			]
+			id: "1D917722EDB1F267"
+			tasks: [{
+				id: "7FBEA25DF7CFCF47"
+				item: "kubejs:infernally_reforged_stargate_rod"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1D917722EDB1F267"
+				"59711F987DE95924"
+			]
+			id: "58DCDBC6EE97CA5E"
+			tasks: [{
+				id: "3BB30603567E2CD9"
+				item: "kubejs:awakened_inferno_stargate_rod"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1C352799FF32D6FA"
+				"59711F987DE95924"
+			]
+			id: "42EA4F227DC6D1DE"
+			tasks: [{
+				id: "1638DACF125E8A7D"
+				item: "kubejs:awakened_abyss_stargate_rod"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7A5734E3CF682EBA"
+				"25583D0BF59E1BC8"
+			]
+			hide_dependent_lines: true
+			id: "40D758F7F13C6959"
+			tasks: [{
+				id: "25A8D50B91F2DE33"
+				item: "kubejs:asg_stargate_rod_base"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7809407ED588BCBD"
+				"43DAD4B63603BFC3"
+			]
+			id: "40BD5304492E6177"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "0E2A710666D4A4B8"
+				item: "kubejs:abyss_fragment"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1086D88615F8AB90"
+				"43DAD4B63603BFC3"
+			]
+			id: "073B57C15F3BFCFD"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "0D95E4ED4397A0AB"
+				item: "kubejs:inferno_fragment"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["073B57C15F3BFCFD"]
+			id: "4869BB9EE1BCDDDB"
+			tasks: [{
+				id: "5A1A22D143C4FF22"
+				item: "kubejs:helish_core"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["40BD5304492E6177"]
+			id: "250A0858E6E14F2A"
+			tasks: [{
+				id: "78551DE22E97A8EB"
+				item: "kubejs:voidic_core"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4869BB9EE1BCDDDB"
+				"250A0858E6E14F2A"
+				"59711F987DE95924"
+			]
+			id: "3CB8D2D72137848F"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "6574F021B3A031D6"
+				item: "kubejs:draconic_core"
+				type: "item"
+			}]
+			x: 0.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["239A0034C8425661"]
+			hide_dependency_lines: true
+			id: "7809407ED588BCBD"
+			tasks: [{
+				id: "3C82B2D2AF0F6099"
+				item: "kubejs:end_coordinate_crystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B7A0924AFE58559"]
+			id: "1086D88615F8AB90"
+			tasks: [{
+				id: "7DE9755716893BE3"
+				item: "kubejs:nether_coordinate_crystal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"379D69A44FC5B2F2"
+				"36079E557301733E"
+			]
+			hide_dependency_lines: true
+			id: "2635B921AA9053D0"
+			shape: "octagon"
+			size: 1.1d
+			tasks: [{
+				id: "79AD8F0BAF8E67CE"
+				item: {
+					Count: 1
+					id: "sgjourney:milky_way_dhd"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0L
+							Inventory: {
+								Items: [
+									{
+										Count: 1b
+										Slot: 0
+										id: "sgjourney:large_control_crystal"
+									}
+									{
+										Count: 1b
+										Slot: 1
+										id: "sgjourney:energy_crystal"
+										tag: {
+											Energy: 0
+										}
+									}
+									{
+										Count: 1b
+										Slot: 2
+										id: "sgjourney:communication_crystal"
+										tag: {
+											Frequency: 0
+										}
+									}
+									{
+										Count: 1b
+										Slot: 3
+										id: "sgjourney:energy_crystal"
+										tag: {
+											Energy: 0
+										}
+									}
+									{
+										Count: 1b
+										Slot: 5
+										id: "sgjourney:energy_crystal"
+										tag: {
+											Energy: 0
+										}
+									}
+									{
+										Count: 1b
+										Slot: 7
+										id: "sgjourney:transfer_crystal"
+										tag: {
+											TransferLimit: 2500L
+										}
+									}
+								]
+								Size: 9
+							}
+							energy_inventory: {
+								Items: [{
+									Count: 1b
+									Slot: 0
+									id: "sgjourney:fusion_core"
+								}]
+								Size: 2
+							}
+							id: "sgjourney:milky_way_dhd"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"1AA53815B9903975"
+				"0A242E67024A0A0B"
+			]
+			id: "5FC1A69559B6FEB5"
+			tasks: [{
+				id: "6CAC683C98A0C372"
+				item: "kubejs:asg_field_stabilizer"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1E10BC324D186DC5"
+				"7A5734E3CF682EBA"
+				"30C974448C57F0EC"
+			]
+			id: "1AA53815B9903975"
+			tasks: [{
+				id: "3C53287B0E1F663A"
+				item: "kubejs:asg_energy_modulator"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7BBD4C912E080813"]
+			id: "36079E557301733E"
+			tasks: [{
+				id: "27B8D2818B602819"
+				item: "kubejs:asg_stellar_dialer"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3104E8ABA3C4FC66"]
+			id: "4C954542DB739F5E"
+			tasks: [
+				{
+					id: "48AD35DB585E8C5A"
+					item: "kubejs:asg_dpu"
+					type: "item"
+				}
+				{
+					id: "1FB56E7662893E2D"
+					item: "kubejs:asg_enscription_chip"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"07AD6651D0B40E22"
+				"7A5734E3CF682EBA"
+			]
+			id: "3104E8ABA3C4FC66"
+			tasks: [{
+				id: "3437233A70862CD4"
+				item: "kubejs:asg_enscription_plate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4C954542DB739F5E"]
+			id: "7BBD4C912E080813"
+			tasks: [{
+				id: "4B3CEE27A234D7A1"
+				item: "kubejs:asg_computational_matrix"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7BBD4C912E080813"]
+			hide_dependent_lines: true
+			id: "330F222D8230852A"
+			tasks: [{
+				id: "5968EDC2650BB594"
+				item: "kubejs:asg_stellar_access_point"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4B0DA4EB357663F7"
+				"5FC1A69559B6FEB5"
+				"7BBD4C912E080813"
+			]
+			hide_dependency_lines: true
+			id: "21E115DFA9F2E14A"
+			tasks: [{
+				id: "1EEE4AF432C6CC7D"
+				item: "kubejs:asg_chevron"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"3CB8D2D72137848F"
+				"1AA53815B9903975"
+				"330F222D8230852A"
+			]
+			hide_dependency_lines: true
+			id: "101A7D0F395C7642"
+			tasks: [{
+				id: "56C943645A4672C2"
+				item: "kubejs:asg_dimensional_supercomputer"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3C09E77C352B2A11"]
+			hide_dependent_lines: true
+			id: "6E5A8D4641052624"
+			tasks: [{
+				id: "549AD495E867E153"
+				item: "kubejs:asg_reinforced_plating"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"42EA4F227DC6D1DE"
+				"58DCDBC6EE97CA5E"
+				"6E5A8D4641052624"
+			]
+			description: ["{ftbquests.abydos.ancient_stargate_ring_block.description}"]
+			id: "5DADD2204991B4D5"
+			rewards: [{
+				id: "0C6EE8224B97BBA5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "73F7F83685FA65E2"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_stargate_ring_block"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"5DADD2204991B4D5"
+				"101A7D0F395C7642"
+				"330F222D8230852A"
+			]
+			description: ["{ftbquests.abydos.ancient_stargate_base_block.description}"]
+			id: "6F9793149DE81FCC"
+			rewards: [{
+				id: "5A3140CEAF2772E4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "014F02A3B730402B"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_stargate_base_block"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"6F9793149DE81FCC"
+				"63E36421AE07BC42"
+				"5DADD2204991B4D5"
+				"039D327E919878BF"
+			]
+			description: ["{ftbquests.abydos.milky_way_stargate.description}"]
+			icon: {
+				Count: 1
+				id: "sgjourney:milky_way_stargate"
+				tag: {
+					BlockEntityTag: {
+						AddToNetwork: 0b
+					}
+				}
+			}
+			id: "5E7153B7A10FC241"
+			rewards: [{
+				id: "2D4B9720F64C104A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3585C40F6B4E6F5A"
+				item: {
+					Count: 1
+					id: "sgjourney:milky_way_stargate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.abydos.milky_way_stargate.title}"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"5DADD2204991B4D5"
+				"21E115DFA9F2E14A"
+			]
+			description: ["{ftbquests.abydos.ancient_stargate_chevron_block.description}"]
+			id: "63E36421AE07BC42"
+			rewards: [{
+				id: "1E1781F6129AF097"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "30E703028C2AFED0"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_stargate_chevron_block"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3104E8ABA3C4FC66"]
+			id: "3C09E77C352B2A11"
+			tasks: [
+				{
+					id: "1FA0387EA541AEB9"
+					item: "kubejs:runic_reinforced_plating"
+					type: "item"
+				}
+				{
+					id: "7CD238ECF3225A9E"
+					item: "kubejs:runic_pathway_plating"
+					type: "item"
+				}
+				{
+					id: "61636CC7E9019E69"
+					item: "kubejs:runic_stabilization_plating"
+					type: "item"
+				}
+				{
+					id: "5468A4B91B4BB82F"
+					item: "kubejs:runic_transportation_plating"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7A5734E3CF682EBA"]
+			hide_dependent_lines: true
+			id: "0A242E67024A0A0B"
+			tasks: [{
+				id: "64278A142F8CA3D4"
+				item: "gtceu:weapon_grade_stellarized_naquadah_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5C4FE0E51C67FDFA"]
+			id: "4B0DA4EB357663F7"
+			tasks: [{
+				id: "2E12F375D370D520"
+				item: "gtceu:exquisite_akreyriadic_runixium_gem"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07AD6651D0B40E22"]
+			id: "5C4FE0E51C67FDFA"
+			tasks: [{
+				id: "1FFC87A96FC735E0"
+				item: "gtceu:akreyriadic_runixium_dust"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			id: "408FF495F331D86B"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "3A2B0003E5046083"
+				title: "{ftbquests.abydos.positioner.title}"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "A Portal of Lost Worlds"

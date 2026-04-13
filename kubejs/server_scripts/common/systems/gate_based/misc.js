@@ -85,12 +85,12 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.ZPM])
         .circuit(7);
 
-//     event.recipes.gtceu.assembler(id('inscribe_casing'))
-//         .itemInputs('6x gtceu:double_ancient_runicalium_plate', 'gtceu:ancient_runicalium_frame', 'kubejs:runic_wave_generator', 'gtceu:uhv_field_generator', 'gtceu:uhv_emitter')
-//         .itemOutputs('kubejs:inscribe_casing')
-//         .duration(36000)
-//         .EUt(GTValues.VA[GTValues.UHV])
-//         .circuit(7);
+    event.recipes.gtceu.assembler(id('inscribe_casing'))
+        .itemInputs('6x gtceu:double_ancient_runicalium_plate', 'gtceu:ancient_runicalium_frame', 'kubejs:runic_wave_generator')
+        .itemOutputs('kubejs:inscribe_casing')
+        .duration(8000)
+        .EUt(GTValues.VA[GTValues.UHV])
+        .circuit(7);
 
 });
 

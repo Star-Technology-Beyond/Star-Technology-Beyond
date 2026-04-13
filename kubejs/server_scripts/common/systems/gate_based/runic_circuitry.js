@@ -144,27 +144,38 @@ ServerEvents.recipes(event => {
 //         .duration(4000)
 //         .EUt(GTValues.VA[GTValues.UHV]);
 
-//     event.recipes.gtceu.runic_inscribe_manipulate(id('runic_transportation_casing'))
-//         .itemInputs('gtceu:void_frame', '12x gtceu:dense_trinaquadalloy_plate', '6x kubejs:runic_transportation_engraved_plating')
-//         .inputFluids('gtceu:naquadria 2592', 'gtceu:utopian_akreyrium 864')
-//         .itemOutputs('kubejs:runic_transportation_casing')
-//         .duration(4000)
-//         .EUt(GTValues.VA[GTValues.UHV]);
+    event.recipes.gtceu.assembler(id('blank_runic_casing'))
+        .itemInputs('gtceu:atomic_casing','6x gtceu:ancient_runicalium_foil')
+        .inputFluids('gtceu:void 576')
+        .itemOutputs('kubejs:blank_runic_casing')
+        .duration(2000)
+        .EUt(GTValues.VA[GTValues.UHV]);
 
-//     // === Controller ===
+    ['pathway','transportation','stabilization'].forEach(rune => {
 
-//     event.recipes.gtceu.assembly_line(id('runic_inscribe_manipulate'))
-//         .itemInputs('gtceu:ancient_runicalium_frame', '2x kubejs:uhv_catalyst_core','16x kubejs:uhv_high_strength_panel', '4x #gtceu:circuits/uev', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip',
-//              '64x kubejs:uepic_chip', '8x gtceu:uhv_field_generator', '8x gtceu:uhv_electric_piston', '16x gtceu:uhv_emitter', '12x kubejs:uhv_precision_drive_mechanism','2x gtceu:uhv_fluid_regulator')
-//         .inputFluids('gtceu:hsse 25920', 'gtceu:hssg 25920', 'gtceu:hsss 25920')
-//         .itemOutputs('gtceu:runic_inscribe_manipulate')
-//         .duration(32000)
-//         .stationResearch(
-//             researchRecipeBuilder => researchRecipeBuilder
-//                 .researchStack(Item.of('kubejs:runic_tablet_complete'))
-//                 .EUt(GTValues.VHA[GTValues.UV])
-//                 .CWUt(144)
-//             )
-//         .EUt(GTValues.VHA[GTValues.UHV]);
+        event.recipes.gtceu.runic_inscribe_manipulate(id(`runic_${rune}_casing`))
+            .itemInputs('kubejs:blank_runic_casing',`6x kubejs:runic_${rune}_plating`)
+            .inputFluids('gtceu:runic_convergence_infusion')
+            .itemOutputs(`kubejs:runic_${rune}_casing 1000`)
+            .duration(4000)
+            .EUt(GTValues.VA[GTValues.UHV]);
+
+    });
+
+    // === Controller ===
+
+    event.recipes.gtceu.assembly_line(id('runic_inscribe_manipulate'))
+        .itemInputs('gtceu:void_frame', '8x gtceu:uhv_electric_piston', '16x gtceu:uhv_emitter','2x gtceu:uhv_fluid_regulator',
+            '4x #gtceu:circuits/uev', '8x gtceu:uhv_field_generator','64x kubejs:uepic_chip', '64x kubejs:uepic_chip')
+        .inputFluids('gtceu:hsse 25920', 'gtceu:hssg 25920', 'gtceu:hsss 25920')
+        .itemOutputs('gtceu:runic_inscribe_manipulate')
+        .duration(5400)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('kubejs:runic_tablet_complete'))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(176)
+            )
+        .EUt(GTValues.VHA[GTValues.UHV]);
 
 });

@@ -510,7 +510,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "7BE3C5BE8FA92239"
 				item: {
