@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
     {stone: 'kubejs:brimstone', consumed_solid: 'minecraft:netherrack', consumed_amount: 32, output: 2, consumed_fluid: 'gtceu:blaze', circ: 3, energy: GTValues.VHA[GTValues.LuV]}
 
     ].forEach(type=> {
-        event.recipes.gtceu.exotic_rock_crushing(id(type.stone))
+        event.recipes.gtceu.exotic_rock_crushing(id(type.stone.split(':')[1]))
             .notConsumable(`${type.stone}`)
             .notConsumableFluid('minecraft:lava 1000')
             .itemInputs(`${type.consumed_amount}x ${type.consumed_solid}`)
