@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('catto_shrine')
         .category('highly_advanced')
         .setEUIO('in')
-        .setMaxIOSize(4, 1, 2, 0)
+        .setMaxIOSize(3, 1, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.SUS_RECORD)
         .setLayered();
@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $LayeredWorkableElectricMultiblockMachine(holder))
         .recipeType('catto_shrine')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifier(GTRecipeModifiers.OC_PERFECT)
         .appearanceBlock(() => Block.getBlock('gtceu:palladium_substation'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('AAAAAAAAAAAAA', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ', '             ') 

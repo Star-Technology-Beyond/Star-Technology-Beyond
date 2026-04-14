@@ -9,6 +9,14 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxTooltips(4)
         .setHasResearchSlot(true);
 
+    event.create('draco_bulk_circuiter')
+        .category('extremely_advanced')
+        .setEUIO('in')
+        .setMaxIOSize(4, 1, 2, 0)        
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ASSEMBLER)
+        .setMaxTooltips(4)
+        .setHasResearchSlot(true);
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
@@ -16,7 +24,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('draco_circuit_assembler', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $AssemblyLineMulti(holder))
-        .recipeType('draco_circuit_assembler')
+        .recipeTypes(['draco_circuit_assembler','draco_bulk_circuiter'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start($RelativeDirection.BACK, $RelativeDirection.UP, $RelativeDirection.RIGHT)

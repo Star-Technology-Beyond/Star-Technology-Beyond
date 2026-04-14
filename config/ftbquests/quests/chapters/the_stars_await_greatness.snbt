@@ -5,14 +5,6 @@
 	group: "1E0FC4EA21F735F7"
 	icon: "sgjourney:pegasus_stargate"
 	id: "6E4FD72B8C507106"
-	images: [{
-		height: 2.5d
-		image: "sgjourney:item/pegasus_stargate"
-		rotation: 0.0d
-		width: 2.5d
-		x: 10.560000000000002d
-		y: 2.7150000000000007d
-	}]
 	order_index: 8
 	quest_links: [ ]
 	quests: [
@@ -24,6 +16,7 @@
 				"\"Tier 2 Specialized Helixes\""
 			]
 			id: "48E30750B355F98F"
+			size: 1.0d
 			tasks: [
 				{
 					id: "2DADE27040715CEE"
@@ -49,6 +42,7 @@
 			id: "10D5DA8708208783"
 			invisible: true
 			optional: true
+			size: 1.0d
 			tasks: [{
 				id: "4F21CDEF48DEB549"
 				item: "minecraft:bedrock"
@@ -63,7 +57,7 @@
 			id: "66EFD1B3494C51C0"
 			optional: true
 			shape: "gear"
-			size: 2.5d
+			size: 1.0d
 			tasks: [{
 				id: "3FBA22A693DE0C3B"
 				item: "sgjourney:pegasus_stargate"
@@ -74,12 +68,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: [
-				"0B475E2385B478C0"
-				"53E595EAB1C90884"
-				"61C534992FB17066"
-				"208863E121666BF4"
-			]
 			description: [
 				"{ftbquests.draconic_age.maxwell.description.1}"
 				"{@pagebreak}"
@@ -93,22 +81,22 @@
 				type: "item"
 			}]
 			shape: "none"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{ftbquests.draconic_age.maxwell.subtitle}"
 			tasks: [{
 				id: "184862475E5F6DB3"
 				item: "placeablemaxwell:maxwell"
 				type: "item"
 			}]
-			x: 10.56d
-			y: 2.715d
+			x: 9.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["3BB8848F84026B45"]
+			dependencies: ["66EFD1B3494C51C0"]
 			description: ["{ftbquests.draconic_age.completion.description}"]
 			id: "46982CD51A50CD07"
 			shape: "pentagon"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "{ftbquests.draconic_age.completion.subtitle}"
 			tasks: [{
 				id: "5163F1D911C227BB"
@@ -116,8 +104,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.draconic_age.completion.title}"
-			x: 10.875d
-			y: 4.745000000000001d
+			x: 18.125d
+			y: 4.375d
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
@@ -130,15 +118,15 @@
 				type: "item"
 			}]
 			shape: "none"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "{ftbquests.draconic_age.vasilisa.subtitle}"
 			tasks: [{
 				id: "29314FA6BB5D9A2A"
 				item: "placeablemaxwell:vasilisa"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 1.63d
+			x: 8.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
@@ -151,15 +139,15 @@
 				type: "item"
 			}]
 			shape: "none"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "{ftbquests.draconic_age.valenok.subtitle}"
 			tasks: [{
 				id: "1738781A05EE828F"
 				item: "placeablemaxwell:valenok"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 0.0d
+			x: 12.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
@@ -173,26 +161,35 @@
 				type: "item"
 			}]
 			shape: "none"
-			size: 1.25d
+			size: 1.0d
 			subtitle: "{ftbquests.draconic_age.mars.subtitle}"
 			tasks: [{
 				id: "4646C0AA2053021D"
 				item: "placeablemaxwell:mars"
 				type: "item"
 			}]
-			x: 9.625d
-			y: 0.3700000000000001d
+			x: 11.0d
+			y: 6.0d
 		}
 		{
+			dependencies: [
+				"0B475E2385B478C0"
+				"3BB8848F84026B45"
+				"53E595EAB1C90884"
+				"61C534992FB17066"
+				"208863E121666BF4"
+				"4A13D4F1B22DBCAF"
+				"44A1A4ABAD13871E"
+			]
 			id: "20ABDF48307586F2"
-			invisible: true
+			size: 1.0d
 			tasks: [{
-				id: "26700A905905BA33"
-				item: "kubejs:why_are_you_worrying"
+				id: "424CEAF907D8A023"
+				item: "gtceu:komaru_frame_test"
 				type: "item"
 			}]
-			x: 13.5d
-			y: -2.5d
+			x: 10.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
@@ -200,18 +197,19 @@
 			hide_dependency_lines: true
 			id: "208863E121666BF4"
 			shape: "none"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "3E3192B0E3465383"
 				item: "placeablemaxwell:poomba"
 				type: "item"
 			}]
-			x: 12.015d
-			y: 1.75d
+			x: 10.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["20ABDF48307586F2"]
 			id: "3931B675F707F24C"
+			size: 1.0d
 			tasks: [{
 				id: "2D51651EE85F40DF"
 				item: "start_core:beacon_of_lucidity"
@@ -223,6 +221,7 @@
 		{
 			dependencies: ["20ABDF48307586F2"]
 			id: "7D09EB91B10EC7B0"
+			size: 1.0d
 			tasks: [{
 				id: "4C44DA8887E1F120"
 				item: "start_core:uiv_256a_dream_link_energy_hatch"
@@ -233,6 +232,7 @@
 		}
 		{
 			id: "3FFF41FD6067C5B8"
+			size: 1.0d
 			tasks: [{
 				id: "0631AA27A297B2C2"
 				item: "start_core:fornaxs_infernal_rotary_engine"
@@ -243,13 +243,36 @@
 		}
 		{
 			id: "325986460718E0F9"
+			size: 1.0d
 			tasks: [{
-				id: "13507A85BE4A7080"
-				title: "loaf"
-				type: "checkmark"
+				id: "723D59F49A28F532"
+				item: "gtceu:ultimate_abs"
+				type: "item"
 			}]
 			x: 16.5d
 			y: -0.5d
+		}
+		{
+			id: "44A1A4ABAD13871E"
+			tasks: [
+				{
+					id: "050FE2BCA8A9594B"
+					item: "kubejs:komaru_gravitational_stabilizers"
+					type: "item"
+				}
+				{
+					id: "4DD894DC503D2690"
+					item: "kubejs:komaru_rift_caller"
+					type: "item"
+				}
+				{
+					id: "075985C09D3FBACE"
+					item: "kubejs:komaru_plating"
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 8.0d
 		}
 	]
 	title: "The Stars Await Greatness"
