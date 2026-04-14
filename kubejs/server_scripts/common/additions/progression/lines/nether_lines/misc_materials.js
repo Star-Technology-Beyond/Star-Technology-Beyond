@@ -62,21 +62,24 @@ ServerEvents.recipes(event => {
         .duration(124)
         .EUt(380644);
 
-    event.recipes.gtceu.autoclave(id('brimstone'))
-        .itemInputs('kubejs:brimstone', '64x minecraft:netherrack')
-        .inputFluids('gtceu:blaze 500')
-        .itemOutputs('kubejs:brimstone')
-        .chancedOutput('kubejs:brimstone', 6660, 0)
-        .duration(240)
-        .EUt(GTValues.VHA[GTValues.LuV]);
+    [
 
-    event.recipes.gtceu.autoclave(id('cryostone'))
-        .itemInputs('kubejs:cryostone', '64x minecraft:netherrack')
-        .inputFluids('gtceu:liquid_helium 500')
-        .itemOutputs('kubejs:cryostone')
-        .chancedOutput('kubejs:cryostone', 6660, 0)
-        .duration(240)
-        .EUt(GTValues.VHA[GTValues.LuV]);
+    {stone: 'ae2:sky_stone_block', consumed_solid: 'minecraft:stone', consumed_amount: 16, output: 32, consumed_fluid: 'thermal:ender', circ: 1, energy: GTValues.VHA[GTValues.HV]},
+    {stone: 'kubejs:cryostone', consumed_solid: 'minecraft:netherrack', consumed_amount: 32, output: 2, consumed_fluid: 'gtceu:liquid_helium', circ: 2, energy: GTValues.VHA[GTValues.LuV]},
+    {stone: 'kubejs:brimstone', consumed_solid: 'minecraft:netherrack', consumed_amount: 32, output: 2, consumed_fluid: 'gtceu:blaze', circ: 3, energy: GTValues.VHA[GTValues.LuV]}
+
+    ].forEach(type=> {
+        event.recipes.gtceu.exotic_rock_crushing(id(type.stone))
+            .notConsumable(`${type.stone}`)
+            .notConsumableFluid('minecraft:lava 1000')
+            .itemInputs(`${type.consumed_amount}x ${type.consumed_solid}`)
+            .inputFluids(`${type.consumed_fluid} 500`)
+            .circuit(`${type.circ}`)
+            .itemOutputs(`${type.output}x ${type.stone}`)
+            .duration(300)
+            .EUt(type.energy);
+
+    })
 
     event.recipes.gtceu.mixer(id('polonium_bismide'))
         .itemInputs('gtceu:polonium_dust', 'gtceu:bismuth_dust')

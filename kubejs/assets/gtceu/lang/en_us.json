@@ -1444,6 +1444,11 @@
     "block.gtceu.super_barrel": "Industrial Accumulation Vessel",
 
     "material.gtceu.akreyriadic_runixium": "Akreyriadic-Runixium",
-    "material.gtceu.weapon_grade_stellarized_naquadah": "Weapon Grade §bStellarized§f Naquadah"
+    "material.gtceu.weapon_grade_stellarized_naquadah": "Weapon Grade §bStellarized§f Naquadah",
+
+    "block.gtceu.exotic_tectonic_formation_apparatus": "Exotic Tectonic Formation Apparatus",
+    "gtceu.exotic_rock_crushing": "Exotic Rock Crushing",
+    "block.gtceu.exotic_tectonic_formation_apparatus.tooltip.0": "§7A machine that can create tectonic formations with unique properties, allowing for the extraction of rare resources and the creation of specialized environments.",
+    "block.gtceu.exotic_tectonic_formation_apparatus.tooltip.1": "Can only have §bone§r Energy Hatch"
   
 }
