@@ -17,7 +17,7 @@ ItemEvents.tooltip(event => {
 
     let prefix;
     addedByStarT.machines.forEach(machine => {
-        prefix = (addedByStarT.isCore.includes(machine)) ? "start_core:" : "gtceu:";
+        prefix = (addedByStarT.notKube.includes(machine)) ? "start_core:" : "gtceu:";
 
         addedByStarT.modifiers.forEach(modifier => {
             if (addedByStarT[modifier].includes(machine)) {
