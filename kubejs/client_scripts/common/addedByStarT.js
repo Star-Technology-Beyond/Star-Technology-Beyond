@@ -10,8 +10,8 @@ global.addedByStarT = {
         'folding_akreyrium_stabiliser', 'molten_destabiliser', 'component_nexus', 'cyclonic_sifter', 'injection_mixer',
         'manifold_centrifuge', 'atomic_synthesis_plant', 'component_part_hub', 'draco_circuit_assembler', 'draco_infusion', 'cryostate_quantum_chiller',
         'hellforge', 'fornaxs_infernal_rotary_engine', 'abyssal_harvester', 'abyssal_containment_room', 'dimensional_finder', 'gate_assembly', 'large_rotor_machine',
-        "ev_solar_cell", "iv_solar_cell", "luv_solar_cell", "zpm_solar_cell", "uv_solar_cell", "uhv_solar_cell",
-        "ev_solar_panel", "iv_solar_panel", "luv_solar_panel", "uv_solar_array", "uhv_solar_array",
+        'ev_solar_cell', 'iv_solar_cell', 'luv_solar_cell', 'zpm_solar_cell', 'uv_solar_cell', 'uhv_solar_cell',
+        'ev_solar_panel', 'iv_solar_panel', 'luv_solar_panel', 'uv_solar_array', 'uhv_solar_array',
         'large_quantum_compressor', 'runic_circuitry_assembling_station', 'runic_inscribe_manipulate', 'stargate_component_assembly',
         'super_pressure_heat_chamber', 'omega_pressure_heat_chamber', 'super_compact_heat_chamber', 'heat_chamber', 'super_abs', 'super_cutter',
         'super_ebf', 'super_implosion_compressor', 'super_vacuum_freezer', 'super_electric_ore_factory', 'super_barrel', 'super_cracker', 'super_pyrolyse', 'super_gas_collector',
@@ -23,10 +23,10 @@ global.addedByStarT = {
         'dual_chambered_vacuum_complex', 'auroric_vacuum_isolation_reactor', 'advanced_synthesis_plant', 'nyinsane_plasma_turbine', 'ulv_barrel', 'ulv_stone_barrel',
         'ulv_advanced_composter'
     ],
-    notKube: [
+    isCore: [
         'hellforge', 'fornaxs_infernal_rotary_engine', 'abyssal_harvester', 'abyssal_containment_room', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 'uiv_fusion_reactor',
-        "ev_solar_cell", "iv_solar_cell", "luv_solar_cell", "zpm_solar_cell", "uv_solar_cell", "uhv_solar_cell",
-        "ev_solar_panel", "iv_solar_panel", "luv_solar_panel", "uv_solar_array", "uhv_solar_array"
+        'ev_solar_cell', 'iv_solar_cell', 'luv_solar_cell', 'zpm_solar_cell', 'uv_solar_cell', 'uhv_solar_cell',
+        'ev_solar_panel', 'iv_solar_panel', 'luv_solar_panel', 'uv_solar_array', 'uhv_solar_array'
     ],
     modifiers: [
         'batch', 'paraBatch', 'subBatch', 'pocBatch', 'throughBatch', 'coilBatch', 'paraLayered', 'paraSubBatch', 'paraPocBatch', 'subThroughBatch', 'threadSubBatch', 'paraSubAssBatch',
