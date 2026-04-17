@@ -1426,6 +1426,7 @@
 		{
 			id: "5D67E904C7D02AB8"
 			invisible: true
+			optional: true
 			tasks: [{
 				id: "76B74EE25F58E344"
 				title: "{ftbquests.positioner.title}"
