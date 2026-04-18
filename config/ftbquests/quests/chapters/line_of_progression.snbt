@@ -1097,7 +1097,7 @@
 					type: "item"
 				}
 				{
-					id: "1363C2268D99BA13"
+					id: "2E337B3DE2099367"
 					item: {
 						Count: 1
 						id: "itemfilters:or"
@@ -1134,6 +1134,10 @@
 								{
 									Count: 1b
 									id: "gtceu:chemical_plant"
+								}
+								{
+									Count: 1b
+									id: "gtceu:advanced_synthesis_plant"
 								}
 							]
 						}
