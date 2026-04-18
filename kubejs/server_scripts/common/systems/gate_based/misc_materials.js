@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:naquadria 1008', 'gtceu:fluorine 12000')
         .itemOutputs('29x gtceu:weapon_grade_naquadah_dust')
         .duration(1200)
-        .EUt(346000);
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.recipes.gtceu.heat_chamber(id('nether_star_concentrate'))
         .itemInputs('16x gtceu:tiny_nether_star_dust')
@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         .itemInputs('7x gtceu:runic_laser_source_base_dust', '4x gtceu:ancient_runicalium_dust', '2x gtceu:strontium_titanium_oxide_dust')
         .inputFluids('gtceu:utopian_akreyrium 5000')
         .itemOutputs('18x gtceu:akreyriadic_runixium_dust')
-        .duration(9600)
+        .duration(10800)
         .EUt(GTValues.VHA[GTValues.UEV]);
 
     event.remove({type: 'gtceu:implosion_compressor', input: 'gtceu:naquadic_netherite_dust'});

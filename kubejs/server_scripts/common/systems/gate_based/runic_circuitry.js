@@ -19,29 +19,29 @@ ServerEvents.recipes(event => {
         }
 
         rcasRecipe('proto_solarus_rune','gtceu:yellow_glass_lens','csg_enscription_plate',
-            '64x gtceu:indium_gallium_phosphide_dust','gtceu:nether_star_concentrate 1000',
+            '64x gtceu:indium_gallium_phosphide_dust','gtceu:nether_star_concentrate 576',
             GTValues.VHA[GTValues.ZPM],600)
         rcasRecipe('proto_energized_rune','gtceu:ruby_lens','csg_enscription_plate',
-            '64x gtceu:indium_gallium_phosphide_dust','gtceu:nether_star_concentrate 1000',
+            '64x gtceu:indium_gallium_phosphide_dust','gtceu:nether_star_concentrate 576',
             GTValues.VHA[GTValues.ZPM],600)
         rcasRecipe('proto_lunarus_rune','gtceu:sapphire_lens','csg_enscription_plate',
-            '64x gtceu:indium_gallium_phosphide_dust','gtceu:nether_star_concentrate 1000',
+            '64x gtceu:indium_gallium_phosphide_dust','gtceu:nether_star_concentrate 576',
             GTValues.VHA[GTValues.ZPM],600)
         rcasRecipe('csg_dpu','gtceu:nether_star_lens','csg_enscription_chip',
             '8x gtceu:indium_gallium_phosphide_dust','',
             GTValues.VHA[GTValues.ZPM],600)
 
         rcasRecipe('runic_reinforced_plating','gtceu:brown_glass_lens','asg_enscription_plate',
-            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 1000',
+            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
             GTValues.VHA[GTValues.ZPM],600)
         rcasRecipe('runic_pathway_plating','gtceu:amethyst_lens','asg_enscription_plate',
-            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 1000',
+            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
             GTValues.VHA[GTValues.ZPM],600)
         rcasRecipe('runic_stabilization_plating','gtceu:emerald_lens','asg_enscription_plate',
-            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 1000',
+            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
             GTValues.VHA[GTValues.ZPM],600)
         rcasRecipe('runic_transportation_plating','gtceu:certus_quartz_lens','asg_enscription_plate',
-            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 1000',
+            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
             GTValues.VHA[GTValues.ZPM],600)
         rcasRecipe('asg_dpu','gtceu:orange_glass_lens','asg_enscription_chip',
             '8x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','',
@@ -156,7 +156,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.runic_inscribe_manipulate(id(`runic_${rune}_casing`))
             .itemInputs('kubejs:blank_runic_casing',`6x kubejs:runic_${rune}_plating`)
             .inputFluids('gtceu:runic_convergence_infusion')
-            .itemOutputs(`kubejs:runic_${rune}_casing 1000`)
+            .itemOutputs(`kubejs:runic_${rune}_casing`)
             .duration(4000)
             .EUt(GTValues.VA[GTValues.UHV]);
 

@@ -43,19 +43,19 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:coordinate_crystal', '64x minecraft:netherrack', '16x gtceu:uv_sensor')
         .inputFluids('minecraft:lava 50000')
         .itemOutputs('kubejs:nether_coordinate_crystal')
-        .CWUt(96)
-        .totalCWU(1152000)
-        .EUt(GTValues.VHA[GTValues.UHV])
+        .CWUt(192)
+        .totalCWU(2304000)
+        .EUt(GTValues.VHA[GTValues.UEV])
         .dimension('sgjourney:abydos');
 
     event.recipes.gtceu.dimensional_finder(id('end_coordinate_crystal'))
         .itemInputs('kubejs:coordinate_crystal', '64x minecraft:end_stone', '16x gtceu:uhv_sensor')
         .inputFluids('gtceu:echo_r 7200')
         .itemOutputs('kubejs:end_coordinate_crystal')
-        .CWUt(192)
-        .totalCWU(2304000)
-        .EUt(GTValues.VA[GTValues.UEV])
-        .dimension('sgjourney:abydos');
+        .CWUt(384)
+        .totalCWU(4608000)
+        .EUt(GTValues.VA[GTValues.UIV])
+        .dimension('minecraft:the_nether');
 
     /*event.recipes.gtceu.dimensional_finder(id('lantea_coordinate_crystal'))
         .itemInputs('kubejs:coordinate_crystal', 'minecraft:prismarine', 'gtceu:uev_sensor')

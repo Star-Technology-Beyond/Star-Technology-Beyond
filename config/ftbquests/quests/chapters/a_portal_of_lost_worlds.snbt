@@ -15,7 +15,7 @@
 			shape: "gear"
 			size: 1.25d
 			x: -5.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			id: "67EC40EEAAF31A70"
@@ -23,14 +23,14 @@
 			shape: "gear"
 			size: 1.5d
 			x: 1.0d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			id: "3B14D2E8F692B5FF"
 			linked_quest: "4DF07CB3D60C901C"
 			shape: "octagon"
-			x: 0.0d
-			y: -8.5d
+			x: -2.0d
+			y: -7.0d
 		}
 	]
 	quests: [
@@ -71,7 +71,7 @@
 			]
 			title: "{ftbquests.abydos.runic_casings.title}"
 			x: 1.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -102,7 +102,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -124,7 +124,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2F26A144D29B00A5"]
@@ -184,8 +184,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.nether_armor.title}"
-			x: -2.5d
-			y: -6.5d
+			x: -4.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -245,8 +245,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.naquadah_armor.title}"
-			x: -4.5d
-			y: -6.5d
+			x: -6.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -269,7 +269,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["239A0034C8425661"]
@@ -287,7 +287,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -310,7 +310,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
@@ -341,7 +341,7 @@
 			]
 			title: "{ftbquests.preparing_for_dimensional_travel.echo_r.title}"
 			x: -5.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -387,7 +387,7 @@
 			]
 			title: "{ftbquests.abydos.runic_tablet_fragments.title}"
 			x: 1.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["5744150A5658FE4D"]
@@ -405,7 +405,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -420,7 +420,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -435,7 +435,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -449,7 +449,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -463,7 +463,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -478,13 +478,10 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
-			dependencies: [
-				"7809407ED588BCBD"
-				"43DAD4B63603BFC3"
-			]
+			dependencies: ["43DAD4B63603BFC3"]
 			id: "40BD5304492E6177"
 			shape: "gear"
 			size: 1.25d
@@ -494,13 +491,10 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
-			dependencies: [
-				"1086D88615F8AB90"
-				"43DAD4B63603BFC3"
-			]
+			dependencies: ["43DAD4B63603BFC3"]
 			id: "073B57C15F3BFCFD"
 			shape: "gear"
 			size: 1.25d
@@ -510,7 +504,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["073B57C15F3BFCFD"]
@@ -521,7 +515,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["40BD5304492E6177"]
@@ -532,7 +526,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -549,30 +543,19 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["239A0034C8425661"]
-			hide_dependency_lines: true
-			id: "7809407ED588BCBD"
-			tasks: [{
-				id: "3C82B2D2AF0F6099"
-				item: "kubejs:end_coordinate_crystal"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0B7A0924AFE58559"]
+			dependencies: ["43DAD4B63603BFC3"]
 			id: "1086D88615F8AB90"
+			shape: "gear"
 			tasks: [{
 				id: "7DE9755716893BE3"
 				item: "kubejs:nether_coordinate_crystal"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 0.0d
+			x: -3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -656,7 +639,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -670,7 +653,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -685,7 +668,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7BBD4C912E080813"]
@@ -696,7 +679,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["3104E8ABA3C4FC66"]
@@ -714,7 +697,7 @@
 				}
 			]
 			x: 3.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -728,7 +711,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4C954542DB739F5E"]
@@ -739,7 +722,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7BBD4C912E080813"]
@@ -751,7 +734,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -767,7 +750,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -783,7 +766,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3C09E77C352B2A11"]
@@ -795,7 +778,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -822,7 +805,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -849,7 +832,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -857,6 +840,7 @@
 				"63E36421AE07BC42"
 				"5DADD2204991B4D5"
 				"039D327E919878BF"
+				"2635B921AA9053D0"
 			]
 			description: ["{ftbquests.abydos.milky_way_stargate.description}"]
 			icon: {
@@ -887,7 +871,7 @@
 			}]
 			title: "{ftbquests.abydos.milky_way_stargate.title}"
 			x: 0.0d
-			y: -6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -913,7 +897,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3104E8ABA3C4FC66"]
@@ -941,7 +925,7 @@
 				}
 			]
 			x: 3.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7A5734E3CF682EBA"]
@@ -953,7 +937,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5C4FE0E51C67FDFA"]
@@ -964,7 +948,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -975,7 +959,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			id: "408FF495F331D86B"

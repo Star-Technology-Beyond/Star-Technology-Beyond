@@ -3,8 +3,8 @@ ServerEvents.recipes (event => {
 
     event.recipes.create.mechanical_crafting(`gtceu:komaru_frame_test`, [
 		'   G G   ',
-        '  gGFGb  ',
-        ' GG1m2GG ',
+        '  GGFGG  ',
+        ' Gg1m2bG ',
         '  s345a  ',
         'R  FPF  R',
         'PPFPPPFPP',
