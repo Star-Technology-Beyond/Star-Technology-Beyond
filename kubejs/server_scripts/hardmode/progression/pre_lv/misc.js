@@ -211,7 +211,7 @@ ServerEvents.recipes(event => {
 	], {
 		S: 'minecraft:stone',
 		U: '#gtceu:circuits/ulv',
-		P: 'kubejs:ulv_electric_pump',
+		P: 'gtceu:ulv_electric_pump',
 		T: 'gtceu:steel_small_fluid_pipe',
 		B: 'gtceu:ulv_stone_barrel'
 	}).id('start:mechanical_crafting/large_stone_barrel');
@@ -225,7 +225,7 @@ ServerEvents.recipes(event => {
 	], {
 		S: 'gtceu:treated_wood_planks',
 		U: '#gtceu:circuits/ulv',
-		P: 'kubejs:ulv_electric_pump',
+		P: 'gtceu:ulv_electric_pump',
 		T: 'gtceu:lead_small_fluid_pipe',
 		B: 'gtceu:ulv_barrel'
 	}).id('start:mechanical_crafting/large_barrel');
@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
 	], {
 		S: 'gtceu:treated_wood_planks',
 		U: '#gtceu:circuits/ulv',
-		P: 'kubejs:ulv_conveyor_module',
+		P: 'gtceu:ulv_conveyor_module',
 		T: 'thermal:compost',
 		B: 'thermal:device_composter'
 	}).id('start:mechanical_crafting/large_farm');

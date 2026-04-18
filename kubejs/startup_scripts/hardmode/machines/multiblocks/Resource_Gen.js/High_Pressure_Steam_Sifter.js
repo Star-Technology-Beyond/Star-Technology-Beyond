@@ -34,6 +34,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('kubejs:meshblock'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingModel('kubejs:block/hm/high_steam_machine_casing', 'gtceu:block/machines/sifter')
+		.workableCasingModel('kubejs:block/casings/basic/high_steam_machine_casing', 'gtceu:block/machines/sifter')
 	
 });

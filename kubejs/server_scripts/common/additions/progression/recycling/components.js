@@ -12,9 +12,12 @@ global.not_hardmode(() => {
         function getComponentOutputs(tier, component) {
             const checkRecyclingCount = global.checkRecyclingCount;
             let recycleOutputs = [];
+            let countTypes =[];
             let details;
             let tierBracket;
+
             if (tier == "luv" || tier == "zpm" || tier == "uv") {
+                countTypes = ["primCount", "cableCount", "wireCount", "foilCount"];
                 details = {
                     totals: global.LUVToUVComponentRecycleCounts[component],
                     materials: global.componentRecycleMaterials[tier]
@@ -22,12 +25,17 @@ global.not_hardmode(() => {
                 tierBracket = "LUVToUV";
             }
             else {
+                countTypes = ["primCount", "cableCount", "secCount", "tertCount"];
                 details = {
                     totals: global.UHVPlusComponentRecycleCounts[component],
                     materials: global.componentRecycleMaterials[tier]
                 }
                 tierBracket = "UHVPLUS"
             }
+            
+            countTypes.forEach(type => {
+                details.totals[type] = Math.floor(details.totals[type]);
+            });
 
             // checks the final outputs
             let tempObj = checkRecyclingCount(details.totals, `singleblock_${tierBracket}`, false, false, false);

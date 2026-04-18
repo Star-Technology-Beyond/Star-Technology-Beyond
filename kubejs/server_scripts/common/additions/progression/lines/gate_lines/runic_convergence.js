@@ -17,6 +17,7 @@ ServerEvents.recipes(event => {
     */
 
     const lcr = event.recipes.gtceu.large_chemical_reactor;
+    const vcr = event.recipes.gtceu.vacuum_chemical_reaction_chamber;
 
     lcr(id('netherite_trisulfate_complex'))
         .itemInputs('gtceu:pure_netherite_dust')
@@ -67,10 +68,12 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
-    event.recipes.gtceu.advanced_chemistry(id('runic_convergence_infusion'))
+    vcr(id('runic_convergence_infusion'))
+        .notConsumable('7x gtceu:ancient_runicalium_bolt')
         .inputFluids('gtceu:primordial_nitrosilicate 1000', 'gtceu:magnesium_nitride 1000')
         .outputFluids('gtceu:runic_convergence_infusion 1000')
         .duration(200)
-        .EUt(GTValues.VHA[GTValues.ZPM]);
+        .EUt(GTValues.VHA[GTValues.ZPM])
+        .vacuumLevel(80);
 
 });

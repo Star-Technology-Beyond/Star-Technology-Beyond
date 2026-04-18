@@ -29,16 +29,27 @@ ItemEvents.tooltip(event => {
     });
 
     event.addAdvanced('gtceu:large_chemical_reactor', (item, advanced, text) => {
-        text.add(2, Text.translate('block.gtceu.coil_boosting_subtick.tooltip.1'));
+        text.add(2, Text.translate('block.gtceu.lcr_coil_mechanic.tooltip.2'));
+        text.add(3, Text.translate('block.gtceu.lcr_coil_mechanic.tooltip.3'));
+        text.add(4, Text.translate('block.gtceu.lcr_coil_mechanic.tooltip.4'));
+        text.add(5, Text.translate('block.gtceu.lcr_coil_mechanic.tooltip.5'));
+        text.add(6, Text.translate('block.gtceu.lcr_coil_mechanic.tooltip.6'));
+        text.add(7, Text.translate('block.gtceu.coil_boosting_subtick.tooltip.1'));
     });
 
     event.addAdvanced('gtceu:extreme_chemical_reactor', (item, advanced, text) => {
-        text.add(2, Text.translate('block.gtceu.coil_boosting_parallel_subtick.tooltip.1'));
+        text.add(2, Text.translate('block.gtceu.lcr_coil_mechanic.tooltip.2'));
+        text.add(3, Text.translate('block.gtceu.lcr_coil_mechanic.tooltip.3'));
+        text.add(4, Text.translate('block.gtceu.lcr_coil_mechanic.tooltip.4'));
+        text.add(5, Text.translate('block.gtceu.lcr_coil_mechanic.tooltip.5'));
+        text.add(6, Text.translate('block.gtceu.lcr_coil_mechanic.tooltip.6'));
+        text.add(7, Text.translate('block.gtceu.coil_boosting_parallel_subtick.tooltip.1'));
     });
 
     event.addAdvanced('gtceu:implosion_compressor', (item, advanced, text) => {
         text.add(2, Text.translate('block.gtceu.subtick.tooltip.1'));
     });
+    
 
     event.addAdvanced('gtceu:distillation_tower', (item, advanced, text) => {
         text.add(2, Text.translate('block.gtceu.subtick.tooltip.1'));

@@ -82,7 +82,7 @@ global.not_hardmode(() => {
 
         event.recipes.gtceu.assembler(id('magmada_alloy_coil_block'))
             .itemInputs('gtceu:ancient_netherite_frame','8x gtceu:magmada_alloy_double_wire','8x gtceu:pure_netherite_foil',
-                '32x gtceu:fine_seaborgium_palladium_enriched_estalt_flerovium_alloy_wire','32x gtceu:neutronium_silicon_carbide_foil')
+                '32x gtceu:fine_enriched_pallarovium_alloy_wire','32x gtceu:neutronium_silicon_carbide_foil')
             .inputFluids('gtceu:adamantine 144')
             .itemOutputs('kubejs:magmada_alloy_coil_block')
             .duration(1100)

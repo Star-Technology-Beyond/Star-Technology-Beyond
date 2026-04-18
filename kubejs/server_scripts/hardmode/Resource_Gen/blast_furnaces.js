@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
 			.blasting(`gtceu:${dust}_ingot`, `gtceu:${dust}_dust`)
 			.id(`start:blasting/${dust}_dust_manual_only`);
         // event.recipes.gtceu
-		// 	.gt_blasting(id(`${dust}_from_dust`))
+		// 	.electric_vanilla_blast_furnace(id(`${dust}_from_dust`))
         //     .itemInputs(`gtceu:${dust}_dust`)
         //     .itemOutputs(`gtceu:${dust}_ingot`)
         //     .duration(100)
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     //         let InItem = ParseBlast.inputs.item[0].content;
     //         let OutItem = ParseBlast.outputs.item[0].content;
 
-    //     event.recipes.gtceu.gt_blasting(id(`smelt_${OutItem.value.item}_from_${InItem.value.item}`))
+    //     event.recipes.gtceu.electric_vanilla_blast_furnace(id(`smelt_${OutItem.value.item}_from_${InItem.value.item}`))
     //         .itemInputs(InItem.ingredient.item)
     //         .itemOutputs(OutItem.ingredient.item)
     //         .duration(100)
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler(id('solid_blast_furnace'))
         .itemInputs('gtceu:rugged_alloyer', '2x gtceu:double_steel_plate', '2x gtceu:steel_gear', 
-            '2x #gtceu:circuits/ulv' ,'kubejs:ulv_conveyor_module', 'kubejs:ulv_robot_arm')
+            '2x #gtceu:circuits/ulv' ,'gtceu:ulv_conveyor_module', 'gtceu:ulv_robot_arm')
         .inputFluids('gtceu:tin_alloy 432')
         .itemOutputs('gtceu:solid_blast_furnace')
         .duration(300)
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler(id('bessemer_forgery'))
         .itemInputs('gtceu:lv_machine_hull','4x gtceu:long_steel_rod','4x #gtceu:circuits/lv','create:basin','2x gtceu:potin_gear',
-            '4x gtceu:small_steel_gear','4x kubejs:ulv_robot_arm','3x kubejs:ulv_electric_pump')
+            '4x gtceu:small_steel_gear','4x gtceu:ulv_robot_arm','3x gtceu:ulv_electric_pump')
         .inputFluids('gtceu:tin_alloy 1152')
         .itemOutputs('gtceu:bessemer_forgery')
         .duration(400)

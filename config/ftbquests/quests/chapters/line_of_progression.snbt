@@ -12,7 +12,7 @@
 			image: "sgjourney:item/classic_stargate"
 			rotation: 0.0d
 			width: 1.5d
-			x: 2.5d
+			x: 1.0d
 			y: -8.5d
 		}
 		{
@@ -602,6 +602,11 @@
 						id: "kubejs:hyper_nor_memory_chip"
 						tag: { }
 					}
+					type: "item"
+				}
+				{
+					id: "52E04BF0DE109AB6"
+					item: "kubejs:stellar_ram_chip"
 					type: "item"
 				}
 			]
@@ -1680,10 +1685,6 @@
 							{
 								Count: 1b
 								id: "gtceu:component_part_hub"
-							}
-							{
-								Count: 1b
-								id: "gtceu:ancient_refinement_center"
 							}
 						]
 					}

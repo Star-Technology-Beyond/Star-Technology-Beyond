@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('alloy_blast_smelter')
         .machine((holder) => new $CoiledMulti(holder))
-        .recipeModifiers([GTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('   AAA   ', '   AAA   ', '    B    ', '    B    ', '         ', '         ', '         ', '    B    ', '    B    ', '   AAA   ', '   AAA   ') 

@@ -7,7 +7,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setHasResearchSlot(true)
         .setSound(GTSoundEntries.ASSEMBLER)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
-        .setMaxTooltips(6);
+        .setMaxTooltips(4);
 
     event.create('component_part_synthesis_forge')
         .category('extremely_advanced')
@@ -16,7 +16,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setHasResearchSlot(true)
         .setSound(GTSoundEntries.ASSEMBLER)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
-        .setMaxTooltips(6);
+        .setMaxTooltips(4);
 
 });
 

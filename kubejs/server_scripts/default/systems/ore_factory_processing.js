@@ -104,7 +104,8 @@ global.not_hardmode(() => {
             // { material: 'umangite', secondary: 'berzelianite', tertiary: 'aguilarite', quaternary: 'polybasite', quinary: 'umangite' },
             // { material: 'aguilarite', secondary: 'berzelianite', tertiary: 'umangite', quaternary: 'polybasite', quinary: 'aguilarite' },
             { material: 'strontianite', secondary: 'celestine', tertiary: 'gypsum', quaternary: 'calcite', quinary: 'calcium' },
-            { material: 'celestine', secondary: 'strontianite', tertiary: 'calcite', quaternary: 'gypsum', quinary: 'calcium' }
+            { material: 'celestine', secondary: 'strontianite', tertiary: 'calcite', quaternary: 'gypsum', quinary: 'calcium' },
+            { material: 'naquadite', secondary: 'magnesite', tertiary: 'chromite', quaternary: 'naquadah', quinary: 'magnetite'}
         ]
     };
 

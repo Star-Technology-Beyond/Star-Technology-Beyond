@@ -1,0 +1,821 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	filename: "pl5"
+	group: "03EF8417F6D21A2E"
+	icon: "kubejs:why_are_you_worrying"
+	id: "476FEB7CF628FB3D"
+	order_index: 6
+	quest_links: [
+		{
+			id: "0241D0DF0F320CDB"
+			linked_quest: "0D18B33E2C26A942"
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			id: "0D7818B3AC85F334"
+			linked_quest: "44B18C095DB4DF17"
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			id: "04110658590E1F01"
+			linked_quest: "5D3B5DEE3B2D30C0"
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			id: "082C386CBBA0DD86"
+			linked_quest: "1C5C32E5A47F2D2D"
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			id: "37CD8F0805CCF0EA"
+			linked_quest: "7E99889B3427A842"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			id: "58A4AA0361BC635C"
+			linked_quest: "261B946701411D9C"
+			x: -5.0d
+			y: -5.0d
+		}
+		{
+			id: "5471BFD2D05A173F"
+			linked_quest: "3AE729D3F47E9A2B"
+			shape: "gear"
+			size: 1.5d
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			id: "6619BD72D7AC92AB"
+			linked_quest: "1799430093ABCC64"
+			shape: "gear"
+			size: 1.5d
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			id: "58D06D40AD3DDD53"
+			linked_quest: "64DC78AF9E2FAB32"
+			shape: "circle"
+			size: 1.5d
+			x: -7.0d
+			y: -3.25d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"09B55AFE7C06EC82"
+				"64DC78AF9E2FAB32"
+			]
+			id: "09996867BC3E5819"
+			tasks: [{
+				id: "7FA4661139DC8B30"
+				item: "kubejs:secreting_draconic_cells"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["64DC78AF9E2FAB32"]
+			hide_dependency_lines: true
+			icon: "gtceu:dragon_breath_bucket"
+			id: "749AB3A73D3744EA"
+			tasks: [
+				{
+					id: "718EEC48EE3D1B14"
+					item: "gtceu:dragon_breath_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0826389E70A63586"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"349B743B5F3792F1"
+				"3B53D64D9EA506E1"
+			]
+			icon: "gtceu:pyrothyin_bucket"
+			id: "60C58CBCA20CC288"
+			tasks: [
+				{
+					id: "1C39E7C5B1C72037"
+					item: "gtceu:pyrothyin_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5E4C0C2B64437925"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7D92FDFAE5CBA103"
+				"3B53D64D9EA506E1"
+			]
+			icon: "gtceu:dracotropin_bucket"
+			id: "369119C0801269FD"
+			tasks: [
+				{
+					id: "0F51D393266FEB87"
+					item: "gtceu:dracotropin_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "16ABEFC63E08B982"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1B5E265DA009B4B6"
+				"3B53D64D9EA506E1"
+			]
+			icon: "gtceu:metavorexin_bucket"
+			id: "7CBD3A984028C356"
+			tasks: [
+				{
+					id: "338ADC23D425FEB4"
+					item: "gtceu:metavorexin_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "140FAEB97BAFF15E"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"122ECDEA3014F0F6"
+				"3B53D64D9EA506E1"
+			]
+			icon: "gtceu:aethermetin_bucket"
+			id: "4447ADD635826F25"
+			tasks: [
+				{
+					id: "37B8E770CAC11D88"
+					item: "gtceu:aethermetin_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "46D321C5184FA364"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"60AA88F6743636C0"
+				"3B53D64D9EA506E1"
+			]
+			icon: "gtceu:hemavyrin_bucket"
+			id: "6C6379760CE78AC5"
+			tasks: [
+				{
+					id: "2A33CBF2AF778CF8"
+					item: "gtceu:hemavyrin_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6BF3EFEABE537323"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1C5C32E5A47F2D2D"
+				"30241EA7B41A3212"
+			]
+			icon: "gtceu:ignisferin_bucket"
+			id: "5BB6B21843A7107F"
+			tasks: [
+				{
+					id: "5704C68E1E669408"
+					item: "gtceu:ignisferin_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "16BB33C1C42AE0F9"
+					type: "checkmark"
+				}
+			]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"0D18B33E2C26A942"
+				"30241EA7B41A3212"
+			]
+			icon: "gtceu:cryokinase_bucket"
+			id: "798E1B26BA950E09"
+			tasks: [
+				{
+					id: "12F93713F9F909D2"
+					item: "gtceu:cryokinase_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "791BDFF662ABB7FA"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"44B18C095DB4DF17"
+				"30241EA7B41A3212"
+			]
+			icon: "gtceu:stormcallin_bucket"
+			id: "30F23A53A3BD37A1"
+			tasks: [
+				{
+					id: "348E9981304C1E5E"
+					item: "gtceu:stormcallin_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6E7F14A0CEBF93C1"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"239A0034C8425661"
+				"30241EA7B41A3212"
+				"74A0BF2EA205B23C"
+			]
+			icon: "gtceu:voidrenin_bucket"
+			id: "50B36A9870682FDB"
+			tasks: [
+				{
+					id: "7F10DB93F1329685"
+					item: "gtceu:voidrenin_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5F5ACEC96D4B4C59"
+					type: "checkmark"
+				}
+			]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"5D3B5DEE3B2D30C0"
+				"30241EA7B41A3212"
+			]
+			icon: "gtceu:terrathroxin_bucket"
+			id: "42BF157CA44898DE"
+			tasks: [
+				{
+					id: "689EE59DB05F6577"
+					item: "gtceu:terrathroxin_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D0D4EA68D6DE71C"
+					type: "checkmark"
+				}
+			]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"5BB6B21843A7107F"
+				"798E1B26BA950E09"
+				"42BF157CA44898DE"
+				"50B36A9870682FDB"
+				"30F23A53A3BD37A1"
+			]
+			icon: "gtceu:breath_hormone_complex_bucket"
+			id: "54A48D25CC69507E"
+			tasks: [
+				{
+					id: "4257D4409A691138"
+					item: "gtceu:breath_hormone_complex_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4DB0FEBF10987E99"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"6CC2A99E0E26C42B"
+				"68FD71F1A73B47A1"
+			]
+			icon: "gtceu:abyssal_nutrient_blend_bucket"
+			id: "0E2F6184D7767AFD"
+			tasks: [
+				{
+					id: "7D4780468466B409"
+					item: "gtceu:abyssal_nutrient_blend_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "42DBBC8CD2774B23"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"28464624B65AFECC"
+				"6BEABB51EBEA81D5"
+				"261B946701411D9C"
+			]
+			icon: "gtceu:precursor_serum_bucket"
+			id: "68FD71F1A73B47A1"
+			tasks: [
+				{
+					id: "2AF3BF188175E093"
+					item: "gtceu:precursor_serum_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "26491A00E2CA1A6E"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7E99889B3427A842"
+				"221A840C4A071343"
+				"0F4E7B496BC5C896"
+			]
+			icon: "gtceu:drac_endrocritic_medium_bucket"
+			id: "7DB00D797172F8F8"
+			tasks: [
+				{
+					id: "1A54006686D3FADC"
+					item: "gtceu:drac_endrocritic_medium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "240B81C9ED4CFA6F"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["218CABD676F3B732"]
+			id: "1599CBA5069B1B4C"
+			tasks: [{
+				id: "2DE1FA566DC988C4"
+				item: "gtceu:small_aurourium_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"7DB00D797172F8F8"
+				"1599CBA5069B1B4C"
+			]
+			icon: "gtceu:drac_aurouric_endrocrinal_medium_bucket"
+			id: "6CC2A99E0E26C42B"
+			tasks: [
+				{
+					id: "41110FDB77034BFA"
+					item: "gtceu:drac_aurouric_endrocrinal_medium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "41579DC0B646EFD1"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["09996867BC3E5819"]
+			icon: "gtceu:draconic_hormone_residue_bucket"
+			id: "221A840C4A071343"
+			tasks: [
+				{
+					id: "73BDF2BA3EE0339D"
+					item: "gtceu:draconic_hormone_residue_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2B97CE3EC14FA430"
+					type: "checkmark"
+				}
+			]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["51E820417679F770"]
+			id: "28464624B65AFECC"
+			tasks: [{
+				id: "497D1DD354493DD4"
+				item: "gtceu:tiny_mythril_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["22EAAB51EF78C74E"]
+			id: "6BEABB51EBEA81D5"
+			tasks: [{
+				id: "1AC324108B20AEDC"
+				item: "gtceu:tiny_adamantine_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3F976C15932579FD"
+				"56CA67C022703D4E"
+			]
+			id: "30241EA7B41A3212"
+			tasks: [{
+				id: "0457B7D0A08A7328"
+				item: "kubejs:draco_peptide_amino_chain"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["56BA79287C4DBE52"]
+			id: "60AA88F6743636C0"
+			tasks: [{
+				id: "7EB4E14C330F1F0F"
+				item: "gtceu:tiny_hematite_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["338D41BA7FE41844"]
+			id: "122ECDEA3014F0F6"
+			tasks: [{
+				id: "693E7724F1974A71"
+				item: "gtceu:tiny_glowstone_dust"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4447ADD635826F25"
+				"6C6379760CE78AC5"
+				"7CBD3A984028C356"
+				"60C58CBCA20CC288"
+				"369119C0801269FD"
+			]
+			icon: "gtceu:growth_hormone_complex_bucket"
+			id: "25436E09A8F9E9C8"
+			tasks: [
+				{
+					id: "05103572A0A357C5"
+					item: "gtceu:growth_hormone_complex_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2037CD66FA12EEFC"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7781F2FE4CB258E0"]
+			id: "7D92FDFAE5CBA103"
+			tasks: [{
+				id: "073270F6189D1018"
+				item: "gtceu:tiny_enriched_naquadah_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["465B8B6CC911EC13"]
+			id: "349B743B5F3792F1"
+			tasks: [{
+				id: "3581DA3506B99F0F"
+				item: "gtceu:tiny_activated_nether_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E75A2FC17ED0C28"]
+			hide_dependency_lines: true
+			id: "1B5E265DA009B4B6"
+			tasks: [{
+				id: "06E5408A2A296887"
+				item: "gtceu:tiny_rhenium_dust"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E2F6184D7767AFD"]
+			icon: "gtceu:condensed_abyssal_nutrient_blend_bucket"
+			id: "68DA57B7791A76E1"
+			tasks: [
+				{
+					id: "2AE72D581378F499"
+					item: "gtceu:condensed_abyssal_nutrient_blend_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "136ED98C62850A6F"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["68DA57B7791A76E1"]
+			icon: "gtceu:amino_primed_medium_bucket"
+			id: "3F976C15932579FD"
+			tasks: [
+				{
+					id: "79A205816BD92E26"
+					item: "gtceu:amino_primed_medium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2F587AB62CB675E0"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"30241EA7B41A3212"
+				"0E2F6184D7767AFD"
+			]
+			icon: "gtceu:drac_peptide_amino_residue_bucket"
+			id: "3B53D64D9EA506E1"
+			tasks: [
+				{
+					id: "487D1868EFB3E138"
+					item: "gtceu:drac_peptide_amino_residue_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "50482D280EBDEB7D"
+					type: "checkmark"
+				}
+			]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["01AF9486EA6DA792"]
+			description: ["{ftbquests.processing_lines_chap.sterile_growth_medium.description}"]
+			icon: {
+				Count: 1
+				id: "gtceu:sterilized_growth_medium_bucket"
+				tag: { }
+			}
+			id: "058533FBFBA38DC8"
+			rewards: [{
+				count: 3
+				id: "5CC49966111B49A8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					id: "1FE8BF0C899DE5C0"
+					item: {
+						Count: 1
+						id: "gtceu:sterilized_growth_medium_bucket"
+						tag: { }
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3C0F8CAA6B18D974"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2F87FC1D5BB43220"]
+			description: ["{ftbquests.processing_lines_chap.echo.description}"]
+			icon: {
+				Count: 1
+				id: "gtceu:echo_r_bucket"
+				tag: { }
+			}
+			id: "74A0BF2EA205B23C"
+			rewards: [{
+				id: "2516C54EF2E15FA4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "764B69A72A6DC1A7"
+					item: "gtceu:echo_r_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "208097B0CE089A13"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbquests.processing_lines_chap.echo.title}"
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0F29276290B9D9D1"]
+			icon: "gtceu:biostimulating_mixture_bucket"
+			id: "0F4E7B496BC5C896"
+			tasks: [
+				{
+					id: "172FD0495927663C"
+					item: "gtceu:biostimulating_mixture_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "495FF798558F9A21"
+					type: "checkmark"
+				}
+			]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"09B55AFE7C06EC82"
+				"64DC78AF9E2FAB32"
+			]
+			id: "0CD4A2A7CDC7A06E"
+			tasks: [{
+				id: "136C2FBCEF223E99"
+				item: "kubejs:dragon_egg_shard"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0CD4A2A7CDC7A06E"]
+			id: "588C0950E5334025"
+			shape: "gear"
+			tasks: [{
+				id: "304F34E16667CCD4"
+				item: "kubejs:draconic_scale_cells"
+				type: "item"
+			}]
+			title: "{ftbquests.processing_lines_chap.cheaper_draconic_scale_cell.title}"
+			x: -6.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["54A48D25CC69507E"]
+			id: "6F5453EB015DE189"
+			shape: "gear"
+			tasks: [{
+				id: "2DDBF048CC9F48CC"
+				item: "gtceu:dragon_breath_bucket"
+				type: "item"
+			}]
+			title: "{ftbquests.processing_lines_chap.cheaper_dragon_breath.title}"
+			x: 5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1799430093ABCC64"]
+			id: "2C80DB1A0465B07E"
+			shape: "gear"
+			tasks: [{
+				id: "5A9177A5B1275632"
+				item: "kubejs:draconic_stem_cells"
+				type: "item"
+			}]
+			title: "{ftbquests.processing_lines_chap.cheaper_draconic_stem_cells.title}"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1799430093ABCC64"]
+			id: "52B07B3E2BE1145E"
+			shape: "gear"
+			tasks: [{
+				id: "3BE7176CBAEDBC29"
+				item: "kubejs:draconic_brain_matter_cells"
+				type: "item"
+			}]
+			title: "Cheaper Draconic Brain Matter Cells"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			id: "79795DB067807E04"
+			tasks: [{
+				id: "2CC2DB91A502C01C"
+				title: "Faematter Line"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			id: "6C8188C32D5172E2"
+			tasks: [{
+				id: "6F5FD4C520583B37"
+				title: "Rift lines (1-3)"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+	]
+	title: "toLang \"Processing Lines - 5\""
+}

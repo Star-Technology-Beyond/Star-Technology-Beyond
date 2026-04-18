@@ -1,12 +1,13 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    event.recipes.gtceu.advanced_chemistry(id('estalt_dissolving'))
+    event.recipes.gtceu.vacuum_chemical_reaction_chamber(id('estalt_dissolving'))
         .itemInputs('6x gtceu:estalt_dust')
         .inputFluids('gtceu:fluoroantimonic_acid 2000')
         .outputFluids('gtceu:impure_calamatium_solution 1000', 'gtceu:impure_isovol_solution 1000', 'gtceu:fluorine 4000')
         .duration(1200)
-        .EUt(100000);
+        .EUt(GTValues.VHA[GTValues.ZPM])
+        .vacuumLevel(90);
 
     event.recipes.gtceu.centrifuge(id('impure_calamatium_solution'))
         .inputFluids('gtceu:impure_calamatium_solution 1000')

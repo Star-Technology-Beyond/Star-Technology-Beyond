@@ -1,36 +1,17 @@
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-
-    event.create('absolute_reduction')
-        .category('extremely_advanced')
-        .setEUIO('in')
-        .setMaxTooltips(4)
-        .setMaxIOSize(9, 9, 9, 9)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.CHEMICAL);
-    
-    event.create('enlightened_chemistry')
-        .category('extremely_advanced')
-        .setEUIO('in')
-        .setMaxTooltips(4)
-        .setMaxIOSize(6, 6, 6, 6)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.CHEMICAL);
-
-});
-
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('atomic_synthesis_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes(['chemical_skip', 'advanced_chemistry', 'absolute_reduction', 'enlightened_chemistry'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
+        .machine((holder) => new $CoiledMulti(holder))
+        .recipeTypes(['chemical_skip'])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:cattomolymer_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('ABBCBBA    ', 'DAAAAAD    ', 'D     D    ', 'D     D    ', 'D     D    ', 'DAAAAAD    ', 'ABBCBBA    ', '           ', '           ', '           ', '           ') 
             .aisle('BAABAAB E  ', 'AEEEEEA F  ', ' AAAAAFFF  ', ' GGGGG     ', ' AAAAA     ', 'AGGGGGA    ', 'BDHHHDB    ', ' D   D     ', ' D   D     ', ' D   D     ', ' AAAAA     ') 
-            .aisle('BAABAAB    ', 'AEIIIEA    ', ' ADDDA     ', ' G   G     ', ' ADDDA     ', 'AG   GA    ', 'BHAAAHB    ', '  AAA      ', '  GGG      ', '  AAA      ', ' ACCCA     ') 
-            .aisle('CAAAAAC JJ ', 'AEIIIEA JJ ', ' ADFDADDJJ ', ' G F G  JJ ', ' ADFDA  JJ ', 'AG F GA JJ ', 'CHAFAHC JJ ', '  AFA   JJ ', '  GFG      ', '  AAA      ', ' ACCCA     ') 
-            .aisle('BAABAAB JJ ', 'AEIIIEA JJ ', ' ADFDA  JJ ', ' G   G  JJ ', ' ADDDADDJJ ', 'AG   GA JJ ', 'BHAAAHB JJ ', '  AAA   JJ ', '  GEG      ', '  AAA      ', ' ACCCA     ') 
+            .aisle('BAABAAB    ', 'AEIIIEA    ', ' ADDDA     ', ' G   G     ', ' ADDDA     ', 'AG   GA    ', 'BHAAAHB    ', '  AAA      ', '  MMM      ', '  AAA      ', ' ACCCA     ') 
+            .aisle('CAAAAAC JJ ', 'AEIIIEA JJ ', ' ADFDADDJJ ', ' G F G  JJ ', ' ADFDA  JJ ', 'AG F GA JJ ', 'CHAFAHC JJ ', '  AFA   JJ ', '  MFM      ', '  AAA      ', ' ACCCA     ') 
+            .aisle('BAABAAB JJ ', 'AEIIIEA JJ ', ' ADFDA  JJ ', ' G   G  JJ ', ' ADDDADDJJ ', 'AG   GA JJ ', 'BHAAAHB JJ ', '  AAA   JJ ', '  MEM      ', '  AAA      ', ' ACCCA     ') 
             .aisle('BAABAAB    ', 'AEEEEEA    ', ' ADFDA     ', ' GDDDG     ', ' ADDDA     ', 'AGGGGGA    ', 'BDHHHDB    ', ' D D D     ', ' D E D     ', ' D D D     ', ' AAAAA     ') 
             .aisle('ABAAAAA BBB', 'DAAEAEADABA', 'D AFAAAHAAA', 'D AAAGADABA', 'D AAAAA BBB', 'DAAAAAD    ', 'ABBCBEA    ', '           ', '   H       ', '           ', '           ') 
             .aisle('  ABABA BBB', '  ADGGAHAFA', '  AFGGF IFK', '  ADGGAHAFA', '  AAAAA BBB', '           ', '   D E     ', '           ', '   H       ', '           ', '           ') 
@@ -56,6 +37,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('J', Predicates.blocks('kubejs:noble_mixing_casing'))
             .where('K', Predicates.abilities(PartAbility.MUFFLER))
             .where('L', Predicates.blocks('gtceu:uev_rotor_holder'))
+            .where('M', Predicates.heatingCoils())
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/end_multis/cattomolymer_casing',

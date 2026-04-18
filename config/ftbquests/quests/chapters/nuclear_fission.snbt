@@ -55,7 +55,7 @@
 			y: -2.0d
 		}
 	]
-	order_index: 6
+	order_index: 7
 	quest_links: [
 		{
 			id: "6FAEFF93263B1FDE"
@@ -128,6 +128,7 @@
 		{
 			dependencies: ["7F4D5331B59AA5F0"]
 			dependency_requirement: "one_completed"
+			description: ["- explain Fuel rods"]
 			id: "7375D44BBE2E3BF1"
 			tasks: [{
 				id: "4A358818F51E440D"
@@ -456,11 +457,7 @@
 			id: "74476363CA71A782"
 			tasks: [{
 				id: "1F90AAA9B2DF5E5E"
-				item: {
-					Count: 1
-					id: "gtceu:tiny_naquadah_dust"
-					tag: { }
-				}
+				item: "gtceu:tiny_enriched_naquadah_dust"
 				type: "item"
 			}]
 			x: 17.5d
@@ -513,7 +510,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "7BE3C5BE8FA92239"
 				item: {
@@ -694,6 +691,7 @@
 		{
 			dependencies: ["2F8062042B23DA26"]
 			id: "342969434CB3B5DE"
+			size: 1.0d
 			tasks: [{
 				id: "4262F299A4CEC65A"
 				item: "gtceu:neptunium_dust"

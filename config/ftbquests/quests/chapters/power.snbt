@@ -2405,6 +2405,24 @@
 			x: -1.5d
 			y: -2.0d
 		}
+		{
+			dependencies: ["22B85F7F13C66730"]
+			description: ["{ftbquests.abydos.lucinducer.description}"]
+			id: "7E9A5A626648A859"
+			rewards: [{
+				id: "4A257F294C4D4C76"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "04E9B2997427EC44"
+				item: "start_core:lucinducer"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.5d
+		}
 	]
 	title: "{ftbquests.power.title}"
 }

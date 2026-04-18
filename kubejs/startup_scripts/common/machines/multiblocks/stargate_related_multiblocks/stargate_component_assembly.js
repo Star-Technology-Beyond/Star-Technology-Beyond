@@ -3,9 +3,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('stargate_component_assembly')
         .category('gate_construction')
         .setEUIO('in')
-        .setMaxIOSize(12, 1, 6, 0)
+        .setMaxIOSize(4, 1, 2, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_MASS_FAB , FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ASSEMBLER);
+        .setSound(GTSoundEntries.ASSEMBLER)
+        .setLayered();
 
 });
 
@@ -13,6 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     
     event.create('stargate_component_assembly', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .machine((holder) => new $LayeredWorkableElectricMultiblockMachine(holder))
         .recipeType('stargate_component_assembly')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:prismalium_casing'))
@@ -53,7 +55,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('gtceu:fusion_glass'))
             .where('H', Predicates.blocks('kubejs:enriched_naquadah_machine_casing'))
             .where('I', Predicates.blocks('kubejs:enriched_naquadah_pipe_casing'))
-            .where('J', Predicates.blocks('gtceu:heat_vent'))
+            .where('J', Predicates.blocks('kubejd:enriched_naquadah_heat_escape_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/superconductors/casing_prismalium',
