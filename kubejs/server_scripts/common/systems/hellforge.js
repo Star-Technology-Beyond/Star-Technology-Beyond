@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
     HellForgeMat('mythrolic_alloy', 11, ['gtceu:mythril 720', 'gtceu:hsss 576', 'gtceu:darmstadtium 288'], 'argon', 'infernal', 568, GTValues.VHA[GTValues.UEV], 43.6);
     HellForgeMat('magmada_alloy', 8, ['gtceu:adamantine 576', 'gtceu:neutronium 144', 'gtceu:rtm_alloy 432'], 'magmatic', 'infernal', 708, GTValues.VHA[GTValues.UEV], 52.4);
     HellForgeMat('starium_alloy', 8, ['gtceu:nether_star_concentrate 576', 'gtceu:trinaquadalloy 288', 'gtceu:estalt 288'], 'oxygen', 'infernal', 633, GTValues.VHA[GTValues.UEV], 39.8);
-    HellForgeMat('seaborgium_palladium_enriched_estalt_flerovium_alloy', 17, ['gtceu:seaborgium 288', 'gtceu:palladium 1152', 'gtceu:enriched_estalt 432', 'gtceu:flerovium 576'], 'nickel', 'infernal', 878, GTValues.VHA[GTValues.UIV], 37.4);
+    HellForgeMat('enriched_pallarovium_alloy', 17, ['gtceu:seaborgium 288', 'gtceu:palladium 1152', 'gtceu:enriched_estalt 432', 'gtceu:flerovium 576'], 'nickel', 'infernal', 878, GTValues.VHA[GTValues.UIV], 37.4);
     HellForgeMat('nyanium', 14, ['gtceu:aurourium 1008', 'gtceu:uranium_rhodium_dinaquadide 576', 'gtceu:magnesium_nitride 144', 'gtceu:pure_netherite 288'], 'nitrogen', 'ascendant', 444, GTValues.VA[GTValues.UHV], 76.8);
     HellForgeMat('rhenium_super_composite_alloy', 16, ['gtceu:rhenium 576', 'gtceu:weapon_grade_naquadah 288', 'gtceu:mercury_barium_calcium_cuprate 1008', 'gtceu:titanium_carbide 288', 'gtceu:samarium 144'], 'preon', 'abyssal', 1723, GTValues.VHA[GTValues.UXV], 46.1);
     HellForgeMat('abyssal_alloy', 14, ['gtceu:xeproda 720', 'gtceu:blue_alloy 432', 'gtceu:void 576', 'gtceu:flerovium 144', 'gtceu:zapolgium 144'], 'voidic', 'abyssal', 1586, GTValues.VHA[GTValues.UIV], 38.5);

@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
         '8x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire','64x gtceu:fine_stellarium_wire','64x kubejs:uepic_chip','64x kubejs:uepic_chip','32x kubejs:uepic_chip'], 
         ['gtceu:polyether_ether_ketone 25600', 'gtceu:indium_tin_lead_cadmium_soldering_alloy 14400', 'gtceu:naquadria 12800'],'start_core:dream_link_node', 160, GTValues.VHA[GTValues.UEV]);
     wirelessControllers('daydream_spire', ['gtceu:uev_machine_hull', '8x #gtceu:circuits/uiv', '12x gtceu:uev_field_generator','4x gtceu:dense_mythrolic_alloy_plate','8x gtceu:uev_emitter',
-        '8x gtceu:seaborgium_palladium_enriched_estalt_flerovium_alloy_quadruple_wire','64x gtceu:fine_ancient_runicalium_wire','64x kubejs:uepic_chip','64x kubejs:uepic_chip','64x kubejs:uepic_chip','64x kubejs:uepic_chip','64x kubejs:uepic_chip'], 
+        '8x gtceu:enriched_pallarovium_alloy_quadruple_wire','64x gtceu:fine_ancient_runicalium_wire','64x kubejs:uepic_chip','64x kubejs:uepic_chip','64x kubejs:uepic_chip','64x kubejs:uepic_chip','64x kubejs:uepic_chip'], 
         ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 25600', 'gtceu:naquadated_soldering_alloy 14400', 'gtceu:isovol 12800'], 'start_core:oneiric_relay', 192, GTValues.VHA[GTValues.UIV]);
 
     // === Hatches & Covers ===
@@ -82,15 +82,5 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.UV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
-
-    // Temp recipe for Thallium until structure revamp
-    event.recipes.gtceu.dimensional_destabiliser(id('temp_crookesite_mining'))
-        .itemInputs('kubejs:lightning_infused_shard')
-        .inputFluids('gtceu:pcb_coolant 16000')
-        .itemOutputs('32x gtceu:crookesite_dust')
-        .chancedOutput('gtceu:tiny_nether_star_dust', 8000, 0)
-        .outputFluids('gtceu:hot_pcb_coolant 19200')
-        .duration(400)
-        .EUt(GTValues.VHA[GTValues.UEV]);
 
 });

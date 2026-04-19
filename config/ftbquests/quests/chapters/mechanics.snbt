@@ -223,8 +223,12 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["1C81273869C0EC9F"]
-			description: ["{ftbquests.mechanics.bulking.description}"]
+			dependencies: ["13118B7518370623"]
+			description: [
+				"{ftbquests.mechanics.bulking.description.1}"
+				"{@pagebreak}"
+				"{ftbquests.mechanics.bulking.description.2}"
+			]
 			icon: "megacells:bulk_cell_component"
 			id: "33FE3C68B0BD21B1"
 			tasks: [{
@@ -252,6 +256,7 @@
 			]
 			icon: "start_core:threading_controller"
 			id: "143CFCE710B59455"
+			size: 1.0d
 			tasks: [{
 				id: "2259A7835F1A06B8"
 				title: "{ftbquests.mechanics.threading.title}"

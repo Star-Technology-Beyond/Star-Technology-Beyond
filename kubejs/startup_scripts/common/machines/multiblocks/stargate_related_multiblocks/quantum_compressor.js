@@ -1,11 +1,11 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 
-    event.create('large_quantum_compressor')
-        .category('gate_construction')
-        .setEUIO('in')
-        .setMaxIOSize(18, 1, 0, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_COMPRESS , FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ARC);
+    // event.create('large_quantum_compressor')
+    //     .category('gate_construction')
+    //     .setEUIO('in')
+    //     .setMaxIOSize(18, 1, 0, 0)
+    //     .setProgressBar(GuiTextures.PROGRESS_BAR_COMPRESS , FillDirection.LEFT_TO_RIGHT)
+    //     .setSound(GTSoundEntries.ARC);
 
     event.create('quantum_compressor_extraction')
         .category('gate_construction')
@@ -55,7 +55,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_GEARBOX.get()))
             .where('F', Predicates.blocks(GTBlocks.FIREBOX_TUNGSTENSTEEL.get()))
             .where('A', Predicates.blocks(GCYMBlocks.CASING_ATOMIC.get()))
-            .where('3', Predicates.blocks(GTBlocks.FUSION_CASING_MK3.get()))
+            .where('3', Predicates.blocks(GTBlocks.FUSION_CASING.get()))
             .where('W', Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get()))
             .where(' ', Predicates.any())
             .build())

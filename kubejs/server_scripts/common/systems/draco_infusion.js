@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line(id('draco_infusion'))
         .itemInputs(
             'gtceu:void_frame','6x gtceu:uev_robot_arm','2x gtceu:uev_field_generator','6x gtceu:dense_nyanium_plate','1x gtceu:uev_electric_pump',
-            '64x kubejs:uepic_chip', '48x gtceu:fine_seaborgium_palladium_enriched_estalt_flerovium_alloy_wire','3x gtceu:echo_shard_lens'
+            '64x kubejs:uepic_chip', '48x gtceu:fine_enriched_pallarovium_alloy_wire','3x gtceu:echo_shard_lens'
         )
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 57600','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 21600','gtceu:dragon_breath 500')
         .itemOutputs('gtceu:draco_infusion')

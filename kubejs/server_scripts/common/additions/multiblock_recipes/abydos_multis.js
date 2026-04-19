@@ -2,9 +2,9 @@ ServerEvents.recipes(event => {
     const id = global.id;
 
     event.recipes.gtceu.assembly_line(id('cyclonic_sifter'))
-        .itemInputs('gtceu:uhv_machine_hull', '12x #gtceu:circuits/uhv','56x kubejs:uepic_chip', '16x gtceu:stellarium_gear',
-            '8x gtceu:uhv_electric_pump', '4x gtceu:uhv_electric_motor', '2x gtceu:uhv_field_generator', '6x gtceu:pure_netherite_gear')
-        .inputFluids('gtceu:polyether_ether_ketone 4000','gtceu:gritty_akreyrium 280000')
+        .itemInputs('gtceu:zpm_machine_hull', '12x #gtceu:circuits/uv','56x gtceu:uhpic_chip', '16x gtceu:prismalium_gear',
+            '8x gtceu:zpm_electric_pump', '4x gtceu:zpm_electric_motor', '2x gtceu:zpm_field_generator', '6x gtceu:pure_netherite_gear')
+        .inputFluids('gtceu:polybenzimidazole 4000','gtceu:gritty_akreyrium 280000')
         .itemOutputs('gtceu:cyclonic_sifter')
         .duration(24000)
         .stationResearch(
@@ -48,9 +48,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line(id('molten_destabilizer'))
         .itemInputs(
-            'gtceu:uhv_machine_hull', '6x #gtceu:circuits/uhv', '4x gtceu:dense_naquadria_plate','64x gtceu:uhpic_chip','4x gtceu:neutronium_huge_fluid_pipe',
-            '4x gtceu:pure_netherite_rotor','4x gtceu:small_pure_netherite_gear','24x gtceu:uv_electric_pump')
-        .inputFluids('gtceu:polyether_ether_ketone 8000','gtceu:neutronium 7200')
+            'gtceu:zpm_machine_hull', '6x #gtceu:circuits/uv', '4x gtceu:dense_naquadria_plate','64x gtceu:uhpic_chip','4x gtceu:duranium_huge_fluid_pipe',
+            '4x gtceu:pure_netherite_rotor','4x gtceu:small_pure_netherite_gear','24x gtceu:zpm_electric_pump')
+        .inputFluids('gtceu:polybenzimidazole 8000','gtceu:gritty_akreyrium 72000')
         .itemOutputs('gtceu:molten_destabilizer')
         .duration(9000)
         .stationResearch(
@@ -61,20 +61,20 @@ ServerEvents.recipes(event => {
         )
         .EUt(GTValues.VA[GTValues.UV]); 
 
-    // event.recipes.gtceu.assembly_line(id('titan_forge'))
-    //     .itemInputs(
-    //         'gtceu:uv_machine_hull', '12x #gtceu:circuits/uv', '4x gtceu:dense_titan_steel_plate','64x gtceu:uhpic_chip',
-    //         '8x gtceu:uv_electric_piston', '4x gtceu:small_pure_netherite_gear', '2x gtceu:enriched_naquadah_quadruple_fluid_pipe', '4x gtceu:uv_electric_pump')
-    //     .inputFluids('gtceu:soldering_alloy 7200', 'gtceu:lubricant 5000', 'gtceu:naquadria 864')
-    //     .itemOutputs('gtceu:titan_forge')
-    //     .duration(6000)
-    //     .stationResearch(
-    //         researchRecipeBuilder => researchRecipeBuilder
-    //             .researchStack(Item.of('gtceu:large_extruder'))
-    //             .EUt(GTValues.VA[GTValues.ZPM])
-    //             .CWUt(128)
-    //     )
-    //     .EUt(GTValues.VHA[GTValues.UV]); 
+    event.recipes.gtceu.assembly_line(id('titan_forge'))
+        .itemInputs(
+            'gtceu:uv_machine_hull', '12x #gtceu:circuits/uv', '4x gtceu:dense_titan_steel_plate','64x gtceu:uhpic_chip',
+            '8x gtceu:uv_electric_piston', '4x gtceu:small_pure_netherite_gear', '2x gtceu:enriched_naquadah_quadruple_fluid_pipe', '4x gtceu:uv_electric_pump')
+        .inputFluids('gtceu:soldering_alloy 7200', 'gtceu:lubricant 5000', 'gtceu:naquadria 864')
+        .itemOutputs('gtceu:titan_forge')
+        .duration(6000)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:large_extruder'))
+                .EUt(GTValues.VA[GTValues.ZPM])
+                .CWUt(128)
+        )
+        .EUt(GTValues.VHA[GTValues.UV]); 
 
     event.recipes.gtceu.assembly_line(id('compact_assembly_line'))
         .itemInputs('4x gtceu:assembly_line','8x #gtceu:circuits/uhv','8x gtceu:uv_robot_arm','2x gtceu:uhv_electric_pump',
@@ -104,5 +104,35 @@ ServerEvents.recipes(event => {
                 .CWUt(144)
         )
         .EUt(GTValues.VHA[GTValues.UEV]);
-    
+
+    event.recipes.gtceu.assembly_line(id('super_heat_chamber'))
+        .itemInputs('gtceu:heat_chamber', '4x #gtceu:circuits/uhv', 'gtceu:double_void_plate', 
+                'gtceu:double_titanium_carbide_plate', 'gtceu:uv_field_generator', '64x gtceu:uhpic_chip', 
+                '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip', 
+                '48x gtceu:prismalium_single_wire')
+        .inputFluids('gtceu:hsse 6912', 'gtceu:niobium_titanium 1728')
+        .itemOutputs('gtceu:super_pressure_heat_chamber')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:heat_chamber'))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(128)
+            )
+        .duration(3200)
+        .EUt(GTValues.VHA[GTValues.UV]);
+
+    event.recipes.gtceu.assembly_line(id('exotic_rock_crusher'))
+        .itemInputs('gtceu:large_material_press', '8x gtceu:uv_electric_piston', '4x gtceu:heat_vent', '4x gtceu:silicon_bronze_frame', '4x #gtceu:circuits/uv',
+         '2x gtceu:titan_steel_ultradense_plate', '8x gtceu:titanium_carbide_plate', '4x gtceu:hsla_steel_plate' )
+        .inputFluids('gtceu:titan_steel 1296', 'gtceu:soldering_alloy 3744')
+        .itemOutputs('gtceu:exotic_tectonic_formation_apparatus')
+        .duration(2400)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:uv_rock_crusher'))
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(24)
+            )
+        .EUt(GTValues.VHA[GTValues.UV]);
+        
 });

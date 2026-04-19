@@ -85,8 +85,8 @@ ServerEvents.recipes(event => {
     // ME Pattern Buffer blanket diabled and ME I/O is in AE-Machinery as a Packmode determinate
 
     event.recipes.gtceu.assembler(id(`machine_facility`))
-        .itemInputs('gtceu:ulv_assembler','6x kubejs:ulv_robot_arm','4x #gtceu:circuits/lv',
-            '2x kubejs:ulv_conveyor_module','2x kubejs:ulv_emitter','2x kubejs:ulv_electric_pump',
+        .itemInputs('gtceu:ulv_assembler','6x gtceu:ulv_robot_arm','4x #gtceu:circuits/lv',
+            '2x gtceu:ulv_conveyor_module','2x kubejs:ulv_emitter','2x gtceu:ulv_electric_pump',
             '2x gtceu:steel_gear','2x gtceu:small_damascus_steel_gear')
         .inputFluids('gtceu:tin 864')
         .itemOutputs(`gtceu:machine_facility`)

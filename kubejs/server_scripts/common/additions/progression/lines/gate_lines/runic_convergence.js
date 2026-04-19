@@ -69,6 +69,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
     vcr(id('runic_convergence_infusion'))
+        .notConsumable('7x gtceu:ancient_runicalium_bolt')
         .inputFluids('gtceu:primordial_nitrosilicate 1000', 'gtceu:magnesium_nitride 1000')
         .outputFluids('gtceu:runic_convergence_infusion 1000')
         .duration(200)

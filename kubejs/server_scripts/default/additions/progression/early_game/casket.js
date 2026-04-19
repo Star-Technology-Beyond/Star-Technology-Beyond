@@ -41,19 +41,19 @@ global.not_hardmode(() => {
                 .EUt(GTValues.VHA[GTValues.LV]);
         };
 
-        potionRecipes(['3x thermal:corn', '3x minecraft:wheat', '2x minecraft:sugar'], 'sweetcord_beer'); // Haste
-        potionRecipes(['6x minecraft:apple', '2x minecraft:sugar'], 'apple_cidar'); // Slow Falling
+        potionRecipes(['3x thermal:corn', '3x minecraft:wheat', '2x minecraft:sugar'], 'sweetcorn_beer'); // Haste
+        potionRecipes(['6x minecraft:apple', '2x minecraft:sugar'], 'apple_cider'); // Slow Falling
         potionRecipes(['4x minecraft:carrot', '2x minecraft:wheat', '2x minecraft:sugar'], 'carrot_ale'); // Night Vision
         potionRecipes(['6x #forge:berries', '2x minecraft:sugar'], 'berry_wine'); // Speed
-        potionRecipes(['7x minecraft:bread', 'minecraft:sugar'], 'wheat_kvas'); // Jump Boost
+        potionRecipes(['7x minecraft:bread', 'minecraft:sugar'], 'wheat_kvass'); // Jump Boost
         potionRecipes(['#forge:crops/rice', 'minecraft:sugar'], 'sake'); // Reach, [custom effect?, Komaru related?]
 
         // .replaceIngredient() does not like template strings
-        event.shapeless(`4x kubejs:sweetcord_beer`, [`kubejs:sweetcord_beer_bucket`, 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle']).replaceIngredient(`kubejs:sweetcord_beer_bucket`, 'minecraft:bucket').id(`start:shapeless/sweetcord_beer`);
-        event.shapeless(`4x kubejs:apple_cidar`, [`kubejs:apple_cidar_bucket`, 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle']).replaceIngredient(`kubejs:apple_cidar_bucket`, 'minecraft:bucket').id(`start:shapeless/apple_cidar`);
+        event.shapeless(`4x kubejs:sweetcorn_beer`, [`kubejs:sweetcorn_beer_bucket`, 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle']).replaceIngredient(`kubejs:sweetcorn_beer_bucket`, 'minecraft:bucket').id(`start:shapeless/sweetcorn_beer`);
+        event.shapeless(`4x kubejs:apple_cider`, [`kubejs:apple_cider_bucket`, 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle']).replaceIngredient(`kubejs:apple_cider_bucket`, 'minecraft:bucket').id(`start:shapeless/apple_cider`);
         event.shapeless(`4x kubejs:carrot_ale`, [`kubejs:carrot_ale_bucket`, 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle']).replaceIngredient(`kubejs:carrot_ale_bucket`, 'minecraft:bucket').id(`start:shapeless/carrot_ale`);
         event.shapeless(`4x kubejs:berry_wine`, [`kubejs:berry_wine_bucket`, 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle']).replaceIngredient(`kubejs:berry_wine_bucket`, 'minecraft:bucket').id(`start:shapeless/berry_wine`);
-        event.shapeless(`4x kubejs:wheat_kvas`, [`kubejs:wheat_kvas_bucket`, 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle']).replaceIngredient(`kubejs:wheat_kvas_bucket`, 'minecraft:bucket').id(`start:shapeless/wheat_kvas`);
+        event.shapeless(`4x kubejs:wheat_kvass`, [`kubejs:wheat_kvass_bucket`, 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle']).replaceIngredient(`kubejs:wheat_kvass_bucket`, 'minecraft:bucket').id(`start:shapeless/wheat_kvass`);
         event.shapeless(`4x kubejs:sake`, [`kubejs:sake_bucket`, 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle', 'minecraft:glass_bottle']).replaceIngredient(`kubejs:sake_bucket`, 'minecraft:bucket').id(`start:shapeless/sake`);
 
     });

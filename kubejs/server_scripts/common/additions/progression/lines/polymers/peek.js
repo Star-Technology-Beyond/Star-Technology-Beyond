@@ -39,6 +39,7 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:acetone 500')
         .itemOutputs('7x gtceu:hydroquinone_dust')
         .duration(160)
+        .circuit(2)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
     event.recipes.gtceu.large_chemical_reactor(id('disodium_salt_of_hydroquinone_process')) 

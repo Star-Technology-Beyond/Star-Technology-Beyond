@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
         ], 300000, 1400, 'gtceu:wetware_processor_computer', 96, 64000
     );
 
-    //Runics - to be redone
+    //Runics
     circuitAssembler(3,'runic_processor','kubejs',[
             'kubejs:runic_convergence_processing_unit',
             'gtceu:crystal_soc',
@@ -242,16 +242,16 @@ ServerEvents.recipes(event => {
         .inputFluids(`gtceu:runic_convergence_infusion 7500`)
         .itemOutputs(`32x kubejs:runic_circuit_board`)
         .duration(1200)
-        .cleanroom(CleanroomType.CLEANROOM)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
     event.recipes.gtceu.circuit_assembler(id('runic_convergence_processing_unit'))
-        .itemInputs(`1x kubejs:runic_printed_circuit_board`,'kubejs:runic_engraved_plating','8x gtceu:polyether_ether_ketone_small_fluid_pipe',
+        .itemInputs(`1x kubejs:runic_printed_circuit_board`,'4x gtceu:uhpic_chip','8x gtceu:polyether_ether_ketone_small_fluid_pipe',
             '32x gtceu:silicone_rubber_foil','8x gtceu:trinaquadalloy_plate','8x gtceu:zircalloy_4_bolt')
         .inputFluids(`gtceu:runic_convergence_infusion 250`)
         .itemOutputs(`1x kubejs:runic_convergence_processing_unit`)
         .duration(600)
-        .cleanroom(CleanroomType.CLEANROOM)
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .EUt(GTValues.VA[GTValues.UV]);
 
     event.recipes.gtceu.circuit_assembler(id('draconic_circuit_board'))

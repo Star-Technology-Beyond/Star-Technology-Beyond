@@ -16,6 +16,13 @@ PlayerEvents.chat((event) => {
   if (message.startsWith("=")) {
     message = ("" + message).replace(/^=\s*/, "");
 
+    if (message === "help" || message.startsWith("help ")) {
+      let helpSubject = ("" + message).replace(/^help\s*/, "");
+      event.player.tell(calculatorShowDocumentation(helpSubject));
+      event.cancel();
+      return;
+    }
+
     try {
       /** @type {Token[]} */
       let tokens = calculatorLex(message);
@@ -81,15 +88,115 @@ let numberToString = (num) => {
   return num;
 };
 
-/** @typedef {{ t: "number", v: number }} ValueNumber */
-/** @typedef {{ t: "string", v: string }} ValueString */
-/** @typedef {{ t: "vec2", v: [number, number] }} ValueVec2 */
-/** @typedef {{ t: "vec3", v: [number, number, number] }} ValueVec3 */
-/** @typedef {ValueNumber | ValueString | ValueVec2 | ValueVec3} Value */
+let calculatorShowDocumentation = (() => {
+  let flatMap = function (arr, fn) {
+    return Array.prototype.concat.apply([], arr.map(fn));
+  };
 
-let calculatorExec = (() => {
-  /** @typedef {{ arguments?: Value["t"][], fn: (...args: Value[]) => Value }} CalculatorFunction */
+  let showMainHelp = () => {
+    let result = [];
 
+    let asCommand = (text, searchName) => {
+      return text
+        .clickSuggestCommand("=help " + searchName)
+        .hover(Text.of("=help " + searchName));
+    };
+
+    let uniqueOperators = calculatorDefinitions.operators
+      .map((f) => f.name.replace(/^(binOp|unOp|vec2|vec3|number|string)/, ""))
+      .filter((name, index, arr) => arr.indexOf(name) === index);
+
+    let allSuffixes = flatMap(calculatorDefinitions.suffixes, (s) => s.names);
+
+    result.push(Text.of("Operators:\n"));
+    result = result.concat(
+      flatMap(uniqueOperators, (searchName, i) => {
+        let label = asCommand(Text.green(searchName), searchName);
+        return i === 0 ? [label] : [Text.of(", "), label];
+      }),
+    );
+
+    result.push(Text.of("\nFunctions:\n"));
+    result = result.concat(
+      flatMap(calculatorDefinitions.functions, (f, i) => {
+        let label = asCommand(Text.green(f.name), f.name);
+        return i === 0 ? [label] : [Text.of(", "), label];
+      }),
+    );
+
+    result.push(Text.of("\nNumber suffixes:\n"));
+    result = result.concat(
+      flatMap(allSuffixes, (s, i) => {
+        let label = asCommand(Text.green(s), "_" + s);
+        return i === 0 ? [label] : [Text.of(", "), label];
+      }),
+    );
+
+    return Text.join(result);
+  };
+
+  /**
+   * @param {string} subject
+   * @returns {(CalculatorDocumentedFunction | CalculatorDocumentedOperator | CalculatorDocumentedConstant)[]}
+   */
+  let gatherMatchingDefinitions = (subject) => {
+    let filterEnds = (x) => x.name.endsWith(subject);
+    let filterEq = (x) => x.name === subject;
+    let filterSuffix = subject.startsWith("_")
+      ? (() => {
+          let subject1 = subject.substring(1);
+          return (x) => x.names.includes(subject1);
+        })()
+      : (x) => x.names.includes(subject);
+    let mapName = (kind) => (t) =>
+      Object.assign({}, t, {
+        name: `${t.fullName || t.name} (${kind})`,
+      });
+
+    return [].concat(
+      calculatorDefinitions.operators
+        .filter(filterEnds)
+        .map(mapName("operator")),
+      calculatorDefinitions.functions.filter(filterEq).map(mapName("function")),
+      calculatorDefinitions.constants.filter(filterEq).map(mapName("constant")),
+      calculatorDefinitions.suffixes
+        .filter(filterSuffix)
+        .map(mapName("number suffix")),
+    );
+  };
+
+  return (subject) => {
+    if (!subject) {
+      return showMainHelp();
+    }
+
+    let helpTargets = gatherMatchingDefinitions(subject);
+
+    if (helpTargets.length === 0) {
+      return Text.red("Help not found for " + subject);
+    }
+
+    return flatMap(helpTargets, (helpTarget, i) => {
+      let ret = [
+        Text.green(helpTarget.name),
+        Text.aqua("\nUsage:\n"),
+        Text.of(helpTarget.usage),
+        Text.aqua("\nDescription:\n"),
+        Text.of(helpTarget.description),
+      ];
+      return i === 0 ? ret : [Text.of("\n"), ret];
+    });
+  };
+})();
+
+/** @typedef {{ arguments?: Value["t"][], fn: (...args: Value[]) => Value }} CalculatorFunction */
+/** @typedef {{ name: string; fullName?: string, usage: string, description: string, implementation: CalculatorFunction | CalculatorFunction[] }} CalculatorDocumentedFunction */
+/** @typedef {{ name: string; fullName?: string, usage: string, description: string, implementation: CalculatorFunction | CalculatorFunction[] }} CalculatorDocumentedOperator */
+/** @typedef {{ name: string; fullName?: string, usage: string, description: string, value: Value }} CalculatorDocumentedConstant */
+/** @typedef {{ names: string[]; fullName?: string, usage: string, description: string }} CalculatorDocumentedSuffix */
+
+/** @type {{ functions: CalculatorDocumentedFunction[], operators: CalculatorDocumentedOperator[], constants: CalculatorDocumentedConstant[] }} */
+let calculatorDefinitions = (() => {
   /** @type {(fn: (value: number) => number) => CalculatorFunction[]} */
   let componentsOverloads = (fn) => {
     return [
@@ -115,324 +222,1082 @@ let calculatorExec = (() => {
       },
     ];
   };
+  /**
+   * Validate first!
+   *
+   * @param {ValueVec2 | ValueVec3} value
+   * @param {string} identifier
+   * @returns {ValueNumber | ValueVec2 | ValueVec3}
+   */
+  function vecAccessors(value, identifier) {
+    let v = Array.from(identifier).map((accessor) => {
+      switch (accessor) {
+        case "x":
+          return value.v[0];
+        case "y":
+          return value.v[1];
+        case "z":
+          return value.v[2];
+      }
+    });
+    return {
+      t: ["", "number", "vec2", "vec3"][identifier.length],
+      v: v.length === 1 ? v[0] : v,
+    };
+  }
 
-  /** @type {Record<string, CalculatorFunction | CalculatorFunction[]>} */
-  let functions = {
-    vec2: [
-      { arguments: [], fn: () => ({ t: "vec2", v: [0, 0] }) },
-      { arguments: ["number"], fn: (x) => ({ t: "vec2", v: [x.v, x.v] }) },
+  /**
+   * @param {string} fnName
+   * @param {`${string}:${string}`[][]} overloads
+   */
+  function formatOverloads(fnName, overloads) {
+    let flatMap = function (arr, fn) {
+      return Array.prototype.concat.apply([], arr.map(fn));
+    };
+
+    return Text.join(
+      flatMap(overloads, (overload, i) => {
+        let label = [].concat(
+          [Text.gray(fnName), Text.of("(")],
+          flatMap(overload, (argRaw, j) => {
+            let arg = ("" + argRaw).split(":");
+            let label = [
+              Text.lightPurple(arg[0]),
+              Text.gray(": "),
+              Text.gray(arg[1]),
+            ];
+            if (arg[0].startsWith("...")) {
+              label[0] = Text.lightPurple(arg[0].substring(3));
+              label = [Text.gray("...")].concat(label);
+            }
+            return j === 0 ? label : [Text.of(", ")].concat(label);
+          }),
+          [Text.of(")")],
+        );
+        return i === 0 ? label : [Text.of(", ")].concat(label);
+      }),
+    );
+  }
+
+  return {
+    functions: [
       {
-        arguments: ["number", "number"],
-        fn: (x, y) => ({ t: "vec2", v: [x.v, y.v] }),
-      },
-    ],
-    vec3: [
-      { arguments: [], fn: () => ({ t: "vec3", v: [0, 0, 0] }) },
-      { arguments: ["number"], fn: (x) => ({ t: "vec3", v: [x.v, x.v, x.v] }) },
-      {
-        arguments: ["vec2", "number"],
-        fn: (xy, z) => ({ t: "vec3", v: [xy.v[0], xy.v[1], z.v] }),
-      },
-      {
-        arguments: ["number", "number", "number"],
-        fn: (x, y, z) => ({ t: "vec3", v: [x.v, y.v, z.v] }),
-      },
-    ],
-    dot: [
-      {
-        arguments: ["vec2", "vec2"],
-        fn: (a, b) => ({ t: "number", v: a.v[0] * b.v[0] + a.v[1] * b.v[1] }),
-      },
-      {
-        arguments: ["vec3", "vec3"],
-        fn: (a, b) => ({
-          t: "number",
-          v: a.v[0] * b.v[0] + a.v[1] * b.v[1] + a.v[2] * b.v[2],
-        }),
-      },
-    ],
-    sqrt: componentsOverloads(Math.sqrt),
-    floor: componentsOverloads(Math.floor),
-    ceil: componentsOverloads(Math.ceil),
-    sin: componentsOverloads(Math.sin),
-    cos: componentsOverloads(Math.cos),
-    tan: componentsOverloads(Math.tan),
-    acos: componentsOverloads(Math.acos),
-    asin: componentsOverloads(Math.asin),
-    atan: componentsOverloads(Math.atan),
-    atan2: [
-      {
-        arguments: ["number", "number"],
-        fn: (y, x) => ({ t: "number", v: Math.atan2(y.v, x.v) }),
-      },
-    ],
-    sinh: componentsOverloads(Math.sinh),
-    cosh: componentsOverloads(Math.cosh),
-    tanh: componentsOverloads(Math.tanh),
-    acosh: componentsOverloads(Math.acosh),
-    asinh: componentsOverloads(Math.asinh),
-    atanh: componentsOverloads(Math.atanh),
-    ln: componentsOverloads(JavaMath.log),
-    log: [
-      {
-        arguments: ["number", "number"],
-        fn: (base, v) => ({
-          t: "number",
-          v: fn(JavaMath.log(v.v) / JavaMath.log(base.v)),
-        }),
+        name: "vec2",
+        usage: formatOverloads("vec2", [
+          [],
+          ["x:number", "y:number"],
+          ["xy:number"],
+        ]),
+        description:
+          "constructs a bidimensional vector; you can access the components with .x and .y, or you can §oswizzle§r them to create new vectors (like .xyx)",
+        implementation: [
+          { arguments: [], fn: () => ({ t: "vec2", v: [0, 0] }) },
+          { arguments: ["number"], fn: (x) => ({ t: "vec2", v: [x.v, x.v] }) },
+          {
+            arguments: ["number", "number"],
+            fn: (x, y) => ({ t: "vec2", v: [x.v, y.v] }),
+          },
+        ],
       },
       {
-        arguments: ["number", "vec2"],
-        fn: (base, v) => ({
-          t: "vec2",
-          v: v.v.map((v) => JavaMath.log(v) / JavaMath.log(base.v)),
-        }),
+        name: "vec3",
+        usage: formatOverloads("vec3", [
+          [],
+          ["x:number", "y:number", "z:number"],
+          ["xyz:number"],
+          ["xy:vec2", "z:number"],
+        ]),
+        description:
+          "constructs a tridimensional vector; you can access the components with .x, .y and .z, or you can §oswizzle§r them to create new vectors (like .zy)",
+        implementation: [
+          { arguments: [], fn: () => ({ t: "vec3", v: [0, 0, 0] }) },
+          {
+            arguments: ["number"],
+            fn: (x) => ({ t: "vec3", v: [x.v, x.v, x.v] }),
+          },
+          {
+            arguments: ["vec2", "number"],
+            fn: (xy, z) => ({ t: "vec3", v: [xy.v[0], xy.v[1], z.v] }),
+          },
+          {
+            arguments: ["number", "number", "number"],
+            fn: (x, y, z) => ({ t: "vec3", v: [x.v, y.v, z.v] }),
+          },
+        ],
       },
       {
-        arguments: ["number", "vec3"],
-        fn: (base, v) => ({
-          t: "vec3",
-          v: v.v.map((v) => JavaMath.log(v) / JavaMath.log(base.v)),
-        }),
+        name: "dot",
+        usage: formatOverloads("dot", [
+          ["a:vec2", "b:vec2"],
+          ["a:vec3", "b:vec3"],
+        ]),
+        description: "returns the dot product",
+        implementation: [
+          {
+            arguments: ["vec2", "vec2"],
+            fn: (a, b) => ({
+              t: "number",
+              v: a.v[0] * b.v[0] + a.v[1] * b.v[1],
+            }),
+          },
+          {
+            arguments: ["vec3", "vec3"],
+            fn: (a, b) => ({
+              t: "number",
+              v: a.v[0] * b.v[0] + a.v[1] * b.v[1] + a.v[2] * b.v[2],
+            }),
+          },
+        ],
       },
-    ],
-    log2: componentsOverloads((v) => JavaMath.log(v) / JavaMath.log(2)),
-    log2: componentsOverloads(JavaMath.log10),
-    min: [
       {
+        name: "sqrt",
+        usage: formatOverloads("sqrt", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the square root of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.sqrt),
+      },
+      {
+        name: "floor",
+        usage: formatOverloads("floor", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the largest integer less than or equal to the argument; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.floor),
+      },
+      {
+        name: "ceil",
+        usage: formatOverloads("ceil", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the smallest integer less than or equal to the argument; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.ceil),
+      },
+      {
+        name: "sin",
+        usage: formatOverloads("sin", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the sine of the input in radians; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.sin),
+      },
+      {
+        name: "cos",
+        usage: formatOverloads("cos", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the cosine of the input in radians; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.cos),
+      },
+      {
+        name: "tan",
+        usage: formatOverloads("tan", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the tangent of the input in radians; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.tan),
+      },
+      {
+        name: "acos",
+        usage: formatOverloads("acos", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the inverse cosine (in radians) of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.acos),
+      },
+      {
+        name: "asin",
+        usage: formatOverloads("asin", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the inverse sine (in radians) of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.asin),
+      },
+      {
+        name: "atan",
+        usage: formatOverloads("atan", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the inverse tangent (in radians) of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.atan),
+      },
+      {
+        name: "atan2",
+        usage: "atan2(xy§7: vec2§r), atan2(y§7: number§r, x§7: number§r)",
+        description:
+          "returns the angle in the plane (in radians) between the positive x-axis and the ray from (0, 0) and the point (x, y)",
+        implementation: [
+          {
+            arguments: ["vec2"],
+            fn: (v) => ({ t: "number", v: Math.atan2(v[1], v[0]) }),
+          },
+          {
+            arguments: ["number", "number"],
+            fn: (y, x) => ({ t: "number", v: Math.atan2(y.v, x.v) }),
+          },
+        ],
+      },
+      {
+        name: "sinh",
+        usage: formatOverloads("sinh", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the hyperbolic sine of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.sinh),
+      },
+      {
+        name: "cosh",
+        usage: formatOverloads("cosh", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the hyperbolic cosine of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.cosh),
+      },
+      {
+        name: "tanh",
+        usage: formatOverloads("tanh", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the hyperbolic tangent of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.tanh),
+      },
+      {
+        name: "acosh",
+        usage: formatOverloads("acosh", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the inverse hyperbolic cosine of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.acosh),
+      },
+      {
+        name: "asinh",
+        usage: formatOverloads("asinh", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the inverse hyperbolic sine of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.asinh),
+      },
+      {
+        name: "atanh",
+        usage: formatOverloads("atanh", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the inverse hyperbolic tangent of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.atanh),
+      },
+      {
+        name: "ln",
+        usage: formatOverloads("ln", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the natural logarithm (base e) of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(JavaMath.log),
+      },
+      {
+        name: "log",
+        usage: formatOverloads("log", [
+          ["base:number", "value:number"],
+          ["base:number", "value:vec2"],
+          ["base:number", "value:vec3"],
+        ]),
+        description:
+          "returns the logarithm in the specified base of the input; if the input is a vector, it's applied to all the components",
+        implementation: [
+          {
+            arguments: ["number", "number"],
+            fn: (base, v) => ({
+              t: "number",
+              v: fn(JavaMath.log(v.v) / JavaMath.log(base.v)),
+            }),
+          },
+          {
+            arguments: ["number", "vec2"],
+            fn: (base, v) => ({
+              t: "vec2",
+              v: v.v.map((v) => JavaMath.log(v) / JavaMath.log(base.v)),
+            }),
+          },
+          {
+            arguments: ["number", "vec3"],
+            fn: (base, v) => ({
+              t: "vec3",
+              v: v.v.map((v) => JavaMath.log(v) / JavaMath.log(base.v)),
+            }),
+          },
+        ],
+      },
+      {
+        name: "log2",
+        usage: formatOverloads("log2", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the logarithm in base 2 of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(
+          (v) => JavaMath.log(v) / JavaMath.log(2),
+        ),
+      },
+      {
+        name: "log10",
+        usage: formatOverloads("log10", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the logarithm in base 10 of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(JavaMath.log10),
+      },
+      {
+        name: "min",
+        usage: formatOverloads("min", [[["...values:number[]"]]]),
+        description: "returns the smallest of the numbers given as input",
+        implementation: {
+          fn: function () {
+            /** @type {Value[]} */
+            let args = Array.from(arguments);
+            if (args.length === 0) {
+              throw new Error(
+                "wrong argument count for max: expected 1 or more, got 0",
+              );
+            }
+            if (!args.some((arg) => arg.t !== "number")) {
+              throw new Error(
+                "wrong argument types for max: expected all numbers",
+              );
+            }
+            return {
+              t: "number",
+              v: Math.min.apply(
+                null,
+                args.map((arg) => arg.v),
+              ),
+            };
+          },
+        },
+      },
+      {
+        name: "max",
+        usage: formatOverloads("max", [[["...values:number[]"]]]),
+        description: "returns the largest of the numbers given as input",
         fn: function () {
-          /** @type {Value[]} */
           let args = Array.from(arguments);
           if (args.length === 0) {
             throw new Error(
               "wrong argument count for max: expected 1 or more, got 0",
             );
           }
-          if (!args.some((arg) => arg.t !== "number")) {
+          if (args.some((arg) => arg.t !== "number")) {
             throw new Error(
               "wrong argument types for max: expected all numbers",
             );
           }
           return {
             t: "number",
-            v: Math.min.apply(
+            v: Math.max.apply(
               null,
               args.map((arg) => arg.v),
             ),
           };
         },
       },
-    ],
-    max: {
-      fn: function () {
-        let args = Array.from(arguments);
-        if (args.length === 0) {
-          throw new Error(
-            "wrong argument count for max: expected 1 or more, got 0",
-          );
-        }
-        if (args.some((arg) => arg.t !== "number")) {
-          throw new Error("wrong argument types for max: expected all numbers");
-        }
-        return {
-          t: "number",
-          v: Math.max.apply(
-            null,
-            args.map((arg) => arg.v),
-          ),
-        };
-      },
-    },
-    oc: {
-      arguments: ["number", "number"],
-      fn: (duration, steps) => {
-        if (steps.v <= 0)
-          throw new Error(
-            "wrong argument 'steps' for function oc: must be greater than 0",
-          );
-        return {
-          t: "number",
-          v: Math.max(Math.floor(duration.v / (2 << (steps.v - 1))), 1),
-        };
-      },
-    },
-    poc: {
-      arguments: ["number", "number"],
-      fn: (duration, steps) => {
-        if (steps.v <= 0)
-          throw new Error(
-            "wrong argument 'steps' for function poc: must be greater than 0",
-          );
-        return {
-          t: "number",
-          v: Math.max(Math.floor(duration.v / (4 << (steps.v - 1))), 1),
-        };
-      },
-    },
-    formatSeconds: {
-      arguments: ["number"],
-      fn: (duration) => ({ t: "number", v: duration.v / 20 }),
-    },
-    formatTier: {
-      arguments: ["number"],
-      fn: (tier) => {
-        if (!(0 <= tier.v && tier.v < GTValues.VNF.length))
-          throw new Error("invalid tier");
-        return { t: "string", v: GTValues.VNF[tier.v] + "§r" };
-      },
-    },
-    formatEUt: {
-      arguments: ["number"],
-      fn: (eut) => {
-        let tierIndex = $GTUtil.getFloorTierByVoltage(eut.v) + 1;
-        let perc = eut.v / GTV[tierIndex];
-        return {
-          t: "string",
-          v: numberToString(perc) + "A of " + GTValues.VNF[tierIndex] + "§r",
-        };
-      },
-    },
-    formatAmps: {
-      arguments: ["number"],
-      fn: (eut) => {
-        let tierIndex = $GTUtil.getFloorTierByVoltage(eut.v);
-        let perc = eut.v / GTV[tierIndex];
-        return {
-          t: "string",
-          v: numberToString(perc) + "A of " + GTValues.VNF[tierIndex] + "§r",
-        };
-      },
-    },
-    voltage: {
-      arguments: ["number"],
-      fn: (tier) => {
-        if (!(0 <= tier.v && tier.v < GTV.length))
-          throw new Error("invalid tier");
-        return { t: "number", v: GTV[tier.v] };
-      },
-    },
-    V: {
-      arguments: ["number"],
-      fn: (eut) => {
-        return { t: "number", v: $GTUtil.getFloorTierByVoltage(eut.v) + 1 };
-      },
-    },
-    parallels: [
       {
-        arguments: ["number", "number"],
-        fn: (eut, ocTier) => {
-          let recipeTier = $GTUtil.getFloorTierByVoltage(eut.v) + 1;
-          let numOfOc = ocTier.v - recipeTier;
-          if (numOfOc <= 0)
-            throw new Error(
-              "wrong arguments for function 'parallels': ocTier 2 smol",
-            );
-
-          let cap = Math.floor(
-            (GTV[recipeTier] / eut.v) * Math.pow(4, numOfOc),
-          );
-          return { t: "number", v: cap };
+        name: "oc",
+        usage: formatOverloads("oc", [
+          ["duration:number", "overclocks:number"],
+        ]),
+        description:
+          "returns the duration after the specified steps of normal overclock",
+        implementation: {
+          arguments: ["number", "number"],
+          fn: (duration, steps) => {
+            if (steps.v <= 0)
+              throw new Error(
+                "wrong argument 'steps' for function oc: must be greater than 0",
+              );
+            return {
+              t: "number",
+              v: Math.max(Math.floor(duration.v / (2 << (steps.v - 1))), 1),
+            };
+          },
         },
       },
       {
-        arguments: ["vec2", "number"],
-        fn: (recipeInfo, ocTier) => {
-          let recipeTier = $GTUtil.getFloorTierByVoltage(recipeInfo.v[0]) + 1;
-          let numOfOc = ocTier.v - recipeTier;
-          if (numOfOc <= 0)
-            throw new Error(
-              "wrong arguments for function 'parallels': ocTier 2 smol",
-            );
+        name: "poc",
+        usage: formatOverloads("poc", [
+          ["duration:number", "overclocks:number"],
+        ]),
+        description:
+          "returns the duration after the specified steps of perfect overclock",
+        implementation: {
+          arguments: ["number", "number"],
+          fn: (duration, steps) => {
+            if (steps.v <= 0)
+              throw new Error(
+                "wrong argument 'steps' for function poc: must be greater than 0",
+              );
+            return {
+              t: "number",
+              v: Math.max(Math.floor(duration.v / (4 << (steps.v - 1))), 1),
+            };
+          },
+        },
+      },
+      {
+        name: "toSeconds",
+        usage: formatOverloads("toSeconds", [["ticks:number"]]),
+        description:
+          "converts the input ticks to seconds (1 second = 20 ticks)",
+        implementation: {
+          arguments: ["number"],
+          fn: (duration) => ({ t: "number", v: duration.v / 20 }),
+        },
+      },
+      {
+        name: "formatTier",
+        usage: formatOverloads("formatTier", [["tier:number"]]),
+        description:
+          "returns the formatted version of the specified tier index",
+        implementation: {
+          arguments: ["number"],
+          fn: (tier) => {
+            if (!(0 <= tier.v && tier.v < GTValues.VNF.length))
+              throw new Error("invalid tier");
+            return { t: "string", v: GTValues.VNF[tier.v] + "§r" };
+          },
+        },
+      },
+      {
+        name: "formatEUt",
+        usage: formatOverloads("formatEUt", [["EUt:number"]]),
+        description:
+          "returns the formatted version of the specified EU/t value, as a percentage of amps for the voltage tier above (useful for recipes)",
+        implementation: {
+          arguments: ["number"],
+          fn: (eut) => {
+            let tierIndex = $GTUtil.getFloorTierByVoltage(eut.v) + 1;
+            let perc = eut.v / GTV[tierIndex];
+            return {
+              t: "string",
+              v:
+                numberToString(perc) + "A of " + GTValues.VNF[tierIndex] + "§r",
+            };
+          },
+        },
+      },
+      {
+        name: "formatAmps",
+        usage: formatOverloads("formatAmps", [["EUt:number"]]),
+        description:
+          "returns the formatted version of the specified EU/t value, as a multiple of amps for the voltage tier below (useful for generators)",
+        implementation: {
+          arguments: ["number"],
+          fn: (eut) => {
+            let tierIndex = $GTUtil.getFloorTierByVoltage(eut.v);
+            let perc = eut.v / GTV[tierIndex];
+            return {
+              t: "string",
+              v:
+                numberToString(perc) + "A of " + GTValues.VNF[tierIndex] + "§r",
+            };
+          },
+        },
+      },
+      {
+        name: "voltage",
+        usage: formatOverloads("voltage", [["tier:number"]]),
+        description: "returns the EU/t of 1 amp of the specified tier index",
+        implementation: {
+          arguments: ["number"],
+          fn: (tier) => {
+            if (!(0 <= tier.v && tier.v < GTV.length))
+              throw new Error("invalid tier");
+            return { t: "number", v: GTV[tier.v] };
+          },
+        },
+      },
+      {
+        name: "V",
+        usage: formatOverloads("V", [["EUt:number"]]),
+        description:
+          "returns the index of the voltage tier required to run a recipe with that EU/t requirement",
+        implementation: {
+          arguments: ["number"],
+          fn: (eut) => {
+            return { t: "number", v: $GTUtil.getFloorTierByVoltage(eut.v) + 1 };
+          },
+        },
+      },
+      {
+        name: "parallels",
+        usage: formatOverloads("parallels", [
+          ["EUt:number", "overclocks:number"],
+          ["recipe:vec2", "overclocks:number"],
+        ]),
+        description:
+          "returns the maximum number of parallels for a recipe with the specified EU/t cost and overclocked the specified times; if the first input parameter is a vec2 then it's considerered a (EU/t, duration) pair and the paralleled duration is also calculated",
+        implementation: [
+          {
+            arguments: ["number", "number"],
+            fn: (eut, ocTier) => {
+              let recipeTier = $GTUtil.getFloorTierByVoltage(eut.v) + 1;
+              let numOfOc = ocTier.v - recipeTier;
+              if (numOfOc <= 0)
+                throw new Error(
+                  "wrong arguments for function 'parallels': ocTier 2 smol",
+                );
 
-          let cap = Math.floor(
-            (GTV[recipeTier] / recipeInfo.v[0]) * Math.pow(4, numOfOc),
-          );
-          let ocDuration = Math.max(
-            Math.floor(recipeInfo.v[1] / (2 << (numOfOc - 1))),
-            1,
-          );
-          let duration = ocDuration * Math.pow(2, numOfOc);
-          return { t: "vec2", v: [cap, duration] };
+              let cap = Math.floor(
+                (GTV[recipeTier] / eut.v) * Math.pow(4, numOfOc),
+              );
+              return { t: "number", v: cap };
+            },
+          },
+          {
+            arguments: ["vec2", "number"],
+            fn: (recipeInfo, ocTier) => {
+              let recipeTier =
+                $GTUtil.getFloorTierByVoltage(recipeInfo.v[0]) + 1;
+              let numOfOc = ocTier.v - recipeTier;
+              if (numOfOc <= 0)
+                throw new Error(
+                  "wrong arguments for function 'parallels': ocTier 2 smol",
+                );
+
+              let cap = Math.floor(
+                (GTV[recipeTier] / recipeInfo.v[0]) * Math.pow(4, numOfOc),
+              );
+              let ocDuration = Math.max(
+                Math.floor(recipeInfo.v[1] / (2 << (numOfOc - 1))),
+                1,
+              );
+              let duration = ocDuration * Math.pow(2, numOfOc);
+              return { t: "vec2", v: [cap, duration] };
+            },
+          },
+        ],
+      },
+      {
+        name: "recipe",
+        usage: formatOverloads("recipe", [["id:string"]]),
+        description:
+          "returns the EU/t and duration of the recipe with the specified id as a vec2(EU/t, duration)",
+        implementation: {
+          arguments: ["string"],
+          fn: (recipeId) => {
+            let recipeManager =
+              $KubeJSReloadListener.resources.getRecipeManager();
+            let recipeOptional = recipeManager.byKey(recipeId.v);
+            if (!recipeOptional.isPresent())
+              throw new Error(
+                "wrong arguments for function 'recipe': no recipe found",
+              );
+            let recipe = recipeOptional.get();
+            if (!(recipe instanceof $GTRecipe))
+              throw new Error(
+                "wrong arguments for function 'recipe': not a GTRecipe",
+              );
+            return {
+              t: "vec2",
+              v: [$RecipeHelper.getRealEUt(recipe), recipe.duration],
+            };
+          },
         },
       },
     ],
-    recipe: {
-      arguments: ["string"],
-      fn: (recipeId) => {
-        let recipeManager = $KubeJSReloadListener.resources.getRecipeManager();
-        let recipeOptional = recipeManager.byKey(recipeId.v);
-        if (!recipeOptional.isPresent())
-          throw new Error(
-            "wrong arguments for function 'recipe': no recipe found",
-          );
-        let recipe = recipeOptional.get();
-        if (!(recipe instanceof $GTRecipe))
-          throw new Error(
-            "wrong arguments for function 'recipe': not a GTRecipe",
-          );
-        return {
-          t: "vec2",
-          v: [$RecipeHelper.getRealEUt(recipe), recipe.duration],
-        };
+    operators: [
+      {
+        name: "unOp+",
+        fullName: "Unary plus",
+        usage: "+§7number§r, +§7vec2§r, +§7vec3§r",
+        description: "does nothing to number or vectors",
+        implementation: componentsOverloads((v) => +v),
       },
-    },
+      {
+        name: "unOp-",
+        fullName: "Negation",
+        usage: "-§7number§r, -§7vec2§r, -§7vec3§r",
+        description:
+          "negates the value; if used with vectors then each component is negated individually",
+        implementation: componentsOverloads((v) => -v),
+      },
+      {
+        name: "binOp+",
+        fullName: "Addition",
+        usage:
+          "§7number§r + §7number§r, §7vec2§r + §7vec2§r, §7vec3§r + §7vec3§r",
+        description:
+          "adds two values together; if used with vectors then each component is added individually",
+        implementation: componentsOverloads2((a, b) => a + b),
+      },
+      {
+        name: "binOp-",
+        fullName: "Subtraction",
+        usage:
+          "§7number§r - §7number§r, §7vec2§r - §7vec2§r, §7vec3§r - §7vec3§r",
+        description:
+          "subtracts the first value from the second value; if used with vectors then each component is subtracted individually",
+        implementation: componentsOverloads2((a, b) => a - b),
+      },
+      {
+        name: "binOp*",
+        fullName: "Multiplication",
+        usage:
+          "§7number§r * §7number§r, §7vec2§r * §7vec2§r, §7vec3§r * §7vec3§r, §7number§r * §7vec2§r, §7vec2§r * §7number§r, §7number§r * §7vec3§r, §7vec3§r * §7number§r",
+        description:
+          "multiplies the two values together; if both the values are vectors, then each component is multiplied individually; if one value is a number and other is a vector, the number is multiplied to each component of the vector",
+        implementation: componentsOverloads2((a, b) => a * b).concat(
+          {
+            arguments: ["number", "vec2"],
+            fn: (a, b) => ({ t: "vec2", v: [a.v * b.v[0], a.v * b.v[1]] }),
+          },
+          {
+            arguments: ["vec2", "number"],
+            fn: (a, b) => ({ t: "vec2", v: [a.v[0] * b.v, a.v[1] * b.v] }),
+          },
+          {
+            arguments: ["number", "vec3"],
+            fn: (a, b) => ({
+              t: "vec3",
+              v: [a.v * b.v[0], a.v * b.v[1], a.v * b.v[2]],
+            }),
+          },
+          {
+            arguments: ["vec3", "number"],
+            fn: (a, b) => ({
+              t: "vec3",
+              v: [a.v[0] * b.v, a.v[1] * b.v, a.v[2] * b.v],
+            }),
+          },
+        ),
+      },
+      {
+        name: "binOp/",
+        fullName: "Division",
+        usage:
+          "§7number§r / §7number§r, §7vec2§r / §7vec2§r, §7vec3§r / §7vec3§r",
+        description:
+          "divides the first value by the second value; if used with vectors then each component is divided individually",
+        implementation: componentsOverloads2((a, b) => a / b),
+      },
+      {
+        name: "binOp//",
+        fullName: "Floor division",
+        usage:
+          "§7number§r // §7number§r, §7vec2§r // §7vec2§r, §7vec3§r // §7vec3§r",
+        description:
+          "performs the floor division of the first value by the second value, equivalent to floor(v1 / v2); if used with vectors then each component is divided individually",
+        implementation: componentsOverloads2((a, b) => Math.floor(a / b)),
+      },
+      {
+        name: "binOp%",
+        fullName: "Modulo",
+        usage:
+          "§7number§r % §7number§r, §7vec2§r % §7vec2§r, §7vec3§r % §7vec3§r",
+        description:
+          "performs the modulo division of the first value by the second value, which is the remainder of the division; if used with vectors then each component is divided individually",
+        implementation: componentsOverloads2((a, b) => a % b),
+      },
+      {
+        name: "binOp^",
+        fullName: "Exponentiation",
+        usage:
+          "§7number§r ^ §7number§r, §7vec2§r ^ §7vec2§r, §7vec3§r ^ §7vec3§r, §7number§r ** §7number§r, §7vec2§r ** §7vec2§r, §7vec3§r ** §7vec3§r",
+        description:
+          "raises the first value to the power of the second value; if used with vectors then each component is exponentiated individually",
+        implementation: componentsOverloads2((a, b) => Math.pow(a, b)),
+      },
+      {
+        name: "vec2.",
+        fullName: "Vec2 members",
+        usage: "§7vec2§r.x, §7vec2§r.y, §7vec2§r.xyx",
+        description:
+          "access the components of the vec2; you can use .x or .y to get the corresponding component, or you can §oswizzle§r them to create new vectors (like .xyx)",
+        implementation: {
+          fn: (value, identifierValue) => {
+            /** @type {string} */
+            let identifier = identifierValue.v;
+            if (
+              1 <= identifier.length &&
+              identifier.length <= 3 &&
+              identifier.match(/^[xy]+$/)
+            ) {
+              return vecAccessors(value, identifier.v);
+            }
+            throw new Error(
+              "non-existing member " + identifier + " for type " + value.t,
+            );
+          },
+        },
+      },
+      {
+        name: "vec3.",
+        fullName: "Vec3 members",
+        usage: "§7vec3§r.x, §7vec3§r.y, §7vec3§r.z, §7vec3§r.xz",
+        description:
+          "access the components of the vec3; you can use .x, .y or .z to get the corresponding component, or you can §oswizzle§r them to create new vectors (like .xz)",
+        implementation: {
+          fn: (value, identifierValue) => {
+            /** @type {string} */
+            let identifier = identifierValue.v;
+            if (
+              1 <= identifier.length &&
+              identifier.length <= 3 &&
+              identifier.match(/^[xyz]+$/)
+            ) {
+              return vecAccessors(value, identifier.v);
+            }
+            throw new Error(
+              "non-existing member " + identifier + " for type " + value.t,
+            );
+          },
+        },
+      },
+      {
+        name: "string.",
+        fullName: "String members",
+        usage: "§7string§r.length",
+        description: "access the length of the string",
+        implementation: {
+          fn: (value, identifierValue) => {
+            /** @type {string} */
+            let identifier = identifierValue.v;
+            if (identifier === "length") {
+              return { t: "number", v: value.v.length };
+            }
+            throw new Error(
+              "non-existing member " + identifier + " for type " + value.t,
+            );
+          },
+        },
+      },
+    ],
+    constants: [
+      {
+        name: "e",
+        usage: "e§7: number§r",
+        description:
+          "represents Euler's number, the base of natural logarithms, e, which is approximately 2.718",
+        value: { t: "number", v: JavaMath.E },
+      },
+      {
+        name: "pi",
+        usage: "pi§7: number§r",
+        description:
+          "represents the ratio of the circumference of a circle to its diameter, approximately 3.14159",
+        value: { t: "number", v: JavaMath.PI },
+      },
+      {
+        name: "ULV",
+        usage: "ULV§7: number§r",
+        description: "the tier index of the ULV tier, which is 0",
+        value: { t: "number", v: GTValues.ULV },
+      },
+      {
+        name: "LV",
+        usage: "LV§7: number§r",
+        description: "the tier index of the LV tier, which is 1",
+        value: { t: "number", v: GTValues.LV },
+      },
+      {
+        name: "MV",
+        usage: "MV§7: number§r",
+        description: "the tier index of the MV tier, which is 2",
+        value: { t: "number", v: GTValues.MV },
+      },
+      {
+        name: "HV",
+        usage: "HV§7: number§r",
+        description: "the tier index of the HV tier, which is 3",
+        value: { t: "number", v: GTValues.HV },
+      },
+      {
+        name: "EV",
+        usage: "EV§7: number§r",
+        description: "the tier index of the EV tier, which is 4",
+        value: { t: "number", v: GTValues.EV },
+      },
+      {
+        name: "IV",
+        usage: "IV§7: number§r",
+        description: "the tier index of the IV tier, which is 5",
+        value: { t: "number", v: GTValues.IV },
+      },
+      {
+        name: "LuV",
+        usage: "LuV§7: number§r",
+        description: "the tier index of the LuV tier, which is 6",
+        value: { t: "number", v: GTValues.LuV },
+      },
+      {
+        name: "ZPM",
+        usage: "ZPM§7: number§r",
+        description: "the tier index of the ZPM tier, which is 7",
+        value: { t: "number", v: GTValues.ZPM },
+      },
+      {
+        name: "UV",
+        usage: "UV§7: number§r",
+        description: "the tier index of the UV tier, which is 8",
+        value: { t: "number", v: GTValues.UV },
+      },
+      {
+        name: "UHV",
+        usage: "UHV§7: number§r",
+        description: "the tier index of the UHV tier, which is 9",
+        value: { t: "number", v: GTValues.UHV },
+      },
+      {
+        name: "UEV",
+        usage: "UEV§7: number§r",
+        description: "the tier index of the UEV tier, which is 10",
+        value: { t: "number", v: GTValues.UEV },
+      },
+      {
+        name: "UIV",
+        usage: "UIV§7: number§r",
+        description: "the tier index of the UIV tier, which is 11",
+        value: { t: "number", v: GTValues.UIV },
+      },
+      {
+        name: "UXV",
+        usage: "UXV§7: number§r",
+        description: "the tier index of the UXV tier, which is 12",
+        value: { t: "number", v: GTValues.UXV },
+      },
+      {
+        name: "OpV",
+        usage: "OpV: number",
+        description: "the tier index of the OpV tier, which is 13",
+        value: { t: "number", v: GTValues.OpV },
+      },
+      {
+        name: "MAX",
+        usage: "MAX: number",
+        description: "the tier index of the MAX tier, which is 14",
+        value: { t: "number", v: GTValues.MAX },
+      },
+    ],
+    suffixes: [
+      {
+        names: ["t", "tick", "ticks"],
+        usage:
+          "§71§rt, §71§r_t, §71§rtick, §71§r_tick, §71§rticks, §71§r_ticks",
+        fullName: "ticks",
+        description:
+          "does nothing, it's here just for symmetry with the seconds suffix",
+      },
+      {
+        names: ["s", "sec", "secs"],
+        usage: "§71§rs, §71§r_s, §71§rsec, §71§r_sec, §71§rsecs, §71§r_secs",
+        fullName: "seconds",
+        description:
+          "converts the number to the corresponding number of ticks; it's the same as number * 20",
+      },
+      {
+        names: ["ULV"],
+        usage: "§71§rULV, §71§r_ULV",
+        fullName: "ULV amps",
+        description:
+          "converts the number to the EU/t equivalent of ULV amps; it's the same as number * " +
+          GTV[GTValues.ULV].toString(),
+      },
+      {
+        names: ["LV"],
+        usage: "§71§rLV, §71§r_LV",
+        fullName: "LV amps",
+        description:
+          "converts the number to the EU/t equivalent of LV amps; it's the same as number * " +
+          GTV[GTValues.LV].toString(),
+      },
+      {
+        names: ["MV"],
+        usage: "§71§rMV, §71§r_MV",
+        fullName: "MV amps",
+        description:
+          "converts the number to the EU/t equivalent of MV amps; it's the same as number * " +
+          GTV[GTValues.MV].toString(),
+      },
+      {
+        names: ["HV"],
+        usage: "§71§rHV, §71§r_HV",
+        fullName: "HV amps",
+        description:
+          "converts the number to the EU/t equivalent of HV amps; it's the same as number * " +
+          GTV[GTValues.HV].toString(),
+      },
+      {
+        names: ["EV"],
+        usage: "§71§rEV, §71§r_EV",
+        fullName: "EV amps",
+        description:
+          "converts the number to the EU/t equivalent of EV amps; it's the same as number * " +
+          GTV[GTValues.EV].toString(),
+      },
+      {
+        names: ["IV"],
+        usage: "§71§rIV, §71§r_IV",
+        fullName: "IV amps",
+        description:
+          "converts the number to the EU/t equivalent of IV amps; it's the same as number * " +
+          GTV[GTValues.IV].toString(),
+      },
+      {
+        names: ["LuV"],
+        usage: "§71§rLuV, §71§r_LuV",
+        fullName: "LuV amps",
+        description:
+          "converts the number to the EU/t equivalent of LuV amps; it's the same as number * " +
+          GTV[GTValues.LuV].toString(),
+      },
+      {
+        names: ["ZPM"],
+        usage: "§71§rZPM, §71§r_ZPM",
+        fullName: "ZPM amps",
+        description:
+          "converts the number to the EU/t equivalent of ZPM amps; it's the same as number * " +
+          GTV[GTValues.ZPM].toString(),
+      },
+      {
+        names: ["UV"],
+        usage: "§71§rUV, §71§r_UV",
+        fullName: "UV amps",
+        description:
+          "converts the number to the EU/t equivalent of UV amps; it's the same as number * " +
+          GTV[GTValues.UV].toString(),
+      },
+      {
+        names: ["UHV"],
+        usage: "§71§rUHV, §71§r_UHV",
+        fullName: "UHV amps",
+        description:
+          "converts the number to the EU/t equivalent of UHV amps; it's the same as number * " +
+          GTV[GTValues.UHV].toString(),
+      },
+      {
+        names: ["UEV"],
+        usage: "§71§rUEV, §71§r_UEV",
+        fullName: "UEV amps",
+        description:
+          "converts the number to the EU/t equivalent of UEV amps; it's the same as number * " +
+          GTV[GTValues.UEV].toString(),
+      },
+      {
+        names: ["UIV"],
+        usage: "§71§rUIV, §71§r_UIV",
+        fullName: "UIV amps",
+        description:
+          "converts the number to the EU/t equivalent of UIV amps; it's the same as number * " +
+          GTV[GTValues.UIV].toString(),
+      },
+      {
+        names: ["UXV"],
+        usage: "§71§rUXV, §71§r_UXV",
+        fullName: "UXV amps",
+        description:
+          "converts the number to the EU/t equivalent of UXV amps; it's the same as number * " +
+          GTV[GTValues.UXV].toString(),
+      },
+      {
+        names: ["OpV"],
+        usage: "§71§rOpV, §71§r_OpV",
+        fullName: "OpV amps",
+        description:
+          "converts the number to the EU/t equivalent of OpV amps; it's the same as number * " +
+          GTV[GTValues.OpV].toString(),
+      },
+      {
+        names: ["MAX"],
+        usage: "§71§rMAX, §71§r_MAX",
+        fullName: "MAX amps",
+        description:
+          "converts the number to the EU/t equivalent of MAX amps; it's the same as number * " +
+          GTV[GTValues.MAX].toString(),
+      },
+    ],
+  };
+})();
+
+/** @typedef {{ t: "number", v: number }} ValueNumber */
+/** @typedef {{ t: "string", v: string }} ValueString */
+/** @typedef {{ t: "vec2", v: [number, number] }} ValueVec2 */
+/** @typedef {{ t: "vec3", v: [number, number, number] }} ValueVec3 */
+/** @typedef {ValueNumber | ValueString | ValueVec2 | ValueVec3} Value */
+
+let calculatorExec = (() => {
+  /**
+   * @template K
+   * @template V
+   * @param {[K, V][]} entries
+   * @returns {Record<K, V>}
+   */
+  let objectFromEntries = (entries) => {
+    let obj = {};
+    for (let entry of entries) {
+      obj[entry[0]] = entry[1];
+    }
+    return obj;
   };
 
-  let operators = {
-    "unOp+": componentsOverloads((v) => +v),
-    "unOp-": componentsOverloads((v) => -v),
-    "binOp+": componentsOverloads2((a, b) => a + b),
-    "binOp-": componentsOverloads2((a, b) => a - b),
-    "binOp*": componentsOverloads2((a, b) => a * b).concat(
-      {
-        arguments: ["number", "vec2"],
-        fn: (a, b) => ({ t: "vec2", v: [a.v * b.v[0], a.v * b.v[1]] }),
-      },
-      {
-        arguments: ["vec2", "number"],
-        fn: (a, b) => ({ t: "vec2", v: [a.v[0] * b.v, a.v[1] * b.v] }),
-      },
-      {
-        arguments: ["number", "vec3"],
-        fn: (a, b) => ({
-          t: "vec3",
-          v: [a.v * b.v[0], a.v * b.v[1], a.v * b.v[2]],
-        }),
-      },
-      {
-        arguments: ["vec3", "number"],
-        fn: (a, b) => ({
-          t: "vec3",
-          v: [a.v[0] * b.v, a.v[1] * b.v, a.v[2] * b.v],
-        }),
-      },
-    ),
-    "binOp/": componentsOverloads2((a, b) => a / b),
-    "binOp//": componentsOverloads2((a, b) => Math.floor(a / b)),
-    "binOp%": componentsOverloads2((a, b) => a % b),
-    "binOp^": componentsOverloads2((a, b) => Math.pow(a, b)),
-  };
-
-  /** @type {Record<string, Value>} */
-  let constants = {
-    e: { t: "number", v: JavaMath.E },
-    pi: { t: "number", v: JavaMath.PI },
-    ULV: { t: "number", v: GTValues.ULV },
-    LV: { t: "number", v: GTValues.LV },
-    MV: { t: "number", v: GTValues.MV },
-    HV: { t: "number", v: GTValues.HV },
-    EV: { t: "number", v: GTValues.EV },
-    IV: { t: "number", v: GTValues.IV },
-    LuV: { t: "number", v: GTValues.LuV },
-    ZPM: { t: "number", v: GTValues.ZPM },
-    UV: { t: "number", v: GTValues.UV },
-    UHV: { t: "number", v: GTValues.UHV },
-    UEV: { t: "number", v: GTValues.UEV },
-    UIV: { t: "number", v: GTValues.UIV },
-    UXV: { t: "number", v: GTValues.UXV },
-    OpV: { t: "number", v: GTValues.OpV },
-    MAX: { t: "number", v: GTValues.MAX },
-  };
+  const functions = objectFromEntries(
+    calculatorDefinitions.functions.map((f) => [f.name, f.implementation]),
+  );
+  const operators = objectFromEntries(
+    calculatorDefinitions.operators.map((f) => [f.name, f.implementation]),
+  );
+  const constants = objectFromEntries(
+    calculatorDefinitions.constants.map((f) => [f.name, f.value]),
+  );
 
   /**
    *
@@ -462,30 +1327,6 @@ let calculatorExec = (() => {
           })
           .join("\n"),
     );
-  }
-
-  /**
-   * Validate first!
-   *
-   * @param {ValueVec2 | ValueVec3} value
-   * @param {string} identifier
-   * @returns {ValueNumber | ValueVec2 | ValueVec3}
-   */
-  function vecAccessors(value, identifier) {
-    let v = Array.from(identifier).map((accessor) => {
-      switch (accessor) {
-        case "x":
-          return value.v[0];
-        case "y":
-          return value.v[1];
-        case "z":
-          return value.v[2];
-      }
-    });
-    return {
-      t: ["", "number", "vec2", "vec3"][identifier.length],
-      v: v.length === 1 ? v[0] : v,
-    };
   }
 
   /**
@@ -543,21 +1384,9 @@ let calculatorExec = (() => {
       }
       case "member": {
         let value = calculate(node.value);
-        if (
-          value.t === "vec2" &&
-          1 <= node.identifier.length &&
-          node.identifier.length <= 3 &&
-          node.identifier.match(/^[xy]+$/)
-        ) {
-          return vecAccessors(value, node.identifier);
-        }
-        if (
-          value.t === "vec3" &&
-          1 <= node.identifier.length &&
-          node.identifier.length <= 3 &&
-          node.identifier.match(/^[xyz]+$/)
-        ) {
-          return vecAccessors(value, node.identifier);
+        let accessor = operators[value.t + "."];
+        if (accessor) {
+          return accessor.fn(value, { t: "string", v: node.identifier });
         }
         throw new Error(
           "non-existing member " + node.identifier + " for type " + value.t,

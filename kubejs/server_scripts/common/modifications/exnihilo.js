@@ -1,8 +1,10 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    event.recipes.gtceu.forge_hammer(id('cobble_to_sand'))
-        .itemInputs('minecraft:cobblestone')
+    event.remove({ id: 'gtceu:forge_hammer/cobblestone_to_gravel' });
+
+    event.recipes.gtceu.forge_hammer(id('stones_to_gravel'))
+        .itemInputs(Ingredient.of('#minecraft:stone_crafting_materials').subtract('minecraft:blackstone'))
         .itemOutputs('minecraft:gravel')
         .duration(10)
         .EUt(16);
@@ -13,19 +15,19 @@ ServerEvents.recipes(event => {
         .duration(10)
         .EUt(16);
 
-    event.recipes.gtceu.forge_hammer(id('sand_to_dust'))
-        .itemInputs('minecraft:sand')
+    event.recipes.gtceu.forge_hammer(id('sands_to_dust'))
+        .itemInputs('#minecraft:smelts_to_glass')
         .itemOutputs('exnihilosequentia:dust')
         .duration(10)
         .EUt(16);
 
-    event.remove({id: 'gtceu:forge_hammer/cobblestone_to_gravel', input: 'minecraft:blackstone'});
-    event.recipes.gtceu.forge_hammer(id('crushed_blackstone'))
+    event.recipes.gtceu.forge_hammer(id('blackstone_crushing'))
         .itemInputs('minecraft:blackstone')
         .itemOutputs('exnihilosequentia:crushed_blackstone')
         .duration(10)
         .EUt(16);
 
-    event.recipes.create.crushing('exnihilosequentia:crushed_blackstone', 'minecraft:blackstone').id('start:crushing/blackstone');
+    event.recipes.create.crushing('exnihilosequentia:crushed_blackstone', 'minecraft:blackstone')
+        .id(id('crushing/blackstone'));
 
 });

@@ -4,7 +4,7 @@
 	default_quest_shape: "hexagon"
 	filename: "futuristic_mechanisms"
 	group: "1E0FC4EA21F735F7"
-	icon: "gtceu:tritanium_coil_block"
+	icon: "start_core:luv_fusion_reactor"
 	id: "450EB2B6DF25A9EC"
 	order_index: 3
 	progression_mode: "linear"
@@ -14,14 +14,6 @@
 			linked_quest: "445BC7DFD3387DD4"
 			x: 0.0d
 			y: 1.0d
-		}
-		{
-			id: "114E2ED3560BE835"
-			linked_quest: "01AF9486EA6DA792"
-			shape: "gear"
-			size: 1.25d
-			x: 16.0d
-			y: -3.0d
 		}
 		{
 			id: "44FE2B6F74FCFC9B"
@@ -202,7 +194,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2587E109968EFBB4"]
@@ -570,11 +562,29 @@
 				type: "item"
 			}]
 			size: 1.0d
-			tasks: [{
-				id: "2E2AFC73A37B8B2B"
-				item: "gtceu:high_performance_computation_array"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2E2AFC73A37B8B2B"
+					item: "gtceu:high_performance_computation_array"
+					type: "item"
+				}
+				{
+					id: "2C076710398563AC"
+					item: "gtceu:hpca_computation_component"
+					type: "item"
+				}
+				{
+					id: "480247573BF27D4A"
+					item: "gtceu:hpca_heat_sink_component"
+					type: "item"
+				}
+				{
+					id: "7EABDB7A9387F6EF"
+					item: "gtceu:hpca_active_cooler_component"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -4.0d
 			y: -7.0d
 		}
@@ -619,7 +629,10 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["67ABB3BF6D0C183B"]
+			dependencies: [
+				"67ABB3BF6D0C183B"
+				"2D7591517097D802"
+			]
 			description: ["{ftbquests.futuristic_mechanisms.europium.description}"]
 			hide_dependent_lines: true
 			id: "084F23122E4CA277"
@@ -816,7 +829,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.25d
 			subtitle: "{ftbquests.futuristic_mechanisms.crystal_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "5511FF0C044D185E"
@@ -881,134 +894,6 @@
 		}
 		{
 			dependencies: [
-				"6CC13BE9AD447218"
-				"01AF9486EA6DA792"
-			]
-			description: ["{ftbquests.futuristic_mechanisms.wetware_circuit_board.description}"]
-			id: "68F878EC21CA1749"
-			rewards: [{
-				id: "04BE1D70705BBCD1"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [
-				{
-					id: "3E04DF96C447E29C"
-					item: "gtceu:wetware_printed_circuit_board"
-					type: "item"
-				}
-				{
-					id: "5BC1EE5BEEF1E66E"
-					item: {
-						Count: 1
-						id: "gtceu:wetware_circuit_board"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			x: 16.0d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"68F878EC21CA1749"
-				"3EEEC61CEE1B6BB2"
-			]
-			description: ["{ftbquests.futuristic_mechanisms.neuro_processing_unit.description}"]
-			id: "18D5591BF53AD07F"
-			rewards: [{
-				id: "5B036F742F1DFE1B"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			subtitle: "{ftbquests.futuristic_mechanisms.neuro_processing_unit.subtitle}"
-			tasks: [{
-				id: "5993D645BF787D73"
-				item: "gtceu:neuro_processing_unit"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["18D5591BF53AD07F"]
-			id: "0962C36622E385B8"
-			rewards: [{
-				id: "66EF264D559B0F0C"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			subtitle: "{ftbquests.futuristic_mechanisms.wetware_processor.subtitle}"
-			tasks: [{
-				id: "3EE0849FE28BA5A7"
-				item: "gtceu:wetware_processor"
-				type: "item"
-			}]
-			x: 18.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["01AF9486EA6DA792"]
-			description: ["{ftbquests.futuristic_mechanisms.stem_cells.description}"]
-			id: "3EEEC61CEE1B6BB2"
-			rewards: [{
-				id: "5F2F729A716E6C0C"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "16B0E8905C58CC4C"
-				item: "gtceu:stem_cells"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["1F79E45EF7810DFF"]
-			id: "4C5DBB94345FF33B"
-			rewards: [{
-				count: 2
-				id: "00D79CF33F2FE5BC"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			subtitle: "{ftbquests.futuristic_mechanisms.wetware_processor_computer.subtitle}"
-			tasks: [{
-				id: "52C4CAEB98BC9833"
-				item: "gtceu:wetware_processor_computer"
-				type: "item"
-			}]
-			x: 18.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["0962C36622E385B8"]
-			id: "1F79E45EF7810DFF"
-			rewards: [{
-				id: "070FCC1D05DF6950"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			subtitle: "{ftbquests.futuristic_mechanisms.wetware_processor_assembly.subtitle}"
-			tasks: [{
-				id: "26A0FC39A8C48BC1"
-				item: "gtceu:wetware_processor_assembly"
-				type: "item"
-			}]
-			x: 18.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
 				"19BBC64C57C460E6"
 				"3FC351F05F2AC743"
 				"464BB867FCF25A94"
@@ -1028,7 +913,7 @@
 				item: "start_core:zpm_fusion_reactor"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 10.0d
 			y: -3.0d
 		}
 		{
@@ -1047,8 +932,8 @@
 				item: "gtceu:uranium_rhodium_dinaquadide_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 1.0d
+			x: 8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["09E7AA7D98045727"]
@@ -1185,7 +1070,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["417038F9E5A88B5C"]
@@ -1203,7 +1088,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
@@ -1223,29 +1108,6 @@
 			}]
 			x: 10.0d
 			y: -7.0d
-		}
-		{
-			dependencies: [
-				"3FC351F05F2AC743"
-				"464BB867FCF25A94"
-			]
-			description: ["{ftbquests.futuristic_mechanisms.chemical_plant.description}"]
-			id: "3E1CA9FFB9953F42"
-			rewards: [{
-				count: 2
-				id: "73B25BCF5A2F61C1"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.25d
-			tasks: [{
-				id: "4538BE544847BA96"
-				item: "gtceu:chemical_plant"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -3.0d
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
@@ -1296,120 +1158,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["2911EC7333E0E9C5"]
-			description: ["{ftbquests.futuristic_mechanisms.darmstadtium_ingot.description}"]
-			id: "27C0ED4305E84D21"
-			rewards: [{
-				id: "2CB2FD24D7187D27"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "68CB622EF69BE297"
-				item: "gtceu:darmstadtium_ingot"
-				type: "item"
-			}]
-			x: 12.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["27C0ED4305E84D21"]
-			description: ["{ftbquests.futuristic_mechanisms.uv_machine_hull.description}"]
-			id: "3F4C068368F97580"
-			rewards: [{
-				id: "16A9EF2CDC5E6B40"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "2577C7EC42AF00C9"
-				item: "gtceu:uv_machine_hull"
-				type: "item"
-			}]
-			x: 12.0d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"2911EC7333E0E9C5"
-				"3B69844600AD5430"
-			]
-			description: ["{ftbquests.futuristic_mechanisms.tritanium_ingot.description}"]
-			id: "6131A76D203DE6AB"
-			rewards: [{
-				id: "5DE37EDA23E177D0"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "2BBE74D890CCE073"
-				item: "gtceu:tritanium_ingot"
-				type: "item"
-			}]
-			x: 14.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["2911EC7333E0E9C5"]
-			description: ["{ftbquests.futuristic_mechanisms.americium_ingot.description}"]
-			id: "70AA84848FB2A9BB"
-			rewards: [{
-				id: "0ECD4E21E5FD1EDA"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "17298D2E3FB3047D"
-				item: "gtceu:americium_ingot"
-				type: "item"
-			}]
-			x: 14.0d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"3F4C068368F97580"
-				"7C182C34888AF189"
-			]
-			description: ["{ftbquests.futuristic_mechanisms.uv_energy_input_hatch.description}"]
-			id: "0B7A0924AFE58559"
-			rewards: [{
-				id: "6B95CCF09AF3CE9A"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "665B54DC59BD0C0A"
-				item: "gtceu:uv_energy_input_hatch"
-				type: "item"
-			}]
-			x: 14.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["3F4C068368F97580"]
-			description: ["{ftbquests.futuristic_mechanisms.cleaning_maintenance_hatch.description}"]
-			id: "3391903EBBB3F308"
-			rewards: [{
-				id: "5CAB5DD7B5EE938D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "1A13CC613F192AAC"
-				item: "gtceu:cleaning_maintenance_hatch"
-				type: "item"
-			}]
-			x: 10.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["5C302CB1A1068EE1"]
 			description: ["{ftbquests.futuristic_mechanisms.naquadah_wafer.description}"]
 			id: "1BF95852C7E1741E"
@@ -1428,65 +1176,6 @@
 			}]
 			x: -2.0d
 			y: 3.0d
-		}
-		{
-			dependencies: [
-				"6131A76D203DE6AB"
-				"5DD60CB0D67AD39C"
-			]
-			description: ["{ftbquests.futuristic_mechanisms.tritanium_coil.description}"]
-			id: "678B90BF2ACE2BBA"
-			rewards: [{
-				count: 2
-				id: "21006EDC281083B3"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "7E9779497F7473C0"
-				item: "gtceu:tritanium_coil_block"
-				type: "item"
-			}]
-			x: 16.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["0B7A0924AFE58559"]
-			description: ["{ftbquests.futuristic_mechanisms.uv_energy_input_hatch_4a.description}"]
-			id: "155947C2913FFA42"
-			rewards: [{
-				id: "6C1602A5958BA368"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "453615A4AC786A1B"
-				item: "gtceu:uv_energy_input_hatch_4a"
-				type: "item"
-			}]
-			x: 14.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["155947C2913FFA42"]
-			description: ["{ftbquests.futuristic_mechanisms.uv_energy_input_hatch_16a.description}"]
-			id: "1B4B0A67B86B7D58"
-			rewards: [{
-				id: "676897D5A44043C4"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "6E19C77A6DF82D47"
-				item: "gtceu:uv_energy_input_hatch_16a"
-				type: "item"
-			}]
-			x: 14.0d
-			y: 5.0d
 		}
 		{
 			dependencies: ["445BC7DFD3387DD4"]
@@ -1521,46 +1210,8 @@
 				item: "gtceu:prismalium_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["678B90BF2ACE2BBA"]
-			description: ["{ftbquests.futuristic_mechanisms.enriched_naquadah_trinium_europium_duranide_ingot.description}"]
-			hide_dependent_lines: true
-			id: "02606EBF230281A3"
-			rewards: [{
-				id: "6C2453AE007BCC77"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "381449DAB65244AF"
-				item: "gtceu:enriched_naquadah_trinium_europium_duranide_ingot"
-				type: "item"
-			}]
-			x: 18.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["67ABB3BF6D0C183B"]
-			description: ["{ftbquests.futuristic_mechanisms.duranium_ingot.description}"]
-			hide_dependency_lines: true
-			id: "3B69844600AD5430"
-			rewards: [{
-				id: "569598332DDB8A9E"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "7C8488F1A6D476E9"
-				item: "gtceu:duranium_ingot"
-				type: "item"
-			}]
-			x: 12.0d
-			y: -5.0d
+			x: 10.0d
+			y: 1.0d
 		}
 		{
 			id: "6DD3126E3C45D1E7"
@@ -1572,49 +1223,8 @@
 				title: "{ftbquests.futuristic_mechanisms.positioner.title}"
 				type: "checkmark"
 			}]
-			x: 5.0d
+			x: 1.5d
 			y: -1.0d
-		}
-		{
-			dependencies: ["6131A76D203DE6AB"]
-			description: ["{ftbquests.futuristic_mechanisms.sterilizing_filter_casing.description}"]
-			id: "6CC13BE9AD447218"
-			rewards: [{
-				id: "2850DA80D961611B"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			subtitle: "{ftbquests.futuristic_mechanisms.sterilizing_filter_casing.subtitle}"
-			tasks: [{
-				id: "1B9835C2886C3C1D"
-				item: "gtceu:sterilizing_filter_casing"
-				type: "item"
-			}]
-			title: "{ftbquests.futuristic_mechanisms.sterilizing_filter_casing.title}"
-			x: 14.0d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"560993E111853A54"
-				"02606EBF230281A3"
-			]
-			description: ["{ftbquests.futuristic_mechanisms.network_switch.description}"]
-			id: "0687F0D2A9EC1AA4"
-			rewards: [{
-				id: "2B66FA09A1766701"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "64FD2ED3BC05E047"
-				item: "gtceu:network_switch"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1723,8 +1333,8 @@
 				item: "gtceu:prismalium_single_wire"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 3.0d
+			x: 12.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1772,27 +1382,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["68F878EC21CA1749"]
-			description: ["{ftbquests.futuristic_mechanisms.data_module.description}"]
-			id: "7C182C34888AF189"
-			rewards: [{
-				id: "06C89564F1B6E33A"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6F22A117CE6F6A88"
-				item: {
-					Count: 1
-					id: "gtceu:data_module"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 16.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["023794367F1B28D1"]
 			description: ["{ftbquests.futuristic_mechanisms.redstone_variadic_interface.description}"]
 			id: "0BF27AFE0C572EF0"
@@ -1828,8 +1417,8 @@
 				item: "gtceu:data_orb"
 				type: "item"
 			}]
-			x: -5.0d
-			y: -8.0d
+			x: -2.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["1DA6B3308C263A6F"]
@@ -1846,7 +1435,7 @@
 		{
 			dependencies: ["36C01453717B249D"]
 			description: ["{ftbquests.futuristic_mechanisms.trinaquadalloy_ingot.description}"]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			id: "5DD60CB0D67AD39C"
 			rewards: [{
 				id: "10A85083B588A490"
@@ -1858,8 +1447,8 @@
 				item: "gtceu:trinaquadalloy_ingot"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -7.0d
+			x: 6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
@@ -1891,7 +1480,7 @@
 				item: "gtceu:super_abs"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 12.0d
 			y: -1.0d
 		}
 		{
@@ -1946,14 +1535,59 @@
 			y: 1.0d
 		}
 		{
-			id: "53B8A2EFCF2D4371"
+			dependencies: ["09E7AA7D98045727"]
+			hide_dependent_lines: true
+			id: "2D7591517097D802"
 			tasks: [{
-				id: "6A01A251A9C02550"
-				item: "gtceu:advanced_synthesis_plant"
+				id: "44F5D3CD909C8135"
+				item: "kubejs:basic_reflector_casing"
 				type: "item"
 			}]
-			x: 10.5d
-			y: -3.5d
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D7591517097D802"]
+			id: "11595BF31117702B"
+			tasks: [{
+				id: "3D08617A5DA46BB6"
+				item: "kubejs:advanced_reflector_casing"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"67ABB3BF6D0C183B"
+				"11595BF31117702B"
+			]
+			description: ["{ftbquests.futuristic_mechanisms.duranium_ingot.description}"]
+			id: "3B69844600AD5430"
+			rewards: [{
+				id: "569598332DDB8A9E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "7C8488F1A6D476E9"
+				item: "gtceu:duranium_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3FC351F05F2AC743"]
+			id: "0815FFB99B152DC9"
+			tasks: [{
+				id: "41200BD7E39672CC"
+				item: "gtceu:hpca_advanced_computation_component"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -4.0d
 		}
 	]
 	title: "{ftbquests.futuristic_mechanisms.title}"

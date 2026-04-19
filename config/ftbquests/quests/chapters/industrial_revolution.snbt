@@ -400,7 +400,7 @@
 				"7CA424E05FB05DFF"
 				"4179261E3E8278E0"
 			]
-			dependency_requirement: "one_started"
+			dependency_requirement: "one_completed"
 			description: ["{ftbquests.industrial_revolution.cobalt_dust.description}"]
 			id: "5D3B5EF195A3093B"
 			rewards: [{

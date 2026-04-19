@@ -21,28 +21,4 @@ StartupEvents.registry('item', event => {
         .tooltip(Text.translate('item.kubejs.end_coordinate_crystal.tooltip'))
         .texture('kubejs:item/stargate/coordinate_crystals/end_coordinate_crystal');
 
-    // event.create('lantea_coordinate_crystal')
-    //     .displayName('Lantea Inscribed Coordinate Crystal')
-    //     .rarity('epic')
-    //     .tooltip('The §1Endless Seas')
-    //     .texture('kubejs:item/stargate/coordinate_crystals/lantea_coordinate_crystal');
-
-    // event.create('cavum_coordinate_crystal')
-    //     .displayName('Cavum Inscribed Coordinate Crystal')
-    //     .rarity('epic')
-    //     .tooltip('The §8Failing Abyss')
-    //     .texture('kubejs:item/stargate/coordinate_crystals/cavum_coordinate_crystal');
-
-    // event.create('sea_coordinate_crystal')
-    //     .displayName('Fractured Sea Coordinate Crystal')
-    //     .rarity('epic')
-    //     .tooltip('The final steps...')
-    //     .texture('kubejs:item/stargate/coordinate_crystals/sea_coordinate_crystal');
-
-    // event.create('void_coordinate_crystal')
-    //     .displayName('Fractured Void Coordinate Crystal')
-    //     .rarity('epic')
-    //     .tooltip('...to get Home')
-    //     .texture('kubejs:item/stargate/coordinate_crystals/void_coordinate_crystal');
-
 });

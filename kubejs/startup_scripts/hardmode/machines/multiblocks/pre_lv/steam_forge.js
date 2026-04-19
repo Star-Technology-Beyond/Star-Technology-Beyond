@@ -1,18 +1,18 @@
 // packmode: hard
 
-GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-	event.create('gt_blasting')
-		.category('primitive')
-		.setMaxIOSize(1, 1, 0, 0)
-		.setSound(GTSoundEntries.FURNACE)
-});
+// GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+// 	event.create('gt_blasting')
+// 		.category('primitive')
+// 		.setMaxIOSize(1, 1, 0, 0)
+// 		.setSound(GTSoundEntries.FURNACE)
+// });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 	event.create('steam_forge', 'multiblock')
 		.rotationState(RotationState.NON_Y_AXIS)
-		.recipeType('gt_blasting')
-		.machine((holder) => new $StartSteamMulti(holder))
-        .recipeModifier($StarTRecipeModifiers.START_STEAM_PARALLEL)
+		.recipeType('electric_vanilla_blast_furnace')
+		.machine((holder) => new $SteamMulti(holder, 4))
+        .recipeModifier((machine, recipe) => $SteamMulti.recipeModifier(machine, recipe), true)
         .appearanceBlock(() => Block.getBlock('kubejs:high_steam_machine_casing'))
 		.pattern(definition => FactoryBlockPattern.start()
             .aisle('BBB','CCC','CCC','#C#')
@@ -28,6 +28,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.where('#', Predicates.any())
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
 			.build())
-		.workableCasingModel('kubejs:block/hm/high_steam_machine_casing', 'gtceu:block/machines/blasting')
+		.workableCasingModel('kubejs:block/casings/basic/high_steam_machine_casing', 'gtceu:block/machines/blasting')
 		
 });

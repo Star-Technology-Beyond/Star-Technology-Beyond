@@ -132,9 +132,6 @@
 
     "block.gtceu.molten_destabilizer.tooltip.0": "§7複雑な溶融化学物質を、小さな塊に分割して処理できる強力な機械。",
 
-    "block.gtceu.vibration_laser_engraver.tooltip.0": "§7精密なレーザーと振動を利用して、宝石、シリコンチップ、クリスタルを簡単に成形及び刻印し、必要に応じては変換できるマルチブロック機械。",
-    "block.gtceu.vibration_laser_engraver.tooltip.1": "§3並列制御§rユニットを使用可能§rかつ§cサブティック並列§rが可能§rかつ§2一括処理§rが可能かつ§bスループットブースト処理§rが可能",
-
     "block.gtceu.cyclonic_sifter.tooltip.0": "§7基本型の選別機に比べ、精度と強度に優れており、より発展的なレシピを処理可能な、発展型の選別機。",
 
     "block.gtceu.injection_mixer.tooltip.0": "§7基本型のミキサーに比べ、正確な混合物を作成し、より発展的なレシピを処理可能な、発展型のミキサー。",
@@ -530,9 +527,6 @@
     "gtceu.dimensional_destabiliser": "ディメンション不安定化装置",
     "block.gtceu.dimensional_destabiliser": "ディメンション不安定化装置",
 
-    "gtceu.vibration_laser_engraver": "振動型レーザー刻印機",
-    "block.gtceu.vibration_laser_engraver": "振動型レーザー刻印機",
-
     "gtceu.large_greens_extractor": "大型緑植物抽出機",
     "block.gtceu.large_greens_extractor": "大型緑植物抽出機",
 
@@ -637,7 +631,7 @@
     "material.gtceu.magmada_alloy": "マグマダ合金",
     "material.gtceu.mythrolic_alloy": "ミスロリック合金",
     "material.gtceu.starium_alloy": "スターリウム合金",
-    "material.gtceu.seaborgium_palladium_enriched_estalt_flerovium_alloy": "濃縮パラロビウム合金",
+    "material.gtceu.enriched_pallarovium_alloy": "濃縮パラロビウム合金",
     "material.gtceu.astatium_bioselex_carbonite": "アスタチンバイオセレックス炭化物",
     "material.gtceu.brackish_water": "汽水",
     "material.gtceu.nether_star_concentrate": "濃縮ネザースター",
@@ -894,12 +888,8 @@
     "gtceu.quantum_cooling": "量子冷却",
     "block.gtceu.cryostate_quantum_chiller": "極低温量子冷凍機",
     "block.gtceu.cryostate_quantum_chiller.tooltip.0": "§7発展的な物質状態操作と一括真空冷却を実行するための、絶対零度の極低温冷却剤を使用した処理が可能な、精密量子冷却機械。",
-
-    "block.gtceu.ancient_refinement_center": "古代製錬所",
-    "block.gtceu.ancient_refinement_center.tooltip.0": "§7古代の技術を利用して複数の資源生産を一つに統合した、非常に発展的な機械。",
+    
     "gtceu.aqueous_void_excavation": "液体奈落掘削",
-    "gtceu.bulk_void_excavation": "一括奈落掘削",
-    "gtceu.bulk_rock_filtrator": "一括岩石濾過",
 
     "gtceu.draco_infusion": "§dドラコニック注入",
     "block.gtceu.draco_infusion": "§dドラコニック注入装置",
@@ -1447,5 +1437,5 @@
     "material.gtceu.einsteinium_253": "アインシュタニウム 253",
     "material.gtceu.fermium": "フェルミウム 257",
 
-    "block.gtceu.theta2Removals.tooltip": "§4§l非推奨。Theta 2で削除される予定である。",
+    "block.gtceu.theta2Removals.tooltip": "§4§l非推奨。Theta 2で削除される予定である。"
 }

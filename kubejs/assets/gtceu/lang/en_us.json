@@ -7,7 +7,7 @@
     "block.gtceu.luv_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
     "block.gtceu.zpm_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
     "block.gtceu.uv_mystical_greenhouse.tooltip": "§7Sieving is boring. How about some agriculture?",
-    
+
     "block.gtceu.theta2Removals.tooltip": "§4§lDeprecated. Will be removed in Theta 2",
 
     "block.gtceu.dimensional_finder.tooltip.0": "§7Get Dimensionally Pinged",
@@ -114,9 +114,6 @@
     "block.gtceu.latex_plantation.tooltip.0": "§7A multiblock that is way faster then the arboreal extractor for gathering latex",
 
     "block.gtceu.molten_destabilizer.tooltip.0": "§7A powerful machine that can splice complex molten chemicals into smaller chunks for processing",
-
-    "block.gtceu.vibration_laser_engraver.tooltip.0": "§7A multiblock that uses precise lasers and vibrations to effortlessly reform and engrave gems, chips, and crystals, changing them in whatever way you need.",
-    "block.gtceu.vibration_laser_engraver.tooltip.1": "Can use §3Parallel§r hatches§r, has §cSubtick Parallels§r, §2Bulking§r, and §bThroughput Boosting",
 
     "block.gtceu.cyclonic_sifter.tooltip.0": "§7An advanced tier of sifter that is more precise and stronger than the basic tier, allowing it to run better recipes.",
 
@@ -387,6 +384,7 @@
     "gtceu.jei.ore_vein.abydos_activation_metals_vein": "Abydos Activation Metal Vein",
     "gtceu.jei.ore_vein.abydos_alkaline_sediment_vein": "Abydos Alkaline Sediment Vein",
     "gtceu.jei.ore_vein.abydos_refractory_metals_vein": "Abydos Refractory Metal Vein",
+    "gtceu.jei.ore_vein.naquadite_vein": "Naquadite Vein",
     "gtceu.jei.ore_vein.brimstone_patch": "Nether Brimstone Patch",
     "gtceu.jei.ore_vein.cryostone_patch": "Nether Cryostone Patch",
     "material.gtceu.gritty_akreyrium": "Gritty Akreyrium",
@@ -492,9 +490,6 @@
     "gtceu.dimensional_destabiliser": "Dimensional Destabiliser",
     "block.gtceu.dimensional_destabiliser": "Dimensional Destabiliser",
 
-    "gtceu.vibration_laser_engraver": "Vibration Laser Engraver",
-    "block.gtceu.vibration_laser_engraver": "Vibration Laser Engraver",
-
     "gtceu.large_greens_extractor": "Large Greens Extractor",
     "block.gtceu.large_greens_extractor": "Large Greens Extractor",
 
@@ -599,7 +594,7 @@
     "material.gtceu.magmada_alloy": "Magmada Alloy",
     "material.gtceu.mythrolic_alloy": "Mythrolic Alloy",
     "material.gtceu.starium_alloy": "Starium Alloy",
-    "material.gtceu.seaborgium_palladium_enriched_estalt_flerovium_alloy": "Enriched Pallarovium Alloy",
+    "material.gtceu.enriched_pallarovium_alloy": "Enriched Pallarovium Alloy",
     "material.gtceu.astatium_bioselex_carbonite": "Astatium Bioselex Carbonite",
     "material.gtceu.brackish_water": "Brackish Water",
     "material.gtceu.nether_star_concentrate": "Nether Star Concentrate",
@@ -780,6 +775,11 @@
 
     "material.gtceu.abydos_refractory_dense_magma": "Abydos-Refractory Dense Magma",
     "material.gtceu.abydos_reactive_dense_magma": "Abydos-Reactivity Dense Magma",
+    "material.gtceu.abydos_naquadite_dense_magma": "Abydos-Naquadite Dense Magma",
+    "material.gtceu.naquadite_dense_residue": "Naquadite Dense Residue",
+    "material.gtceu.naquadite": "Naquadite",
+    "material.gtceu.hydroiodic_acid": "Hydroiodic Acid",
+    "material.gtceu.naquadite_solution": "Naquadite Solution",
     "material.gtceu.refractory_dense_residue": "Refractory Dense Residue",
     "material.gtceu.reactive_dense_residue": "Reactivity Dense Residue",
     "material.gtceu.rare_earth_sulfate_solution": "Rare Earth Sulfate Solution",
@@ -858,11 +858,7 @@
     "block.gtceu.cryostate_quantum_chiller": "Cryostate Quantum Chiller",
     "block.gtceu.cryostate_quantum_chiller.tooltip.0": "§7A precision quantum cooling array capable of handling absolute-zero cryogenic coolants for advanced matter state manipulation and bulk vacuum freezing.",
 
-    "block.gtceu.ancient_refinement_center": "Ancient Refinement Center",
-    "block.gtceu.ancient_refinement_center.tooltip.0": "§7Ancient Technology utilized to combine all the needed resource generators.",
     "gtceu.aqueous_void_excavation": "Aqueous Void Excavation",
-    "gtceu.bulk_void_excavation": "Bulk Void Excavation",
-    "gtceu.bulk_rock_filtrator": "Bulk Rock Filtration",
 
     "gtceu.draco_infusion": "§dDraconic Infusion",
     "block.gtceu.draco_infusion": "§dDraconic Infusion Array",
@@ -1123,6 +1119,7 @@
     "gtceu.jei.bedrock_fluid.highly_unstable_nether_magma_deposit": "Highly Unstable Nether Magma Deposit",
     "gtceu.jei.bedrock_fluid.crude_infernal_concentrate": "Crude Infernal Concentrate Deposit",
     "gtceu.jei.bedrock_fluid.lava_dense": "Lava Deposit",
+    "gtceu.jei.bedrock_fluid.abydos_naquadite_dense_magma": "Abydos-Naquadite Dense Magma",
 
     "block.gtceu.tree_synthesizer": "Tree Synthesizer",
     "block.gtceu.tree_synthesizer.tooltip.0": "§7A larger greenhouse that provides ample space for gigantic trees to be grown, and felled.",
@@ -1152,6 +1149,13 @@
     "block.gtceu.subtick.tooltip.1": "Has §cSubtick Parallels",
     "block.gtceu.subtick_coil_parallel.tooltip.1": "Has §cSubtick Parallels§r and §bCoil Parallels§r",
     "block.gtceu.coil_boosting_subtick.tooltip.1": "Has §cSubtick Parallels§r and §bCoil Boosting§r",
+
+    "block.gtceu.lcr_coil_mechanic.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.lcr_coil_mechanic.tooltip.3": "§6§lCoil Mechanics:",
+    "block.gtceu.lcr_coil_mechanic.tooltip.4": "§7Starting at §6Cupronickel, §7every coil after increases speed by §f25%.",
+    "block.gtceu.lcr_coil_mechanic.tooltip.5": "§7Energy usage is also decreased by §f5% §7per tier.",
+    "block.gtceu.lcr_coil_mechanic.tooltip.6": "§8-----------------------------------",
+
     "block.gtceu.coil_boosting_parallel_subtick.tooltip.1": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r and §bCoil Boosting§r",
 
     "block.gtceu.macerators.tooltip.1": "§7Macerators only produce byproducts shown in JEI at HV or higher",
@@ -1231,6 +1235,27 @@
     "block.gtceu.super_electric_ore_factory": "Ore Processing Factory",
     "block.gtceu.super_electric_ore_factory.tooltip.0": "§7An Electric Ore Factory pushed to its limits.",
     "block.gtceu.super_electric_ore_factory.tooltip.1": "Can only have §bone§r Energy Hatch",
+
+    "block.gtceu.super_barrel.tooltip.0": "§6§lBoosted Large Barrel",
+    "block.gtceu.super_barrel.tooltip.1": "§7A specialized high capacity containment vessel engineered for total fluid versatility",
+    "block.gtceu.super_barrel.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.super_barrel.tooltip.3": "Can only have §bone§r Energy Hatch",
+
+    "block.gtceu.super_cracker.tooltip.0": "§6§lBoosted Cracker",
+    "block.gtceu.super_cracker.tooltip.1": "§7A streamlined chemical oven built for high-efficiency molecular splitting of various fluids",
+    "block.gtceu.super_cracker.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.super_cracker.tooltip.3": "§6§lCoil Mechanics:",
+    "block.gtceu.super_cracker.tooltip.4": "§7Every coil after §6Cupronickel §7reduces energy usage by §f10%",
+    "block.gtceu.super_cracker.tooltip.5": "§8-----------------------------------",
+    "block.gtceu.super_cracker.tooltip.6": "Can only have §bone§r Energy Hatch",
+
+    "block.gtceu.super_pyrolyse.tooltip.0": "§6§lBoosted Pyrolyse Oven",
+    "block.gtceu.super_pyrolyse.tooltip.1": "§7A high throughput thermochemical processing suite engineered for the controlled breakdown of organic and inorganic matter",
+    "block.gtceu.super_pyrolyse.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.super_pyrolyse.tooltip.3": "§6§lCoil Mechanics:",
+    "block.gtceu.super_pyrolyse.tooltip.4": "§6Cupronickel §7coils are §f25% §7slower. Every coil after §bKanthal §7increases speed by §f50%",
+    "block.gtceu.super_pyrolyse.tooltip.5": "§8-----------------------------------",
+    "block.gtceu.super_pyrolyse.tooltip.6": "Can only have §bone§r Energy Hatch",
 
     "block.gtceu.atomic_synthesis_plant": "Atomic Synthesis Plant",
     "block.gtceu.atomic_synthesis_plant.tooltip.0": "§6§lParagon of Chemistry",
@@ -1335,7 +1360,7 @@
     "block.gtceu.t_large_electromagnetic_separator.tooltip.1": "Can only have §bone§r Energy Hatch",
     "material.gtceu.acidic_bromine_solution": "Acidic Bromine Solution",
     "material.gtceu.concentrated_bromine_solution": "Concentrated Bromine Solution",
-    "material.gtceu.hydrogen_iodid": "Hydrogen Iodide",
+    "material.gtceu.hydrogen_iodide": "Hydrogen Iodide",
     "material.gtceu.hot_brine": "Hot Brine",
     "material.gtceu.hot_chlorinated_brominated_brine": "Hot Chlorinated Brominated Brine",
     "material.gtceu.hot_debrominated_brine": "Hot Debrominated Brine",
@@ -1350,7 +1375,7 @@
     "block.gtceu.bacteria_synthesizer": "Bacteria Synthesizer",
     "block.gtceu.bacteria_synthesizer.tooltip.0": "Can use §3Parallel§r hatches",
     "gtceu.bacteria_synthesizer": "Bacteria Synthesizer",
-    
+
     "block.gtceu.palladium_substation": "Secure Pallaridium Machine Casing",
     "block.gtceu.dual_chambered_vacuum_complex": "Dual-Chambered Vacuum Complex",
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.0": "§c§lAdvanced Pressurized Chemical Reactor",
@@ -1365,7 +1390,7 @@
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.9": "§7Vacuum percentage is cut in half upon a recipe completion, and begins to increase again till its cap while running the next recipe.",
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.10": "§7--------------------------------------------------",
     "block.gtceu.dual_chambered_vacuum_complex.tooltip.11": "§7For machines that contain multipule pump blocks, they must all be the same tier or the machine will not form.§7",
-    
+
     "block.gtceu.auroric_vacuum_isolation_reactor": "Auroric Vacuum Isolation Reactor",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.0": "§c§lHyper-Advanced Pressurized Chemical Reactor",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.1": "§7A chemical reactor that can operate under pressurized environments, increasing reaction rates and enabling certain pressure-dependent reactions.",
@@ -1379,7 +1404,7 @@
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.9": "§7Vacuum percentage is cut in half upon a recipe completion, and begins to increase again till its cap while running the next recipe.",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.10": "§7--------------------------------------------------",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.11": "§7For machines that contain multipule pump blocks, they must all be the same tier or the machine will not form.§7",
-    
+
     "block.gtceu.vacuum_chemical_reaction_chamber": "Vacuum Chemical Reaction Chamber",
     "gtceu.vacuum_chemical_reaction_chamber": "Vacuum Chemical Reaction Chamber",
     "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.0": "§c§lPressurized Chemical Reactor",
@@ -1412,5 +1437,18 @@
     "material.gtceu.pologium_rich_sludge": "Pologium-Rich Sludge",
 
     "block.gtceu.advanced_synthesis_plant": "Advanced Synthesis Plant",
-    "gtceu.ordered_chemistry": "Ordered Chemistry Sythesis"
+    "gtceu.ordered_chemistry": "Ordered Chemistry Sythesis",
+
+    "block.gtceu.super_cracker": "Fractional Disruption Furnace",
+    "block.gtceu.super_pyrolyse": "Thermal Decomposition Array",
+    "block.gtceu.super_barrel": "Industrial Accumulation Vessel",
+
+    "material.gtceu.akreyriadic_runixium": "Akreyriadic-Runixium",
+    "material.gtceu.weapon_grade_stellarized_naquadah": "Weapon Grade §bStellarized§f Naquadah",
+
+    "block.gtceu.exotic_tectonic_formation_apparatus": "Exotic Tectonic Formation Apparatus",
+    "gtceu.exotic_rock_crushing": "Exotic Rock Crushing",
+    "block.gtceu.exotic_tectonic_formation_apparatus.tooltip.0": "§7A machine that can create tectonic formations with unique properties, allowing for the extraction of rare resources and the creation of specialized environments.",
+    "block.gtceu.exotic_tectonic_formation_apparatus.tooltip.1": "Can only have §bone§r Energy Hatch"
+  
 }

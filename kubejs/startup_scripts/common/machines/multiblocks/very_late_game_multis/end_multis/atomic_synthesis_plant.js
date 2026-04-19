@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $CoiledMulti(holder))
         .recipeTypes(['chemical_skip'])
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:cattomolymer_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('ABBCBBA    ', 'DAAAAAD    ', 'D     D    ', 'D     D    ', 'D     D    ', 'DAAAAAD    ', 'ABBCBBA    ', '           ', '           ', '           ', '           ') 

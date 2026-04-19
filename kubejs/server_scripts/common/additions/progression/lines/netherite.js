@@ -18,9 +18,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor(id('purified_debris_dust'))
         .itemInputs('2x gtceu:debris_dust')
-        .inputFluids('gtceu:chlorine_trifluoride 250')
-        .itemOutputs('2x gtceu:purified_debris_dust', '4x gtceu:small_titanium_trifluoride_dust')
-        .outputFluids('gtceu:sulfur_dichloride 125')
+        .inputFluids('gtceu:chlorine_trifluoride 250','gtceu:hydrogen_sulfide 125')
+        .itemOutputs('2x gtceu:purified_debris_dust', '2x gtceu:small_titanium_trifluoride_dust')
+        .outputFluids('gtceu:sulfur_dichloride 125','gtceu:hydrofluoric_acid 250','gtceu:fluorine 125')
         .chancedOutput('2x gtceu:small_purified_debris_dust', 2800, 900)
         .duration(400)
         .EUt(6500);

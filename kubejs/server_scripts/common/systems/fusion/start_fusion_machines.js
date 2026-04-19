@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line(id('uev_fusion_reactor'))
         .itemInputs('start_core:advanced_fusion_coil', '4x #gtceu:circuits/uiv', 'kubejs:helish_star', 'gtceu:double_magmada_alloy_plate',
-                '2x gtceu:uhv_field_generator', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip', '32x gtceu:seaborgium_palladium_enriched_estalt_flerovium_alloy_single_wire')
+                '2x gtceu:uhv_field_generator', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip', '32x gtceu:enriched_pallarovium_alloy_single_wire')
         .inputFluids('gtceu:naquadated_soldering_alloy 1152', 'gtceu:cerium_tritelluride 1152')
         .itemOutputs('start_core:uev_fusion_reactor')
         .duration(1800)
@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
     SuperconductingCoil('zpm','uranium_rhodium_dinaquadide',2);
     SuperconductingCoil('uv','enriched_naquadah_trinium_europium_duranide',3);    
     SuperconductingCoil('uhv','ruthenium_trinium_americium_neutronate',4);
-    SuperconductingCoil('uev','seaborgium_palladium_enriched_estalt_flerovium_alloy',5);
+    SuperconductingCoil('uev','enriched_pallarovium_alloy',5);
     SuperconductingCoil('uiv','rhenium_super_composite_alloy',6);
 
     event.remove({output: 'gtceu:fusion_coil'});

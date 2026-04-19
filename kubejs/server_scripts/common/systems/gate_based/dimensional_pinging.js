@@ -1,80 +1,60 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    event.recipes.gtceu.vibration_laser_engraver(id('coordinate_crystal'))
-        .itemInputs('2x gtceu:exquisite_echo_shard_gem')
-        .notConsumable('gtceu:nether_star_lens')
-        .notConsumable('gtceu:echo_shard_lens')
-        .inputFluids('gtceu:glowstone 256000','gtceu:ice 128000','gtceu:pcb_coolant 16000')
-        .outputFluids('gtceu:steam 192000','gtceu:hot_pcb_coolant 19200')
-        .itemOutputs('kubejs:coordinate_crystal')
-        .duration(1200)
-        .EUt(GTValues.VHA[GTValues.UV]);
-
     //Dimensional Finder Controller
     
     // Machine recipes
     
     event.recipes.gtceu.assembly_line(id('dimensional_finder'))
-        .itemInputs(
-            'gtceu:uv_scanner','16x gtceu:uv_sensor','16x gtceu:uv_sensor','16x gtceu:uv_sensor','16x gtceu:uv_sensor',
-            '64x gtceu:fine_trinaquadalloy_wire','64x gtceu:fine_trinaquadalloy_wire', '8x #gtceu:circuits/uv'
-        )
+        .itemInputs('gtceu:zpm_scanner', '16x gtceu:zpm_sensor', '16x gtceu:zpm_emitter', '16x gtceu:zpm_field_generator', '16x gtceu:zpm_voltage_coil',
+            '64x gtceu:fine_trinaquadalloy_wire', '64x gtceu:fine_trinaquadalloy_wire', '8x #gtceu:circuits/uv')
         .inputFluids(
             'gtceu:naquadria 34992',
-            'gtceu:neutronium 13248',
-            'gtceu:echo_r 11520'
+            'gtceu:europium 13248',
+            'gtceu:prismalium 11520'
         )
         .itemOutputs('gtceu:dimensional_finder')
         .duration(3600)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('kubejs:coordinate_crystal'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(128)
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(40)
             )
-        .EUt(GTValues.VHA[GTValues.UV]); 
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
     //Coordinate Crystals
     
-    if (global.packmode !== 'abydos'){
-        (() => { 
-        event.recipes.gtceu.dimensional_finder(id('abydos_coordinate_crystal'))
-            .itemInputs('kubejs:coordinate_crystal', 'minecraft:sand', 'gtceu:uv_sensor')
-            .inputFluids('gtceu:naquadria 7200')
-            .chancedOutput('kubejs:abydos_coordinate_crystal', 500, 0)
-            .duration(150 * 20)
-            .EUt(GTValues.VA[GTValues.UV])
-            .dimension('minecraft:overworld'); 
-        })()
-    }   
+    let abydosCrystal = event.recipes.gtceu.dimensional_finder(id('abydos_coordinate_crystal'))
+        .itemInputs('kubejs:coordinate_crystal', '64x minecraft:sand', '16x gtceu:zpm_sensor')
+        .inputFluids('gtceu:naquadria 7200')
+        .itemOutputs('kubejs:abydos_coordinate_crystal')
+        .CWUt(48)
+        .totalCWU(576000)
+        .EUt(GTValues.VHA[GTValues.UV]);
 
     if (global.packmode == 'abydos'){
-        (() => {
-        event.recipes.gtceu.dimensional_finder(id('abydos_coordinate_crystal'))
-            .itemInputs('kubejs:coordinate_crystal', 'minecraft:sand', 'gtceu:uv_sensor')
-            .inputFluids('gtceu:naquadria 7200')
-            .chancedOutput('kubejs:abydos_coordinate_crystal', 9900, 0)
-            .duration(10 * 20)   
-            .EUt(GTValues.VA[GTValues.UV])
-            .dimension('sgjourney:abydos');
-        })()
-    }   
+        abydosCrystal.dimension('sgjourney:abydos');
+    } else {
+        abydosCrystal.dimension('minecraft:overworld'); 
+    }
     
     event.recipes.gtceu.dimensional_finder(id('nether_coordinate_crystal'))
-        .itemInputs('kubejs:coordinate_crystal', 'minecraft:netherrack', 'gtceu:uhv_sensor')
-        .inputFluids('minecraft:lava 5000')
-        .chancedOutput('kubejs:nether_coordinate_crystal', 500, 0)
-        .duration(150 * 20)
+        .itemInputs('kubejs:coordinate_crystal', '64x minecraft:netherrack', '16x gtceu:uv_sensor')
+        .inputFluids('minecraft:lava 50000')
+        .itemOutputs('kubejs:nether_coordinate_crystal')
+        .CWUt(96)
+        .totalCWU(1152000)
         .EUt(GTValues.VHA[GTValues.UHV])
         .dimension('sgjourney:abydos');
 
     event.recipes.gtceu.dimensional_finder(id('end_coordinate_crystal'))
-        .itemInputs('kubejs:coordinate_crystal', 'minecraft:end_stone', 'gtceu:uhv_sensor')
-        .inputFluids('gtceu:echo_r 5000')
-        .chancedOutput('kubejs:end_coordinate_crystal', 500, 0)
-        .duration(150 * 20)
-        .EUt(GTValues.VA[GTValues.UHV])
+        .itemInputs('kubejs:coordinate_crystal', '64x minecraft:end_stone', '16x gtceu:uhv_sensor')
+        .inputFluids('gtceu:echo_r 7200')
+        .itemOutputs('kubejs:end_coordinate_crystal')
+        .CWUt(192)
+        .totalCWU(2304000)
+        .EUt(GTValues.VA[GTValues.UEV])
         .dimension('sgjourney:abydos');
 
     /*event.recipes.gtceu.dimensional_finder(id('lantea_coordinate_crystal'))
@@ -113,34 +93,30 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.scanner(id(`${type}_crystal_duping`))
         .itemInputs('kubejs:coordinate_crystal',`kubejs:${type}_coordinate_crystal`)
         .itemOutputs(`2x kubejs:${type}_coordinate_crystal`)
-        .duration(6000)
-        .EUt(GTValues.VHA[GTValues.UV]*(4**eutScale));
+        .duration(3000)
+        .EUt(GTValues.VHA[GTValues.ZPM]*(4**eutScale));
     }
     CrystalDuping('abydos',0);
     CrystalDuping('nether',1);
-    CrystalDuping('end',1);
+    CrystalDuping('end',2);
 
 });
 
-const crystalfeed = (realmId, realm, stage, message) => {
+const crystalfeed = (realmId, realm, message) => {
     ItemEvents.rightClicked(`kubejs:${realm}_coordinate_crystal`, event => {
         if (event.player.isCrouching()) {
-            // event.item.count--
             event.server.runCommandSilent(`execute at ${event.player.username} run playsound minecraft:block.enchantment_table.use player ${event.player.username} ~ ~ ~`);
             event.server.scheduleInTicks(15, ctx => {
                 event.player.tell(Text.translate(message));
                 event.server.runCommand(`execute as ${event.player.username} run sgjourney stargateNetwork address ${realmId}:${realmId == 'minecraft' ? `the_${realm}` : realm}`);
-                // event.server.runCommandSilent(`execute as ${event.player.username} run gamestage add ${event.player.username} ${stage}`);
-                // event.server.runCommandSilent(`give ${event.player.username} kubejs:coordinate_crystal`)
-                // event.server.runCommandSilent(`execute at ${event.player.username} run playsound sgjourney:milky_way_chevron_encode player ${event.player.username} ~ ~ ~`);
             });
         };
     });
 };
 
-crystalfeed('sgjourney', 'abydos', 'one', 'effects.crystals.success.abydos');
-crystalfeed('minecraft', 'nether', 'two', 'effects.crystals.success.nether');
-crystalfeed('minecraft', 'end', 'three', 'effects.crystals.success.end');
+crystalfeed('sgjourney', 'abydos', 'effects.crystals.success.abydos');
+crystalfeed('minecraft', 'nether', 'effects.crystals.success.nether');
+crystalfeed('minecraft', 'end', 'effects.crystals.success.end');
 
 //Dimensional Gamestages
 const DimensionGS = (gate,realm,stage) => {

@@ -28,8 +28,8 @@ LootJS.modifiers((event) => {
         {loot: 'sgjourney:naquadah_axe', chance: .1},
         {loot: 'sgjourney:naquadah_shovel', chance: .1},
         {loot: 'sgjourney:naquadah_alloy', chance: .1},
-        {loot: '2x sgjourney:naquadah_alloy', chance: .05},
-        {loot: '3x sgjourney:naquadah_alloy', chance: .02},
+        {loot: '2x gtceu:naquadah_alloy_ingot', chance: .05},
+        {loot: '3x gtceu:naquadah_alloy_ingot', chance: .02},
     ];
     abydosTempleSpawnerRoom.forEach(templeLoot => {
         event
@@ -43,13 +43,13 @@ LootJS.modifiers((event) => {
     ].forEach(loottable => {
         event
             .addLootTableModifier(loottable)
-            .randomChance(.05)
+            .randomChance(.12)
             .addLoot('kubejs:nether_talisman');
     });
 
     event
         .addLootTableModifier('minecraft:chests/end_city_treasure')
-            .randomChance(.05)
+            .randomChance(.12)
             .addLoot('kubejs:end_talisman');
     
 });

@@ -12,10 +12,10 @@ ServerEvents.recipes(event => {
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('gtceu:large_chemical_reactor'))
-                .EUt(GTValues.VHA[GTValues.ZPM])
-                .CWUt(16)
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(64)
             )
-        .EUt(GTValues.VHA[GTValues.UV]);
+        .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.assembler(id('peek_casing'))
         .itemInputs('gtceu:robust_machine_casing')
@@ -549,6 +549,7 @@ ServerEvents.recipes(event => {
             .itemInputs('gtceu:nether_star_dust')
         )
         .itemOutputs('16x kubejs:draconic_stem_cells')
+        .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)
         .duration(53)
         .EUt(GTValues.VHA[GTValues.UIV]);
 
@@ -561,6 +562,7 @@ ServerEvents.recipes(event => {
             .inputFluids('thermal:ender 12500')
         )
         .itemOutputs('32x kubejs:draconic_brain_matter_cells')
+        .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)
         .duration(93)
         .EUt(GTValues.VHA[GTValues.UIV]);
 });

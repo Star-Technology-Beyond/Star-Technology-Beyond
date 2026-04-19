@@ -29,8 +29,8 @@ ServerEvents.recipes(event => { // to be revamped post-theta
 
     // Manufacturing Facility Controller
     event.recipes.gtceu.assembler(id('circuit_manufacturing_facility'))
-        .itemInputs('1x gtceu:lv_machine_hull', '6x #gtceu:circuits/ulv', '6x kubejs:ulv_robot_arm', '3x kubejs:ulv_conveyor_module',
-            '4x gtceu:steel_gear', '2x kubejs:ulv_electric_motor','2x kubejs:ulv_emitter', '4x gtceu:tin_single_cable')
+        .itemInputs('1x gtceu:lv_machine_hull', '6x #gtceu:circuits/ulv', '6x gtceu:ulv_robot_arm', '3x gtceu:ulv_conveyor_module',
+            '4x gtceu:steel_gear', '2x gtceu:ulv_electric_motor','2x kubejs:ulv_emitter', '4x gtceu:tin_single_cable')
         .inputFluids('gtceu:tin 576')
         .itemOutputs('gtceu:circuit_manufacturing_facility')
         .duration(2400)

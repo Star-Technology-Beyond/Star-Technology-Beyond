@@ -6,7 +6,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(3, 1, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_REPLICATOR , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION)
-        .setMaxTooltips(4);
 
 });
 
@@ -37,6 +36,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(0))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(3).setPreviewCount(0))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(0))
+                .or(Predicates.abilities(PartAbility.COMPUTATION_DATA_RECEPTION).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('F', Predicates.blocks('gtceu:trinaquadalloy_frame'))
             .where('G', Predicates.blocks('gtceu:sturdy_machine_casing'))

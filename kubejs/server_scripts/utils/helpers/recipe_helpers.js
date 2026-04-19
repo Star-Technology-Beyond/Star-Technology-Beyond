@@ -269,3 +269,50 @@ global.getRecipeTier = (tier) => {
 
     return recipeTier;
 }
+
+const getDataItem = (cwu) => (cwu >= 160) ? 'start_core:data_dna_disk' : (cwu >=32) ? 'gtceu:data_module' : 'gtceu:data_orb' ;
+
+ServerEvents.recipes(event => {
+
+  global.researchBuilder = (machineType, recId, inputsI, inputsF, outputsI, duration, cwuT, totalCWU, euT, researched) => {
+      const dataItem = getDataItem(cwuT);
+      const id = global.id;
+      
+      let mainRecipe = event.recipes.gtceu[machineType](id(recId));
+
+      if (inputsI) {
+          mainRecipe.itemInputs(inputsI)
+      }
+      if (inputsF) {
+          mainRecipe.inputFluids(inputsF);
+      }
+      if (outputsI) {
+          mainRecipe.itemOutputs(outputsI);
+      }
+
+      mainRecipe
+          .duration(duration)
+          .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+              .researchStack(Item.of(researched))
+              .CWUt(cwuT)
+              .EUt(euT)
+          )
+          .EUt(euT);
+
+      event.recipes.gtceu.research_station(`1_x_${(researched).replace(':','_')}`)
+          .itemInputs(dataItem)
+          .itemInputs(researched)
+          .itemOutputs(
+              Item.of(
+                  `${dataItem}`,
+                  `{assembly_line_research:{research_id:"1x_${researched.replace(':','_')}",research_type:"gtceu:${machineType}"}}`
+              )
+          )
+          .CWUt(cwuT)
+          .totalCWU(totalCWU)
+          .EUt(euT);
+
+  }
+  
+});
