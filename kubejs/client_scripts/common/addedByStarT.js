@@ -18,7 +18,7 @@ global.addedByStarT = {
         'subatomic_particle_lattice_isolation_terminal', 'superior_particulate_isolation_nexus', 'yielding_excression_advanced_seperation_transformator', 
         'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 'uiv_fusion_reactor', 'exotic_gas_siphon',
         'ultimate_ebf', 'compact_assembly_line', 'supreme_plasma_turbine', 'vacuum_chemical_reaction_chamber', 'dual_chambered_vacuum_complex', 'auroric_vacuum_isolation_reactor',
-        'advanced_synthesis_plant','nyinsane_plasma_turbine', 'ulv_barrel', 'ulv_stone_barrel', 'ulv_advanced_composter'
+        'advanced_synthesis_plant', 'nyinsane_plasma_turbine',, 'component_part_assembly', 'ulv_barrel', 'ulv_stone_barrel', 'ulv_advanced_composter'
     ],
     isCore: [
         'hellforge', 'abyssal_harvester', 'abyssal_containment_room', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 'uiv_fusion_reactor'
@@ -36,7 +36,7 @@ global.addedByStarT = {
         'large_quantum_compressor', 'runic_circuitry_assembling_station', 'exotic_gas_siphon', 'auroric_vacuum_isolation_reactor'
     ],
     subBatch: [
-        'industrial_barrel'
+        'industrial_barrel', 'component_part_assembly'
     ],
     pocBatch: [
         't_large_bender', 't_large_centrifuge', 't_large_electrolyzer', 't_large_extruder', 't_large_forming_press', 't_large_lathe', 't_large_macerator', 
