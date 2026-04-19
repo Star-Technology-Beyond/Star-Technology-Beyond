@@ -7,33 +7,35 @@ global.addedByStarT = {
         'chemical_plant', 'mega_abs', 't_large_bender', 't_large_centrifuge', 't_large_electrolyzer', 't_large_extruder', 
         't_large_forming_press', 't_large_lathe', 't_large_macerator', 't_large_mixer', 't_large_ore_washer', 't_large_sifter',
         't_large_thermal_centrifuge', 't_large_wiremill', 't_large_autoclave', 't_large_rock_crusher', 'bulk_ore_processing_array', 
-        'folding_akreyrium_stabiliser', 'molten_destabiliser', 'ancient_refinement_center', 'component_nexus', 'cyclonic_sifter', 'injection_mixer', 
+        'folding_akreyrium_stabiliser', 'molten_destabiliser', 'fornaxs_infernal_rotary_engine', 'component_nexus', 'cyclonic_sifter', 'injection_mixer', 
         'manifold_centrifuge', 'atomic_synthesis_plant', 'component_part_hub', 'draco_circuit_assembler', 'draco_infusion', 'cryostate_quantum_chiller', 
-        'hellforge', 'abyssal_harvester', 'abyssal_containment_room', 'dimensional_finder', 'gate_assembly', 'large_rotor_machine', 
-        'large_quantum_compressor', 'runic_circuitry_assembling_station', 'runic_inscribe_manipulate', 'stargate_component_assembly', 
-        'super_pressure_heat_chamber', 'omega_pressure_heat_chamber', 'super_compact_heat_chamber', 'heat_chamber', 'super_abs', 'super_cutter', 
-        'super_ebf', 'super_implosion_compressor', 'super_vacuum_freezer', 'super_electric_ore_factory', 'aqueous_transformation_processing_center', 
-        'ascendant_engraving_matrix', 'byteforce_unified_incomparable_logistics_depot', 'electro_magnetic_material_ripper', 'fermenting_arboreal_rejuvination_monstronsity', 
-        'gravitational_compression_chamber', 'material_annihilation_array', 'molecular_inducing_xanadu', 'multithreaded_component_synthesis_forge',
-        'subatomic_particle_lattice_isolation_terminal', 'superior_particulate_isolation_nexus', 'yielding_excression_advanced_seperation_transformator', 
-        'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 'uiv_fusion_reactor', 'exotic_gas_siphon',
-        'ultimate_ebf', 'compact_assembly_line', 'supreme_plasma_turbine', 'vacuum_chemical_reaction_chamber', 'dual_chambered_vacuum_complex', 'auroric_vacuum_isolation_reactor',
-        'advanced_synthesis_plant', 'nyinsane_plasma_turbine', 'component_part_assembly', 't1_combustion_module', 't2_combustion_module', 't1_rocket_module', 't2_rocket_module',
-        'modular_combustion_frame', 'ulv_barrel', 'ulv_stone_barrel', 'ulv_advanced_composter'
+        'hellforge', 'abyssal_harvester', 'abyssal_containment_room', 'dimensional_finder', 'gate_assembly', 'large_rotor_machine',
+        'ev_solar_cell', 'iv_solar_cell', 'luv_solar_cell', 'zpm_solar_cell', 'uv_solar_cell', 'uhv_solar_cell', 'ev_solar_panel', 'iv_solar_panel',
+        'luv_solar_panel', 'uv_solar_array', 'uhv_solar_array', 'large_quantum_compressor', 'runic_circuitry_assembling_station', 'runic_inscribe_manipulate', 
+        'stargate_component_assembly', 'super_pressure_heat_chamber', 'omega_pressure_heat_chamber', 'super_compact_heat_chamber', 'heat_chamber', 'super_abs', 'super_cutter', 
+        'super_ebf', 'super_implosion_compressor', 'super_vacuum_freezer', 'super_electric_ore_factory', 'super_barrel', 'super_cracker', 'super_pyrolyse', 'super_gas_collector',
+        'aqueous_transformation_processing_center', 'ascendant_engraving_matrix', 'byteforce_unified_incomparable_logistics_depot', 'electro_magnetic_material_ripper', 
+        'fermenting_arboreal_rejuvination_monstronsity', 'gravitational_compression_chamber', 'material_annihilation_array', 'molecular_inducing_xanadu', 
+        'multithreaded_component_synthesis_forge', 'subatomic_particle_lattice_isolation_terminal', 'superior_particulate_isolation_nexus', 
+        'yielding_excression_advanced_seperation_transformator', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 
+        'uiv_fusion_reactor', 'exotic_gas_siphon', 'ultimate_ebf', 'compact_assembly_line', 'supreme_plasma_turbine', 'vacuum_chemical_reaction_chamber', 'dual_chambered_vacuum_complex', 
+        'auroric_vacuum_isolation_reactor', 'advanced_synthesis_plant', 'nyinsane_plasma_turbine', 'component_part_assembly', 't1_combustion_module', 't2_combustion_module', 
+        't1_rocket_module', 't2_rocket_module', 'modular_combustion_frame', 'exotic_tectonic_formation_apparatus', 'ulv_barrel', 'ulv_stone_barrel', 'ulv_advanced_composter'
     ],
     isCore: [
-        'hellforge', 'abyssal_harvester', 'abyssal_containment_room', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 'uiv_fusion_reactor',
-        't1_combustion_module', 't2_combustion_module', 't1_rocket_module', 't2_rocket_module', 'modular_combustion_frame'
+        'hellforge', 'abyssal_harvester', 'abyssal_containment_room', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor',
+        'uiv_fusion_reactor', 'ev_solar_cell', 'iv_solar_cell', 'luv_solar_cell', 'zpm_solar_cell', 'uv_solar_cell', 'uhv_solar_cell', 'ev_solar_panel', 'iv_solar_panel', 
+        'luv_solar_panel', 'uv_solar_array', 'uhv_solar_array', 't1_combustion_module', 't2_combustion_module', 't1_rocket_module', 't2_rocket_module', 'modular_combustion_frame'
     ],
     modifiers: [
-        'batch', 'paraBatch', 'subBatch', 'pocBatch', 'throughBatch', 'coilBatch', 'paraLayered', 'paraSubBatch', 'paraPocBatch', 'subThroughBatch', 'threadSubBatch', 'paraSubBulkBatch', 'paraSubAssBatch',
+        'batch', 'paraBatch', 'subBatch', 'pocBatch', 'throughBatch', 'coilBatch', 'paraLayered', 'paraSubBatch', 'paraPocBatch', 'subThroughBatch', 'threadSubBatch', 'paraSubAssBatch',
         'paraSubThroughBatch', 'paraThreadBulkBatch', 'subAssThroughBatch', 'paraSubBulkThroughBatch', 'paraPocSubBulkThroughBatch', 'paraThreadSubBulkBatch'
     ],
     batch: [
         'greenhouse', 'draco_infusion', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 'uiv_fusion_reactor', 'vacuum_chemical_reaction_chamber'
     ],
     paraBatch: [
-        'ore_processing_plant', 'large_sieve', 'large_me_assembler', 'dimensional_destabiliser', 'rock_sifter', 'void_excavator', 
+        'ore_processing_plant', 'large_sieve', 'large_me_assembler', 'rock_sifter', 'void_excavator', 
         'folding_akreyrium_stabiliser', 'molten_destabiliser', 'cyclonic_sifter', 'injection_mixer', 'manifold_centrifuge',
         'large_quantum_compressor', 'runic_circuitry_assembling_station', 'exotic_gas_siphon', 'auroric_vacuum_isolation_reactor'
     ],
@@ -45,7 +47,7 @@ global.addedByStarT = {
         't_large_mixer', 't_large_ore_washer', 't_large_sifter', 't_large_thermal_centrifuge', 't_large_wiremill', 't_large_autoclave', 't_large_rock_crusher'
     ],
     throughBatch: [
-        'super_cutter', 'super_electric_ore_factory', 'dual_chambered_vacuum_complex'
+        'super_cutter', 'super_electric_ore_factory', 'dual_chambered_vacuum_complex', 'dimensional_destabiliser', 'exotic_tectonic_formation_apparatus'
     ],
     coilBatch: [
         'super_implosion_compressor'
@@ -64,9 +66,6 @@ global.addedByStarT = {
     ],
     threadSubBatch: [
         'multithreaded_component_synthesis_forge'
-    ],
-    paraSubBulkBatch: [
-        'ancient_refinement_center'
     ],
     paraSubAssBatch: [
         'draco_circuit_assembler'
