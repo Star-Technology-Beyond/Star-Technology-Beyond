@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     const id = global.id;
 
     const scalerMCSF = 32; //Should be 16n variant (cap64) //having from 64 given large quantities
-    const getDataItem = (cwu) => (cwu >= 160) ? 'start_core:data_dna_disk' : (cwu >=32) ? 'gtceu:data_module' : 'gtceu:data_orb' ;
+    const getDataItem = global.getDataItem;
 
 // === Living SMDs ===
     const livingSMD = (type, quantity, inputs, polymerAmount, cwu) => {

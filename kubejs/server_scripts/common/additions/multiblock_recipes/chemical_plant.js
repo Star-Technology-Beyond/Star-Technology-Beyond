@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
         .duration(1200);
 
     // === Chemical Skips ===
-    const getDataItem = (cwu) => (cwu >= 160) ? 'start_core:data_dna_disk' : (cwu >=32) ? 'gtceu:data_module' : 'gtceu:data_orb' ;
+    const getDataItem = global.getDataItem;
 
     const chemicalSkip = (recId, notConsumable, inputsI, inputsF, outputsI, outputsF, circuit, circuitNum, duration, cleanroomType, cwuT, voltage, researched) => {
 

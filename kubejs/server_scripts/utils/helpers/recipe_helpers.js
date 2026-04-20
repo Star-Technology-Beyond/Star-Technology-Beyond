@@ -270,12 +270,12 @@ global.getRecipeTier = (tier) => {
     return recipeTier;
 }
 
-const getDataItem = (cwu) => (cwu >= 160) ? 'start_core:data_dna_disk' : (cwu >=32) ? 'gtceu:data_module' : 'gtceu:data_orb' ;
+global.getDataItem = (cwu) => (cwu >= 160) ? 'start_core:data_dna_disk' : (cwu >=32) ? 'gtceu:data_module' : 'gtceu:data_orb' ;
 
 ServerEvents.recipes(event => {
 
   global.researchBuilder = (machineType, recId, inputsI, inputsF, outputsI, duration, cwuT, totalCWU, euT, researched) => {
-      const dataItem = getDataItem(cwuT);
+      const dataItem = global.getDataItem(cwuT);
       const id = global.id;
       
       let mainRecipe = event.recipes.gtceu[machineType](id(recId));

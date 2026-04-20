@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 
         const b2exponentialMultiplier = (base) => base * (2 ** scaler);
         const scaled = (base) => base * scaler;
-        const getDataItem = (cwu) => (cwu >= 160) ? 'start_core:data_dna_disk' : (cwu >=32) ? 'gtceu:data_module' : 'gtceu:data_orb' ;
+        const getDataItem = global.getDataItem;
 
         const componentPart = (type, inputs, fluids, duration, researched) => {
 
