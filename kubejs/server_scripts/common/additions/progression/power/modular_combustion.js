@@ -5,12 +5,6 @@ ServerEvents.recipes(event => {
     const getRecipeTier = global.getRecipeTier;
     const assline = event.recipes.gtceu.assembly_line;
 
-    const log = (text) => {
-        console.log("-------------------------------");
-        console.log(text);
-        console.log("-------------------------------");
-    };
-
     assline(id('modular_combustion_frame'))
     .itemInputs('gtceu:luv_machine_hull', '2x #gtceu:circuits/luv', Item.of('gtceu:lapotronic_energy_orb_cluster'),
         '4x gtceu:luv_emitter', '4x gtceu:luv_sensor', '4x gtceu:luv_fluid_regulator', `8x gtceu:${componentMaterials.luv.materials.cable}_quadruple_cable`,
@@ -52,10 +46,6 @@ ServerEvents.recipes(event => {
          } = componentMaterials[machine.tier].materials;
 
         const mainRecipe = assline(id(`${machine.tier}_combustion_module`));
-
-        log([`gtceu:${machine.tier}_machine_hull`, `${circuitCount}x #gtceu:circuits/${machine.tier}`, `${plateCount}x gtceu:dense_${tierMaterial}_plate`,
-                `${otherCounts}x gtceu:${primMaterial}_gear`, `${otherCounts}x gtceu:small_${supMaterial}_gear`, `${otherCounts}x gtceu:${machine.tier}_electric_motor`,
-                `${otherCounts}x gtceu:${machine.tier}_electric_piston`, `8x gtceu:${cable}_${cableType}_cable`]);
 
         mainRecipe
             .itemInputs(`gtceu:${machine.tier}_machine_hull`, `${circuitCount}x #gtceu:circuits/${machine.tier}`, `${plateCount}x gtceu:dense_${tierMaterial}_plate`,
