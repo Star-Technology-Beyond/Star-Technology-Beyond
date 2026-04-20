@@ -47,7 +47,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('kubejs:draco_assembly_grating'))
             .where('D', Predicates.blocks('kubejs:draco_resilient_fusion_glass'))
             .where('E', Predicates.blocks('start_core:advanced_fusion_coil'))
-            .where('F', Predicates.abilities($StarTPartAbility.MODULAR_AUTO_SCALING_NODE_CONDUIT))
+            .where('F', Predicates.abilities(PartAbility.INPUT_ENERGY))
+            // .where('F', Predicates.abilities($StarTPartAbility.MODULAR_AUTO_SCALING_NODE_CONDUIT))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/end_multis/draco_ware_casing',
@@ -74,7 +75,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('kubejs:draco_assembly_grating'))
             .where('D', Predicates.blocks('kubejs:draco_resilient_fusion_glass'))
             .where('E', Predicates.blocks('start_core:advanced_fusion_coil'))
-            .where('F', Predicates.abilities($StarTPartAbility.MODULAR_AUTO_SCALING_NODE_CONDUIT))
+            .where('F', Predicates.abilities(PartAbility.INPUT_ENERGY))
+            // .where('F', Predicates.abilities($StarTPartAbility.MODULAR_AUTO_SCALING_NODE_CONDUIT))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/end_multis/draco_ware_casing',
