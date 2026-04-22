@@ -1223,6 +1223,7 @@
 				title: "{ftbquests.futuristic_mechanisms.positioner.title}"
 				type: "checkmark"
 			}]
+			title: "{ftbquests.positioner.title}"
 			x: 1.5d
 			y: -1.0d
 		}

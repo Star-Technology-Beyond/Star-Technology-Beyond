@@ -2027,7 +2027,7 @@
 			optional: true
 			tasks: [{
 				id: "02A369FF9CB41D88"
-				title: "{ftbquests.automation_age.positioner.title}"
+				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
 			x: -4.0d

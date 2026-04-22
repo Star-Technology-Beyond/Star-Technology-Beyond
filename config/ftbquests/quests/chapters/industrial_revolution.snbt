@@ -1653,7 +1653,7 @@
 			optional: true
 			tasks: [{
 				id: "10740F5D76540FB7"
-				title: "{ftbquests.industrial_revolution.positioner.title}"
+				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
 			x: 3.0d
