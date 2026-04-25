@@ -55,7 +55,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('gtceu:fusion_glass'))
             .where('H', Predicates.blocks('kubejs:enriched_naquadah_machine_casing'))
             .where('I', Predicates.blocks('kubejs:enriched_naquadah_pipe_casing'))
-            .where('J', Predicates.blocks('kubejd:enriched_naquadah_heat_escape_casing'))
+            .where('J', Predicates.blocks('kubejs:enriched_naquadah_heat_escape_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/superconductors/casing_prismalium',

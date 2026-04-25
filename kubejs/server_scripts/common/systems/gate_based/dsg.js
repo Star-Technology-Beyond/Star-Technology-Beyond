@@ -30,14 +30,14 @@ ServerEvents.recipes(event => {
         ['2x gtceu:primordially_stellarized_weapon_grade_naquadah_frame', '24x gtceu:uiv_field_generator', '3x kubejs:dsg_energy_modulator', '8x gtceu:uiv_electric_piston',
             '96x gtceu:fine_draco_abyssal_wire','96x gtceu:fine_magmada_alloy_wire','96x gtceu:fine_lepton_resonant_thallium_antimonide_wire','96x gtceu:fine_raging_rimulatia_wire',
             '4x gtceu:hvga_steel_ultradense_plate','24x gtceu:calamatium_screw','4x gtceu:nyanium_ultradense_plate','18x gtceu:isovol_screw'], 
-        ['gtceu:neutrindium_soldering_alloy 1000', 'gtceu:faematter 1000', 'gtceu:draconic_stabilization_mixture 1000'], 
+        ['gtceu:neutrindium_soldering_alloy 9216', 'gtceu:faematter 5000', 'gtceu:draconic_stabilization_mixture 3750'], 
         ['kubejs:dsg_field_stabilizer'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:asg_field_stabilizer');
 
     researchBuilder(assline, 'dsg_stellar_dialer', 
         ['2x gtceu:nyanium_ultradense_plate', 'gtceu:advanced_monitor', '2x kubejs:dsg_computational_matrix', 
             '4x #gtceu:circuits/uxv', '48x gtceu:abyssal_alloy_ring', '4x gtceu:hvga_steel_rod', '12x gtceu:draco_abyssal_bolt'], 
-        ['gtceu:neutrindium_soldering_alloy 1000'], 
+        ['gtceu:neutrindium_soldering_alloy 3456'], 
         ['kubejs:dsg_stellar_dialer'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:asg_stellar_dialer');
 
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         ['3x kubejs:abyssal_processing_unit','2x gtceu:double_raging_rimulatia_plate','48x kubejs:dsg_dpu', '2x gtceu:lepton_resonant_thallium_antimonide_spring',
             '16x kubejs:rift_infused_soc','64x gtceu:hvga_steel_bolt','192x kubejs:uipic_chip','96x gtceu:fine_draco_abyssal_wire',
             '48x gtceu:fine_primordially_stellarized_weapon_grade_naquadah_wire','6x gtceu:nyanium_plate'], 
-        ['gtceu:neutrindium_soldering_alloy 1000', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1000', 'gtceu:draconic_enrichment_serum 1000'], 
+        ['gtceu:neutrindium_soldering_alloy 9216', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 2304', 'gtceu:draconic_enrichment_serum 7500'], 
         ['kubejs:dsg_computational_matrix'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:asg_computational_matrix');
 
@@ -54,13 +54,13 @@ ServerEvents.recipes(event => {
             '10x gtceu:draconyallium_foil_ream', '8x gtceu:abyssal_alloy_foil_ream', '6x gtceu:draco_abyssal_foil_ream', '4x gtceu:hvga_steel_foil_ream', 
             '160x #gtceu:circuits/uxv', '16x gtceu:nyanium_nonuple_fluid_pipe','24x gtceu:uiv_fluid_regulator', '48x gtceu:aerorelient_steel_ring',
             '24x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_quadruple_fluid_pipe','576x gtceu:abyssal_alloy_round'], 
-        ['gtceu:neutrindium_soldering_alloy 1000', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1000', 'gtceu:faematter 1000', 'gtceu:draconic_stabilization_mixture 1000'], 
+        ['gtceu:neutrindium_soldering_alloy 62208', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 9216', 'gtceu:faematter 12500', 'gtceu:draconic_stabilization_mixture 10000'], 
         ['kubejs:dsg_dimensional_supercomputer'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:abyssal_processor_mainframe');
 
     researchBuilder(riftAss, 'dsg_dhd', 
         ['sgjourney:classic_dhd', 'kubejs:dsg_stellar_dialer', '6x ' + u_rune, '6x ' + s_rune, '6x ' + g_rune, '6x ' + v_rune, '6x ' + i_rune, '6x ' + t_rune], 
-        ['gtceu:neutrindium_soldering_alloy 1000', 'gtceu:faematter 1000', 'gtceu:draconic_stabilization_mixture 1000'], 
+        ['gtceu:neutrindium_soldering_alloy 9216', 'gtceu:faematter 7500', 'gtceu:draconic_stabilization_mixture 6250'], 
         ['sgjourney:pegasus_dhd'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'sgjourney:milky_way_dhd');
 
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
         ['gtceu:raging_rimulatia_frame', '2x start_core:uiv_16a_dream_link_energy_hatch', '2x #gtceu:circuits/uxv', '3x gtceu:max_battery',
             '32x gtceu:rhenium_super_composite_alloy_foil', '24x gtceu:draco_abyssal_foil', '16x gtceu:nyanium_foil', '8x gtceu:raging_rimulatia_foil',
             '16x kubejs:prismalic_neutron_reflector', '8x gtceu:hvga_steel_screw'], 
-        ['gtceu:neutrindium_soldering_alloy 1000', 'gtceu:pure_dragon_breath 1000', 'gtceu:bec_og 12500'], 
+        ['gtceu:neutrindium_soldering_alloy 6912', 'gtceu:pure_dragon_breath 37500', 'gtceu:bec_og 12500'], 
         ['kubejs:dsg_energy_modulator'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:asg_energy_modulator');
 
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
         ['3x gtceu:raging_rimulatia_frame', 'gtceu:exquisite_aquariadic_rimuli_dragonix_gem', '6x kubejs:dsg_field_stabilizer','8x kubejs:dsg_computational_matrix',
             '24x gtceu:uiv_sensor', '256x kubejs:komaru_filament_t1', '8x gtceu:uiv_electric_motor', '6x gtceu:long_raging_rimulatia_rod',
             '320x gtceu:nether_star_foil', '96x gtceu:lepton_resonant_thallium_antimonide_double_cable'], 
-        ['gtceu:neutrindium_soldering_alloy 1000', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1000', 'gtceu:faematter 1000'], 
+        ['gtceu:neutrindium_soldering_alloy 36864', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 6912', 'gtceu:faematter 17500'], 
         ['kubejs:dsg_chevron'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:asg_chevron');
 
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
             '2x gtceu:aerorelient_steel_ultradense_plate','2x gtceu:zeroidic_trinate_steel_ultradense_plate','2x gtceu:expetidalloy_d_17_ultradense_plate',
             '4x kubejs:asg_reinforced_plating', '3x #gtceu:circuits/uev', '3x gtceu:hvga_steel_gear','4x gtceu:uiv_robot_arm', 
             '3x gtceu:small_draconyallium_gear','42x gtceu:lepton_resonant_thallium_antimonide_single_cable'], 
-        ['gtceu:neutrindium_soldering_alloy 1000', 'gtceu:faematter 1000', 'gtceu:draconic_stabilization_mixture 1000'], 
+        ['gtceu:neutrindium_soldering_alloy 1152', 'gtceu:faematter 750', 'gtceu:draconic_stabilization_mixture 625'], 
         ['kubejs:dsg_reinforced_plating'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:asg_reinforced_plating');
 
@@ -93,46 +93,46 @@ ServerEvents.recipes(event => {
         ['2x gtceu:draco_abyssal_frame','4x kubejs:dsg_computational_matrix','6x gtceu:uiv_sensor', '3x gtceu:rhenium_super_composite_alloy_quadruple_wire', 
             'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_foil_ream','gtceu:astatium_bioselex_carbonite_foil_ream','gtceu:hafnide_ito_ceramic_foil_ream',
             'gtceu:rhenate_w_foil_ream','gtceu:mythrotight_carbide_steel_ultradense_plate','gtceu:trikoductive_neutro_steel_ultradense_plate'], 
-        ['gtceu:neutrindium_soldering_alloy 1000', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1000', 'gtceu:faematter 1000'], 
+        ['gtceu:neutrindium_soldering_alloy 6912', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 2304', 'gtceu:faematter 2500'], 
         ['kubejs:dsg_stellar_access_point'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:asg_stellar_access_point');
 
     researchBuilder(assline, 'prismalic_fragment', 
         ['gtceu:draconyallium_frame', 'kubejs:illustris_singularity', 'kubejs:vulcanus_singularity', '48x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_foil', 
             '72x gtceu:nyanium_tiny_fluid_pipe', 'kubejs:prismalic_helix_core','2x gtceu:raging_rimulatia_rod'], 
-        ['gtceu:neutrindium_soldering_alloy 1000', 'gtceu:faematter 1000', 'gtceu:draconic_stabilization_mixture 1000'], 
+        ['gtceu:neutrindium_soldering_alloy 2304', 'gtceu:faematter 1750', 'gtceu:draconic_stabilization_mixture 875'], 
         ['kubejs:prismalic_fragment'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'gtceu:prismatic_hypergurmalium_bucket');
 
     researchBuilder(assline, 'riftic_fragment', 
         ['gtceu:draconyallium_frame', 'kubejs:undina_singularity', 'kubejs:sylvestris_singularity', '48x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_foil', 
             '72x gtceu:nyanium_tiny_fluid_pipe', 'kubejs:prismalic_helix_core','2x gtceu:raging_rimulatia_rod'], 
-        ['gtceu:neutrindium_soldering_alloy 1000', 'gtceu:faematter 1000', 'gtceu:draconic_stabilization_mixture 1000'], 
+        ['gtceu:neutrindium_soldering_alloy 2304', 'gtceu:faematter 1750', 'gtceu:draconic_stabilization_mixture 875'], 
         ['kubejs:riftic_fragment'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'gtceu:riftic_concentrate_bucket');
 
     researchBuilder(assline, 'primordial_fragment', 
         ['gtceu:draconyallium_frame', 'kubejs:tenebrosus_singularity', 'kubejs:gnomus_singularity', '48x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_foil', 
             '72x gtceu:nyanium_tiny_fluid_pipe', 'kubejs:prismalic_helix_core','2x gtceu:raging_rimulatia_rod'], 
-        ['gtceu:neutrindium_soldering_alloy 1000', 'gtceu:faematter 1000', 'gtceu:draconic_stabilization_mixture 1000'], 
+        ['gtceu:neutrindium_soldering_alloy 2304', 'gtceu:faematter 1750', 'gtceu:draconic_stabilization_mixture 875'], 
         ['kubejs:primordial_fragment'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'gtceu:primordial_residue_bucket');
 
     researchBuilder(riftAss, 'prismafae_illuminatus_core', 
         ['kubejs:draconic_core','16x kubejs:prismalic_fragment','4x gtceu:uiv_field_generator','24x kubejs:uiv_high_strength_panel','128x gtceu:raging_rimulatia_bolt'], 
-        ['gtceu:prismatic_hypergurmalium 85000','gtceu:draconyallium 2304'], 
+        ['gtceu:prismatic_hypergurmalium 86250','gtceu:draconyallium 2304'], 
         ['kubejs:prismafae_illuminatus_core'], 
         3000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:prismalic_fragment');
 
     researchBuilder(riftAss, 'spatium_ruptura_core', 
         ['kubejs:draconic_core','16x kubejs:riftic_fragment','4x gtceu:uiv_field_generator','24x kubejs:uiv_high_strength_panel','128x gtceu:raging_rimulatia_bolt'], 
-        ['gtceu:riftic_concentrate 85000','gtceu:draconyallium 2304'], 
+        ['gtceu:riftic_concentrate 86250','gtceu:draconyallium 2304'], 
         ['kubejs:spatium_ruptura_core'], 
         3000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:riftic_fragment');
 
     researchBuilder(riftAss, 'primus_tempus_core', 
         ['kubejs:draconic_core','16x kubejs:primordial_fragment','4x gtceu:uiv_field_generator','24x kubejs:uiv_high_strength_panel','128x gtceu:raging_rimulatia_bolt'], 
-        ['gtceu:primordial_residue 85000','gtceu:draconyallium 2304'], 
+        ['gtceu:primordial_residue 86250','gtceu:draconyallium 2304'], 
         ['kubejs:primus_tempus_core'], 
         3000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:primordial_fragment');
 
@@ -147,13 +147,13 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.supreme_chemist(id('dsg_enscription_plate'))
         .layeredRecipe((layers) => layers
             .itemInputs('2x kubejs:asg_enscription_plate','32x gtceu:aurourium_foil')
-            .inputFluids('gtceu:prismatic_hypergurmalium 250')
+            .inputFluids('gtceu:prismatic_hypergurmalium 125')
             .next()
             .itemInputs('#gtceu:circuits/uxv','16x gtceu:raging_rimulatia_foil')
-            .inputFluids('gtceu:primordial_residue 250')
+            .inputFluids('gtceu:primordial_residue 125')
             .next()
             .itemInputs('#gtceu:circuits/uiv','8x gtceu:draconyallium_foil')
-            .inputFluids('gtceu:riftic_concentrate 250')
+            .inputFluids('gtceu:riftic_concentrate 125')
         )
         .itemOutputs('kubejs:dsg_enscription_plate')
         .duration(4000)

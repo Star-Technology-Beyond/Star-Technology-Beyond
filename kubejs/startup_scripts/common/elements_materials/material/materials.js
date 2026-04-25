@@ -1656,7 +1656,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     
     conductorPlasma('rhenate_w',['2x rhenium', '5x tungsten', '1x neutronium', '18x rose_gold', '7x neodymium'],0x87bcd0,SHINY,[18880, 'highest', VA('uxv'), 600], [V('uiv'), 1, 192, false],[no_decomp, no_abs_recipe]);
 
-    compIngotPlasmaSecColor('borealic_steel',['2x prismalium', '4x rose_gold', '11x aurourium', '2x titan_steel', '1x ancient_netherite'],0x8f7090,0x70907c,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
+    compIngotPlasmaSecColor('borealic_steel',['2x prismalium', '4x rose_gold', '18x aurourium', '2x titan_steel', '1x ancient_netherite','3x borealic_concentrate'],0x8f7090,0x70907c,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
 
     compIngotPlasmaSecColor('hvga_steel',['1x signalum','3x hssg','1x draco_abyssal','8x hsla_steel','3x titan_steel'],0x280c6c,0x2561b7,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe, foil]);
 
@@ -1855,7 +1855,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     //DSG
     compIngotLiquidSecColor('raging_rimulatia',['1x rifitc','1x draco_abyssal','1x riftic'],0xe357f2,0x163f5e,SHINY,'',[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, fine_wire])
-    compIngotPlasmaSecColor('primordially_stellarized_weapon_grade_naquadah',['157x stellarized_weapon_grade_naquadah','1x prismatic_hypergurmalium','1x primordial_residue','1x riftic_concentrate'],0x9881de,0x489957,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe, foil,fine_wire]);
+    
+    event.create('primordially_stellarized_weapon_grade_naquadah')
+        .components('1x voidic','157x stellarized_weapon_grade_naquadah','1x voidic')
+        .ingot()
+        .fluid()
+        .plasma()
+        .color(0x9881de)
+        .secondaryColor(0x489957)
+        .blastTemp(18880, 'highest', VA('uxv'), 600)
+        .iconSet(SHINY)
+        .flags(plates, frame, rod, dense_plate, long_rod, gear, foil, small_gear, rotor, fine_wire, no_decomp, no_abs_recipe);
+
     compGem('aquariadic_rimuli_dragonix', ['5x pure_dragon_breath','7x akreyriadic_runixium','4x raging_rimulatia'], 0x16269e, GEM_VERTICAL, []);    
 
 });

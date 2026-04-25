@@ -107,30 +107,40 @@ ServerEvents.recipes(event => {
             .outputFluids('gtceu:helium_3 250')
             .duration(dur * 20 * 1.05)
             .EUt(GTValues.VA[GTValues.UV]);
-        };
 
-    Material15000PlusAlloy('mythrolic_alloy', 36.75);
-    Material15000PlusAlloy('magmada_alloy', 49.05);
-    Material15000PlusAlloy('starium_alloy', 24.75);
-    Material15000PlusAlloy('enriched_pallarovium_alloy', 31.2);
-    Material15000PlusAlloy('nyanium', 24.9);
-    Material15000PlusAlloy('rhenium_super_composite_alloy', 18.6);
-    Material15000PlusAlloy('abyssal_alloy', 53.4);
-    Material15000PlusAlloy('chaotixic_alloy', 30.75);
-    Material15000PlusAlloy('ohmderblux_alloy', 25.35);
-    Material15000PlusAlloy('draconyallium', 14.4);
-    Material15000PlusAlloy('draco_abyssal', 35.85);
-    Material15000PlusAlloy('expetidalloy_d_17', 12.3);
+        event.recipes.gtceu.quantum_cooling(id(`${type}`))
+            .inputFluids(`gtceu:${type}_plasma 144`)
+            .inputFluids('gtceu:bec_og 250')
+            .outputFluids(`gtceu:molten_${type} 144`)
+            .outputFluids('gtceu:oganesson 200')
+            .duration(dur * 6)
+            .EUt(GTValues.VHA[GTValues.UEV]);
+            
+    };
+
+    Material15000PlusAlloy('mythrolic_alloy', 36.9);
+    Material15000PlusAlloy('magmada_alloy', 49.2);
+    Material15000PlusAlloy('starium_alloy', 29.55);
+    Material15000PlusAlloy('enriched_pallarovium_alloy', 31.5);
+    Material15000PlusAlloy('nyanium', 49.35);
+    Material15000PlusAlloy('rhenium_super_composite_alloy', 16.5);
+    Material15000PlusAlloy('abyssal_alloy', 61.5);
+    Material15000PlusAlloy('chaotixic_alloy', 29.25);
+    Material15000PlusAlloy('ohmderblux_alloy', 22.95);
+    Material15000PlusAlloy('draconyallium', 12.45);
+    Material15000PlusAlloy('draco_abyssal', 76.8);
+    Material15000PlusAlloy('expetidalloy_d_17', 12);
     Material15000PlusAlloy('rhenate_w', 28.8);
-    Material15000PlusAlloy('borealic_steel', 15.3);
+    Material15000PlusAlloy('borealic_steel', 56.25);
     Material15000PlusAlloy('ultispestalloy_cmsh', 13.35);
-    Material15000PlusAlloy('trikoductive_neutro_steel', 37.95);
-    Material15000PlusAlloy('melastrium_mox', 25.65);
-    Material15000PlusAlloy('hvga_steel', 14.1);
+    Material15000PlusAlloy('trikoductive_neutro_steel', 38.25);
+    Material15000PlusAlloy('melastrium_mox', 23.85);
+    Material15000PlusAlloy('hvga_steel', 18.75);
     Material15000PlusAlloy('mythrotight_carbide_steel', 13.5);
     Material15000PlusAlloy('aerorelient_steel', 10.8);
-    Material15000PlusAlloy('zeroidic_trinate_steel', 33.75);
-    Material15000PlusAlloy('vastaqalloy_cr_4200x', 17.7);
-    Material15000PlusAlloy('soul_ascendant_cuperite', 4.2);
+    Material15000PlusAlloy('zeroidic_trinate_steel', 32.85);
+    Material15000PlusAlloy('vastaqalloy_cr_4200x', 16.5);
+    Material15000PlusAlloy('soul_ascendant_cuperite', 4.35);
+    Material15000PlusAlloy('primordially_stellarized_weapon_grade_naquadah', 63);
 
 });
