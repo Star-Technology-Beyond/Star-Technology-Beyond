@@ -2401,9 +2401,7 @@
 		}
 		{
 			dependencies: ["10126B9D6EC90F59"]
-			description: [
-				"{ftbquests.early_game.steam_age_path.description}"
-			]
+			description: ["{ftbquests.early_game.steam_age_path.description}"]
 			icon: "gtceu:bronze_normal_fluid_pipe"
 			id: "6E201D2B9E9A25B0"
 			optional: true
@@ -2420,9 +2418,7 @@
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
-			description: [
-				"{ftbquests.early_game.create_path.description}"
-			]
+			description: ["{ftbquests.early_game.create_path.description}"]
 			icon: "create:large_cogwheel"
 			id: "4EBEB19735285EF4"
 			optional: true
