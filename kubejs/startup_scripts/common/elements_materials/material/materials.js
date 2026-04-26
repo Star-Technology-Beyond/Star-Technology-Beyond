@@ -1837,9 +1837,12 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid(`rp_1`,[`12x carbon`,`26x hydrogen`],0xF2EC9A , [no_decomp]);
     compLiquidTemp(`liquid_fluorine`,85, [`2x fluorine`], 0xB5E0FF, [no_decomp]);
     compLiquidTemp(`dioxygen_difluoride`, 110, [`2x oxygen`, `2x fluorine`], 0xE8F1FF, [no_decomp]);
-    compLiquid(`white_fuming_nitric_acid`, [`1x nitrogen`, `3x oxygen`,`1x hydrogen`], 0xFDFEFC, [no_decomp]);
-    compLiquid(`red_fuming_nitric_acid`, [`1x nitrogen`, `3x oxygen`,`1x hydrogen`], 0xFF0000, [no_decomp]);
+    compLiquid(`white_fuming_nitric_acid`, [`1x hydrogen`, `1x nitrogen`, `3x oxygen`], 0xFDFEFC, [no_decomp]);
+    compLiquid(`red_fuming_nitric_acid`, [`1x hydrogen`, `1x nitrogen`, `3x oxygen`], 0xFF0000, [no_decomp]);
     compLiquid(`monomethylhydrazine`, [`1x carbon`, `6x hydrogen`, `2x nitrogen`], 0x9E9E9E, [no_decomp]);
-    compLiquid(`sorbitol_hypergolic_mixture`, [`6x carbon`, `14x hydrogen`, `6x oxygen`], 0xA9A9A9, [no_decomp]);
-    compLiquid(`ferrocenium_superoxide`, [`10x carbon`, `10x hydrogen`, `1x iron`, `2x oxygen`], 0xB87333, [no_decomp]);
+    compLiquid(`sorbitol_hypergolic_fuel`, [`6x carbon`, `20x hydrogen`, `6x oxygen`, `1x nitrogen`, `1x boron`], 0xF5F5F5, [no_decomp]);
+    compLiquid(`ferrocenium_superoxide`, [`15x carbon`, `5x hydrogen`, `15x fluorine`, `1x iron`, `2x oxygen`], 0xB87333, [no_decomp]);
+    compLiquid(`fuming_nitric_acid`, [`1x hydrogen`, `1x nitrogen`, `3x oxygen`], 0xF0F0F0, [no_decomp]);
+    compLiquid(`hydrazine`, [`2x nitrogen`, `4x hydrogen`], 0xC8C8C8, [no_decomp]);
+    compDust(`ammonia_borane`, [`1x nitrogen`, `1x boron`, `6x hydrogen`], 0xFFFFFF, [no_decomp]);
 });
