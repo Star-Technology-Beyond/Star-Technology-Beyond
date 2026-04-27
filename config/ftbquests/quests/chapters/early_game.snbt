@@ -2010,11 +2010,13 @@
 				{
 					id: "0FD57A804E9A6670"
 					item: "gtceu:steam_grinder"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "378E79F5C85853A5"
 					item: "gtceu:steam_oven"
+					optional_task: true
 					type: "item"
 				}
 				{
