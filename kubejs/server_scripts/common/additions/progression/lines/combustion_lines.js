@@ -28,14 +28,14 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.vacuum_freezer(id('liquid_flourine'))
         .inputFluids('gtceu:fluorine 1000')
         .outputFluids('gtceu:liquid_fluorine 1000')
-        .duration(80)
-        .EUt(GTValues.VA[GTValues.HV]);
+        .duration(240)
+        .EUt(GTValues.VA[GTValues.EV]);
 
-    event.recipes.gtceu.large_chemical_reactor(id('dioxygen_difluoride'))
+    event.recipes.gtceu.mixer(id('dioxygen_difluoride'))
         .inputFluids('gtceu:liquid_oxygen 2000', 'gtceu:liquid_fluorine 2000')
         .outputFluids('gtceu:dioxygen_difluoride 1000')
-        .duration(200)
-        .EUt(GTValues.VA[GTValues.HV])
+        .duration(120)
+        .EUt(GTValues.VHA[GTValues.EV])
 
     event.recipes.gtceu.fluid_heater(id('fuming_nitric_acid'))
         .inputFluids('gtceu:nitration_mixture 1000')
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor(id('red_fuming_nitric_acid'))
         .inputFluids('gtceu:white_fuming_nitric_acid 1000', 'gtceu:nitrogen_dioxide 150')
-        .outputFluids('gtceu:red_fuming_nitric_acid 1150')
+        .outputFluids('gtceu:red_fuming_nitric_acid 1000')
         .duration(160)
         .EUt(GTValues.VA[GTValues.MV]);
 
@@ -87,6 +87,37 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:sorbitol_hypergolic_fuel 6000')
         .duration(80)
         .EUt(GTValues.VA[GTValues.LV]);
+
+    event.recipes.gtceu.large_chemical_reactor(id('hexafluorophosphoric_acid'))
+        .inputFluids('gtceu:phosphoric_acid 1000', 'gtceu:hydrofluoric_acid 1000', 'gtceu:fluorine 1000')
+        .outputFluids('gtceu:hexafluorophosphoric_acid 1000', 'water 2000')
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.MV]);
+
+    event.recipes.gtceu.chemical_reactor(id('ferrocene'))
+        .inputFluids('gtceu:iron_ii_chloride 1000', 'gtceu:hydrogen 1000')
+        .itemInputs('10x gtceu:carbon_dust')
+        .outputFluids('gtceu:ferrocene 1000', 'gtceu:hydrochloric_acid 1000', 'water 1000')
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.MV]);
+
+    event.recipes.gtceu.large_chemical_reactor(id('iron_cyclopentadienyl_dichlorobenzene'))
+        .inputFluids('gtceu:ferrocene 1000', 'gtceu:dichlorobenzene 1000', 'gtceu:hexafluorophosphoric_acid 1000')
+        .outputFluids('gtceu:iron_cyclopentadienyl_dichlorobenzene 1000', 'gtceu:hydrochloric_acid 1000', 'water 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV]);
+
+    event.recipes.gtceu.large_chemical_reactor(id('fluorinated_ferrocene'))
+        .inputFluids('gtceu:iron_cyclopentadienyl_dichlorobenzene 1000', 'gtceu:fluorine 1000')
+        .outputFluids('gtceu:fluorinated_ferrocene 1000', 'gtceu:dichlorobenzene 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV]);
+
+    event.recipes.gtceu.large_chemical_reactor(id('ferrocenium_superoxide'))
+        .inputFluids('gtceu:fluorinated_ferrocene 1000', 'gtceu:oxygen 1000')
+        .outputFluids('gtceu:ferrocenium_superoxide 1000')
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.HV]);
 
     event.recipes.gtceu.modular_rocket_module(id('rp_1'))
         .inputFluids('gtceu:rp_1 1000')

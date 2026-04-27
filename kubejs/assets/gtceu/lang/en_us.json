@@ -1449,6 +1449,23 @@
     "block.gtceu.exotic_tectonic_formation_apparatus": "Exotic Tectonic Formation Apparatus",
     "gtceu.exotic_rock_crushing": "Exotic Rock Crushing",
     "block.gtceu.exotic_tectonic_formation_apparatus.tooltip.0": "§7A machine that can create tectonic formations with unique properties, allowing for the extraction of rare resources and the creation of specialized environments.",
-    "block.gtceu.exotic_tectonic_formation_apparatus.tooltip.1": "Can only have §bone§r Energy Hatch"
-  
+    "block.gtceu.exotic_tectonic_formation_apparatus.tooltip.1": "Can only have §bone§r Energy Hatch",
+    "material.gtceu.ferrocene": "Ferrocene",
+    "material.gtceu.hexafluorophosphoric_acid": "Hexafluorophosphoric Acid",
+    "material.gtceu.iron_cyclopentadienyl_dichlorobenzene": "Iron Cyclopentadienyl Dichlorobenzene",
+    "material.gtceu.fluorinated_ferrocene": "Fluorinated Ferrocene",
+    "material.gtceu.ferrocenium_superoxide": "Ferrocenium Superoxide",
+    "material.gtceu.hydrazine": "Hydrazine",
+    "material.gtceu.ammonia_borane": "Ammonia Borane",
+    "material.gtceu.sorbitol_hypergolic_fuel": "Sorbitol Hypergolic Fuel",
+    "material.gtceu.fuming_nitric_acid": "Fuming Nitric Acid",
+    "material.gtceu.white_fuming_nitric_acid": "White Fuming Nitric Acid",
+    "material.gtceu.red_fuming_nitric_acid": "Red Fuming Nitric Acid",
+    "material.gtceu.monomethylhydrazine": "Monomethylhydrazine",
+    "material.gtceu.kerosene": "Kerosene",
+    "material.gtceu.rp_1": "RP-1",
+    "material.gtceu.hydrofined_kerosene": "Hydrofined Kerosene",
+    "material.gtceu.liquid_fluorine": "Liquid Fluorine",
+    "material.gtceu.dioxygen_difluoride": "Dioxygen Difluoride"
+    
 }

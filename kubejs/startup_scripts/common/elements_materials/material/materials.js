@@ -1845,4 +1845,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid(`fuming_nitric_acid`, [`1x hydrogen`, `1x nitrogen`, `3x oxygen`], 0xF0F0F0, [no_decomp]);
     compLiquid(`hydrazine`, [`2x nitrogen`, `4x hydrogen`], 0xC8C8C8, [no_decomp]);
     compDust(`ammonia_borane`, [`1x nitrogen`, `1x boron`, `6x hydrogen`], 0xFFFFFF, [no_decomp]);
+    compLiquid(`ferrocene`, [`10x carbon`, `10x hydrogen`, `1x iron`], 0xFF8C00, [no_decomp]);
+    compLiquid(`hexafluorophosphoric_acid`, [`1x hydrogen`, `1x phosphorus`, `6x fluorine`], 0xE8E8FF, [no_decomp]);
+    compLiquid(`iron_cyclopentadienyl_dichlorobenzene`, [`16x carbon`, `14x hydrogen`, `1x iron`, `2x chlorine`, `1x phosphorus`, `6x fluorine`], 0xCC6600, [no_decomp]);
+    compLiquid(`fluorinated_ferrocene`, [`15x carbon`, `5x hydrogen`, `15x fluorine`, `1x iron`], 0x00AA00, [no_decomp]);
+
 });
