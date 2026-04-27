@@ -33,6 +33,7 @@ ServerEvents.recipes(event => {
                 supMaterial,
                 wireMechanical,
                 wireCoil,
+                pipeCoil,
                 tierFluid,
                 coolant,
                 solder,
@@ -136,7 +137,7 @@ ServerEvents.recipes(event => {
         let coilMod = (tier == 'uhv') ? 'gtceu' : 'kubejs' ;
         
         componentPart('voltage_coil', [
-                `gtceu:${pipeMaterial}_tiny_fluid_pipe`, 
+                `gtceu:${pipeCoil}_tiny_fluid_pipe`, 
                 `gtceu:long_magnetic_${primMagnet}_rod`, 
                 `32x gtceu:fine_${wireCoil}_wire`
             ], [
@@ -270,7 +271,7 @@ ServerEvents.recipes(event => {
         };
        
         mtscfComponentPart('voltage_coil', [
-                `${1 * scalerMCSF * 0.75}x gtceu:${pipeMaterial}_tiny_fluid_pipe`, 
+                `${1 * scalerMCSF * 0.75}x gtceu:${pipeCoil}_tiny_fluid_pipe`, 
                 `${1 * scalerMCSF * 0.75}x gtceu:long_magnetic_${primMagnet}_rod`, 
                 `${0.5 * scalerMCSF * 0.75}x gtceu:${wireCoil}_wire_spool`
             ], [

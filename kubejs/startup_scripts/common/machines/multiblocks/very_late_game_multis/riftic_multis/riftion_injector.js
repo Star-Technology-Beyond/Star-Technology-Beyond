@@ -5,7 +5,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         .setMaxIOSize(2, 1, 0, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_FUSION, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.REPLICATOR);
+        .setSound(GTSoundEntries.REPLICATOR)
+        .setMaxTooltips(4);
 
 });
 
@@ -14,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('riftion_injector', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('riftion_injector')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE, GTRecipeModifiers.CONSUME_EU_TO_START])
         .appearanceBlock(() => Block.getBlock('kubejs:gravitationally_strained_stabilization_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('      BBBBB      ', '        C        ', '        C        ', '        C        ', '       CCC       ', '        C        ', '        B        ', '       BBB       ', '       BDB       ', '      BBBBB      ', '      BBEBB      ', '      BBBBB      ', '       BDB       ', '       BBB       ', '        B        ', '        C        ', '       CCC       ', '        C        ', '        C        ', '                 ') 

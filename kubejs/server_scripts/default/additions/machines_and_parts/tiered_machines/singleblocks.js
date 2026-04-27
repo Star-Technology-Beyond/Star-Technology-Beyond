@@ -616,57 +616,26 @@ ServerEvents.recipes(event => {
             }).id(`start:shaped/${tier}_charger_4x`);
 
             [
-                { type: 'input', powerTr: 'single_cable', math4a: '4', laserType: 'target', laserPart: 'sensor' },
-                { type: 'output', powerTr: 'spring', math4a: '1', laserType: 'source', laserPart: 'emitter' }
+                { type: 'input', powerTr: 'single_cable' },
+                { type: 'output', powerTr: 'spring' }
             ].forEach(energyIOData => {
-                event.recipes.gtceu.assembly_line(id(`${tier}_energy_${energyIOData.type}_hatch`))
-                    .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${cable}_${energyIOData.powerTr}`, `2x ${chip}_chip`, `#gtceu:circuits/${tier}`, `2x kubejs:${tier}_voltage_coil`)
+
+            const { type, powerTr} = energyIOData
+
+                event.recipes.gtceu.assembly_line(id(`${tier}_energy_${type}_hatch`))
+                    .itemInputs(`gtceu:${tier}_machine_hull`, `4x gtceu:${cable}_${powerTr}`, `2x ${chip}_chip`, `#gtceu:circuits/${tier}`, `2x kubejs:${tier}_voltage_coil`)
                     .inputFluids(`gtceu:sodium_potassium ${math * 4000 + 12000}`, `gtceu:indium_tin_lead_cadmium_soldering_alloy ${1440 * (2 ** math)}`)
-                    .itemOutputs(`gtceu:${tier}_energy_${energyIOData.type}_hatch`)
+                    .itemOutputs(`gtceu:${tier}_energy_${type}_hatch`)
                     .stationResearch(
                         researchRecipeBuilder => researchRecipeBuilder
-                            .researchStack(Item.of(`gtceu:${tier1}_energy_${energyIOData.type}_hatch`))
+                            .researchStack(Item.of(`gtceu:${tier1}_energy_${type}_hatch`))
                             .EUt(122880 * (4 ** math))
                             .CWUt(math * 64 + 64))
                     .duration(800)
                     .EUt(491520 * (4 ** math));
-
-                event.recipes.gtceu.assembler(id(`${tier}_energy_${energyIOData.type}_hatch_4a`))
-                    .itemInputs(`gtceu:${tier}_energy_${energyIOData.type}_hatch`, `2x gtceu:${cable}_quadruple_wire`, `2x gtceu:${tierMaterial}_plate`)
-                    .itemOutputs(`gtceu:${tier}_energy_${energyIOData.type}_hatch_4a`)
-                    .duration(100)
-                    .EUt(122880 * energyIOData.math4a * (4 ** math));
-
-                event.recipes.gtceu.assembler(id(`${tier}_energy_${energyIOData.type}_hatch_16a`))
-                    .itemInputs(`gtceu:${tier}_transformer_1a`, `gtceu:${tier}_energy_${energyIOData.type}_hatch_4a`, `2x gtceu:${cable}_octal_wire`, `4x gtceu:${tierMaterial}_plate`)
-                    .itemOutputs(`gtceu:${tier}_energy_${energyIOData.type}_hatch_16a`)
-                    .duration(200)
-                    .EUt(491520 * (4 ** math));
-
-                event.recipes.gtceu.assembler(id(`${tier}_substation_${energyIOData.type}_hatch_64a`))
-                    .itemInputs(`gtceu:${tier}_transformer_16a`, `gtceu:${tier}_energy_${energyIOData.type}_hatch_16a`, `2x gtceu:${cable}_hex_wire`, `6x gtceu:${tierMaterial}_plate`)
-                    .itemOutputs(`gtceu:${tier}_substation_${energyIOData.type}_hatch_64a`)
-                    .duration(400)
-                    .EUt(491520 * (4 ** math));
-
-                event.recipes.gtceu.assembler(id(`${tier}_256a_laser_${energyIOData.laserType}_hatch`))
-                    .itemInputs(`gtceu:${tier}_machine_hull`, 'gtceu:diamond_lens', `gtceu:${tier}_${energyIOData.laserPart}`, `gtceu:${tier}_electric_pump`, `4x gtceu:${cable}_single_cable`)
-                    .itemOutputs(`gtceu:${tier}_256a_laser_${energyIOData.laserType}_hatch`)
-                    .duration(300).circuit(1)
-                    .EUt(491520 * (4 ** math));
-
-                event.recipes.gtceu.assembler(id(`${tier}_1024a_laser_${energyIOData.laserType}_hatch`))
-                    .itemInputs(`gtceu:${tier}_machine_hull`, '2x gtceu:diamond_lens', `2x gtceu:${tier}_${energyIOData.laserPart}`, `2x gtceu:${tier}_electric_pump`, `4x gtceu:${cable}_double_cable`)
-                    .itemOutputs(`gtceu:${tier}_1024a_laser_${energyIOData.laserType}_hatch`)
-                    .duration(600).circuit(2)
-                    .EUt(491520 * (4 ** math));
-
-                event.recipes.gtceu.assembler(id(`${tier}_4096a_laser_${energyIOData.laserType}_hatch`))
-                    .itemInputs(`gtceu:${tier}_machine_hull`, '4x gtceu:diamond_lens', `4x gtceu:${tier}_${energyIOData.laserPart}`, `4x gtceu:${tier}_electric_pump`, `4x gtceu:${cable}_quadruple_cable`)
-                    .itemOutputs(`gtceu:${tier}_4096a_laser_${energyIOData.laserType}_hatch`)
-                    .duration(1200).circuit(3)
-                    .EUt(491520 * (4 ** math));
-            });
+                    
+            }); //multi-amp and laser in large_energy_hatches_file
+            
         }
 
         postUVMachines('uhv');

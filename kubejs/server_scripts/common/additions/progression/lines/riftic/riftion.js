@@ -80,7 +80,7 @@ ServerEvents.recipes (event => {
             .itemInputs(`32x kubejs:up_${riftion}_riftion`,`32x kubejs:down_${riftion}_riftion`)
             .itemOutputsRanged(`kubejs:neutral_${riftion}_riftion`, 0, 72)
             .itemOutputsRanged(`kubejs:wild_riftion`, 0, 56)
-            // .euToStart(50000000000) //consumes 50GEU to start the recipe
+            .genericStartEU(50000000000) //consumes 50GEU to start the recipe
             .duration(40)
             .EUt(GTValues.VHA[GTValues.UV]);
 
@@ -92,7 +92,7 @@ ServerEvents.recipes (event => {
             .itemInputs(`32x kubejs:up_${riftion[i]}_riftion`,`32x kubejs:wild_riftion`)
             .itemOutputsRanged(`kubejs:down_${riftion[i]}_riftion`, 0, 56)
             .itemOutputsRanged(`kubejs:wild_riftion`, 0, 72)
-            // .euToStart(50000000000) //consumes 50GEU to start the recipe
+            .genericStartEU(50000000000) //consumes 50GEU to start the recipe
             .duration(100)
             .EUt(GTValues.VA[GTValues.UEV]);
 
@@ -100,14 +100,14 @@ ServerEvents.recipes (event => {
             .itemInputs(`32x kubejs:down_${riftion[i]}_riftion`,`32x kubejs:wild_riftion`)
             .itemOutputsRanged(`kubejs:up_${riftion[i]}_riftion`, 0, 56)
             .itemOutputsRanged(`kubejs:wild_riftion`, 0, 72)
-            // .euToStart(50000000000) //consumes 50GEU to start the recipe
+            .genericStartEU(50000000000) //consumes 50GEU to start the recipe
             .duration(100)
             .EUt(GTValues.VA[GTValues.UEV]);
 
         event.recipes.gtceu.riftion_injector(id(riftion[i] + '_singularity'))
             .itemInputs('gtceu:gravi_star',`256x kubejs:neutral_${riftion[i]}_riftion`)
             .itemOutputs(`kubejs:${riftion[i]}_singularity`)
-            // .euToStart(250000000000) //consumes 250GEU to start the recipe
+            .genericStartEU(250000000000) //consumes 250GEU to start the recipe
             .duration(800)
             .EUt(GTValues.VHA[GTValues.UXV]);
 

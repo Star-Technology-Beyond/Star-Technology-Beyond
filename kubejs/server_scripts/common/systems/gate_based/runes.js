@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.riftion_injector(id('dsg_dpu'))
             .itemInputs('kubejs:dsg_enscription_chip',`16x kubejs:wild_riftion`)
             .itemOutputs(`kubejs:dsg_dpu`)
-            // .euToStart(125000000000) //consumes 12.5GEU to start the recipe
+            .genericStartEU(12500000000) //consumes 12.5GEU to start the recipe
             .duration(100)
             .EUt(GTValues.VHA[GTValues.UXV]);
 

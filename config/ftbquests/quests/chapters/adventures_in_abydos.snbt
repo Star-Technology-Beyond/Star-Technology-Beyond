@@ -599,19 +599,11 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "1C83A6D338CC1AF6"
-					item: "start_core:hpca_nanofluidic_heat_sink_component"
-					type: "item"
-				}
-				{
-					id: "1E10BC324D186DC5"
-					item: "gtceu:akreyrium_pcb_graphite_nanoparticle_coolant_bucket"
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1C83A6D338CC1AF6"
+				item: "start_core:hpca_nanofluidic_heat_sink_component"
+				type: "item"
+			}]
 			title: "{ftbquests.abydos.nanofluidic_heat_sink.title}"
 			x: 9.5d
 			y: 2.5d
@@ -1911,6 +1903,17 @@
 			}]
 			x: 4.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["07AD6651D0B40E22"]
+			id: "6B814FF7184A941B"
+			tasks: [{
+				id: "71A56DBBC9CD4496"
+				item: "start_core:hpca_optimized_computation_component"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.5d
 		}
 	]
 	title: "{ftbquests.abydos.title}"

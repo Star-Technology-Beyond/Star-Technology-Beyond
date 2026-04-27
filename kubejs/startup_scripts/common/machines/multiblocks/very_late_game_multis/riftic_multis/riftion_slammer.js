@@ -5,7 +5,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setEUIO('in')
         .setMaxIOSize(2, 2, 0, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_FUSION, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.REPLICATOR);
+        .setSound(GTSoundEntries.REPLICATOR)
+        .setMaxTooltips(4);
 
 });
 
@@ -14,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('riftion_slammer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('riftion_slammer')
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE, GTRecipeModifiers.CONSUME_EU_TO_START])
         .appearanceBlock(() => Block.getBlock('kubejs:nyanium_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('                BBBBB                ', '               B     B               ', '              B B   B B              ', '              B  CCC  B              ', '              B  CDC  B              ', '              B  CCC  B              ', '              B B   B B              ', '               B     B               ', '                BBBBB                ') 
