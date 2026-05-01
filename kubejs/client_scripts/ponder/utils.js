@@ -112,36 +112,32 @@ let ponderUtils = (() => {
     /** @satisfies {Record<string, SortStrategy>} */
     sortStrategy: {
       controller_then_layers: (util, controller, blocks) => {
-        let groups = P
-          .objectEntries(
-            P.groupBy(
-              blocks.map((block) => ({
-                block: block,
-                layer: block.pos.equals(controller) ? -Infinity : block.pos.y,
-              })),
-              (e) => e.layer
-            )
+        let groups = P.objectEntries(
+          P.groupBy(
+            blocks.map((block) => ({
+              block: block,
+              layer: block.pos.equals(controller) ? -Infinity : block.pos.y,
+            })),
+            (e) => e.layer
           )
-          .map((arr) => arr[1]);
+        ).map((arr) => arr[1]);
         groups.sort((a, b) => a[0].layer - b[0].layer);
         return groups.map((r) => r.map((x) => x.block));
       },
       distance_from_controller: (util, controller, blocks) => {
         let controllerVec = util.vector().centerOf(controller);
-        let groups = P
-          .objectEntries(
-            P.groupBy(
-              blocks.map((block) => ({
-                block: block,
-                distance: util
-                  .vector()
-                  .centerOf(block.pos)
-                  .distanceToSqr(controllerVec),
-              })),
-              (e) => e.distance
-            )
+        let groups = P.objectEntries(
+          P.groupBy(
+            blocks.map((block) => ({
+              block: block,
+              distance: util
+                .vector()
+                .centerOf(block.pos)
+                .distanceToSqr(controllerVec),
+            })),
+            (e) => e.distance
           )
-          .map((arr) => arr[1]);
+        ).map((arr) => arr[1]);
         groups.sort((a, b) => a[0].distance - b[0].distance);
         return groups.map((r) => r.map((x) => x.block));
       },
@@ -378,7 +374,7 @@ let ponderUtils = (() => {
      */
     buildStarTFloor: function (scene, size) {
       // let offset = size % 3;
-      // ponderUtils.buildFloor(scene, size, (x, z) =>
+      // P.buildFloor(scene, size, (x, z) =>
       //   (Math.floor((x + offset) / 3) + Math.floor((z + offset) / 3)) % 2 === 0
       //     ? "kubejs:galvanized_steel_casing"
       //     : "kubejs:black_steel_casing"

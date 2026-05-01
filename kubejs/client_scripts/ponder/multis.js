@@ -2,7 +2,7 @@
 
 /** @global */
 let ponderMultis = (() => {
-  let { block } = P;
+  let { block } = ponderUtils;
 
   return {
     /**
