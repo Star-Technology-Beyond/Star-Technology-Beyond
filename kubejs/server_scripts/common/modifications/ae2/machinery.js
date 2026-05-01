@@ -434,6 +434,10 @@ ServerEvents.recipes(event => {
             'gtceu:tungsten_carbide_frame', 'gtceu:ev_field_generator', 'gtceu:ev_emitter', 'gtceu:quantum_star', '6x gtceu:double_fluix_steel_plate'
         ], 'soldering_alloy 144', GTValues.V[GTValues.EV]);
 
+    assemblerFluid('spatial_anchor', 'ae2:spatial_anchor', [
+            'gtceu:rhodium_plated_palladium_frame', '5x gtceu:titanium_carbide_plate', '2x #gtceu:circuits/ev', 'gtceu:ev_field_generator'
+        ], 'fluix_steel 576', GTValues.V[GTValues.EV]);
+
     //Assembler Matrix
     assemblerFluidRem('assembler_matrix_frame','expatternprovider:assembler_matrix_frame', [
             'gtceu:plascrete','2x ae2:fluix_smart_dense_cable', '4x gtceu:ruthenium_plate'

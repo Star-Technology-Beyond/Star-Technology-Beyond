@@ -10,11 +10,17 @@ global.not_hardmode(() => {
             .EUt(GTValues.V[GTValues.HV]);
 
         [
-            'bender', 'centrifuge', 'electrolyzer', 'extruder', 'forming_press', 'lathe', 'mixer', 'ore_washer', 'sifter', 'thermal_centrifuge', 'wiremill', 'macerator', 'autoclave', 'pulverizer', 'arc_furnace', 'electromagnetic_separator'
+            'bender', 'centrifuge', 'electrolyzer', 'extruder', 'forming_press', 'lathe', 'mixer', 'ore_washer', 'sifter', 'thermal_centrifuge', 'wiremill', 'macerator',
+            'autoclave', 'pulverizer', 'arc_furnace', 'electromagnetic_separator', 'rock_crusher'
         ].forEach(machine=> {
-            event.recipes.create.item_application(`gtceu:t_large_${machine}`, [`gtceu:hv_${machine}`, 'kubejs:multiblock_upgrade_kit']).id(`start:item_application/large_${machine}`);
+            let controllerId = `gtceu:${(machine != 'rock_crusher') ? 't_' : ''}large_${machine}`
+            event.recipes.create.item_application(controllerId, [`gtceu:hv_${machine}`, 'kubejs:multiblock_upgrade_kit']).id(`start:item_application/large_${machine}`);
+            event.recipes.gtceu.canner(id(`large_${machine}`))
+                .itemInputs(`gtceu:hv_${machine}`, 'kubejs:multiblock_upgrade_kit')
+                .itemOutputs(controllerId)
+                .duration(20)
+                .EUt(120);
         });
-        event.recipes.create.item_application('gtceu:large_rock_crusher', ['gtceu:hv_rock_crusher', 'kubejs:multiblock_upgrade_kit']).id('start:item_application/large_rock_crusher');
         
         event.shaped('gtceu:super_electric_ore_factory', [
             'GCG',
