@@ -1093,12 +1093,6 @@
     "material.gtceu.liquefied_nutrient_paste": "Liquefied Nutrient Paste",
     "material.gtceu.biostimulating_mixture": "Biostimulating Mixture",
 
-    "block.gtceu.lcr_coil_mechanic.tooltip.2": "§8-----------------------------------",
-    "block.gtceu.lcr_coil_mechanic.tooltip.3": "§6§lCoil Mechanics:",
-    "block.gtceu.lcr_coil_mechanic.tooltip.4": "§7Starting at §6Cupronickel, §7every coil after increases speed by §f25%.",
-    "block.gtceu.lcr_coil_mechanic.tooltip.5": "§7Energy usage is also decreased by §f5% §7per tier.",
-    "block.gtceu.lcr_coil_mechanic.tooltip.6": "§8-----------------------------------",
-
     "block.gtceu.macerators.tooltip.1": "§7Macerators only produce byproducts shown in JEI at HV or higher",
 
     "block.gtceu.ulv_fluid_input.tooltip.1": "Fluid Input for Primitive Multiblocks",
