@@ -34,7 +34,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('B', Predicates.blocks('gtceu:black_steel_frame'))
             .where('T', Predicates.blocks('gtceu:heat_vent'))
             .where('Z', Predicates.blocks('gtceu:zpm_machine_casing'))
-            .where('C', Predicates.blocks('gtceu:tritanium_coil_block'))
+            .where('C', Predicates.blocks('gtceu:trinium_coil_block'))
             .where('P', Predicates.blocks('kubejs:enriched_naquadah_pipe_casing'))
             .where('N', Predicates.blocks('kubejs:enriched_naquadah_machine_casing'))
             .where('M', Predicates.abilities(PartAbility.MUFFLER))
