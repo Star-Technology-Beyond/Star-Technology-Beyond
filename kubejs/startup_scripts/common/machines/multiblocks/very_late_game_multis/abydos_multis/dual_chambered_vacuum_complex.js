@@ -43,7 +43,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('kubejs:enriched_naquadah_firebox_casing'))
             .where('G', Predicates.blocks('kubejs:reinforced_fusion_glass'))
             .where('H', Predicates.blocks('kubejs:enriched_naquadah_pipe_casing'))
-            .where('I', Predicates.blocks('start_core:zpm_vacuum_pump'))
+            .where('I', $StarTVacuumPumpPredicates.vacuumPumps())
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/naquadah/casing', 'gtceu:block/machines/chemical_reactor');

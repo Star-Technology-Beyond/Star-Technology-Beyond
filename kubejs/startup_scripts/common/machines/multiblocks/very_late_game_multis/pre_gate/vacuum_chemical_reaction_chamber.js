@@ -44,7 +44,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('E', Predicates.blocks('gtceu:fusion_glass'))
             .where('F', Predicates.blocks('gtceu:molybdenum_disilicide_coil_block'))
             .where('G', Predicates.blocks('kubejs:pallaridium_pipe_casing'))
-            .where('H', Predicates.blocks('start_core:zpm_vacuum_pump'))
+            .where('H', $StarTVacuumPumpPredicates.vacuumPumps())
             .where('I', Predicates.blocks('kubejs:pallaridium_engine_intake_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
