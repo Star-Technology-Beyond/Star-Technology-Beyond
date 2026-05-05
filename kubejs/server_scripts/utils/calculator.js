@@ -361,6 +361,17 @@ let calculatorDefinitions = (() => {
         implementation: componentsOverloads(Math.sqrt),
       },
       {
+        name: "abs",
+        usage: formatOverloads("abs", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the absolute value of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.abs),
+      },
+      {
         name: "floor",
         usage: formatOverloads("floor", [
           ["value:number"],
