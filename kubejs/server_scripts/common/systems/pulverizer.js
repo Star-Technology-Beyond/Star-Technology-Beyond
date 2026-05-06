@@ -2,6 +2,7 @@ const blacklist = ["aluminum"];
 
 ServerEvents.recipes(event => {
     const id = global.id;
+    var once = true;
 
     event.forEachRecipe({ type: 'gtceu:macerator' }, macParse => {
         const macData = JSON.parse(macParse.json);
@@ -41,6 +42,9 @@ ServerEvents.recipes(event => {
         if (oreTagSplit[0] === 'forge:raw_materials' && !blacklist.includes(oreTagSplit[1])) {
             const oreName = oreTagSplit[1];
             const furnOutput = furnData.result;
+            const furnOutputItem = typeof furnOutput === "string" ? furnOutput : furnOutput.item;
+
+            if (furnOutputItem.includes("dust")) return;
 
             event.recipes.gtceu.pulverizer(id(`crushed_heated_${oreName}`))
                 .itemInputs(`1x gtceu:crushed_${oreName}_ore`)
