@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.mixer(id('dragonsteel_dust'))
         .itemInputs('4x gtceu:tungsten_dust', '8x gtceu:magnesium_diboride_dust', '2x gtceu:cadmium_dust')
-        .inputFluids('thermal_extra:refined_sunflower_oil 1000')
+        // .inputFluids('thermal_extra:refined_sunflower_oil 1000')
         .itemOutputs('14x gtceu:dragonsteel_dust')
         .duration(900)
         .EUt(16000);

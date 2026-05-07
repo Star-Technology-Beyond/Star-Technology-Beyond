@@ -71,6 +71,7 @@ ServerEvents.recipes(event => {
         .duration(30)
         .EUt(-32);
     
+    /* 
     event.recipes.gtceu.brewery(id('sunflower_oil'))
         .itemInputs('16x minecraft:sunflower')
         .outputFluids('thermal_extra:sunflower_oil 500')
@@ -97,6 +98,7 @@ ServerEvents.recipes(event => {
         .circuit(1)
         .duration(600)
         .EUt(325);
+    */
     
     event.recipes.thermal.lapidary_fuel('gtceu:diatron_gem', 750000);
     event.recipes.thermal.lapidary_fuel('gtceu:flawless_diatron_gem', 750000 * 2.5);
