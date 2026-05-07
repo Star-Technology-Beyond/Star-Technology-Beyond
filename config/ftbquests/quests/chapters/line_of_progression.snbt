@@ -1201,10 +1201,6 @@
 							}
 							{
 								Count: 1b
-								id: "gtceu:large_chemical_reactor"
-							}
-							{
-								Count: 1b
 								id: "gtceu:t_large_lathe"
 							}
 							{
@@ -1370,6 +1366,10 @@
 							{
 								Count: 1b
 								id: "gtceu:electric_ore_factory"
+							}
+							{
+								Count: 1b
+								id: "gtceu:large_chemical_reactor"
 							}
 							{
 								Count: 1b
