@@ -23,6 +23,8 @@
 
     "effect.kubejs.reach": "Reach",
 
+    "information.kubejs.coordinate_crystals": "Sneak and right-click with a coordinate crystal in the air to absorb its hidden knowledge.\n\nSneak and right-click with a coordinate crystal on a stargate to gain access to its dimension.",
+
     "item.kubejs.sweetcorn_beer": "Sweetcorn Beer",
     "item.kubejs.sweetcorn_beer.tooltip": "§7A sweet drink that gives you §6Haste",
     "fluid.kubejs.sweetcorn_beer": "Sweetcorn Beer",
