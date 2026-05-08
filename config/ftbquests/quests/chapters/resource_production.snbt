@@ -1860,7 +1860,7 @@
 				"081AEA0310BAA2B6"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.resource_production.hydro_cracking.description1}"]
+			description: ["{ftbquests.resource_production.hydro_cracking.description}"]
 			id: "3BD1916DC5208255"
 			optional: true
 			tasks: [{
