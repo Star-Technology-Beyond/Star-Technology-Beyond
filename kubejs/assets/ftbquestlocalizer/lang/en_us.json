@@ -728,7 +728,7 @@
     "ftbquests.futuristic_mechanisms.raw_crystal_chip_parts.description": "This can be used for looping your crystal chips, so you don't need a ton of emeralds.",
     "ftbquests.futuristic_mechanisms.redstone_variadic_interface.description": "A way to monitor your multiblocks with §credstone§r outputs allowing for complex systems.\n\n§7Currently this isn't needed till UEV",
     "ftbquests.futuristic_mechanisms.reinforced_epoxy_resin_plate.description": "Solidify your Epoxy in a more durable manner.",
-    "ftbquests.futuristic_mechanisms.research_station.description": "Scanner are not powerful enough to research high tier technologies. This multiblock can research almost anything!\n\nFor each overclock you get a 2.5% (multiplicative) discount on the §3CWU§r requirement for your research.",
+    "ftbquests.futuristic_mechanisms.research_station.description": "Scanner are not powerful enough to research high tier technologies. This multiblock can research almost anything!\n\nFor each overclock you get a 2.5% (additive) discount on the §3CWU§r requirement for your research.",
     "ftbquests.futuristic_mechanisms.rhodium_plated_palladium_ingot.description": "The core material for §dLuV§r.",
     "ftbquests.futuristic_mechanisms.ruridit_ingot.description": "An alloy made out of precious metals.",
     "ftbquests.futuristic_mechanisms.super_abs.description": "A Boosted ABS.....\n\n\"Woo, imabouttomakeanameformyselfhere\"\n\nOh... only 1 energy hatch, oh well its still cracked.",
