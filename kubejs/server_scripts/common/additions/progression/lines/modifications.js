@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
 
     // === Rutile Fix ===
     event.remove({ id: 'gtceu:electric_blast_furnace/rutile_from_ilmenite' })
-    event.recipes.gtceu.electric_blast_furnace(id('electric_blast_furnace/rutile_from_ilmenite'))
+    event.recipes.gtceu.electric_blast_furnace(id('rutile_from_ilmenite_fix'))
         .itemInputs('10x gtceu:ilmenite_dust', '2x gtceu:carbon_dust')
         .itemOutputs('2x gtceu:wrought_iron_ingot','2x gtceu:rutile_dust')
         .outputFluids('gtceu:carbon_monoxide 2000')
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
 
     //Recipe conflict fix: ethane+chlorine
     event.remove({id: 'gtceu:chemical_reactor/vinyl_chloride_from_ethane'})
-    event.recipes.gtceu.chemical_reactor(id('vinyl_chloride_from_ethane'))
+    event.recipes.gtceu.chemical_reactor(id('vinyl_chloride_from_ethane_fix'))
         .inputFluids('gtceu:chlorine 4000', 'gtceu:ethane 1000')
         .outputFluids('gtceu:vinyl_chloride 1000','gtceu:hydrochloric_acid 3000')
         .duration(160)
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
         .circuit(2);
 
     event.remove({id: 'gtceu:large_chemical_reactor/vinyl_chloride_from_ethane'})
-    event.recipes.gtceu.large_chemical_reactor(id('vinyl_chloride_from_ethane'))
+    event.recipes.gtceu.large_chemical_reactor(id('vinyl_chloride_from_ethane_fix'))
         .inputFluids('gtceu:chlorine 4000', 'gtceu:ethane 1000')
         .outputFluids('gtceu:vinyl_chloride 1000','gtceu:hydrochloric_acid 3000')
         .duration(160)
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
 
     // === Rare Earth Centrifuging Fix ===
     event.remove({ id: 'gtceu:centrifuge/rare_earth_separation' });
-    event.recipes.gtceu.centrifuge(id('rare_earth_speraration'))
+    event.recipes.gtceu.centrifuge(id('rare_earth_speraration_fix'))
         .itemInputs('1x gtceu:rare_earth_dust')
         .chancedOutput('1x gtceu:neodymium_dust',500,50)
         .chancedOutput('1x gtceu:samarium_dust',500,50)
@@ -64,17 +64,27 @@ ServerEvents.recipes(event => {
         .EUt(80);
 
     //carbon acid fixes
-    event.recipes.gtceu.electrolyzer(id('carbon_acid'))
+    event.recipes.gtceu.electrolyzer(id('carbon_acid_fix'))
         .inputFluids('gtceu:carbon_acid 1000')
         .outputFluids('minecraft:water 1000','gtceu:carbon_dioxide')
         .duration(60)
         .EUt(60);
-    event.recipes.gtceu.large_chemical_reactor(id('carbon_acid'))
+
+    event.recipes.gtceu.large_chemical_reactor(id('carbon_acid_fix'))
         .itemInputs('3x gtceu:potassium_carbonate_dust')
         .inputFluids('gtceu:hydrogen 1000')
         .itemOutputs('3x gtceu:potassium_dust')
         .outputFluids('gtceu:carbon_acid 500')
         .duration(100)
         .EUt(GTValues.VHA[GTValues.IV]);
+        
+    // Styrene from Benzene fix
+    event.remove({ id: 'gtceu:large_chemical_reactor/styrene_from_benzene' });
+    event.recipes.gtceu.large_chemical_reactor(id('styrene_from_benzene_fix'))
+        .inputFluids('gtceu:ethylene 1000', 'gtceu:benzene 1000')
+        .outputFluids('gtceu:hydrogen 2000', 'gtceu:styrene 1000')
+        .duration(120)
+        .circuit(3)
+        .EUt(GTValues.VA[GTValues.LV]);
  
 });

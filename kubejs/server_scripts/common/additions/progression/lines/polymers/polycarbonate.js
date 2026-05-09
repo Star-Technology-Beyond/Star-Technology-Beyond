@@ -13,6 +13,7 @@ ServerEvents.recipes(event => {
         .itemOutputs(`1x gtceu:sodium_diphenoxide_dust`)
         .outputFluids(`minecraft:water 2000`)
         .duration(300)
+        .circuit(2)
         .EUt(GTValues.VA[GTValues.LuV]);
 
     lcr(id(`phosgene`))
