@@ -1140,7 +1140,7 @@
     "ftbquests.pl4.title": "처리 라인 - 4",
     "ftbquests.pl5.title": "처리 라인 - 5",
     "ftbquests.pl_nuc.echo_shard.description": "어디서 오는 목소리지...?",
-    "ftbquests.pl_nuc.fuel_rods.description": "핵 원자로를 가동하기 위해선 연료봉을 주어야합니다.\n\n연료봉에 사용되는 동의원소는 댜양하며, 동의원소에 따라 필요한 더 좋은 껍질이 필요합니다.\n\n또한 몇몇 특별한 연료봉은 특별한 냉각수를 필요로 합니다.",
+    "ftbquests.pl_nuc.fuel_rods.description": "핵 원자로를 가동하기 위해선 연료봉을 주어야합니다.\n\n연료봉에 사용되는 동위원소는 댜양하며, 동위원소에 따라 필요한 더 좋은 껍질이 필요합니다.\n\n또한 몇몇 특별한 연료봉은 특별한 냉각수를 필요로 합니다.",
     "ftbquests.pl_nuc.title": "핵 원자로",
     "ftbquests.positioner.title": "Positioner",
     "ftbquests.power.arc_kit.description": "보조 반응 챔버는 연료를 더 소모하지만 전력 생산량을 늘려줍니다.",
