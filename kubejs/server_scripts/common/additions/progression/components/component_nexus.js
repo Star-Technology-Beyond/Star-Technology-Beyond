@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
                 `4x #gtceu:circuits/${tier2}`,
                 `4x gtceu:${cable}_single_cable`
             ], [
-                `gtceu:${solder} ${576*scaler}`,
+                `gtceu:${solder} ${288*scaler}`,
                 `gtceu:${lubricant} ${125*(2**scaler)}`
             ]);
 
@@ -121,7 +121,7 @@ ServerEvents.recipes(event => {
                 `128x gtceu:fine_${superconductor}_wire`,
                 `4x gtceu:${cable}_single_cable`
             ], [
-                `gtceu:${solder} ${576*scaler}`
+                `gtceu:${solder} ${288*(2**scaler)}`
             ]);
 
         componentTypesNexus('emitter', [

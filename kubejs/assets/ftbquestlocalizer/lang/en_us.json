@@ -468,7 +468,7 @@
     "ftbquests.draconic_age.end_city.title": "Cities of The Abyss",
     "ftbquests.draconic_age.end_talisman.description": "You have been granted protection in this place allowing you to forgo armor needs.\n\nAlternatively you can craft this after acquiring the appropriate means.",
     "ftbquests.draconic_age.enriched_pallarovium_alloy_ingot.description": "The §aUEV§r superconductor used in your machines and components.",
-    "ftbquests.draconic_age.hell_forge_catalysts.description": "By using special catalysts you can achieve a §a33%%§r reduction in recipe time. The same type of bonus you would get with Gas Boosting in an §7EBF§r or §7ABS§r.",
+    "ftbquests.draconic_age.hell_forge_catalysts.description": "By using special catalysts you can achieve a §a15%%§r reduction in recipe time, and a §a25%%§r increase in output yield",
     "ftbquests.draconic_age.hell_forge_catalysts.item_title": "Hell Forge Catalyst",
     "ftbquests.draconic_age.hell_forge_catalysts.title": "Catalyst Boosting",
     "ftbquests.draconic_age.hellforge.description": "A towering furnace, needing both fuel and power, to heat up materials to Mega-kelvins.",

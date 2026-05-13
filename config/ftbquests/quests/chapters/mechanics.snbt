@@ -284,11 +284,11 @@
 		{
 			dependencies: ["027C5CE3CFCB5649"]
 			description: ["{ftbquests.mechanics.layered_inputs.description}"]
+			icon: "gtceu:large_rotor_machine"
 			id: "6AEB17C2D2AF5344"
 			tasks: [{
-				id: "4463F39E5E37E799"
-				item: "gtceu:advanced_synthesis_plant"
-				type: "item"
+				id: "650C431936B805AA"
+				type: "checkmark"
 			}]
 			title: "{ftbquests.mechanics.layered_inputs.title}"
 			x: -1.5d
