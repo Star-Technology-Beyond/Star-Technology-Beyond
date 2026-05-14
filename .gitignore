@@ -42,7 +42,6 @@ config/defaultworldtype/client-config.toml
 config/skyblockbuilder/data/dimensions.txt
 config/create_hypertube-client.toml
 config/betterfpsdist.json
-config/chloride-client.json
 config/craftingtweaks-common.toml
 config/cucumber-tags.json
 config/fastsuite.cfg
