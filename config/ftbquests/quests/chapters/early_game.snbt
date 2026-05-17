@@ -13,7 +13,7 @@
 			id: "2964E2E996CAC834"
 			linked_quest: "18080B4F89AD24D2"
 			x: 8.0d
-			y: 2.5d
+			y: 0.5d
 		}
 		{
 			id: "7A004610C6ADD6AC"
@@ -115,7 +115,7 @@
 			}]
 			title: "{ftbquests.early_game.lv_converters.title}"
 			x: 10.0d
-			y: 2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -492,7 +492,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -538,7 +538,7 @@
 			]
 			title: "{ftbquests.early_game.lv_machine_hull.title}"
 			x: 4.0d
-			y: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -569,7 +569,7 @@
 			]
 			title: "{ftbquests.early_game.soul_infused_wire.title}"
 			x: 8.0d
-			y: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4EBEB19735285EF4"]
@@ -659,8 +659,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.cured_rubber.title}"
-			x: 6.0d
-			y: 2.5d
+			x: 4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
@@ -887,7 +887,7 @@
 			}]
 			title: "{ftbquests.early_game.rubber.title}"
 			x: 6.0d
-			y: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["03ACC7D2577A2C66"]
@@ -1000,7 +1000,7 @@
 			}]
 			title: "{ftbquests.early_game.red_alloy.title}"
 			x: 8.0d
-			y: 0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
@@ -1051,7 +1051,7 @@
 			]
 			title: "{ftbquests.early_game.resin_circuit_board.title}"
 			x: 8.0d
-			y: -3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1073,7 +1073,7 @@
 			}]
 			title: "{ftbquests.early_game.resistors.title}"
 			x: 8.0d
-			y: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1111,8 +1111,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.glass.title}"
-			x: 6.0d
-			y: 4.5d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1135,7 +1135,7 @@
 			}]
 			title: "{ftbquests.early_game.vacuum_tubes.title}"
 			x: 10.0d
-			y: -3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7E72B9CC8631769D"]
@@ -1215,6 +1215,7 @@
 				tag: { }
 			}
 			id: "397C622B06B1165A"
+			optional: true
 			rewards: [{
 				count: 2
 				id: "3289F29B45D67D8C"
@@ -1661,8 +1662,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.fluid_cell.title}"
-			x: 2.0d
-			y: -3.5d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1863,7 +1864,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["53A9BA26813A1141"]
@@ -2109,6 +2110,7 @@
 			dependencies: ["7EE1BE4043827F35"]
 			description: ["{ftbquests.early_game.advanced_composter.description}"]
 			id: "0FD7200A8D4F09AE"
+			optional: true
 			rewards: [{
 				id: "02B957C52A4C18CF"
 				item: "kubejs:coin"
@@ -2119,8 +2121,8 @@
 				item: "gtceu:ulv_advanced_composter"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.5d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["53A9BA26813A1141"]
@@ -2189,7 +2191,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 6.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -2210,13 +2212,14 @@
 				item: "gtceu:steam_kiln"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.5d
+			x: 3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6D5287A0FB892DFF"]
 			description: ["{ftbquests.early_game.reach_upgrades.description}"]
 			id: "4E4CDE5CDFA24839"
+			optional: true
 			rewards: [{
 				id: "6F422AC96183061A"
 				item: "kubejs:coin"
@@ -2247,13 +2250,14 @@
 				title: "{ftbquests.early_game.reach_upgrades.title}"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -3.5d
+			x: 6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["46E41B05B9F6FA82"]
 			description: ["{ftbquests.early_game.casket.description}"]
 			id: "034381C844C88ADD"
+			optional: true
 			rewards: [{
 				id: "1F2A3BFD35CFA9DB"
 				item: "kubejs:coin"
@@ -2264,8 +2268,8 @@
 				item: "gtceu:ulv_casket"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.5d
+			x: 7.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -2299,8 +2303,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.vintage_rubber.title}"
-			x: 6.0d
-			y: -1.5d
+			x: 4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -2375,6 +2379,7 @@
 			dependencies: ["46E41B05B9F6FA82"]
 			description: ["{ftbquests.early_game.ulv_components.description}"]
 			id: "366227E714CDA617"
+			optional: true
 			tasks: [{
 				id: "7C630178F862B24C"
 				item: {
@@ -2401,8 +2406,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.ulv_components.title}"
-			x: 4.0d
-			y: 2.5d
+			x: 7.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["10126B9D6EC90F59"]
@@ -2450,7 +2455,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: -0.5d
+			y: -1.0d
 		}
 	]
 	title: "{ftbquests.early_game.title}"
