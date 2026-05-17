@@ -4,6 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tiers(GTValues.ULV)
         .definition((tier, builder) => {
             builder
+                // .modelProperty($GTMachineModelProperties.IS_FORMED, false)
                 .workableCasingModel('gtceu:block/casings/gcym/industrial_steam_casing', 'gtceu:block/multiblock/tank_valve')
             });
 
@@ -15,6 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .langValue('§bAbsolute Stabilization §rModule')
                 .rotationState(RotationState.ALL)
                 .abilities(PartAbility.MAINTENANCE)
+                // .modelProperty($GTMachineModelProperties.IS_FORMED, false)
                 .workableTieredHullModel('kubejs:block/machines/stabilization_core')
             });
 });

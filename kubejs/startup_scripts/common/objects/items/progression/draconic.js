@@ -6,8 +6,11 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/progression/draconic/helish_star');
 
     event.create('dragonic_eye')
-        .tooltip(Text.translate('item.kubejs.dragonic_eye.tooltip'))
-        .texture('kubejs:item/progression/draconic/dragon_eye');
+        .tooltip(Text.translate('item.kubejs.dragonic_eye.tooltip')) 
+        .textureJson({ 
+            layer0: `kubejs:item/progression/draconic/dragonic_eye`,
+            layer1: `kubejs:item/progression/draconic/dragonic_eye_overlay`
+        });
 
     // === Hellforge Catalyst ===
     event.create('infernal_catalyst')
