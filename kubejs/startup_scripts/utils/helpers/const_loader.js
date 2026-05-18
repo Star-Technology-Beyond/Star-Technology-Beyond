@@ -79,7 +79,7 @@
         //.recipeModifier((machine, recipe) => $LargeTurbine.recipeModifier(machine, recipe), true)
             // allows multiblock to do turbine parallels/scaling
 
-    // const $GTMachineModelProperties = Java.loadClass('com.gregtechceu.gtceu.api.machine.property.GTMachineModelProperties')
+    const $GTMachineModelProperties = Java.loadClass('com.gregtechceu.gtceu.api.machine.property.GTMachineModelProperties')
 
     const $CleanroomType = Java.loadClass("com.gregtechceu.gtceu.api.machine.multiblock.CleanroomType")
         //usable to add "cleanroom types", example:
