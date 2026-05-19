@@ -1,5 +1,5 @@
 {
-  "_schemaVersion": 6,
+  "_schemaVersion": 7,
   "_lastMCVersionId": 763,
   "generalSettings": {
     "detectATLauncherInstance": false,
@@ -47,12 +47,7 @@
           "smallImageText": "{general.mods} mods installed",
           "startTimestamp": "{data.general.time}",
           "endTimestamp": "",
-          "buttons": {
-            "default": {
-              "label": "Example Text",
-              "url": "https://google.com"
-            }
-          }
+          "buttons": {}
         }
       },
       "the_nether": {
@@ -70,12 +65,7 @@
           "smallImageText": "{general.mods} mods installed",
           "startTimestamp": "{data.general.time}",
           "endTimestamp": "",
-          "buttons": {
-            "default": {
-              "label": "Example Text",
-              "url": "https://google.com"
-            }
-          }
+          "buttons": {}
         }
       },
       "the_end": {
@@ -93,12 +83,7 @@
           "smallImageText": "{general.mods} mods installed",
           "startTimestamp": "{data.general.time}",
           "endTimestamp": "",
-          "buttons": {
-            "default": {
-              "label": "Example Text",
-              "url": "https://google.com"
-            }
-          }
+          "buttons": {}
         }
       }
     }
@@ -124,12 +109,7 @@
           "smallImageText": "{general.mods} mods installed",
           "startTimestamp": "{data.general.time}",
           "endTimestamp": "",
-          "buttons": {
-            "default": {
-              "label": "Example Text",
-              "url": "https://google.com"
-            }
-          }
+          "buttons": {}
         }
       }
     },
@@ -153,12 +133,7 @@
         "smallImageText": "{general.mods} mods installed",
         "startTimestamp": "{data.general.time}",
         "endTimestamp": "",
-        "buttons": {
-          "default": {
-            "label": "Example Text",
-            "url": "https://google.com"
-          }
-        }
+        "buttons": {}
       }
     },
     "loadingData": {
@@ -177,12 +152,7 @@
         "smallImageText": "{general.mods} mods installed",
         "startTimestamp": "{data.general.time}",
         "endTimestamp": "",
-        "buttons": {
-          "default": {
-            "label": "Example Text",
-            "url": "https://google.com"
-          }
-        }
+        "buttons": {}
       }
     },
     "lanData": {
@@ -201,12 +171,7 @@
         "smallImageText": "",
         "startTimestamp": "",
         "endTimestamp": "",
-        "buttons": {
-          "default": {
-            "label": "Example Text",
-            "url": "https://google.com"
-          }
-        }
+        "buttons": {}
       }
     },
     "singleplayerData": {
@@ -225,12 +190,7 @@
         "smallImageText": "{general.mods} mods installed",
         "startTimestamp": "{data.general.time}",
         "endTimestamp": "",
-        "buttons": {
-          "default": {
-            "label": "Example Text",
-            "url": "https://google.com"
-          }
-        }
+        "buttons": {}
       }
     },
     "realmData": {
@@ -264,12 +224,7 @@
             "smallImageText": "{general.mods} mods installed",
             "startTimestamp": "{data.general.time}",
             "endTimestamp": "",
-            "buttons": {
-              "default": {
-                "label": "Example Text",
-                "url": "https://google.com"
-              }
-            }
+            "buttons": {}
           }
         },
         "LevelLoadingScreen": {
@@ -287,12 +242,7 @@
             "smallImageText": "{general.mods} mods installed",
             "startTimestamp": "{data.general.time}",
             "endTimestamp": "",
-            "buttons": {
-              "default": {
-                "label": "Example Text",
-                "url": "https://google.com"
-              }
-            }
+            "buttons": {}
           }
         },
         "default": {
@@ -313,12 +263,7 @@
             "smallImageText": "{general.mods} mods installed",
             "startTimestamp": "{data.general.time}",
             "endTimestamp": "",
-            "buttons": {
-              "default": {
-                "label": "Example Text",
-                "url": "https://google.com"
-              }
-            }
+            "buttons": {}
           }
         },
         "ReceivingLevelScreen": {
@@ -336,12 +281,7 @@
             "smallImageText": "{general.mods} mods installed",
             "startTimestamp": "{data.general.time}",
             "endTimestamp": "",
-            "buttons": {
-              "default": {
-                "label": "Example Text",
-                "url": "https://google.com"
-              }
-            }
+            "buttons": {}
           }
         }
       }
@@ -367,8 +307,7 @@
     "playerSkinEndpoint": "https://mc-heads.net/avatar/{getOrDefault(player.uuid.short, player.name)}",
     "allowDuplicatePackets": false,
     "maxConnectionAttempts": 10,
-    "enableClassGraph": false,
-    "useClassLoader": false
+    "enableClassGraph": false
   },
   "accessibilitySettings": {
     "languageId": "en_us",
@@ -384,7 +323,7 @@
       "isInstance": false,
       "activityType": 0,
       "partyPrivacy": 1,
-      "details": "Playing Star Technology on Eta 3",
+      "details": "Playing Star Technology on Theta 1",
       "gameState": "",
       "largeImageKey": "startlogo",
       "largeImageText": "Trying to return home",
@@ -396,18 +335,11 @@
         "button_1": {
           "label": "Join Star Technology Discord",
           "url": "https://discord.gg/numxrCgrCG"
-        },
-        "default": {
-          "label": "Join Star Technology Discord",
-          "url": "https://discord.gg/numxrCgrCG"
         }
       }
     },
-    "dynamicIcons": {
-      "default": "https://via.placeholder.com/256.png"
-    },
+    "dynamicIcons": {},
     "dynamicVariables": {
-      "default": "Example Text",
       "mods": "{general.mods} Mod(s)",
       "player_info_coordinate": "At {player.position.x}, {player.position.z}",
       "players": "{server.players.current} / {server.players.max} Players",

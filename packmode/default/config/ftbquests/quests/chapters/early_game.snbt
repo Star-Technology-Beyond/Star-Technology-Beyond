@@ -1,4 +1,5 @@
 {
+	autofocus_id: "0226D71E1F627A7F"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "early_game"
@@ -7,11 +8,48 @@
 	id: "75C4C0229F2D2798"
 	order_index: 0
 	progression_mode: "linear"
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "2964E2E996CAC834"
+			linked_quest: "18080B4F89AD24D2"
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			id: "7A004610C6ADD6AC"
+			linked_quest: "73D5AA58DE5B72AA"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "0ABFD9248555F0BF"
+			linked_quest: "48374090EA89E869"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			id: "01400DBE45C98AB4"
+			linked_quest: "76CD29559C341985"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			id: "3FE7870C91953C80"
+			linked_quest: "2A608D87158DF4CB"
+			x: -10.0d
+			y: 6.5d
+		}
+		{
+			id: "73A12DB8625E666F"
+			linked_quest: "27F5DD0860E43CFF"
+			x: 0.0d
+			y: 6.5d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["16A9D8E864A18B9E"]
-			description: ["{ftbquests.chapter.early_game.quest1.description1}"]
+			description: ["{ftbquests.early_game.oak_log.description}"]
 			id: "5B3D8132C90D790B"
 			rewards: [{
 				count: 2
@@ -26,9 +64,9 @@
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest1.title}"
-			x: -7.0d
-			y: -1.0d
+			title: "{ftbquests.early_game.oak_log.title}"
+			x: -10.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -36,7 +74,7 @@
 				"20A12F3B992762F0"
 				"3AF688ADC18E580C"
 			]
-			description: ["{ftbquests.chapter.early_game.quest2.description1}"]
+			description: ["{ftbquests.early_game.lv_converters.description}"]
 			id: "511898EE4087FED7"
 			rewards: [{
 				count: 2
@@ -72,16 +110,16 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.early_game.quest2.task_4822295913099746991.title}"
+				title: "{ftbquests.early_game.lv_converters.item_title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest2.title}"
-			x: 8.0d
-			y: 5.0d
+			title: "{ftbquests.early_game.lv_converters.title}"
+			x: 10.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
-			description: ["{ftbquests.chapter.early_game.quest3.description1}"]
+			description: ["{ftbquests.early_game.crooking.description}"]
 			icon: "exnihilosequentia:silkworm"
 			id: "7717C0904590E303"
 			rewards: [{
@@ -99,7 +137,7 @@
 							value: "exnihilosequentia:crook"
 						}
 					}
-					title: "{ftbquests.chapter.early_game.quest3.task_1303235380099471856.title}"
+					title: "{ftbquests.early_game.crooking.item_title}"
 					type: "item"
 				}
 				{
@@ -113,13 +151,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest3.title}"
-			x: -5.5d
-			y: -1.0d
+			title: "{ftbquests.early_game.crooking.title}"
+			x: -8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7717C0904590E303"]
-			description: ["{ftbquests.chapter.early_game.quest4.description1}"]
+			description: ["{ftbquests.early_game.sieves_and_meshes.description}"]
 			icon: "exnihilosequentia:string_mesh"
 			id: "26D3E2C0599B43B2"
 			rewards: [{
@@ -139,13 +177,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest4.title}"
-			x: -2.5d
-			y: -1.0d
+			title: "{ftbquests.early_game.sieves_and_meshes.title}"
+			x: -8.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
-			description: ["{ftbquests.chapter.early_game.quest5.description1}"]
+			description: ["{ftbquests.early_game.oak_crucible.description}"]
 			icon: "exnihilosequentia:oak_crucible"
 			id: "03ACC7D2577A2C66"
 			rewards: [{
@@ -172,16 +210,17 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest5.title}"
-			x: -5.5d
-			y: 1.0d
+			title: "{ftbquests.early_game.oak_crucible.title}"
+			x: -8.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["16A9D8E864A18B9E"]
-			description: ["{ftbquests.chapter.early_game.quest6.description1}"]
+			description: ["{ftbquests.early_game.pebbling.description}"]
 			icon: "minecraft:cobblestone"
 			id: "07CBF849162D7BDF"
 			rewards: [{
@@ -204,16 +243,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest6.title}"
-			x: -4.5d
-			y: -4.0d
+			title: "{ftbquests.early_game.pebbling.title}"
+			x: -10.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
 				"6C7DB3F0C3B85B9B"
 				"7E72B9CC8631769D"
+				"26D3E2C0599B43B2"
 			]
-			description: ["{ftbquests.chapter.early_game.quest7.description1}"]
+			description: ["{ftbquests.early_game.blackstone.description}"]
 			id: "550A27AA2B500111"
 			rewards: [{
 				id: "0AF82121E951A38D"
@@ -232,13 +272,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest7.title}"
-			x: -4.5d
-			y: 0.5d
+			title: "{ftbquests.early_game.blackstone.title}"
+			x: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
-			description: ["{ftbquests.chapter.early_game.quest8.description1}"]
+			description: ["{ftbquests.early_game.hammers.description}"]
 			id: "6C7DB3F0C3B85B9B"
 			rewards: [{
 				id: "7707126152A24AD2"
@@ -267,9 +307,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Simple Hammers\"}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -309,16 +346,18 @@
 							]
 						}
 					}
+					title: "{ftbquests.early_game.hammers.item_title}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest8.title}"
-			x: -4.5d
-			y: -2.5d
+			title: "{ftbquests.early_game.hammers.title}"
+			x: -8.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
-			description: ["{ftbquests.chapter.early_game.quest9.description1}"]
+			description: ["{ftbquests.early_game.furnace.description}"]
+			hide_dependent_lines: true
 			id: "1801A2B1D6BD232F"
 			rewards: [{
 				id: "33A0C9431EAFB50C"
@@ -330,15 +369,15 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.0d
+			x: -10.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
 				"26D3E2C0599B43B2"
 				"2D1184752D7ACA66"
 			]
-			description: ["{ftbquests.chapter.early_game.quest10.description1}"]
+			description: ["{ftbquests.early_game.mud_sieving.description}"]
 			hide_dependent_lines: true
 			icon: "minecraft:mud"
 			id: "3AC92138809F3783"
@@ -378,9 +417,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest10.title}"
-			x: -2.5d
-			y: 3.0d
+			title: "{ftbquests.early_game.mud_sieving.title}"
+			x: -6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -388,7 +427,7 @@
 				"6C7DB3F0C3B85B9B"
 				"26D3E2C0599B43B2"
 			]
-			description: ["{ftbquests.chapter.early_game.quest11.description1}"]
+			description: ["{ftbquests.early_game.gravel_sieving.description}"]
 			id: "5094070DDE1BFA3D"
 			rewards: [{
 				id: "379E474AFD6C147C"
@@ -426,20 +465,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest11.title}"
-			x: -2.5d
-			y: -2.5d
+			title: "{ftbquests.early_game.gravel_sieving.title}"
+			x: -6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
-				"64F15C7160BF5CBB"
 				"0843E56CA39E9822"
 				"7F716A5BCC5F6B34"
 				"07A407A268A4FC96"
 				"3B81632EF4586280"
 			]
-			description: ["{ftbquests.chapter.early_game.quest12.description1}"]
-			hide_dependent_lines: true
+			description: ["{ftbquests.early_game.basic_electronic_circuit.description}"]
 			id: "20A12F3B992762F0"
 			rewards: [{
 				count: 2
@@ -454,15 +491,16 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.5d
+			x: 10.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
 				"46E41B05B9F6FA82"
 				"64F15C7160BF5CBB"
 			]
-			description: ["{ftbquests.chapter.early_game.quest13.description1}"]
+			description: ["{ftbquests.early_game.lv_machine_hull.description}"]
+			hide_dependent_lines: true
 			icon: "gtceu:lv_machine_hull"
 			id: "124EDCAB18E85B9D"
 			rewards: [{
@@ -498,20 +536,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest13.title}"
-			x: 8.0d
-			y: 2.0d
+			title: "{ftbquests.early_game.lv_machine_hull.title}"
+			x: 4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
 				"37451F8CF7504596"
 				"063AF9790DA7ABE0"
 			]
-			description: [
-				"{ftbquests.chapter.early_game.quest14.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest14.description2}"
-			]
+			description: ["{ftbquests.early_game.soul_infused_wire.description}"]
+			hide_dependency_lines: true
 			icon: "gtceu:soul_infused_single_wire"
 			id: "3AF688ADC18E580C"
 			rewards: [{
@@ -532,13 +567,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest14.title}"
-			x: 0.5d
-			y: 5.0d
+			title: "{ftbquests.early_game.soul_infused_wire.title}"
+			x: 8.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["5094070DDE1BFA3D"]
-			description: ["{ftbquests.chapter.early_game.quest15.description1}"]
+			dependencies: ["4EBEB19735285EF4"]
+			description: ["{ftbquests.early_game.andesite_alloy.description}"]
 			id: "039D327E919878BF"
 			optional: true
 			rewards: [{
@@ -551,12 +586,12 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
-			description: ["{ftbquests.chapter.early_game.quest16.description1}"]
+			description: ["{ftbquests.early_game.mechanical_press.description}"]
 			hide_dependent_lines: true
 			id: "3E931D2E92BE9486"
 			optional: true
@@ -570,9 +605,9 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest16.title}"
-			x: -2.0d
-			y: -5.0d
+			title: "{ftbquests.early_game.mechanical_press.title}"
+			x: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -582,19 +617,7 @@
 				"3F74E863172E757F"
 			]
 			dependency_requirement: "one_completed"
-			description: [
-				"{ftbquests.chapter.early_game.quest17.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest17.description2}"
-				""
-				"{ftbquests.chapter.early_game.quest17.description3}"
-				""
-				"{ftbquests.chapter.early_game.quest17.description4}"
-				"{ftbquests.chapter.early_game.quest17.description5}"
-				"{ftbquests.chapter.early_game.quest17.description6}"
-				""
-				"{ftbquests.chapter.early_game.quest17.description7}"
-			]
+			description: ["{ftbquests.early_game.cured_rubber.description}"]
 			icon: "gtceu:latex_plantation"
 			id: "0A41C4FB379984C0"
 			optional: true
@@ -635,13 +658,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest17.title}"
-			x: 8.0d
-			y: -2.5d
+			title: "{ftbquests.early_game.cured_rubber.title}"
+			x: 4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
-			description: ["{ftbquests.chapter.early_game.quest18.description1}"]
+			description: ["{ftbquests.early_game.gregtech_tools.description}"]
 			hide_dependent_lines: true
 			id: "3D0F6CA8028C074B"
 			rewards: [{
@@ -661,7 +684,7 @@
 							value: "forge:tools/hammers"
 						}
 					}
-					title: "{ftbquests.chapter.early_game.quest18.task_1579826480616765420.title}"
+					title: "{ftbquests.early_game.gregtech_tools.item.hammers}"
 					type: "item"
 				}
 				{
@@ -674,7 +697,7 @@
 						}
 					}
 					optional_task: true
-					title: "{ftbquests.chapter.early_game.quest18.task_7801137332843278482.title}"
+					title: "{ftbquests.early_game.gregtech_tools.item.files}"
 					type: "item"
 				}
 				{
@@ -687,7 +710,7 @@
 						}
 					}
 					optional_task: true
-					title: "{ftbquests.chapter.early_game.quest18.task_553225746540863782.title}"
+					title: "{ftbquests.early_game.gregtech_tools.item.screwdrivers}"
 					type: "item"
 				}
 				{
@@ -700,7 +723,7 @@
 						}
 					}
 					optional_task: true
-					title: "{ftbquests.chapter.early_game.quest18.task_5115332318641010646.title}"
+					title: "{ftbquests.early_game.gregtech_tools.item.wire_cutters}"
 					type: "item"
 				}
 				{
@@ -713,7 +736,7 @@
 						}
 					}
 					optional_task: true
-					title: "{ftbquests.chapter.early_game.quest18.task_5563755656614757383.title}"
+					title: "{ftbquests.early_game.gregtech_tools.item.wrenches}"
 					type: "item"
 				}
 				{
@@ -726,7 +749,7 @@
 						}
 					}
 					optional_task: true
-					title: "{ftbquests.chapter.early_game.quest18.task_8796685572614558468.title}"
+					title: "{ftbquests.early_game.gregtech_tools.item.knives}"
 					type: "item"
 				}
 				{
@@ -739,7 +762,7 @@
 						}
 					}
 					optional_task: true
-					title: "{ftbquests.chapter.early_game.quest18.task_1272510792796047959.title}"
+					title: "{ftbquests.early_game.gregtech_tools.item.saws}"
 					type: "item"
 				}
 				{
@@ -752,7 +775,7 @@
 						}
 					}
 					optional_task: true
-					title: "{ftbquests.chapter.early_game.quest18.task_9020257701177319558.title}"
+					title: "{ftbquests.early_game.gregtech_tools.item.mortars}"
 					type: "item"
 				}
 				{
@@ -765,17 +788,17 @@
 						}
 					}
 					optional_task: true
-					title: "{ftbquests.chapter.early_game.quest18.task_845632090524168831.title}"
+					title: "{ftbquests.early_game.gregtech_tools.item.mallets}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest18.title}"
-			x: -1.0d
-			y: -1.0d
+			title: "{ftbquests.early_game.gregtech_tools.title}"
+			x: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
-			description: ["{ftbquests.chapter.early_game.quest19.description1}"]
+			description: ["{ftbquests.early_game.wrought_iron.description}"]
 			hide_dependent_lines: true
 			id: "143BB2B07A083CC0"
 			rewards: [{
@@ -795,13 +818,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest19.title}"
-			x: -1.0d
-			y: -2.5d
+			title: "{ftbquests.early_game.wrought_iron.title}"
+			x: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
-			description: ["{ftbquests.chapter.early_game.quest20.description1}"]
+			description: ["{ftbquests.early_game.create_mixer.description}"]
 			hide_dependent_lines: true
 			icon: "create:mechanical_mixer"
 			id: "3F74E863172E757F"
@@ -839,9 +862,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest20.title}"
-			x: -2.5d
-			y: -6.0d
+			title: "{ftbquests.early_game.create_mixer.title}"
+			x: 2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -849,7 +872,7 @@
 				"3D78314A07F5782A"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.chapter.early_game.quest21.description1}"]
+			description: ["{ftbquests.early_game.rubber.description}"]
 			id: "46E41B05B9F6FA82"
 			rewards: [{
 				id: "2FFF7F85F52E435C"
@@ -862,19 +885,13 @@
 				item: { Count: 4, id: "gtceu:rubber_plate" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest21.title}"
-			x: 8.0d
-			y: -1.0d
+			title: "{ftbquests.early_game.rubber.title}"
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["03ACC7D2577A2C66"]
-			description: [
-				"{ftbquests.chapter.early_game.quest22.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest22.description2}"
-				""
-				"{ftbquests.chapter.early_game.quest22.description3}"
-			]
+			description: ["{ftbquests.early_game.ulv_barrel.description}"]
 			icon: "gtceu:ulv_barrel"
 			id: "2D1184752D7ACA66"
 			rewards: [{
@@ -887,9 +904,9 @@
 				item: "gtceu:ulv_barrel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest22.title}"
-			x: -5.5d
-			y: 3.0d
+			title: "{ftbquests.early_game.ulv_barrel.title}"
+			x: -6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -897,11 +914,7 @@
 				"64E79272B5003119"
 				"143BB2B07A083CC0"
 			]
-			description: [
-				"{ftbquests.chapter.early_game.quest23.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest23.description2}"
-			]
+			description: ["{ftbquests.early_game.primitive_blast_furnace.description}"]
 			icon: "gtceu:primitive_blast_furnace"
 			id: "390CB178FC2D2CCC"
 			rewards: [{
@@ -925,13 +938,14 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest23.title}"
-			x: 2.0d
-			y: 2.0d
+			title: "{ftbquests.early_game.primitive_blast_furnace.title}"
+			x: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["390CB178FC2D2CCC"]
-			description: ["{ftbquests.chapter.early_game.quest24.description1}"]
+			description: ["{ftbquests.early_game.steel.description}"]
+			hide_dependency_lines: true
 			icon: "gtceu:steel_ingot"
 			id: "64F15C7160BF5CBB"
 			rewards: [{
@@ -959,9 +973,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest24.title}"
-			x: 6.0d
-			y: 2.0d
+			title: "{ftbquests.early_game.steel.title}"
+			x: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -970,7 +984,8 @@
 				"483B101A7F71E674"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.chapter.early_game.quest25.description1}"]
+			description: ["{ftbquests.early_game.red_alloy.description}"]
+			hide_dependency_lines: true
 			id: "0843E56CA39E9822"
 			rewards: [{
 				id: "56F860D21CE643C7"
@@ -983,13 +998,13 @@
 				item: { Count: 6, id: "gtceu:red_alloy_ingot" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest25.title}"
-			x: 4.0d
-			y: -1.0d
+			title: "{ftbquests.early_game.red_alloy.title}"
+			x: 8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
-			description: ["{ftbquests.chapter.early_game.quest26.description1}"]
+			description: ["{ftbquests.early_game.slime_resin.description}"]
 			id: "6D5287A0FB892DFF"
 			rewards: [{
 				id: "3995A41C90DB5483"
@@ -1008,13 +1023,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest26.title}"
-			x: 3.5d
-			y: 4.25d
+			title: "{ftbquests.early_game.slime_resin.title}"
+			x: 6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6D5287A0FB892DFF"]
-			description: ["{ftbquests.chapter.early_game.quest27.description1}"]
+			description: ["{ftbquests.early_game.resin_circuit_board.description}"]
 			icon: "gtceu:resin_printed_circuit_board"
 			id: "7F716A5BCC5F6B34"
 			rewards: [{
@@ -1034,16 +1049,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest27.title}"
-			x: 3.5d
-			y: 0.5d
+			title: "{ftbquests.early_game.resin_circuit_board.title}"
+			x: 8.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
 				"6D5287A0FB892DFF"
 				"3D0F6CA8028C074B"
 			]
-			description: ["{ftbquests.chapter.early_game.quest28.description1}"]
+			description: ["{ftbquests.early_game.resistors.description}"]
 			id: "07A407A268A4FC96"
 			rewards: [{
 				id: "3BE80406CE2FC7FF"
@@ -1056,16 +1071,16 @@
 				item: { Count: 2, id: "gtceu:resistor" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest28.title}"
-			x: 5.0d
-			y: 4.25d
+			title: "{ftbquests.early_game.resistors.title}"
+			x: 8.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
 				"3D0F6CA8028C074B"
 				"143BB2B07A083CC0"
 			]
-			description: ["{ftbquests.chapter.early_game.quest29.description1}"]
+			description: ["{ftbquests.early_game.glass.description}"]
 			icon: "minecraft:glass"
 			id: "7EE1BE4043827F35"
 			rewards: [{
@@ -1095,16 +1110,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest29.title}"
-			x: 6.0d
-			y: -2.5d
+			title: "{ftbquests.early_game.glass.title}"
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"7EE1BE4043827F35"
 				"64F15C7160BF5CBB"
 			]
-			description: ["{ftbquests.chapter.early_game.quest30.description1}"]
+			description: ["{ftbquests.early_game.vacuum_tubes.description}"]
+			hide_dependency_lines: true
 			id: "3B81632EF4586280"
 			rewards: [{
 				id: "4F41840F051793C3"
@@ -1117,13 +1133,13 @@
 				item: { Count: 2, id: "gtceu:vacuum_tube" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest30.title}"
-			x: 6.0d
-			y: -1.0d
+			title: "{ftbquests.early_game.vacuum_tubes.title}"
+			x: 10.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7E72B9CC8631769D"]
-			description: ["{ftbquests.chapter.early_game.quest31.description1}"]
+			description: ["{ftbquests.early_game.soul_sand.description}"]
 			hide_dependent_lines: true
 			id: "063AF9790DA7ABE0"
 			rewards: [{
@@ -1136,9 +1152,9 @@
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest31.title}"
-			x: -1.5d
-			y: 2.0d
+			title: "{ftbquests.early_game.soul_sand.title}"
+			x: -2.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -1147,7 +1163,7 @@
 				"3F74E863172E757F"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.chapter.early_game.quest32.description1}"]
+			description: ["{ftbquests.early_game.invar.description}"]
 			id: "37451F8CF7504596"
 			rewards: [{
 				id: "24792D860FA038FB"
@@ -1159,9 +1175,9 @@
 				item: "gtceu:invar_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest32.title}"
-			x: 0.5d
-			y: 3.5d
+			title: "{ftbquests.early_game.invar.title}"
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1169,7 +1185,7 @@
 				"6C7DB1CB4517B843"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.chapter.early_game.quest33.description1}"]
+			description: ["{ftbquests.early_game.gold.description}"]
 			hide_dependent_lines: true
 			id: "708A5EE75EC40FAD"
 			rewards: [{
@@ -1182,9 +1198,9 @@
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest33.title}"
-			x: 0.5d
-			y: -1.0d
+			title: "{ftbquests.early_game.gold.title}"
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1192,17 +1208,14 @@
 				"64E79272B5003119"
 				"3D0F6CA8028C074B"
 			]
-			description: [
-				"{ftbquests.chapter.early_game.quest34.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest34.description2}"
-			]
+			description: ["{ftbquests.early_game.primitive_ore_factory.description}"]
 			icon: {
 				Count: 1
 				id: "gtceu:primitive_ore_factory"
 				tag: { }
 			}
 			id: "397C622B06B1165A"
+			optional: true
 			rewards: [{
 				count: 2
 				id: "3289F29B45D67D8C"
@@ -1240,13 +1253,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest34.title}"
-			x: 2.0d
-			y: -1.0d
+			title: "{ftbquests.early_game.primitive_ore_factory.title}"
+			x: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["550A27AA2B500111"]
-			description: ["{ftbquests.chapter.early_game.quest35.description1}"]
+			description: ["{ftbquests.early_game.aqueous_accumulator.description}"]
 			icon: "thermal:device_water_gen"
 			id: "4491C4CD4AF75C93"
 			rewards: [{
@@ -1266,13 +1279,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest35.title}"
-			x: -1.5d
-			y: 0.5d
+			title: "{ftbquests.early_game.aqueous_accumulator.title}"
+			x: -6.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
-			description: ["{ftbquests.chapter.early_game.quest36.description1}"]
+			description: ["{ftbquests.early_game.bone_meal.description}"]
 			icon: "minecraft:composter"
 			id: "634FB21D521253CF"
 			rewards: [{
@@ -1292,17 +1305,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest36.title}"
-			x: -7.0d
-			y: 1.0d
+			title: "{ftbquests.early_game.bone_meal.title}"
+			x: -10.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
 				"634FB21D521253CF"
 				"53A9BA26813A1141"
-				"2D1184752D7ACA66"
 			]
-			description: ["{ftbquests.chapter.early_game.quest37.description1}"]
+			description: ["{ftbquests.early_game.lava.description}"]
 			icon: "exnihilosequentia:fired_crucible"
 			id: "29F1EAF3E87A50F5"
 			rewards: [{
@@ -1323,16 +1335,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest37.title}"
-			x: -7.0d
-			y: 3.0d
+			title: "{ftbquests.early_game.lava.title}"
+			x: -10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"3D0F6CA8028C074B"
 				"753ECD744470EFF2"
 			]
-			description: ["{ftbquests.chapter.early_game.quest38.description1}"]
+			description: ["{ftbquests.early_game.coke_oven.description}"]
 			icon: "gtceu:coke_oven"
 			id: "07C5B4C5EE2F948D"
 			rewards: [{
@@ -1355,19 +1367,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest38.title}"
-			x: -2.5d
+			title: "{ftbquests.early_game.coke_oven.title}"
+			x: -6.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
-			description: [
-				"{ftbquests.chapter.early_game.quest39.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest39.description2}"
-				""
-				"{ftbquests.chapter.early_game.quest39.description3}"
-			]
+			description: ["{ftbquests.early_game.large_farm.description}"]
 			icon: "gtceu:large_farm"
 			id: "14417CCE1E25C9C6"
 			rewards: [{
@@ -1394,17 +1400,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest39.title}"
-			x: -1.5d
-			y: 5.5d
+			title: "{ftbquests.early_game.large_farm.title}"
+			x: -4.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
-			description: [
-				"{ftbquests.chapter.early_game.quest40.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest40.description2}"
-			]
+			description: ["{ftbquests.early_game.large_barrel.description}"]
 			icon: "gtceu:large_barrel"
 			id: "27E9698231A04022"
 			rewards: [{
@@ -1431,17 +1433,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest40.title}"
-			x: -3.5d
-			y: 5.5d
+			title: "{ftbquests.early_game.large_barrel.title}"
+			x: -8.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
-			description: [
-				"{ftbquests.chapter.early_game.quest41.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest41.description2}"
-			]
+			description: ["{ftbquests.early_game.large_stone_barrel.description}"]
 			icon: "gtceu:large_stone_barrel"
 			id: "3477B2FEEF0DF44C"
 			rewards: [{
@@ -1468,13 +1466,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest41.title}"
-			x: -2.5d
-			y: 6.0d
+			title: "{ftbquests.early_game.large_stone_barrel.title}"
+			x: -6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6C7DB3F0C3B85B9B"]
-			description: ["{ftbquests.chapter.early_game.quest42.description1}"]
+			description: ["{ftbquests.early_game.dirt_duping.description}"]
 			id: "35FE719B047BFAAF"
 			rewards: [{
 				id: "132398E130FED8F3"
@@ -1486,13 +1484,13 @@
 				item: "minecraft:coarse_dirt"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest42.title}"
-			x: -6.0d
-			y: -2.5d
+			title: "{ftbquests.early_game.dirt_duping.title}"
+			x: -8.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
-			description: ["{ftbquests.chapter.early_game.quest43.description1}"]
+			description: ["{ftbquests.early_game.create.description}"]
 			id: "70BE6905EC722DCA"
 			optional: true
 			rewards: [{
@@ -1524,18 +1522,15 @@
 						]
 					}
 				}
+				title: "{ftbquests.early_game.create.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest43.title}"
-			x: -1.0d
-			y: -6.0d
+			x: 2.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
-			description: [
-				"{ftbquests.chapter.early_game.quest44.description1}"
-				"{ftbquests.chapter.early_game.quest44.description2}"
-			]
+			description: ["{ftbquests.early_game.steam_engine.description}"]
 			id: "3B50E73E5A176301"
 			optional: true
 			rewards: [{
@@ -1565,20 +1560,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest44.title}"
-			x: 0.5d
-			y: -6.0d
+			title: "{ftbquests.early_game.steam_engine.title}"
+			x: 0.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
 				"708A5EE75EC40FAD"
 				"70BE6905EC722DCA"
 			]
-			description: [
-				"{ftbquests.chapter.early_game.quest45.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest45.description2}"
-			]
+			description: ["{ftbquests.early_game.diesel_engine.description}"]
 			id: "00DD4784E0E6821D"
 			optional: true
 			rewards: [{
@@ -1632,19 +1623,20 @@
 							]
 						}
 					}
+					title: "{ftbquests.early_game.diesel_engine.title}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest45.title}"
-			x: 0.0d
-			y: -5.0d
+			x: 4.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
 				"7EE1BE4043827F35"
 				"10126B9D6EC90F59"
 			]
-			description: ["{ftbquests.chapter.early_game.quest46.description1}"]
+			description: ["{ftbquests.early_game.fluid_cell.description}"]
+			hide_dependency_lines: true
 			id: "3013B0CF1D1F3E20"
 			rewards: [{
 				id: "7E77F4EFC9D86E60"
@@ -1669,9 +1661,9 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest46.title}"
+			title: "{ftbquests.early_game.fluid_cell.title}"
 			x: 4.0d
-			y: -4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1679,7 +1671,7 @@
 				"4FC0832128C3109C"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.chapter.early_game.quest47.description1}"]
+			description: ["{ftbquests.early_game.bronze_brass.description}"]
 			id: "10126B9D6EC90F59"
 			rewards: [{
 				id: "36FCEC0DDB574296"
@@ -1698,16 +1690,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest47.title}"
-			x: 2.0d
-			y: -2.5d
+			title: "{ftbquests.early_game.bronze_brass.title}"
+			x: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"29F1EAF3E87A50F5"
 				"3D0F6CA8028C074B"
 			]
-			description: ["{ftbquests.chapter.early_game.quest48.description1}"]
+			description: ["{ftbquests.early_game.stone_barrel.description}"]
 			id: "0742EF8F43044102"
 			rewards: [{
 				count: 2
@@ -1722,17 +1714,13 @@
 				item: "gtceu:ulv_stone_barrel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest48.title}"
-			x: -7.0d
+			title: "{ftbquests.early_game.stone_barrel.title}"
+			x: -10.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
-			description: [
-				"{ftbquests.chapter.early_game.quest49.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest49.description2}"
-			]
+			description: ["{ftbquests.early_game.witch_water.description}"]
 			id: "7E72B9CC8631769D"
 			rewards: [{
 				id: "386D329F74361582"
@@ -1744,9 +1732,9 @@
 				item: "exnihilosequentia:witch_water_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest49.title}"
-			x: -4.5d
-			y: 2.0d
+			title: "{ftbquests.early_game.witch_water.title}"
+			x: -4.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -1754,7 +1742,7 @@
 				"6C7DB1CB4517B843"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.chapter.early_game.quest50.description1}"]
+			description: ["{ftbquests.early_game.nickel.description}"]
 			id: "0E47ACCDF46E6B1F"
 			rewards: [{
 				id: "0128ACB6E0B8F0AE"
@@ -1766,13 +1754,13 @@
 				item: "gtceu:nickel_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest50.title}"
-			x: 0.5d
-			y: 0.5d
+			title: "{ftbquests.early_game.nickel.title}"
+			x: -2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
-			description: ["{ftbquests.chapter.early_game.quest51.description1}"]
+			description: ["{ftbquests.early_game.crushing_wheels.description}"]
 			id: "6C4EE5170B91D0EA"
 			optional: true
 			rewards: [{
@@ -1787,37 +1775,30 @@
 				item: { Count: 2, id: "create:crushing_wheel" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest51.title}"
-			x: -2.0d
-			y: -7.0d
+			title: "{ftbquests.early_game.crushing_wheels.title}"
+			x: 2.0d
+			y: -9.5d
 		}
 		{
-			description: [
-				"{ftbquests.chapter.early_game.quest52.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest52.description2}"
-				"{ftbquests.chapter.early_game.quest52.description3}"
-				"{ftbquests.chapter.early_game.quest52.description4}"
-				"{ftbquests.chapter.early_game.quest52.description5}"
-				"{ftbquests.chapter.early_game.quest52.description6}"
-				""
-				"{ftbquests.chapter.early_game.quest52.description7}"
-			]
+			description: ["{ftbquests.early_game.start.description}"]
 			id: "16A9D8E864A18B9E"
 			shape: "diamond"
 			size: 1.75d
 			tasks: [{
 				id: "1CBDC019CAC3E9C8"
-				title: "{ftbquests.chapter.early_game.quest52.task_2071022620668848584.title}"
+				title: "{ftbquests.early_game.start.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.early_game.quest52.title}"
-			x: -7.0d
-			y: -4.0d
+			x: -10.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["3D0F6CA8028C074B"]
-			description: ["{ftbquests.chapter.early_game.quest53.description1}"]
+			dependencies: [
+				"3D0F6CA8028C074B"
+				"6C7DB1CB4517B843"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{ftbquests.early_game.dust_mixing.description}"]
 			hide_dependency_lines: false
 			id: "4FC0832128C3109C"
 			optional: true
@@ -1843,13 +1824,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest53.title}"
-			x: 4.0d
-			y: -2.5d
+			title: "{ftbquests.early_game.dust_mixing.title}"
+			x: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["64F15C7160BF5CBB"]
-			description: ["{ftbquests.chapter.early_game.quest54.description1}"]
+			description: ["{ftbquests.early_game.solid_blast_furnace.description}"]
 			id: "3FB8E0105D2C20B4"
 			optional: true
 			rewards: [{
@@ -1864,17 +1845,13 @@
 				item: "gtceu:solid_blast_furnace"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest54.title}"
-			x: 7.0d
-			y: 0.5d
+			title: "{ftbquests.early_game.solid_blast_furnace.title}"
+			x: 2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7EE1BE4043827F35"]
-			description: [
-				"{ftbquests.chapter.early_game.quest55.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest55.description2}"
-			]
+			description: ["{ftbquests.early_game.tempered_glass.description}"]
 			id: "6D23752791E9928A"
 			rewards: [{
 				id: "4F45102228F42D4D"
@@ -1887,11 +1864,12 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["53A9BA26813A1141"]
-			description: ["{ftbquests.chapter.early_game.quest56.description1}"]
+			description: ["{ftbquests.early_game.firebrick.description}"]
+			hide_dependency_lines: true
 			icon: "gtceu:firebrick"
 			id: "64E79272B5003119"
 			tasks: [
@@ -1926,37 +1904,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest56.title}"
-			x: 2.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["0742EF8F43044102"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest57.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2A608D87158DF4CB\"}}]"]
-			icon: "ftbquests:book"
-			id: "0F9486CD70580835"
-			optional: true
-			tasks: [{
-				id: "3C73A5AD42AC13F0"
-				title: "{ftbquests.chapter.early_game.quest57.task_4356007428163900400.title}"
-				type: "checkmark"
-			}]
-			x: -7.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["2D1184752D7ACA66"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest58.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"76CD29559C341985\"}}]"]
-			icon: "ftbquests:book"
-			id: "0A1BF10244D43021"
-			optional: true
-			tasks: [{
-				id: "26970240ABB065B0"
-				title: "{ftbquests.chapter.early_game.quest58.task_2780693771706197424.title}"
-				type: "checkmark"
-			}]
-			x: -6.25d
-			y: 2.0d
+			title: "{ftbquests.early_game.firebrick.title}"
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1964,13 +1914,8 @@
 				"5324A7F20CA973C6"
 				"64F15C7160BF5CBB"
 			]
-			description: [
-				"{ftbquests.chapter.early_game.quest59.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest59.description2}"
-				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest59.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"27F5DD0860E43CFF\"}}]"
-			]
+			description: ["{ftbquests.early_game.steam_ore_factory.description}"]
+			hide_dependent_lines: true
 			id: "7E33792C89BA85E3"
 			optional: true
 			rewards: [{
@@ -1985,19 +1930,15 @@
 				item: "gtceu:steam_ore_factory"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"5324A7F20CA973C6"
 				"1289465781707205"
 			]
-			description: [
-				"{ftbquests.chapter.early_game.quest60.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest60.description2}"
-			]
+			description: ["{ftbquests.early_game.steam_alloy_smelter.description}"]
 			hide_dependent_lines: true
 			id: "483B101A7F71E674"
 			optional: true
@@ -2020,38 +1961,28 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest60.title}"
-			x: 0.5d
-			y: -4.0d
+			title: "{ftbquests.early_game.steam_alloy_smelter.title}"
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1289465781707205"]
-			description: [
-				"{ftbquests.chapter.early_game.quest61.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest61.description2}"
-				"{ftbquests.chapter.early_game.quest61.description3}"
-			]
+			description: ["{ftbquests.early_game.steam.description}"]
 			hide_dependent_lines: true
 			icon: "systeams:boiler_pipe"
 			id: "5324A7F20CA973C6"
 			optional: true
 			tasks: [{
 				id: "076F1181905FB6CA"
-				title: "{ftbquests.chapter.early_game.quest61.task_535666128851023562.title}"
+				title: "{ftbquests.early_game.steam.title}"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -4.75d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
-			description: [
-				"{ftbquests.chapter.early_game.quest62.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest62.description2}"
-			]
-			hide_dependent_lines: true
+			description: ["{ftbquests.early_game.clay.description}"]
 			id: "53A9BA26813A1141"
 			tasks: [
 				{
@@ -2066,20 +1997,16 @@
 					type: "item"
 				}
 			]
-			title: "Clay"
-			x: -5.5d
-			y: 4.5d
+			title: "{ftbquests.early_game.clay.title}"
+			x: -8.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"5324A7F20CA973C6"
 				"1289465781707205"
 			]
-			description: [
-				"{ftbquests.chapter.early_game.quest63.description1}"
-				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest63.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"27F5DD0860E43CFF\"}}]"
-			]
+			description: ["{ftbquests.early_game.large_steam_machines.description}"]
 			id: "6B059D530FCE7428"
 			optional: true
 			rewards: [{
@@ -2091,11 +2018,13 @@
 				{
 					id: "0FD57A804E9A6670"
 					item: "gtceu:steam_grinder"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "378E79F5C85853A5"
 					item: "gtceu:steam_oven"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2105,17 +2034,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest63.title}"
-			x: 1.0d
-			y: -3.0d
+			title: "{ftbquests.early_game.large_steam_machines.title}"
+			x: -2.0d
+			y: 6.5d
 		}
 		{
-			dependencies: ["10126B9D6EC90F59"]
-			description: [
-				"{ftbquests.chapter.early_game.quest64.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest64.description2}"
-			]
+			dependencies: ["6E201D2B9E9A25B0"]
+			description: ["{ftbquests.early_game.steam_boilers.description}"]
 			id: "1289465781707205"
 			optional: true
 			rewards: [{
@@ -2130,9 +2055,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Low Pressure Boilers\"}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -2150,6 +2072,7 @@
 						}
 					}
 					optional_task: true
+					title: "{ftbquests.early_game.steam_boilers.item.low}"
 					type: "item"
 				}
 				{
@@ -2158,9 +2081,6 @@
 						Count: 1
 						id: "itemfilters:or"
 						tag: {
-							display: {
-								Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"High Pressure Boilers\"}"
-							}
 							items: [
 								{
 									Count: 1b
@@ -2178,49 +2098,19 @@
 						}
 					}
 					optional_task: true
+					title: "{ftbquests.early_game.steam_boilers.item.high}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest64.title}"
-			x: 2.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["3AF688ADC18E580C"]
-			description: ["[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest65.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"18080B4F89AD24D2\"}}]"]
-			icon: "ftbquests:book"
-			id: "6C5688897B6A4C42"
-			optional: true
-			tasks: [{
-				id: "524EF615621F4DCD"
-				title: "{ftbquests.chapter.early_game.quest65.task_5930948330994486733.title}"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["390CB178FC2D2CCC"]
-			description: [
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest66.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"73D5AA58DE5B72AA\"}}]"
-				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest66.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"48374090EA89E869\"}}]"
-			]
-			icon: "ftbquests:book"
-			id: "26E81A8B2EB80A6C"
-			optional: true
-			tasks: [{
-				id: "31807AD3BF647D18"
-				title: "{ftbquests.chapter.early_game.quest66.task_3566985954745154840.title}"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: 3.0d
+			title: "{ftbquests.early_game.steam_boilers.title}"
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7EE1BE4043827F35"]
-			description: ["{ftbquests.chapter.early_game.quest67.description1}"]
+			description: ["{ftbquests.early_game.advanced_composter.description}"]
 			id: "0FD7200A8D4F09AE"
+			optional: true
 			rewards: [{
 				id: "02B957C52A4C18CF"
 				item: "kubejs:coin"
@@ -2231,15 +2121,12 @@
 				item: "gtceu:ulv_advanced_composter"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -4.0d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
-			dependencies: [
-				"53A9BA26813A1141"
-				"2D1184752D7ACA66"
-			]
-			description: ["{ftbquests.chapter.early_game.quest68.description1}"]
+			dependencies: ["53A9BA26813A1141"]
+			description: ["{ftbquests.early_game.coke_brick.description}"]
 			icon: "gtceu:coke_oven_brick"
 			id: "753ECD744470EFF2"
 			tasks: [
@@ -2269,8 +2156,8 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest68.title}"
-			x: -4.0d
+			title: "{ftbquests.early_game.coke_brick.title}"
+			x: -8.0d
 			y: 4.5d
 		}
 		{
@@ -2282,15 +2169,15 @@
 				item: "gtceu:coke_oven_hatch"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.5d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"143BB2B07A083CC0"
 				"3AC92138809F3783"
 			]
-			description: ["{ftbquests.chapter.early_game.quest70.description1}"]
+			description: ["{ftbquests.early_game.kiln.description}"]
 			id: "33A6D849B77F93CC"
 			optional: true
 			rewards: [{
@@ -2303,19 +2190,16 @@
 				item: "gtceu:kiln"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 2.5d
+			x: 2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
 				"5324A7F20CA973C6"
 				"33A6D849B77F93CC"
 			]
-			description: [
-				"{ftbquests.chapter.early_game.quest71.description1}"
-				""
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.early_game.quest71.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"27F5DD0860E43CFF\"}}]"
-			]
+			description: ["{ftbquests.early_game.steam_kiln.description}"]
+			hide_dependent_lines: true
 			id: "7FC7558E1A72DCEC"
 			optional: true
 			rewards: [{
@@ -2328,32 +2212,14 @@
 				item: "gtceu:steam_kiln"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["6B059D530FCE7428"]
-			dependency_requirement: "one_completed"
-			description: ["{ftbquests.chapter.early_game.quest72.description1} "]
-			icon: "minecraft:book"
-			id: "27F5DD0860E43CFF"
-			optional: true
-			tasks: [{
-				id: "687924A523C9E5A8"
-				title: "{ftbquests.chapter.early_game.quest72.task_7528088543815132584.title}"
-				type: "checkmark"
-			}]
-			x: 0.25d
-			y: -2.25d
+			x: 3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6D5287A0FB892DFF"]
-			description: [
-				"{ftbquests.chapter.early_game.quest73.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest73.description2}"
-			]
+			description: ["{ftbquests.early_game.reach_upgrades.description}"]
 			id: "4E4CDE5CDFA24839"
+			optional: true
 			rewards: [{
 				id: "6F422AC96183061A"
 				item: "kubejs:coin"
@@ -2365,9 +2231,6 @@
 					Count: 1
 					id: "itemfilters:or"
 					tag: {
-						display: {
-							Name: "{\"bold\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"obfuscated\":false,\"color\":\"#FFFFFF\",\"text\":\"Reach Upgrades\"}"
-						}
 						items: [
 							{
 								Count: 1b
@@ -2384,19 +2247,17 @@
 						]
 					}
 				}
+				title: "{ftbquests.early_game.reach_upgrades.title}"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.25d
+			x: 6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["46E41B05B9F6FA82"]
-			description: [
-				"{ftbquests.chapter.early_game.quest74.description1}"
-				""
-				"{ftbquests.chapter.early_game.quest74.description2}"
-			]
+			description: ["{ftbquests.early_game.casket.description}"]
 			id: "034381C844C88ADD"
+			optional: true
 			rewards: [{
 				id: "1F2A3BFD35CFA9DB"
 				item: "kubejs:coin"
@@ -2407,8 +2268,8 @@
 				item: "gtceu:ulv_casket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 0.5d
+			x: 7.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -2417,8 +2278,7 @@
 				"6C7DB1CB4517B843"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.chapter.early_game.quest75.description1}"]
-			hide_dependency_lines: true
+			description: ["{ftbquests.early_game.vintage_rubber.description}"]
 			icon: "gtceu:raw_rubber_dust"
 			id: "3D78314A07F5782A"
 			optional: true
@@ -2429,7 +2289,7 @@
 			}]
 			shape: "gear"
 			size: 1.25d
-			subtitle: "{ftbquests.chapter.early_game.quest75.subtitle}"
+			subtitle: "{ftbquests.early_game.vintage_rubber.subtitle}"
 			tasks: [
 				{
 					id: "417253D624B78148"
@@ -2442,13 +2302,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.early_game.quest75.title}"
-			x: 9.5d
-			y: -1.0d
+			title: "{ftbquests.early_game.vintage_rubber.title}"
+			x: 4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
-			description: ["{ftbquests.chapter.early_game.quest76.description1}"]
+			description: ["{ftbquests.early_game.vintage.description}"]
 			hide_dependent_lines: true
 			id: "6C7DB1CB4517B843"
 			optional: true
@@ -2495,26 +2355,108 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.early_game.quest76.task_3799187365870549258.title}"
+				title: "{ftbquests.early_game.vintage.item_title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.early_game.quest76.title}"
-			x: 0.0d
-			y: -7.0d
+			title: "{ftbquests.early_game.vintage.title}"
+			x: 4.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["16A9D8E864A18B9E"]
-			description: ["{ftbquests.chapter.early_game.quest77.description1}"]
+			description: ["{ftbquests.early_game.peaceful.description}"]
 			icon: "minecraft:grass"
 			id: "0C3DB6C79D0A4BFF"
 			tasks: [{
 				id: "0440A02F0353E30C"
-				title: "{ftbquests.chapter.early_game.quest77.task_306420898440930060.title}"
+				title: "{ftbquests.early_game.peaceful.title}"
 				type: "checkmark"
 			}]
-			x: -7.0d
-			y: -6.0d
+			x: -12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["46E41B05B9F6FA82"]
+			description: ["{ftbquests.early_game.ulv_components.description}"]
+			id: "366227E714CDA617"
+			optional: true
+			tasks: [{
+				id: "7C630178F862B24C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:ulv_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ulv_robot_arm"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ulv_electric_pump"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.early_game.ulv_components.item_title}"
+				type: "item"
+			}]
+			title: "{ftbquests.early_game.ulv_components.title}"
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["10126B9D6EC90F59"]
+			description: ["{ftbquests.early_game.steam_age_path.description}"]
+			hide_dependency_lines: true
+			icon: "gtceu:bronze_normal_fluid_pipe"
+			id: "6E201D2B9E9A25B0"
+			optional: true
+			shape: "diamond"
+			size: 1.75d
+			subtitle: "{ftbquests.early_game.steam_age_path.subtitle}"
+			tasks: [{
+				id: "4732C9ECADD2436D"
+				title: "{ftbquests.early_game.steam_age_path.title}"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5094070DDE1BFA3D"]
+			description: ["{ftbquests.early_game.create_path.description}"]
+			hide_dependency_lines: true
+			icon: "create:large_cogwheel"
+			id: "4EBEB19735285EF4"
+			optional: true
+			shape: "diamond"
+			size: 1.75d
+			subtitle: "{ftbquests.early_game.create_path.subtitle}"
+			tasks: [{
+				id: "0EED87C84628CBE1"
+				title: "{ftbquests.early_game.create_path.title}"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			id: "0226D71E1F627A7F"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "1FCDF73D8E73C7D3"
+				title: "{ftbquests.positioner.title}"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.0d
 		}
 	]
-	title: "{ftbquests.chapter.early_game.title}"
+	title: "{ftbquests.early_game.title}"
 }

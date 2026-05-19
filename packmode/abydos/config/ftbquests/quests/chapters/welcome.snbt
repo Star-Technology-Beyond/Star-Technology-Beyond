@@ -10,32 +10,26 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{ftbquests.chapter.welcome.quest1.description1}"]
+			description: ["{ftbquests.welcome.intro.description}"]
 			icon: "gtceu:creative_energy"
 			id: "7168A2D5D4EE14E9"
 			size: 5.0d
 			tasks: [{
 				id: "40AC940F2E8BD9BD"
-				title: "{ftbquests.chapter.welcome.quest1.task_4660262507347958205.title}"
+				title: "{ftbquests.welcome.intro.title}"
 				type: "checkmark"
 			}]
 			x: 1.0d
 			y: 0.5d
 		}
 		{
-			description: [
-				"{ftbquests.chapter.welcome.quest2.description1}"
-				""
-				"{ftbquests.chapter.welcome.quest2.description2}"
-				""
-				"{ftbquests.chapter.welcome.quest2.description3}"
-			]
+			description: ["{ftbquests.welcome.lore.description}"]
 			icon: "effortlessbuilding:building_techniques_book"
 			id: "0873486517E58FE4"
 			size: 3.0d
 			tasks: [{
 				id: "5C150CA08542BEFA"
-				title: "{ftbquests.chapter.welcome.quest2.task_6635223509570338554.title}"
+				title: "{ftbquests.welcome.lore.title}"
 				type: "checkmark"
 			}]
 			x: 5.0d
@@ -43,76 +37,52 @@
 		}
 		{
 			description: [
-				"{ftbquests.chapter.welcome.quest3.description1}"
-				"{ftbquests.chapter.welcome.quest3.description2}"
-				"{ftbquests.chapter.welcome.quest3.description3}"
+				"{ftbquests.welcome.changelog.description.1}"
 				"{@pagebreak}"
-				"{ftbquests.chapter.welcome.quest3.description4}"
-				"{ftbquests.chapter.welcome.quest3.description5}"
+				"{ftbquests.welcome.changelog.description.2}"
 				"{@pagebreak}"
-				"{ftbquests.chapter.welcome.quest3.description6}"
-				"{ftbquests.chapter.welcome.quest3.description7}"
+				"{ftbquests.welcome.changelog.description.3}"
 				"{@pagebreak}"
-				"{ftbquests.chapter.welcome.quest3.description8}"
-				"{ftbquests.chapter.welcome.quest3.description9}"
+				"{ftbquests.welcome.changelog.description.4}"
 				"{@pagebreak}"
-				"{ftbquests.chapter.welcome.quest3.description10}"
-				"{ftbquests.chapter.welcome.quest3.description11}"
-				"{ftbquests.chapter.welcome.quest3.description12}"
+				"{ftbquests.welcome.changelog.description.5}"
 				"{@pagebreak}"
-				"{ftbquests.chapter.welcome.quest3.description13}"
-				"{ftbquests.chapter.welcome.quest3.description14}"
-				"{ftbquests.chapter.welcome.quest3.description15}"
-				"{ftbquests.chapter.welcome.quest3.description16}"
-				"{ftbquests.chapter.welcome.quest3.description17}"
-				"{ftbquests.chapter.welcome.quest3.description18}"
-				"{ftbquests.chapter.welcome.quest3.description19}"
+				"{ftbquests.welcome.changelog.description.6}"
 				"{@pagebreak}"
-				"{ftbquests.chapter.welcome.quest3.description20}"
+				"{ftbquests.welcome.changelog.description.7}"
 			]
 			icon: "minecraft:writable_book"
 			id: "7389DA5CB69998BC"
 			size: 3.0d
 			tasks: [{
 				id: "44A22BC4153F3FD6"
-				title: "{ftbquests.chapter.welcome.quest3.task_4945563461976276950.title}"
+				title: "{ftbquests.welcome.changelog.title}"
 				type: "checkmark"
 			}]
 			x: -3.0d
 			y: 0.5d
 		}
 		{
-			description: [
-				"{ftbquests.chapter.welcome.quest4.description1}"
-				"{ftbquests.chapter.welcome.quest4.description2}"
-				""
-				"{ftbquests.chapter.welcome.quest4.description3}"
-				""
-				"{ftbquests.chapter.welcome.quest4.description4}"
-				""
-				"{ftbquests.chapter.welcome.quest4.description5}"
-				""
-				"{ftbquests.chapter.welcome.quest4.description6}"
-			]
+			description: ["{ftbquests.welcome.discord.description}"]
 			icon: "kubejs:coin"
 			id: "0B677BF5FCD2884F"
 			size: 2.0d
 			tasks: [{
 				id: "7CDB90799C05C11A"
-				title: "{ftbquests.chapter.welcome.quest4.task_8996943532585763098.title}"
+				title: "{ftbquests.welcome.discord.title}"
 				type: "checkmark"
 			}]
 			x: 1.0d
 			y: -3.0d
 		}
 		{
-			description: ["{ftbquests.chapter.welcome.quest5.description1}"]
-			icon: "kubejs:draconic_wetware_processor_mainframe"
+			description: ["{ftbquests.welcome.server_files.description}"]
+			icon: "kubejs:draconic_processor_mainframe"
 			id: "00C537F19FBE1A6E"
 			size: 2.0d
 			tasks: [{
 				id: "657AC8F72A9732C5"
-				title: "{ftbquests.chapter.welcome.quest5.task_7312377908886450885.title}"
+				title: "{ftbquests.welcome.server_files.title}"
 				type: "checkmark"
 			}]
 			x: 1.0d
@@ -120,7 +90,7 @@
 		}
 		{
 			can_repeat: true
-			description: ["{ftbquests.chapter.welcome.quest6.description1}"]
+			description: ["{ftbquests.welcome.1x_channels.description}"]
 			icon: "ae2:controller"
 			id: "01D554315C80E32A"
 			optional: true
@@ -135,13 +105,13 @@
 				id: "393E31B11D51498A"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.welcome.quest6.title}"
+			title: "{ftbquests.welcome.1x_channels.title}"
 			x: -3.5d
 			y: 4.0d
 		}
 		{
 			can_repeat: true
-			description: ["{ftbquests.chapter.welcome.quest7.description1}"]
+			description: ["{ftbquests.welcome.2x_channels.description}"]
 			icon: "ae2:controller"
 			id: "1D223731850769CF"
 			optional: true
@@ -156,13 +126,13 @@
 				id: "3CAB0FFD4B992B4C"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.welcome.quest7.title}"
+			title: "{ftbquests.welcome.2x_channels.title}"
 			x: 4.0d
 			y: 4.0d
 		}
 		{
 			can_repeat: true
-			description: ["{ftbquests.chapter.welcome.quest8.description1}"]
+			description: ["{ftbquests.welcome.3x_channels.description}"]
 			icon: "ae2:controller"
 			id: "650968485BE86ECC"
 			optional: true
@@ -177,13 +147,13 @@
 				id: "0163CFF55BAB86F4"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.welcome.quest8.title}"
+			title: "{ftbquests.welcome.3x_channels.title}"
 			x: 5.0d
 			y: 4.0d
 		}
 		{
 			can_repeat: true
-			description: ["{ftbquests.chapter.welcome.quest9.description1}"]
+			description: ["{ftbquests.welcome.4x_channels.description}"]
 			icon: "ae2:controller"
 			id: "2EE5068AEA2B2F0C"
 			optional: true
@@ -198,13 +168,13 @@
 				id: "4BC87C6C2733C4F9"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.welcome.quest9.title}"
+			title: "{ftbquests.welcome.4x_channels.title}"
 			x: 6.0d
 			y: 4.0d
 		}
 		{
 			can_repeat: true
-			description: ["{ftbquests.chapter.welcome.quest10.description1}"]
+			description: ["{ftbquests.welcome.disable_channels.description}"]
 			icon: "ae2:controller"
 			id: "3CCF44ACC8A78039"
 			optional: true
@@ -219,7 +189,7 @@
 				id: "55AA30056411A62E"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.welcome.quest10.title}"
+			title: "{ftbquests.welcome.disable_channels.title}"
 			x: -2.5d
 			y: 4.0d
 		}
@@ -229,12 +199,12 @@
 			optional: true
 			tasks: [{
 				id: "2A47E38B1F508C78"
-				title: "{ftbquests.chapter.welcome.quest11.task_3046653859604761720.title}"
+				title: "{ftbquests.welcome.positioner.title}"
 				type: "checkmark"
 			}]
 			x: 1.0d
 			y: 0.0d
 		}
 	]
-	title: "{ftbquests.chapter.welcome.title}"
+	title: "{ftbquests.welcome.title}"
 }

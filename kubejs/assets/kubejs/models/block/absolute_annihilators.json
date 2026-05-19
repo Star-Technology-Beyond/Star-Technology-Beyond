@@ -2,7 +2,7 @@
   "parent": "block/cube_bottom_top",
   "textures": {
     "bottom": "#side",
-    "side": "kubejs:block/casings/ultimate_multis/absolute_annihilation_casing",
-    "top": "kubejs:block/casings/ultimate_multis/absolute_annihilators_top"
+    "side": "kubejs:block/casings/threading/absolute_annihilation_casing",
+    "top": "kubejs:block/casings/threading/absolute_annihilators_top"
   }
 }

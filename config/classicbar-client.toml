@@ -38,4 +38,5 @@
 	withered_fractions = [0.25, 0.5, 0.75]
 	left_order = ["health", "armor", "absorption", "lavacharm", "lavacharm2"]
 	right_order = ["blood", "health_mount", "food", "thirst_level", "parcool:stamina", "feathers", "armor_toughness", "air", "flighttiara", "decay"]
+	frozen_health_color = "#7fafff"
 

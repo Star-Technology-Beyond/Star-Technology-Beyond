@@ -10,6 +10,7 @@
 !panoramas/
 !scripts/
 !compile_data/
+!.github/
 
 # Add files in main directory
 !.gitattributes
@@ -27,7 +28,6 @@ config/embeddium-options.json
 config/embeddium++.toml
 config/fml.toml
 config/oculus.properties
-config/emi.css
 
 config/jei/*
 config/worldedit/
@@ -40,5 +40,33 @@ config/mysticalagriculture-common.toml
 config/sgjourney-common.toml
 config/defaultworldtype/client-config.toml
 config/skyblockbuilder/data/dimensions.txt
-config/nuclearcraft/*
 config/create_hypertube-client.toml
+config/betterfpsdist.json
+config/craftingtweaks-common.toml
+config/cucumber-tags.json
+config/fastsuite.cfg
+config/ftbbackups2.json
+config/gtceu.yaml
+config/guideme.toml
+config/immersive_optimization.json
+config/megacells.json
+config/modernfix-mixins.properties
+config/packetfixer.properties
+config/pccard-client.toml
+config/pccard-common.toml
+config/ponder-client.toml
+config/sidebar_buttons.json
+config/skyguis.json5
+config/ae2/common.json
+config/de/mari_023/ae2wtlib.json5
+config/fancymenu/legacy_checklist.txt
+config/fancymenu/options.txt
+config/fancymenu/user_variables.db
+config/hammerlib/tags/modded/solarflux.json
+config/fancymenu/ui_themes/dark.json
+config/fancymenu/ui_themes/light.json
+config/konkrete/locals/de_de.local
+config/konkrete/locals/en_us.local
+config/konkrete/locals/pl_pl.local
+config/konkrete/locals/pt_br.local
+config/skyblockbuilder/data/*

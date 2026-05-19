@@ -188,8 +188,13 @@
 					item: "ae2:item_cell_housing"
 					type: "item"
 				}
+				{
+					id: "72E50CE9398743BA"
+					item: "expandedae:dual_cell_housing"
+					type: "item"
+				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest13.title}"
+			title: "{ftbquests.ae2.cell_housings.title}"
 			x: 9.0d
 			y: -5.0d
 		}
@@ -266,7 +271,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest19.title}"
+			title: "{ftbquests.ae2.me_export_import_buses.title}"
 			x: 5.0d
 			y: -1.0d
 		}
@@ -350,7 +355,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["74749B089D50329C"]
+			dependencies: ["62BA581B2918BB7B"]
 			id: "4F37BFEF63998350"
 			tasks: [
 				{
@@ -374,7 +379,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest27.title}"
+			title: "{ftbquests.ae2.gregtech_hatches.title}"
 			x: -3.0d
 			y: 7.0d
 		}
@@ -435,6 +440,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -449,6 +455,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -463,6 +470,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -477,6 +485,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -491,6 +500,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -505,10 +515,11 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest31.title}"
+			title: "{ftbquests.ae2.infinity_cells.title}"
 			x: -3.0d
 			y: -9.0d
 		}
@@ -665,7 +676,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest42.title}"
+			title: "{ftbquests.ae2.processors.title}"
 			x: 3.0d
 			y: -3.0d
 		}
@@ -694,7 +705,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest43.title}"
+			title: "{ftbquests.ae2.printed_circuits.title}"
 			x: 5.0d
 			y: -3.0d
 		}
@@ -756,7 +767,7 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.applied_energistics.quest44.task_3136592264272534550.title}"
+				title: "{ftbquests.ae2.me_assembler.title}"
 				type: "item"
 			}]
 			x: 1.0d
@@ -782,7 +793,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest45.title}"
+			title: "{ftbquests.ae2.skystone_alloys.title}"
 			x: 7.0d
 			y: -3.0d
 		}
@@ -858,7 +869,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest51.title}"
+			title: "{ftbquests.ae2.cheaper_cores.title}"
 			x: 1.0d
 			y: -1.0d
 		}
@@ -922,7 +933,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest56.title}"
+			title: "{ftbquests.ae2.netherite_skystone_alloys.title}"
 			x: 5.0d
 			y: -5.0d
 		}
@@ -949,7 +960,7 @@
 				item: "gtceu:large_me_assembler"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.applied_energistics.quest58.title}"
+			title: "{ftbquests.ae2.large_me_assembler.title}"
 			x: -1.0d
 			y: 5.0d
 		}
@@ -982,7 +993,13 @@
 					item: "megacells:mega_fluid_cell_housing"
 					type: "item"
 				}
+				{
+					id: "70C2A7683BC5B25A"
+					item: "expandedae:mega_dual_cell_housing"
+					type: "item"
+				}
 			]
+			title: "{ftbquests.ae2.mega_cell_housings.title}"
 			x: 3.0d
 			y: -7.0d
 		}
@@ -1054,7 +1071,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest65.title}"
+			title: "{ftbquests.ae2.quantum_linking.title}"
 			x: 5.0d
 			y: 7.0d
 		}
@@ -1093,11 +1110,7 @@
 		}
 		{
 			dependencies: ["534F27BC96F104A2"]
-			description: [
-				"{ftbquests.chapter.applied_energistics.quest69.description1}"
-				""
-				"{ftbquests.chapter.applied_energistics.quest69.description2}"
-			]
+			description: ["{ftbquests.ae2.terminals.description}"]
 			id: "3FC037156B8DB553"
 			tasks: [
 				{
@@ -1111,7 +1124,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest69.title}"
+			title: "{ftbquests.ae2.terminals.title}"
 			x: 11.0d
 			y: 3.0d
 		}
@@ -1143,18 +1156,14 @@
 				"617E17824856450D"
 				"372842AD602BB1BF"
 			]
-			description: [
-				"{ftbquests.chapter.applied_energistics.quest72.description1}"
-				""
-				"{ftbquests.chapter.applied_energistics.quest72.description2}"
-			]
+			description: ["{ftbquests.ae2.autocrafting.description}"]
 			id: "54D3F6BC8F7BC609"
 			tasks: [{
 				id: "6AF795E95BA5BDDB"
 				item: "ae2:blank_pattern"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.applied_energistics.quest72.title}"
+			title: "{ftbquests.ae2.autocrafting.title}"
 			x: 11.0d
 			y: -1.0d
 		}
@@ -1258,7 +1267,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest80.title}"
+			title: "{ftbquests.ae2.ex_export_import_bus.title}"
 			x: -9.0d
 			y: 5.0d
 		}
@@ -1381,7 +1390,7 @@
 						]
 					}
 				}
-				title: "{ftbquests.chapter.applied_energistics.quest89.task_2642030594883886347.title}"
+				title: "{ftbquests.ae2.spatial_cell_components.title}"
 				type: "item"
 			}]
 			x: -3.0d
@@ -1425,7 +1434,7 @@
 			id: "45EA9095FAF7DDD6"
 			tasks: [{
 				id: "1BEA9D6C9EB86103"
-				title: "{ftbquests.chapter.applied_energistics.quest93.task_2011593273419260163.title}"
+				title: "{ftbquests.ae2.extended_machines.title}"
 				type: "checkmark"
 			}]
 			x: -7.0d
@@ -1434,13 +1443,14 @@
 		{
 			id: "5D67E904C7D02AB8"
 			invisible: true
+			optional: true
 			tasks: [{
 				id: "76B74EE25F58E344"
-				title: "{ftbquests.chapter.applied_energistics.quest94.task_8554392751382782788.title}"
+				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1481,9 +1491,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.applied_energistics.quest95.title}"
+			title: "{ftbquests.ae2.assembler_matrix.title}"
 			x: -11.0d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["478A02E7D8C0A1C8"]
@@ -1725,7 +1735,7 @@
 				type: "item"
 			}]
 			x: -11.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["29D7E2B8D3BF1D9E"]
@@ -1741,14 +1751,14 @@
 		}
 		{
 			dependencies: ["29FCED9F85FB2882"]
-			description: ["{ftbquests.chapter.applied_energistics.quest97.description1}"]
+			description: ["{ftbquests.ae2.mega_component_skip.description}"]
 			id: "334AE7B73C221920"
 			tasks: [{
 				id: "3CAA8DC4BE329DE5"
 				item: "megacells:cell_component_1m"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.applied_energistics.quest96.title}"
+			title: "{ftbquests.ae2.mega_component_skip.title}"
 			x: -7.0d
 			y: -9.0d
 		}
@@ -1766,6 +1776,138 @@
 			x: 11.0d
 			y: -7.0d
 		}
+		{
+			dependencies: ["2519DA28EADD47D4"]
+			id: "32473F3391BBD84E"
+			tasks: [{
+				id: "22EA13C1116F4813"
+				item: "expandedae:giga_pattern_provider"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["272CE9BF358D64FE"]
+			id: "795C46D5A4EFCCB8"
+			tasks: [
+				{
+					id: "3CA241990674F706"
+					item: "gtceu:me_stocking_input_bus"
+					type: "item"
+				}
+				{
+					id: "03B551AEB6D6C2F0"
+					item: "gtceu:me_stocking_input_hatch"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.ae2.gregtech_stocking_hatches.title}"
+			x: -7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4F37BFEF63998350"]
+			id: "5177CE4CC1DE1A04"
+			tasks: [
+				{
+					id: "62845C535A1F4BA6"
+					item: "expandedgt:dual_me_input_hatch"
+					type: "item"
+				}
+				{
+					id: "334635B3F4FCA032"
+					item: "expandedgt:dual_me_output_hatch"
+					type: "item"
+				}
+				{
+					id: "2513AA2B79D8B7DF"
+					item: "expandedgt:expanded_me_input_bus"
+					type: "item"
+				}
+				{
+					id: "7889E02404EBBC4C"
+					item: "expandedgt:expanded_me_input_hatch"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.ae2.expanded_hatches.title}"
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["795C46D5A4EFCCB8"]
+			id: "1E15558A3C50312D"
+			tasks: [
+				{
+					id: "0CE17D4332D2B389"
+					item: "expandedgt:expanded_me_stocking_input_bus"
+					type: "item"
+				}
+				{
+					id: "64680ED94695160A"
+					item: "expandedgt:expanded_me_stocking_input_hatch"
+					type: "item"
+				}
+				{
+					id: "75507D03E5EC6795"
+					item: "expandedgt:me_tag_filter_stocking_bus"
+					type: "item"
+				}
+				{
+					id: "31FDEEC29455E859"
+					item: "expandedgt:me_tag_filter_stocking_hatch"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.ae2.expanded_stocking_hatches.title}"
+			x: -9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["617E17824856450D"]
+			id: "145E8628D8EAB5A8"
+			tasks: [{
+				id: "5EC8800E511924D5"
+				item: "pccard:card_programmed_circuit"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1E15558A3C50312D"]
+			id: "0D861EADBA0E8735"
+			tasks: [{
+				id: "5CF4649A48F2B646"
+				item: "expandedgt:dual_me_stocking_input_hatch"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["0094C2E72105E8CA"]
+			id: "4E9302D20943CC77"
+			tasks: [{
+				id: "68481E491D8FF1B6"
+				item: "gtceu:me_pattern_buffer"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4E9302D20943CC77"]
+			id: "3750F37A0F2A98E1"
+			tasks: [{
+				id: "27F46532EA7E6560"
+				item: "gtceu:me_pattern_buffer_proxy"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 3.0d
+		}
 	]
-	title: "{ftbquests.chapter.applied_energistics.title}"
+	title: "{ftbquests.ae2.title}"
 }

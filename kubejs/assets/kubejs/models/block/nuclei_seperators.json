@@ -2,7 +2,7 @@
   "parent": "block/cube_bottom_top",
   "textures": {
     "bottom": "#top",
-    "side": "kubejs:block/casings/ultimate_multis/inoculated_nuclei_seperation_casing",
-    "top": "kubejs:block/casings/ultimate_multis/nuclei_seperators_top"
+    "side": "kubejs:block/casings/threading/inoculated_nuclei_seperation_casing",
+    "top": "kubejs:block/casings/threading/nuclei_seperators_top"
   }
 }

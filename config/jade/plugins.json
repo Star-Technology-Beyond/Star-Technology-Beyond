@@ -68,6 +68,8 @@
     "auto_output_info": true,
     "workable_provider": true,
     "transformer": true,
+    "energy_converter_provider": true,
+    "ldp_endpoint": true,
     "controllable_provider": true,
     "me_pattern_buffer": true,
     "exhaust_vent_info": true,
@@ -76,13 +78,25 @@
     "recipe_logic_provider": true,
     "maintenance_info": true,
     "machine_mode": true,
+    "battery_info": true,
     "electric_container_provider": true,
     "steam_boiler_info": true,
     "recipe_output_info": true,
     "stained_color": true,
     "hazard_cleaner_provider": true,
     "cable_info": true,
-    "parallel_info": true
+    "parallel_info": true,
+    "data_bank": true
+  },
+  "start_core": {
+    "fusion_reactor_info": true,
+    "hellforge_heat_info": true,
+    "threading_stat_blocks": true,
+    "vacuum_chemical_reaction_chamber_info": true,
+    "dream_link_network_info": true,
+    "variadic_redstone_info": true,
+    "threading_recipes": true,
+    "abyssal_harvester_info": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -95,6 +109,9 @@
   "expatternprovider": {
     "jade_chamber": true,
     "jade_wireless": true
+  },
+  "functionalstorage": {
+    "armory": true
   },
   "balm": {
     "jade": true
@@ -113,21 +130,6 @@
   },
   "modularrouters": {
     "router": true
-  },
-  "extendedcrafting": {
-    "elite_auto_table": true,
-    "ender_crafter": true,
-    "basic_auto_table": true,
-    "flux_crafter": true,
-    "advanced_table": true,
-    "auto_ender_crafter": true,
-    "ultimate_table": true,
-    "ultimate_auto_table": true,
-    "elite_table": true,
-    "basic_table": true,
-    "crafting_core": true,
-    "advanced_auto_table": true,
-    "compressor": true
   },
   "hammerlib": {
     "root": true

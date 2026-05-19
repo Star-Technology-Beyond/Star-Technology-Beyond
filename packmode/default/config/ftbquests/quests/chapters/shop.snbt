@@ -7,7 +7,7 @@
 	id: "3CEC7F7BAD54E4C6"
 	images: [{
 		height: 5.0d
-		image: "kubejs:item/coin"
+		image: "kubejs:item/misc/extra/coin"
 		rotation: 0.0d
 		width: 5.0d
 		x: 0.0d
@@ -35,7 +35,7 @@
 				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest1.title}"
+			title: "{ftbquests.shop.bronze.title}"
 			x: -5.0d
 			y: -3.5d
 		}
@@ -57,7 +57,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest2.title}"
+			title: "{ftbquests.shop.gravel.title}"
 			x: -5.0d
 			y: -2.0d
 		}
@@ -78,7 +78,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest3.title}"
+			title: "{ftbquests.shop.log.title}"
 			x: 5.0d
 			y: -2.0d
 		}
@@ -133,7 +133,7 @@
 				item: { Count: 8, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest4.title}"
+			title: "{ftbquests.shop.hatch_pack.title}"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -179,7 +179,7 @@
 				item: { Count: 64, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest5.title}"
+			title: "{ftbquests.shop.jet_boots.title}"
 			x: -3.5d
 			y: -5.5d
 		}
@@ -228,7 +228,7 @@
 				item: { Count: 12, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest6.title}"
+			title: "{ftbquests.shop.basic_components.title}"
 			x: -3.5d
 			y: -4.0d
 		}
@@ -251,7 +251,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest7.title}"
+			title: "{ftbquests.shop.wafers.title}"
 			x: -3.5d
 			y: -2.5d
 		}
@@ -285,7 +285,7 @@
 				item: { Count: 32, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest8.title}"
+			title: "{ftbquests.shop.magnet.title}"
 			x: 2.0d
 			y: -3.0d
 		}
@@ -320,7 +320,7 @@
 				item: { Count: 16, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest9.title}"
+			title: "{ftbquests.shop.flux_net_pack.title}"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -343,7 +343,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest10.title}"
+			title: "{ftbquests.shop.steel.title}"
 			x: -6.0d
 			y: 0.5d
 		}
@@ -366,7 +366,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest11.title}"
+			title: "{ftbquests.shop.aluminium.title}"
 			x: -4.5d
 			y: 0.5d
 		}
@@ -389,7 +389,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest12.title}"
+			title: "{ftbquests.shop.stainless_steel.title}"
 			x: -3.0d
 			y: 0.5d
 		}
@@ -412,7 +412,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest13.title}"
+			title: "{ftbquests.shop.titanium.title}"
 			x: -1.5d
 			y: 0.5d
 		}
@@ -435,7 +435,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest14.title}"
+			title: "{ftbquests.shop.tungsten_steel.title}"
 			x: 0.0d
 			y: 0.5d
 		}
@@ -458,14 +458,14 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest15.title}"
+			title: "{ftbquests.shop.rhodium_plated_palladium.title}"
 			x: 1.5d
 			y: 0.5d
 		}
 		{
 			can_repeat: true
 			dependencies: ["2587E109968EFBB4"]
-			icon: { Count: 16, id: "gtceu:naquadah_ingot" }
+			icon: { Count: 16, id: "gtceu:naquadah_alloy_ingot" }
 			id: "73CD5F0A87F340EB"
 			rewards: [{
 				count: 16
@@ -481,7 +481,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest16.title}"
+			title: "{ftbquests.shop.naquadah_alloy.title}"
 			x: 3.0d
 			y: 0.5d
 		}
@@ -504,7 +504,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest17.title}"
+			title: "{ftbquests.shop.darmstadtium.title}"
 			x: 4.5d
 			y: 0.5d
 		}
@@ -527,7 +527,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest18.title}"
+			title: "{ftbquests.shop.neutronium.title}"
 			x: 6.0d
 			y: 0.5d
 		}
@@ -550,7 +550,7 @@
 				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest19.title}"
+			title: "{ftbquests.shop.lv_circuit.title}"
 			x: -6.0d
 			y: -0.5d
 		}
@@ -573,7 +573,7 @@
 				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest20.title}"
+			title: "{ftbquests.shop.mv_circuit.title}"
 			x: -4.5d
 			y: -0.5d
 		}
@@ -596,7 +596,7 @@
 				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest21.title}"
+			title: "{ftbquests.shop.hv_circuit.title}"
 			x: -3.0d
 			y: -0.5d
 		}
@@ -619,7 +619,7 @@
 				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest22.title}"
+			title: "{ftbquests.shop.ev_circuit.title}"
 			x: -1.5d
 			y: -0.5d
 		}
@@ -642,7 +642,7 @@
 				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest23.title}"
+			title: "{ftbquests.shop.iv_circuit.title}"
 			x: 0.0d
 			y: -0.5d
 		}
@@ -665,7 +665,7 @@
 				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest24.title}"
+			title: "{ftbquests.shop.luv_circuit.title}"
 			x: 1.5d
 			y: -0.5d
 		}
@@ -688,7 +688,7 @@
 				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest25.title}"
+			title: "{ftbquests.shop.zpm_circuit.title}"
 			x: 3.0d
 			y: -0.5d
 		}
@@ -711,7 +711,7 @@
 				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest26.title}"
+			title: "{ftbquests.shop.uv_circuit.title}"
 			x: 4.5d
 			y: -0.5d
 		}
@@ -733,7 +733,7 @@
 				item: { Count: 4, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest27.title}"
+			title: "{ftbquests.shop.uhv_circuit.title}"
 			x: 6.0d
 			y: -0.5d
 		}
@@ -782,7 +782,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.shop.quest28.title}"
+			title: "{ftbquests.shop.enchant_mesh_fortune.title}"
 			x: 1.5d
 			y: 2.0d
 		}
@@ -831,7 +831,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.shop.quest29.title}"
+			title: "{ftbquests.shop.enchant_mesh_efficiency.title}"
 			x: -1.5d
 			y: 2.0d
 		}
@@ -899,7 +899,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.shop.quest30.title}"
+			title: "{ftbquests.shop.enchant_fortune_mesh_efficiency.title}"
 			x: 1.0d
 			y: 3.0d
 		}
@@ -967,7 +967,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.shop.quest31.title}"
+			title: "{ftbquests.shop.enchant_efficiency_mesh_fortune.title}"
 			x: -1.0d
 			y: 3.0d
 		}
@@ -1013,7 +1013,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.shop.quest32.title}"
+			title: "{ftbquests.shop.enchant_mesh_fortune_efficiency.title}"
 			x: 0.0d
 			y: 2.5d
 		}
@@ -1035,7 +1035,7 @@
 				item: { Count: 2, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest33.title}"
+			title: "{ftbquests.shop.charcoal.title}"
 			x: 5.0d
 			y: -3.5d
 		}
@@ -1044,6 +1044,7 @@
 				Count: 1
 				id: "gtceu:diamond_axe"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: {
 						DisableShields: 1b
@@ -1052,7 +1053,6 @@
 					GT.Tool: {
 						AttackDamage: 12.0f
 						AttackSpeed: -3.1000001f
-						Damage: 0
 						HarvestLevel: 3
 						MaxDamage: 767
 						ToolSpeed: 8.0f
@@ -1068,12 +1068,12 @@
 						Count: 1
 						id: "gtceu:diamond_pickaxe"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
 								AttackDamage: 8.0f
 								AttackSpeed: -2.7f
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 10.0f
@@ -1089,6 +1089,7 @@
 						Count: 1
 						id: "gtceu:diamond_axe"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								DisableShields: 1b
@@ -1097,7 +1098,6 @@
 							GT.Tool: {
 								AttackDamage: 12.0f
 								AttackSpeed: -3.1000001f
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 8.0f
@@ -1155,7 +1155,7 @@
 				item: { Count: 2, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest34.title}"
+			title: "{ftbquests.shop.starter_gear.title}"
 			x: 3.5d
 			y: -2.5d
 		}
@@ -1165,10 +1165,10 @@
 				Count: 1
 				id: "gtceu:diamond_hammer"
 				tag: {
+					Damage: 0
 					DisallowContainerItem: 0b
 					GT.Behaviours: { }
 					GT.Tool: {
-						Damage: 0
 						HarvestLevel: 3
 						MaxDamage: 767
 						ToolSpeed: 10.0f
@@ -1184,10 +1184,10 @@
 						Count: 1
 						id: "gtceu:diamond_hammer"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 10.0f
@@ -1203,10 +1203,10 @@
 						Count: 1
 						id: "gtceu:diamond_file"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 767
 							}
 							HideFlags: 2
@@ -1220,10 +1220,10 @@
 						Count: 1
 						id: "gtceu:diamond_wire_cutter"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 10.0f
@@ -1239,6 +1239,7 @@
 						Count: 1
 						id: "gtceu:diamond_saw"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								HarvestIce: 1b
@@ -1246,7 +1247,6 @@
 							GT.Tool: {
 								AttackDamage: 6.0f
 								AttackSpeed: -2.5f
-								Damage: 0
 								MaxDamage: 767
 							}
 							HideFlags: 2
@@ -1260,10 +1260,10 @@
 						Count: 1
 						id: "gtceu:diamond_screwdriver"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 767
 							}
 							HideFlags: 2
@@ -1277,12 +1277,12 @@
 						Count: 1
 						id: "gtceu:diamond_wrench"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: {
 								Mode: 2b
 							}
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 10.0f
@@ -1298,10 +1298,10 @@
 						Count: 1
 						id: "gtceu:diamond_crowbar"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								HarvestLevel: 3
 								MaxDamage: 767
 								ToolSpeed: 10.0f
@@ -1317,10 +1317,10 @@
 						Count: 1
 						id: "gtceu:damascus_steel_mortar"
 						tag: {
+							Damage: 0
 							DisallowContainerItem: 0b
 							GT.Behaviours: { }
 							GT.Tool: {
-								Damage: 0
 								MaxDamage: 1023
 							}
 							HideFlags: 2
@@ -1337,7 +1337,7 @@
 				item: { Count: 2, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest35.title}"
+			title: "{ftbquests.shop.tool_pack.title}"
 			x: 3.5d
 			y: -4.0d
 		}
@@ -1388,7 +1388,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest36.title}"
+			title: "{ftbquests.shop.teleport_kit.title}"
 			x: 3.5d
 			y: -5.5d
 		}
@@ -1402,16 +1402,16 @@
 				command: "/gamerule doDaylightCycle false"
 				icon: "ae2:singularity"
 				id: "3EB38A984CAA9456"
-				title: "{ftbquests.chapter.shop.quest37.reward_4518107237908649046.title}"
+				title: "{ftbquests.shop.disable_daylight_cycle.title}"
 				type: "command"
 			}]
 			shape: "octagon"
 			tasks: [{
 				id: "67D11D234889008C"
-				title: "{ftbquests.chapter.shop.quest37.task_7480792493417103500.title}"
+				title: "{ftbquests.shop.disable_daylight_cycle.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.shop.quest37.title}"
+			title: "{ftbquests.shop.disable_daylight_cycle.title}"
 			x: -3.5d
 			y: 3.0d
 		}
@@ -1425,16 +1425,16 @@
 				command: "/gamerule doWeatherCycle false"
 				icon: "ae2:singularity"
 				id: "5AE2822D8BC289FE"
-				title: "{ftbquests.chapter.shop.quest38.reward_6548939940280044030.title}"
+				title: "{ftbquests.shop.disable_weather_cycle.title}"
 				type: "command"
 			}]
 			shape: "octagon"
 			tasks: [{
 				id: "379C24585F64F8CA"
-				title: "{ftbquests.chapter.shop.quest38.task_4007117730429073610.title}"
+				title: "{ftbquests.shop.disable_weather_cycle.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.shop.quest38.title}"
+			title: "{ftbquests.shop.disable_weather_cycle.title}"
 			x: 3.5d
 			y: 3.0d
 		}
@@ -1448,16 +1448,16 @@
 				command: "/gamerule doDaylightCycle true"
 				icon: "ae2:singularity"
 				id: "4FB40FA2C1F1AE47"
-				title: "{ftbquests.chapter.shop.quest39.reward_5743232616517185095.title}"
+				title: "{ftbquests.shop.enable_daylight_cycle.title}"
 				type: "command"
 			}]
 			shape: "octagon"
 			tasks: [{
 				id: "3B840D173C0A7E28"
-				title: "{ftbquests.chapter.shop.quest39.task_4288567138606284328.title}"
+				title: "{ftbquests.shop.enable_daylight_cycle.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.shop.quest39.title}"
+			title: "{ftbquests.shop.enable_daylight_cycle.title}"
 			x: -4.5d
 			y: 3.0d
 		}
@@ -1472,7 +1472,7 @@
 				item: { Count: 16, id: "kubejs:coin" }
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest40.title}"
+			title: "{ftbquests.shop.change_daylight_cycle.title}"
 			x: -4.0d
 			y: 2.0d
 		}
@@ -1487,7 +1487,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.shop.quest41.title}"
+			title: "{ftbquests.shop.change_weather_cycle.title}"
 			x: 4.0d
 			y: 2.0d
 		}
@@ -1501,54 +1501,19 @@
 				command: "/gamerule doWeatherCycle true"
 				icon: "ae2:singularity"
 				id: "095C9F5A75C8759E"
-				title: "{ftbquests.chapter.shop.quest42.reward_674589255070676382.title}"
+				title: "{ftbquests.shop.enable_weather_cycle.title}"
 				type: "command"
 			}]
 			shape: "octagon"
 			tasks: [{
 				id: "443D011EE22F18B7"
-				title: "{ftbquests.chapter.shop.quest42.task_4917087600313833655.title}"
+				title: "{ftbquests.shop.enable_weather_cycle.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.shop.quest42.title}"
+			title: "{ftbquests.shop.enable_weather_cycle.title}"
 			x: 4.5d
 			y: 3.0d
 		}
-		{
-			can_repeat: true
-			dependencies: ["262BD3D9D1DF7F13"]
-			hide_until_deps_complete: true
-			icon: "minecraft:dragon_breath"
-			id: "7A188FDFA4C591D7"
-			invisible_until_tasks: 500
-			rewards: [{
-				count: 128
-				id: "476116DFED4CC404"
-				item: "minecraft:dragon_breath"
-				type: "item"
-			}]
-			shape: "pentagon"
-			size: 1.15d
-			tasks: [
-				{
-					consume_items: true
-					count: 64L
-					id: "64DCEB931D509752"
-					item: "kubejs:coin"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 16L
-					id: "7FCC562221676BFD"
-					item: "minecraft:dragon_breath"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.shop.quest43.title}"
-			x: 0.0d
-			y: 4.0249999999999995d
-		}
 	]
-	title: "{ftbquests.chapter.shop.title}"
+	title: "{ftbquests.shop.title}"
 }
