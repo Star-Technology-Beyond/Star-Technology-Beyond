@@ -9,456 +9,291 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["26E81A8B2EB80A6C"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest1.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest1.description2}"
-				""
-				"{ftbquests.chapter.mechanics.quest1.description3}"
-			]
+			dependencies: ["390CB178FC2D2CCC"]
+			description: ["{ftbquests.mechanics.multiblocks.description}"]
 			icon: "gtceu:electric_blast_furnace"
 			id: "73D5AA58DE5B72AA"
 			tasks: [{
 				id: "7ACFE29FEF327178"
-				title: "{ftbquests.chapter.mechanics.quest1.task_8849540969347051896.title}"
+				title: "{ftbquests.mechanics.multiblocks.title}"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: -0.5d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["26E81A8B2EB80A6C"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest2.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest2.description2}"
-			]
+			dependencies: ["390CB178FC2D2CCC"]
+			description: ["{ftbquests.mechanics.wall_sharing.description}"]
 			icon: "gtceu:multi_smelter"
 			id: "48374090EA89E869"
 			tasks: [{
 				id: "7A308EF75BC2E098"
-				title: "{ftbquests.chapter.mechanics.quest2.task_8804694464556884120.title}"
+				title: "{ftbquests.mechanics.wall_sharing.title}"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -0.5d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["7E74A114F4054345"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest3.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest3.description2}"
-				"{ftbquests.chapter.mechanics.quest3.description3}"
-			]
+			dependencies: ["5B70B63D4157594F"]
+			description: ["{ftbquests.mechanics.distinct_buses.description}"]
 			icon: "gtceu:mv_input_bus"
 			id: "2757CDEC1D8F5CCE"
 			tasks: [{
 				id: "2119AA3F34C6DB0F"
-				title: "{ftbquests.chapter.mechanics.quest3.task_2385124666114497295.title}"
+				title: "{ftbquests.mechanics.distinct_buses.item_title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.mechanics.quest3.title}"
+			title: "{ftbquests.mechanics.distinct_buses.title}"
 			x: -1.5d
-			y: -2.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["6EBA06E5F9B25100"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest4.description1}"
-				"{ftbquests.chapter.mechanics.quest4.description2}"
-				""
-				"{ftbquests.chapter.mechanics.quest4.description3}"
-			]
+			dependencies: ["56BA79287C4DBE52"]
+			description: ["{ftbquests.mechanics.overclocking.description}"]
 			icon: "gtceu:lv_energy_input_hatch"
 			id: "34EDF98BDC245F77"
 			tasks: [{
 				id: "71D295023BB7E3F5"
-				title: "{ftbquests.chapter.mechanics.quest4.task_8201781708219474933.title}"
+				title: "{ftbquests.mechanics.overclocking.title}"
 				type: "checkmark"
 			}]
 			x: -1.5d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
-			dependencies: ["775AAF108AFAF707"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest5.description1}"
-				"{ftbquests.chapter.mechanics.quest5.description2}"
-				""
-				"{ftbquests.chapter.mechanics.quest5.description3}"
-			]
+			dependencies: ["5B70B63D4157594F"]
+			description: ["{ftbquests.mechanics.perfect_overclocking.description}"]
 			icon: "gtceu:ev_energy_input_hatch"
 			id: "0C78BD4A7A0B98E4"
 			tasks: [{
 				id: "1869A59961DFCE24"
-				title: "{ftbquests.chapter.mechanics.quest5.task_1759119207655525924.title}"
+				title: "{ftbquests.mechanics.perfect_overclocking.title}"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1820787D031EAB15"]
+			description: ["{ftbquests.mechanics.large_chemical_reactor_skips.description}"]
+			icon: "gtceu:large_chemical_reactor"
+			id: "0F4C5DF2922568B2"
+			tasks: [{
+				id: "70814049DBEF16DA"
+				title: "{ftbquests.mechanics.large_chemical_reactor_skips.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 1.0d
 		}
 		{
-			dependencies: ["4840218DA8E61B65"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest6.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest6.description2}"
-				""
-				"{ftbquests.chapter.mechanics.quest6.description3}"
+			dependencies: [
+				"1820787D031EAB15"
+				"5B70B63D4157594F"
 			]
-			icon: "gtceu:large_chemical_reactor"
-			id: "0F4C5DF2922568B2"
-			tasks: [{
-				id: "70814049DBEF16DA"
-				title: "{ftbquests.chapter.mechanics.quest6.task_8106831490210272986.title}"
-				type: "checkmark"
-			}]
-			x: 1.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["171BD0E155CF98CA"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest7.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest7.description2}"
-			]
+			description: ["{ftbquests.mechanics.lockable_fluid_hatches.description}"]
 			icon: "gtceu:mv_input_hatch"
 			id: "4A4275186719AD8D"
 			tasks: [{
 				id: "5948FBA874C4FE68"
-				title: "{ftbquests.chapter.mechanics.quest7.task_6433668768630898280.title}"
+				title: "{ftbquests.mechanics.lockable_fluid_hatches.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: -2.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["6C5688897B6A4C42"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest8.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest8.description2}"
-				"{ftbquests.chapter.mechanics.quest8.description3}"
-				"{ftbquests.chapter.mechanics.quest8.description4}"
-				"{ftbquests.chapter.mechanics.quest8.description5}"
-				"{ftbquests.chapter.mechanics.quest8.description6}"
-				"{ftbquests.chapter.mechanics.quest8.description7}"
-				"{ftbquests.chapter.mechanics.quest8.description8}"
-				"{ftbquests.chapter.mechanics.quest8.description9}"
-				"{ftbquests.chapter.mechanics.quest8.description10}"
-				"{ftbquests.chapter.mechanics.quest8.description11}"
-				"{ftbquests.chapter.mechanics.quest8.description12}"
-				"{ftbquests.chapter.mechanics.quest8.description13}"
-				""
-				"{ftbquests.chapter.mechanics.quest8.description14}"
-				"{ftbquests.chapter.mechanics.quest8.description15}"
-			]
+			dependencies: ["3AF688ADC18E580C"]
+			description: ["{ftbquests.mechanics.superconductors.description}"]
 			icon: "gtceu:soul_infused_hex_wire"
 			id: "18080B4F89AD24D2"
 			tasks: [{
 				id: "2902228D7DFFED96"
-				title: "{ftbquests.chapter.mechanics.quest8.task_2954962296608124310.title}"
+				title: "{ftbquests.mechanics.superconductors.title}"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["70875F86587758D7"]
+			description: ["{ftbquests.mechanics.cheaper_circuits.description}"]
+			icon: "gtceu:basic_integrated_circuit"
+			id: "6F7EE9A1BC718801"
+			tasks: [{
+				id: "5C3E946968BBEC0C"
+				title: "{ftbquests.mechanics.cheaper_circuits.title}"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			description: ["{ftbquests.mechanics.emi.description}"]
+			id: "69D57FE912CAF112"
+			tasks: [{
+				id: "0D132FC336812CBD"
+				title: "{ftbquests.mechanics.emi.title}"
 				type: "checkmark"
 			}]
 			x: -1.5d
 			y: -3.5d
 		}
 		{
-			dependencies: ["14A9381889183318"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest9.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest9.description2}"
-				""
-				"{ftbquests.chapter.mechanics.quest9.description3}"
-			]
-			icon: "gtceu:basic_integrated_circuit"
-			id: "6F7EE9A1BC718801"
-			tasks: [{
-				id: "5C3E946968BBEC0C"
-				title: "{ftbquests.chapter.mechanics.quest9.task_6646913280495053836.title}"
-				type: "checkmark"
-			}]
-			x: 1.5d
-			y: -2.0d
-		}
-		{
-			description: [
-				"{ftbquests.chapter.mechanics.quest10.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest10.description2}"
-				"{ftbquests.chapter.mechanics.quest10.description3}"
-				"{ftbquests.chapter.mechanics.quest10.description4}"
-				"{ftbquests.chapter.mechanics.quest10.description5}"
-				""
-				"&5- &rKeep in mind that hovering over an item and clicking \"r\" will should the ways to acquire it and clicking \"u\" will show uses of it. "
-				""
-				"&7Make sure to check your keybinds and experiment it is a &l&nvery&r&7 useful tool."
-			]
-			id: "69D57FE912CAF112"
-			tasks: [{
-				id: "0D132FC336812CBD"
-				title: "{ftbquests.chapter.mechanics.quest10.task_942149262530129085.title}"
-				type: "checkmark"
-			}]
-			title: "{ftbquests.chapter.mechanics.quest10.title}"
-			x: 0.0d
-			y: -3.5d
-		}
-		{
-			dependencies: ["0F9486CD70580835"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest11.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest11.description2}"
-				""
-				"{ftbquests.chapter.mechanics.quest11.description3}"
-			]
+			dependencies: ["0742EF8F43044102"]
+			description: ["{ftbquests.mechanics.ghost_circuits.description}"]
 			icon: "kubejs:ulv_universal_circuit"
 			id: "2A608D87158DF4CB"
 			tasks: [{
 				id: "66C48E64A4B5CC1B"
-				title: "{ftbquests.chapter.mechanics.quest11.task_7405200250215189531.title}"
+				title: "{ftbquests.mechanics.ghost_circuits.title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.mechanics.quest11.title}"
 			x: 1.5d
-			y: -0.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["0A1BF10244D43021"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest12.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest12.description2}"
-				""
-				"{ftbquests.chapter.mechanics.quest12.description3}"
-			]
+			dependencies: ["2D1184752D7ACA66"]
+			description: ["{ftbquests.mechanics.machine_modes.description}"]
 			icon: "gtceu:lv_robot_arm"
 			id: "76CD29559C341985"
 			tasks: [{
 				id: "2E13FEFD769A142F"
-				title: "{ftbquests.chapter.mechanics.quest12.task_3320277714872177711.title}"
+				title: "{ftbquests.mechanics.machine_modes.title}"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: 1.0d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0A6534BD104A2B08"]
 			description: [
-				"{ftbquests.chapter.mechanics.quest13.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description2}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description3}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description4}"
+				"{ftbquests.mechanics.parallels.description.1}"
 				"{@pagebreak}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description5}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description6}"
+				"{ftbquests.mechanics.parallels.description.2}"
 				"{@pagebreak}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description7}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description8}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description9}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description10}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description11}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description12}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description13}"
-				""
-				"{ftbquests.chapter.mechanics.quest13.description14}"
+				"{ftbquests.mechanics.parallels.description.3}"
 			]
 			icon: "gtceu:zpm_parallel_hatch"
 			id: "70EE9D4811A27CF2"
 			tasks: [{
 				id: "71769BC93B85A6BA"
-				title: "{ftbquests.chapter.mechanics.quest13.task_8175893462127060666.title}"
-				type: "checkmark"
-			}]
-			x: -1.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["141911C5DD68CD2A"]
-			description: [
-				"{ftbquests.chapter.mechanics.quest14.description1}"
-				""
-				"{ftbquests.chapter.mechanics.quest14.description2}"
-				""
-				"{ftbquests.chapter.mechanics.quest14.description3}"
-				""
-				"{ftbquests.chapter.mechanics.quest14.description4}"
-				""
-				"{ftbquests.chapter.mechanics.quest14.description5}"
-				""
-				"{ftbquests.chapter.mechanics.quest14.description6}"
-				"{ftbquests.chapter.mechanics.quest14.description7}"
-				"{ftbquests.chapter.mechanics.quest14.description8}"
-				"{ftbquests.chapter.mechanics.quest14.description9}"
-				"{ftbquests.chapter.mechanics.quest14.description10}"
-				"{ftbquests.chapter.mechanics.quest14.description11}"
-			]
-			icon: "start_core:uhv_64a_dream_link_energy_hatch"
-			id: "2F63F0E239737E38"
-			tasks: [{
-				id: "6FCD3DDD086DB963"
-				title: "{ftbquests.chapter.mechanics.quest14.task_8056163327974160739.title}"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 2.5d
-		}
-		{
-			dependencies: ["02BC9C8FF2AE1650"]
-			description: [
-				"&bThroughput Boosting&r is a modifier that machines have which allow them to process more materials at once."
-				""
-				"These work like the Electric version of steam parallels with a few caveats."
-				"[\"\",{\"underlined\":1,\"translate\":\"What are steam parallels?\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"27F5DD0860E43CFF\"}}]"
-				""
-				"&7Modifier Logic on the next page"
-				""
-				"{@pagebreak}"
-				"&nHow they work:"
-				""
-				"If a recipe has 4 of a recipe worth of materials in it:"
-				""
-				"- It will process all &24&r recipes at once"
-				""
-				"- The duration increases by &c40%"
-				""
-				"- The EU/t cost is decreased by &210%"
-			]
-			icon: "gtceu:super_electric_ore_factory"
-			id: "2152FBCC48D5D7AC"
-			tasks: [{
-				id: "0819F50E5287B587"
-				title: "Throughput Boosting"
+				title: "{ftbquests.mechanics.parallels.title}"
 				type: "checkmark"
 			}]
 			x: 1.5d
 			y: 2.5d
 		}
 		{
-			dependencies: ["79CFAA5E52FF8766"]
-			description: [
-				"Machines with this will reward you for running many recipes at once."
-				""
-				"The bonus for Bulking is progressively linear meaning it scales up as you give it more recipes / power."
-				""
-				"&nFunctionality:"
-				""
-				"- If a recipe has 4 recipes in it, then it runs all &a4&r recipes and &4triples&r the duration."
-				""
-				"- This scales up to &a64x&r recipes at once for only a &448x&r increase in time."
-				""
-				"- A net &a33%&r increase in efficiency."
-			]
-			icon: "megacells:bulk_cell_component"
-			id: "33FE3C68B0BD21B1"
+			dependencies: ["141911C5DD68CD2A"]
+			description: ["{ftbquests.mechanics.wireless_power.description}"]
+			icon: "start_core:uhv_64a_dream_link_energy_hatch"
+			id: "2F63F0E239737E38"
 			tasks: [{
-				id: "62D06C72396A9375"
-				title: "Bulking"
-				type: "checkmark"
-			}]
-			x: -1.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["553A8FA2F468DD90"]
-			description: [
-				"Threading is the absolute tier of machine capabilities which gives choice to the player on how their machine benefits."
-				""
-				"Think of threading as a Stat Point system, by which investing points into different \"stats\" you are able to get different benefits."
-				""
-				"This stats are given to you by the Helixes that you place on the machine and you attribute them using the controller present."
-				""
-				""
-				"{@pagebreak}"
-				"&nThe Stats:"
-				""
-				"- Generalis: &7Stats which can be attributed to any of the 4 other stats "
-				""
-				"- &aVelocitas&r: &7Stats used to reduce the recipe duration of machines"
-				""
-				"- &dEfficienta&r: &7Stats used to reduce the EU/t cost of machines"
-				""
-				"- &cParallelismus&r: &7Stats used to give your machines parallels"
-				""
-				"- &9Filum&r: &7Stats used to Multi-thread your machines"
-				""
-				""
-				"{@pagebreak}"
-				"&aVelocitas&r Benfits:"
-				""
-				"&7Halve the recipe duration for every (sum of halvings * 100) points"
-				""
-				"&nExample: "
-				""
-				"- To halve the duration once is 100 points for &a50%&r duration reduction."
-				"&7 100 = (100 * [1]) "
-				"- To halve it twice is 300 points for &a75%&r duration reduction. "
-				"&7 300 = (100 * [2+1])"
-				"- To halve it 3 times is 600 points for &a87.5%&r duration reduction."
-				"&7 600 = (100 * [3+2+1])"
-				""
-				"{@pagebreak}"
-				"&dEfficienta&r Benfits:"
-				""
-				"&7For every 30 points gain another thread worth of energy reduction"
-				""
-				"&nExample:"
-				""
-				"- 30 points is 50% EU/t cost or 1/2 cost"
-				"- 60 points is 66.6% EU/t cost or 1/3 cost"
-				"- 90 points is 75% EU/t cost or 1/4 cost"
-				""
-				"{@pagebreak}"
-				"&cParallelismus&r Benefits:"
-				""
-				"Gain 1 additional parallel per 20 points invested, but at the cost of increasing duration by sqrt(Parallels)"
-				""
-				"&nExample:"
-				""
-				"- 20 points is 2 total parallels at a cost of ~41% more duration"
-				"&7 ~41% increase = sqrt(2)"
-				"- 60 points is 4 total parallels at a cost of 100% more duration"
-				"&7 100% increase = sqrt(4)"
-				""
-				"{@pagebreak}"
-				"&9Filum&r Benefits:"
-				""
-				"Gain 1 additional multi-thread per 5 points invested. Multi-threads allow you to run additional types of recipes at once."
-				""
-				"&nExample:"
-				""
-				"- 1 multi-thread allows you to run 2 different type of recipes at once, but it does add the EU/t cost of the 2 recipes for the machine"
-				"&7 (Tungsten Plate AND Titanium Plate at the same time)"
-				""
-				"- 3 multi-threads allows you to run 4 different recipes types but their EU/t cost increases to the sum of the 4 recipes"
-			]
-			icon: "start_core:threading_controller"
-			id: "143CFCE710B59455"
-			tasks: [{
-				id: "2259A7835F1A06B8"
-				title: "Threading"
+				id: "6FCD3DDD086DB963"
+				title: "{ftbquests.mechanics.wireless_power.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 4.0d
 		}
+		{
+			dependencies: [
+				"4BDAE5D4790ED230"
+				"09C1739F3FE3298F"
+				"2027351D670E4CC6"
+			]
+			description: [
+				"{ftbquests.mechanics.throughput_boosting.description.1}"
+				"{@pagebreak}"
+				"{ftbquests.mechanics.throughput_boosting.description.2}"
+			]
+			icon: "gtceu:super_electric_ore_factory"
+			id: "2152FBCC48D5D7AC"
+			tasks: [{
+				id: "0819F50E5287B587"
+				title: "{ftbquests.mechanics.throughput_boosting.title}"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["13118B7518370623"]
+			description: [
+				"{ftbquests.mechanics.bulking.description.1}"
+				"{@pagebreak}"
+				"{ftbquests.mechanics.bulking.description.2}"
+			]
+			icon: "megacells:bulk_cell_component"
+			id: "33FE3C68B0BD21B1"
+			tasks: [{
+				id: "62D06C72396A9375"
+				title: "{ftbquests.mechanics.bulking.title}"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["076F21506A7C19D5"]
+			description: [
+				"{ftbquests.mechanics.threading.description.1}"
+				"{@pagebreak}"
+				"{ftbquests.mechanics.threading.description.2}"
+				"{@pagebreak}"
+				"{ftbquests.mechanics.threading.description.3}"
+				"{@pagebreak}"
+				"{ftbquests.mechanics.threading.description.4}"
+				"{@pagebreak}"
+				"{ftbquests.mechanics.threading.description.5}"
+				"{@pagebreak}"
+				"{ftbquests.mechanics.threading.description.6}"
+			]
+			icon: "start_core:threading_controller"
+			id: "143CFCE710B59455"
+			size: 1.0d
+			tasks: [{
+				id: "2259A7835F1A06B8"
+				title: "{ftbquests.mechanics.threading.title}"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"6B059D530FCE7428"
+				"7FC7558E1A72DCEC"
+				"7E33792C89BA85E3"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{ftbquests.mechanics.steam_parallels.description}"]
+			icon: "minecraft:book"
+			id: "27F5DD0860E43CFF"
+			optional: true
+			tasks: [{
+				id: "687924A523C9E5A8"
+				title: "{ftbquests.mechanics.steam_parallels.title}"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["027C5CE3CFCB5649"]
+			description: ["{ftbquests.mechanics.layered_inputs.description}"]
+			icon: "gtceu:large_rotor_machine"
+			id: "6AEB17C2D2AF5344"
+			tasks: [{
+				id: "650C431936B805AA"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.mechanics.layered_inputs.title}"
+			x: -1.5d
+			y: 4.0d
+		}
 	]
-	title: "{ftbquests.chapter.mechanics.title}"
+	title: "{ftbquests.mechanics.title}"
 }
