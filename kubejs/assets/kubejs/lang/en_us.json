@@ -344,11 +344,11 @@
     "item.kubejs.dpu.tooltip": "§7Dimensional Processing Unit",
     "item.kubejs.computational_matrix.tooltip": "§7MORE COMPUTATION!!",
     "item.kubejs.stellar_access_point.tooltip": "§7Peering into the unknown...",
-    "item.kubejs.chevron.tooltip": "§7Stellar Address Writters.",
+    "item.kubejs.chevron.tooltip": "§7Stellar Address Writers.",
     "item.kubejs.dimensional_supercomputer.tooltip": "§7Strong Enough to Compute Interdimensional Travel.",
     "item.kubejs.reinforced_plating.tooltip": "§7Watch out if it flies off.",
     "item.kubejs.stargate_rod_base.tooltip": "§7The core fiber of a stargate.",
-    "item.kubejs.enscription_plate.tooltip": "§7I can't to enscribe these...",
+    "item.kubejs.enscription_plate.tooltip": "§7I can't enscribe these...",
     "item.kubejs.enscription_chip.tooltip": "§7A smaller enscription plate?",
 
     "item.kubejs.csg_field_stabiliser": "§bCSG§r Field Stabiliser",
