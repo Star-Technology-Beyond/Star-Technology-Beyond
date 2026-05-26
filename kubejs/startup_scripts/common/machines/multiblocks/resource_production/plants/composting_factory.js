@@ -11,8 +11,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('resource_production')
         .setEUIO('in')
         .setMaxIOSize(1, 1, 0, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_SIFT, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.CENTRIFUGE);
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.CHEMICAL);
 
 });
 
