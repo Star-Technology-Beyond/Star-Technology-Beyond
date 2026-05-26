@@ -7,7 +7,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             Text.translate("block.start_core.gap"),
             Text.translate("block.kubejs.threading.tooltip")
         ])
-        .recipeTypes(['hydroponic_garden', 'industrial_fishery', 'tree_greenhouse', 'composting_factory'])
+        .recipeTypes(['hydroponic_garden', 'industrial_fishery', 'tree_greenhouse', 'composting_factory', 'decomposition_factory'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:true_revitilization_casing'))
         .pattern(definition => FactoryBlockPattern.start()
