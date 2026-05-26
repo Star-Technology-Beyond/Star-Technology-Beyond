@@ -591,6 +591,8 @@
     "gtceu.composting": "Composting",
     "block.gtceu.ulv_casket": "Fermenting Casket [FC]",
     "gtceu.fermenting": "Fermenting",
+    "gtceu.decomposition": "Decomposition",
+    "gtceu.decomposition_factory": "Decomposition Factory",
 
     "material.gtceu.warped": "Warped",
 
@@ -1060,7 +1062,7 @@
     "block.gtceu.uev_me_assembler": "§aEpic ME Assembler II",
     "block.gtceu.uiv_me_assembler": "§2Epic ME Assembler III",
 
-    "block.gtceu.large_me_assembler": "Large ME Assembler [LMA]",
+    "block.gtceu.large_me_assembler": "Large ME Assembler [LMEA]",
     "block.gtceu.large_me_assembler.tooltip.0": "A large version of the ME Assembler able to scale your needs even higher",
 
     "material.gtceu.skystone": "Skystone",
