@@ -9,9 +9,9 @@ ServerEvents.recipes (event => {
         .duration(400)
         .EUt(GTValues.VHA[GTValues.UXV]);
     
-    event.recipes.gtceu.injection_mixer(id('accension_rift_slurry'))
+    event.recipes.gtceu.injection_mixer(id('ascension_rift_slurry'))
         .inputFluids('gtceu:destabilized_rift_source 7500','gtceu:borealic_concentrate 432')
-        .outputFluids('gtceu:accension_rift_slurry 5000')
+        .outputFluids('gtceu:ascension_rift_slurry 5000')
         .duration(720)
         .EUt(GTValues.VHA[GTValues.UIV]);
     
@@ -22,7 +22,7 @@ ServerEvents.recipes (event => {
         .EUt(GTValues.VHA[GTValues.UIV]);
 
     event.recipes.gtceu.pressure_heat_chamber(id('rimula_t_foundation'))
-        .inputFluids('gtceu:accension_rift_slurry 3750')
+        .inputFluids('gtceu:ascension_rift_slurry 3750')
         .outputFluids('gtceu:rimula_t_foundation 2500')
         .duration(540)
         .EUt(GTValues.VA[GTValues.UIV]);

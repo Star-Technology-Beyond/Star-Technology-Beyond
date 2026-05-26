@@ -1842,7 +1842,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compPlasma('riftion', 999989999, ['1x riftion_extract','1x neutronium'], 0xf0fbff, no_decomp);
     compLiquid('highly_unstable_rift_source', ['1x riftic','1x excited'], 0x5e1c5b, [no_decomp]);
     compLiquid('destabilized_rift_source', ['1x riftic','1x mystery'], 0x854181, [no_decomp]);
-    compLiquid('accension_rift_slurry', ['1x riftic','1x mystery'], 0xedb2ea, [no_decomp]);
+    compLiquid('ascension_rift_slurry', ['1x riftic','1x mystery'], 0xedb2ea, [no_decomp]);
     compLiquid('abyssal_rift_slurry', ['1x riftic','1x mystery'], 0x3c265c, [no_decomp]);
     compLiquid('rimula_t_foundation', ['1x riftic','1x mystery'], 0xe5d1eb, [no_decomp]);
     compLiquid('rimula_s_foundation', ['1x riftic','1x mystery'], 0x230145, [no_decomp]);

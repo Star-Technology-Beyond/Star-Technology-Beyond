@@ -137,5 +137,18 @@ global.not_hardmode(() => {
                 .duration(50)
                 .EUt(2)
         })
+
+        event.recipes.gtceu.cutter(id('farmland'))
+            .itemInputs('minecraft:dirt')
+            .itemOutputs('minecraft:farmland')
+            .duration(100)
+            .EUt(GTValues.VHA[GTValues.LV]);
+
+        event.recipes.gtceu.cutter(id('rich_farmland'))
+            .itemInputs('farmersdelight:rich_soil')
+            .itemOutputs('farmersdelight:rich_soil_farmland')
+            .duration(100)
+            .EUt(GTValues.VHA[GTValues.LV]);
+
     });
 });

@@ -326,4 +326,14 @@ ServerEvents.recipes(event => {
         D: 'minecraft:dirt'
     }).id(id('phytosoil'));
 
+    //Grass 
+    event.recipes.gtceu.crop_greenhouse(id('grass'))
+        .notConsumable('8x exnihilosequentia:grass_seeds')
+        .itemInputs('8x minecraft:dirt')
+        .inputFluids('minecraft:water 100')
+        .itemOutputs('8x minecraft:grass_block')
+        .chancedOutput('32x exnihilosequentia:grass_seeds', 500, 0)
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.MV]);
+
 });
