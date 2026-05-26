@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         .EUt(eu);
     }
     wirelessControllers('cross_dimensional_laser',
-        ['gtceu:prismalium_frame', '10x #gtceu:circuits/uv', '10x gtceu:zpm_field_generator', 'gtceu:dense_naquadah_alloy_plate', '6x gtceu:zpm_emitter',
+        ['gtceu:prismalium_frame', '10x #gtceu:circuits/uv', '10x gtceu:zpm_field_generator', '2x gtceu:dense_naquadah_alloy_plate', '6x gtceu:zpm_emitter',
             '64x gtceu:fine_uranium_rhodium_dinaquadide_wire', '4x gtceu:naquadah_quadruple_wire', '64x gtceu:uhpic_chip', '32x gtceu:uhpic_chip'],
         ['gtceu:polybenzimidazole 9360', 'gtceu:indium_tin_lead_cadmium_soldering_alloy 10160', 'gtceu:naquadria 3200' ],
         'gtceu:active_transformer', 24, GTValues.VHA[GTValues.UV]);
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             '8x gtceu:enriched_naquadah_trinium_europium_duranide_quadruple_wire','64x gtceu:fine_melodium_wire','64x gtceu:uhpic_chip','64x gtceu:uhpic_chip',
             '32x gtceu:uhpic_chip'],
         ['gtceu:polyether_ether_ketone 12800', 'gtceu:indium_tin_lead_cadmium_soldering_alloy 14400', 'gtceu:naquadria 6400'],
-        'gtceu:cross_dimensional_laser', 128, GTValues.VHA[GTValues.UHV]);
+        'start_core:cross_dimensional_laser', 128, GTValues.VHA[GTValues.UHV]);
     
     wirelessControllers('oneiric_relay', 
         ['gtceu:uhv_machine_hull', '8x #gtceu:circuits/uev', '12x gtceu:uhv_field_generator','4x gtceu:dense_neutronium_plate','8x gtceu:uhv_emitter',
