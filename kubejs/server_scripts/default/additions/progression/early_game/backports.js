@@ -71,6 +71,7 @@ global.not_hardmode(() => {
 
         kilnRecipe('wrought_iron', 'minecraft:iron_ingot', 'gtceu:wrought_iron_ingot', 40);
         kilnRecipe('glass', 'gtceu:glass_dust', 'minecraft:glass', 30);
+        kilnRecipe('wrought_iron_block', 'minecraft:iron_block', 'gtceu:wrought_iron_block', 360);
 
     });
 });
