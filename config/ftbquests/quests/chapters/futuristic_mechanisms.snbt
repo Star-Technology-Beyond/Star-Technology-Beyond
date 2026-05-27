@@ -1601,6 +1601,35 @@
 			x: 1.5d
 			y: 4.0d
 		}
+		{
+			dependencies: [
+				"3FC351F05F2AC743"
+				"3325914DB92AEF1B"
+			]
+			description: [
+				"In preparation for Abydos, we behold you..."
+				"The Cross Dimensional Laser Tunneling Array!"
+				""
+				"With the power of 2 AE2 Quantum Entangled Singularities, you can transmit power from one array to another, just dont forget to put them in the item bus!"
+			]
+			hide_dependency_lines: true
+			id: "32D4B2183374919B"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "7253D5C3337108DC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "519C609891543019"
+				item: "start_core:cross_dimensional_laser"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
 	]
 	title: "{ftbquests.futuristic_mechanisms.title}"
 }
