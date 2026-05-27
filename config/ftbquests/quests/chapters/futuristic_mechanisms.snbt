@@ -1639,19 +1639,14 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"3FC351F05F2AC743"
-				"3325914DB92AEF1B"
-			]
+			dependencies: ["3325914DB92AEF1B"]
 			description: [
-				"In preparation for Abydos, we behold you..."
-				"The Cross Dimensional Laser Tunneling Array!"
+				"We behold you... The &lCross-Dimensional Laser Tunnelling Array&r!"
 				""
-				"With the power of 2 AE2 Quantum Entangled Singularities, you can transmit power from one array to another, just dont forget to put them in the item bus!"
+				"With the power of 2 &bAE2 Quantum Entangled Singularities&r, you can transmit power from one array to another, even across dimensions &o(this will be useful in the future!)&r just dont forget to put them in the item bus!"
 			]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			id: "32D4B2183374919B"
-			optional: true
 			rewards: [{
 				count: 2
 				id: "7253D5C3337108DC"
