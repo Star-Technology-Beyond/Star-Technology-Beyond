@@ -118,4 +118,11 @@ ServerEvents.recipes(event => {
         T: 'kubejs:meshblock',
         M: 'minecraft:string'
     });
+
+    event.replaceInput(
+        {output: "woodenbucket:wooden_bucket"},
+        '#minecraft:logs',
+        Ingredient.of('#minecraft:logs') 
+            .subtract('#forge:stripped_logs')
+    )
 });
