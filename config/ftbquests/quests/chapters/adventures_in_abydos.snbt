@@ -59,6 +59,14 @@
 			x: -0.5d
 			y: 2.5d
 		}
+		{
+			id: "468440329AA0B7DD"
+			linked_quest: "4B7A774ADE857893"
+			shape: "gear"
+			size: 1.5d
+			x: 9.5d
+			y: 4.5d
+		}
 	]
 	quests: [
 		{
@@ -121,7 +129,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [
 				{
 					id: "33205A9306859820"
@@ -159,7 +167,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["07AD6651D0B40E22"]
+			dependencies: ["4B7A774ADE857893"]
 			description: ["{ftbquests.abydos.more_ultimate_multiblocks.description}"]
 			hide_dependent_lines: true
 			id: "7F203254ACDF8C88"
@@ -184,39 +192,6 @@
 			title: "{ftbquests.abydos.more_ultimate_multiblocks.title}"
 			x: 7.5d
 			y: 2.5d
-		}
-		{
-			dependencies: ["5368269646BC0F27"]
-			description: ["{ftbquests.abydos.utopian_akreyrium.description}"]
-			icon: {
-				Count: 1
-				id: "gtceu:utopian_akreyrium_bucket"
-				tag: { }
-			}
-			id: "07AD6651D0B40E22"
-			rewards: [{
-				count: 2
-				id: "467B4390B3548719"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [
-				{
-					id: "5A05B918B174851B"
-					item: "gtceu:utopian_akreyrium_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "475E25C327C8C064"
-					type: "checkmark"
-				}
-			]
-			title: "{ftbquests.abydos.utopian_akreyrium.title}"
-			x: 9.5d
-			y: 4.5d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -276,7 +251,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "4109922C155C43A3"
 				item: {
@@ -597,7 +572,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["07AD6651D0B40E22"]
+			dependencies: ["4B7A774ADE857893"]
 			description: ["{ftbquests.abydos.nanofluidic_heat_sink.description}"]
 			id: "6E40FC247C876DB2"
 			optional: true
@@ -680,7 +655,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["07AD6651D0B40E22"]
+			dependencies: ["4B7A774ADE857893"]
 			description: ["{ftbquests.abydos.bulk_ore_processing_array.description}"]
 			id: "13118B7518370623"
 			rewards: [{
@@ -700,6 +675,11 @@
 			dependencies: ["652809D17FCE8B11"]
 			description: ["{ftbquests.abydos.ruined_components.description}"]
 			id: "077F46BD75F325FD"
+			rewards: [{
+				id: "259F1246BEB37443"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "588B98BE82BB689C"
@@ -750,6 +730,11 @@
 			dependencies: ["652809D17FCE8B11"]
 			description: ["{ftbquests.abydos.abydos_talisman.description}"]
 			id: "7FBEF894C1FC4CCF"
+			rewards: [{
+				id: "0FF81A5C615C43EA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "16690ECAFD8AF4A4"
 				item: "kubejs:abydos_talisman"
@@ -781,6 +766,11 @@
 			dependencies: ["678B90BF2ACE2BBA"]
 			description: ["{ftbquests.abydos.abydos_alloys.description}"]
 			id: "3BFB8DA58BED12D1"
+			rewards: [{
+				id: "36744506AFD5F6A4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "120E7C97781B59E9"
@@ -803,8 +793,14 @@
 				"43DAD4B63603BFC3"
 			]
 			id: "25583D0BF59E1BC8"
+			rewards: [{
+				count: 2
+				id: "1A2E93F6500748B7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			subtitle: "{ftbquests.abydos.runic_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "0F71C952D6EC490A"
@@ -817,6 +813,11 @@
 		{
 			dependencies: ["4F994F04EF1710B9"]
 			id: "67E52B5738FC7398"
+			rewards: [{
+				id: "799375AF893AA36A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			subtitle: "{ftbquests.abydos.runic_processor_computer.subtitle}"
 			tasks: [{
 				id: "0AB6135CF248B2E9"
@@ -832,6 +833,11 @@
 				"1341EFC24A45EFF8"
 			]
 			id: "4F994F04EF1710B9"
+			rewards: [{
+				id: "2B6972FC63A23C30"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			subtitle: "{ftbquests.abydos.runic_processor_assembly.subtitle}"
 			tasks: [{
 				id: "6D1079B819FF51A6"
@@ -844,6 +850,11 @@
 		{
 			dependencies: ["6D573ACD05D0EF96"]
 			id: "5022ABEA367576E7"
+			rewards: [{
+				id: "51B109B92BD06476"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "507020635FBF83C5"
@@ -900,11 +911,17 @@
 		{
 			dependencies: [
 				"6CB6343BFD09B5C0"
-				"07AD6651D0B40E22"
 				"57E4168A83E31D62"
+				"4B7A774ADE857893"
 			]
 			description: ["{ftbquests.abydos.component_nexus.description}"]
 			id: "5DF4501BD2593465"
+			rewards: [{
+				count: 2
+				id: "33E83A8A6F79F680"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -920,6 +937,11 @@
 			description: ["{ftbquests.abydos.uhv_stabilization_module.description}"]
 			hide_dependent_lines: true
 			id: "6CB6343BFD09B5C0"
+			rewards: [{
+				id: "189B50E1FAD213DF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4E67D31B875E1C4F"
 				item: "gtceu:uhv_stabilization_module"
@@ -929,7 +951,7 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["07AD6651D0B40E22"]
+			dependencies: ["4B7A774ADE857893"]
 			description: ["{ftbquests.abydos.oneiric_relay.description}"]
 			id: "0DFAD40205E5D899"
 			rewards: [{
@@ -948,6 +970,11 @@
 		{
 			dependencies: ["5ED2EA63EE112E24"]
 			id: "1341EFC24A45EFF8"
+			rewards: [{
+				id: "14FE78971D9448AB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			subtitle: "{ftbquests.abydos.runic_processor.subtitle}"
 			tasks: [{
 				id: "279F6BE7CBC5E784"
@@ -960,6 +987,11 @@
 		{
 			dependencies: ["5022ABEA367576E7"]
 			id: "5ED2EA63EE112E24"
+			rewards: [{
+				id: "288EBC48298B2767"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5F7D932EF545205D"
 				item: "kubejs:runic_convergence_processing_unit"
@@ -1062,7 +1094,6 @@
 			]
 			id: "4C5DBB94345FF33B"
 			rewards: [{
-				count: 2
 				id: "00D79CF33F2FE5BC"
 				item: "kubejs:coin"
 				type: "item"
@@ -1324,6 +1355,11 @@
 			dependencies: ["7C182C34888AF189"]
 			description: ["{ftbquests.abydos.advanced_synthesis_plant.description}"]
 			id: "53B8A2EFCF2D4371"
+			rewards: [{
+				id: "4C634F3B495B076C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6A01A251A9C02550"
 				item: "gtceu:advanced_synthesis_plant"
@@ -1343,7 +1379,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			subtitle: "{ftbquests.abydos.wetware_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "7D57266E37ABED15"
@@ -1387,7 +1423,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "7451A866F7DF568E"
 				item: "gtceu:neutronium_ingot"
@@ -1541,7 +1577,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "72F5DF7EB10A1938"
 				item: "gtceu:neutronium_wafer"
@@ -1681,7 +1717,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "55F419E4EF98D96F"
 				item: {
@@ -1798,6 +1834,11 @@
 		{
 			dependencies: ["3C99D83398AFC31C"]
 			id: "17946D19C10BFC9E"
+			rewards: [{
+				id: "102987972FAA9171"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2C684CE4A875B86F"
 				item: "kubejs:complex_reflector_casing"
@@ -1811,6 +1852,11 @@
 			description: ["{ftbquests.abydos.compact_assembly_line.description}"]
 			hide_dependent_lines: true
 			id: "57E4168A83E31D62"
+			rewards: [{
+				id: "7A5A32587BB96CED"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5F12190454CE37FD"
 				item: "gtceu:compact_assembly_line"
@@ -1825,6 +1871,11 @@
 				"7FFCAD92772A175F"
 			]
 			id: "49F5F88C69586F13"
+			rewards: [{
+				id: "6D9126A4A6C93BBE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "03C541ABB9EC8ED5"
 				item: "kubejs:reinforced_reflector_casing"
@@ -1836,6 +1887,11 @@
 		{
 			dependencies: ["31EADD276ECB7B25"]
 			id: "675054125531A098"
+			rewards: [{
+				id: "3D8E74D59EECF60D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4CF7493CA8AE5F9E"
@@ -1891,6 +1947,11 @@
 			dependencies: ["6131A76D203DE6AB"]
 			hide_dependent_lines: true
 			id: "3F3553DE7A3D87C6"
+			rewards: [{
+				id: "056FF1C932B0CB6E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "13519271FAA54271"
 				item: "gtceu:tritan_steel_ingot"
@@ -1903,6 +1964,11 @@
 			dependencies: ["4D04123F036F181E"]
 			hide_dependency_lines: true
 			id: "139F1EF64FA349B1"
+			rewards: [{
+				id: "7CF84490D5B475AC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0BD9F34CD9894B76"
 				item: "gtceu:cerium_tritelluride_ingot"
@@ -1912,7 +1978,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["07AD6651D0B40E22"]
+			dependencies: ["4B7A774ADE857893"]
 			id: "6B814FF7184A941B"
 			tasks: [{
 				id: "71A56DBBC9CD4496"

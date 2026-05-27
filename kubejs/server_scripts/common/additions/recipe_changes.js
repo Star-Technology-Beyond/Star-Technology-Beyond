@@ -155,12 +155,13 @@ ServerEvents.recipes(event => {
         .EUt(8);
 
     //Treated Wood Fixes/Additions
-    event.remove({id: 'gtceu:macerator/macerate_treated_wood_chest_boat'})
+    event.remove({id: 'gtceu:macerator/macerate_treated_wood_chest_boat'});
     event.recipes.gtceu.macerator(id('treated_wood_chest_boat'))
         .itemInputs('gtceu:treated_wood_chest_boat')
         .itemOutputs('5x gtceu:treated_wood_dust', '8x gtceu:wood_dust')
         .duration(1274)
         .EUt(2);
+    event.remove({id: 'gtceu:macerator/macerate_treated_wood_planks'});
     event.recipes.gtceu.macerator(id('treated_wood_planks'))
         .itemInputs('gtceu:treated_wood_planks')
         .itemOutputs('gtceu:treated_wood_dust')

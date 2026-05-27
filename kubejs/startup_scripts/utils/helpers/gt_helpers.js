@@ -34,7 +34,7 @@ global.crackerOverclockDisplay = (controller, components) => {
     }
 };
 
-global.pyrolyzeOvenOverclockDisplay = (controller, components) => {
+global.pyrolyseOvenOverclockDisplay = (controller, components) => {
     if (controller instanceof $CoiledMulti && controller.isFormed()) {
         components.add(Component.translatable("gtceu.multiblock.pyrolyse_oven.speed", controller.getCoilTier() == 0 ? 75 : 50 * (controller.getCoilTier() + 1)));
     }

@@ -164,6 +164,11 @@
 			description: ["{ftbquests.pl.bacteria.description}"]
 			icon: "gtceu:bacteria_bucket"
 			id: "24AE98EABF69F2D1"
+			rewards: [{
+				id: "4790900516D9B6FC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -878,7 +883,6 @@
 			dependency_requirement: "one_completed"
 			id: "51BDC41DEAABE3DC"
 			rewards: [{
-				count: 2
 				id: "7638456BA6F9C602"
 				item: "kubejs:coin"
 				type: "item"
@@ -1120,6 +1124,11 @@
 			dependencies: ["76ADA0A5D329E532"]
 			hide_dependent_lines: true
 			id: "7E33A485E30B47EA"
+			rewards: [{
+				id: "3F9B7657CF237B70"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "1E59A7B52BBDC312"
@@ -1136,6 +1145,11 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "4C34343E64A8511C"
+			rewards: [{
+				id: "06430EEEB70F07B5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "11BB5E5D79F87F87"
@@ -1178,6 +1192,11 @@
 		{
 			dependencies: ["4BA35C4DAC5BC054"]
 			id: "75B8FD74E5FB5684"
+			rewards: [{
+				id: "5B97CAB63B192118"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "3C72908574256C02"
@@ -1251,6 +1270,7 @@
 			dependencies: [
 				"03C0B34970DB1594"
 				"48D8836C9CEB8D84"
+				"5368269646BC0F27"
 			]
 			id: "4B7A774ADE857893"
 			rewards: [{
@@ -1260,6 +1280,7 @@
 				type: "item"
 			}]
 			shape: "gear"
+			size: 1.25d
 			tasks: [{
 				id: "04DCB3F7F8B80717"
 				item: "gtceu:utopian_akreyrium_bucket"
@@ -2593,6 +2614,11 @@
 		{
 			dependencies: ["5CC733B0DA775351"]
 			id: "266F486F2425C35E"
+			rewards: [{
+				id: "74AF239A99B5369B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "672ABF2CBA04AEEE"
@@ -2836,6 +2862,11 @@
 		{
 			dependencies: ["4DD388D3F5455C37"]
 			id: "05AA78BFE4684D83"
+			rewards: [{
+				id: "599DC2E212562692"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "18CEDE6B4E149B8A"
@@ -2848,6 +2879,11 @@
 		{
 			dependencies: ["4DD388D3F5455C37"]
 			id: "2B49B1679E6730C6"
+			rewards: [{
+				id: "2CE1E3D37DAA7EE8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "167069DE6234263C"
@@ -2860,6 +2896,11 @@
 		{
 			dependencies: ["4DD388D3F5455C37"]
 			id: "74CBFFC42CDFE4D3"
+			rewards: [{
+				id: "6F0D6020E002D122"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "135F2E1993B2A445"
@@ -2872,6 +2913,11 @@
 		{
 			dependencies: ["4DD388D3F5455C37"]
 			id: "0C619FC5DFAE3C52"
+			rewards: [{
+				id: "1DEC78DCFBE7BEF2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "416F60B29CB8F614"

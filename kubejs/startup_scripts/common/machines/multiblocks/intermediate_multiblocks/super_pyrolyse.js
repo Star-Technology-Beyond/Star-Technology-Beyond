@@ -8,7 +8,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         ])
         .recipeType('pyrolyse_oven')
         .machine((holder) => new $CoiledMulti(holder))
-        .recipeModifiers([GTRecipeModifiers.PYROLYZE_OVEN_OVERCLOCK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.PYROLYSE_OVEN_OVERCLOCK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('gtceu:robust_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("ABBBA", "BBCBB", "BCDCB", "BBCBB", "ABBBA")
@@ -37,6 +37,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
             'gtceu:block/multiblock/pyrolyse_oven')
-        .additionalDisplay(global.pyrolyzeOvenOverclockDisplay);
+        .additionalDisplay(global.pyrolyseOvenOverclockDisplay);
 
 });

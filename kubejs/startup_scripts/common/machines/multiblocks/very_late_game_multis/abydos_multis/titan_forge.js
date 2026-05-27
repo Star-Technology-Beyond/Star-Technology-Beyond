@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('titan_forge', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('titan_forge')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('     BCCCB     ', '     BBBBB     ', '               ', '               ', '               ', '               ', '     BBBBB     ', '      BBB      ')

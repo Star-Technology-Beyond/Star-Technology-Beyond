@@ -1142,6 +1142,7 @@
 			description: ["{ftbquests.automation_age.rtm_alloy_coil.description}"]
 			id: "3B2D79D40B9617D5"
 			rewards: [{
+				count: 2
 				id: "732A7D6E95439379"
 				item: "kubejs:coin"
 				type: "item"
@@ -1813,6 +1814,7 @@
 			description: ["{ftbquests.automation_age.hssg_coil.description}"]
 			id: "689150D2A185216C"
 			rewards: [{
+				count: 2
 				id: "0E893C06186BCA22"
 				item: "kubejs:coin"
 				type: "item"
@@ -1936,7 +1938,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			subtitle: "{ftbquests.automation_age.nuclear_reactor.subtitle}"
 			tasks: [{
 				id: "388DD36D47A45596"
@@ -1986,6 +1988,11 @@
 			dependencies: ["2CABFCC73E33E133"]
 			icon: "gtceu:nand_memory_chip"
 			id: "5026437079530A67"
+			rewards: [{
+				id: "50D05D203F49E5C2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			subtitle: "{ftbquests.automation_age.nand_chips.subtitle}"
 			tasks: [
 				{

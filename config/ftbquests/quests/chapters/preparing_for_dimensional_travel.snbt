@@ -58,7 +58,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "2299AC60A218E4E5"
 				item: "gtceu:stargate_component_assembly"
@@ -390,7 +390,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "6FBE4B007B074145"
 				item: "kubejs:runic_wave_generator"
@@ -450,7 +450,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "58C2D53C66E327CB"
 				item: "gtceu:runic_circuitry_assembling_station"
@@ -475,7 +475,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "14B6FCC56B147A0C"
 				item: "gtceu:dimensional_finder"
@@ -548,6 +548,11 @@
 			description: ["{ftbquests.csg.field_stabiliser.description}"]
 			hide_dependent_lines: true
 			id: "17E5780E37981A5F"
+			rewards: [{
+				id: "23C83EFA8871E2D8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "4B7BCE98FFBFDE65"
@@ -565,6 +570,11 @@
 			]
 			description: ["{ftbquests.csg.energy_modulator.description}"]
 			id: "28005E2D4B9F1BFF"
+			rewards: [{
+				id: "6776DB0042E34D28"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "708870AB4833EAD1"
@@ -582,6 +592,11 @@
 			description: ["{ftbquests.csg.stellar_dialer.description}"]
 			hide_dependent_lines: true
 			id: "062A42026FFE75AB"
+			rewards: [{
+				id: "36AF3FD6F6C61BC1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "244FBCBC9FDE19EC"
@@ -599,6 +614,11 @@
 			]
 			description: ["{ftbquests.csg.dpu.description}"]
 			id: "17AE9F70B3FB9F1D"
+			rewards: [{
+				id: "67AF488FB988FAC0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -620,6 +640,11 @@
 			description: ["{ftbquests.csg.computational_matrix.description}"]
 			hide_dependent_lines: true
 			id: "3C94BE7E80FCB8ED"
+			rewards: [{
+				id: "791EB75A36F6212D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "3D49A8E3E8A7403F"
@@ -637,6 +662,11 @@
 			description: ["{ftbquests.csg.stellar_access_point.description}"]
 			hide_dependent_lines: true
 			id: "7206FC928A9886DB"
+			rewards: [{
+				id: "3071C5900FBAE2F9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "0725F647362C4107"
@@ -654,6 +684,11 @@
 			]
 			description: ["{ftbquests.csg.chevron.description}"]
 			id: "38FFAFA0D097BD5F"
+			rewards: [{
+				id: "79EB3F579AC83D0D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "1A296B3FC3D0B750"
@@ -670,6 +705,11 @@
 			]
 			description: ["{ftbquests.csg.dimensional_supercomputer.description}"]
 			id: "2BED524C6AA13D88"
+			rewards: [{
+				id: "4FEF0B588357DCB3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "1D14447E56E5CA6A"
@@ -687,6 +727,11 @@
 			description: ["{ftbquests.csg.reinforced_plating.description}"]
 			hide_dependent_lines: true
 			id: "7820DBEBCAF2502A"
+			rewards: [{
+				id: "215AB852414D8B09"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "7F3AA03C0748DF01"
@@ -700,6 +745,11 @@
 			dependencies: ["027C5CE3CFCB5649"]
 			description: ["{ftbquests.csg.stargate_rod_base.description}"]
 			id: "5B5C58702877B8D0"
+			rewards: [{
+				id: "6C28A34A0A85AB10"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "3187A862524C6AE3"
@@ -714,6 +764,11 @@
 			description: ["{ftbquests.csg.enscription_plates.description}"]
 			hide_dependency_lines: true
 			id: "5C47DBDF58A5D177"
+			rewards: [{
+				id: "6ABBFD5604450E1B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "360DFE4BEDAF4E34"
@@ -731,6 +786,11 @@
 			]
 			description: ["{ftbquests.csg.proto_runes.description}"]
 			id: "3AADFC254BF9C5C9"
+			rewards: [{
+				id: "3C47DCE3D5E916F5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -760,6 +820,11 @@
 			]
 			hide_dependency_lines: true
 			id: "23C3936FC737EB3A"
+			rewards: [{
+				id: "2FD461F434B8EB67"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.1d
 			tasks: [{
@@ -787,6 +852,11 @@
 			]
 			hide_dependency_lines: true
 			id: "1DB72103FACE9FAD"
+			rewards: [{
+				id: "36BD8CF5CB6EE00C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.1d
 			tasks: [{
@@ -804,6 +874,11 @@
 			]
 			description: ["{ftbquests.csg.activated_stargate rod.description}"]
 			id: "13CC2A2C63F4FE8C"
+			rewards: [{
+				id: "62896877B0205657"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "6D38BAFAD98BE13F"
@@ -820,6 +895,11 @@
 			]
 			description: ["{ftbquests.csg.raw_stargate_rod.description}"]
 			id: "44423D7786E15D7E"
+			rewards: [{
+				id: "617CB521633D5085"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "1068DC2A5DD5EE7F"
@@ -843,8 +923,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			shape: "gear"
-			size: 1.25d
+			size: 1.0d
 			tasks: [{
 				id: "2BDD6909E418101F"
 				item: "gtceu:heat_chamber"
@@ -905,6 +984,11 @@
 			dependencies: ["09E7AA7D98045727"]
 			description: ["{ftbquests.csg.vacuum_chemical_reactor.description}"]
 			id: "4974D7E690B02ECA"
+			rewards: [{
+				id: "4A306A7562387F91"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			tasks: [{
@@ -924,6 +1008,11 @@
 			description: ["{ftbquests.csg.quantum_core.description}"]
 			hide_dependent_lines: true
 			id: "38C00A89E975F525"
+			rewards: [{
+				id: "712B71E814B9ADB9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "65F945A2F2040D43"

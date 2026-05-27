@@ -892,10 +892,10 @@
 					Count: 1
 					id: "gtceu:iron_mortar"
 					tag: {
+						Damage: 0
 						DisallowContainerItem: 0b
 						GT.Behaviours: { }
 						GT.Tool: {
-							Damage: 0
 							MaxDamage: 255
 						}
 						HideFlags: 2
