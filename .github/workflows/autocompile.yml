@@ -38,7 +38,8 @@ jobs:
         cp -r scripts compile_output/overrides/
         
         # Copy specified files to overrides
-        cp LICENSE compile_output/overrides/
+        cp LICENSE-ORIGINAL compile_output/overrides/
+        cp LICENSE-BEYOND compile_output/overrides/
         cp packmode_picker.py compile_output/overrides/
         cp packmode_picker.sh compile_output/overrides/
         cp README.md compile_output/overrides/
@@ -51,20 +52,20 @@ jobs:
     - name: Create zip file
       run: |
         cd compile_output
-        zip -r "../Star Technology-1.20.1-${{ steps.branch.outputs.branch_name }}.zip" .
+        zip -r "../Star Technology Beyond-1.20.1-${{ steps.branch.outputs.branch_name }}.zip" .
         cd ..
         
     - name: Upload compiled modpack
       uses: actions/upload-artifact@v4
       with:
-        name: Star Technology-1.20.1-${{ steps.branch.outputs.branch_name }}
-        path: Star Technology-1.20.1-${{ steps.branch.outputs.branch_name }}.zip
+        name: Star Technology Beyond-1.20.1-${{ steps.branch.outputs.branch_name }}
+        path: Star Technology Beyond-1.20.1-${{ steps.branch.outputs.branch_name }}.zip
         retention-days: 30
         
     - name: Display compilation info
       run: |
         echo "✅ Modpack compiled successfully!"
-        echo "📦 Artifact name: Star Technology-1.20.1-${{ steps.branch.outputs.branch_name }}"
+        echo "📦 Artifact name: Star Technology Beyond-1.20.1-${{ steps.branch.outputs.branch_name }}"
         echo "🏷️ Branch: ${{ steps.branch.outputs.branch_name }}"
-        echo "📁 Zip file: Star Technology-1.20.1-${{ steps.branch.outputs.branch_name }}.zip"
-        ls -la "Star Technology-1.20.1-${{ steps.branch.outputs.branch_name }}.zip"
+        echo "📁 Zip file: Star Technology Beyond-1.20.1-${{ steps.branch.outputs.branch_name }}.zip"
+        ls -la "Star Technology Beyond-1.20.1-${{ steps.branch.outputs.branch_name }}.zip"
