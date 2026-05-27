@@ -33,6 +33,12 @@
 			x: -8.5d
 			y: -7.0d
 		}
+		{
+			id: "6619BD72D7AC92AB"
+			linked_quest: "1799430093ABCC64"
+			x: 7.5d
+			y: 1.0d
+		}
 	]
 	quests: [
 		{
@@ -50,6 +56,11 @@
 				}
 			}
 			id: "4DF07CB3D60C901C"
+			rewards: [{
+				id: "38411C00A7D86D79"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 1.25d
 			tasks: [{
@@ -128,7 +139,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "11B60F351E78B31D"
 				item: "gtceu:cryostate_quantum_chiller"
@@ -558,7 +569,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "6C03B25DB18C6546"
 				item: "gtceu:draco_infusion"
@@ -888,7 +899,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			subtitle: "{ftbquests.draconic_age.draconic_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "6EF791353FFC298F"
@@ -947,7 +958,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "57C24BDAFAED1B95"
 				item: "kubejs:draco_wafer"
@@ -1009,6 +1020,7 @@
 			description: ["{ftbquests.draconic_age.abyssal_containment_room.description}"]
 			id: "09B55AFE7C06EC82"
 			rewards: [{
+				count: 2
 				id: "5C220EE9FD21B829"
 				item: "kubejs:coin"
 				type: "item"
@@ -1399,29 +1411,6 @@
 		}
 		{
 			dependencies: [
-				"09B55AFE7C06EC82"
-				"25436E09A8F9E9C8"
-				"058533FBFBA38DC8"
-			]
-			description: ["{ftbquests.draconic_age.draconic_enrichment_serum.description}"]
-			id: "1799430093ABCC64"
-			rewards: [{
-				count: 3
-				id: "2C713C0E55A96415"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "27F3A14B2F6C836C"
-				item: "gtceu:draconic_enrichment_serum_bucket"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 1.0d
-		}
-		{
-			dependencies: [
 				"7FABD2E818B70D35"
 				"694E1F6458D5F72F"
 			]
@@ -1709,6 +1698,12 @@
 			]
 			description: ["{ftbquests.draconic_age.multithreaded_component_synthesis_forge.description}"]
 			id: "4A13D4F1B22DBCAF"
+			rewards: [{
+				count: 2
+				id: "3B8263B38BD5ED01"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1802,6 +1797,11 @@
 			]
 			description: ["{ftbquests.draconic_age.threading_controller.description}"]
 			id: "076F21506A7C19D5"
+			rewards: [{
+				id: "3768FBAC7CF303BD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			subtitle: "{ftbquests.draconic_age.threading_controller.subtitle}"
 			tasks: [{
@@ -1834,6 +1834,11 @@
 			dependencies: ["1EB60E6DE2086158"]
 			description: ["{ftbquests.draconic_age.hell_forge_catalysts.description}"]
 			id: "68204750A7B0569E"
+			rewards: [{
+				id: "1E8A2CC7B5FEF97C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "06B0A98E6FE20328"
@@ -1976,6 +1981,11 @@
 		{
 			dependencies: ["31F87896FF834E63"]
 			id: "70F533114F1D74B2"
+			rewards: [{
+				id: "0A1F8B986D6C1A85"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "15A9C024C52E78F1"
@@ -1988,6 +1998,11 @@
 		{
 			dependencies: ["7C7300975C25047A"]
 			id: "6F50E6C2CBCF8272"
+			rewards: [{
+				id: "5EEC6EA827E23EC5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			subtitle: "{ftbquests.draconic_age.abyssal_processor.subtitle}"
 			tasks: [{
@@ -2001,6 +2016,11 @@
 		{
 			dependencies: ["5A724E912A475EAB"]
 			id: "7C7300975C25047A"
+			rewards: [{
+				id: "110FD41EB80C6E4E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "568E6E799FB86802"
@@ -2017,6 +2037,11 @@
 			]
 			icon: "gtceu:oganesson_plasma_bucket"
 			id: "5FAEC6FD93ACC381"
+			rewards: [{
+				id: "7A537D185BA9B838"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "36A35F698B08CADD"
@@ -2032,6 +2057,11 @@
 			dependencies: ["4450509C08F416EC"]
 			description: ["{ftbquests.draconic_age.specialized_helix_t1.description}"]
 			id: "11EA350764763463"
+			rewards: [{
+				id: "153B5AA66AD9B703"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -2060,6 +2090,11 @@
 				"7F8D144334941F9D"
 			]
 			id: "6A49DA8ECA601B4B"
+			rewards: [{
+				id: "55D942C1347B0FBD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "1068E21FB43FA7B9"
@@ -2078,6 +2113,11 @@
 			hide_dependent_lines: true
 			id: "7255F8A417A52A46"
 			optional: true
+			rewards: [{
+				id: "1F3CC749E2BB6070"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7B34E58D08A73A5A"
 				item: "kubejs:compass_of_the_flame"
@@ -2090,6 +2130,11 @@
 			dependencies: ["28DE3D2A96C4D0C8"]
 			icon: "minecraft:dragon_egg"
 			id: "64DC78AF9E2FAB32"
+			rewards: [{
+				id: "136FB4955CEC54C1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7E1817E0AC74A1EB"
@@ -2109,6 +2154,11 @@
 		{
 			dependencies: ["2E34F23A42004285"]
 			id: "5A6856892D99F5ED"
+			rewards: [{
+				id: "3DD43550E2408AE7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "03CD93D6A3F4C4B3"
 				item: "gtceu:borealic_concentrate_bucket"
@@ -2136,6 +2186,11 @@
 				"694E1F6458D5F72F"
 			]
 			id: "6BAC4AC1B7032B93"
+			rewards: [{
+				id: "03EDF944A9C0D84A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6542FCC23D69CF5C"
 				item: "gtceu:primordial_infusion"
@@ -2147,6 +2202,11 @@
 		{
 			dependencies: ["09B55AFE7C06EC82"]
 			id: "10019AD38638B628"
+			rewards: [{
+				id: "7DD894434EFEB172"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3A40738B3A56C2E2"
 				item: "kubejs:prismalic_reflector_casing"
@@ -2158,6 +2218,11 @@
 		{
 			dependencies: ["0E75A2FC17ED0C28"]
 			id: "07872C5ED6FAE66E"
+			rewards: [{
+				id: "5315F49B1CEF9508"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "102068348306ABB6"
 				item: "kubejs:dragonic_reflector_casing"
@@ -2169,6 +2234,11 @@
 		{
 			dependencies: ["6A82CC9F01960097"]
 			id: "2BD5C9B89DCEC339"
+			rewards: [{
+				id: "3F471E400B0011DA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7C71CE2BE4CF25FF"
 				item: "gtceu:abyssal_akreyriadix_stabiliser"
@@ -2180,6 +2250,11 @@
 		{
 			dependencies: ["31F87896FF834E63"]
 			id: "212353E6819931CD"
+			rewards: [{
+				id: "241946022EA2E7FE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "358435C7049A09C8"
 				item: "gtceu:true_synthesis_array"

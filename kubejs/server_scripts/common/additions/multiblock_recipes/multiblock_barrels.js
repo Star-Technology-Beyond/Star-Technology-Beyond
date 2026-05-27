@@ -80,9 +80,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_stone_barrel(id('obsidian'))
         .notConsumableFluid('minecraft:water 1000')
+        .notConsumable('minecraft:obsidian')
         .inputFluids('minecraft:lava 1000')
         .itemOutputs('minecraft:obsidian')
-        .circuit(10)
         .duration(5);
 
 

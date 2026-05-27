@@ -52,7 +52,6 @@
 			description: ["{ftbquests.early_game.oak_log.description}"]
 			id: "5B3D8132C90D790B"
 			rewards: [{
-				count: 2
 				id: "7C035466B4F9E1EF"
 				item: "kubejs:coin"
 				type: "item"
@@ -224,7 +223,6 @@
 			icon: "minecraft:cobblestone"
 			id: "07CBF849162D7BDF"
 			rewards: [{
-				count: 2
 				id: "6FBC93F381EF7553"
 				item: "kubejs:coin"
 				type: "item"
@@ -510,7 +508,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [
 				{
 					count: 9L
@@ -622,7 +620,6 @@
 			id: "0A41C4FB379984C0"
 			optional: true
 			rewards: [{
-				count: 2
 				id: "00D6F6E2A931271F"
 				item: "kubejs:coin"
 				type: "item"
@@ -668,6 +665,7 @@
 			hide_dependent_lines: true
 			id: "3D0F6CA8028C074B"
 			rewards: [{
+				count: 2
 				id: "783CFA9C4F222736"
 				item: "kubejs:coin"
 				type: "item"
@@ -1348,6 +1346,7 @@
 			icon: "gtceu:coke_oven"
 			id: "07C5B4C5EE2F948D"
 			rewards: [{
+				count: 2
 				id: "009004A0AE1DD4C1"
 				item: "kubejs:coin"
 				type: "item"
@@ -1764,7 +1763,6 @@
 			id: "6C4EE5170B91D0EA"
 			optional: true
 			rewards: [{
-				count: 2
 				id: "319FF5EFBA896731"
 				item: "kubejs:coin"
 				type: "item"
@@ -2129,6 +2127,11 @@
 			description: ["{ftbquests.early_game.coke_brick.description}"]
 			icon: "gtceu:coke_oven_brick"
 			id: "753ECD744470EFF2"
+			rewards: [{
+				id: "3E0FA9A96CD19DC7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "0EEFFF87F0138386"
@@ -2164,6 +2167,11 @@
 			dependencies: ["07C5B4C5EE2F948D"]
 			id: "0152DA7FA5A15C9A"
 			optional: true
+			rewards: [{
+				id: "641B20087E23D03A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4746FF5133BED1C9"
 				item: "gtceu:coke_oven_hatch"
@@ -2380,6 +2388,11 @@
 			description: ["{ftbquests.early_game.ulv_components.description}"]
 			id: "366227E714CDA617"
 			optional: true
+			rewards: [{
+				id: "56D701501AB26290"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7C630178F862B24C"
 				item: {

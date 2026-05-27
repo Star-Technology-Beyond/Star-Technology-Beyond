@@ -332,6 +332,11 @@
 			]
 			hide_dependent_lines: true
 			id: "3FF8846DDD34469D"
+			rewards: [{
+				id: "711AED2EDD8283CF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "37E3017051E86333"
@@ -422,7 +427,7 @@
 			dependencies: ["3E60DA2BD370E162"]
 			id: "51E820417679F770"
 			rewards: [{
-				count: 5
+				count: 3
 				id: "63D41148EF68BD99"
 				item: "kubejs:coin"
 				type: "item"
@@ -579,7 +584,7 @@
 			dependencies: ["1C705D1B2ABEAC71"]
 			id: "22EAAB51EF78C74E"
 			rewards: [{
-				count: 5
+				count: 3
 				id: "5E7381AA447FD172"
 				item: "kubejs:coin"
 				type: "item"
@@ -704,7 +709,7 @@
 			dependencies: ["1009C2A64244C8CA"]
 			id: "071470432C9751A2"
 			rewards: [{
-				count: 5
+				count: 3
 				id: "7D4D61C57A8377E2"
 				item: "kubejs:coin"
 				type: "item"
@@ -887,7 +892,7 @@
 			dependencies: ["0CB1ED3221C82E8F"]
 			id: "62D6B2F28CC983AE"
 			rewards: [{
-				count: 5
+				count: 3
 				id: "101E2806F30FD068"
 				item: "kubejs:coin"
 				type: "item"
@@ -2900,7 +2905,7 @@
 			description: ["{ftbquests.pl.pedot_pss.description}"]
 			id: "1B6159E114BA50ED"
 			rewards: [{
-				count: 4
+				count: 3
 				id: "6D5CA66172A91554"
 				item: "kubejs:coin"
 				type: "item"
@@ -3711,7 +3716,6 @@
 			dependencies: ["35BC1333425C61AD"]
 			id: "0E75A2FC17ED0C28"
 			rewards: [{
-				count: 2
 				id: "606333D4A322A62D"
 				item: "kubejs:coin"
 				type: "item"

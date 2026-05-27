@@ -162,6 +162,11 @@
 		{
 			description: ["{ftbquests.quality_of_life.laserio.description}"]
 			id: "3232A7A69C2905D9"
+			rewards: [{
+				id: "7DFDD64DC74D9D2D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "rsquare"
 			subtitle: "{ftbquests.quality_of_life.laserio.subtitle}"
 			tasks: [{
