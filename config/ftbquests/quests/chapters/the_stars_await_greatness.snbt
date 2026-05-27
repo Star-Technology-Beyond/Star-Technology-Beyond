@@ -30,6 +30,11 @@
 			]
 			description: ["{ftbquests.dsg.specialized_helix_t3.description}"]
 			id: "48E30750B355F98F"
+			rewards: [{
+				id: "789157C8FEBD014D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [
 				{
@@ -80,6 +85,12 @@
 			]
 			description: ["{ftbquests.dsg.komaru.description}"]
 			id: "20ABDF48307586F2"
+			rewards: [{
+				count: 2
+				id: "26EE922126B98960"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.625d
 			tasks: [{
@@ -94,7 +105,12 @@
 			dependencies: ["7D2E83192ABF08CA"]
 			description: ["{ftbquests.dsg.fornaxs_infernal_rotary_engine.description}"]
 			id: "3FFF41FD6067C5B8"
-			shape: "gear"
+			rewards: [{
+				id: "182F8C216786A299"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
 			size: 1.125d
 			tasks: [
 				{
@@ -115,7 +131,12 @@
 			dependencies: ["7D2E83192ABF08CA"]
 			description: ["{ftbquests.dsg.limitless_overactive_alloy_fuser.description}"]
 			id: "325986460718E0F9"
-			shape: "gear"
+			rewards: [{
+				id: "49015DEA5A59BA9C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
 			size: 1.125d
 			tasks: [{
 				id: "723D59F49A28F532"
@@ -128,6 +149,11 @@
 		{
 			dependencies: ["4A13D4F1B22DBCAF"]
 			id: "44A1A4ABAD13871E"
+			rewards: [{
+				id: "3DDA8C4F91EDACDC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "none"
 			tasks: [
 				{
@@ -157,6 +183,11 @@
 			]
 			hide_dependency_lines: true
 			id: "642FCA1C212F7DCB"
+			rewards: [{
+				id: "3BD4A4D12FDAC470"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7B8BB9080D47F19A"
@@ -181,6 +212,12 @@
 			]
 			description: ["{ftbquests.dsg.riftic_infusion_assemblying_unit.description}"]
 			id: "1B498C64A42758C5"
+			rewards: [{
+				count: 2
+				id: "4FACE4C3881F853A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -196,8 +233,14 @@
 			description: ["{ftbquests.dsg.rimula_extraction_unit.description}"]
 			hide_dependency_lines: true
 			id: "492F2FED6328118F"
+			rewards: [{
+				count: 2
+				id: "3256C862FECC28BC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "5B1BC69C84820B91"
 				item: "gtceu:rimula_extraction_module"
@@ -213,6 +256,11 @@
 			]
 			description: ["{ftbquests.dsg.singularities.description}"]
 			id: "54B0129F9E6F4AEA"
+			rewards: [{
+				id: "3332D49F68BFAB9F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "510023ECF8917B0D"
@@ -256,6 +304,11 @@
 			]
 			description: ["{ftbquests.dsg.transcension_engraved_sigils.description}"]
 			id: "1F2D598551BC3DAB"
+			rewards: [{
+				id: "68C3642784DABB4F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "15D567DF6FB7E94C"
@@ -300,6 +353,11 @@
 			description: ["{ftbquests.dsg.raging_rimulatia.description}"]
 			hide_dependency_lines: true
 			id: "74F3E9BE19218BA2"
+			rewards: [{
+				id: "7CA403234E7E8322"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.1d
 			tasks: [{
@@ -315,7 +373,12 @@
 			description: ["{ftbquests.dsg.riftion_injector.description}"]
 			icon: "gtceu:riftion_injector"
 			id: "475330A24EC07BBD"
-			shape: "gear"
+			rewards: [{
+				id: "10923FABE89F8CFE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "octagon"
 			size: 1.125d
 			tasks: [{
 				id: "165BE80839990A5A"
@@ -329,6 +392,11 @@
 			dependencies: ["1B498C64A42758C5"]
 			description: ["{ftbquests.dsg.kaleidoscopic_fractalizer.description}"]
 			id: "3137F3F544ACF245"
+			rewards: [{
+				id: "7D253031C33F9DA5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5938D776548EF600"
 				item: "gtceu:kaleidoscopic_fractalizer"
@@ -347,6 +415,12 @@
 			description: ["{ftbquests.dsg.riftion_fluids.description}"]
 			icon: "gtceu:primordial_residue_bucket"
 			id: "7D2E83192ABF08CA"
+			rewards: [{
+				count: 2
+				id: "25FE36B0657EEFBD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [
@@ -375,6 +449,11 @@
 			dependencies: ["1B498C64A42758C5"]
 			description: ["{ftbquests.dsg.riftion_production.description}"]
 			id: "554E28F0B2A6CB25"
+			rewards: [{
+				id: "50DDC50BEE1F8626"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4C52E9BB6CAF5446"
@@ -396,6 +475,11 @@
 			description: ["{ftbquests.dsg.priomordially_stellarized_weapon_grade_naquadah.description}"]
 			hide_dependent_lines: true
 			id: "6BA06E19F3C09184"
+			rewards: [{
+				id: "4A644AF79FB89453"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3946DC83D24EEBB0"
 				item: "gtceu:primordially_stellarized_weapon_grade_naquadah_ingot"
@@ -408,6 +492,11 @@
 			dependencies: ["09B55AFE7C06EC82"]
 			description: ["{ftbquests.dsg.faematter.description}"]
 			id: "1E73A1F64F6EA9B5"
+			rewards: [{
+				id: "751760E026A73259"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "76F83BA6BF794014"
 				item: "gtceu:faematter_bucket"
@@ -423,6 +512,11 @@
 			]
 			description: ["{ftbquests.dsg.field_stabiliser.description}"]
 			id: "7689B3714EB62592"
+			rewards: [{
+				id: "5D75D7A793AA5194"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "11AD2F8DE939EE36"
 				item: "kubejs:dsg_field_stabiliser"
@@ -435,6 +529,11 @@
 			dependencies: ["74F3E9BE19218BA2"]
 			description: ["{ftbquests.dsg.energy_modulator.description}"]
 			id: "6F043133B3ED4164"
+			rewards: [{
+				id: "559D4307CFBDABBF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "305AD19BD9A68B08"
 				item: "kubejs:dsg_energy_modulator"
@@ -447,6 +546,11 @@
 			dependencies: ["61814509EFE2D192"]
 			description: ["{ftbquests.dsg.stellar_dialer.description}"]
 			id: "1165C75215DB1B25"
+			rewards: [{
+				id: "33B2F1E8B4CC61EC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6C082542A48A7E82"
 				item: "kubejs:dsg_stellar_dialer"
@@ -459,6 +563,11 @@
 			dependencies: ["7A7666EAF18D93EE"]
 			description: ["{ftbquests.dsg.dpu.description}"]
 			id: "31F010777D02EF40"
+			rewards: [{
+				id: "59A384889B96CAC5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "66B848A90A2676FE"
@@ -483,6 +592,11 @@
 			description: ["{ftbquests.dsg.computational_matrix.description}"]
 			hide_dependent_lines: true
 			id: "61814509EFE2D192"
+			rewards: [{
+				id: "7BD72F18EBAC3D4F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "525C70B04A18289A"
 				item: "kubejs:dsg_computational_matrix"
@@ -495,6 +609,11 @@
 			dependencies: ["61814509EFE2D192"]
 			description: ["{ftbquests.dsg.stellar_access_point.description}"]
 			id: "786BC32B1934FBB4"
+			rewards: [{
+				id: "2B22D28BA97C3C84"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2F5FFDBC14438686"
 				item: "kubejs:dsg_stellar_access_point"
@@ -510,6 +629,11 @@
 			]
 			description: ["{ftbquests.dsg.chevron.description}"]
 			id: "4D8C9A6B5764340A"
+			rewards: [{
+				id: "6E587BB62CB7E216"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "64FAA121CBAC4912"
 				item: "kubejs:dsg_chevron"
@@ -525,6 +649,11 @@
 			]
 			description: ["{ftbquests.dsg.dimensional_supercomputer.description}"]
 			id: "5B0A68B1C06BE678"
+			rewards: [{
+				id: "3799347D9E69FC25"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5BDBF3DF0FF0763A"
 				item: "kubejs:dsg_dimensional_supercomputer"
@@ -541,6 +670,11 @@
 			description: ["{ftbquests.dsg.reinforced_plating.description}"]
 			hide_dependent_lines: true
 			id: "3F34F57EBFA11FB9"
+			rewards: [{
+				id: "0FE308EBF49EA86A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1C69A43E246328E1"
 				item: "kubejs:dsg_reinforced_plating"
@@ -553,6 +687,11 @@
 			dependencies: ["74F3E9BE19218BA2"]
 			description: ["{ftbquests.dsg.stargate_rod_base.description}"]
 			id: "6F3D47DB5576CACB"
+			rewards: [{
+				id: "1D49DAB134381C23"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "294EE89A278BA103"
 				item: "kubejs:dsg_stargate_rod_base"
@@ -565,6 +704,11 @@
 			dependencies: ["7D2E83192ABF08CA"]
 			description: ["{ftbquests.dsg.enscription_plate.description}"]
 			id: "7A7666EAF18D93EE"
+			rewards: [{
+				id: "4C26C25CBA407754"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "31F8DAADA7B445EC"
 				item: "kubejs:dsg_enscription_plate"
@@ -582,6 +726,12 @@
 			]
 			description: ["{ftbquests.dsg.ending.description}"]
 			id: "2BC819D3CE572543"
+			rewards: [{
+				count: 5
+				id: "2C54A0BEB7B5B3A4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
@@ -609,6 +759,11 @@
 			]
 			description: ["{ftbquests.dsg.draconic_stargate_ring_block.description}"]
 			id: "6C4A100C11D8DD64"
+			rewards: [{
+				id: "0788CD4A3EF0018B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.5d
 			tasks: [{
@@ -627,6 +782,11 @@
 			]
 			description: ["{ftbquests.dsg.draconic_stargate_base_block.description}"]
 			id: "6F70F986970A42A9"
+			rewards: [{
+				id: "2675CCE60C7F4F8F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.5d
 			tasks: [{
@@ -644,6 +804,11 @@
 			]
 			description: ["{ftbquests.dsg.draconic_stargate_chevron_block.description}"]
 			id: "4143AE11600E48D8"
+			rewards: [{
+				id: "2C4DAB45473B8B1E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.5d
 			tasks: [{
@@ -661,6 +826,11 @@
 			]
 			description: ["{ftbquests.dsg.temporic_stargate_rod.description}"]
 			id: "5EFE01DCB5105D41"
+			rewards: [{
+				id: "66F3DC9F29205725"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "22D473303C6A8EF7"
 				item: "kubejs:temporic_stargate_rod"
@@ -676,6 +846,11 @@
 			]
 			description: ["{ftbquests.dsg.riftic_stargate_rod.description}"]
 			id: "667AD3BD25D97907"
+			rewards: [{
+				id: "2B35AC99F5DF247E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7D0D121768B825D5"
 				item: "kubejs:riftic_stargate_rod"
@@ -691,6 +866,11 @@
 			]
 			description: ["{ftbquests.dsg.faetic_stargate_rod.description}"]
 			id: "60431246CC351807"
+			rewards: [{
+				id: "55426883DAB41C6F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7039929A462751BC"
 				item: "kubejs:faetic_stargate_rod"
@@ -707,6 +887,11 @@
 			]
 			description: ["{ftbquests.dsg.prismatic_stargate_rod.description}"]
 			id: "7F6DC4F513395F2B"
+			rewards: [{
+				id: "70FEAB4A4CB48367"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "05EA1BABE3DF4064"
 				item: "kubejs:prismaticly_infused_stargate_rod"
@@ -723,6 +908,11 @@
 			]
 			description: ["{ftbquests.dsg.kaleidoscopic_stargate_rod.description}"]
 			id: "2E5AD3C35325DD28"
+			rewards: [{
+				id: "253AA509518B4D4E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "54FAFD343F908DA4"
 				item: "kubejs:kaleidoscopicly_infused_stargate_rod"
@@ -739,6 +929,11 @@
 			]
 			description: ["{ftbquests.dsg.primordial_stargate_rod.description}"]
 			id: "5F0D2337489D103A"
+			rewards: [{
+				id: "772E878E7CEFAEC6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "46BBDB4207B0568A"
 				item: "kubejs:primordicly_infused_stargate_rod"
@@ -752,6 +947,11 @@
 			description: ["{ftbquests.dsg.primordial_fragment.description}"]
 			hide_dependent_lines: true
 			id: "01C4136000FBECED"
+			rewards: [{
+				id: "280EB69AA1758E74"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			tasks: [{
@@ -767,6 +967,11 @@
 			description: ["{ftbquests.dsg.riftic_fragment.description}"]
 			hide_dependent_lines: true
 			id: "3115295DF8045AF0"
+			rewards: [{
+				id: "26568A037391AA85"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			tasks: [{
@@ -782,6 +987,11 @@
 			description: ["{ftbquests.dsg.prismalic_fragment.description}"]
 			hide_dependent_lines: true
 			id: "034C91F0A96501AE"
+			rewards: [{
+				id: "29FA0C54C2E19873"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			tasks: [{
@@ -800,6 +1010,11 @@
 			]
 			description: ["{ftbquests.dsg.ascension_core.description}"]
 			id: "765401A55467C4C5"
+			rewards: [{
+				id: "07565D2E58A7E592"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			tasks: [{
@@ -814,6 +1029,11 @@
 			dependencies: ["01C4136000FBECED"]
 			description: ["{ftbquests.dsg.primus_core.description}"]
 			id: "1AABE3F38666F330"
+			rewards: [{
+				id: "411A39D6D166C3BB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7E94C96BC37C2270"
 				item: "kubejs:primus_tempus_core"
@@ -826,6 +1046,11 @@
 			dependencies: ["3115295DF8045AF0"]
 			description: ["{ftbquests.dsg.spatium_core.description}"]
 			id: "43D0B2F29F8DA882"
+			rewards: [{
+				id: "087F3F9EBACBAC7E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2D060F2019CDD24C"
 				item: "kubejs:spatium_ruptura_core"
@@ -838,6 +1063,11 @@
 			dependencies: ["034C91F0A96501AE"]
 			description: ["{ftbquests.dsg.prismafae_core.description}"]
 			id: "09A554F29750413A"
+			rewards: [{
+				id: "5FF712BD07FF1A8C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "518C598B3BCE0119"
 				item: "kubejs:prismafae_illuminatus_core"
@@ -850,6 +1080,11 @@
 			dependencies: ["1165C75215DB1B25"]
 			description: ["{ftbquests.dsg.draconic_dhd.description}"]
 			id: "5D727563B870184E"
+			rewards: [{
+				id: "3956DFB3A5D1B45A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.1d
 			tasks: [{
@@ -873,6 +1108,11 @@
 			dependencies: ["3008A69083AC3858"]
 			description: ["{ftbquests.dsg.aquariadic_rimuli_dragonix_gem.description}"]
 			id: "5228DB53CD02A2D2"
+			rewards: [{
+				id: "3315723ED746749C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2E2DDDB0A731E31A"
 				item: "gtceu:exquisite_aquariadic_rimuli_dragonix_gem"
@@ -886,6 +1126,11 @@
 			description: ["{ftbquests.dsg.aquariadic_rimuli_dragonix_dust.description}"]
 			hide_dependency_lines: true
 			id: "3008A69083AC3858"
+			rewards: [{
+				id: "424BD3FC3E3D32AF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5A879E503B2D2E7F"
 				item: "gtceu:aquariadic_rimuli_dragonix_dust"
@@ -902,6 +1147,11 @@
 			description: ["{ftbquests.dsg.risoc.description}"]
 			hide_dependency_lines: true
 			id: "2AA675FD56AF1059"
+			rewards: [{
+				id: "395CAB773EE12E8D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "273A36603748F42D"
 				item: "kubejs:rift_infused_soc"
@@ -926,6 +1176,11 @@
 		{
 			dependencies: ["31F87896FF834E63"]
 			id: "4115D804C6E1259D"
+			rewards: [{
+				id: "00FC9F09743D3472"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "none"
 			subtitle: "{ftbquests.dsg.cat.subtitle}"
 			tasks: [{
@@ -939,6 +1194,11 @@
 		{
 			dependencies: ["139F1EF64FA349B1"]
 			id: "28205F5F3F3A7F3C"
+			rewards: [{
+				id: "2E29BB2F098E1280"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "none"
 			subtitle: "{ftbquests.dsg.cat.subtitle}"
 			tasks: [{
@@ -952,6 +1212,11 @@
 		{
 			dependencies: ["576C0430D0CDE409"]
 			id: "20C57EB5F24C129F"
+			rewards: [{
+				id: "765E1083FDEBF0FF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "none"
 			subtitle: "{ftbquests.dsg.cat.subtitle}"
 			tasks: [{
@@ -965,6 +1230,11 @@
 		{
 			dependencies: ["00333140377A33F5"]
 			id: "5DC745188BCFAD78"
+			rewards: [{
+				id: "2260582BB6FBD8CD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "none"
 			subtitle: "{ftbquests.dsg.cat.subtitle}"
 			tasks: [{
@@ -978,6 +1248,11 @@
 		{
 			dependencies: ["0B7A0924AFE58559"]
 			id: "02F8C190BEFF2F07"
+			rewards: [{
+				id: "0CBF59BB4D215844"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "none"
 			subtitle: "{ftbquests.dsg.cat.subtitle}"
 			tasks: [{
@@ -993,6 +1268,11 @@
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "1B5D6D46D336C119"
+			rewards: [{
+				id: "74FEB52268A69210"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "55D575FBA476ACFA"
 				item: "gtceu:riftic_enhancement_module"

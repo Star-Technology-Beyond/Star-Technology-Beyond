@@ -68,10 +68,3 @@ ServerEvents.recipes(event => {
 	event.remove({ type: 'create:cutting' });
 
 });
-
-ServerEvents.afterRecipes(event => {
-	event.forEachRecipe([{ type: 'minecraft:smelting' }, { type: 'minecraft:blasting' }], recipe => {
-		event.remove({ id: recipe.getId() });
-		event.custom(recipe.json).id(recipe.getId() + '_manual_only');
-	});
-});

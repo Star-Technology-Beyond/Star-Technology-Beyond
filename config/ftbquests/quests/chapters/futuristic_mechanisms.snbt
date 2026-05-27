@@ -382,7 +382,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [
 				{
 					id: "74F58207D106C0AD"
@@ -826,7 +826,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			subtitle: "{ftbquests.futuristic_mechanisms.crystal_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "5511FF0C044D185E"
@@ -1236,12 +1236,13 @@
 			hide_dependency_lines: false
 			id: "1F416C7A641914EC"
 			rewards: [{
+				count: 2
 				id: "1265AC7E0C43EFE0"
 				item: "kubejs:coin"
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "450942C5A4B02270"
 				item: {
@@ -1422,6 +1423,11 @@
 		{
 			dependencies: ["1DA6B3308C263A6F"]
 			id: "4DE577541BB6DD00"
+			rewards: [{
+				id: "2E9E40C0E1AE88EE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "circle"
 			tasks: [{
 				id: "2F50871E99D1C7D2"
@@ -1472,6 +1478,12 @@
 			dependencies: ["464BB867FCF25A94"]
 			description: ["{ftbquests.futuristic_mechanisms.super_abs.description}"]
 			id: "20136E5C195AFED1"
+			rewards: [{
+				count: 2
+				id: "2C20D68178357837"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			tasks: [{
@@ -1485,6 +1497,11 @@
 		{
 			dependencies: ["36C01453717B249D"]
 			id: "464BB867FCF25A94"
+			rewards: [{
+				id: "3E72C1F3E714FE87"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "67B791A136780866"
 				item: "gtceu:naquadria_ingot"
@@ -1497,8 +1514,14 @@
 			dependencies: ["0094C2E72105E8CA"]
 			description: ["{ftbquests.futuristic_mechanisms.super_vacuum_freezer.description}"]
 			id: "061571A0D03CE303"
+			rewards: [{
+				count: 2
+				id: "2EF8F00960A1C28E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "33A8479009016A81"
 				item: "gtceu:super_vacuum_freezer"
@@ -1538,6 +1561,11 @@
 			description: ["{ftbquests.futuristic_mechanisms.neutron_reflector.description}"]
 			hide_dependent_lines: true
 			id: "2D7591517097D802"
+			rewards: [{
+				id: "265822EFE6D1B5A6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "44F5D3CD909C8135"
 				item: "kubejs:basic_reflector_casing"
@@ -1549,7 +1577,11 @@
 		{
 			dependencies: ["2D7591517097D802"]
 			id: "11595BF31117702B"
-			shape: "gear"
+			rewards: [{
+				id: "188023C2C76C1592"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3D08617A5DA46BB6"
 				item: "kubejs:advanced_reflector_casing"
@@ -1582,6 +1614,11 @@
 		{
 			dependencies: ["3FC351F05F2AC743"]
 			id: "0815FFB99B152DC9"
+			rewards: [{
+				id: "7A9DE94B2F8977C5"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "41200BD7E39672CC"
 				item: "gtceu:hpca_advanced_computation_component"

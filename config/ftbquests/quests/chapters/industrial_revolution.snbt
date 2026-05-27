@@ -61,6 +61,26 @@
 			x: 2.0d
 			y: 5.5d
 		}
+		{
+			id: "569139C96C105134"
+			linked_quest: "689579627AADC578"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			id: "66B1F4A60574E38F"
+			linked_quest: "3B787FE75F563F45"
+			shape: "gear"
+			size: 1.5d
+			x: 9.0d
+			y: -5.5d
+		}
+		{
+			id: "55DC23F92C7B4541"
+			linked_quest: "6896F9AF41EE8571"
+			x: 3.0d
+			y: -5.5d
+		}
 	]
 	quests: [
 		{
@@ -997,6 +1017,7 @@
 			description: ["{ftbquests.industrial_revolution.circuit_assembler.description}"]
 			id: "707733C864B8729C"
 			rewards: [{
+				count: 2
 				id: "2FC1EE7643113986"
 				item: "kubejs:coin"
 				type: "item"
@@ -1297,27 +1318,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"5F80268C02FAD5F6"
-				"7452592DFEBC7C44"
-			]
-			description: ["{ftbquests.industrial_revolution.certus_quartz.description}"]
-			id: "6896F9AF41EE8571"
-			rewards: [{
-				id: "7C19B021AC9106CC"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.industrial_revolution.certus_quartz.subtitle}"
-			tasks: [{
-				id: "235D4BCFE60C7A06"
-				item: "ae2:certus_quartz_crystal"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -5.5d
-		}
-		{
 			dependencies: ["0A03B4D352DCF148"]
 			description: ["{ftbquests.industrial_revolution.hot_kanthal_ingot.description}"]
 			icon: "gtceu:hot_kanthal_ingot"
@@ -1425,7 +1425,7 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["50EA5165AF923EB4"]
+			dependencies: ["689579627AADC578"]
 			description: ["{ftbquests.industrial_revolution.inscriber_presses.description}"]
 			id: "4CCB2727C13AEBDD"
 			rewards: [{
@@ -1456,49 +1456,7 @@
 				}
 			]
 			title: "{ftbquests.industrial_revolution.inscriber_presses.title}"
-			x: 7.5d
-			y: -7.0d
-		}
-		{
-			dependencies: [
-				"4CCB2727C13AEBDD"
-				"4ED724D5B94CFA3A"
-				"6896F9AF41EE8571"
-			]
-			description: ["{ftbquests.industrial_revolution.printed_circuits.description}"]
-			id: "16A71D038D996289"
-			rewards: [{
-				count: 2
-				id: "7110B623B1739C0F"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [
-				{
-					id: "2C95AC0370765770"
-					item: "ae2:printed_silicon"
-					type: "item"
-				}
-				{
-					id: "5A0144B78FDA7BE5"
-					item: "ae2:printed_calculation_processor"
-					type: "item"
-				}
-				{
-					id: "4304604DD6280C67"
-					item: "ae2:printed_engineering_processor"
-					type: "item"
-				}
-				{
-					id: "670B22BE5094B880"
-					item: "ae2:printed_logic_processor"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.industrial_revolution.printed_circuits.title}"
-			x: 9.0d
+			x: 7.0d
 			y: -5.5d
 		}
 		{
@@ -1669,8 +1627,12 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["16A71D038D996289"]
-			description: ["{ftbquests.industrial_revolution.ae2_chapter.description}"]
+			dependencies: ["3B787FE75F563F45"]
+			description: [
+				"{ftbquests.industrial_revolution.ae2_chapter.description}"
+				""
+				"[ \"===> [\", { \"text\": \"X\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"54A26707B4CD39CC\" } }, \"] <===\" ]"
+			]
 			icon: "ae2:fluix_glass_cable"
 			id: "352E17B4D7719638"
 			tasks: [{
@@ -1706,6 +1668,11 @@
 			]
 			description: ["{ftbquests.industrial_revolution.transistor.description}"]
 			id: "724BAC3F48CE91AA"
+			rewards: [{
+				id: "186727D1BB104DD6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "799B98C337C4EE49"
 				item: {
@@ -1784,6 +1751,11 @@
 			description: ["{ftbquests.industrial_revolution.mechanical_sieve.description}"]
 			id: "569A70F811536F5F"
 			optional: true
+			rewards: [{
+				id: "467FFCB072ECCA56"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "330BAE9039CDDCB5"
 				item: "gtceu:mechanical_sieve"
@@ -1868,23 +1840,6 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["12C9427A04A2F550"]
-			hide_dependency_lines: true
-			id: "50EA5165AF923EB4"
-			rewards: [{
-				id: "5F58FB860D0AEFC4"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3FBBA93FDD3F0190"
-				item: "ae2:sky_dust"
-				type: "item"
-			}]
-			x: 4.5d
-			y: -7.0d
-		}
-		{
 			dependencies: ["2AFD24A844E49C42"]
 			description: ["{ftbquests.industrial_revolution.lubricant_production.description}"]
 			id: "2E1E8E6F80D7665C"
@@ -1917,6 +1872,11 @@
 			hide_dependent_lines: true
 			icon: "gtceu:lubricant_bucket"
 			id: "13B656D92E651FB4"
+			rewards: [{
+				id: "12EF13C04335189C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6183C6888230DF01"

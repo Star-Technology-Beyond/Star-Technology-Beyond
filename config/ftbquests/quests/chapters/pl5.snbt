@@ -52,14 +52,6 @@
 			y: -5.5d
 		}
 		{
-			id: "6619BD72D7AC92AB"
-			linked_quest: "1799430093ABCC64"
-			shape: "gear"
-			size: 1.5d
-			x: 6.0d
-			y: -1.0d
-		}
-		{
 			id: "58D06D40AD3DDD53"
 			linked_quest: "64DC78AF9E2FAB32"
 			shape: "circle"
@@ -771,6 +763,11 @@
 		{
 			dependencies: ["0CD4A2A7CDC7A06E"]
 			id: "588C0950E5334025"
+			rewards: [{
+				id: "2B32FEE972B016CE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "304F34E16667CCD4"
@@ -784,6 +781,11 @@
 		{
 			dependencies: ["54A48D25CC69507E"]
 			id: "6F5453EB015DE189"
+			rewards: [{
+				id: "737A7C85DFE0B685"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "2DDBF048CC9F48CC"
@@ -797,6 +799,11 @@
 		{
 			dependencies: ["1799430093ABCC64"]
 			id: "2C80DB1A0465B07E"
+			rewards: [{
+				id: "35CC6A06718768E7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "5A9177A5B1275632"
@@ -810,6 +817,11 @@
 		{
 			dependencies: ["1799430093ABCC64"]
 			id: "52B07B3E2BE1145E"
+			rewards: [{
+				id: "1779265C07A0E133"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "3BE7176CBAEDBC29"
@@ -983,6 +995,11 @@
 			description: ["{ftbquests.dsg.riftions.description}"]
 			icon: "kubejs:wild_riftion"
 			id: "795C7DA2DD644F5A"
+			rewards: [{
+				id: "074B1CFEE05A2AB3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "262750B22E85DEC4"
@@ -1150,6 +1167,12 @@
 				"194D29F7135DB256"
 			]
 			id: "7E55361BFC343CEC"
+			rewards: [{
+				count: 3
+				id: "77CDC1B4E083260D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			tasks: [{
@@ -1204,6 +1227,12 @@
 			dependencies: ["06D6795B5152B7E1"]
 			icon: "gtceu:riftic_concentrate_bucket"
 			id: "01A904AC91C3F022"
+			rewards: [{
+				count: 3
+				id: "5DBAF09EAB1BFB0D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1219,6 +1248,12 @@
 			dependencies: ["260696AEE718A614"]
 			icon: "gtceu:prismatic_hypergurmalium_bucket"
 			id: "53B0C723F50526D9"
+			rewards: [{
+				count: 3
+				id: "353D2D323692FD59"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1234,6 +1269,12 @@
 			dependencies: ["42A47D5635CFA200"]
 			icon: "gtceu:primordial_residue_bucket"
 			id: "586BADD5DCF46444"
+			rewards: [{
+				count: 3
+				id: "728414983384BB85"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1266,6 +1307,30 @@
 			}]
 			x: -6.0d
 			y: 5.0d
+		}
+		{
+			dependencies: [
+				"09B55AFE7C06EC82"
+				"25436E09A8F9E9C8"
+				"058533FBFBA38DC8"
+			]
+			description: ["{ftbquests.draconic_age.draconic_enrichment_serum.description}"]
+			id: "1799430093ABCC64"
+			rewards: [{
+				count: 3
+				id: "2C713C0E55A96415"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "27F3A14B2F6C836C"
+				item: "gtceu:draconic_enrichment_serum_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
 		}
 	]
 	title: "{ftbquests.pl5.title}"

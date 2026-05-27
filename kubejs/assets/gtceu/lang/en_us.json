@@ -264,7 +264,7 @@
     "material.gtceu.zapolgium_hydroxide": "Zapolgium Hydroxide",
     "material.gtceu.lautarite": "Lautarite",
     "material.gtceu.strontium_oxide": "Strontium Oxide",
-    "material.gtceu.titanium_oxide": "Titanium Oxide",
+    "material.gtceu.titanium_oxide": "Titanium Dioxide",
     "material.gtceu.strontium_titanium_oxide": "Strontium-Titanium Oxide",
     "material.gtceu.zalloy": "Zalloy",
     "material.gtceu.zircalloy_4": "Zircalloy 4",
@@ -1063,7 +1063,7 @@
     "block.gtceu.uiv_me_assembler": "§2Epic ME Assembler III",
 
     "block.gtceu.large_me_assembler": "Large ME Assembler [LMEA]",
-    "block.gtceu.large_me_assembler.tooltip.0": "A large version of the ME Assembler able to scale your needs even higher",
+    "block.gtceu.large_me_assembler.tooltip.0": "§7A large version of the ME Assembler able to scale your needs even higher.",
 
     "material.gtceu.skystone": "Skystone",
     "material.gtceu.gold_skystone_alloy": "Gold Skystone Alloy",

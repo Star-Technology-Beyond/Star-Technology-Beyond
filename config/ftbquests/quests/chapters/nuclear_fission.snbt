@@ -108,11 +108,11 @@
 			dependency_requirement: "one_completed"
 			id: "0D6B1EF3F5E9D399"
 			rewards: [{
-				count: 2
 				id: "017BA6D7626280CD"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "gear"
 			tasks: [{
 				id: "150BD79B77556BD5"
 				item: {
@@ -176,6 +176,12 @@
 		{
 			dependencies: ["002E548F34346407"]
 			id: "2A070F5D1D7CEAE1"
+			rewards: [{
+				id: "337C309093FC2219"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
 			tasks: [{
 				id: "3B543C4241A6E8D3"
 				item: "gtceu:neptunium_dust"
@@ -317,6 +323,12 @@
 		{
 			dependencies: ["4DE01C4D23FB5912"]
 			id: "112C0821547F18B2"
+			rewards: [{
+				count: 3
+				id: "4005709FAF9FC781"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.25d
 			tasks: [{
@@ -510,7 +522,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "7BE3C5BE8FA92239"
 				item: {

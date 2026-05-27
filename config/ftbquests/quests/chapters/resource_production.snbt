@@ -2436,7 +2436,7 @@
 			description: ["{ftbquests.resource_production.drilling_rig.description}"]
 			id: "22BC7BDE5E132A30"
 			rewards: [{
-				id: "26043A495658B8EF"
+				id: "6414DCC357DDDEAC"
 				item: "kubejs:coin"
 				type: "item"
 			}]

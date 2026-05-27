@@ -11,7 +11,7 @@
 		{
 			id: "6597F20CEA188552"
 			linked_quest: "77584F14C573BBC1"
-			x: -6.0d
+			x: -6.5d
 			y: -1.5d
 		}
 		{
@@ -724,7 +724,7 @@
 				item: "minecraft:clay"
 				type: "item"
 			}]
-			x: -11.0d
+			x: -11.5d
 			y: 0.5d
 		}
 		{
@@ -736,7 +736,7 @@
 				item: "gtceu:clay_dust"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -10.0d
 			y: 0.5d
 		}
 		{
@@ -748,7 +748,7 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			x: -13.5d
+			x: -14.0d
 			y: 2.5d
 		}
 		{
@@ -760,7 +760,7 @@
 				item: "minecraft:gravel"
 				type: "item"
 			}]
-			x: -12.0d
+			x: -12.5d
 			y: 2.5d
 		}
 		{
@@ -772,7 +772,7 @@
 				item: "minecraft:flint"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -11.0d
 			y: 2.5d
 		}
 		{
@@ -784,7 +784,7 @@
 				item: "gtceu:flint_dust"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -9.5d
 			y: 2.5d
 		}
 		{
@@ -796,12 +796,17 @@
 				item: "gtceu:silicon_dioxide_dust"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["7A7CF6B84469AC1D"]
 			id: "1B22A06EA1BA398B"
+			rewards: [{
+				id: "3C289CF05C9C30BA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.0d
 			tasks: [{
@@ -809,7 +814,7 @@
 				item: "gtceu:oxygen_bucket"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: 2.5d
 		}
 		{
@@ -833,7 +838,7 @@
 				item: "gtceu:silicon_dust"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.0d
 			y: 0.5d
 		}
 		{
@@ -858,7 +863,7 @@
 				item: "gtceu:aluminium_dust"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -10.5d
 			y: -1.5d
 		}
 		{
@@ -876,7 +881,7 @@
 				item: "gtceu:lithium_dust"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: 1.5d
 		}
 		{
@@ -898,7 +903,7 @@
 				item: "gtceu:sodium_dust"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.0d
 			y: -0.5d
 		}
 		{
@@ -1482,6 +1487,11 @@
 		{
 			dependencies: ["324FB533DE3A06AE"]
 			id: "119983C3240B8F66"
+			rewards: [{
+				id: "49F15A95ED5F2D98"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.0d
 			tasks: [{
@@ -1520,7 +1530,7 @@
 				}
 			]
 			title: "{ftbquests.pl.sapphires.title}"
-			x: -13.5d
+			x: -14.0d
 			y: -1.5d
 		}
 		{
@@ -1642,7 +1652,7 @@
 				title: "{ftbquests.pl.sapphire_dust.title}"
 				type: "item"
 			}]
-			x: -12.0d
+			x: -12.5d
 			y: -1.5d
 		}
 		{
@@ -1653,19 +1663,28 @@
 				item: "gtceu:sodalite_dust"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["1BC9B0DBEB0F9AE5"]
+			dependencies: [
+				"1BC9B0DBEB0F9AE5"
+				"2A7CB68168956497"
+			]
+			dependency_requirement: "one_completed"
 			id: "37EB5DF498AA7B30"
+			rewards: [{
+				id: "31EE3DA801265638"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "2C692313A30070E8"
 				item: "gtceu:chlorine_bucket"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.0d
 			y: -0.5d
 		}
 		{
@@ -2135,6 +2154,17 @@
 			title: "{ftbquests.pl.easy_hydrochloric.title}"
 			x: -9.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["08C8FF38DC514F71"]
+			id: "2A7CB68168956497"
+			tasks: [{
+				id: "55AC3F07FF2203C4"
+				item: "gtceu:salt_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
 		}
 	]
 	title: "{ftbquests.pl1.title}"

@@ -235,6 +235,11 @@
 		{
 			dependencies: ["7A667B2D4AB99C9A"]
 			id: "586E4409BEF993FD"
+			rewards: [{
+				id: "712FB5152C9E7C28"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.0d
 			tasks: [{
@@ -737,7 +742,6 @@
 			hide_dependent_lines: true
 			id: "6A57B03345FC6D99"
 			rewards: [{
-				count: 2
 				id: "5CA8626D7FED0ED4"
 				item: "kubejs:coin"
 				type: "item"
@@ -1162,7 +1166,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "095E9ED712545E72"
 				item: "gtceu:naquadah_ingot"

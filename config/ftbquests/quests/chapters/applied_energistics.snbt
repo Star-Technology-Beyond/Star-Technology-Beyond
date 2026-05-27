@@ -12,6 +12,11 @@
 		{
 			dependencies: ["220ECC2DE9D50213"]
 			id: "47B51BF0F3A51A17"
+			rewards: [{
+				id: "73F552DE315F54DD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "40359C43057FF2B8"
 				item: {
@@ -27,6 +32,11 @@
 		{
 			dependencies: ["47B51BF0F3A51A17"]
 			id: "19B9634DC5EFBB64"
+			rewards: [{
+				id: "7AADB4925335006C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "14C20BDFE2D489C8"
 				item: {
@@ -42,6 +52,11 @@
 		{
 			dependencies: ["16D74E923B76E266"]
 			id: "3594628E8316824E"
+			rewards: [{
+				id: "0E6905C17E2205B3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "29113AD2F28E8335"
@@ -54,6 +69,11 @@
 		{
 			dependencies: ["3594628E8316824E"]
 			id: "307B93E1431087D0"
+			rewards: [{
+				id: "30D9DA5A1CB6B91B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "0F6DC203A2DD5797"
@@ -66,6 +86,11 @@
 		{
 			dependencies: ["307B93E1431087D0"]
 			id: "6672296A6740F5B8"
+			rewards: [{
+				id: "6838DD02224B7569"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "76358AA7C6EC53E3"
@@ -78,6 +103,11 @@
 		{
 			dependencies: ["6672296A6740F5B8"]
 			id: "479A121A74E2DE4F"
+			rewards: [{
+				id: "17C83592774092B4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "3B61760287794956"
@@ -90,6 +120,11 @@
 		{
 			dependencies: ["479A121A74E2DE4F"]
 			id: "69768541E12842D1"
+			rewards: [{
+				id: "7C50552FD13201ED"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "6EBBCFD34140EB0F"
@@ -105,6 +140,11 @@
 				"14AD7FB0096260E3"
 			]
 			id: "07FE13B6C2445554"
+			rewards: [{
+				id: "750CAEF880655041"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "7B9E3E68A7615E18"
@@ -120,6 +160,11 @@
 				"14AD7FB0096260E3"
 			]
 			id: "66CDB0CB180B9819"
+			rewards: [{
+				id: "103B1C056511949C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "300F710E178666AE"
@@ -135,6 +180,11 @@
 				"14AD7FB0096260E3"
 			]
 			id: "74DDE18F637959CE"
+			rewards: [{
+				id: "4FAA93FB23551F8D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "0E0021005E9C3FCC"
@@ -150,6 +200,11 @@
 				"14AD7FB0096260E3"
 			]
 			id: "2158BBB95B4D5A2B"
+			rewards: [{
+				id: "26B0868BE60A2D78"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "2FCE817D9AA39A67"
@@ -165,6 +220,11 @@
 				"14AD7FB0096260E3"
 			]
 			id: "087C40F74BD44B3D"
+			rewards: [{
+				id: "0062152E96C8302B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "4198220C3FA24441"
@@ -177,6 +237,11 @@
 		{
 			dependencies: ["220ECC2DE9D50213"]
 			id: "4DAE06A1BAE2853F"
+			rewards: [{
+				id: "56474C6791A317EA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "67D9C6D2D69F1CF7"
@@ -201,6 +266,11 @@
 		{
 			dependencies: ["4E724D0920A2DF55"]
 			id: "00C108BA77C4FC44"
+			rewards: [{
+				id: "75C20BCE36C875C8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1804FB2E08386F85"
 				item: "ae2:quartz_fiber"
@@ -215,6 +285,11 @@
 				"46C9CFB443BB3CAA"
 			]
 			id: "69517897AAD23478"
+			rewards: [{
+				id: "500E8940290936A7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "594297C91AE0B90F"
 				item: "ae2:fluix_glass_cable"
@@ -226,6 +301,11 @@
 		{
 			dependencies: ["69517897AAD23478"]
 			id: "0CCCF777F0B7DC41"
+			rewards: [{
+				id: "3F2C5273410D3E99"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "645CBAFAEC91E319"
 				item: "ae2:fluix_covered_cable"
@@ -237,6 +317,11 @@
 		{
 			dependencies: ["0CCCF777F0B7DC41"]
 			id: "20A58C211FDF7A94"
+			rewards: [{
+				id: "58D1E7203C83ADA4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "07934C4471E2BF1F"
 				item: "ae2:fluix_smart_cable"
@@ -248,6 +333,11 @@
 		{
 			dependencies: ["134C7F5E57B44097"]
 			id: "745E8F2BC7D5FE33"
+			rewards: [{
+				id: "6958C1C091A46D18"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "325EAC425144D2F2"
 				item: "ae2:fluix_smart_dense_cable"
@@ -259,6 +349,11 @@
 		{
 			dependencies: ["220ECC2DE9D50213"]
 			id: "0887FE2C8C5A2945"
+			rewards: [{
+				id: "4A1E68357A7AF956"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "186B57D951B324AA"
@@ -278,6 +373,11 @@
 		{
 			dependencies: ["3594628E8316824E"]
 			id: "716E3EB48FB124B2"
+			rewards: [{
+				id: "6D453006424C4703"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2C1513831C993806"
 				item: "expatternprovider:ingredient_buffer"
@@ -289,6 +389,11 @@
 		{
 			dependencies: ["774470E98AEB60C2"]
 			id: "311AE326F9287D02"
+			rewards: [{
+				id: "3F5B7931F014C55A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "74A325BF872C20EB"
 				item: "expatternprovider:wireless_connect"
@@ -300,6 +405,11 @@
 		{
 			dependencies: ["220ECC2DE9D50213"]
 			id: "720E13408B1A7170"
+			rewards: [{
+				id: "5EA49C4ADFB5D785"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3DAEEA0CCEE0D67B"
 				item: "ae2:molecular_assembler"
@@ -311,6 +421,11 @@
 		{
 			dependencies: ["220ECC2DE9D50213"]
 			id: "774470E98AEB60C2"
+			rewards: [{
+				id: "008DB67AA38EE6AE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "622EAD6EA8998CCE"
 				item: "ae2:me_p2p_tunnel"
@@ -322,6 +437,11 @@
 		{
 			dependencies: ["29D7E2B8D3BF1D9E"]
 			id: "02EB760C5FF71D91"
+			rewards: [{
+				id: "0C03A971F9E29900"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "56899EC430036D08"
 				item: "ae2:level_emitter"
@@ -334,6 +454,11 @@
 			dependencies: ["2896C7FE79A7D094"]
 			hide_dependency_lines: true
 			id: "70F6AD4F913B2B48"
+			rewards: [{
+				id: "6745E89916A2ADDF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "36CD7A2BA8B9A204"
 				item: "aeinfinitybooster:infinity_card"
@@ -346,6 +471,11 @@
 			dependencies: ["0A1DB46E5375B995"]
 			hide_dependency_lines: true
 			id: "784DECDFEAE5E655"
+			rewards: [{
+				id: "5F006AB6CE00A2A8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "63CF647233FB4C58"
 				item: "merequester:requester"
@@ -357,6 +487,11 @@
 		{
 			dependencies: ["62BA581B2918BB7B"]
 			id: "4F37BFEF63998350"
+			rewards: [{
+				id: "604128D32FCE2C91"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "509358A00C722970"
@@ -386,6 +521,11 @@
 		{
 			dependencies: ["0CCCF777F0B7DC41"]
 			id: "134C7F5E57B44097"
+			rewards: [{
+				id: "14A54982A73DADB4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6B6984EE1083B1F3"
 				item: "ae2:fluix_covered_dense_cable"
@@ -398,6 +538,11 @@
 			dependencies: ["220ECC2DE9D50213"]
 			hide_dependency_lines: true
 			id: "21B152B4D6B29378"
+			rewards: [{
+				id: "0265C66C4CEA44C0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "398C88373144B3C3"
 				item: "ae2netanalyser:network_analyser"
@@ -409,6 +554,11 @@
 		{
 			dependencies: ["774470E98AEB60C2"]
 			id: "036D871AE55BC323"
+			rewards: [{
+				id: "7688F8B7D57E9DD6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "04E7BA8F5CACB6EA"
 				item: {
@@ -427,6 +577,11 @@
 		{
 			dependencies: ["6672296A6740F5B8"]
 			id: "54FB87F5A13C620D"
+			rewards: [{
+				id: "2E071851169D4631"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1F4A5C0E6DACF8A5"
@@ -526,6 +681,11 @@
 		{
 			dependencies: ["69768541E12842D1"]
 			id: "15609A10132FC49C"
+			rewards: [{
+				id: "6DE8270C130CB496"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "1DE4005B4E24DF4A"
@@ -538,6 +698,11 @@
 		{
 			dependencies: ["15609A10132FC49C"]
 			id: "29FCED9F85FB2882"
+			rewards: [{
+				id: "7EC2D5198CA5EF06"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "4612F9FB615EED9C"
@@ -550,6 +715,11 @@
 		{
 			dependencies: ["29FCED9F85FB2882"]
 			id: "3CFA9E13D95178D6"
+			rewards: [{
+				id: "6D2F5E524680D1E2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "35AE74272ABB8508"
@@ -562,6 +732,11 @@
 		{
 			dependencies: ["3CFA9E13D95178D6"]
 			id: "07CB8E78FF4461BB"
+			rewards: [{
+				id: "7388A988A9D3FD0D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "316532C4593DEB4F"
@@ -577,6 +752,11 @@
 				"7543CC066CBF4EE0"
 			]
 			id: "4F32D62F9BD279F3"
+			rewards: [{
+				id: "3C82E4C41292A0F9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "53E829F3EF05F1C7"
 				item: "megacells:1m_crafting_storage"
@@ -591,6 +771,11 @@
 				"7543CC066CBF4EE0"
 			]
 			id: "7714826EF2BA750A"
+			rewards: [{
+				id: "0277EF23962BA5BB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1050AD9BDE58B1EE"
 				item: "megacells:4m_crafting_storage"
@@ -605,6 +790,11 @@
 				"7543CC066CBF4EE0"
 			]
 			id: "4FF5366683095676"
+			rewards: [{
+				id: "108BD89581B8BB53"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "07AD5203BD915A2B"
 				item: "megacells:16m_crafting_storage"
@@ -619,6 +809,11 @@
 				"7543CC066CBF4EE0"
 			]
 			id: "0BD267A7CFB4B21D"
+			rewards: [{
+				id: "59196DA860630BB8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "632B7482D6474931"
 				item: "megacells:64m_crafting_storage"
@@ -633,6 +828,11 @@
 				"7543CC066CBF4EE0"
 			]
 			id: "2280548034E41819"
+			rewards: [{
+				id: "4062016BEE2C2F06"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2614D072C33CA309"
 				item: "megacells:256m_crafting_storage"
@@ -644,6 +844,11 @@
 		{
 			dependencies: ["07CB8E78FF4461BB"]
 			id: "4E5B71A2D89CAC2B"
+			rewards: [{
+				id: "545675DCEE3B5661"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "pentagon"
 			tasks: [{
 				id: "70C22EC474FC6847"
@@ -659,6 +864,11 @@
 				"16D74E923B76E266"
 			]
 			id: "29D7E2B8D3BF1D9E"
+			rewards: [{
+				id: "79D7C1E99CA77314"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "54856D707463E970"
@@ -681,8 +891,18 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["220ECC2DE9D50213"]
+			dependencies: [
+				"220ECC2DE9D50213"
+				"4ED724D5B94CFA3A"
+				"4CCB2727C13AEBDD"
+			]
+			description: ["{ftbquests.ae2.printed_circuits.description}"]
 			id: "3B787FE75F563F45"
+			rewards: [{
+				id: "6B4979972047485E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1F750AA6CFC9DC25"
@@ -712,6 +932,11 @@
 		{
 			dependencies: ["53E98CFC7934FA67"]
 			id: "16D74E923B76E266"
+			rewards: [{
+				id: "2A04AD48BF087B6B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "circle"
 			tasks: [{
 				id: "2B876A0BC533DC16"
@@ -776,6 +1001,11 @@
 		{
 			dependencies: ["689579627AADC578"]
 			id: "220ECC2DE9D50213"
+			rewards: [{
+				id: "420F6970840E1809"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "41C6C6795E59BB65"
@@ -798,8 +1028,14 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["50EA5165AF923EB4"]
+			dependencies: ["12C9427A04A2F550"]
+			hide_dependency_lines: true
 			id: "689579627AADC578"
+			rewards: [{
+				id: "36F7029FDD732143"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			shape: "circle"
 			tasks: [{
 				id: "0D5182568D1EE95F"
@@ -812,6 +1048,11 @@
 		{
 			dependencies: ["689579627AADC578"]
 			id: "0F269DCAD4B8CC4C"
+			rewards: [{
+				id: "16F90786EDC10B89"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0EFE10DBB3514228"
 				item: "gtceu:sky_steel_dust"
@@ -821,20 +1062,13 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["0A03B4D352DCF148"]
-			id: "116E6C82D5482654"
-			shape: "circle"
-			tasks: [{
-				id: "28067FF8F576C47C"
-				item: "ae2:certus_quartz_crystal"
+			dependencies: ["6896F9AF41EE8571"]
+			id: "46C9CFB443BB3CAA"
+			rewards: [{
+				id: "4A6252AD5CA821C3"
+				item: "kubejs:coin"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["116E6C82D5482654"]
-			id: "46C9CFB443BB3CAA"
 			tasks: [{
 				id: "2F221CCA35769D7D"
 				item: "ae2:fluix_crystal"
@@ -846,6 +1080,11 @@
 		{
 			dependencies: ["46C9CFB443BB3CAA"]
 			id: "2DC161E1BBA0919A"
+			rewards: [{
+				id: "3475A32B53C0B73F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "708063969E46339B"
 				item: "gtceu:fluix_steel_dust"
@@ -857,6 +1096,11 @@
 		{
 			dependencies: ["2DC161E1BBA0919A"]
 			id: "1AF7A9EE66326442"
+			rewards: [{
+				id: "3506DA5E89F7BB0A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "0643DA8212DB8E3D"
@@ -876,6 +1120,11 @@
 		{
 			dependencies: ["2DC161E1BBA0919A"]
 			id: "39FD400143952D58"
+			rewards: [{
+				id: "1661C4F7F9325F0F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "230B2FAAD24807E2"
 				item: "ae2:controller"
@@ -887,6 +1136,11 @@
 		{
 			dependencies: ["2DC161E1BBA0919A"]
 			id: "567E88B4BE35DB3C"
+			rewards: [{
+				id: "7B5ABB1C21D9F6D9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0B9D56A7272300CE"
 				item: "ae2:drive"
@@ -899,6 +1153,11 @@
 			dependencies: ["2DC161E1BBA0919A"]
 			hide_dependent_lines: true
 			id: "14AD7FB0096260E3"
+			rewards: [{
+				id: "716F788B9D22DD16"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "08FE7D7F04516057"
 				item: "ae2:crafting_unit"
@@ -910,6 +1169,11 @@
 		{
 			dependencies: ["14AD7FB0096260E3"]
 			id: "0A1DB46E5375B995"
+			rewards: [{
+				id: "236839915B49BE33"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6DDF5DDF0A81DEEF"
 				item: "ae2:crafting_accelerator"
@@ -921,6 +1185,11 @@
 		{
 			dependencies: ["220ECC2DE9D50213"]
 			id: "2896C7FE79A7D094"
+			rewards: [{
+				id: "601A2172A835834A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "630F0E6F5CB2AAAA"
@@ -940,6 +1209,11 @@
 		{
 			dependencies: ["2DC161E1BBA0919A"]
 			id: "6706CD6EC648B7C8"
+			rewards: [{
+				id: "36AC6AA884BA4741"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "55AE7ABA1C7E2A38"
 				item: "kubejs:fluix_steel_casing"
@@ -955,6 +1229,11 @@
 			]
 			hide_text_until_complete: false
 			id: "09241664F45A91EA"
+			rewards: [{
+				id: "047D80D0B8D80FA3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0BAC6F2D42E98422"
 				item: "gtceu:large_me_assembler"
@@ -971,6 +1250,11 @@
 			]
 			hide_dependent_lines: true
 			id: "7543CC066CBF4EE0"
+			rewards: [{
+				id: "4440981064FEE3D6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "39CBED7BC94E55B3"
 				item: "megacells:mega_crafting_unit"
@@ -982,6 +1266,11 @@
 		{
 			dependencies: ["2896C7FE79A7D094"]
 			id: "6EDEC5B6214A20CC"
+			rewards: [{
+				id: "00163962020B9CE6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "71E65EE348621549"
@@ -1006,6 +1295,11 @@
 		{
 			dependencies: ["15609A10132FC49C"]
 			id: "31E2D720FFC159EB"
+			rewards: [{
+				id: "507BB256D4FF1231"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1E47878FD2137F85"
 				item: "megacells:bulk_cell_component"
@@ -1020,6 +1314,11 @@
 				"19B9634DC5EFBB64"
 			]
 			id: "161969BDC9245CB4"
+			rewards: [{
+				id: "029DA5B323FFD719"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "778520F6426B7A0B"
 				item: {
@@ -1035,6 +1334,11 @@
 		{
 			dependencies: ["0F269DCAD4B8CC4C"]
 			id: "5CC6C1096C9F77FC"
+			rewards: [{
+				id: "4F00129FC664AC01"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "555BF583B8E80D37"
 				item: "ae2:condenser"
@@ -1046,6 +1350,11 @@
 		{
 			dependencies: ["5CC6C1096C9F77FC"]
 			id: "49ACE56A8AC7A63E"
+			rewards: [{
+				id: "6FDC76890843D705"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "33BA7BDBC8337B68"
 				item: "ae2:singularity"
@@ -1058,6 +1367,11 @@
 			dependencies: ["49ACE56A8AC7A63E"]
 			hide_dependent_lines: true
 			id: "43F95399A861BDB4"
+			rewards: [{
+				id: "22B801B177ED3B85"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 8L
@@ -1078,6 +1392,11 @@
 		{
 			dependencies: ["0F269DCAD4B8CC4C"]
 			id: "3B8CDE368E941652"
+			rewards: [{
+				id: "5F01C501A8FBE117"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4E45B2BCDE736816"
 				item: "ae2:interface"
@@ -1089,6 +1408,11 @@
 		{
 			dependencies: ["0F269DCAD4B8CC4C"]
 			id: "617E17824856450D"
+			rewards: [{
+				id: "72F1D5040C7F3F1F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "77DED6E47A0C8F29"
 				item: "ae2:pattern_provider"
@@ -1100,6 +1424,11 @@
 		{
 			dependencies: ["20A12F3B992762F0"]
 			id: "534F27BC96F104A2"
+			rewards: [{
+				id: "4302BBBD2A937DB6"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1D4515A14AB2EA28"
 				item: "gtceu:computer_monitor_cover"
@@ -1112,6 +1441,11 @@
 			dependencies: ["534F27BC96F104A2"]
 			description: ["{ftbquests.ae2.terminals.description}"]
 			id: "3FC037156B8DB553"
+			rewards: [{
+				id: "39BD40F5A99C9102"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "5F314224A0399BD9"
@@ -1131,6 +1465,11 @@
 		{
 			dependencies: ["534F27BC96F104A2"]
 			id: "3E163E0DA56697A9"
+			rewards: [{
+				id: "57F4FD9FFACF5617"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5D28950E152C361C"
 				item: "ae2:pattern_access_terminal"
@@ -1142,6 +1481,11 @@
 		{
 			dependencies: ["534F27BC96F104A2"]
 			id: "1401D93CE8C44E5C"
+			rewards: [{
+				id: "43A0E618DF2F90A8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1104F50C7B1397E0"
 				item: "merequester:requester_terminal"
@@ -1158,6 +1502,11 @@
 			]
 			description: ["{ftbquests.ae2.autocrafting.description}"]
 			id: "54D3F6BC8F7BC609"
+			rewards: [{
+				id: "77FA31338FE2EBDD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6AF795E95BA5BDDB"
 				item: "ae2:blank_pattern"
@@ -1170,6 +1519,11 @@
 		{
 			dependencies: ["3FC037156B8DB553"]
 			id: "372842AD602BB1BF"
+			rewards: [{
+				id: "6290A72307ED8BCC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "214DD22A34FA3402"
 				item: "ae2:pattern_encoding_terminal"
@@ -1181,6 +1535,11 @@
 		{
 			dependencies: ["3B8CDE368E941652"]
 			id: "27A6A5C168C0FB73"
+			rewards: [{
+				id: "63F670263F5E3E3D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "08754C0908581328"
 				item: "ae2:storage_bus"
@@ -1193,6 +1552,11 @@
 			dependencies: ["3B8CDE368E941652"]
 			hide_dependency_lines: true
 			id: "714785F87C1B07D0"
+			rewards: [{
+				id: "6E0C12FB5FB574FB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5BBB90E875972BCC"
 				item: "megacells:mega_interface"
@@ -1205,6 +1569,11 @@
 			dependencies: ["617E17824856450D"]
 			hide_dependency_lines: true
 			id: "49447FEBBB76FFF7"
+			rewards: [{
+				id: "73AB54844DBB34FD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "043A497EE25F9274"
 				item: "megacells:mega_pattern_provider"
@@ -1219,6 +1588,11 @@
 				"45EA9095FAF7DDD6"
 			]
 			id: "45739DAADDC070FB"
+			rewards: [{
+				id: "210A87E076536502"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0F8F84C69100A22D"
 				item: "expatternprovider:ex_interface"
@@ -1233,6 +1607,11 @@
 				"45EA9095FAF7DDD6"
 			]
 			id: "6D441C650137BD6D"
+			rewards: [{
+				id: "62B31DFC7E8C4F65"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "38F3899119ACAC2D"
 				item: "expatternprovider:ex_pattern_provider"
@@ -1244,6 +1623,11 @@
 		{
 			dependencies: ["45739DAADDC070FB"]
 			id: "587DFCFB215EFD67"
+			rewards: [{
+				id: "42A61E0167C9E58D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "633857678059FF18"
 				item: "expatternprovider:oversize_interface"
@@ -1255,6 +1639,11 @@
 		{
 			dependencies: ["45EA9095FAF7DDD6"]
 			id: "7E50B29E1FBF5831"
+			rewards: [{
+				id: "630B1F105E30B282"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "287F1635DFC8AEC0"
@@ -1274,6 +1663,11 @@
 		{
 			dependencies: ["45EA9095FAF7DDD6"]
 			id: "4B90617F77F7F6C8"
+			rewards: [{
+				id: "2D78AD0D077E970D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3DF17BDB8D742570"
 				item: "expatternprovider:ex_drive"
@@ -1285,6 +1679,11 @@
 		{
 			dependencies: ["45EA9095FAF7DDD6"]
 			id: "14C0B19E6CFFD112"
+			rewards: [{
+				id: "482750736AAF013B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "12373941A335ADAB"
 				item: "expatternprovider:ex_molecular_assembler"
@@ -1297,6 +1696,11 @@
 			dependencies: ["45EA9095FAF7DDD6"]
 			hide_text_until_complete: false
 			id: "297AAAB115BBC7E5"
+			rewards: [{
+				id: "37E6CAFD8B8D4B76"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5C5599F8967536F3"
 				item: "expatternprovider:ex_pattern_access_part"
@@ -1308,6 +1712,11 @@
 		{
 			dependencies: ["7FF1D8543D63EA7E"]
 			id: "0E699B8608412E2C"
+			rewards: [{
+				id: "53ACD3DF2604E2F7"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "06D6A94357D145C3"
 				item: "ae2wtlib:wireless_universal_terminal"
@@ -1321,6 +1730,11 @@
 			dependencies: ["3FC037156B8DB553"]
 			hide_dependency_lines: true
 			id: "7FF1D8543D63EA7E"
+			rewards: [{
+				id: "62C8CEDD7EE6AF20"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "59FBB40265C8D012"
 				item: "ae2:wireless_crafting_terminal"
@@ -1335,6 +1749,11 @@
 				"45EA9095FAF7DDD6"
 			]
 			id: "0C82D20AA1B8A33B"
+			rewards: [{
+				id: "2EFC0B6B93D2AA8C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "14E49E1E86C568DC"
 				item: "expatternprovider:ex_io_port"
@@ -1346,6 +1765,11 @@
 		{
 			dependencies: ["567E88B4BE35DB3C"]
 			id: "7A05D139ED3E4C99"
+			rewards: [{
+				id: "5A0C55E2966C8BC2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5F60A228C2BE7753"
 				item: "ae2:io_port"
@@ -1357,6 +1781,11 @@
 		{
 			dependencies: ["7A05D139ED3E4C99"]
 			id: "452B14D8B90757AA"
+			rewards: [{
+				id: "2FEEFAAEE7C9233C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B8864DA464FEA43"
 				item: "ae2:spatial_io_port"
@@ -1368,6 +1797,11 @@
 		{
 			dependencies: ["452B14D8B90757AA"]
 			id: "5EFD28E67B3D1425"
+			rewards: [{
+				id: "4963363E4F90B972"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "24AA60D3F5C49D0B"
 				item: {
@@ -1399,6 +1833,11 @@
 		{
 			dependencies: ["0F269DCAD4B8CC4C"]
 			id: "0DCD572D56DB0AB0"
+			rewards: [{
+				id: "76D4FDE1EA0D1B06"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2F3A374493F699A4"
 				item: "ae2:chest"
@@ -1410,6 +1849,11 @@
 		{
 			dependencies: ["0F269DCAD4B8CC4C"]
 			id: "2170EA7E1D21FA18"
+			rewards: [{
+				id: "3FF3B244F6EA9934"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "692F8BD8098CF505"
 				item: "ae2:cell_workbench"
@@ -1421,6 +1865,11 @@
 		{
 			dependencies: ["452B14D8B90757AA"]
 			id: "3FDA47AA7278BC2B"
+			rewards: [{
+				id: "0C8065BAB8722E94"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7CD5DF6BFA9135BB"
 				item: "ae2:spatial_pylon"
@@ -1458,6 +1907,11 @@
 				"6D441C650137BD6D"
 			]
 			id: "41C6F59DB92F79A7"
+			rewards: [{
+				id: "4D521B4CF7D63ECE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1FD3B7BF3F89717B"
@@ -1498,6 +1952,11 @@
 		{
 			dependencies: ["478A02E7D8C0A1C8"]
 			id: "1E343F9554344E46"
+			rewards: [{
+				id: "1FFC459BFB8B9229"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0120C22232953E1E"
 				item: "expandedae:exp_crafting_accelerator_2"
@@ -1509,6 +1968,11 @@
 		{
 			dependencies: ["0A1DB46E5375B995"]
 			id: "478A02E7D8C0A1C8"
+			rewards: [{
+				id: "65DE42C38DB432AA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4E8FEE68E8397840"
 				item: "expandedae:exp_crafting_accelerator_4"
@@ -1520,6 +1984,11 @@
 		{
 			dependencies: ["53113FB2835560E0"]
 			id: "6E4DB64EB63F8714"
+			rewards: [{
+				id: "70AFB7C0D8D6E9CA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0D3D29B49CC8183A"
 				item: "expandedae:exp_crafting_accelerator_8"
@@ -1531,6 +2000,11 @@
 		{
 			dependencies: ["478A02E7D8C0A1C8"]
 			id: "53113FB2835560E0"
+			rewards: [{
+				id: "45703B7AEAC59848"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1B74F12925EB6843"
 				item: "expandedae:exp_crafting_accelerator_16"
@@ -1542,6 +2016,11 @@
 		{
 			dependencies: ["53113FB2835560E0"]
 			id: "1F5B2DFAFDCDF050"
+			rewards: [{
+				id: "28ADAFE315B7F8A9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "48C0745252723341"
 				item: "expandedae:exp_crafting_accelerator_64"
@@ -1553,6 +2032,11 @@
 		{
 			dependencies: ["1F5B2DFAFDCDF050"]
 			id: "344AAB2C51F822B1"
+			rewards: [{
+				id: "5940AACFB24A646C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0E4DCC6DD571D5E1"
 				item: "expandedae:exp_crafting_accelerator_32"
@@ -1564,6 +2048,11 @@
 		{
 			dependencies: ["307E7CA88BA6E1E0"]
 			id: "686148DD4CC74166"
+			rewards: [{
+				id: "18044FC9DCD86640"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "349BC151061DABD3"
 				item: "expandedae:exp_crafting_accelerator_128"
@@ -1575,6 +2064,11 @@
 		{
 			dependencies: ["1F5B2DFAFDCDF050"]
 			id: "307E7CA88BA6E1E0"
+			rewards: [{
+				id: "318CBE5E0D41037A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "344C24CBFFA09EA8"
 				item: "expandedae:exp_crafting_accelerator_256"
@@ -1586,6 +2080,11 @@
 		{
 			dependencies: ["1C484C4AB8D3C36B"]
 			id: "7A328586CB117E32"
+			rewards: [{
+				id: "06118D3D40634B29"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5C03F7BDF5469CED"
 				item: "expandedae:exp_crafting_accelerator_512"
@@ -1597,6 +2096,11 @@
 		{
 			dependencies: ["307E7CA88BA6E1E0"]
 			id: "1C484C4AB8D3C36B"
+			rewards: [{
+				id: "434F267D5B5DC64C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "648BA4E1D9628FC9"
 				item: "expandedae:exp_crafting_accelerator_1k"
@@ -1608,6 +2112,11 @@
 		{
 			dependencies: ["194C30F25E32E9AE"]
 			id: "5497D6386B182B01"
+			rewards: [{
+				id: "544098E2BC2D759A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "66F7C91631C49455"
 				item: "expandedae:exp_crafting_accelerator_2k"
@@ -1619,6 +2128,11 @@
 		{
 			dependencies: ["1C484C4AB8D3C36B"]
 			id: "194C30F25E32E9AE"
+			rewards: [{
+				id: "1A9FD47C456EDE32"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "599DBD455B993F00"
 				item: "expandedae:exp_crafting_accelerator_4k"
@@ -1630,6 +2144,11 @@
 		{
 			dependencies: ["3BF1920443CA9407"]
 			id: "68610A9C19C87EF9"
+			rewards: [{
+				id: "0E21F4AEE1BD9B8B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "32FB3D7C09625FAA"
 				item: "expandedae:exp_crafting_accelerator_8k"
@@ -1641,6 +2160,11 @@
 		{
 			dependencies: ["194C30F25E32E9AE"]
 			id: "3BF1920443CA9407"
+			rewards: [{
+				id: "3462CEA3689532A2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "35BE16B65C18BC23"
 				item: "expandedae:exp_crafting_accelerator_16k"
@@ -1652,6 +2176,11 @@
 		{
 			dependencies: ["54719F78D8E03083"]
 			id: "697009990248A750"
+			rewards: [{
+				id: "1E3726B1D4DC5D44"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1928B21581FA9FE1"
 				item: "expandedae:exp_crafting_accelerator_32k"
@@ -1663,6 +2192,11 @@
 		{
 			dependencies: ["3BF1920443CA9407"]
 			id: "54719F78D8E03083"
+			rewards: [{
+				id: "65109255CFF47FF4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "45C8EEA6DAD1BA87"
 				item: "expandedae:exp_crafting_accelerator_64k"
@@ -1674,6 +2208,11 @@
 		{
 			dependencies: ["49476A75A61E5FCE"]
 			id: "6A8AE35DEB32BBD5"
+			rewards: [{
+				id: "3B41311F2616DFA8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0D3210842632156E"
 				item: "expandedae:exp_crafting_accelerator_128k"
@@ -1685,6 +2224,11 @@
 		{
 			dependencies: ["54719F78D8E03083"]
 			id: "49476A75A61E5FCE"
+			rewards: [{
+				id: "7A9B1212BAF3D3E8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5FE645FA55CCC236"
 				item: "expandedae:exp_crafting_accelerator_256k"
@@ -1696,6 +2240,11 @@
 		{
 			dependencies: ["723055BFDB9A7484"]
 			id: "7CB062C9B22FB74A"
+			rewards: [{
+				id: "3922590E6A1C30DF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6D41946DE84FF437"
 				item: "expandedae:exp_crafting_accelerator_512k"
@@ -1707,6 +2256,11 @@
 		{
 			dependencies: ["49476A75A61E5FCE"]
 			id: "723055BFDB9A7484"
+			rewards: [{
+				id: "77C97397250923CF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0116134185E94BBA"
 				item: "expandedae:exp_crafting_accelerator_1m"
@@ -1718,6 +2272,11 @@
 		{
 			dependencies: ["0C82D20AA1B8A33B"]
 			id: "6820C607C25AE859"
+			rewards: [{
+				id: "1EBC897C2327B4B3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "76B22CA34DBF4917"
 				item: "expandedae:exp_io_port"
@@ -1729,6 +2288,11 @@
 		{
 			dependencies: ["6D441C650137BD6D"]
 			id: "2519DA28EADD47D4"
+			rewards: [{
+				id: "69408D38CB98BCCB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7C66519BF801C80D"
 				item: "expandedae:exp_pattern_provider"
@@ -1741,6 +2305,11 @@
 			dependencies: ["29D7E2B8D3BF1D9E"]
 			hide_dependency_lines: true
 			id: "66668FEA4D4F8573"
+			rewards: [{
+				id: "28DB4814395F8538"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6D8F4E2245FFC8DE"
 				item: "expatternprovider:pattern_modifier"
@@ -1753,6 +2322,11 @@
 			dependencies: ["29FCED9F85FB2882"]
 			description: ["{ftbquests.ae2.mega_component_skip.description}"]
 			id: "334AE7B73C221920"
+			rewards: [{
+				id: "0CB8811CB43A77BC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3CAA8DC4BE329DE5"
 				item: "megacells:cell_component_1m"
@@ -1768,6 +2342,11 @@
 				"43F95399A861BDB4"
 			]
 			id: "010737DB9CD70C4C"
+			rewards: [{
+				id: "26EE3E7485DD7FBD"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "069D3081DFFA38E1"
 				item: "expatternprovider:wireless_hub"
@@ -1779,6 +2358,11 @@
 		{
 			dependencies: ["2519DA28EADD47D4"]
 			id: "32473F3391BBD84E"
+			rewards: [{
+				id: "41D43219CFBB7014"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "22EA13C1116F4813"
 				item: "expandedae:giga_pattern_provider"
@@ -1790,6 +2374,11 @@
 		{
 			dependencies: ["272CE9BF358D64FE"]
 			id: "795C46D5A4EFCCB8"
+			rewards: [{
+				id: "174F9899B6C8D072"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "3CA241990674F706"
@@ -1809,6 +2398,11 @@
 		{
 			dependencies: ["4F37BFEF63998350"]
 			id: "5177CE4CC1DE1A04"
+			rewards: [{
+				id: "3B6DC527323EAC25"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "62845C535A1F4BA6"
@@ -1838,6 +2432,11 @@
 		{
 			dependencies: ["795C46D5A4EFCCB8"]
 			id: "1E15558A3C50312D"
+			rewards: [{
+				id: "0E21CF8AEC15E8F4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "0CE17D4332D2B389"
@@ -1867,6 +2466,11 @@
 		{
 			dependencies: ["617E17824856450D"]
 			id: "145E8628D8EAB5A8"
+			rewards: [{
+				id: "6C759E2074206795"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5EC8800E511924D5"
 				item: "pccard:card_programmed_circuit"
@@ -1878,6 +2482,11 @@
 		{
 			dependencies: ["1E15558A3C50312D"]
 			id: "0D861EADBA0E8735"
+			rewards: [{
+				id: "02BB32F4B492CD5B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5CF4649A48F2B646"
 				item: "expandedgt:dual_me_stocking_input_hatch"
@@ -1889,6 +2498,11 @@
 		{
 			dependencies: ["0094C2E72105E8CA"]
 			id: "4E9302D20943CC77"
+			rewards: [{
+				id: "73F6842B7067DE69"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "68481E491D8FF1B6"
 				item: "gtceu:me_pattern_buffer"
@@ -1900,6 +2514,11 @@
 		{
 			dependencies: ["4E9302D20943CC77"]
 			id: "3750F37A0F2A98E1"
+			rewards: [{
+				id: "4DAAA1CA2ABB48E4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "27F46532EA7E6560"
 				item: "gtceu:me_pattern_buffer_proxy"
@@ -1907,6 +2526,28 @@
 			}]
 			x: -11.0d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5F80268C02FAD5F6"
+				"7452592DFEBC7C44"
+			]
+			description: ["{ftbquests.ae2.certus_quartz.description}"]
+			id: "6896F9AF41EE8571"
+			rewards: [{
+				id: "7C19B021AC9106CC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "circle"
+			subtitle: "{ftbquests.ae2.certus_quartz.subtitle}"
+			tasks: [{
+				id: "235D4BCFE60C7A06"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
 		}
 	]
 	title: "{ftbquests.ae2.title}"

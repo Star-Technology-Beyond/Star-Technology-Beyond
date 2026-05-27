@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.draco_infusion(id('elder_dragon_wings'))
     .itemInputs('minecraft:elytra', 'gtceu:void_foil', 'gtceu:void_foil', 'kubejs:borealic_neutron_reflector', 
-        'gtceu:neutron_reflector', 'gtceu:void_rod', 'gtceu:void_rod')
+        'kubejs:borealic_neutron_reflector', 'gtceu:void_rod', 'gtceu:void_rod')
     .inputFluids('gtceu:dragon_breath 1200')
     .itemOutputs('kubejs:end_talisman')
     .duration(320)
