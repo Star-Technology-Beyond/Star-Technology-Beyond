@@ -1638,6 +1638,30 @@
 			x: 1.5d
 			y: 4.0d
 		}
+		{
+			dependencies: ["3325914DB92AEF1B"]
+			description: [
+				"We behold you... The &lCross-Dimensional Laser Tunnelling Array&r!"
+				""
+				"With the power of 2 &bAE2 Quantum Entangled Singularities&r, you can transmit power from one array to another, even across dimensions &o(this will be useful in the future!)&r just dont forget to put them in the item bus!"
+			]
+			hide_dependency_lines: false
+			id: "32D4B2183374919B"
+			rewards: [{
+				count: 2
+				id: "7253D5C3337108DC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "519C609891543019"
+				item: "start_core:cross_dimensional_laser"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
 	]
 	title: "{ftbquests.futuristic_mechanisms.title}"
 }
