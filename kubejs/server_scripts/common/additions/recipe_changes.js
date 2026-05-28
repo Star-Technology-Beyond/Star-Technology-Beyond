@@ -28,12 +28,12 @@ ServerEvents.recipes(event => {
         .EUt(30);
 
     ['blackstone','calcite','tuff','dripstone_block'].forEach(stone => {
-    event.recipes.gtceu.rock_breaker(id(`${stone}`))
-        .notConsumable(`minecraft:${stone}`)
-        .itemOutputs(`minecraft:${stone}`)
-        .adjacentFluids("minecraft:lava", 'minecraft:water')
-        .duration(16)
-        .EUt(7);
+        event.recipes.gtceu.rock_breaker(id(`${stone}`))
+            .notConsumable(`minecraft:${stone}`)
+            .itemOutputs(`minecraft:${stone}`)
+            .adjacentFluids("minecraft:lava", (stone == 'blackstone') ? 'exnihilosequentia:witch_water' : 'minecraft:water')
+            .duration(16)
+            .EUt(7);
     });
 
     //Added Tools

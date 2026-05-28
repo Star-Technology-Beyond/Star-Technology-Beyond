@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     ].forEach(type=> {
         event.recipes.gtceu.large_rock_crusher(id(type.stone))
             .notConsumable(`minecraft:${type.stone}`)
-            .notConsumableFluid('minecraft:water 1000')
+            .notConsumableFluid((type.stone == 'blackstone') ? 'exnihilosequentia:witch_water 1000' : 'minecraft:water 1000')
             .notConsumableFluid('minecraft:lava 1000')
             .itemOutputs(`minecraft:${type.stone}`)
             .duration(16)
