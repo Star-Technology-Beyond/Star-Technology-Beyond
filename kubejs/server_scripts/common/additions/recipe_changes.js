@@ -125,7 +125,8 @@ ServerEvents.recipes(event => {
         .circuit(24)
         .outputFluids('gtceu:npk_solution 6400')
         .EUt(280)
-        .duration(120);
+        .duration(120)
+        .category(GTRecipeCategories.LCR_SKIP);
 
     //NPK Decomp
     event.remove({ id:'gtceu:electrolyzer/decomposition_electrolyzing_npk_solution' });
