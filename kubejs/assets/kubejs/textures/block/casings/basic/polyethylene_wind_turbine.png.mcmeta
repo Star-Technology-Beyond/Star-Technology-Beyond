@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/casings/basic/polyethylene_wind_turbine_ctm"
+    }
+}
