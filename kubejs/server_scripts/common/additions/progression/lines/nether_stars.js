@@ -121,12 +121,17 @@ ServerEvents.recipes(event => {
         .duration(300)
         .EUt(GTValues.VA[GTValues.IV]);
 
-    event.recipes.gtceu.implosion_compressor(id(`nether_star_dynamite`))
-        .itemInputs('kubejs:impure_nether_star', '8x gtceu:dynamite')
-        .itemOutputs('minecraft:nether_star')
-        .chancedOutput('gtceu:dark_ash_dust', 2500, 0)
-        .duration(200)
-        .EUt(GTValues.VHA[GTValues.EV]);
+    const implosion = [{name: 'tnt', explosive: '4x minecraft:tnt'},{name: 'dynamite', explosive: '2x gtceu:dynamite'},
+        {name: 'itnt', explosive: 'gtceu:industrial_tnt'},{name: 'powderbarrel', explosive: '8x gtceu:powderbarrel'}]
+
+    implosion.forEach(shard => {
+        event.recipes.gtceu.implosion_compressor(id(`nether_star_${shard.name}`))
+            .itemInputs('kubejs:impure_nether_star', shard.explosive)
+            .itemOutputs('minecraft:nether_star')
+            .chancedOutput('gtceu:dark_ash_dust', 2500, 0)
+            .duration(200)
+            .EUt(GTValues.VHA[GTValues.EV]);
+    });
     
     event.recipes.gtceu.forge_hammer(id('nether_star_shard'))
         .itemInputs('minecraft:nether_star')
