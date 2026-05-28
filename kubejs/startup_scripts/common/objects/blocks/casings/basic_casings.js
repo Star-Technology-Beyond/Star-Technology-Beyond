@@ -20,6 +20,17 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/casings/basic/casing_wood');
 
+    event.create('polyethylene_wind_turbine')
+        .hardness(5)
+        .resistance(1)
+        .soundType('metal')
+        .requiresTool(true)
+        .noValidSpawns(true)
+        .tagBlock('mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .textureAll('kubejs:block/casings/basic/polyethylene_wind_turbine');
+
+        
     event.create('peek_casing')
         .hardness(5)
         .resistance(1)
