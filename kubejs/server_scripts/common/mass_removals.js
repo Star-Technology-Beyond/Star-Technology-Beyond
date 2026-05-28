@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         'gtceu:coke_oven/coal_to_coke_block', 'gtceu:large_chemical_reactor/iodine', 'gtceu:chemical_reactor/iodine', 'gtceu:autoclave/raw_crystal_chip_from_part_bacterial_sludge', 
         'gtceu:autoclave/raw_crystal_chip_from_part_mutagen', 'gtceu:autoclave/raw_crystal_chip_olivine', 'gtceu:pyrolyse_oven/bio_chaff_to_fermented_biomass', 'gtceu:fermenter/fermented_biomass',
         'gtceu:pyrolyse_oven/bio_chaff_to_biomass', 'gtceu:large_chemical_reactor/bacterial_sludge', 'gtceu:brewery/bacteria', 'gtceu:pyrolyse_oven/log_to_heavy_oil', 'expandedae:crafting/giga_pattern_provider',
-        'create:cutting/runtime_generated/compat/create/tag_runtime_generated/compat/gtceu/rubber_to_rubber_planks', 'create:haunting/nether_brick', 'gtceu:macerator/test'
+        'create:cutting/runtime_generated/compat/create/tag_runtime_generated/compat/gtceu/rubber_to_rubber_planks', 'create:haunting/nether_brick', 'gtceu:macerator/test', 'gtceu:rock_breaker/blackstone'
     ];
 
     const toRemoveType = ['thermal:sawmill', 'thermal:pulverizer', 'thermal:insolator', 'thermal:centrifuge', 'thermal:crucible', 'thermal:chiller', 'thermal:refinery',
