@@ -28,12 +28,12 @@ ServerEvents.recipes(event => {
         .EUt(30);
 
     ['blackstone','calcite','tuff','dripstone_block'].forEach(stone => {
-    event.recipes.gtceu.rock_breaker(id(`${stone}`))
-        .notConsumable(`minecraft:${stone}`)
-        .itemOutputs(`minecraft:${stone}`)
-        .adjacentFluids("minecraft:lava", 'minecraft:water')
-        .duration(16)
-        .EUt(7);
+        event.recipes.gtceu.rock_breaker(id(`${stone}`))
+            .notConsumable(`minecraft:${stone}`)
+            .itemOutputs(`minecraft:${stone}`)
+            .adjacentFluids("minecraft:lava", (stone == 'blackstone') ? 'exnihilosequentia:witch_water' : 'minecraft:water')
+            .duration(16)
+            .EUt(7);
     });
 
     //Added Tools
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
     });
 
     ['iron','steel','neodymium','samarium','zapolgium','pure_netherite','holmium'].forEach(Magnetic=>{
-    event.remove({id: `gtceu:alloy_smelter/alloy_smelt_magnetic_${Magnetic}_dust_to_block`});
+        event.remove({id: `gtceu:alloy_smelter/alloy_smelt_magnetic_${Magnetic}_dust_to_block`});
     });
 
     // Mycelium Leather
@@ -225,7 +225,6 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:silicon_dioxide_dust')
         .inputFluids('gtceu:echo_r 144')
         .itemOutputs('gtceu:echo_shard_dust')
-        .circuit(1)
         .duration(160)
         .EUt(GTValues.VA[GTValues.ZPM]);
 

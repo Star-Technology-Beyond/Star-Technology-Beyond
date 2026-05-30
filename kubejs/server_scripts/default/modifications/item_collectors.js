@@ -1,3 +1,4 @@
+//requires: itemcollectors
 global.not_hardmode(() => {
 
     ServerEvents.recipes(event => {

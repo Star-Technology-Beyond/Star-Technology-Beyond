@@ -1,3 +1,4 @@
+//requires: fluxnetworks
 ServerEvents.recipes(event => {
     const id = global.id;
 

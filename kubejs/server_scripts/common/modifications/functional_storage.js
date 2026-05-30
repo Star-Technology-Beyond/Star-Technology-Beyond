@@ -1,3 +1,4 @@
+//requires: functionalstorage
 ServerEvents.recipes(event => {
     const id = global.id;
 
@@ -85,15 +86,27 @@ ServerEvents.recipes(event => {
         C: '#gtceu:circuits/lv'
     }).id('start:shaped/ender_drawer');
 
-    [
-        '1',
-        '2',
-        '4'
-    ].forEach(size => {
-        event.remove({ output: `functionalstorage:framed_${size}` });
-        event.shapeless(`1x functionalstorage:framed_${size}`, [`1x #functionalstorage:drawer_size_${size}`, 'framedblocks:framed_hammer']).id(`start:shapeless/framed_drawer_${size}`);
-    })
-    event.shapeless('1x functionalstorage:framed_storage_controller', ['functionalstorage:storage_controller', 'framedblocks:framed_hammer']);
+    global.with_framedblocks(() => {
+        [
+            '1',
+            '2',
+            '4'
+        ].forEach(size => {
+            event.remove({ output: `functionalstorage:framed_${size}` });
+            event.shapeless(`1x functionalstorage:framed_${size}`, [`1x #functionalstorage:drawer_size_${size}`, 'framedblocks:framed_hammer']).id(`start:shapeless/framed_drawer_${size}`);
+        })
+        event.shapeless('1x functionalstorage:framed_storage_controller', ['functionalstorage:storage_controller', 'framedblocks:framed_hammer']);
+    }, () => {
+        [
+            '1',
+            '2',
+            '4'
+        ].forEach(size => {
+            event.remove({ output: `functionalstorage:framed_${size}` });
+            event.shapeless(`1x functionalstorage:framed_${size}`, [`1x #functionalstorage:drawer_size_${size}`, '#forge:tools/hammers']).id(`start:shapeless/framed_drawer_${size}`);
+        })
+        event.shapeless('1x functionalstorage:framed_storage_controller', ['functionalstorage:storage_controller', '#forge:tools/hammers']);
+    });
 
     event.shaped('1x functionalstorage:redstone_upgrade', [
         ' R ',

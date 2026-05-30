@@ -1,3 +1,4 @@
+//requires: travelanchors
 ServerEvents.recipes(event => {
     const id = global.id;
 

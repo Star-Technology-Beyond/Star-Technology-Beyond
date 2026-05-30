@@ -1,3 +1,4 @@
+//requires: xycraft_world
 ServerEvents.recipes(event => {
     const id = global.id;
 
