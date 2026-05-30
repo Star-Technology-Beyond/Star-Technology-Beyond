@@ -316,3 +316,32 @@ ServerEvents.recipes(event => {
   }
   
 });
+
+
+const modRequirements = {
+    architects_palette: 'architects_palette',
+    xycraft_world: 'xycraft_world',
+    chipped: 'chipped',
+    framedblocks: 'framedblocks',
+    effortlessbuilding: 'effortlessbuilding'
+};
+
+// Auto-generate all the wrapper functions
+// Similar to the packmode helpers
+Object.entries(modRequirements).forEach(([name, mod]) => {
+    const mods = Array.isArray(mod) ? mod : [mod];
+    /**
+     * @param {function} if_true - Function to execute if current mod is loaded'.
+     * @param {function} if_false - Function to execute if current mod is NOT loaded'.
+     */
+    global[`with_${name}`] = (if_true, if_false) => {
+        if (mods.every(m => Platform.isLoaded(m))) {
+          if (if_true && typeof if_true === 'function') {
+            if_true();
+          }
+        } else if (if_false && typeof if_false === 'function') {
+            if_false();
+        }
+    };
+});
+

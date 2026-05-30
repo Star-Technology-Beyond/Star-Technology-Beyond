@@ -42,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('E', Predicates.blocks('kubejs:pallaridium_engine_intake_casing'))
             .where('X', Predicates.abilities(PartAbility.OUTPUT_ENERGY)
                 .or(Predicates.abilities(PartAbility.OUTPUT_LASER)))
-            .where(' ', Predicates.air())
+            .where(' ', Predicates.any())
             .build())
         .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
             'gtceu:block/multiblock/implosion_compressor');

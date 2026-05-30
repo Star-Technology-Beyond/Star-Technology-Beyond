@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     ], {
         R: 'gtceu:wrought_iron_plate',
         I: 'gtceu:rubber_plate',
-        G: 'thermal:obsidian_glass'
+        G: 'gtceu:tempered_glass'
     }).id('start:shaped/ulv_fls_kit');
     
     // ARC's and MCI's

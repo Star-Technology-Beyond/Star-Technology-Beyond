@@ -1,3 +1,4 @@
+//requires: pipez
 global.not_hardmode(() => {
 
     ServerEvents.recipes(event => {
@@ -117,7 +118,7 @@ global.not_hardmode(() => {
             const upgrade = `pipez:${tier}_upgrade`;
             event.shapeless(
                 Item.of(upgrade),
-                [Item.of(upgrade).ignoreNBT()]
+                [Item.of(upgrade)]
             ).id(`start:shapeless/pipez_${tier}_upgrade_reset`);
         });
 

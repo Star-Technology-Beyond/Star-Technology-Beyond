@@ -1,4 +1,4 @@
-
+//requires: projectred_core
 ServerEvents.recipes(event => {
 
     const core = (id) => `projectred_core:${id}`;

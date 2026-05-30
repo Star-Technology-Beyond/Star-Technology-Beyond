@@ -1,5 +1,4 @@
 global.not_hardmode(() => {
-
     ServerEvents.recipes(event => {
         const id = global.id;
 
@@ -23,31 +22,31 @@ global.not_hardmode(() => {
                 S: 'minecraft:stick'
             }).id(`start:shaped/${type}_hammer`);
         });
-        
-        event.recipes.create.mixing('3x gtceu:bronze_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/tin']).heatRequirement('lowheated').id('start:create_mixing/bronze');
-        event.shapeless('3x gtceu:bronze_dust', ['gtceu:copper_dust', 'gtceu:copper_dust', 'gtceu:copper_dust', 'gtceu:tin_dust']).id('start:shapeless/bronze_dust');
 
-        event.recipes.create.mixing('1x gtceu:red_alloy_ingot', ['minecraft:copper_ingot', '4x minecraft:redstone']).heatRequirement('lowheated').id('start:create_mixing/red_alloy');
-        event.shapeless('1x gtceu:red_alloy_dust', ['gtceu:copper_dust', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone']).id('start:shapeless/red_alloy_dust');
+        [
+            {result: 'bronze', amount: 3, ingredients: ['3x gtceu:copper', 'gtceu:tin']},
+            {result: 'red_alloy', amount: 1, ingredients: ['gtceu:copper', '4x minecraft:redstone']},
+            {result: 'brass', amount: 3, ingredients: ['3x gtceu:copper', 'gtceu:zinc']},
+            {result: 'invar', amount: 2, ingredients: ['2x gtceu:iron', 'gtceu:nickel']},
+            {result: 'soul_infused', amount: 1, ingredients: ['2x thermal_extra:soul_sand', 'gtceu:invar']},
+            {result: 'tin_alloy', amount: 1, ingredients: ['gtceu:tin', 'gtceu:iron']}
+        ].forEach(alloy => {
+            const { result, amount, ingredients } = alloy;
 
-        event.recipes.create.mixing('3x gtceu:brass_ingot', ['3x minecraft:copper_ingot', '#forge:ingots/zinc']).heatRequirement('lowheated').id('start:create_mixing/brass');
-        event.shapeless('3x gtceu:brass_dust', ['gtceu:copper_dust', 'gtceu:copper_dust', 'gtceu:copper_dust', 'gtceu:zinc_dust']).id('start:shapeless/brass_dust');
+            let resultStack = `${(amount != 1) ? `${amount}x ` : ''}gtceu:${result}`;
+            let dustIngredients = [];
+            let ingotIngredients = [];
 
-        event.recipes.create.mixing('2x gtceu:invar_ingot', ['2x minecraft:iron_ingot', '#forge:ingots/nickel']).heatRequirement('lowheated').id('start:create_mixing/invar');
-        event.shapeless('2x gtceu:invar_dust', ['gtceu:iron_dust', 'gtceu:iron_dust', 'gtceu:nickel_dust']).id('start:shapeless/invar_dust');
-
-        event.recipes.create.mixing('1x gtceu:soul_infused_ingot', ['2x thermal_extra:soul_sand_dust', '#forge:ingots/invar']).heatRequirement('lowheated').id('start:create_mixing/soul_infused');
-        event.shapeless('1x gtceu:soul_infused_dust', ['thermal_extra:soul_sand_dust', 'thermal_extra:soul_sand_dust', 'gtceu:invar_dust']).id('start:shapeless/soul_infused_dust');
-
-        event.recipes.create.mixing('3x gtceu:bronze_ingot', ['3x gtceu:copper_dust', 'gtceu:tin_dust']).heatRequirement('lowheated').id('start:create_mixing/bronze_dust');
-
-        event.recipes.create.mixing('1x gtceu:red_alloy_ingot', ['gtceu:copper_dust', '4x minecraft:redstone']).heatRequirement('lowheated').id('start:create_mixing/red_alloy_dust');
-
-        event.recipes.create.mixing('3x gtceu:brass_ingot', ['3x gtceu:copper_dust', 'gtceu:zinc_dust']).heatRequirement('lowheated').id('start:create_mixing/brass_dust');
-
-        event.recipes.create.mixing('2x gtceu:invar_ingot', ['2x gtceu:iron_dust', 'gtceu:nickel_dust']).heatRequirement('lowheated').id('start:create_mixing/invar_dust');
-
-        event.recipes.create.mixing('1x gtceu:soul_infused_ingot', ['2x thermal_extra:soul_sand_dust', 'gtceu:invar_dust']).heatRequirement('lowheated').id('start:create_mixing/soul_infused_dust');
+            ingredients.forEach(ingredient => {
+                dustIngredients.push(`${ingredient}${(ingredient.endsWith('redstone')) ? '' : '_dust'}`);
+                if (ingredient.endsWith('copper') || ingredient.endsWith('iron')) ingredient = ingredient.replace('gtceu', 'minecraft');
+                ingotIngredients.push(`${ingredient}${(ingredient.endsWith('redstone')) ? '' : (ingredient.endsWith('soul_sand')) ? '_dust' : '_ingot'}`);
+            });
+            
+            event.recipes.create.mixing(`${resultStack}_ingot`, ingotIngredients).heatRequirement('lowheated').id(`start:create_mixing/${result}`);
+            event.recipes.create.mixing(`${resultStack}_ingot`, dustIngredients).heatRequirement('lowheated').id(`start:create_mixing/${result}_with_dust`);
+            event.shapeless(`${resultStack}_dust`, dustIngredients).id(`start:shapeless/${result}_dust`);
+        });
 
     });
 });
