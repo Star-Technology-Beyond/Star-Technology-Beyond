@@ -19,11 +19,8 @@ ServerEvents.recipes(event => {
     event.remove({id: 'minecraft:popped_chorus_fruit'});
     event.replaceInput({ input: 'minecraft:popped_chorus_fruit' },'minecraft:popped_chorus_fruit','minecraft:chorus_fruit');
     event.recipes.gtceu.assembly_line(id('true_absolute_chorus'))
-        .itemInputs('kubejs:voidic_core', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', 
-        '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', 
-        '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', 
-        '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit')
-        .inputFluids('gtceu:dragon_breath 1500')
+        .itemInputs('kubejs:voidic_core', '1024x minecraft:popped_chorus_fruit')
+        .inputFluids('gtceu:ender_air 5000000')
         .itemOutputs('kubejs:true_absolute_chorus')
         .duration(12000)
         .stationResearch(
