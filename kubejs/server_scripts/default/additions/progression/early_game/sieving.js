@@ -257,6 +257,7 @@ global.not_hardmode(() => {
             // Waterlogged Dust Sieving
             SievingRecipeHandler
                 .input(csi.dust)
+                .waterlogged(true)
                 .add('xycraft_world:xychorium_gem_blue', 0.75)
                 .add('xycraft_world:xychorium_gem_red', 0.75)
                 .add('xycraft_world:xychorium_gem_green', 0.75)

@@ -287,7 +287,7 @@ ServerEvents.recipes(event => {
         event.shapeless(
           Item.of(`kubejs:ulv_${component}`),
           [`gtceu:ulv_${component}`]
-        ).id(id(`old_to_new_HM_ulv_${component}`));
+        ).id(id(`old_to_new_hm_ulv_${component}`));
     });
 
     //ulv removals
