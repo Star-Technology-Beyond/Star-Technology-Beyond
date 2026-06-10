@@ -31,11 +31,15 @@ global.not_hardmode(() => {
             6: 'start_core:neutronium_fluid_cell'
         }
 
-        let nuclearRod = (type, tier, composition, decomposition) => {
+        let nuclearRod = (type, tier, composition, decomposition, circuit) => {
 
             let cell = FLUID_CELL_TYPE[tier];
 
-            event.recipes.gtceu.forming_press(id(type + '_fuel_rod'))
+            let forming_press = event.recipes.gtceu.forming_press(id(type + '_fuel_rod'))
+            
+            if (circuit  != null) { forming_press.circuit(circuit); }
+
+            forming_press
                 .itemInputs(cell)
                 .itemInputs(composition)
                 .itemOutputs('kubejs:' + type + '_fuel_rod')
@@ -109,12 +113,14 @@ global.not_hardmode(() => {
         nuclearRod(`caf`,
             5,
             `4x ${Cf252}`,
-            [`2x ${Fm257}`,`2x ${Pu241}`]
+            [`2x ${Fm257}`,`2x ${Pu241}`],
+            0
         );
         nuclearRod(`etu`,
             5,
             [`2x ${Cm244}`,`1x ${Cf252}`,`1x ${Am241}`],
-            [`2x ${Pu238}`,`2x ${Es253}`]
+            [`2x ${Pu238}`,`2x ${Es253}`],
+            1
         );
         nuclearRod(`leu233`,
             5,
