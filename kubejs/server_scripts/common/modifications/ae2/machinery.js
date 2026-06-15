@@ -484,14 +484,14 @@ ServerEvents.recipes(event => {
         });
     });
     
-    ['luv'].forEach(tier => { //to allow for dual stockings to be thrown into this when done
+    ['luv', 'zpm'].forEach(tier => { 
         casingMaterial = global.casingMaterials[tier];
         pipeMaterial = (tier == 'luv') ? 'gtceu:niobium_titanium' : 'gtceu:polybenzimidazole';
         fluidMulti = (tier == 'luv') ? 7 : 8;
         consTier = (tier == 'luv') ? 'ZPM' : 'UV';
 
         ['input', 'output'].forEach(io => {
-            recId = (io == 'input' && tier == 'luv') ? 'input' : (io == 'input' && tier == 'luv') ? 'stocking_input' : 'output';
+            recId = (io == 'input' && tier == 'luv') ? 'input' : (io == 'input' && tier == 'zpm') ? 'stocking_input' : 'output';
             input = (tier == 'luv') ? 'input' : 'stocking_input';
             circuit = (io == 'input') ? 1 : 2;
             
@@ -517,10 +517,6 @@ ServerEvents.recipes(event => {
             `gtceu:me_stocking_input_${type}`, Item.of('gtceu:item_tag_filter'), '4x gtceu:naquadah_alloy_plate', 'gtceu:zpm_sensor', 'gtceu:zpm_emitter'
         ], GTValues.VHA[GTValues.ZPM]);
     });
-
-    assemblerFluid('dual_me_stocking_input_hatch', 'expandedgt:dual_me_stocking_input_hatch', [
-        'expandedgt:expanded_me_stocking_input_hatch', 'expandedgt:expanded_me_stocking_input_bus', '2x #gtceu:circuits/uv', 'gtceu:zpm_emitter', 'gtceu:zpm_sensor'
-    ], 'indium_tin_lead_cadmium_soldering_alloy 576', GTValues.VA[GTValues.ZPM]);
         
     //Misc
     assemblerFluid('linked_terminal', 'expandedgt:linked_terminal', [
