@@ -51,10 +51,10 @@ ServerEvents.recipes(event => {
         .duration(30)
         .EUt(GTValues.VA[GTValues.EV]);
 
-    event.recipes.gtceu.chemical_skip(id('cupric_chloride_solution_skip'))
+    event.recipes.gtceu.chemical_skip(id('copper_i_chloride_solution_skip'))
         .itemInputs('1x gtceu:copper_dust')
         .inputFluids('gtceu:hydrogen 2000','gtceu:chlorine 3000')
-        .outputFluids('gtceu:cupric_chloride_solution 2000')
+        .outputFluids('gtceu:copper_i_chloride_solution 2000')
         .duration(30)
         .EUt(GTValues.VHA[GTValues.IV]);
 

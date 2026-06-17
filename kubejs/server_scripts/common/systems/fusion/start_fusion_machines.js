@@ -153,9 +153,9 @@ ServerEvents.recipes(event => {
     ReflectorBlock(T2Reflector,T1Reflector,'luv','vanadium_gallium',T2Panel,'polybenzimidazole 576',2,CleanroomType.CLEANROOM);
     ReflectorBlock(T3Reflector,T2Reflector,'zpm','yttrium_barium_cuprate',T3Panel,'polyether_ether_ketone 288',3,CleanroomType.CLEANROOM);
     ReflectorBlock(T4Reflector,T3Reflector,'uv','europium',T4Panel,'polyether_ether_ketone 576',4,CleanroomType.STERILE_CLEANROOM);
-    ReflectorBlock(T5Reflector,T4Reflector,'uhv','cerium_tritelluride',T5Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 288',5,CleanroomType.STERILE_CLEANROOM);
-    ReflectorBlock(T6Reflector,T5Reflector,'uev','polonium_bismide',T6Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 576',6,CleanroomType.STERILE_CLEANROOM);
-    ReflectorBlock(T7Reflector,T6Reflector,'uiv','lepton_resonant_thallium_antimonide',T7Panel,'poly_34_ethylenedioxythiophene_polystyrene_sulfate 1152',7,$StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
+    ReflectorBlock(T5Reflector,T4Reflector,'uhv','cerium_tritelluride',T5Panel,'pedot_pss 288',5,CleanroomType.STERILE_CLEANROOM);
+    ReflectorBlock(T6Reflector,T5Reflector,'uev','polonium_bismide',T6Panel,'pedot_pss 576',6,CleanroomType.STERILE_CLEANROOM);
+    ReflectorBlock(T7Reflector,T6Reflector,'uiv','lepton_resonant_thallium_antimonide',T7Panel,'pedot_pss 1152',7,$StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM);
 
     // === Coils ===    
     event.remove({output: 'gtceu:superconducting_coil'});
@@ -218,8 +218,8 @@ ServerEvents.recipes(event => {
     FusionCasing('2x gtceu:fusion_casing_mk2','zpm','gtceu',T2Panel,'gtceu:fusion_coil','gtceu:polybenzimidazole 576',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
     FusionCasing('2x gtceu:fusion_casing_mk3','uv','gtceu',T3Panel,'gtceu:fusion_coil','gtceu:polyether_ether_ketone 288',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
     FusionCasing('2x start_core:auxiliary_boosted_fusion_casing_mk1','uhv','kubejs',T4Panel,'start_core:auxiliary_fusion_coil_mk1','gtceu:polyether_ether_ketone 576',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
-    FusionCasing('2x start_core:fusion_casing_mk4','uev','kubejs',T5Panel,'start_core:advanced_fusion_coil','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 288',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
-    FusionCasing('2x start_core:auxiliary_boosted_fusion_casing_mk2','uiv','kubejs',T6Panel,'start_core:auxiliary_fusion_coil_mk2','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 576',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
+    FusionCasing('2x start_core:fusion_casing_mk4','uev','kubejs',T5Panel,'start_core:advanced_fusion_coil','gtceu:pedot_pss 288',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
+    FusionCasing('2x start_core:auxiliary_boosted_fusion_casing_mk2','uiv','kubejs',T6Panel,'start_core:auxiliary_fusion_coil_mk2','gtceu:pedot_pss 576',CleanroomType.CLEANROOM,GTValues.VA[GTValues.LuV]);
 
     event.remove({output: 'gtceu:fusion_glass'});
     event.recipes.gtceu.assembler(id('fusion_glass'))

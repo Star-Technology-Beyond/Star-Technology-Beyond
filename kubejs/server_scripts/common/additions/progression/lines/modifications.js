@@ -72,17 +72,17 @@ ServerEvents.recipes(event => {
         .EUt(80);
 
     //carbon acid fixes
-    event.recipes.gtceu.electrolyzer(id('carbon_acid_fix'))
-        .inputFluids('gtceu:carbon_acid 1000')
+    event.recipes.gtceu.electrolyzer(id('carbonic_acid_fix'))
+        .inputFluids('gtceu:carbonic_acid 1000')
         .outputFluids('minecraft:water 1000','gtceu:carbon_dioxide')
         .duration(60)
         .EUt(60);
 
-    event.recipes.gtceu.large_chemical_reactor(id('carbon_acid_fix'))
+    event.recipes.gtceu.large_chemical_reactor(id('carbonic_acid_fix'))
         .itemInputs('3x gtceu:potassium_carbonate_dust')
         .inputFluids('gtceu:hydrogen 1000')
         .itemOutputs('3x gtceu:potassium_dust')
-        .outputFluids('gtceu:carbon_acid 500')
+        .outputFluids('gtceu:carbonic_acid 500')
         .duration(100)
         .EUt(GTValues.VHA[GTValues.IV]);
         

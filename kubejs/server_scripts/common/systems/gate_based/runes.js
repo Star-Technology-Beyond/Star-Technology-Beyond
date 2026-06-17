@@ -32,19 +32,19 @@ ServerEvents.recipes(event => {
             GTValues.VHA[GTValues.ZPM],600)
 
         rcasRecipe('runic_reinforced_plating','gtceu:brown_glass_lens','asg_enscription_plate',
-            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
+            '64x gtceu:silicon_carbide_over_dibismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
             GTValues.VHA[GTValues.UEV],600)
         rcasRecipe('runic_pathway_plating','gtceu:amethyst_lens','asg_enscription_plate',
-            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
+            '64x gtceu:silicon_carbide_over_dibismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
             GTValues.VHA[GTValues.UEV],600)
         rcasRecipe('runic_stabilization_plating','gtceu:emerald_lens','asg_enscription_plate',
-            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
+            '64x gtceu:silicon_carbide_over_dibismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
             GTValues.VHA[GTValues.UEV],600)
         rcasRecipe('runic_transportation_plating','gtceu:certus_quartz_lens','asg_enscription_plate',
-            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
+            '64x gtceu:silicon_carbide_over_dibismuth_tritelluride_dust','gtceu:runic_convergence_infusion 5000',
             GTValues.VHA[GTValues.UEV],600)
         rcasRecipe('asg_dpu','gtceu:orange_glass_lens','asg_enscription_chip',
-            '8x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 750',
+            '8x gtceu:silicon_carbide_over_dibismuth_tritelluride_dust','gtceu:runic_convergence_infusion 750',
             GTValues.VHA[GTValues.UEV],600)
 
         rcasRecipe('transcension_engraved_undina_sigil','gtceu:echo_shard_lens','dsg_enscription_plate',

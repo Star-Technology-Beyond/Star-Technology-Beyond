@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:uhv_robot_arm', '12x gtceu:uhv_fluid_regulator', '12x gtceu:ruthenium_trinium_americium_neutronate_quadruple_wire', '4x gtceu:calamatium_rotor',
             '4x gtceu:cerium_tritelluride_spring', '8x gtceu:calamatium_screw')
         .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 13824',
-            'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 10368',
+            'gtceu:pedot_pss 10368',
             'gtceu:utopian_akreyrium 12000',
             'gtceu:perfluoroelastomer_rubber 8640')
         .itemOutputs('gtceu:mega_abs')
