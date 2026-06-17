@@ -31,7 +31,7 @@ global.not_hardmode(() => {
                 blockType = "parallel_hatch_UHVPLUS";
             }
             else {                
-                recycleOutputs = ["12x gtceu:tungsten_steel", "3x gtceu:platinum", "2x gtceu:iridium", "gtceu:tungsten",
+                recycleOutputs = ["12x gtceu:tungstensteel", "3x gtceu:platinum", "2x gtceu:iridium", "gtceu:tungsten",
                     /*fake blockBools*/ false, false, false, false];
                 return recycleOutputs;
             }

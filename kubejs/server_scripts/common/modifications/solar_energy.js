@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
     // SolarPanel('1','aluminium','mirror','mv','','copper','')
     // SolarPanel('2','stainless_steel','','hv','silicon','gold','basic')
     // SolarPanel('3','titanium','','ev','silicon','aluminium','regular')
-    // SolarPanel('4','tungsten_steel','','iv','phosphorus','platinum','intermediate')
+    // SolarPanel('4','tungstensteel','','iv','phosphorus','platinum','intermediate')
     // SolarPanel('5','rhodium_plated_palladium','','luv','phosphorus','niobium_titanium','advanced')
     // SolarPanel('6','naquadah_alloy','','zpm','naquadah','vanadium_gallium','elite')
     // SolarPanel('7','darmstadtium','','uv','naquadah','yttrium_barium_cuprate','ultimate')

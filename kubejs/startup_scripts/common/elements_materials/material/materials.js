@@ -1671,7 +1671,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compIngotPlasmaSecColor('aerorelient_steel',['3x cobalt_brass','6x red_steel','2x watertight_steel','5x hsse','1x indium'],0x6e644d,0x50583e,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, rotor, no_decomp, no_abs_recipe]);
 
-    compIngotPlasmaSecColor('vastaqalloy_cr_4200x',['5x thacoloy_nq_42x','4x stellite_100','2x vanadium_gallium','3x tungsten_steel','1x chromium'],0x6f7343,0x534531,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
+    compIngotPlasmaSecColor('vastaqalloy_cr_4200x',['5x thacoloy_nq_42x','4x stellite_100','2x vanadium_gallium','3x tungstensteel','1x chromium'],0x6f7343,0x534531,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
     
     compIngotPlasmaSecColor('ultispestalloy_cmsh',['2x magmada_alloy','3x shellite','15x ultimet','6x hastelloy_c_276','1x hafnium'],0x684e6f,0x4b1146,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
     

@@ -31,7 +31,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where('F', Predicates.blocks('gtceu:tungstensteel_firebox_casing'))
             .where('R', Predicates.blocks('gtceu:rtm_alloy_coil_block'))
-            .where('E', Predicates.blocks('gtceu:tungsten_steel_frame'))
+            .where('E', Predicates.blocks('gtceu:tungstensteel_frame'))
             .where('G', Predicates.blocks('gtceu:tungstensteel_gearbox'))
             .where('H', Predicates.blocks('gtceu:stress_proof_casing'))
             .where(' ', Predicates.any())

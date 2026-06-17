@@ -73,7 +73,7 @@ global.componentMaterials = {
     iv: {
         tiers: { tier: 'iv', tier0: 'luv', tier1: 'ev', tier2: 'hv' },
         materials: {
-            tierMaterial: 'tungsten_steel',
+            tierMaterial: 'tungstensteel',
             wire: 'rtm_alloy',
             solder: 'soldering_alloy',
             lubricant: 'lubricant',
@@ -83,7 +83,7 @@ global.componentMaterials = {
             superconductor: 'samarium_iron_arsenic_oxide',
             chip: 'gtceu:hpic',
             battery: 'lapotronic_energy_orb',
-            rotorMaterial: 'tungsten_steel',
+            rotorMaterial: 'tungstensteel',
             grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
@@ -163,8 +163,8 @@ global.componentMaterials = {
             superconductor: 'uranium_rhodium_dinaquadide',
             buzz: 'naquadah_alloy',
             chip: 'gtceu:uhpic',
-            fluidStorage: 'gtceu:tungsten_steel_drum',
-            itemStorage: 'gtceu:tungsten_steel_crate',
+            fluidStorage: 'gtceu:tungstensteel_drum',
+            itemStorage: 'gtceu:tungstensteel_crate',
             rotorMaterial: 'naquadah_alloy',
             grind: 'gtceu:tungsten_grinding_head'
         },
