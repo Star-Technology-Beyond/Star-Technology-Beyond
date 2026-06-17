@@ -32,10 +32,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("C", Predicates.blocks("gtceu:extreme_engine_intake_casing"))
             .where("D", Predicates.abilities(PartAbility.MUFFLER))
             .where("E", Predicates.heatingCoils())
-            .where("F", Predicates.blocks("gtceu:ferrotungsten_alloy_pipe_casing"))
+            .where("F", Predicates.blocks("gtceu:tungstensteel_pipe_casing"))
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_ferrotungsten_alloy',
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
             'gtceu:block/multiblock/pyrolyse_oven')
         .additionalDisplay(global.pyrolyseOvenOverclockDisplay);
 

@@ -10,7 +10,7 @@
 //         .rotationState(RotationState.NON_Y_AXIS)
 //         .recipeType('docking_station')
 //         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH])
-//         .appearanceBlock(GTBlocks.CASING_FERROTUNGSTEN_ALLOY_ROBUST)
+//         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
 //         .pattern(definition => FactoryBlockPattern.start()
 //             .aisle('A#####A#A#####A', 'A#####A#A#####A', 'A#####A#A#####A', 'A#####A#A#####A', 'AAAAAAAAAAAAAAA', '###############', '###############') 
 //             .aisle('######BBB######', '######CCC######', '######BBB######', '###############', 'ADDDDDDEDDDDDDA', '###############', '###############') 
@@ -31,17 +31,17 @@
 //                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
 //                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2))
 //                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
-//             .where('C', Predicates.blocks('gtceu:ferrotungsten_alloy_firebox_casing'))
+//             .where('C', Predicates.blocks('gtceu:tungstensteel_firebox_casing'))
 //             .where('D', Predicates.blocks('minecraft:black_concrete'))
 //             .where('E', Predicates.blocks('gtceu:sturdy_machine_casing'))
 //             .where('F', Predicates.blocks('gtceu:naquadah_alloy_frame'))
-//             .where('G', Predicates.blocks('gtceu:ferrotungsten_alloy_gearbox'))
-//             .where('H', Predicates.blocks('gtceu:ferrotungsten_alloy_pipe_casing'))
+//             .where('G', Predicates.blocks('gtceu:tungstensteel_gearbox'))
+//             .where('H', Predicates.blocks('gtceu:tungstensteel_pipe_casing'))
 //             .where('I', Predicates.blocks('gtceu:extreme_engine_intake_casing'))
 //             .where('J', Predicates.blocks('minecraft:white_concrete'))
 //             .where('K', Predicates.blocks('architects_palette:hazard_slab'))
 //             .where('#', Predicates.any())
 //             .build())
-//         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_ferrotungsten_alloy',
+//         .workableCasingRenderer('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
 //         'gtceu:block/multiblock/implosion_compressor', false);
 // });

@@ -20,7 +20,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("B", Predicates.blocks("gtceu:assembly_line_grating"))
             .where("C", Predicates.blocks("ae2:quartz_glass"))
             .where("D", Predicates.blocks("gtceu:high_power_casing"))
-            .where("E", Predicates.blocks("gtceu:ferrotungsten_alloy_pipe_casing"))
+            .where("E", Predicates.blocks("gtceu:tungstensteel_pipe_casing"))
             .where("F", Predicates.blocks("gtceu:computer_heat_vent"))
             .where(" ", Predicates.any())
             .build())
