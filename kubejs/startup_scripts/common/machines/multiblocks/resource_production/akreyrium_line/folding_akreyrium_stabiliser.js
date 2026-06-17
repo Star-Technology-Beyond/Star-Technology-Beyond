@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('folding_akreyrium_stabiliser')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
-        .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
+        .appearanceBlock(GTBlocks.CASING_FERROTUNGSTEN_ALLOY_ROBUST)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('                 ', '        B        ', '        B        ', '        B        ', '        B        ', '        B        ', '                 ')
             .aisle('       BBB       ', '        B        ', '     B     B     ', '     BCCCCCB     ', '     B     B     ', '        B        ', '       BBB       ')
@@ -45,7 +45,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('G', Predicates.blocks('gtceu:advanced_computer_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_ferrotungsten_alloy',
             'gtceu:block/multiblock/hpca');
 
 });

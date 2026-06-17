@@ -30,7 +30,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('AABAA', 'CE EC', 'CE EC', 'CE EC', 'CCBCC')
             .aisle(' ABA ', ' CDC ', ' C@C ', ' CDC ', ' CBC ')
             .where(' ', Predicates.any())
-            .where('A', Predicates.blocks('gtceu:tungstensteel_firebox_casing'))
+            .where('A', Predicates.blocks('gtceu:ferrotungsten_alloy_firebox_casing'))
             .where('B', Predicates.blocks('gtceu:secure_maceration_casing'))
             .where('C', Predicates.blocks('gtceu:robust_machine_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
@@ -39,12 +39,12 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('D', Predicates.blocks('thermal:enderium_glass'))
-            .where('E', Predicates.blocks('gtceu:tungstensteel_gearbox'))
-            .where('F', Predicates.blocks('gtceu:tungstensteel_pipe_casing'))
+            .where('E', Predicates.blocks('gtceu:ferrotungsten_alloy_gearbox'))
+            .where('F', Predicates.blocks('gtceu:ferrotungsten_alloy_pipe_casing'))
             .where('G', Predicates.blocks('gtceu:extreme_engine_intake_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_ferrotungsten_alloy',
             'gtceu:block/machines/advanced_composter');
 
 });

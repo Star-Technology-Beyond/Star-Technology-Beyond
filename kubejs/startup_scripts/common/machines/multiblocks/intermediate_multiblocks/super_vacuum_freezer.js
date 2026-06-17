@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('B', Predicates.blocks('gtceu:extreme_engine_intake_casing'))
-            .where('C', Predicates.blocks('gtceu:tungstensteel_pipe_casing'))
+            .where('C', Predicates.blocks('gtceu:ferrotungsten_alloy_pipe_casing'))
             .where('#', Predicates.air())
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .where('D', Predicates.blocks('gtceu:tempered_glass'))

@@ -38,7 +38,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where('V', Predicates.blocks('gtceu:heat_vent'))
             .where('G', Predicates.blocks('gtceu:laminated_glass'))
-            .where('P', Predicates.blocks('gtceu:tungstensteel_pipe_casing'))
+            .where('P', Predicates.blocks('gtceu:ferrotungsten_alloy_pipe_casing'))
             .where('E', Predicates.blocks('kubejs:pallaridium_engine_intake_casing'))
             .where('X', Predicates.abilities(PartAbility.OUTPUT_ENERGY)
                 .or(Predicates.abilities(PartAbility.OUTPUT_LASER)))

@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: /start_core:enriched_naquadah.*/ });
 
     const SpecialCasing = (material,tier,f,p,g,e) => {
-    let type = (material == 'tungsten_steel') ? 'tungstensteel' : material ;
+    let type = (material == 'tungsten_steel') ? 'ferrotungsten_alloy' : material ;
     if (f == true) {
         let mod = (type == 'enriched_naquadah') ? 'kubejs' : 'gtceu' ;
     event.recipes.gtceu.assembler(id(`${type}_firebox_casing_hm`))
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         .EUt(2 * (4 ** tier)); 
     }
     if (e == true) {
-        let casingType = (type == 'titanium') ? 'gtceu:stable' : (type == 'tungstensteel') ? 'gtceu:robust' : `kubejs:${type}` ;
+        let casingType = (type == 'titanium') ? 'gtceu:stable' : (type == 'ferrotungsten_alloy') ? 'gtceu:robust' : `kubejs:${type}` ;
         let engineType = (type == 'titanium') ? 'gtceu:' : `kubejs:${type}_` ;
     event.recipes.gtceu.assembler(id(`${engineType.split(':')[1]}engine_intake_casing_hm`))
         .itemInputs(`4x gtceu:${material}_rotor`, `6x gtceu:${material}_normal_fluid_pipe`, `${casingType}_machine_casing`)

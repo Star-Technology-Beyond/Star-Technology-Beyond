@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('BGBBGBBGB', 'BHHHHHHHB', 'C       C', 'C       C', 'C       C', 'C FFF   C', 'C  F    C', 'C       C', 'C       C', 'C       C', 'C       C', 'EC     CE', '##ECCCE##')
             .aisle('ABGGGGGBA', 'BGHHHHHGB', 'CG     GC', 'CG     GC', 'CG     GC', 'C       C', 'C       C', 'C       C', 'C       C', 'C       C', 'C       C', 'ECC   CCE', '###EEE###')
             .aisle('AABBBBBAA', 'BBBB@BBBB', 'BCCCDCCCB', 'BCCCDCCCB', 'BCCCCCCCB', 'BCCCCCCCB', 'BCCCCCCCB', 'BCCCCCCCB', 'ECCCCCCCE', 'ECCCCCCCE', 'ECCCCCCCE', '#EECCCEE#', '#########')
-            .where('A', Predicates.blocks('gtceu:tungstensteel_firebox_casing'))
+            .where('A', Predicates.blocks('gtceu:ferrotungsten_alloy_firebox_casing'))
             .where('B', Predicates.blocks('gtceu:robust_machine_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(5).setPreviewCount(0))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(0))
@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('E', Predicates.blocks('gtceu:blue_steel_frame'))
             .where('#', Predicates.any())
             .where('F', Predicates.blocks('minecraft:oak_leaves'))
-            .where('G', Predicates.blocks('gtceu:tungstensteel_pipe_casing'))
+            .where('G', Predicates.blocks('gtceu:ferrotungsten_alloy_pipe_casing'))
             .where('H', Predicates.blocks('minecraft:grass_block'))
             .where('I', Predicates.blocks('minecraft:spruce_leaves'))
             .where('J', Predicates.blocks('minecraft:dirt'))
@@ -39,7 +39,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.air())
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_ferrotungsten_alloy',
             'gtceu:block/machines/extruder');
 
 });
