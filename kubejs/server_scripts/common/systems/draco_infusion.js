@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'gtceu:void_frame','6x gtceu:uev_robot_arm','2x gtceu:uev_field_generator','6x gtceu:dense_nyanium_plate','1x gtceu:uev_electric_pump',
             '64x kubejs:uepic_chip', '48x gtceu:fine_enriched_pallarovium_alloy_wire','3x gtceu:echo_shard_lens')
-        .inputFluids('gtceu:naquadated_soldering_alloy 57600','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 21600','gtceu:dragon_breath 500')
+        .inputFluids('gtceu:naquadated_soldering_alloy 57600','gtceu:pedot_pss 21600','gtceu:dragon_breath 500')
         .itemOutputs('gtceu:draco_infusion')
         .duration(2400)
         .stationResearch(
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
         .itemInputs(
             'gtceu:draco_abyssal_frame','3x #gtceu:circuits/uxv','6x gtceu:uiv_robot_arm','2x gtceu:uiv_field_generator','6x gtceu:draconyallium_ultradense_plate','1x gtceu:uiv_electric_pump',
             '64x kubejs:uipic_chip', '48x gtceu:fine_rhenium_super_composite_alloy_wire')
-        .inputFluids('gtceu:neutrindium_soldering_alloy 57600','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 43200','gtceu:pure_dragon_breath 15000')
+        .inputFluids('gtceu:neutrindium_soldering_alloy 57600','gtceu:pedot_pss 43200','gtceu:pure_dragon_breath 15000')
         .itemOutputs('gtceu:primordial_infusion')
         .duration(2400)
         .stationResearch(
@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler(id('voidic_sponge'))
         .itemInputs('16x minecraft:sponge','24x gtceu:fine_enderium_wire','6x kubejs:voidic_reinforced_mesh')
-        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 288')
+        .inputFluids('gtceu:pedot_pss 288')
         .itemOutputs('16x kubejs:void_saturation_sponge')
         .duration(900)
         .circuit(3)

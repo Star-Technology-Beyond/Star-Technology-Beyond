@@ -3,14 +3,14 @@ ServerEvents.recipes(event => {
 
     event.remove('gtceu:electrolyzer/decomposition_electrolyzing_sodium_bicarbonate');
     
-    event.recipes.gtceu.large_chemical_reactor(id('benzotrichloride_process'))
+    event.recipes.gtceu.large_chemical_reactor(id('trichloromethylbenzene_process'))
         .inputFluids('gtceu:toluene 1000','gtceu:chlorine 3000')
-        .outputFluids('gtceu:benzotrichloride 1000','gtceu:hydrogen 3000')
+        .outputFluids('gtceu:trichloromethylbenzene 1000','gtceu:hydrogen 3000')
         .duration(50)
         .EUt(GTValues.VHA[GTValues.ZPM]);
     
     event.recipes.gtceu.large_chemical_reactor(id('benzoyl_chloride_process'))
-        .inputFluids('gtceu:benzotrichloride 1000','minecraft:water 1000')
+        .inputFluids('gtceu:trichloromethylbenzene 1000','minecraft:water 1000')
         .outputFluids('gtceu:benzoyl_chloride 1000','gtceu:hydrochloric_acid 2000')
         .duration(150)
         .EUt(GTValues.VA[GTValues.LuV]);
@@ -44,14 +44,14 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor(id('disodium_salt_of_hydroquinone_process')) 
         .itemInputs('3x gtceu:soda_ash_dust','7x gtceu:hydroquinone_dust')
-        .outputFluids('gtceu:carbon_acid 500')
+        .outputFluids('gtceu:carbonic_acid 500')
         .itemOutputs('7x gtceu:disodium_salt_of_hydroquinone_dust')
         .duration(120)
         .EUt(GTValues.VA[GTValues.IV]);
 
-    event.recipes.gtceu.large_chemical_reactor(id('carbon_acid_to_sodium_bicarbonate_dust'))
+    event.recipes.gtceu.large_chemical_reactor(id('carbonic_acid_to_sodium_bicarbonate_dust'))
         .itemInputs('gtceu:sodium_dust')
-        .inputFluids('gtceu:carbon_acid 1000')
+        .inputFluids('gtceu:carbonic_acid 1000')
         .outputFluids('gtceu:hydrogen 1000')
         .itemOutputs('6x gtceu:sodium_bicarbonate_dust')
         .duration(120)

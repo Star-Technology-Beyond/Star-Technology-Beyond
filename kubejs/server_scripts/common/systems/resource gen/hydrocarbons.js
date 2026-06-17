@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
         {output: 'polyvinyl_butyral 720', fluidInput: [`${BC} 875`, `${CV} 500`, `${FS} 500`, 'gtceu:oxygen 2500'], inputItem: 'gtceu:carbon_dust', voltage: GTValues.VHA[GTValues.LuV], duration: 75},
         {output: 'perfluoroelastomer_rubber 9072', fluidInput: [`${CV} 9625`, `${BC} 1375`, `${FS} 250`, 'gtceu:fluorine 18500'], inputItem: '7x gtceu:sulfur_dust', voltage: GTValues.VHA[GTValues.UHV], duration: 83},
         {output: 'silicone_rubber 1296', fluidInput: [`${CV} 2000`, 'gtceu:silicic_acid 1000'], inputItem: 'gtceu:sulfur_dust', voltage: GTValues.VA[GTValues.EV], duration: 25},
-        {output: 'poly_34_ethylenedioxythiophene_polystyrene_sulfate 864', fluidInput: [`${BC} 11250`, `${FS} 9750`, `${PS} 7500`, `${CV} 4250`, 'gtceu:bromine 25'], inputItem: ['gtceu:sulfur_dust', '6x minecraft:sugar'], voltage: GTValues.VA[GTValues.UXV] / 3, duration: 117},
+        {output: 'pedot_pss 864', fluidInput: [`${BC} 11250`, `${FS} 9750`, `${PS} 7500`, `${CV} 4250`, 'gtceu:bromine 25'], inputItem: ['gtceu:sulfur_dust', '6x minecraft:sugar'], voltage: GTValues.VA[GTValues.UXV] / 3, duration: 117},
         {output: 'polyether_ether_ketone 3456', fluidInput: [`${BC} 1250`, `${PS} 625`, 'gtceu:oxygen 750'], inputItem: false, voltage: GTValues.VA[GTValues.UEV] / 3, duration: 42},
         {output: 'polybenzimidazole 9072', fluidInput: [`${PS} 24625`, `${CV} 16250`, `${XC} 7625`, 'gtceu:ammonia 6500'], inputItem: 'gtceu:copper_dust', voltage: GTValues.VHA[GTValues.ZPM], duration: 285}
     ].forEach(superSkip => {

@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
     event.remove({output: 'gtceu:hot_diamane_ingot'});
     event.recipes.gtceu.heat_chamber(id('hot_diamane'))
         .itemInputs('3x gtceu:graphene_dust', '1x gtceu:diamond_dust')
-        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 36')
+        .inputFluids('gtceu:pedot_pss 36')
         .itemOutputs('1x gtceu:hot_diamane_ingot')
         .duration(140)
         .EUt(GTValues.VHA[GTValues.UV]);
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV]);
 
     event.recipes.gtceu.large_chemical_reactor(id('bismuth_iii_oxide'))
-        .itemInputs('26x gtceu:bismuth_3_nitrate_dust')
+        .itemInputs('26x gtceu:bismuth_iii_nitrate_dust')
         .inputFluids('minecraft:water 3000')
         .itemOutputs('5x gtceu:bismuth_iii_oxide_dust')
         .outputFluids('gtceu:nitric_acid 6000')

@@ -154,7 +154,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:unrefined_neodymium_dust')
         .itemOutputs('gtceu:neodymium_iii_oxide_dust')
         .chancedOutput('gtceu:neodymium_iii_oxide_dust', 8000, 0)
-        .chancedOutput('gtceu:iron_2_hydroxide_dust', 2000, 0)
+        .chancedOutput('gtceu:iron_ii_hydroxide_dust', 2000, 0)
         .duration(240)
         .EUt(GTValues.VA[GTValues.MV]);
 

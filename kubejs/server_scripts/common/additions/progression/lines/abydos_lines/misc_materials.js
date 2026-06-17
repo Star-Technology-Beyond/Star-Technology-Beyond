@@ -21,21 +21,21 @@ ServerEvents.recipes(event => {
         .duration(360)
         .EUt(320);
 
-    event.recipes.gtceu.chemical_reactor(id('titanium_oxide'))
+    event.recipes.gtceu.chemical_reactor(id('titanium_iv_oxide'))
         .itemInputs('gtceu:titanium_dust')
         .inputFluids('gtceu:oxygen 2000')
-        .itemOutputs('3x gtceu:titanium_oxide_dust')
+        .itemOutputs('3x gtceu:titanium_iv_oxide_dust')
         .duration(360)
         .EUt(320);
 
     event.recipes.gtceu.chemical_reactor(id('strontium_titanium_oxide'))
-        .itemInputs('gtceu:strontium_oxide_dust', 'gtceu:titanium_oxide_dust')
+        .itemInputs('gtceu:strontium_oxide_dust', 'gtceu:titanium_iv_oxide_dust')
         .itemOutputs('2x gtceu:strontium_titanium_oxide_dust')
         .duration(400)
         .EUt(420);
 
     event.recipes.gtceu.large_chemical_reactor(id('iron_titanium_oxide'))
-        .itemInputs('5x gtceu:ferrosilite_dust', '2x gtceu:titanium_oxide_dust')
+        .itemInputs('5x gtceu:ferrosilite_dust', '2x gtceu:titanium_iv_oxide_dust')
         .itemOutputs('4x gtceu:iron_titanium_oxide_dust', '3x gtceu:silicon_dioxide_dust')
         .duration(960)
         .EUt(GTValues.VA[GTValues.LuV]);
