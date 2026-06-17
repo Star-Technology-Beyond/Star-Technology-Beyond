@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
         '64': ['mv', 4, 'aluminium'],
         '256': ['hv', 8, 'stainless_steel'],
         '1k': ['ev', 16, 'titanium'],
-        '4k': ['iv', 32, 'tungsten_steel'],
+        '4k': ['iv', 32, 'tungstensteel'],
         '16k': ['luv', 64, 'rhodium_plated_palladium'],
         '64k': ['zpm', 128, 'naquadah_alloy'],
         '256k': ['uv', 256, 'darmstadtium'],

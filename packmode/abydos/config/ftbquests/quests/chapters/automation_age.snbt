@@ -1162,7 +1162,7 @@
 				"1E981BDF3F2C577D"
 				"74749B089D50329C"
 			]
-			description: ["{ftbquests.automation_age.tungsten_steel_ingot.description}"]
+			description: ["{ftbquests.automation_age.tungstensteel_ingot.description}"]
 			id: "4BCE8A9EBDF113CE"
 			rewards: [{
 				id: "0CB27DBB660355C2"
@@ -1172,7 +1172,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "48C00FFCC5A1B693"
-				item: "gtceu:tungsten_steel_ingot"
+				item: "gtceu:tungstensteel_ingot"
 				type: "item"
 			}]
 			x: -2.5d
@@ -1219,7 +1219,7 @@
 		}
 		{
 			dependencies: ["74749B089D50329C"]
-			description: ["{ftbquests.automation_age.cupric_chloride_solution.description}"]
+			description: ["{ftbquests.automation_age.copper_i_chloride_solution.description}"]
 			id: "001252911D2DA7C3"
 			rewards: [{
 				id: "04F9F912A7019060"
@@ -1229,7 +1229,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "505135D8C35F05FA"
-				item: "gtceu:cupric_chloride_solution_bucket"
+				item: "gtceu:copper_i_chloride_solution_bucket"
 				type: "item"
 			}]
 			x: -3.5d

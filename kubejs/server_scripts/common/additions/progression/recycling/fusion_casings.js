@@ -22,7 +22,7 @@ global.not_hardmode(() => {
             let blockType;
 
             if (field_generator_tier == "iv") { //iv
-                recycleOutputs = ["4x gtceu:rhodium_plated_palladium", "4x gtceu:samarium_iron_arsenic_oxide", "2x gtceu:tungsten_steel", 
+                recycleOutputs = ["4x gtceu:rhodium_plated_palladium", "4x gtceu:samarium_iron_arsenic_oxide", "2x gtceu:tungstensteel", 
                     /*fake blockBools*/ false, false, false, false];
                 return recycleOutputs;
             }

@@ -26,7 +26,7 @@ global.not_hardmode(() => {
             1: 'gtceu:aluminium_fluid_cell',
             2: 'gtceu:stainless_steel_fluid_cell',
             3: 'gtceu:titanium_fluid_cell',
-            4: 'gtceu:titanium_fluid_cell',
+            4: 'gtceu:tungstensteel_fluid_cell',
             5: 'start_core:enriched_naquadah_fluid_cell',
             6: 'start_core:neutronium_fluid_cell'
         }
