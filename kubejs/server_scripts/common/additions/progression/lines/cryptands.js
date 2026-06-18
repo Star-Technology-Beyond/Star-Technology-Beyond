@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chemical_reactor(id('ethylene_oxide'))
         .inputFluids('gtceu:ethylene 1000', 'gtceu:oxygen 1000')
-        .notConsumable('gtceu:silver_i_oxide_dust')
+        .notConsumable('gtceu:silver_oxide_dust')
         .outputFluids('gtceu:ethylene_oxide 1000')
         .duration(640)
         .EUt(120)
@@ -75,10 +75,10 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .EUt(120)
 
-    event.recipes.gtceu.chemical_reactor(id('silver_i_oxide'))
+    event.recipes.gtceu.chemical_reactor(id('silver_oxide'))
         .itemInputs('2x gtceu:silver_dust')
         .inputFluids('gtceu:oxygen 1000')
-        .itemOutputs('3x gtceu:silver_i_oxide_dust')
+        .itemOutputs('3x gtceu:silver_oxide_dust')
         .duration(120)
         .EUt(32);
 
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor(id('ethylene_oxide'))
         .inputFluids('gtceu:ethylene 1000', 'gtceu:oxygen 1000')
-        .notConsumable('gtceu:silver_i_oxide_dust')
+        .notConsumable('gtceu:silver_oxide_dust')
         .outputFluids('gtceu:ethylene_oxide 1000')
         .duration(640)
         .EUt(120)
@@ -183,10 +183,10 @@ ServerEvents.recipes(event => {
     //     .duration(100)
     //     .EUt(120);
 
-    event.recipes.gtceu.large_chemical_reactor(id('silver_i_oxide'))
+    event.recipes.gtceu.large_chemical_reactor(id('silver_oxide'))
         .itemInputs('2x gtceu:silver_dust')
         .inputFluids('gtceu:oxygen 1000')
-        .itemOutputs('3x gtceu:silver_i_oxide_dust')
+        .itemOutputs('3x gtceu:silver_oxide_dust')
         .duration(120)
         .EUt(32);
 

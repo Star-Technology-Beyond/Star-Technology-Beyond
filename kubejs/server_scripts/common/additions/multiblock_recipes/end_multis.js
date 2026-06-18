@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
         )
         .inputFluids(
             'gtceu:indium_tin_lead_cadmium_soldering_alloy 46080',
-            'gtceu:pedot_pss 8640',
+            'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 8640',
             'gtceu:perfluoroelastomer_rubber 5760'
         )
         .itemOutputs('start_core:abyssal_containment_room')
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
             '4x gtceu:uiv_conveyor_module', '8x gtceu:borealic_steel_gear', '4x gtceu:uiv_electric_motor', '18x gtceu:small_ultispestalloy_cmsh_gear',
             '4x gtceu:lepton_resonant_thallium_antimonide_spring', '4x kubejs:uiv_microfluidic_flow_valve', '32x gtceu:fine_rhenium_super_composite_alloy_wire', '16x gtceu:zeroidic_trinate_steel_screw')
         .inputFluids('gtceu:naquadated_soldering_alloy 24768',
-            'gtceu:pedot_pss 19008',
+            'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 19008',
             'start_core:corefire_nectar 100000',
             'gtceu:dragon_breath 12500')
         .itemOutputs('gtceu:ultimate_ebf')
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line(id('component_part_hub'))
         .itemInputs('8x gtceu:component_part_assembly', '6x kubejs:uev_computational_matrix', '4x kubejs:draco_ware_casing', '8x kubejs:uev_high_strength_panel',
             '4x gtceu:uev_robot_arm', '4x gtceu:uev_field_generator', '24x gtceu:void_screw', '64x kubejs:uepic_chip')
-        .inputFluids('gtceu:pedot_pss 14400', 'gtceu:utopian_akreyrium 10000', 'gtceu:tungsten_disulfide 7200',  'gtceu:indium_tin_lead_cadmium_soldering_alloy 5600')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 14400', 'gtceu:utopian_akreyrium 10000', 'gtceu:tungsten_disulfide 7200',  'gtceu:indium_tin_lead_cadmium_soldering_alloy 5600')
         .itemOutputs('gtceu:component_part_hub')
         .duration(2400)
         .stationResearch(
@@ -62,9 +62,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line(id('atomic_materialization_plant_controller'))
         .itemInputs('gtceu:uiv_machine_hull', '6x kubejs:rhenotax_coil', '8x gtceu:uiv_field_generator', '12x #gtceu:circuits/uiv',
             '6x gtceu:uiv_electric_motor', '4x gtceu:nyanium_gear', '12x gtceu:draco_abyssal_rotor', '6x gtceu:small_draconyallium_gear',
-            '2x gtceu:uiv_robot_arm', '6x gtceu:pedot_pss_huge_fluid_pipe', '4x gtceu:uiv_fluid_regulator',
+            '2x gtceu:uiv_robot_arm', '6x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_huge_fluid_pipe', '4x gtceu:uiv_fluid_regulator',
             '4x gtceu:lepton_resonant_thallium_antimonide_spring', '64x gtceu:fine_rhenium_super_composite_alloy_wire', '32x gtceu:fine_rhenium_super_composite_alloy_wire')
-        .inputFluids('gtceu:naquadated_soldering_alloy 18720', 'gtceu:perfluoroelastomer_rubber 15696', 'gtceu:pedot_pss 10080', 'gtceu:calamatium 5040')
+        .inputFluids('gtceu:naquadated_soldering_alloy 18720', 'gtceu:perfluoroelastomer_rubber 15696', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 10080', 'gtceu:calamatium 5040')
         .itemOutputs('gtceu:atomic_materialization_plant')
         .duration(1200)
         .stationResearch(

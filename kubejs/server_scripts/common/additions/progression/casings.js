@@ -293,15 +293,15 @@ ServerEvents.recipes(event => {
     special_ultimate_casing('absolute_annihilators',['kubejs:absolute_annihilation_casing', '4x gtceu:melastrium_mox_gear', '6x gtceu:small_hvga_steel_gear', '2x gtceu:uiv_electric_motor'], ['gtceu:tungsten_disulfide 5844', 'gtceu:naquadated_soldering_alloy 4780', 'gtceu:starium_alloy 432'], 'gtceu:crushing_wheels');
     special_ultimate_casing('nuclei_seperators',['kubejs:inoculated_nuclei_seperation_casing', '6x gtceu:hvga_steel_plate', '4x gtceu:trikoductive_neutro_steel_gear', '1x gtceu:uiv_electric_motor'], ['gtceu:tungsten_disulfide 5844', 'gtceu:naquadated_soldering_alloy 4780', 'gtceu:mythrolic_alloy 432'], 'gtceu:slicing_blades');
 
-    special_ultimate_casing('draco_assembly_grating',['gtceu:void_frame', '5x gtceu:aerorelient_steel_rotor', '2x gtceu:uev_electric_motor', '12x gtceu:void_foil'], ['gtceu:pedot_pss 1008', 'gtceu:dragon_breath 1750'], 'gtceu:assembly_line_grating');
-    special_ultimate_casing('draco_ware_casing',['gtceu:trikoductive_neutro_steel_frame', '6x kubejs:draconic_brain_matter_cells', '2x #gtceu:circuits/uev', 'gtceu:uev_sensor', '32x gtceu:fine_aurourium_wire', '32x gtceu:fine_magmada_alloy_wire'], ['gtceu:pedot_pss 1008', 'gtceu:dragon_breath 2250'], 'gtceu:high_power_casing');
-    special_ultimate_casing('draco_resilient_fusion_glass',['kubejs:reinforced_fusion_glass', '12x kubejs:draconic_scale_cells', '1x gtceu:uhv_field_generator', '6x kubejs:borealic_neutron_reflector'], ['gtceu:pedot_pss 1008', 'gtceu:dragon_breath 1250'], 'gtceu:fusion_glass');
+    special_ultimate_casing('draco_assembly_grating',['gtceu:void_frame', '5x gtceu:aerorelient_steel_rotor', '2x gtceu:uev_electric_motor', '12x gtceu:void_foil'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1008', 'gtceu:dragon_breath 1750'], 'gtceu:assembly_line_grating');
+    special_ultimate_casing('draco_ware_casing',['gtceu:trikoductive_neutro_steel_frame', '6x kubejs:draconic_brain_matter_cells', '2x #gtceu:circuits/uev', 'gtceu:uev_sensor', '32x gtceu:fine_aurourium_wire', '32x gtceu:fine_magmada_alloy_wire'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1008', 'gtceu:dragon_breath 2250'], 'gtceu:high_power_casing');
+    special_ultimate_casing('draco_resilient_fusion_glass',['kubejs:reinforced_fusion_glass', '12x kubejs:draconic_scale_cells', '1x gtceu:uhv_field_generator', '6x kubejs:borealic_neutron_reflector'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1008', 'gtceu:dragon_breath 1250'], 'gtceu:fusion_glass');
     special_ultimate_casing('abyssal_inductor_hull',['gtceu:abyssal_alloy_frame', '2x kubejs:abyssal_inductor', 'kubejs:uiv_microfluidic_flow_valve', '2x kubejs:voidic_reinforced_mesh', '#gtceu:circuits/uiv', '8x gtceu:polonium_bismide_single_cable'], ['gtceu:naquadated_soldering_alloy 864', 'gtceu:dragon_breath 400'], 'kubejs:abyssal_inductor');
 
-    special_ultimate_casing('abyssal_inductor',['gtceu:uiv_emitter', '3x gtceu:lepton_resonant_thallium_antimonide_spring', '6x gtceu:draco_abyssal_screw', '6x gtceu:polonium_bismide_single_cable'], ['gtceu:pedot_pss 720', 'gtceu:borealic_concentrate 576'], 'gtceu:blacklight');
+    special_ultimate_casing('abyssal_inductor',['gtceu:uiv_emitter', '3x gtceu:lepton_resonant_thallium_antimonide_spring', '6x gtceu:draco_abyssal_screw', '6x gtceu:polonium_bismide_single_cable'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 720', 'gtceu:borealic_concentrate 576'], 'gtceu:blacklight');
 
-    special_ultimate_casing('primordial_assembly_grating',['gtceu:draco_abyssal_frame', '5x gtceu:abyssal_alloy_rotor', '2x gtceu:uiv_electric_motor', '12x gtceu:draconyallium_foil'], ['gtceu:pedot_pss 3024', 'gtceu:pure_dragon_breath 875'], 'kubejs:draco_assembly_grating');
-    special_ultimate_casing('primordial_ware_casing',['gtceu:draconyallium_frame', '16x kubejs:draconic_brain_matter_cells', '2x #gtceu:circuits/uiv', 'gtceu:uiv_sensor', '32x gtceu:fine_rhenate_w_wire', '32x gtceu:fine_draco_abyssal_wire'], ['gtceu:pedot_pss 3024', 'gtceu:dragon_breath 1000'], 'kubejs:draco_ware_casing');
+    special_ultimate_casing('primordial_assembly_grating',['gtceu:draco_abyssal_frame', '5x gtceu:abyssal_alloy_rotor', '2x gtceu:uiv_electric_motor', '12x gtceu:draconyallium_foil'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 3024', 'gtceu:pure_dragon_breath 875'], 'kubejs:draco_assembly_grating');
+    special_ultimate_casing('primordial_ware_casing',['gtceu:draconyallium_frame', '16x kubejs:draconic_brain_matter_cells', '2x #gtceu:circuits/uiv', 'gtceu:uiv_sensor', '32x gtceu:fine_rhenate_w_wire', '32x gtceu:fine_draco_abyssal_wire'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 3024', 'gtceu:dragon_breath 1000'], 'kubejs:draco_ware_casing');
     
     event.recipes.gtceu.assembler(id('tritanic_blasting_casing'))
         .itemInputs('6x gtceu:tritan_steel_plate', 'gtceu:naquadah_alloy_frame')
@@ -429,7 +429,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler(id('cattomolymer_casing'))
         .itemInputs('kubejs:nyanium_machine_casing')
-        .inputFluids('gtceu:pedot_pss 216')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 216')
         .circuit(6)
         .itemOutputs('kubejs:cattomolymer_casing')
         .EUt(GTValues.VHA[GTValues.UHV])
@@ -438,7 +438,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler(id('rhenotax_coil'))
         .itemInputs('gtceu:astrenalloy_nx_frame', '8x gtceu:rhenate_w_double_wire', '16x gtceu:tantalum_carbide_foil',
             '32x gtceu:hafnide_ito_ceramic_ring', '64x gtceu:neutronium_silicon_carbide_foil')
-        .inputFluids('gtceu:pedot_pss 432')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 432')
         .itemOutputs('kubejs:rhenotax_coil')
         .EUt(GTValues.VHA[GTValues.UIV])
         .duration(1200);

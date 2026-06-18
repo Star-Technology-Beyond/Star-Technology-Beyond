@@ -266,7 +266,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler(id('draconic_processing_unit'))
         .itemInputs('1x kubejs:draconic_printed_circuit_board','4x kubejs:draconic_brain_matter_cells',
-            '8x gtceu:pedot_pss_small_fluid_pipe', 
+            '8x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_small_fluid_pipe', 
             '8x gtceu:void_plate','16x gtceu:polyimide_foil','8x gtceu:tritan_steel_bolt')
         .inputFluids('gtceu:dragon_breath 75')
         .itemOutputs('1x kubejs:draconic_processing_unit')
@@ -285,7 +285,7 @@ ServerEvents.recipes(event => {
         
     event.recipes.gtceu.circuit_assembler(id('abyssal_processing_unit'))
         .itemInputs('1x kubejs:abyssal_printed_circuit_board','16x kubejs:draconic_brain_matter_cells','8x gtceu:nyanium_small_fluid_pipe', 
-            '8x gtceu:abyssal_alloy_plate','16x gtceu:pedot_pss_foil','8x gtceu:hvga_steel_bolt')
+            '8x gtceu:abyssal_alloy_plate','16x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_foil','8x gtceu:hvga_steel_bolt')
         .inputFluids('gtceu:draconic_enrichment_serum 200')
         .itemOutputs('1x kubejs:abyssal_processing_unit')
         .duration(1200)
@@ -295,7 +295,7 @@ ServerEvents.recipes(event => {
     // === Wafers and Chips ===
 
     event.recipes.gtceu.chemical_reactor(id('uepic_wafer'))
-        .itemInputs('gtceu:uhpic_wafer','4x gtceu:silicon_carbide_over_dibismuth_tritelluride_dust')
+        .itemInputs('gtceu:uhpic_wafer','4x gtceu:silicon_carbide_over_bismuth_tritelluride_dust')
         .inputFluids('gtceu:neutronium 576')
         .itemOutputs('kubejs:uepic_wafer')
         .duration(1200)
@@ -310,7 +310,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
     event.recipes.gtceu.draco_infusion(id('uipic_wafer'))
-        .itemInputs('kubejs:uepic_wafer','1x gtceu:draconyallium_foil','16x gtceu:silicon_carbide_over_dibismuth_tritelluride_dust',
+        .itemInputs('kubejs:uepic_wafer','1x gtceu:draconyallium_foil','16x gtceu:silicon_carbide_over_bismuth_tritelluride_dust',
             'gtceu:naquadah_foil','gtceu:neutronium_foil','4x kubejs:draconic_stem_cells','gtceu:vanadium_gallium_foil')
         .inputFluids('gtceu:pure_dragon_breath 2000')
         .itemOutputs('kubejs:uipic_wafer')
@@ -369,7 +369,7 @@ ServerEvents.recipes(event => {
         .cleanroom(CleanroomType.CLEANROOM);
 
     event.recipes.gtceu.chemical_reactor(id('qram_wafer'))
-        .itemInputs('gtceu:ram_wafer','2x gtceu:silicon_carbide_over_dibismuth_tritelluride_dust')
+        .itemInputs('gtceu:ram_wafer','2x gtceu:silicon_carbide_over_bismuth_tritelluride_dust')
         .inputFluids('gtceu:radon 500')
         .itemOutputs('kubejs:qram_wafer')
         .duration(1200)

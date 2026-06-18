@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
 
     [
         { plastic: 'polyether_ether_ketone', scaler: 2 },
-        { plastic: 'pedot_pss', scaler: 4 }
+        { plastic: 'poly_34_ethylenedioxythiophene_polystyrene_sulfate', scaler: 4 }
     ].forEach( cFiber => {
         event.recipes.gtceu.autoclave(id(`carbon_fibers_${cFiber.plastic}`))
             .itemInputs(`${cFiber.scaler * 8}x gtceu:carbon_dust`)

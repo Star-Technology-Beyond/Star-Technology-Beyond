@@ -155,8 +155,8 @@ ServerEvents.recipes(event => {
     Hulls('zpm','naquadah_alloy','vanadium_gallium','polybenzimidazole',7);
     Hulls('uv','darmstadtium','yttrium_barium_cuprate','polyether_ether_ketone',8);
     // Hulls('uhv','neutronium','europium','polyether_ether_ketone',9);
-    // Hulls('uev','mythrolic_alloy','cerium_tritelluride','pedot_pss',10);
-    // Hulls('uiv','chaotixic_alloy','polonium_bismide','pedot_pss',11);
+    // Hulls('uev','mythrolic_alloy','cerium_tritelluride','poly_34_ethylenedioxythiophene_polystyrene_sulfate',10);
+    // Hulls('uiv','chaotixic_alloy','polonium_bismide','poly_34_ethylenedioxythiophene_polystyrene_sulfate',11);
 
     // Hermetic Casings
     const HermeticCasings = (tier,material,pipe,scaler) => {

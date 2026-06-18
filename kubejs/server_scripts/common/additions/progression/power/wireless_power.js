@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         ['gtceu:uev_machine_hull', '8x #gtceu:circuits/uiv', '12x gtceu:uev_field_generator','4x gtceu:dense_mythrolic_alloy_plate','8x gtceu:uev_emitter',
             '8x gtceu:enriched_pallarovium_alloy_quadruple_wire','64x gtceu:fine_ancient_runicalium_wire','64x kubejs:uepic_chip',
             '64x kubejs:uepic_chip','64x kubejs:uepic_chip','64x kubejs:uepic_chip','64x kubejs:uepic_chip'], 
-        ['gtceu:pedot_pss 25600', 'gtceu:naquadated_soldering_alloy 14400', 'gtceu:isovol 12800'], 
+        ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 25600', 'gtceu:naquadated_soldering_alloy 14400', 'gtceu:isovol 12800'], 
         'start_core:oneiric_relay', 192, GTValues.VHA[GTValues.UIV]);
 
     // === Hatches & Covers ===

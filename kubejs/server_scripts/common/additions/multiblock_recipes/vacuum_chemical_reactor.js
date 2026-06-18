@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line(id('auroric_vacuum_isolation_reactor_controller'))
         .itemInputs('8x gtceu:draco_abyssal_frame', '4x gtceu:dual_chambered_vacuum_complex', '4x #gtceu:circuits/uiv', '16x gtceu:uiv_electric_pump', '4x gtceu:uiv_fluid_regulator', '16x gtceu:nyanium_quadruple_fluid_pipe'
             , '4x gtceu:nyanium_huge_fluid_pipe')
-        .inputFluids('gtceu:naquadated_soldering_alloy 9216', 'gtceu:pedot_pss 4320', 'gtceu:perfluoroelastomer_rubber 3168' )
+        .inputFluids('gtceu:naquadated_soldering_alloy 9216', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 4320', 'gtceu:perfluoroelastomer_rubber 3168' )
         .itemOutputs('gtceu:auroric_vacuum_isolation_reactor')
         .duration(8000)
         .stationResearch(

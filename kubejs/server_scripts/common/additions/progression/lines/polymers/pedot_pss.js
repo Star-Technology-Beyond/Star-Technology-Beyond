@@ -85,11 +85,11 @@ ServerEvents.recipes(event => {
         .duration(352)
         .EUt(GTValues.VA[GTValues.EV]);
 
-    CR(id('iron_iii_nitrate'))
+    CR(id('ferric_nitrate'))
         .inputFluids('gtceu:nitric_acid 3000')
         .itemInputs('1x gtceu:iron_dust')
         .outputFluids('gtceu:hydrogen 3000')
-        .itemOutputs('10x gtceu:iron_iii_nitrate_dust')
+        .itemOutputs('10x gtceu:ferric_nitrate_dust')
         .duration(289)
         .EUt(GTValues.VA[GTValues.EV]);
 
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor(id('pedot_synthesis'))
         .inputFluids('gtceu:34_ethylenedioxythiophene 500', 'gtceu:ethanol 1000', 'gtceu:sulfur_trioxide 1500')
-        .notConsumable('1x gtceu:iron_iii_nitrate_dust')
+        .notConsumable('1x gtceu:ferric_nitrate_dust')
         .itemInputs('6x minecraft:sugar')
         .outputFluids('gtceu:poly_34_ethylenedioxythiophene 1000', 'gtceu:diluted_sulfuric_acid 1500', 'gtceu:ethylene_glycol 500', 'minecraft:water 1000')
         .duration(126)
@@ -140,23 +140,23 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor(id('pedot_doping'))
         .inputFluids('gtceu:poly_34_ethylenedioxythiophene 1000', 'gtceu:polystyrene_sulfate 375', 'minecraft:water 2000')
-        .outputFluids('gtceu:pedot_pss_solution 1000')
+        .outputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_solution 1000')
         .duration(316)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     event.recipes.gtceu.distillery(id('pedot_pss_purification'))
-        .inputFluids('gtceu:pedot_pss_solution 1000')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_solution 1000')
         .outputFluids('gtceu:distilled_water 2000')
-        .itemOutputs('1x gtceu:pedot_pss_paste_dust')
+        .itemOutputs('1x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_paste_dust')
         .duration(180)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VHA[GTValues.IV]);
     
     event.recipes.gtceu.chemical_bath(id('pedot_pss_finalization'))
-        .itemInputs('6x gtceu:pedot_pss_paste_dust')
+        .itemInputs('6x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_paste_dust')
         .inputFluids('gtceu:polysorbate_20 480')
-        .outputFluids('gtceu:pedot_pss 864')
+        .outputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 864')
         .duration(82)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VA[GTValues.UHV]);

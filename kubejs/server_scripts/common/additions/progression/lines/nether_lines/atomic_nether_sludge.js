@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
                 .next()
                 .inputFluids('gtceu:hydrochloric_acid 1750','gtceu:distilled_water 15000')
                 .next()
-                .itemInputs('3x gtceu:silver_i_oxide_dust')
+                .itemInputs('3x gtceu:silver_oxide_dust')
                 .inputFluids('gtceu:nitric_acid 875')
         )
         .itemOutputs('4x gtceu:flerovium_tetrafluoride_dust', 'gtceu:rich_rare_earth_dust', '2x gtceu:rare_earth_dust')

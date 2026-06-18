@@ -40,9 +40,9 @@ ServerEvents.recipes(event => {
         .duration(434)
         .EUt(GTValues.VA[GTValues.ZPM])  
 
-    event.recipes.gtceu.large_chemical_reactor(id('meta_phenylenediamine'))
+    event.recipes.gtceu.large_chemical_reactor(id('m_phelyenediamine'))
         .inputFluids('gtceu:nitrobenzene 900', 'gtceu:hydrogen 7800', 'gtceu:ammonia 300')
-        .outputFluids('minecraft:water 1800', 'gtceu:meta_phenylenediamine 900')
+        .outputFluids('minecraft:water 1800', 'gtceu:m_phelyenediamine 900')
         .notConsumable('gtceu:nickel_dust')
         .duration(713)
         .EUt(GTValues.VA[GTValues.LuV]);
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor(id('polyamic_acid'))
         .itemInputs('15x gtceu:benzophenone_3344_tetracarboxylic_dianhydride_dust', '4x gtceu:n_methyl_2_pyrrolidone_dust')
-        .inputFluids('gtceu:meta_phenylenediamine 500', 'gtceu:nitric_acid 250')
+        .inputFluids('gtceu:m_phelyenediamine 500', 'gtceu:nitric_acid 250')
         .outputFluids('gtceu:polyamic_acid 750', 'gtceu:hydrogen 500')
         .duration(652)
         .EUt(GTValues.VA[GTValues.UV]);

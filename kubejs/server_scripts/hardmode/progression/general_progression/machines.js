@@ -316,7 +316,7 @@ ServerEvents.recipes(event => {
     // Converter('zpm', 'dragonsteel', 7, 'polybenzamidazole');
     // Converter('uv', 'prismalium', 8, 'polyether_ether_ketone');
     // Converter('uhv', 'stellarium', 9, 'polyether_ether_ketone');
-    // Converter('uev', 'ancient_runicalium', 10, 'pedot_pss');
+    // Converter('uev', 'ancient_runicalium', 10, 'poly_34_ethylenedioxythiophene_polystyrene_sulfate');
     // Will add 64a converters in Theta
 
     // Base Machines (assemblyLine,mk1,mk2,mk3,transformer,substation,fluidDrills,largeMiners,bedrockMiners all Theta+)

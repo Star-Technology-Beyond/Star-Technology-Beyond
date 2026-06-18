@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
             'kubejs:draneko_casing','12x gtceu:uev_field_generator','2x gtceu:uev_emitter','2x gtceu:uev_sensor','8x gtceu:uev_electric_pump',
             '64x kubejs:uepic_chip','64x kubejs:uepic_chip','48x kubejs:uepic_chip','64x gtceu:void_foil','64x gtceu:void_foil'
         )
-        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 57600','gtceu:pedot_pss 21600','gtceu:dragon_breath 500')
+        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 57600','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 21600','gtceu:dragon_breath 500')
         .itemOutputs('start_core:abyssal_harvester')
         .duration(2400)
         .stationResearch(
