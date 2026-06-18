@@ -27,7 +27,7 @@
 //                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
 //                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2)))
 //             .where('T', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST.get()))
-//             .where('F', Predicates.blocks('gtceu:tungstensteel_frame'))     
+//             .where('F', Predicates.blocks('gtceu:tungsten_steel_frame'))     
 //             .where('P', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_PIPE.get()))
 //             .where('I', Predicates.abilities(PartAbility.IMPORT_ITEMS))     
 //             .where('O', Predicates.abilities(PartAbility.EXPORT_ITEMS))

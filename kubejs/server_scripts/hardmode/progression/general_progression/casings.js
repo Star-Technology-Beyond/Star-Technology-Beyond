@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: /start_core:enriched_naquadah.*/ });
 
     const SpecialCasing = (material,tier,f,p,g,e) => {
-    let type = (material == 'tungstensteel') ? 'tungstensteel' : material ;
+    let type = (material == 'tungsten_steel') ? 'tungstensteel' : material ;
     if (f == true) {
         let mod = (type == 'enriched_naquadah') ? 'kubejs' : 'gtceu' ;
     event.recipes.gtceu.assembler(id(`${type}_firebox_casing_hm`))
