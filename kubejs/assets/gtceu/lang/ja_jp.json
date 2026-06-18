@@ -1138,7 +1138,7 @@
     "block.gtceu.bronze_large_boiler.tooltip.4": "バグによる無効化",
     "block.gtceu.steel_large_boiler.tooltip.4": "バグによる無効化",
     "block.gtceu.titanium_large_boiler.tooltip.4": "バグによる無効化",
-    "block.gtceu.tungstensteel_large_boiler.tooltip.4": "バグによる無効化",
+    "block.gtceu.ferrotungsten_alloy_large_boiler.tooltip.4": "バグによる無効化",
 
     "gtceu.jei.bedrock_fluid.brackish_water": "汽水田",
     "gtceu.jei.bedrock_fluid.debris_rich_nether_magma_deposit": "残骸高含有§4ネザー§r産マグマ田",
