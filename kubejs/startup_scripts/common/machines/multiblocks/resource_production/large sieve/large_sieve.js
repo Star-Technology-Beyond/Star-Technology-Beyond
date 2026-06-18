@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2)))
             .where('S', Predicates.blocks(GCYMBlocks.CASING_STRESS_PROOF.get()))
             .where('F', Predicates.blocks('gtceu:tungsten_steel_frame'))
-            .where('P', Predicates.blocks(GTBlocks.CASING_FERROTUNGSTEN_ALLOY_PIPE.get()))
+            .where('P', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_PIPE.get()))
             .where('I', Predicates.abilities(PartAbility.IMPORT_ITEMS))
             .where('O', Predicates.abilities(PartAbility.EXPORT_ITEMS))
             .where(' ', Predicates.any())

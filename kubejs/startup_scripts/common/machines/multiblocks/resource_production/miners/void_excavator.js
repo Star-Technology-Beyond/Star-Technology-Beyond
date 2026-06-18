@@ -32,7 +32,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('gtceu:ferrotungsten_alloy_firebox_casing'))
             .where('R', Predicates.blocks('gtceu:rtm_alloy_coil_block'))
             .where('E', Predicates.blocks('gtceu:tungsten_steel_frame'))
-            .where('G', Predicates.blocks('gtceu:ferrotungsten_alloy_gearbox'))
+            .where('G', Predicates.blocks('gtceu:tungstensteel_gearbox'))
             .where('H', Predicates.blocks('gtceu:stress_proof_casing'))
             .where(' ', Predicates.any())
             .build())

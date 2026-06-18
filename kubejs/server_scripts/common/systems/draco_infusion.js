@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
     'gtceu:luv_emitter','gtceu:wetware_circuit_board',640,GTValues.VHA[GTValues.UHV]);
 
     Infusion('draco_scale_cells','32x kubejs:draconic_scale_cells','gtceu:neutronium 6804','32x kubejs:draconic_stem_cells','gtceu:dense_naquadah_alloy_plate',
-    'gtceu:dense_tungstensteel_plate','gtceu:dense_ancient_netherite_plate','gtceu:dense_darmstadtium_plate','gtceu:dense_obsidian_plate',
+    'gtceu:dense_tungsten_steel_plate','gtceu:dense_ancient_netherite_plate','gtceu:dense_darmstadtium_plate','gtceu:dense_obsidian_plate',
     'gtceu:dense_magnetic_steel_plate',2560,GTValues.VHA[GTValues.UHV]);
 
     Infusion('draco_boule','kubejs:draco_boule','gtceu:pure_dragon_breath 4000','gtceu:neutronium_boule', '32x gtceu:silicon_foil', 

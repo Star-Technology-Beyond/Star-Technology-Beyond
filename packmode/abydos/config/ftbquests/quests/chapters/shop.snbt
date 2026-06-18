@@ -419,12 +419,12 @@
 		{
 			can_repeat: true
 			dependencies: ["4BCE8A9EBDF113CE"]
-			icon: { Count: 16, id: "gtceu:tungstensteel_ingot" }
+			icon: { Count: 16, id: "gtceu:tungsten_steel_ingot" }
 			id: "27981BCACA9A36FF"
 			rewards: [{
 				count: 16
 				id: "238772ED48815A3E"
-				item: "gtceu:tungstensteel_ingot"
+				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -435,7 +435,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			title: "{ftbquests.shop.tungstensteel.title}"
+			title: "{ftbquests.shop.tungsten_steel.title}"
 			x: 0.0d
 			y: 0.5d
 		}

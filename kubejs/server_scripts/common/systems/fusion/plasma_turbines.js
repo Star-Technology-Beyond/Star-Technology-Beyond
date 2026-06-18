@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.EV]);
 
     event.recipes.gtceu.assembler(id('iv_rotor_holder'))
-        .itemInputs('gtceu:iv_machine_hull','4x gtceu:hssg_gear','gtceu:iv_electric_motor','4x gtceu:small_tungstensteel_gear','gtceu:tungstensteel_ring')
+        .itemInputs('gtceu:iv_machine_hull','4x gtceu:hssg_gear','gtceu:iv_electric_motor','4x gtceu:small_tungsten_steel_gear','gtceu:tungsten_steel_ring')
         .inputFluids('gtceu:polytetrafluoroethylene 144')
         .itemOutputs('gtceu:iv_rotor_holder')
         .circuit(3)

@@ -21,7 +21,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("A B A", " EEE ", "BEFEB", " EEE ", "A B A")
             .aisle("ABBBA", "BBCBB", "BC@CB", "BBCBB", "ABBBA")
             .where(" ", Predicates.any())
-            .where("A", Predicates.blocks("gtceu:tungstensteel_frame"))
+            .where("A", Predicates.blocks("gtceu:tungsten_steel_frame"))
             .where("B", Predicates.blocks("gtceu:robust_machine_casing")
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1).setPreviewCount(1))
