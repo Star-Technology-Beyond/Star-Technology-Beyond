@@ -60,6 +60,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     // Large Rock Crusher
     event.create('large_rock_crusher', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([ 
+            Text.translate("block.start_core.gap"),
+            Text.translate("block.kubejs.only_one_2a_hatch.tooltip")
+        ])
         .recipeType('large_rock_crusher')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:red_steel_casing'))
