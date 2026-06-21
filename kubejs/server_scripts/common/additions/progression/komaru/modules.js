@@ -183,7 +183,7 @@ ServerEvents.recipes (event => {
     researchBuilder(riftAss, 'riftic_enhancement_module', 
         ['6x kubejs:komaru_plating','8x kubejs:komaru_rift_caller','24x gtceu:uiv_emitter','8x kubejs:uiv_micropower_router'], 
         ['gtceu:neutrindium_soldering_alloy 17280','gtceu:primordial_residue 37500','gtceu:prismatic_hypergurmalium 37500',
-            'gtceu:riftic_concentrate 37500','gtceu:pedot_pss 6480',
+            'gtceu:riftic_concentrate 37500','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 6480',
             'gtceu:faematter 100000'], 
         ['gtceu:riftic_enhancement_module'], 
         2400, 500, 500 * 1200, GTValues.VA[GTValues.UIV], 'gtceu:primordial_infusion');
@@ -191,7 +191,7 @@ ServerEvents.recipes (event => {
     researchBuilder(riftAss, 'rimula_extraction_module', 
         ['2x kubejs:komaru_plating','4x kubejs:komaru_rift_caller','6x gtceu:uiv_sensor','4x kubejs:uiv_micropower_router'], 
         ['gtceu:neutrindium_soldering_alloy 17280','gtceu:pure_dragon_breath 75000','gtceu:borealic_concentrate 3456',
-            'gtceu:pedot_pss 6480','gtceu:netherite_triselex_oxide 3168',
+            'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 6480','gtceu:netherite_triselex_oxide 3168',
             'gtceu:faematter 125000'], 
         ['gtceu:rimula_extraction_module'], 
         1200, 500, 500 * 1200, GTValues.VA[GTValues.UIV], 'start_core:abyssal_harvester');

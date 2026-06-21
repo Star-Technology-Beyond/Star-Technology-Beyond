@@ -73,7 +73,7 @@ global.componentMaterials = {
     iv: {
         tiers: { tier: 'iv', tier0: 'luv', tier1: 'ev', tier2: 'hv' },
         materials: {
-            tierMaterial: 'tungstensteel',
+            tierMaterial: 'tungsten_steel',
             wire: 'rtm_alloy',
             solder: 'soldering_alloy',
             lubricant: 'lubricant',
@@ -83,7 +83,7 @@ global.componentMaterials = {
             superconductor: 'samarium_iron_arsenic_oxide',
             chip: 'gtceu:hpic',
             battery: 'lapotronic_energy_orb',
-            rotorMaterial: 'tungstensteel',
+            rotorMaterial: 'tungsten_steel',
             grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
@@ -163,8 +163,8 @@ global.componentMaterials = {
             superconductor: 'uranium_rhodium_dinaquadide',
             buzz: 'naquadah_alloy',
             chip: 'gtceu:uhpic',
-            fluidStorage: 'gtceu:tungstensteel_drum',
-            itemStorage: 'gtceu:tungstensteel_crate',
+            fluidStorage: 'gtceu:tungsten_steel_drum',
+            itemStorage: 'gtceu:tungsten_steel_crate',
             rotorMaterial: 'naquadah_alloy',
             grind: 'gtceu:tungsten_grinding_head'
         },
@@ -284,7 +284,7 @@ global.componentMaterials = {
             lubricant: 'tungsten_disulfide',
             primRubber: 'perfluoroelastomer_rubber',
             supRubber: 'styrene_butadiene_rubber',
-            plastic: 'pedot_pss',
+            plastic: 'poly_34_ethylenedioxythiophene_polystyrene_sulfate',
             cable: 'cerium_tritelluride',
             cable1: 'polonium_bismide',
             catalyst: '2x kubejs:helish_star',
@@ -328,7 +328,7 @@ global.componentMaterials = {
             lubricant: 'tungsten_disulfide',
             primRubber: 'perfluoroelastomer_rubber',
             supRubber: 'perfluoroelastomer_rubber',
-            plastic: 'pedot_pss',
+            plastic: 'poly_34_ethylenedioxythiophene_polystyrene_sulfate',
             cable: 'polonium_bismide',
             cable1: 'lepton_resonant_thallium_antimonide',
             catalyst: '1x kubejs:dragonic_eye',

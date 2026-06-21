@@ -21,7 +21,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("A B A", " EEE ", "BEFEB", " EEE ", "A B A")
             .aisle("ABBBA", "BBCBB", "BC@CB", "BBCBB", "ABBBA")
             .where(" ", Predicates.any())
-            .where("A", Predicates.blocks("gtceu:tungstensteel_frame"))
+            .where("A", Predicates.blocks("gtceu:tungsten_steel_frame"))
             .where("B", Predicates.blocks("gtceu:robust_machine_casing")
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1).setPreviewCount(1))
@@ -32,10 +32,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("C", Predicates.blocks("gtceu:extreme_engine_intake_casing"))
             .where("D", Predicates.abilities(PartAbility.MUFFLER))
             .where("E", Predicates.heatingCoils())
-            .where("F", Predicates.blocks("gtceu:tungstensteel_pipe_casing"))
+            .where("F", Predicates.blocks("gtceu:ferrotungsten_alloy_pipe_casing"))
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_ferrotungsten_alloy',
             'gtceu:block/multiblock/pyrolyse_oven')
         .additionalDisplay(global.pyrolyseOvenOverclockDisplay);
 

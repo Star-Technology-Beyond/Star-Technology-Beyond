@@ -15,18 +15,18 @@
 	quests: [
 		{
 			dependencies: ["111033FEFA89BA91"]
-			icon: "gtceu:trichloromethylbenzene_bucket"
+			icon: "gtceu:benzotrichloride_bucket"
 			id: "5D66D12C6EBB3A43"
 			size: 1.0d
 			tasks: [
 				{
 					id: "1609921B3C9372BF"
-					title: "{ftbquests.pl.trichloromethylbenzene.title}"
+					title: "{ftbquests.pl.benzotrichloride.title}"
 					type: "checkmark"
 				}
 				{
 					id: "5D9CA2841CE9FBBA"
-					item: "gtceu:trichloromethylbenzene_bucket"
+					item: "gtceu:benzotrichloride_bucket"
 					optional_task: true
 					type: "item"
 				}

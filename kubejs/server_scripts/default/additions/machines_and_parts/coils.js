@@ -52,7 +52,7 @@ global.not_hardmode(() => {
         // === Naquadah, Trinium, Tritanium (T2 Insulators + Frames) ===
         event.recipes.gtceu.assembler(id('naquadah_coil_block'))
             .itemInputs('gtceu:hssg_frame','8x gtceu:naquadah_double_wire','8x gtceu:osmium_foil','8x gtceu:niobium_nitride_foil')
-            .inputFluids('gtceu:tungstensteel 144')
+            .inputFluids('gtceu:tungsten_steel 144')
             .itemOutputs('gtceu:naquadah_coil_block')
             .duration(700)
             .EUt(30720);

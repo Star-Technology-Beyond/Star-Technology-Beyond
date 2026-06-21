@@ -8,7 +8,7 @@ global.not_hardmode(() => {
         //plastic boards
         [
             {plastic: 'polyether_ether_ketone', abreviation: 'peek', quantity: 16},
-            {plastic: 'pedot_pss', abreviation: 'pedot_pss', quantity: 32},
+            {plastic: 'poly_34_ethylenedioxythiophene_polystyrene_sulfate', abreviation: 'pedot_pss', quantity: 32},
         ].forEach(type=>{
         CR(id(`plastic_boards_${type.abreviation}`))
             .itemInputs(`gtceu:${type.plastic}_plate`, '4x gtceu:copper_foil')
@@ -29,7 +29,7 @@ global.not_hardmode(() => {
         ].forEach(type=>{
             let CuClBoard = CR(id(`${type.board}_circuit_board_copper`))
                 .itemInputs(`gtceu:${type.board}_circuit_board`, `${type.foil_count}x gtceu:${type.foil}_foil`)
-                .inputFluids(`gtceu:copper_i_chloride_solution ${type.amount}`)
+                .inputFluids(`gtceu:cupric_chloride_solution ${type.amount}`)
                 .itemOutputs(`gtceu:${type.board}_printed_circuit_board`)
                 .duration(type.duration)
                 .EUt(type.energy);
@@ -63,7 +63,7 @@ global.not_hardmode(() => {
             {board: 'abyssal', foil: 'polonium_bismide', foil_count: 32, amount: 20000, duration: 2700, energy: 30720}
         ].forEach(type=> {
             [
-                {id: 'copper', name: 'copper_i_chloride_solution', multiplier: 1},
+                {id: 'copper', name: 'cupric_chloride_solution', multiplier: 1},
                 {id: 'iron', name: 'iron_iii_chloride', multiplier: 2},
                 {id: 'sodium', name: 'sodium_persulfate', multiplier: 4}
             ].forEach(fluid => {
@@ -84,10 +84,10 @@ global.not_hardmode(() => {
             .itemOutputs('2x gtceu:copper_chloride_dust')
             .duration(600)
             .EUt(GTValues.VHA[GTValues.HV]);
-        event.recipes.gtceu.mixer(id('copper_i_chloride_solution'))
+        event.recipes.gtceu.mixer(id('cupric_chloride_solution'))
             .itemInputs('1x gtceu:copper_chloride_dust')
             .inputFluids('gtceu:hydrochloric_acid 1000')
-            .outputFluids('gtceu:copper_i_chloride_solution 1000')
+            .outputFluids('gtceu:cupric_chloride_solution 1000')
             .duration(400)
             .EUt(GTValues.VHA[GTValues.EV]);
     

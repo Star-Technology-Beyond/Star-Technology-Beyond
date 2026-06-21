@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: /start_core:enriched_naquadah.*/ });
 
     const SpecialCasing = (material,tier,f,p,g,e) => {
-    let type = (material == 'tungstensteel') ? 'tungstensteel' : material ;
+    let type = (material == 'tungsten_steel') ? 'tungstensteel' : material ;
     if (f == true) {
         let mod = (type == 'enriched_naquadah') ? 'kubejs' : 'gtceu' ;
     event.recipes.gtceu.assembler(id(`${type}_firebox_casing_hm`))
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         .EUt(2 * (4 ** tier)); 
     }
     if (e == true) {
-        let casingType = (type == 'titanium') ? 'gtceu:stable' : (type == 'tungstensteel') ? 'gtceu:robust' : `kubejs:${type}` ;
+        let casingType = (type == 'titanium') ? 'gtceu:stable' : (type == 'ferrotungsten_alloy') ? 'gtceu:robust' : `kubejs:${type}` ;
         let engineType = (type == 'titanium') ? 'gtceu:' : `kubejs:${type}_` ;
     event.recipes.gtceu.assembler(id(`${engineType.split(':')[1]}engine_intake_casing_hm`))
         .itemInputs(`4x gtceu:${material}_rotor`, `6x gtceu:${material}_normal_fluid_pipe`, `${casingType}_machine_casing`)
@@ -55,13 +55,13 @@ ServerEvents.recipes(event => {
     SpecialCasing('stainless_steel',3,false,false,true,false);
     SpecialCasing('polytetrafluoroethylene',3,false,true,false,false);
     SpecialCasing('titanium',4,true,true,true,true);
-    SpecialCasing('tungstensteel',5,true,true,true,false); // made sperate engine load since keeps breaking
+    SpecialCasing('tungsten_steel',5,true,true,true,false); // made sperate engine load since keeps breaking
     SpecialCasing('enriched_naquadah',7,true,true,true,true);
     
     //Tungsten Steel Engine Load
     event.recipes.gtceu.assembler(id(`extreme_engine_intake_casing_hm`))
-        .itemInputs(`4x gtceu:tungstensteel_rotor`, `6x gtceu:tungstensteel_normal_fluid_pipe`, `gtceu:robust_machine_casing`)
-        .inputFluids(`gtceu:tungstensteel 144`)
+        .itemInputs(`4x gtceu:tungsten_steel_rotor`, `6x gtceu:tungsten_steel_normal_fluid_pipe`, `gtceu:robust_machine_casing`)
+        .inputFluids(`gtceu:tungsten_steel 144`)
         .circuit(7)
         .itemOutputs(`2x gtceu:extreme_engine_intake_casing`)
         .duration(100)
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
     CrateType('aluminium', 3);
     CrateType('stainless_steel', 4);
     CrateType('titanium', 5);
-    CrateType('tungstensteel', 6);
+    CrateType('tungsten_steel', 6);
 
     const DrumType = (material, tier, Mod) => {
         let materialRod = (material == 'wood') ? 'iron' : material ;
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
     DrumType('aluminium', 3, 'gtceu');
     DrumType('stainless_steel', 4, 'gtceu');
     DrumType('titanium', 5, 'gtceu');
-    DrumType('tungstensteel', 6, 'gtceu');
+    DrumType('tungsten_steel', 6, 'gtceu');
     DrumType('enriched_naquadah', 7, 'start_core');
     DrumType('neutronium', 8, 'start_core');
 
@@ -150,13 +150,13 @@ ServerEvents.recipes(event => {
     Hulls('mv','aluminium','copper','polyethylene',2);
     Hulls('hv','stainless_steel','gold','polyethylene',3);
     Hulls('ev','titanium','aluminium','polytetrafluoroethylene',4);
-    Hulls('iv','tungstensteel','platinum','polytetrafluoroethylene',5);
+    Hulls('iv','tungsten_steel','platinum','polytetrafluoroethylene',5);
     Hulls('luv','rhodium_plated_palladium','niobium_titanium','polybenzimidazole',6);
     Hulls('zpm','naquadah_alloy','vanadium_gallium','polybenzimidazole',7);
     Hulls('uv','darmstadtium','yttrium_barium_cuprate','polyether_ether_ketone',8);
     // Hulls('uhv','neutronium','europium','polyether_ether_ketone',9);
-    // Hulls('uev','mythrolic_alloy','cerium_tritelluride','pedot_pss',10);
-    // Hulls('uiv','chaotixic_alloy','polonium_bismide','pedot_pss',11);
+    // Hulls('uev','mythrolic_alloy','cerium_tritelluride','poly_34_ethylenedioxythiophene_polystyrene_sulfate',10);
+    // Hulls('uiv','chaotixic_alloy','polonium_bismide','poly_34_ethylenedioxythiophene_polystyrene_sulfate',11);
 
     // Hermetic Casings
     const HermeticCasings = (tier,material,pipe,scaler) => {
@@ -170,7 +170,7 @@ ServerEvents.recipes(event => {
     HermeticCasings('mv','aluminium','polyethylene',2);
     HermeticCasings('hv','stainless_steel','polytetrafluoroethylene',3);
     HermeticCasings('ev','titanium','titanium',4);
-    HermeticCasings('iv','tungstensteel','niobium_titanium',5);
+    HermeticCasings('iv','tungsten_steel','niobium_titanium',5);
     // HermeticCasings('luv','rhodium_plated_palladium','iridium',6);
     // HermeticCasings('zpm','naquadah_alloy','europium',7);
     // HermeticCasings('uv','darmstadtium','enriched_naquadah',8);

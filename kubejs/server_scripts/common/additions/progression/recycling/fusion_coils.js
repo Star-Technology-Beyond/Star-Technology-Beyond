@@ -35,7 +35,7 @@ global.not_hardmode(() => {
                 materialTypes = ["plate", "prim", "cable", "wire", "foil"];
             }
             else {
-                recycleOutputs = [ "15x gtceu:tungstensteel", "8x gtceu:samarium_iron_arsenic_oxide", `${plateCount}x ${plateMaterial}`,
+                recycleOutputs = [ "15x gtceu:tungsten_steel", "8x gtceu:samarium_iron_arsenic_oxide", `${plateCount}x ${plateMaterial}`,
                     "3x gtceu:naquadah", false, false, false, false];
                 return recycleOutputs;
             }

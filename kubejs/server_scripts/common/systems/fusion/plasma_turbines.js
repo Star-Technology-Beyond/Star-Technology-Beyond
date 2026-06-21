@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:uiv_machine_hull','6x gtceu:dense_nyanium_plate','4x gtceu:chaotixic_alloy_gear','6x gtceu:small_nyanium_gear',
             '8x gtceu:nyanium_huge_fluid_pipe','6x #gtceu:circuits/uiv','64x gtceu:fine_rhenium_super_composite_alloy_wire','64x kubejs:uepic_chip',
             '64x kubejs:uepic_chip','32x kubejs:uepic_chip')
-        .inputFluids('gtceu:pedot_pss 4320', 'gtceu:calamatium 5000', 'gtceu:tungsten_disulfide 2500')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 4320', 'gtceu:calamatium 5000', 'gtceu:tungsten_disulfide 2500')
         .itemOutputs('gtceu:nyinsane_plasma_turbine')
         .duration(600)
         .stationResearch(
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.EV]);
 
     event.recipes.gtceu.assembler(id('iv_rotor_holder'))
-        .itemInputs('gtceu:iv_machine_hull','4x gtceu:hssg_gear','gtceu:iv_electric_motor','4x gtceu:small_tungstensteel_gear','gtceu:tungstensteel_ring')
+        .itemInputs('gtceu:iv_machine_hull','4x gtceu:hssg_gear','gtceu:iv_electric_motor','4x gtceu:small_tungsten_steel_gear','gtceu:tungsten_steel_ring')
         .inputFluids('gtceu:polytetrafluoroethylene 144')
         .itemOutputs('gtceu:iv_rotor_holder')
         .circuit(3)
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
             '8x gtceu:abyssal_alloy_round','gtceu:chaotixic_alloy_ring','2x kubejs:uiv_transmission_assembly','kubejs:uiv_precision_drive_mechanism',
             '#gtceu:circuits/uiv','gtceu:uiv_field_generator','16x gtceu:fine_xeproda_wire'
         )
-        .inputFluids('gtceu:pedot_pss 432','gtceu:tungsten_disulfide 10000')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 432','gtceu:tungsten_disulfide 10000')
         .itemOutputs('gtceu:uiv_rotor_holder')
         .duration(400)
         .stationResearch(
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line(id('draco_abyssal_turbine_rotor'))
         .itemInputs('gtceu:void_frame','kubejs:uiv_transmission_assembly','8x gtceu:draco_abyssal_turbine_blade',
             '16x gtceu:fine_rhenium_super_composite_alloy_wire')
-        .inputFluids('gtceu:tungsten_disulfide 15000','gtceu:pedot_pss 1080')
+        .inputFluids('gtceu:tungsten_disulfide 15000','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1080')
         .itemOutputs(Item.of('gtceu:turbine_rotor', '{GT.PartStats:{Material:"gtceu:draco_abyssal"}}'))
         .duration(600)
         .stationResearch(

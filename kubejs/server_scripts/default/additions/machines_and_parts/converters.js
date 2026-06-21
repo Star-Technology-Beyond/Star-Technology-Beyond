@@ -31,7 +31,7 @@ global.not_hardmode(() => {
             },
             iv: {
                 superconductor: 'gtceu:shellite',
-                casing: 'gtceu:tungstensteel',
+                casing: 'gtceu:tungsten_steel',
                 cable: 'gtceu:platinum',
                 has64aConverter: true,
             },

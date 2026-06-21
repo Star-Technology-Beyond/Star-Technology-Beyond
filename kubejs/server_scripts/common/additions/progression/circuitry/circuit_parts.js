@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.component_part_assembly(id(`draconic_qmd_${type}`))
             .itemInputs(inputs)
-            .inputFluids(`gtceu:pedot_pss ${polymerAmount}`,
+            .inputFluids(`gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${polymerAmount}`,
                 `gtceu:naquadated_soldering_alloy ${polymerAmount * 3 / 2}`)
             .itemOutputs(`${quantity}x kubejs:draconic_qmd_${type}`)
             .duration(15 * quantity)
@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
     );
 
     dracoQMD('capacitor', 16, [
-            '2x gtceu:pedot_pss_foil', 
+            '2x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_foil', 
             '3x gtceu:zalloy_foil', 
             'gtceu:mythrolic_alloy_foil'
         ], 144
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
     );
 
     dracoQMD('diode', 32, [
-            '2x gtceu:silicon_carbide_over_dibismuth_tritelluride_dust', 
+            '2x gtceu:silicon_carbide_over_bismuth_tritelluride_dust', 
             'gtceu:neutronium_wafer', 
             '8x gtceu:fine_stellarium_wire'
         ], 432
@@ -145,7 +145,7 @@ ServerEvents.recipes(event => {
             `${scalerMCSF * .75 * 4}x gtceu:fine_prismalium_wire`, 
             `${scalerMCSF * .75}x gtceu:iron_titanium_oxide_dust`
         ], [
-            `gtceu:pedot_pss ${scalerMCSF * .75 * 216}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 324}`
+            `gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${scalerMCSF * .75 * 216}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 324}`
         ], 240
     );
         
@@ -154,16 +154,16 @@ ServerEvents.recipes(event => {
             `${scalerMCSF * .75 * 8}x gtceu:fine_trinaquadalloy_wire`, 
             `${scalerMCSF * .75}x gtceu:aurourium_foil`
         ], [
-            `gtceu:pedot_pss ${scalerMCSF * .75 * 216}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 324}`
+            `gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${scalerMCSF * .75 * 216}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 324}`
         ], 240
     );
         
     dracoQMDInMCSF(`draconic_qmd_capacitor`, 16, [
-            `${scalerMCSF * .75 * 2}x gtceu:pedot_pss_foil`, 
+            `${scalerMCSF * .75 * 2}x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_foil`, 
             `${scalerMCSF * .75 * 3}x gtceu:zalloy_foil`, 
             `${scalerMCSF * .75}x gtceu:mythrolic_alloy_foil`
         ], [
-            `gtceu:pedot_pss ${scalerMCSF * .75 * 144}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 216}`
+            `gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${scalerMCSF * .75 * 144}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 216}`
         ], 240
     );
         
@@ -172,16 +172,16 @@ ServerEvents.recipes(event => {
             `${scalerMCSF * .75 * 6}x gtceu:fine_adamantine_wire`, 
             `${scalerMCSF * .75 * 4}x gtceu:bismuth_iridate_foil`
         ], [
-            `gtceu:pedot_pss ${scalerMCSF * .75 * 216}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 324}`
+            `gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${scalerMCSF * .75 * 216}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 324}`
         ], 240
     );
         
     dracoQMDInMCSF(`draconic_qmd_diode`, 32, [
-            `${scalerMCSF * .75 * 2}x gtceu:silicon_carbide_over_dibismuth_tritelluride_dust`, 
+            `${scalerMCSF * .75 * 2}x gtceu:silicon_carbide_over_bismuth_tritelluride_dust`, 
             `${scalerMCSF * .75}x gtceu:neutronium_wafer`, 
             `${scalerMCSF * .75 * 8}x gtceu:fine_stellarium_wire`
         ], [
-            `gtceu:pedot_pss ${scalerMCSF * .75 * 432}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 648}`
+            `gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${scalerMCSF * .75 * 432}`,`gtceu:naquadated_soldering_alloy ${scalerMCSF * .75 * 648}`
         ], 480
     );
 

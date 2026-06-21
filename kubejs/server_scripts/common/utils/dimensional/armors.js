@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         { plastic: 'epoxy', chance: 2250, amount: 576 },
         { plastic: 'polybenzimidazole', chance: 4500, amount: 144 },
         { plastic: 'polyether_ether_ketone', chance: 9000, amount: 36 },
-        { plastic: 'pedot_pss', chance: 18000, amount: 9 }
+        { plastic: 'poly_34_ethylenedioxythiophene_polystyrene_sulfate', chance: 18000, amount: 9 }
     ].forEach(mat => {
 
         const {plastic, chance, amount} = mat;

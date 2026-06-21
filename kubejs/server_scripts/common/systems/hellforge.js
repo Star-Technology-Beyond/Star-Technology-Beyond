@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
     HellForgeMat('mythrotight_carbide_steel', 19, ['gtceu:watertight_steel 1152', 'gtceu:mythril 288', 'gtceu:samarium_iron_arsenic_oxide 720', 'gtceu:tungsten_carbide 432', 'gtceu:kanthal 144'], 'iron', 'ascendant', 966, GTValues.VA[GTValues.UIV], 36.7);
     HellForgeMat('aerorelient_steel', 17, ['gtceu:cobalt_brass 432', 'gtceu:red_steel 864', 'gtceu:watertight_steel 288', 'gtceu:hsse 720', 'gtceu:indium 144'], 'helium', 'infernal', 927, GTValues.VA[GTValues.UIV], 26.5);
     HellForgeMat('zeroidic_trinate_steel', 17, ['gtceu:enriched_naquadah_trinium_europium_duranide 432', 'gtceu:zeron_100 1008', 'gtceu:xeproda 144', 'gtceu:tritan_steel 288', 'gtceu:calamatium 576'], 'magmatic', 'abyssal', 1021, GTValues.VA[GTValues.UIV], 41.1);
-    HellForgeMat('vastaqalloy_cr_4200x', 15, ['gtceu:thacoloy_nq_42x 720', 'gtceu:stellite_100 576', 'gtceu:vanadium_gallium 288', 'gtceu:tungstensteel 432', 'gtceu:chromium 144'], 'americium', 'ascendant', 951, GTValues.VA[GTValues.UIV], 27.3);
+    HellForgeMat('vastaqalloy_cr_4200x', 15, ['gtceu:thacoloy_nq_42x 720', 'gtceu:stellite_100 576', 'gtceu:vanadium_gallium 288', 'gtceu:tungsten_steel 432', 'gtceu:chromium 144'], 'americium', 'ascendant', 951, GTValues.VA[GTValues.UIV], 27.3);
     HellForgeMat('soul_ascendant_cuperite', 27, ['gtceu:soul_infused 1728', 'gtceu:nickel_zinc_ferrite 432', 'gtceu:magnalium 864', 'gtceu:niobium_nitride 720', 'gtceu:mercury_barium_calcium_cuprate 144'], 'nitrogen', 'ascendant', 1158, GTValues.VA[GTValues.UIV], 13.8);
     HellForgeMat('primordially_stellarized_weapon_grade_naquadah', 160, ['gtceu:stellarized_weapon_grade_naquadah 22608','gtceu:prismatic_hypergurmalium 1000','gtceu:primordial_residue 1000','gtceu:riftic_concentrate 1000'], 'voidic', 'ascendant', 2184, GTValues.VHA[GTValues.UXV], 6.3);
 
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
     const catalyst = (type,inputs,scaler) => {
     event.recipes.gtceu.assembler(id(`${type}_catalyst`))
         .itemInputs(inputs)
-        .inputFluids(`gtceu:pedot_pss ${512 + scaler * 64}`)
+        .inputFluids(`gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate ${512 + scaler * 64}`)
         .itemOutputs(`96x kubejs:${type}_catalyst`)
         .duration(600)
         .EUt(GTValues.VHA[GTValues.UV] * ( 4 ** scaler ));

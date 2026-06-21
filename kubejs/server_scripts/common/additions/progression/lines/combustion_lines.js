@@ -61,9 +61,9 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(GTValues.VA[GTValues.MV]);
 
-    event.recipes.gtceu.large_chemical_reactor(id('methylhydrazine'))
+    event.recipes.gtceu.large_chemical_reactor(id('monomethylhydrazine'))
         .inputFluids('gtceu:hydrazine 1000', 'gtceu:methylamine 1000')
-        .outputFluids('gtceu:methylhydrazine 1000', 'gtceu:ammonia 1000')
+        .outputFluids('gtceu:monomethylhydrazine 1000', 'gtceu:ammonia 1000')
         .duration(200)
         .EUt(GTValues.VA[GTValues.MV])
 
@@ -129,8 +129,8 @@ ServerEvents.recipes(event => {
         .duration(240)
         .EUt(-32);
 
-    event.recipes.gtceu.modular_rocket_module(id('methylhydrazine'))
-        .inputFluids('gtceu:methylhydrazine 1')
+    event.recipes.gtceu.modular_rocket_module(id('monomethylhydrazine'))
+        .inputFluids('gtceu:monomethylhydrazine 1')
         .duration(400)
         .EUt(-32);
 

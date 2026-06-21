@@ -2281,7 +2281,7 @@
 			tasks: [
 				{
 					id: "0E3108E09E53A32E"
-					item: "gtceu:silver_i_oxide_dust"
+					item: "gtceu:silver_oxide_dust"
 					optional_task: true
 					type: "item"
 				}
