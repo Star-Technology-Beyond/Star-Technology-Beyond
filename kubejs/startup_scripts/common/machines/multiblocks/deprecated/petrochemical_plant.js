@@ -29,7 +29,7 @@
 //             .aisle('                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '   FFF                    ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ', '                          ',)
 //             .where('C', Predicates.blocks(GTBlocks.CASING_STAINLESS_CLEAN.get()))
 //             .where('P', Predicates.blocks(GCYMBlocks.CASING_CORROSION_PROOF.get()))
-//             .where('T', Predicates.blocks(GTBlocks.CASING_FERROTUNGSTEN_ALLOY_PIPE.get()))
+//             .where('T', Predicates.blocks(GTBlocks.CASING_tungstensteel_PIPE.get()))
 //             .where('S', Predicates.blocks(GTBlocks.SUPERCONDUCTING_COIL.get()))
 //             .where('G', Predicates.blocks(GTBlocks.FUSION_GLASS.get()))
 //             .where('U', Predicates.blocks('gtceu:long_distance_fluid_pipeline'))
