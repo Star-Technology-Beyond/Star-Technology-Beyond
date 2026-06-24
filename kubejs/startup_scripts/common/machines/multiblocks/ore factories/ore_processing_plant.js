@@ -33,7 +33,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('M', Predicates.abilities(PartAbility.MUFFLER))
             .where('P', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_PIPE.get()))
             .where('G', Predicates.blocks(GTBlocks.CASING_TUNGSTENSTEEL_GEARBOX.get()))
-            .where('A', Predicates.blocks(GTBlocks.FIREBOX_tungstensteel.get()))
+            .where('A', Predicates.blocks(GTBlocks.FIREBOX_TUNGSTENSTEEL.get()))
             .where('B', Predicates.blocks('gtceu:bronze_machine_casing'))
             .where(' ', Predicates.any())
             .build())
