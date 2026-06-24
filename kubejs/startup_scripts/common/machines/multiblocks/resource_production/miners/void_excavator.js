@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['void_excavation', 'aqueous_void_excavation'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
-        .appearanceBlock(GTBlocks.CASING_FERROTUNGSTEN_ALLOY_ROBUST)
+        .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle(' SFS ', '  E  ', '  E  ', '  E  ', '     ', '     ', '     ', '     ', '     ', '     ', '     ', '     ')
             .aisle('SSSSS', ' ERE ', ' EGE ', '  E  ', '  E  ', '  E  ', '  E  ', '     ', '     ', '     ', '     ', '     ')
@@ -29,14 +29,14 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
-            .where('F', Predicates.blocks('gtceu:ferrotungsten_alloy_firebox_casing'))
+            .where('F', Predicates.blocks('gtceu:tungstensteel_firebox_casing'))
             .where('R', Predicates.blocks('gtceu:rtm_alloy_coil_block'))
             .where('E', Predicates.blocks('gtceu:tungsten_steel_frame'))
             .where('G', Predicates.blocks('gtceu:tungstensteel_gearbox'))
             .where('H', Predicates.blocks('gtceu:stress_proof_casing'))
             .where(' ', Predicates.any())
             .build())
-        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_ferrotungsten_alloy',
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
             'gtceu:block/multiblock/large_miner');
 
 });
