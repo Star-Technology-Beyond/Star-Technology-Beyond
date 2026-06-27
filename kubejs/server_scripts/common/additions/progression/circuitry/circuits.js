@@ -218,7 +218,19 @@ ServerEvents.recipes(event => {
         ], 600000, 1800, 'kubejs:runic_processor_computer', 160, 400000
     );
     
-    // === Misc ===
+    // Raw growth medium boosted and unboosted recipe changes
+
+    event.remove('gtceu:mixer/raw_growth_medium')
+    
+    event.recipes.gtceu.mixer(id('raw_growth_medium'))
+        .itemInputs('4x gtceu:meat_dust','4x gtceu:salt_dust','4x gtceu:calcium_dust','4x gtceu:agar_dust',)
+        .inputFluids('gtceu:mutagen 4000')
+        .circuit(0)
+        .outputFluids('gtceu:raw_growth_medium 4000')
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .duration(1200)
+        .EUt(GTValues.VA[GTValues.IV]);
+
     event.recipes.gtceu.mixer(id('raw_growth_medium_boosted'))
         .itemInputs('4x gtceu:meat_dust','4x gtceu:salt_dust','3x gtceu:calcium_dust','4x gtceu:agar_dust','1x gtceu:strontium_dust')
         .inputFluids('gtceu:mutagen 4000')
