@@ -148,6 +148,16 @@ ServerEvents.recipes(event => {
         .duration(14)
         .EUt(GTValues.VHA[GTValues.UIV]);
 
+    event.recipes.gtceu.chemical_skip(id('rgm_skip_strontium'))
+        .itemInputs('220x gtceu:bio_chaff', '5x gtceu:naquadria_dust', '12x gtceu:meat_dust', '5x gtceu:salt_dust',
+            '6x gtceu:calcium_dust', 'gtceu:strontium_dust')
+        .inputFluids('gtceu:distilled_water 85000', 'gtceu:sulfuric_acid 3000', 'gtceu:phosphoric_acid 2500')
+        .itemOutputs('2x gtceu:phosphorus_dust')
+        .outputFluids('gtceu:raw_growth_medium 16875', 'gtceu:diluted_sulfuric_acid 3000')
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
+        .duration(240)
+        .EUt(GTValues.VA[GTValues.UXV]/3);
+
     // === Enlightened Chemistry ===
 
     event.recipes.gtceu.ordered_chemistry(id('better_draco_stem_cells'))
