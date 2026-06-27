@@ -222,6 +222,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer(id('raw_growth_medium_boosted'))
         .itemInputs('4x gtceu:meat_dust','4x gtceu:salt_dust','3x gtceu:calcium_dust','4x gtceu:agar_dust','1x gtceu:strontium_dust')
         .inputFluids('gtceu:mutagen 4000')
+        .circuit(1)
         .outputFluids('gtceu:raw_growth_medium 7500')
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .duration(1500)
