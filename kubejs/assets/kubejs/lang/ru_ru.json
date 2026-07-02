@@ -257,8 +257,8 @@
     "item.kubejs.draco_peptide_amino_chain": "Драко-пептидная аминокислотная цепь",
     "item.kubejs.abyssal_inductor": "Катушка индуктивности бездны",
     "item.kubejs.abyssal_inductor.tooltip": "§7Симуляция §5Энда§7 в его чистейшем проявлении.",
-    "item.kubejs.helish_star": "Адская звезда",
-    "item.kubejs.helish_star.tooltip": "§7Звезда Незера, вернувшаяся домой",
+    "item.kubejs.hellish_star": "Адская звезда",
+    "item.kubejs.hellish_star.tooltip": "§7Звезда Незера, вернувшаяся домой",
     "item.kubejs.dragonic_eye": "§5Драконий§r кошачий глаз",
     "item.kubejs.dragonic_eye.tooltip": "§7Способен ли он видеть будущее?",
 
@@ -428,8 +428,8 @@
 
     "item.kubejs.quantum_core": "§3Квантовое§r ядро",
     "item.kubejs.quantum_core.tooltip": "§7Концентрированная энергия",
-    "item.kubejs.helish_core": "§4Адское§r ядро",
-    "item.kubejs.helish_core.tooltip": "§7Концентрированное пламя",
+    "item.kubejs.hellish_core": "§4Адское§r ядро",
+    "item.kubejs.hellish_core.tooltip": "§7Концентрированное пламя",
     "item.kubejs.voidic_core": "§5Пустотное§r ядро",
     "item.kubejs.voidic_core.tooltip": "§7Концентрированное эхо",
     "item.kubejs.draconic_core": "§2Драконье§r ядро",

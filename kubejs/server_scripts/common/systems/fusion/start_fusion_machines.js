@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UHV]);
 
     event.recipes.gtceu.assembly_line(id('uev_fusion_reactor'))
-        .itemInputs('start_core:advanced_fusion_coil', '4x #gtceu:circuits/uiv', 'kubejs:helish_star', 'gtceu:double_magmada_alloy_plate',
+        .itemInputs('start_core:advanced_fusion_coil', '4x #gtceu:circuits/uiv', 'kubejs:hellish_star', 'gtceu:double_magmada_alloy_plate',
                 '2x gtceu:uhv_field_generator', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip', '32x gtceu:enriched_pallarovium_alloy_single_wire')
         .inputFluids('gtceu:naquadated_soldering_alloy 1152', 'gtceu:cerium_tritelluride 1152')
         .itemOutputs('start_core:uev_fusion_reactor')

@@ -1,9 +1,9 @@
 StartupEvents.registry('item', event => {
 
     // === UEV/UIV Component Catalyst ===
-    event.create('helish_star')
-        .tooltip(Text.translate('item.kubejs.helish_star.tooltip'))
-        .texture('kubejs:item/progression/draconic/helish_star');
+    event.create('hellish_star')
+        .tooltip(Text.translate('item.kubejs.hellish_star.tooltip'))
+        .texture('kubejs:item/progression/draconic/hellish_star');
 
     event.create('dragonic_eye')
         .tooltip(Text.translate('item.kubejs.dragonic_eye.tooltip')) 

@@ -287,7 +287,7 @@ global.componentMaterials = {
             plastic: 'poly_34_ethylenedioxythiophene_polystyrene_sulfate',
             cable: 'cerium_tritelluride',
             cable1: 'polonium_bismide',
-            catalyst: '2x kubejs:helish_star',
+            catalyst: '2x kubejs:hellish_star',
             primMagnet: 'zapolgium',
             supMagnet: 'dysprosium',
             pipeMaterial: 'mythrolic_alloy',
