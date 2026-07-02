@@ -13,8 +13,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:netherrack_dust')
         .chancedOutput('gtceu:tiny_debris_dust', 200, 500)
         .duration(35)
-        .EUt(6500)
-        .circuit(1);
+        .EUt(6500);
 
     event.recipes.gtceu.large_chemical_reactor(id('purified_debris_dust'))
         .itemInputs('2x gtceu:debris_dust')
