@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
 
     //Singularity
     event.recipes.gtceu.draco_infusion(id(`singularity_crafting_storage`))
-        .itemInputs('3x megacells:256m_crafting_storage','8x gtceu:double_netherite_certus_quartz_skystone_alloy_plate','8x kubejs:helish_star','8x gtceu:quantum_star',
+        .itemInputs('3x megacells:256m_crafting_storage','8x gtceu:double_netherite_certus_quartz_skystone_alloy_plate','8x kubejs:hellish_star','8x gtceu:quantum_star',
             '8x gtceu:double_ancient_netherite_plate','8x gtceu:double_netherite_gold_skystone_alloy_plate','8x gtceu:gravi_star')
         .inputFluids(`gtceu:indium_tin_lead_cadmium_soldering_alloy 576`)
         .itemOutputs(`expandedae:singularity_crafting_storage`)

@@ -195,8 +195,8 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('netherite_gold_skystone_alloy').setFormula('Nr4(SkC2)2(Sk(SiAu2)2)');
     GTMaterials.get('netherite_certus_quartz_skystone_alloy').setFormula('Nr4(SkC2)2(Sk(SiO2)2)');
     GTMaterials.get('nether_star').setFormula('✧');
-    GTMaterials.get('dissipated_helish_concentrate').setFormula('⛧-');
-    GTMaterials.get('helish_concentrate').setFormula('⛧');
+    GTMaterials.get('dissipated_hellish_concentrate').setFormula('⛧-');
+    GTMaterials.get('hellish_concentrate').setFormula('⛧');
     GTMaterials.get('hellfire_ash').setFormula('🔥-');
     GTMaterials.get('nyanium').setFormula('ᗢ');
     // GTMaterials.get('maxwellium').setFormula('ᓚᘏᗢ')
@@ -1533,9 +1533,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compLiquid('nether_star_concentrate', ['1x excited', '1x star', '1x excited'], 0xeeeeee, [no_decomp]);
 
-    compLiquid('dissipated_helish_concentrate', ['1x mystery'], 0x8da589, [no_decomp]);
+    compLiquid('dissipated_hellish_concentrate', ['1x mystery'], 0x8da589, [no_decomp]);
 
-    compLiquid('helish_concentrate', ['1x mystery'], 0x66a574, [no_decomp]);
+    compLiquid('hellish_concentrate', ['1x mystery'], 0x66a574, [no_decomp]);
 
     elemLiquidSecColor('aurourium', 0x5d44de, 0xde44ce, SHINY, [], [no_decomp, fine_wire, no_smelt]);
        

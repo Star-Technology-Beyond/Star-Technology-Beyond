@@ -164,7 +164,7 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues.LV]);
 
     event.recipes.gtceu.industrial_barrel_aqueous(id(`crimson_nylium_spores`))
-        .itemInputs('exnihilosequentia:mycelium_spores', 'mysticalagriculture:nether_agglomeratio')
+        .itemInputs('exnihilosequentia:mycelium_spores', 'gtceu:netherrack_dust')
         .inputFluids(`gtceu:nether_air 500`)
         .itemOutputs(`exnihilosequentia:crimson_nylium_spores`)
         .duration(200)

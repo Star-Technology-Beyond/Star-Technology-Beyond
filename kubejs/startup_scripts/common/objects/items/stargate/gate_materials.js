@@ -14,7 +14,7 @@ StartupEvents.registry('item', event => {
 
     // === Core ===
 
-    ['quantum','helish','voidic','draconic','prismafae_illuminatus','spatium_ruptura','primus_tempus','ascension'].forEach(core => {
+    ['quantum','hellish','voidic','draconic','prismafae_illuminatus','spatium_ruptura','primus_tempus','ascension'].forEach(core => {
         event.create(`${core}_core`)
             .tooltip(Text.translate(`item.kubejs.${core}_core.tooltip`))
             .textureJson({

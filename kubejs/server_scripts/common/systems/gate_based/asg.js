@@ -100,14 +100,14 @@ ServerEvents.recipes(event => {
         ['kubejs:voidic_core'], 
         3000, 192, 192 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:abyss_fragment');
 
-    researchBuilder(assline, 'helish_core', 
+    researchBuilder(assline, 'hellish_core', 
         ['kubejs:quantum_core','8x kubejs:inferno_fragment','4x gtceu:uhv_field_generator','12x kubejs:uhv_high_strength_panel'], 
         ['gtceu:blaze 57600','gtceu:neutronium 2304'], 
-        ['kubejs:helish_core'], 
+        ['kubejs:hellish_core'], 
         3000, 192, 192 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:inferno_fragment');
 
     pressureHeat(id('draconic_core'))
-        .itemInputs('kubejs:voidic_core','kubejs:helish_core')
+        .itemInputs('kubejs:voidic_core','kubejs:hellish_core')
         .inputFluids('minecraft:lava 50000','gtceu:echo_r 7200')
         .itemOutputs('kubejs:draconic_core')
         .duration(3000)

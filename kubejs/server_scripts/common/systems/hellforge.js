@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UV] * ( 4 ** scaler ));
     };
     catalyst('ascendant',['gtceu:nyanium_frame','2x gtceu:gravi_star','2x gtceu:long_stellarium_rod','1x #gtceu:circuits/uhv','32x gtceu:sapphire_lens'],1);
-    catalyst('infernal',['gtceu:magmada_alloy_frame','2x kubejs:helish_star','2x gtceu:long_ancient_netherite_rod','1x #gtceu:circuits/uev','32x gtceu:ruby_lens'],2);
+    catalyst('infernal',['gtceu:magmada_alloy_frame','2x kubejs:hellish_star','2x gtceu:long_ancient_netherite_rod','1x #gtceu:circuits/uev','32x gtceu:ruby_lens'],2);
     catalyst('abyssal',['gtceu:draconyallium_frame','kubejs:dragonic_eye','2x gtceu:long_void_rod','1x #gtceu:circuits/uiv','32x gtceu:echo_shard_lens'],3);
 
     });

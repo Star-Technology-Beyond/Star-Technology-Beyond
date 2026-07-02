@@ -515,11 +515,11 @@
 		}
 		{
 			dependencies: ["073B57C15F3BFCFD"]
-			description: ["{ftbquests.asg.helish_core.description}"]
+			description: ["{ftbquests.asg.hellish_core.description}"]
 			id: "4869BB9EE1BCDDDB"
 			tasks: [{
 				id: "5A1A22D143C4FF22"
-				item: "kubejs:helish_core"
+				item: "kubejs:hellish_core"
 				type: "item"
 			}]
 			x: 1.0d

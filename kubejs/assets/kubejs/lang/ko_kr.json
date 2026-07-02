@@ -257,8 +257,8 @@
     "item.kubejs.draco_peptide_amino_chain": "드라코 펩타이드 아미노 사슬",
     "item.kubejs.abyssal_inductor": "심연 인덕터",
     "item.kubejs.abyssal_inductor.tooltip": "§5엔드§7를 순수한 형태로 시뮬레이션합니다.",
-    "item.kubejs.helish_star": "지옥의 별",
-    "item.kubejs.helish_star.tooltip": "§7네더의 별이 집으로 돌아왔다",
+    "item.kubejs.hellish_star": "지옥의 별",
+    "item.kubejs.hellish_star.tooltip": "§7네더의 별이 집으로 돌아왔다",
     "item.kubejs.dragonic_eye": "§5드래곤의§r 눈",
     "item.kubejs.dragonic_eye.tooltip": "§7미래를 볼 수 있을려나?",
 
@@ -428,8 +428,8 @@
 
     "item.kubejs.quantum_core": "§3양자§r 코어",
     "item.kubejs.quantum_core.tooltip": "§7집중된 에너지",
-    "item.kubejs.helish_core": "§4지옥§r 코어",
-    "item.kubejs.helish_core.tooltip": "§7집중된 화염",
+    "item.kubejs.hellish_core": "§4지옥§r 코어",
+    "item.kubejs.hellish_core.tooltip": "§7집중된 화염",
     "item.kubejs.voidic_core": "§5공허§r 코어",
     "item.kubejs.voidic_core.tooltip": "§7집중된 메아리",
     "item.kubejs.draconic_core": "§2드라코닉§r 코어",

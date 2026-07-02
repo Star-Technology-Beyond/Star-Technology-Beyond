@@ -9,12 +9,11 @@ ServerEvents.recipes(event => {
         .duration(6000)
         .EUt(1890);
 
-    event.recipes.gtceu.centrifuge(id('debris_dust'))
-        .itemInputs('mysticalagriculture:nether_agglomeratio')
+    event.recipes.gtceu.extractor(id('debris_dust'))
+        .itemInputs('gtceu:netherrack_dust')
         .chancedOutput('gtceu:tiny_debris_dust', 200, 500)
-        .duration(20)
-        .EUt(6500)
-        .circuit(1);
+        .duration(35)
+        .EUt(6500);
 
     event.recipes.gtceu.large_chemical_reactor(id('purified_debris_dust'))
         .itemInputs('2x gtceu:debris_dust')
